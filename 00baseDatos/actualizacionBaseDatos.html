@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Katherine Collao, Joaquin Riquelme, Maureen Murúa">
+
+<title>Actualización de base de datos interacción planta-abeja</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="actualizacionBaseDatos_files/libs/clipboard/clipboard.min.js"></script>
+<script src="actualizacionBaseDatos_files/libs/quarto-html/quarto.js"></script>
+<script src="actualizacionBaseDatos_files/libs/quarto-html/popper.min.js"></script>
+<script src="actualizacionBaseDatos_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="actualizacionBaseDatos_files/libs/quarto-html/anchor.min.js"></script>
+<link href="actualizacionBaseDatos_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="actualizacionBaseDatos_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="actualizacionBaseDatos_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="actualizacionBaseDatos_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="actualizacionBaseDatos_files/libs/bootstrap/bootstrap-1bc8a17f135ab3d594c857e9f48e611b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Actualización de base de datos interacción planta-abeja</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Katherine Collao, Joaquin Riquelme, Maureen Murúa </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="contexto" class="level2">
+<h2 class="anchored" data-anchor-id="contexto">Contexto</h2>
+<p>Se actualiza la base de datos de proyecto de investigacion de interaccion entre plantas y abejas.</p>
+<p>Se utiliza como base la estructura de base de datos provista en …..</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>baseDatos <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># load("baseDatos.RDS")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="especies" class="level2">
+<h2 class="anchored" data-anchor-id="especies">Especies</h2>
+<p>La tabla especie se poblara a partir de los valores unicos de matrix</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>matriz.general <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_excel</span>(<span class="st">"Matriz_general.xlsx"</span>, <span class="at">sheet =</span> <span class="dv">1</span>, <span class="at">skip =</span> <span class="dv">1</span>)[,<span class="sc">-</span><span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting numeric in J1190 / R1190C10: got '&nbsp;57.73'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>New names:
+• `` -&gt; `...1`
+• `` -&gt; `...13`</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(matriz.general)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 12
+  Abeja        DIT Familia Grado `Grado relativo` z_Grado ID    Latitud Longitud
+  &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;            &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;    &lt;dbl&gt;
+1 Colletes.…  2.42 Collet…     6           0.162   -0.146 chac…   -32.5    -69.0
+2 Centris.b… NA    Apidae     14           0.378    0.856 chac…   -32.5    -69.0
+3 Caenohali…  1.3  Halict…    12           0.324    0.605 chac…   -32.5    -69.0
+4 Colletes.…  2.68 Collet…     2           0.0541  -0.647 chac…   -32.5    -69.0
+5 Colletes.… NA    Collet…     3           0.0811  -0.522 chac…   -32.5    -69.0
+6 Colletes.…  2.35 Collet…     8           0.216    0.104 chac…   -32.5    -69.0
+# ℹ 3 more variables: Pais &lt;chr&gt;, Localidad &lt;chr&gt;, ...13 &lt;chr&gt;</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>especies <span class="ot">&lt;-</span> matriz.general[,<span class="fu">c</span>(<span class="st">"Abeja"</span>,<span class="st">"Familia"</span>)]</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># especies$especie = substr(especies$Abeja,start = 1, stop = nchar(as.character(especies$Abeja))-5)</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>especies<span class="sc">$</span>Abeja <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"-"</span>, <span class="at">replacement =</span> <span class="st">"_"</span>, <span class="at">x =</span> especies<span class="sc">$</span>Abeja)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>especies<span class="sc">$</span>especie <span class="ot">&lt;-</span>  <span class="fu">substr</span>(especies<span class="sc">$</span>Abeja,<span class="at">start =</span> <span class="dv">1</span>, <span class="at">stop =</span> <span class="fu">regexpr</span>(<span class="at">pattern =</span> <span class="st">"_"</span>, <span class="at">text =</span> especies<span class="sc">$</span>Abeja)<span class="sc">-</span><span class="dv">1</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(especies)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  Abeja                    Familia    especie            
+  &lt;chr&gt;                    &lt;chr&gt;      &lt;chr&gt;              
+1 Colletes.araucariae_0611 Colletidae Colletes.araucariae
+2 Centris.brethesi_0611    Apidae     Centris.brethesi   
+3 Caenohalictus.sp_0611    Halictidae Caenohalictus.sp   
+4 Colletes.bicolor_0611    Colletidae Colletes.bicolor   
+5 Colletes.brethesi_0611   Colletidae Colletes.brethesi  
+6 Colletes.cognatus_0611   Colletidae Colletes.cognatus  </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(especies<span class="sc">$</span>Familia)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "Colletidae"   "Apidae"       "Halictidae"   "Megachilidae" "andrenidae"  
+ [6] "Andrenidae"   "apidae"       "colletidae"   "Melittidae"   NA            </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">sort</span>(<span class="fu">unique</span>(especies<span class="sc">$</span>Abeja)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Agapostemon.angelicus.texanus_1521" "Agapostemon.splendens_062"         
+[3] "Agapostemon.texanus_062"            "Agapostemon_virescens_073"         
+[5] "Alloscirtetica.antarctica_022"      "Alloscirtetica.brethesi_0611"      </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(<span class="fu">unique</span>(especies<span class="sc">$</span>especie))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   [1] "Agapostemon"                           
+   [2] "Agapostemon.angelicus.texanus"         
+   [3] "Agapostemon.splendens"                 
+   [4] "Agapostemon.texanus"                   
+   [5] "Alloscirtetica.antarctica"             
+   [6] "Alloscirtetica.brethesi"               
+   [7] "Alloscirtetica.gayi"                   
+   [8] "Alloscirtetica.herbsti"                
+   [9] "Alloscirtetica.rufitarsis"             
+  [10] "Alloscirtetica.sp"                     
+  [11] "Alloscirtetica.sp1"                    
+  [12] "Amegilla.albigena"                     
+  [13] "Amegilla.canifrons"                    
+  [14] "Amegilla.fasciata"                     
+  [15] "Amegilla.quadrifasciata"               
+  [16] "Amegilla.sp1"                          
+  [17] "Amegilla.sp1 M"                        
+  [18] "AnAnthidium.inerme"                    
+  [19] "Andreana.sp1"                          
+  [20] "Andrena.aburana"                       
+  [21] "Andrena.aburana "                      
+  [22] "Andrena.akitsushimae"                  
+  [23] "Andrena.alfkenella"                    
+  [24] "Andrena.alleghaniensis"                
+  [25] "Andrena.amamiensis"                    
+  [26] "Andrena.amphibola"                     
+  [27] "Andrena.angustitarsata"                
+  [28] "Andrena.arabis"                        
+  [29] "Andrena.assimilis"                     
+  [30] "Andrena.athenensis"                    
+  [31] "Andrena.balcanica"                     
+  [32] "Andrena.banksi"                        
+  [33] "Andrena.barbilabris"                   
+  [34] "Andrena.benefica"                      
+  [35] "Andrena.bicolor"                       
+  [36] "Andrena.bicolorata"                    
+  [37] "Andrena.bimaculata"                    
+  [38] "Andrena.braccata"                      
+  [39] "Andrena.bradleyi"                      
+  [40] "Andrena.brassicae"                     
+  [41] "Andrena.brevihirtiscopa"               
+  [42] "Andrena.canadensis"                    
+  [43] "Andrena.caneae"                        
+  [44] "Andrena.carbonaria"                    
+  [45] "Andrena.carlini"                       
+  [46] "Andrena.carolina"                      
+  [47] "Andrena.ceanothi"                      
+  [48] "Andrena.chrysosceles"                  
+  [49] "Andrena.cinereophila"                  
+  [50] "Andrena.clarkella"                     
+  [51] "Andrena.clypeata"                      
+  [52] "Andrena.combaella"                     
+  [53] "Andrena.concinna"                      
+  [54] "Andrena.confederata"                   
+  [55] "Andrena.crassana"                      
+  [56] "Andrena.crataegi"                      
+  [57] "Andrena.crategi"                       
+  [58] "Andrena.cressoni"                      
+  [59] "Andrena.cyanophila"                    
+  [60] "Andrena.dentata"                       
+  [61] "Andrena.distinguenda"                  
+  [62] "Andrena.dunningi"                      
+  [63] "Andrena.edashigei"                     
+  [64] "Andrena.edwiniae"                      
+  [65] "Andrena.erigeniae"                     
+  [66] "Andrena.erythrogastra"                 
+  [67] "Andrena.erythronii"                    
+  [68] "Andrena.esakki"                        
+  [69] "Andrena.flavipes"                      
+  [70] "Andrena.forbesii"                      
+  [71] "Andrena.fulva"                         
+  [72] "Andrena.fulvitarsis"                   
+  [73] "Andrena.fuscipes"                      
+  [74] "Andrena.gallinula"                     
+  [75] "Andrena.gardineri"                     
+  [76] "Andrena.geranii"                       
+  [77] "Andrena.grossella"                     
+  [78] "Andrena.haemorrhoa"                    
+  [79] "Andrena.haemorrhoa.japonibia"          
+  [80] "Andrena.halictoides"                   
+  [81] "Andrena.hattorfiana"                   
+  [82] "Andrena.hebes"                         
+  [83] "Andrena.hesperia"                      
+  [84] "Andrena.hikosana"                      
+  [85] "Andrena.hilaris"                       
+  [86] "Andrena.hirashimai"                    
+  [87] "Andrena.hispania"                      
+  [88] "Andrena.humillis"                      
+  [89] "Andrena.hyemala"                       
+  [90] "Andrena.illinoensis"                   
+  [91] "Andrena.imitatrix"                     
+  [92] "Andrena.impunctata"                    
+  [93] "Andrena.irgeniae"                      
+  [94] "Andrena.ishiharai"                     
+  [95] "Andrena.japonica"                      
+  [96] "Andrena.japonicum"                     
+  [97] "Andrena.kaguya"                        
+  [98] "Andrena.knuthi"                        
+  [99] "Andrena.Knuthi"                        
+ [100] "Andrena.komachi"                       
+ [101] "Andrena.komachi "                      
+ [102] "Andrena.kriechbaumeri"                 
+ [103] "Andrena.lamiana"                       
+ [104] "Andrena.lapponica"                     
+ [105] "Andrena.lewisi"                        
+ [106] "Andrena.longitibialis"                 
+ [107] "Andrena.macoupinensis"                 
+ [108] "Andrena.madronitens"                   
+ [109] "Andrena.mandibularis"                  
+ [110] "Andrena.mansonii"                      
+ [111] "Andrena.medionitens"                   
+ [112] "Andrena.melanochroa"                   
+ [113] "Andrena.mikado"                        
+ [114] "Andrena.minutula"                      
+ [115] "Andrena.miranda"                       
+ [116] "Andrena.miserabilis"                   
+ [117] "Andrena.mitakensis"                    
+ [118] "Andrena.miyamotoi"                     
+ [119] "Andrena.mocsaryi"                      
+ [120] "Andrena.mucronata"                     
+ [121] "Andrena.nana"                          
+ [122] "Andrena.nasonii"                       
+ [123] "Andrena.nawai"                         
+ [124] "Andrena.nigrae"                        
+ [125] "Andrena.nigrihirta"                    
+ [126] "Andrena.nigroaenea"                    
+ [127] "Andrena.nivalis"                       
+ [128] "Andrena.nobilis"                       
+ [129] "Andrena.nothoscordi"                   
+ [130] "Andrena.nubecula"                      
+ [131] "Andrena.okabei"                        
+ [132] "Andrena.oligolege"                     
+ [133] "Andrena.omogensis"                     
+ [134] "Andrena.opacifovea"                    
+ [135] "Andrena.opacifovea opacifovea"         
+ [136] "Andrena.optata"                        
+ [137] "Andrena.oralis"                        
+ [138] "Andrena.orientata"                     
+ [139] "Andrena.osyychniuki"                   
+ [140] "Andrena.panurgimorpha"                 
+ [141] "Andrena.panurgina"                     
+ [142] "Andrena.parathoracica"                 
+ [143] "Andrena.perplexa"                      
+ [144] "Andrena.personata"                     
+ [145] "Andrena.placida"                       
+ [146] "Andrena.platyparia"                    
+ [147] "Andrena.prostomias"                    
+ [148] "Andrena.protomias"                     
+ [149] "Andrena.pruni"                         
+ [150] "Andrena.prunorum"                      
+ [151] "Andrena.pubescens"                     
+ [152] "Andrena.regularis"                     
+ [153] "Andrena.rufosignata"                   
+ [154] "Andrena.rugosa"                        
+ [155] "Andrena.rugothorace"                   
+ [156] "Andrena.salicacea"                     
+ [157] "Andrena.salicifloris"                  
+ [158] "Andrena.salicis"                       
+ [159] "Andrena.sayi"                          
+ [160] "Andrena.schmiedeknechti"               
+ [161] "Andrena.schulzi"                       
+ [162] "Andrena.scita"                         
+ [163] "Andrena.sigmundi"                      
+ [164] "Andrena.simontornyella"                
+ [165] "Andrena.sp1"                           
+ [166] "Andrena.sp2"                           
+ [167] "Andrena.sp3"                           
+ [168] "Andrena.sp5"                           
+ [169] "Andrena.sp9"                           
+ [170] "Andrena.spA"                           
+ [171] "Andrena.spC"                           
+ [172] "Andrena.spiraeana"                     
+ [173] "Andrena.squalida"                      
+ [174] "Andrena.stellaria"                     
+ [175] "Andrena.sublevigata"                   
+ [176] "Andrena.subopaca"                      
+ [177] "Andrena.taraxaci"                      
+ [178] "Andrena.tarsata"                       
+ [179] "Andrena.thaspii"                       
+ [180] "Andrena.thomsoni"                      
+ [181] "Andrena.togashii"                      
+ [182] "Andrena.tomora"                        
+ [183] "Andrena.topazana"                      
+ [184] "Andrena.tridens"                       
+ [185] "Andrena.trucatilabris"                 
+ [186] "Andrena.tsukubana"                     
+ [187] "Andrena.ventricosa"                    
+ [188] "Andrena.vicina"                        
+ [189] "Andrena.vicinoides"                    
+ [190] "Andrena.violae"                        
+ [191] "Andrena.vucana"                        
+ [192] "Andrena.w.scripta"                     
+ [193] "Andrena.washingtoni"                   
+ [194] "Andrena.watasei"                       
+ [195] "Andrena.westensis"                     
+ [196] "Andrena.wheeleri"                      
+ [197] "Andrena.wilkella"                      
+ [198] "Andrena.wollestoni"                    
+ [199] "Andrena.yamato"                        
+ [200] "Andrena.ziziaeformis"                  
+ [201] "Anthidiellum.sp1"                      
+ [202] "Anthidiellum.strigatum.luteum"         
+ [203] "Anthidium.adriani"                     
+ [204] "Anthidium.chilensis"                   
+ [205] "Anthidium.chubuti"                     
+ [206] "Anthidium.cognatum"                    
+ [207] "Anthidium.dalmaticum"                  
+ [208] "Anthidium.decaspilum"                  
+ [209] "Anthidium.florentinum"                 
+ [210] "Anthidium.friesei"                     
+ [211] "Anthidium.funereum"                    
+ [212] "Anthidium.gayi"                        
+ [213] "Anthidium.manicatum"                   
+ [214] "Anthidium.rubriceps"                   
+ [215] "Anthidium.rubripes"                    
+ [216] "Anthidium.septemspinosum"              
+ [217] "Anthidium.sp"                          
+ [218] "Anthidium.sp1"                         
+ [219] "Anthidium.sticticum"                   
+ [220] "Anthidium.taeniatum"                   
+ [221] "Anthidium.tenuiflorae"                 
+ [222] "Anthidium.undulatum"                   
+ [223] "Anthidium.vigintipunctatum"            
+ [224] "Anthocopa.andrenoides"                 
+ [225] "Anthocopa.bidentata"                   
+ [226] "Anthocopa.bisulca"                     
+ [227] "Anthocopa.obtusa"                      
+ [228] "Anthocopa.papaveris"                   
+ [229] "Anthocopa.perezi"                      
+ [230] "Anthocopa.scutellaris"                 
+ [231] "Anthocopa.spinigera"                   
+ [232] "Anthocopa.yermasoyiae corcyraea"       
+ [233] "Anthophora.abrupta"                    
+ [234] "Anthophora.acervorum"                  
+ [235] "Anthophora.agama"                      
+ [236] "Anthophora.alluardii"                  
+ [237] "Anthophora.alluaudi"                   
+ [238] "Anthophora.atroalba"                   
+ [239] "Anthophora.bomboides"                  
+ [240] "Anthophora.canescens"                  
+ [241] "Anthophora.dispar"                     
+ [242] "Anthophora.dufouri"                    
+ [243] "Anthophora.garrula"                    
+ [244] "Anthophora.incerta"                    
+ [245] "Anthophora.magnilabris"                
+ [246] "Anthophora.montana"                    
+ [247] "Anthophora.neomexicana"                
+ [248] "Anthophora.nigrocincta"                
+ [249] "Anthophora.occidentalis"               
+ [250] "Anthophora.ochroleuca"                 
+ [251] "Anthophora.orotavae"                   
+ [252] "Anthophora.pilipes"                    
+ [253] "Anthophora.pilipes villosula"          
+ [254] "Anthophora.plumipes"                   
+ [255] "Anthophora.retusa"                     
+ [256] "Anthophora.rubricrus"                  
+ [257] "Anthophora.simillima"                  
+ [258] "Anthophora.smithi"                     
+ [259] "Anthophora.sp"                         
+ [260] "Anthophora.sp1"                        
+ [261] "Anthophora.terminalis"                 
+ [262] "Anthophora.urbana"                     
+ [263] "Apis.cerana"                           
+ [264] "Apis.cerana.japonica"                  
+ [265] "Apis.mellifera"                        
+ [266] "Arhysosage.bifasciata"                 
+ [267] "Ashmeadiella bucconis"                 
+ [268] "Augochlora"                            
+ [269] "Augochlora.fervida"                    
+ [270] "Augochlora.pura"                       
+ [271] "Augochlora.semiramis"                  
+ [272] "Augochlora.sp1"                        
+ [273] "Augochlora.sp2"                        
+ [274] "Augochlorella"                         
+ [275] "Augochlorella aurata"                  
+ [276] "Augochlorella ephyra"                  
+ [277] "Augochlorella.striata"                 
+ [278] "Augochlorensis.callichroa"             
+ [279] "Augochloropsis"                        
+ [280] "Augochloropsis.erato"                  
+ [281] "Augochloropsis.sp"                     
+ [282] "Augochloropsis.sp1"                    
+ [283] "Augochloropsis.sp2"                    
+ [284] "Augochloropsis.sp3"                    
+ [285] "Augochloropsis.vesta"                  
+ [286] "Bombomelecta.thoracica"                
+ [287] "Bombus.agrorum"                        
+ [288] "Bombus.alpinus"                        
+ [289] "Bombus.americanorum"                   
+ [290] "Bombus.appositus"                      
+ [291] "Bombus.ardens"                         
+ [292] "Bombus.argillaceus"                    
+ [293] "Bombus.atratus"                        
+ [294] "Bombus.auricomus"                      
+ [295] "Bombus.beaticola"                      
+ [296] "Bombus.bellicosus"                     
+ [297] "Bombus.bifarius"                       
+ [298] "Bombus.bimaculatus"                    
+ [299] "Bombus.bohemicus"                      
+ [300] "Bombus.brasiliensis"                   
+ [301] "Bombus.brevivillus"                    
+ [302] "Bombus.californicus"                   
+ [303] "Bombus.canariensis"                    
+ [304] "Bombus.centralis"                      
+ [305] "Bombus.consobrinus"                    
+ [306] "Bombus.cryptarum"                      
+ [307] "Bombus.dahlbomii"                      
+ [308] "Bombus.diversus"                       
+ [309] "Bombus.diversus diversus"              
+ [310] "Bombus.diversus.diversus"              
+ [311] "Bombus.dorsalis"                       
+ [312] "Bombus.edwardsi"                       
+ [313] "Bombus.fernaldae"                      
+ [314] "Bombus.fervidus"                       
+ [315] "Bombus.flavifrons"                     
+ [316] "Bombus.fulvida"                        
+ [317] "Bombus.griseocollis"                   
+ [318] "Bombus.honshuensis"                    
+ [319] "Bombus.hortorum"                       
+ [320] "Bombus.hortotum"                       
+ [321] "Bombus.hunti"                          
+ [322] "Bombus.hyperboreus"                    
+ [323] "Bombus.hypnorum"                       
+ [324] "Bombus.hypocrita"                      
+ [325] "Bombus.hypocrita.hypocrita"            
+ [326] "Bombus.ignitus"                        
+ [327] "Bombus.impatiens"                      
+ [328] "Bombus.insularis"                      
+ [329] "Bombus.jonellus"                       
+ [330] "Bombus.juxtus"                         
+ [331] "Bombus.kirbyellus"                     
+ [332] "Bombus.lapidarius"                     
+ [333] "Bombus.lucorum"                        
+ [334] "Bombus.melanopygus"                    
+ [335] "Bombus.mixtus"                         
+ [336] "Bombus.morio"                          
+ [337] "Bombus.morrisoni"                      
+ [338] "Bombus.muscorum"                       
+ [339] "Bombus.nevadensis"                     
+ [340] "Bombus.occidentalis"                   
+ [341] "Bombus.opifex"                         
+ [342] "Bombus.pascuorum"                      
+ [343] "Bombus.pennsylvanicus"                 
+ [344] "Bombus.perplexus"                      
+ [345] "Bombus.polaris"                        
+ [346] "Bombus.pratorum"                       
+ [347] "Bombus.pullatus"                       
+ [348] "Bombus.ridingsii"                      
+ [349] "Bombus.ruderatus"                      
+ [350] "Bombus.rufocinctus"                    
+ [351] "Bombus.rupestris"                      
+ [352] "Bombus.soroeensis"                     
+ [353] "Bombus.sp1"                            
+ [354] "Bombus.sp2"                            
+ [355] "Bombus.sylvicola"                      
+ [356] "Bombus.ternarius"                      
+ [357] "Bombus.terrestis"                      
+ [358] "Bombus.terrestris"                     
+ [359] "Bombus.terrestris.lucorum"             
+ [360] "Bombus.terricola"                      
+ [361] "Bombus.vagans"                         
+ [362] "Bombus.volucelloides"                  
+ [363] "Cadeguala albopilosa"                  
+ [364] "Cadeguala occipitalis"                 
+ [365] "Cadeguala.occidentalis"                
+ [366] "CaenoHalictus.movilicornis"            
+ [367] "Caenohalictus.sp"                      
+ [368] "CaenoHalictus.sp1"                     
+ [369] "Caenohalictus.sp2"                     
+ [370] "CaenoHalictus.sp2"                     
+ [371] "Caenohalictus.sp3"                     
+ [372] "Calliopsini"                           
+ [373] "Calliopsis.andreniformis"              
+ [374] "Calliopsis.coloradensis"               
+ [375] "Caupolicana.dimidiata"                 
+ [376] "Centrias erigerontis"                  
+ [377] "Centris. dirrhoda"                     
+ [378] "Centris.aenea"                         
+ [379] "Centris.brethesi"                      
+ [380] "Centris.cana"                          
+ [381] "Centris.caxiensis"                     
+ [382] "Centris.cineraria"                     
+ [383] "Centris.flavifrons"                    
+ [384] "Centris.fuscata"                       
+ [385] "Centris.lyngbyei"                      
+ [386] "Centris.muralis"                       
+ [387] "Centris.nigerrima"                     
+ [388] "Centris.obsoleta"                      
+ [389] "Centris.sp"                            
+ [390] "Centris.sp1"                           
+ [391] "Centris.sp2"                           
+ [392] "Centris.tarsata"                       
+ [393] "Centris.trigonoides"                   
+ [394] "Centris.vardyorum"                     
+ [395] "Cerarina.acuta"                        
+ [396] "Cerarina.bispinosa"                    
+ [397] "Cerarina.calcarata"                    
+ [398] "Cerarina.cucurbitina"                  
+ [399] "Cerarina.dallatorreana"                
+ [400] "Cerarina.dentiventris"                 
+ [401] "Cerarina.esakii"                       
+ [402] "Cerarina.iwatai"                       
+ [403] "Cerarina.loewi"                        
+ [404] "Cerarina.megastigmata"                 
+ [405] "Cerarina.metallica"                    
+ [406] "Cerarina.mocsaryi"                     
+ [407] "Cerarina.montana"                      
+ [408] "Cerarina.nigra"                        
+ [409] "Cerarina.parvula"                      
+ [410] "Cerarina.rupestris"                    
+ [411] "Cerarina.sp1"                          
+ [412] "Cerarina.tabescens"                    
+ [413] "Ceratina.calcarata"                    
+ [414] "Ceratina.cucurbitina"                  
+ [415] "Ceratina.cyanea"                       
+ [416] "Ceratina.dupla"                        
+ [417] "Ceratina.flavipes"                     
+ [418] "Ceratina.japonica"                     
+ [419] "Ceratina.nigrolabiata"                 
+ [420] "Ceratina.okinawana"                    
+ [421] "Ceratina.satoi"                        
+ [422] "Ceratina.sp1"                          
+ [423] "Ceratina.strenua"                      
+ [424] "Chalepogenus goeldianus"               
+ [425] "Chalicodoma"                           
+ [426] "Chalicodoma.albocristata"              
+ [427] "Chalicodoma.disjunctiformis"           
+ [428] "Chalicodoma.ericetorum"                
+ [429] "Chalicodoma.hungarica"                 
+ [430] "Chalicodoma.lefebvrei"                 
+ [431] "Chalicodoma.manicata"                  
+ [432] "Chalicodoma.montenegrensis"            
+ [433] "Chalicodoma.parietina nestorea"        
+ [434] "Chalicodoma.pyrenaica"                 
+ [435] "Chalicodoma.sculpturalis"              
+ [436] "Chalicodoma.sp1 M"                     
+ [437] "Chelostoma.appendiculatum"             
+ [438] "Chelostoma.campanularum"               
+ [439] "Chelostoma.emarginatum"                
+ [440] "Chelostoma.hellenicum"                 
+ [441] "Chelostoma.transversum"                
+ [442] "Chelostomoides.rufimanus"              
+ [443] "Chilicola.sp"                          
+ [444] "Chilicola.sp1"                         
+ [445] "Chilimelissa.sp"                       
+ [446] "Chloralictus.albipennis"               
+ [447] "Chloralictus.cressonii"                
+ [448] "Chloralictus.foveolatus"               
+ [449] "Chloralictus.illinoensis"              
+ [450] "Chloralictus.obscurus"                 
+ [451] "Chloralictus.smilacinae"               
+ [452] "Colletes.acutus"                       
+ [453] "Colletes.albescens"                    
+ [454] "Colletes.americanus"                   
+ [455] "Colletes.araucariae"                   
+ [456] "Colletes.armatus"                      
+ [457] "Colletes.babai"                        
+ [458] "Colletes.bicolor"                      
+ [459] "Colletes.brethesi"                     
+ [460] "Colletes.brevicornis"                  
+ [461] "Colletes.caspicus"                     
+ [462] "Colletes.cognatus"                     
+ [463] "Colletes.compactus"                    
+ [464] "Colletes.cunicularius"                 
+ [465] "Colletes.cyaneus"                      
+ [466] "Colletes.dimidiatus"                   
+ [467] "Colletes.eous"                         
+ [468] "Colletes.fodiens"                      
+ [469] "Colletes.foveolaris"                   
+ [470] "Colletes.fulgidus"                     
+ [471] "Colletes.fulvipes"                     
+ [472] "Colletes.inaequalis"                   
+ [473] "Colletes.kincaidi"                     
+ [474] "Colletes.lycii"                        
+ [475] "Colletes.nigrifrons"                   
+ [476] "Colletes.nudus"                        
+ [477] "Colletes.oligolege"                    
+ [478] "Colletes.oromontis"                    
+ [479] "Colletes.patellatus"                   
+ [480] "Colletes.perforator"                   
+ [481] "Colletes.productus"                    
+ [482] "Colletes.sieverti"                     
+ [483] "Colletes.similis"                      
+ [484] "Colletes.sp"                           
+ [485] "Colletes.sp1"                          
+ [486] "Colletes.sp2"                          
+ [487] "Colletes.speciosus"                    
+ [488] "Colletes.spectabilis"                  
+ [489] "Colletes.spp"                          
+ [490] "Colletes.succinctus"                   
+ [491] "Colletes.succintus"                    
+ [492] "Colletes.thoracicus"                   
+ [493] "Colletes.willistonii"                  
+ [494] "Corynura.aff. Atrovirens"              
+ [495] "Corynura.aff. Lepida"                  
+ [496] "Corynura.corynogastra"                 
+ [497] "Corynura.patagonica"                   
+ [498] "Corynura.rubella"                      
+ [499] "Corynura.sp"                           
+ [500] "Corynura.sp1"                          
+ [501] "Dasypoda cingulata"                    
+ [502] "Dasypoda iberica"                      
+ [503] "Dasypoda.sp1"                          
+ [504] "Diadasia.baraderensis"                 
+ [505] "Diadasia.patagonica"                   
+ [506] "Dialictus.abanci"                      
+ [507] "Dialictus.coeruleus"                   
+ [508] "Dialictus.cressoni"                    
+ [509] "Dialictus.cressonii"                   
+ [510] "Dialictus.imitatus"                    
+ [511] "Dialictus.oblongus"                    
+ [512] "Dialictus.obscurus"                    
+ [513] "Dialictus.pilosus"                     
+ [514] "Dialictus.sp"                          
+ [515] "Dialictus.sp1"                         
+ [516] "Dialictus.sp2"                         
+ [517] "Dialictus.zephyrus"                    
+ [518] "DiAnthidium.boreale"                   
+ [519] "Diphaglossa.gayi"                      
+ [520] "Dufourea fimbriata"                    
+ [521] "Dufourea maura"                        
+ [522] "Epicharis.obscura"                     
+ [523] "Epicharis.sp1"                         
+ [524] "Eucera.albofasciata"                   
+ [525] "Eucera.bidentata"                      
+ [526] "Eucera.clypeata"                       
+ [527] "Eucera.furfurea"                       
+ [528] "Eucera.nigrescens.contraria"           
+ [529] "Eucera.nigrilabris.rufitarsis"         
+ [530] "Eucera.parnassia"                      
+ [531] "Eucera.punctulata"                     
+ [532] "Eucera.seminuda"                       
+ [533] "Eucera.sp1"                            
+ [534] "Eucera.sp2"                            
+ [535] "Euglossa.chalybeata"                   
+ [536] "Euglossa.cordata"                      
+ [537] "Euglossa.jamaicensis"                  
+ [538] "Euglossa.sp"                           
+ [539] "Euglossa.sp1"                          
+ [540] "Evylaeus.4"                            
+ [541] "Evylaeus.arcuatus"                     
+ [542] "Evylaeus.macoupinensis"                
+ [543] "Evylaeus.nelumbonis"                   
+ [544] "Evylaeus.pectinatus"                   
+ [545] "Evylaeus.pectoralis"                   
+ [546] "Evylaeus.truncatus"                    
+ [547] "Exomalopsis.sp1"                       
+ [548] "Frieseomelitt.silvestrii"              
+ [549] "Habropoda.tarsata"                     
+ [550] "Halictid.sp1"                          
+ [551] "Halictillus.sp1"                       
+ [552] "Halictoides marginatus"                
+ [553] "Halictus"                              
+ [554] "Halictus.aerarius"                     
+ [555] "Halictus.asperulus"                    
+ [556] "Halictus.brunnescens"                  
+ [557] "Halictus.calceatus"                    
+ [558] "Halictus.cephalicus"                   
+ [559] "Halictus.chloralictus"                 
+ [560] "Halictus.confusus"                     
+ [561] "Halictus.fendleri"                     
+ [562] "Halictus.fulvipes"                     
+ [563] "Halictus.gemmeus"                      
+ [564] "Halictus.graecus"                      
+ [565] "Halictus.lerouxi"                      
+ [566] "Halictus.lerouxii"                     
+ [567] "Halictus.leucopus"                     
+ [568] "Halictus.ligatus"                      
+ [569] "Halictus.manitonellus"                 
+ [570] "Halictus.medionitens"                  
+ [571] "Halictus.pollinus"                     
+ [572] "Halictus.pyrenaicus"                   
+ [573] "Halictus.quadricinctus"                
+ [574] "Halictus.quadrinotatus"                
+ [575] "Halictus.resurgens"                    
+ [576] "Halictus.rubicundus"                   
+ [577] "Halictus.scabiosae"                    
+ [578] "Halictus.smaragdulus"                  
+ [579] "Halictus.sp"                           
+ [580] "Halictus.sp1"                          
+ [581] "Halictus.sp2"                          
+ [582] "Halictus.sp3"                          
+ [583] "Halictus.subauratus"                   
+ [584] "Halictus.tectus"                       
+ [585] "Halictus.tetrazonius"                  
+ [586] "Halictus.tripartitus"                  
+ [587] "Halictus.virgatellus"                  
+ [588] "Halyctus sp1"                          
+ [589] "Heriades.coelostomus"                  
+ [590] "Heriades.crenulatus"                   
+ [591] "Heriades.dalmaticus"                   
+ [592] "Heriades.trucorum"                     
+ [593] "Hoplitis.albifrons"                    
+ [594] "Hoplitis.crenulata"                    
+ [595] "Hoplitis.curvipes"                     
+ [596] "Hoplitis.cylindricus"                  
+ [597] "Hoplitis.fabrei"                       
+ [598] "Hoplitis.fulgida"                      
+ [599] "Hoplitis.manicata"                     
+ [600] "Hoplitis.pallicornis"                  
+ [601] "Hoplitis.pici"                         
+ [602] "Hoplitis.producta"                     
+ [603] "Hoplitis.robusta"                      
+ [604] "Hoplitis.rufohirta"                    
+ [605] "Hoplitis.sp1"                          
+ [606] "Hoplitis.sp2"                          
+ [607] "Hoplitis.sybarita"                     
+ [608] "Hylaeus.agilis"                        
+ [609] "Hylaeus.annularis"                     
+ [610] "Hylaeus.annulatus"                     
+ [611] "Hylaeus.annullatus"                    
+ [612] "Hylaeus.basalis"                       
+ [613] "Hylaeus.bifasciatus"                   
+ [614] "Hylaeus.brevicornis"                   
+ [615] "Hylaeus.coloradensis"                  
+ [616] "Hylaeus.ellipticus"                    
+ [617] "Hylaeus.floralis"                      
+ [618] "Hylaeus.globula"                       
+ [619] "Hylaeus.imparilis"                     
+ [620] "Hylaeus.insularum"                     
+ [621] "Hylaeus.lineolatus"                    
+ [622] "Hylaeus.macilentus"                    
+ [623] "Hylaeus.meridionalis"                  
+ [624] "Hylaeus.modestus"                      
+ [625] "Hylaeus.nigritus"                      
+ [626] "Hylaeus.nippon"                        
+ [627] "Hylaeus.noomen"                        
+ [628] "Hylaeus.paradifformis"                 
+ [629] "Hylaeus.personatellus"                 
+ [630] "Hylaeus.pictus"                        
+ [631] "Hylaeus.punctatus"                     
+ [632] "Hylaeus.relegatus"                     
+ [633] "Hylaeus.semipersonatus"                
+ [634] "Hylaeus.signatus"                      
+ [635] "Hylaeus.sp1"                           
+ [636] "Hylaeus.sp1 M"                         
+ [637] "Hylaeus.sp2"                           
+ [638] "Hylaeus.stevensi"                      
+ [639] "Hylaeus.submonticola"                  
+ [640] "Hylaeus.thoracius"                     
+ [641] "Hylaeus.variegatus"                    
+ [642] "Hyleaus.canariensis"                   
+ [643] "Lasiogfossum apristum"                 
+ [644] "Lasiogfossum laeviventre"              
+ [645] "Lasiogfossum problematicum"            
+ [646] "Lasioglossum. quebecense"              
+ [647] "Lasioglossum.(Dialictus) aff. Knereri" 
+ [648] "Lasioglossum.(Dialictus) hudsoniellum" 
+ [649] "Lasioglossum.(Dialictus) lazulis"      
+ [650] "Lasioglossum.(Dialictus) mixed spp"    
+ [651] "Lasioglossum.(Dialictus) pacatum"      
+ [652] "Lasioglossum.(Dialictus) perpunctatum" 
+ [653] "Lasioglossum.(Dialictus) pruinosum"    
+ [654] "Lasioglossum.(Dialictus) ruidosense"   
+ [655] "Lasioglossum.(Dialictus) semicaeruleum"
+ [656] "Lasioglossum.(Dialictus) tenax"        
+ [657] "Lasioglossum.(Hemihalictus) sp"        
+ [658] "Lasioglossum.(Hemihalictus) spp"       
+ [659] "Lasioglossum.actifrons"                
+ [660] "Lasioglossum.aegyptiellun"             
+ [661] "Lasioglossum.aeratum"                  
+ [662] "Lasioglossum.aff. Boreale"             
+ [663] "Lasioglossum.affine"                   
+ [664] "Lasioglossum.albipes"                  
+ [665] "Lasioglossum.albocinctum"              
+ [666] "Lasioglossum.allodalum"                
+ [667] "Lasioglossum.amamiensis"               
+ [668] "Lasioglossum.anellum"                  
+ [669] "Lasioglossum.apristum"                 
+ [670] "Lasioglossum.atroglaucum"              
+ [671] "Lasioglossum.baleicum"                 
+ [672] "Lasioglossum.birkmanni"                
+ [673] "Lasioglossum.brevicome"                
+ [674] "Lasioglossum.calceatum"                
+ [675] "Lasioglossum.callizonium"              
+ [676] "Lasioglossum.chalcodes"                
+ [677] "Lasioglossum.convexiusculum"           
+ [678] "Lasioglossum.crassepunctatum"          
+ [679] "Lasioglossum.cressonii"                
+ [680] "Lasioglossum.cristula donatum"         
+ [681] "Lasioglossum.duplex"                   
+ [682] "Lasioglossum.ephialtum"                
+ [683] "Lasioglossum.evylaeus"                 
+ [684] "Lasioglossum.exiliceps"                
+ [685] "Lasioglossum.forbesii"                 
+ [686] "Lasioglossum.foxii"                    
+ [687] "Lasioglossum.fratellum"                
+ [688] "Lasioglossum.fuscipenne"               
+ [689] "Lasioglossum.gorkiense"                
+ [690] "Lasioglossum.harmandi"                 
+ [691] "Lasioglossum.heterorhinum"             
+ [692] "Lasioglossum.hirashimae"               
+ [693] "Lasioglossum.hitchensi"                
+ [694] "Lasioglossum.imitatum"                 
+ [695] "Lasioglossum.immunitum"                
+ [696] "Lasioglossum.inconditum"               
+ [697] "Lasioglossum.japonicum"                
+ [698] "Lasioglossum.kansuense"                
+ [699] "Lasioglossum.laeviventre"              
+ [700] "Lasioglossum.laticeps hellenicum"      
+ [701] "Lasioglossum.leucopus"                 
+ [702] "Lasioglossum.leucozonium"              
+ [703] "Lasioglossum.limbelloides"             
+ [704] "Lasioglossum.limbellum"                
+ [705] "Lasioglossum.lineare"                  
+ [706] "Lasioglossum.littorale"                
+ [707] "Lasioglossum.loetum "                  
+ [708] "Lasioglossum.lucidulum"                
+ [709] "Lasioglossum.macoupinens"              
+ [710] "Lasioglossum.mahense"                  
+ [711] "Lasioglossum.malachurum"               
+ [712] "Lasioglossum.marginatum"               
+ [713] "Lasioglossum.mediterraneum"            
+ [714] "Lasioglossum.mesosclerum"              
+ [715] "Lasioglossum.mutilum"                  
+ [716] "Lasioglossum.nigripes"                 
+ [717] "Lasioglossum.nipponense"               
+ [718] "Lasioglossum.nitidulum.fudakowskii"    
+ [719] "Lasioglossum.nutilum"                  
+ [720] "Lasioglossum.oblongum"                 
+ [721] "Lasioglossum.obscuratum acerbum"       
+ [722] "Lasioglossum.obscurum"                 
+ [723] "Lasioglossum.occidens"                 
+ [724] "Lasioglossum.pallens"                  
+ [725] "Lasioglossum.pauxillum"                
+ [726] "Lasioglossum.percrassicepes"           
+ [727] "Lasioglossum.politum"                  
+ [728] "Lasioglossum.prasinum"                 
+ [729] "Lasioglossum.problematicum"            
+ [730] "Lasioglossum.proximatum"               
+ [731] "Lasioglossum.punctatissimum"           
+ [732] "Lasioglossum.pygmaeum.patulum"         
+ [733] "Lasioglossum.quadrinotatum"            
+ [734] "Lasioglossum.scitulum"                 
+ [735] "Lasioglossum.sexmaculatum"             
+ [736] "Lasioglossum.sexstrigatum"             
+ [737] "Lasioglossum.sibiriacum"               
+ [738] "Lasioglossum.sisymbrii"                
+ [739] "Lasioglossum.sordidum"                 
+ [740] "Lasioglossum.sp"                       
+ [741] "Lasioglossum.sp.1"                     
+ [742] "Lasioglossum.sp.K1"                    
+ [743] "Lasioglossum.sp.K2"                    
+ [744] "Lasioglossum.sp1"                      
+ [745] "Lasioglossum.sp10"                     
+ [746] "Lasioglossum.sp11"                     
+ [747] "Lasioglossum.sp12"                     
+ [748] "Lasioglossum.sp2"                      
+ [749] "Lasioglossum.sp3"                      
+ [750] "Lasioglossum.sp4"                      
+ [751] "Lasioglossum.sp5"                      
+ [752] "Lasioglossum.sp6"                      
+ [753] "Lasioglossum.sp7"                      
+ [754] "Lasioglossum.sp8"                      
+ [755] "Lasioglossum.sp9"                      
+ [756] "Lasioglossum.subaenescens asiaticum"   
+ [757] "Lasioglossum.subopacum"                
+ [758] "Lasioglossum.subviridatum"             
+ [759] "Lasioglossum.taniolellum"              
+ [760] "Lasioglossum.tegulare"                 
+ [761] "Lasioglossum.transitorium"             
+ [762] "Lasioglossum.transpositum"             
+ [763] "Lasioglossum.villosulum"               
+ [764] "Lasioglossum.viride"                   
+ [765] "Lasioglossum.weemsi"                   
+ [766] "Lasioglossum.zonulum"                  
+ [767] "Lassioglossum.fuscipenne"              
+ [768] "Leioproctus.abdominalis"               
+ [769] "Leioproctus.boltonii"                  
+ [770] "Leioproctus.friesei"                   
+ [771] "Leioproctus.fulvescens"                
+ [772] "Leioproctus.imitatus"                  
+ [773] "Leioproctus.indigoticus"               
+ [774] "Leioproctus.maritimus"                 
+ [775] "Leioproctus.monticola"                 
+ [776] "Leioproctus.sp1"                       
+ [777] "Leioproctus.sp2"                       
+ [778] "Leioproctus.sp3"                       
+ [779] "Leioproctus.sp4"                       
+ [780] "Leioproctus.sp5"                       
+ [781] "Liphanthus.sabulosus"                  
+ [782] "Liphanthus.sp2"                        
+ [783] "Liphantus.inornatus"                   
+ [784] "Liphantus.nigritus"                    
+ [785] "Liphantus.sp1"                         
+ [786] "Liphantus.sp2"                         
+ [787] "Lonchopria.robertsi"                   
+ [788] "Lonchopria.sp"                         
+ [789] "Manuelia.gayi"                         
+ [790] "Manuelia.postica"                      
+ [791] "Maurocolletes.incahuasi"               
+ [792] "Maurocolletes.ruizi"                   
+ [793] "Maurocolletes.sicheli"                 
+ [794] "Megachile.6"                           
+ [795] "Megachile.addenda"                     
+ [796] "Megachile.canariensis"                 
+ [797] "Megachile.frigida"                     
+ [798] "Megachile.gemula albula"               
+ [799] "Megachile.generosa"                    
+ [800] "Megachile.giraudi.bicoloriventris"     
+ [801] "Megachile.inermis"                     
+ [802] "Megachile.japonica"                    
+ [803] "Megachile.kobensis"                    
+ [804] "Megachile.leachella"                   
+ [805] "Megachile.leucographa"                 
+ [806] "Megachile.maritima"                    
+ [807] "Megachile.melanophaea"                 
+ [808] "Megachile.mendica"                     
+ [809] "Megachile.nigella"                     
+ [810] "Megachile.nipponica"                   
+ [811] "Megachile.obscurior"                   
+ [812] "Megachile.okinawana"                   
+ [813] "Megachile.oligolege"                   
+ [814] "Megachile.pacifica"                    
+ [815] "Megachile.petulans"                    
+ [816] "Megachile.pilidens"                    
+ [817] "Megachile.pseudocentron"               
+ [818] "Megachile.pseudomonticola"             
+ [819] "Megachile.pugnata"                     
+ [820] "Megachile.relativa"                    
+ [821] "Megachile.remota"                      
+ [822] "Megachile.remota sakagamii"            
+ [823] "Megachile.semirufa"                    
+ [824] "Megachile.seychellensis"               
+ [825] "Megachile.sp"                          
+ [826] "Megachile.sp1"                         
+ [827] "Megachile.sp2"                         
+ [828] "Megachile.sp3"                         
+ [829] "Megachile.sp4"                         
+ [830] "Megachile.sp5"                         
+ [831] "Megachile.strophostylis"               
+ [832] "Megachile.subalbuta"                   
+ [833] "Megachile.sumizome"                    
+ [834] "Megachile.texana"                      
+ [835] "Megachile.tsurugensis"                 
+ [836] "Megachile.tsururgensis"                
+ [837] "Megachile.versicolor"                  
+ [838] "Megachile.vidua"                       
+ [839] "Megachile.villipes"                    
+ [840] "Megachile.willughbiella"               
+ [841] "Megachile.wootoni"                     
+ [842] "Megachile.wootoni calogaster"          
+ [843] "Megachile.yasumatsui"                  
+ [844] "Melectoides.cockerelli"                
+ [845] "Melipona.asilvai"                      
+ [846] "Melipona.compresipes"                  
+ [847] "Melipona.favosa"                       
+ [848] "Melipona.quadrifasciata"               
+ [849] "Melipona.scutellaris"                  
+ [850] "Melissodes"                            
+ [851] "Melissodes.agilis"                     
+ [852] "Melissodes.aurigenia"                  
+ [853] "Melissodes.autumnalis"                 
+ [854] "Melissodes.cnici"                      
+ [855] "Melissodes.coloradensis"               
+ [856] "Melissodes.comptoides"                 
+ [857] "Melissodes.confusus"                   
+ [858] "Melissodes.coreopsis"                  
+ [859] "Melissodes.fremonti"                   
+ [860] "Melissodes.oligolege"                  
+ [861] "Melissodes.pallida"                    
+ [862] "Melissodes.simillima"                  
+ [863] "Melissodes.sp.1"                       
+ [864] "Melissodes.sp1"                        
+ [865] "Melissodes.vernoniana"                 
+ [866] "Melissoptila.sp"                       
+ [867] "Mesonychium.jenseni"                   
+ [868] "Nomia.pavonula"                        
+ [869] "Osmia.abnormis"                        
+ [870] "Osmia.albolateralis"                   
+ [871] "Osmia.apicata"                         
+ [872] "Osmia.atriventris"                     
+ [873] "Osmia.aurulenta"                       
+ [874] "Osmia.bella"                           
+ [875] "Osmia.brevis"                          
+ [876] "Osmia.bruneri"                         
+ [877] "Osmia.bucephala"                       
+ [878] "Osmia.caerulescens"                    
+ [879] "Osmia.canariensis"                     
+ [880] "Osmia.collinsiae"                      
+ [881] "Osmia.coloradella"                     
+ [882] "Osmia.conjucta"                        
+ [883] "Osmia.cornifrons"                      
+ [884] "Osmia.densa"                           
+ [885] "Osmia.fulgida"                         
+ [886] "Osmia.fulviventris"                    
+ [887] "Osmia.hypoleuca"                       
+ [888] "Osmia.illinoensis"                     
+ [889] "Osmia.imaii"                           
+ [890] "Osmia.inermis"                         
+ [891] "Osmia.latrellei"                       
+ [892] "Osmia.lignaria"                        
+ [893] "Osmia.longiceps"                       
+ [894] "Osmia.megacephala"                     
+ [895] "Osmia.melanogaster"                    
+ [896] "Osmia.melanotricha"                    
+ [897] "Osmia.moreensis"                       
+ [898] "Osmia.mustelina"                       
+ [899] "Osmia.nana"                            
+ [900] "Osmia.nicosiana"                       
+ [901] "Osmia.nigrifrons"                      
+ [902] "Osmia.nigriventris"                    
+ [903] "Osmia.orientalis"                      
+ [904] "Osmia.paradisica"                      
+ [905] "Osmia.pentstemonis"                    
+ [906] "Osmia.phaceliae"                       
+ [907] "Osmia.propinqua"                       
+ [908] "Osmia.proxima"                         
+ [909] "Osmia.pumila"                          
+ [910] "Osmia.pusilla"                         
+ [911] "Osmia.rohweri"                         
+ [912] "Osmia.signata"                         
+ [913] "Osmia.simillima"                       
+ [914] "Osmia.sp1"                             
+ [915] "Osmia.spA"                             
+ [916] "Osmia.spB"                             
+ [917] "Osmia.spC"                             
+ [918] "Osmia.spD"                             
+ [919] "Osmia.spE"                             
+ [920] "Osmia.spF"                             
+ [921] "Osmia.spp"                             
+ [922] "Osmia.subaustralis"                    
+ [923] "Osmia.subcornuta"                      
+ [924] "Osmia.taurus"                          
+ [925] "Osmia.versicolor"                      
+ [926] "Osmia.wardiana"                        
+ [927] "Panurgineae.sp"                        
+ [928] "Panurginus.cressoniellus"              
+ [929] "Panurginus.ineptus"                    
+ [930] "Panurginus.sp1"                        
+ [931] "Panurginus.spp"                        
+ [932] "Panurgus.sp1"                          
+ [933] "Paralictus cephalicus"                 
+ [934] "Paralictus platyparius"                
+ [935] "Paralictus simplex"                    
+ [936] "Partamona.sp"                          
+ [937] "Peponapis.pruinosa"                    
+ [938] "Perdita.8"                             
+ [939] "Plebeia.sp"                            
+ [940] "Policana.albopilosa"                   
+ [941] "Psaenythia.philantoides"               
+ [942] "Psaenythia.rufipes"                    
+ [943] "Pseudagapostemon.sp"                   
+ [944] "Pseudapis.diversipes"                  
+ [945] "Pseudapis.monstrosa"                   
+ [946] "Pseudapis.unidentata"                  
+ [947] "PseudoAnthidium.alpinum"               
+ [948] "PseudoAnthidium.cribratum"             
+ [949] "PseudoAnthidium.lituratum"             
+ [950] "PseudoHeriades.asiaticus"              
+ [951] "PseudoHeriades.hofferi"                
+ [952] "Pseudopanurgus.bakeri"                 
+ [953] "Pseudopanurgus.didirupa"               
+ [954] "Psithyrus.vest"                        
+ [955] "Ptilothrix.bombiformus"                
+ [956] "Pyrobombus.impatiens"                  
+ [957] "PyroBombus.perplexus"                  
+ [958] "PyroBombus.sandersoni"                 
+ [959] "Pyrobombus.ternarius"                  
+ [960] "RhodAnthidium.caturigense"             
+ [961] "Rhodanthidium.septemdentatum"          
+ [962] "Rophites algirus graecus"              
+ [963] "Rophites.quinquespinosus"              
+ [964] "Ruizantheda.divaricata"                
+ [965] "Ruizantheda.mutabilis"                 
+ [966] "Ruizantheda.nigrocaerulea"             
+ [967] "Ruizantheda.proxima"                   
+ [968] "StenAnthidium.espinosai"               
+ [969] "Svastra.sp"                            
+ [970] "Svastrides.bauni"                      
+ [971] "Svastrides.melanura"                   
+ [972] "Svastrides.zebra"                      
+ [973] "Systropha.planidens"                   
+ [974] "Trichothurgus.laticeps"                
+ [975] "Trichoturgus.sp2"                      
+ [976] "Trigona"                               
+ [977] "Trigona.fulviventris"                  
+ [978] "Trigona.spinipes"                      
+ [979] "Trigonisca.intermedia"                 
+ [980] "Trigonisca.sp"                         
+ [981] "Willinkapis.chalybaea"                 
+ [982] "XanthoColletes.sp"                     
+ [983] "Xenoglossa.strenua"                    
+ [984] "Xenoglossodes albata"                  
+ [985] "Xylocopa.amamensis"                    
+ [986] "Xylocopa.appendiculata"                
+ [987] "Xylocopa.appendiculata circumvolan"    
+ [988] "Xylocopa.atamisquensis"                
+ [989] "Xylocopa.augusti"                      
+ [990] "Xylocopa.caffra"                       
+ [991] "Xylocopa.cantabrita"                   
+ [992] "Xylocopa.ciliata"                      
+ [993] "Xylocopa.darwini"                      
+ [994] "Xylocopa.fenestrata"                   
+ [995] "Xylocopa.fimbriata"                    
+ [996] "Xylocopa.grisescens"                   
+ [997] "Xylocopa.iris"                         
+ [998] "Xylocopa.sp1"                          
+ [999] "Xylocopa.splendidula"                  
+[1000] "Xylocopa.violacea"                     
+[1001] "Xylocopa.virginica virginica"          </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>especies<span class="sc">$</span>genero <span class="ot">&lt;-</span> <span class="fu">substr</span>(especies<span class="sc">$</span>especie, <span class="at">start =</span> <span class="dv">1</span>, <span class="at">stop =</span> <span class="fu">regexpr</span>(<span class="at">pattern =</span> <span class="st">"."</span>, <span class="at">text =</span> especies<span class="sc">$</span>especie, <span class="at">fixed =</span> <span class="cn">TRUE</span>)<span class="sc">-</span><span class="dv">1</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>especies.tabla <span class="ot">&lt;-</span> <span class="fu">unique</span>(especies[,<span class="fu">c</span>(<span class="st">"Familia"</span>,<span class="st">"genero"</span>,<span class="st">"especie"</span>)])</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(especies.tabla)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  Familia    genero        especie            
+  &lt;chr&gt;      &lt;chr&gt;         &lt;chr&gt;              
+1 Colletidae Colletes      Colletes.araucariae
+2 Apidae     Centris       Centris.brethesi   
+3 Halictidae Caenohalictus Caenohalictus.sp   
+4 Colletidae Colletes      Colletes.bicolor   
+5 Colletidae Colletes      Colletes.brethesi  
+6 Colletidae Colletes      Colletes.cognatus  </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(especies.tabla) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"familia"</span>,<span class="st">"genero"</span>,<span class="st">"especie"</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>especies.tabla</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1,003 × 3
+   familia      genero        especie                
+   &lt;chr&gt;        &lt;chr&gt;         &lt;chr&gt;                  
+ 1 Colletidae   Colletes      Colletes.araucariae    
+ 2 Apidae       Centris       Centris.brethesi       
+ 3 Halictidae   Caenohalictus Caenohalictus.sp       
+ 4 Colletidae   Colletes      Colletes.bicolor       
+ 5 Colletidae   Colletes      Colletes.brethesi      
+ 6 Colletidae   Colletes      Colletes.cognatus      
+ 7 Megachilidae Megachile     Megachile.leucographa  
+ 8 Megachilidae Megachile     Megachile.nigella      
+ 9 Megachilidae Megachile     Megachile.obscurior    
+10 Megachilidae Megachile     Megachile.pseudocentron
+# ℹ 993 more rows</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>baseDatos<span class="sc">$</span>especies <span class="ot">&lt;-</span> especies.tabla</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

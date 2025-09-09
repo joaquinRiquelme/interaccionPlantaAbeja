@@ -1,0 +1,50 @@
+---
+title: "Actualización de base de datos interacción planta-abeja"
+author: "Katherine Collao, Joaquin Riquelme, Maureen Murúa"
+format: html
+editor: visual
+---
+
+## Contexto
+
+Se actualiza la base de datos de proyecto de investigacion de interaccion entre plantas y abejas.
+
+Se utiliza como base la estructura de base de datos provista en .....
+
+```{r base}
+baseDatos <- list()
+# load("baseDatos.RDS")
+
+```
+
+## Especies
+
+La tabla especie se poblará a partir de los valores únicos de la matriz general.
+
+```{r especies}
+matriz.general <- readxl::read_excel("Matriz_general.xlsx", sheet = 1, skip = 1)[,-1]
+
+head(matriz.general)
+especies <- matriz.general[,c("Abeja","Familia")]
+# especies$especie = substr(especies$Abeja,start = 1, stop = nchar(as.character(especies$Abeja))-5)
+especies$Abeja <- gsub(pattern = "-", replacement = "_", x = especies$Abeja)
+especies$especie <-  substr(especies$Abeja,start = 1, stop = regexpr(pattern = "_", text = especies$Abeja)-1)
+head(especies)
+unique(especies$Familia)
+head(sort(unique(especies$Abeja)))
+sort(unique(especies$especie))
+especies$genero <- substr(especies$especie, start = 1, stop = regexpr(pattern = ".", text = especies$especie, fixed = TRUE)-1)
+
+especies.tabla <- unique(especies[,c("Familia","genero","especie")])
+head(especies.tabla)
+names(especies.tabla) <- c("familia","genero","especie")
+especies.tabla
+
+baseDatos$especies <- especies.tabla
+
+write.csv(baseDatos$especies, "tablas/especies.csv", row.names = FALSE)
+saveRDS(baseDatos, file = "baseDatos.RDS")
+
+```
+
+
