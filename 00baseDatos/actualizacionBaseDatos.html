@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="especies" class="level2">
 <h2 class="anchored" data-anchor-id="especies">Especies</h2>
-<p>La tabla especie se poblara a partir de los valores unicos de matrix</p>
+<p>La tabla especie se poblará a partir de los valores únicos de la matriz general.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>matriz.general <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_excel</span>(<span class="st">"Matriz_general.xlsx"</span>, <span class="at">sheet =</span> <span class="dv">1</span>, <span class="at">skip =</span> <span class="dv">1</span>)[,<span class="sc">-</span><span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -1202,7 +1202,2389 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 10 Megachilidae Megachile     Megachile.pseudocentron
 # ℹ 993 more rows</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>baseDatos<span class="sc">$</span>especies <span class="ot">&lt;-</span> especies.tabla</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>baseDatos<span class="sc">$</span>especies <span class="ot">&lt;-</span> especies.tabla</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(baseDatos<span class="sc">$</span>especies, <span class="st">"tablas/especies.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="matrices-bipartitas" class="level2">
+<h2 class="anchored" data-anchor-id="matrices-bipartitas">Matrices bipartitas</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>fuentes <span class="ot">&lt;-</span> <span class="fu">unique</span>(matriz.general<span class="sc">$</span>ID)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>fuentes <span class="ot">&lt;-</span> <span class="fu">substr</span>(<span class="at">x =</span> fuentes, <span class="at">start =</span> <span class="fu">regexpr</span>(<span class="at">pattern =</span> <span class="st">"_"</span>, <span class="at">text =</span> fuentes)<span class="sc">+</span><span class="dv">1</span>,  <span class="at">stop =</span> <span class="fu">nchar</span>(fuentes))</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>fuentes <span class="ot">&lt;-</span> fuentes[<span class="dv">2</span><span class="sc">:</span><span class="dv">48</span>]</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(fuentes.i <span class="cf">in</span> fuentes){</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>  file.fuente <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="st">"datosOriginales/"</span>)[</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">grep</span>(<span class="at">pattern =</span> fuentes.i, </span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>         <span class="fu">substr</span>(<span class="at">x =</span> <span class="fu">list.files</span>(<span class="st">"datosOriginales/"</span>), <span class="dv">1</span>,<span class="dv">5</span>))]</span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(file.fuente)</span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>  archivos <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="fu">paste</span>(<span class="st">"datosOriginales/"</span>,file.fuente,<span class="at">sep=</span><span class="st">""</span>))</span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>  archivos.csv <span class="ot">&lt;-</span> archivos[<span class="fu">grep</span>(<span class="at">pattern =</span> <span class="st">".csv"</span>, <span class="at">x =</span> archivos)]</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>  archivo.csv.i <span class="ot">&lt;-</span> archivos.csv[<span class="fu">grep</span>(<span class="at">pattern =</span> fuentes.i, <span class="at">x =</span> archivos.csv)]</span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>  matriz.i <span class="ot">&lt;-</span> </span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">read.csv</span>(<span class="fu">file.path</span>(<span class="st">"datosOriginales/"</span>,file.fuente,archivo.csv.i))</span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a>  matriz.i2 <span class="ot">&lt;-</span> </span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">read.csv2</span>(<span class="fu">file.path</span>(<span class="st">"datosOriginales/"</span>,file.fuente,archivo.csv.i))</span>
+<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">ncol</span>(matriz.i)<span class="sc">&gt;</span><span class="dv">1</span>){baseDatos[[<span class="fu">paste</span>(<span class="st">"matriz"</span>,fuentes.i,<span class="at">sep=</span><span class="st">"."</span>)]] <span class="ot">&lt;-</span> matriz.i}</span>
+<span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">ncol</span>(matriz.i)<span class="sc">==</span><span class="dv">1</span>){baseDatos[[<span class="fu">paste</span>(<span class="st">"matriz"</span>,fuentes.i,<span class="at">sep=</span><span class="st">"."</span>)]] <span class="ot">&lt;-</span> matriz.i2}</span>
+<span id="cb20-25"><a href="#cb20-25" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb20-26"><a href="#cb20-26" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb20-27"><a href="#cb20-27" aria-hidden="true" tabindex="-1"></a>  <span class="co"># if(isTRUE(file.fuente)){</span></span>
+<span id="cb20-28"><a href="#cb20-28" aria-hidden="true" tabindex="-1"></a>    <span class="co"># files.csv &lt;- grep(pattern = ".csv",</span></span>
+<span id="cb20-29"><a href="#cb20-29" aria-hidden="true" tabindex="-1"></a>                     <span class="co"># x = list.files(paste("datosOriginales/",file.fuente,sep="")))</span></span>
+<span id="cb20-30"><a href="#cb20-30" aria-hidden="true" tabindex="-1"></a>  <span class="co"># }</span></span>
+<span id="cb20-31"><a href="#cb20-31" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb20-32"><a href="#cb20-32" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "001_Arroyo_1982"
+[1] "002_Arroyo_1982"
+[1] "003_Arroyo_1982"
+[1] "004_Barret_1987"
+[1] "005_Clements_1923"
+[1] "006_Dicks et al_2002_Hickling"
+[1] "007_Dicks et al_ 2002_Shelfanger"
+[1] "008_Dupont et al_2003"
+[1] "009_Eberling &amp; Olessen_1999"
+[1] "010_Eberling &amp; Olesen_no publicados"
+[1] "012_Olesen et al_ datos no publicados-Garajonai, Gomero, España- red binaria"
+[1] "013_Ollerton_ et al_2003"
+[1] "014_Hocking _1968"
+[1] "015_Petanidou_1991"
+[1] "016_Herrera_1988_Doña Ana"
+[1] "017_Memmot_1999"
+[1] "018_Olesen et al_ datos no publicados _Dinamarka"
+[1] "019_Inouye_1988"
+[1] "020_Kevan et al_1970"
+[1] "021_Kato et al_1990"
+[1] "022_Medan et al_2002_Laguna Diamante"
+[1] "023_Medan et al_2002_Rio Blanco"
+[1] "024_Mosquin_1967"
+[1] "025_Motten_1982"
+[1] "026_Mcmullen_1993"
+[1] "027_Primack_1983_New Zeland"
+[1] "028_Primack_1983_Cass, New Zeland"
+[1] "029_Primack_1983_Craigieburn_New Zeland"
+[1] "030_Ramirez  &amp; Brito_1992"
+[1] "031_Ramirez_1989"
+[1] "032_Schemske_1978"
+[1] "033_Small_1978"
+[1] "034_Smith-Ramirez et al_2005"
+[1] "035_Percival_1974"
+[1] "036_Olesen _datos no publicados_Azores - red binaria"
+[1] "037_Montero_2005_1"
+[1] "038_Montero_2005_2"
+[1] "039_Stald_2003"
+[1] "040_Ingversen_2006"
+[1] "041_Ingversen_2006 - II"
+[1] "042_Philipp_2006"
+[1] "043_Montero_2005_3"
+[1] "044_Kato_2000_Amami-Ohsima"
+[1] "046_Bundgaard,M._2003"
+[1] "047_Dupont and Olesen_2009"
+[1] "049_Beck, S._2006"
+[1] "050_Stald, L_2003_ data 50"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>baseDatos<span class="sc">$</span>matriz<span class="fl">.001</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                               X Alloscirtetica_rufitarsis Alloscirtetica_gayi
+1          Alstromemeria_pallida                         0                   1
+2          Hippeastrum_uniflorum                         0                   0
+3           Leucocoryne_ixioides                         0                   0
+4         Leucocoryne_pauciflora                         0                   0
+5           Nothoscordum_andinum                         0                   0
+6            Rhodophiala_montana                         0                   0
+7             Tristagama_bivalve                         0                   0
+8              Tristagama_nivale                         0                   0
+9             Tristagama_sessile                         0                   0
+10         Berberis_empetrifolia                         0                   0
+11              Berberis_montana                         0                   0
+12          Cynoglossum_creticum                         0                   0
+13       Trichocereus_chiloensis                         0                   0
+14             Cerastium_arvense                         0                   0
+15    Chaetanthera_euphrasioides                         0                   0
+16      Chaetanthera_microphylla                         0                   0
+17      Chuquiraga_oppositifolia                         0                   0
+18 Haplopappus_chysanthemifolius                         0                   0
+19          Haplopappus_sericeus                         0                   0
+20                Hypochoeris_sp                         0                   0
+21           Leuceria_landbeckii                         0                   0
+22                  Madia_sativa                         0                   0
+23              Mustisia_acerosa                         0                   0
+24              Mustisia_sinuata                         0                   0
+25             Mustisia_subulata                         0                   0
+26          Nardophyllum_lanatum                         0                   0
+27        Nassauvia_heterophylla                         0                   0
+28          Perezia_carthamoides                         0                   0
+29        Senecio_bustillosianus                         0                   0
+30          Senecio_erucaeformis                         0                   0
+31             Senecio_francisci                         0                   0
+32          Senecio_lithostaurus                         0                   0
+33             Cardamine_nivalis                         0                   0
+34        Lepidium_suffruticosum                         0                   0
+35       Euphorbia_portulacoides                         0                   0
+36            Erodium_cicutarium                         0                   0
+37              Phacelia_secunda                         1                   0
+38        Sisyrinchium_arenarium                         0                   0
+39          Sisyrinchium_junceum                         0                   0
+40        Sisyrinchium_philippii                         0                   0
+41      Solenomelus_sisyrinchium                         0                   0
+42            Stachys_albicaulis                         1                   1
+43         Adesmia_aconcaguensis                         0                   0
+44           Adesmia_brachysemon                         0                   0
+45              Adesmia_conferta                         1                   0
+46                Adesmia_exilis                         0                   0
+47               Adesmia_montana                         0                   0
+48           Adesmia_radicifolia                         0                   0
+49      Anarthrophyllum_cumingii                         0                   0
+50        Astragalus_curvicaulis                         0                   0
+51                 Astragalus_sp                         0                   0
+52           Lathyrus_subandinus                         0                   0
+53           Lupinus_microcarpus                         0                   0
+54            Loasa_heterophylla                         0                   0
+55               Loasa_sigmoidea                         0                   0
+56            Scypanthus_elegans                         0                   0
+57     Malesherbia_linearifolius                         0                   0
+58               Clarkia_tenella                         0                   0
+59             Oenothera_acaulis                         0                   0
+60               Oxalis_geminata                         0                   0
+61                    Oxalis_sp2                         0                   0
+62              Collomia_biflora                         0                   0
+63           Calandrinia_affinis                         0                   0
+64     Calandrinia_uspallatensis                         0                   0
+65          Barneoudia_chilensis                         0                   0
+66              Barneoudia_major                         0                   0
+67            Acaena_pinnatifida                         0                   0
+68           Tetraglochin_alatum                         0                   0
+69       Quinchamalium_chilensis                         0                   0
+70       Calceolaria_arachnoides                         0                   0
+71           Calceolaria_biflora                         0                   0
+72           Calceolaria_montana                         0                   0
+73                Calceolaria_sp                         0                   0
+74          Schizanthus_garhamii                         0                   0
+75           Schizanthus_hookeri                         0                   0
+76             Solanum_tomatillo                         0                   0
+77               Salpiglossus_sp                         0                   0
+78        Tropaeolum_polyphyllum                         0                   0
+79      Tropaeolum_sessilifolium                         0                   0
+80           Tropaeolum_tricolor                         0                   0
+81        Asteriscium_aemocarpon                         0                   0
+82       Bowlesia_tropaeolifolia                         0                   0
+83              Mulinum_spinosum                         0                   0
+84           Sanicula_graveolens                         0                   0
+85           Valeriana_gracileps                         0                   0
+86              Verbena_scoparia                         0                   0
+87            Viola_atropurpurea                         0                   0
+   Alloscirtetica_sp Andinus_venustus Anthidium_chilensis Anthidium_decaspilum
+1                  1                0                   0                    0
+2                  0                0                   0                    0
+3                  0                0                   0                    0
+4                  0                0                   0                    0
+5                  0                0                   0                    0
+6                  0                0                   0                    0
+7                  0                0                   0                    0
+8                  0                0                   0                    0
+9                  0                0                   0                    0
+10                 0                0                   0                    0
+11                 0                0                   0                    0
+12                 0                0                   0                    0
+13                 0                0                   0                    0
+14                 0                0                   0                    0
+15                 0                0                   0                    0
+16                 0                0                   0                    0
+17                 0                0                   0                    0
+18                 0                0                   0                    0
+19                 0                0                   0                    0
+20                 0                0                   0                    0
+21                 0                0                   0                    0
+22                 0                0                   0                    0
+23                 0                0                   0                    0
+24                 0                0                   0                    0
+25                 0                0                   1                    0
+26                 0                0                   0                    0
+27                 0                0                   0                    0
+28                 0                0                   0                    0
+29                 0                0                   1                    0
+30                 0                1                   0                    0
+31                 0                0                   0                    0
+32                 1                0                   0                    0
+33                 0                0                   0                    0
+34                 0                0                   0                    0
+35                 0                0                   0                    0
+36                 0                0                   0                    0
+37                 1                0                   1                    1
+38                 0                0                   1                    0
+39                 0                0                   0                    0
+40                 0                0                   0                    0
+41                 0                0                   0                    0
+42                 1                0                   0                    0
+43                 0                0                   0                    0
+44                 0                0                   0                    1
+45                 1                0                   1                    1
+46                 0                0                   0                    0
+47                 0                0                   0                    0
+48                 1                0                   0                    1
+49                 0                0                   0                    0
+50                 1                0                   0                    0
+51                 1                0                   0                    0
+52                 0                0                   0                    0
+53                 0                0                   0                    0
+54                 0                0                   1                    0
+55                 0                0                   0                    0
+56                 1                0                   1                    0
+57                 0                0                   0                    0
+58                 0                0                   0                    0
+59                 0                0                   0                    0
+60                 0                0                   0                    0
+61                 0                0                   0                    0
+62                 0                0                   0                    0
+63                 0                0                   0                    0
+64                 0                0                   1                    0
+65                 0                0                   0                    0
+66                 0                0                   0                    0
+67                 0                0                   0                    0
+68                 0                0                   0                    0
+69                 0                0                   0                    0
+70                 0                0                   0                    0
+71                 0                0                   0                    0
+72                 0                0                   0                    0
+73                 0                0                   0                    0
+74                 0                0                   0                    0
+75                 0                0                   0                    0
+76                 0                0                   0                    0
+77                 0                0                   0                    0
+78                 0                0                   0                    0
+79                 0                0                   0                    0
+80                 0                0                   0                    0
+81                 0                0                   0                    0
+82                 0                0                   0                    0
+83                 0                0                   0                    0
+84                 0                0                   0                    0
+85                 0                0                   0                    0
+86                 0                0                   0                    0
+87                 0                0                   0                    0
+   Anthidium_funereum Anthidium_gayi Anthidium_adriani Anthidium_sp
+1                   1              0                 0            0
+2                   0              0                 0            0
+3                   0              0                 0            0
+4                   0              0                 0            0
+5                   0              0                 0            0
+6                   0              0                 0            0
+7                   0              0                 0            0
+8                   0              0                 0            0
+9                   0              0                 0            0
+10                  0              0                 0            0
+11                  0              0                 0            0
+12                  0              0                 0            0
+13                  0              0                 0            0
+14                  0              0                 0            0
+15                  0              0                 0            0
+16                  0              0                 0            0
+17                  1              0                 0            0
+18                  0              0                 0            0
+19                  0              0                 0            0
+20                  0              0                 0            0
+21                  0              0                 0            0
+22                  0              0                 0            0
+23                  0              0                 0            0
+24                  0              0                 0            0
+25                  0              0                 0            0
+26                  0              0                 0            0
+27                  0              0                 0            0
+28                  0              0                 0            0
+29                  1              0                 0            0
+30                  1              0                 0            0
+31                  1              0                 0            0
+32                  0              0                 0            0
+33                  0              0                 0            0
+34                  0              0                 0            0
+35                  0              0                 0            0
+36                  0              0                 0            0
+37                  0              1                 1            1
+38                  0              0                 0            0
+39                  0              0                 0            0
+40                  0              0                 0            0
+41                  0              0                 0            0
+42                  0              1                 0            0
+43                  0              0                 0            0
+44                  0              0                 0            0
+45                  0              1                 0            0
+46                  0              0                 0            0
+47                  0              0                 0            0
+48                  0              0                 0            0
+49                  0              0                 0            0
+50                  0              1                 0            0
+51                  0              1                 0            0
+52                  0              0                 0            0
+53                  0              0                 0            0
+54                  0              0                 0            0
+55                  0              0                 0            0
+56                  1              0                 0            0
+57                  0              0                 0            0
+58                  0              0                 0            0
+59                  0              0                 0            0
+60                  0              0                 0            0
+61                  0              0                 0            0
+62                  0              0                 0            0
+63                  0              0                 0            0
+64                  0              0                 0            0
+65                  0              0                 0            0
+66                  0              0                 0            0
+67                  0              0                 0            0
+68                  0              0                 0            0
+69                  0              0                 0            0
+70                  0              0                 0            0
+71                  0              0                 0            0
+72                  0              0                 0            0
+73                  0              0                 0            0
+74                  0              0                 0            0
+75                  1              0                 0            0
+76                  0              0                 0            0
+77                  0              0                 0            0
+78                  0              0                 0            0
+79                  0              0                 0            0
+80                  0              0                 0            0
+81                  0              0                 0            0
+82                  0              0                 0            0
+83                  0              0                 0            0
+84                  0              0                 0            0
+85                  0              0                 0            0
+86                  0              0                 0            0
+87                  0              0                 0            0
+   Anthophora_incerta Anthophora_sp Auca_coctei.pales Bombus_dahlbomii
+1                   0             0                 0                0
+2                   0             0                 0                0
+3                   0             0                 0                0
+4                   0             0                 0                0
+5                   0             0                 0                0
+6                   0             0                 0                0
+7                   0             0                 0                0
+8                   0             0                 0                0
+9                   0             0                 0                0
+10                  0             0                 0                0
+11                  0             0                 0                0
+12                  0             0                 0                0
+13                  0             0                 0                0
+14                  0             0                 0                0
+15                  0             0                 0                0
+16                  0             0                 0                0
+17                  0             0                 1                1
+18                  0             0                 0                0
+19                  0             0                 1                0
+20                  0             0                 0                0
+21                  0             0                 0                0
+22                  0             0                 0                0
+23                  0             0                 1                0
+24                  0             0                 0                1
+25                  0             0                 1                0
+26                  0             0                 1                0
+27                  0             0                 0                0
+28                  0             0                 1                0
+29                  1             0                 1                1
+30                  0             0                 1                1
+31                  0             0                 1                0
+32                  0             0                 1                0
+33                  0             0                 0                0
+34                  0             0                 0                0
+35                  0             0                 0                0
+36                  0             0                 0                0
+37                  1             1                 0                1
+38                  0             0                 0                0
+39                  0             0                 0                0
+40                  0             0                 0                0
+41                  0             0                 0                0
+42                  1             1                 0                1
+43                  0             0                 0                0
+44                  0             0                 0                0
+45                  0             0                 0                0
+46                  0             0                 0                0
+47                  0             0                 0                0
+48                  0             0                 0                0
+49                  0             0                 0                0
+50                  0             0                 0                0
+51                  0             0                 0                0
+52                  0             0                 0                0
+53                  0             0                 0                0
+54                  0             0                 0                1
+55                  0             0                 0                0
+56                  0             0                 0                0
+57                  0             0                 0                0
+58                  0             0                 0                0
+59                  0             0                 0                0
+60                  0             0                 0                0
+61                  0             0                 0                0
+62                  0             0                 0                0
+63                  0             0                 0                0
+64                  0             0                 0                0
+65                  0             0                 0                0
+66                  0             0                 0                0
+67                  0             0                 0                0
+68                  0             0                 0                0
+69                  0             0                 0                0
+70                  0             0                 0                0
+71                  0             0                 0                0
+72                  0             0                 0                0
+73                  0             0                 0                0
+74                  0             0                 0                0
+75                  0             0                 0                0
+76                  0             0                 0                0
+77                  0             0                 0                0
+78                  0             0                 0                0
+79                  0             0                 0                0
+80                  0             0                 0                0
+81                  0             0                 0                0
+82                  0             0                 0                0
+83                  0             0                 1                0
+84                  0             0                 0                0
+85                  0             0                 0                0
+86                  0             0                 0                0
+87                  0             0                 0                0
+   Cadeguala_occidentalis Caenohalictus_sp Caupolicana_dimidiata
+1                       0                0                     0
+2                       0                0                     0
+3                       0                0                     0
+4                       0                0                     0
+5                       0                1                     0
+6                       0                0                     0
+7                       0                1                     0
+8                       0                0                     0
+9                       0                0                     0
+10                      0                1                     0
+11                      0                0                     0
+12                      0                0                     0
+13                      0                0                     0
+14                      0                0                     0
+15                      0                1                     0
+16                      0                0                     0
+17                      0                0                     0
+18                      0                0                     0
+19                      0                0                     0
+20                      0                0                     0
+21                      0                0                     0
+22                      0                0                     0
+23                      0                0                     0
+24                      0                0                     0
+25                      0                0                     0
+26                      0                0                     0
+27                      0                0                     0
+28                      0                0                     0
+29                      0                0                     0
+30                      0                1                     0
+31                      0                0                     0
+32                      0                0                     0
+33                      0                0                     0
+34                      0                0                     0
+35                      0                0                     0
+36                      0                0                     0
+37                      1                1                     0
+38                      0                1                     0
+39                      0                1                     0
+40                      0                1                     0
+41                      0                0                     0
+42                      1                0                     0
+43                      0                0                     0
+44                      0                0                     0
+45                      1                0                     0
+46                      0                0                     0
+47                      0                0                     0
+48                      1                0                     1
+49                      0                0                     0
+50                      0                1                     0
+51                      0                0                     0
+52                      0                0                     0
+53                      0                0                     0
+54                      0                0                     0
+55                      0                0                     0
+56                      0                0                     0
+57                      0                0                     0
+58                      0                0                     0
+59                      0                0                     0
+60                      0                0                     0
+61                      0                0                     0
+62                      0                0                     0
+63                      0                1                     0
+64                      0                0                     0
+65                      0                0                     0
+66                      0                0                     0
+67                      0                0                     0
+68                      0                0                     0
+69                      0                0                     0
+70                      0                0                     0
+71                      0                0                     0
+72                      0                0                     0
+73                      0                0                     0
+74                      0                0                     0
+75                      0                0                     0
+76                      0                0                     0
+77                      0                0                     0
+78                      0                0                     0
+79                      0                0                     0
+80                      0                0                     0
+81                      0                0                     0
+82                      0                0                     0
+83                      0                0                     0
+84                      0                0                     0
+85                      0                0                     0
+86                      0                0                     0
+87                      0                0                     0
+   Centris_nigerrima Centris_cineraria Chilimelissa_sp Coelioxys_sp
+1                  0                 0               0            0
+2                  0                 0               0            0
+3                  0                 0               0            0
+4                  0                 0               0            0
+5                  0                 0               0            0
+6                  0                 0               0            0
+7                  0                 0               0            0
+8                  0                 0               0            0
+9                  0                 0               0            0
+10                 0                 0               0            0
+11                 0                 0               0            0
+12                 0                 0               0            0
+13                 0                 0               0            0
+14                 0                 0               0            0
+15                 0                 0               0            0
+16                 0                 0               0            0
+17                 1                 0               0            0
+18                 0                 0               0            0
+19                 0                 0               0            0
+20                 0                 1               0            0
+21                 0                 0               0            0
+22                 0                 1               0            0
+23                 0                 0               0            0
+24                 0                 0               0            0
+25                 0                 0               0            0
+26                 0                 0               0            0
+27                 0                 0               0            0
+28                 0                 0               0            0
+29                 0                 1               0            0
+30                 0                 0               0            0
+31                 0                 0               0            0
+32                 0                 0               0            0
+33                 0                 0               0            0
+34                 0                 0               0            0
+35                 0                 0               0            0
+36                 0                 0               0            0
+37                 0                 1               0            0
+38                 0                 0               0            0
+39                 0                 0               0            0
+40                 0                 1               0            0
+41                 0                 0               0            0
+42                 1                 1               0            0
+43                 0                 0               1            0
+44                 0                 1               0            0
+45                 0                 1               0            0
+46                 0                 0               0            0
+47                 0                 0               0            0
+48                 0                 1               0            0
+49                 0                 1               0            0
+50                 0                 1               0            0
+51                 0                 0               0            0
+52                 0                 1               0            0
+53                 0                 0               0            0
+54                 0                 0               0            0
+55                 0                 0               0            0
+56                 0                 0               0            1
+57                 0                 1               0            0
+58                 0                 0               0            0
+59                 0                 0               0            0
+60                 0                 0               0            0
+61                 0                 0               0            0
+62                 0                 0               0            0
+63                 0                 0               0            0
+64                 0                 0               0            0
+65                 0                 0               0            0
+66                 0                 0               0            0
+67                 0                 0               0            0
+68                 0                 0               0            0
+69                 0                 0               0            0
+70                 1                 0               0            0
+71                 0                 0               0            0
+72                 1                 0               0            0
+73                 0                 0               0            0
+74                 0                 1               0            0
+75                 0                 1               0            0
+76                 0                 0               0            0
+77                 0                 0               0            0
+78                 0                 0               0            0
+79                 0                 0               0            0
+80                 0                 0               0            0
+81                 0                 0               0            0
+82                 0                 0               0            0
+83                 0                 0               0            0
+84                 0                 0               0            0
+85                 0                 0               0            0
+86                 0                 0               0            0
+87                 0                 0               0            0
+   Colletes_fulvipes Colletes_araucariae Colletes_sp Corynura_sp Dasybasis_sp1
+1                  0                   0           0           0             0
+2                  0                   0           0           0             0
+3                  0                   0           0           0             0
+4                  0                   0           0           0             0
+5                  0                   0           0           0             0
+6                  0                   0           0           0             0
+7                  0                   0           0           0             0
+8                  0                   0           0           0             0
+9                  0                   0           0           0             0
+10                 0                   0           0           0             0
+11                 0                   0           0           0             0
+12                 0                   0           0           0             0
+13                 0                   0           0           0             0
+14                 0                   0           0           0             0
+15                 0                   0           0           0             0
+16                 0                   0           0           0             0
+17                 0                   0           0           0             0
+18                 0                   0           0           0             0
+19                 0                   0           0           0             0
+20                 0                   0           0           0             0
+21                 0                   0           0           0             0
+22                 0                   0           0           1             0
+23                 0                   0           0           0             0
+24                 0                   0           0           0             0
+25                 0                   0           0           0             0
+26                 0                   0           0           0             0
+27                 0                   0           0           0             1
+28                 0                   0           0           0             0
+29                 0                   0           0           0             0
+30                 0                   0           0           0             0
+31                 0                   0           0           0             0
+32                 0                   0           0           0             0
+33                 0                   0           0           0             0
+34                 0                   0           0           0             0
+35                 0                   0           0           0             0
+36                 0                   0           0           0             0
+37                 0                   1           0           0             0
+38                 0                   0           0           0             0
+39                 0                   0           0           0             0
+40                 0                   0           0           0             0
+41                 0                   0           0           0             0
+42                 0                   0           0           0             0
+43                 0                   0           0           0             0
+44                 0                   0           0           0             0
+45                 0                   0           0           0             0
+46                 0                   0           0           0             0
+47                 0                   0           0           0             0
+48                 0                   0           0           0             0
+49                 0                   0           0           0             0
+50                 1                   0           1           0             0
+51                 0                   0           0           0             0
+52                 0                   0           0           0             0
+53                 0                   0           0           0             0
+54                 0                   0           0           0             0
+55                 0                   0           0           0             0
+56                 0                   0           0           0             0
+57                 0                   0           0           0             0
+58                 0                   0           0           0             0
+59                 0                   0           0           0             0
+60                 0                   0           0           0             0
+61                 0                   0           0           0             0
+62                 0                   0           0           0             0
+63                 0                   0           0           0             0
+64                 0                   0           0           0             0
+65                 0                   0           0           0             0
+66                 0                   0           0           0             1
+67                 0                   0           0           0             0
+68                 0                   0           0           0             0
+69                 0                   0           0           0             0
+70                 0                   0           0           0             0
+71                 0                   0           0           0             0
+72                 0                   0           0           0             0
+73                 0                   0           0           0             0
+74                 0                   0           0           0             0
+75                 0                   0           0           0             0
+76                 0                   0           0           0             0
+77                 0                   0           0           0             0
+78                 0                   0           0           0             0
+79                 0                   0           0           0             0
+80                 0                   0           0           0             0
+81                 0                   0           0           0             0
+82                 0                   0           0           0             0
+83                 0                   0           0           0             0
+84                 0                   0           0           0             0
+85                 0                   0           0           0             0
+86                 0                   0           0           0             0
+87                 0                   0           0           0             0
+   Dasybasis_sp2 Dialictus_sp Diptera_ni Elaphroptera_relicta Eristalis_tenax
+1              0            0          0                    0               0
+2              0            0          0                    0               0
+3              0            0          0                    0               0
+4              0            0          0                    0               0
+5              0            0          1                    0               0
+6              0            0          0                    0               0
+7              0            0          1                    0               0
+8              0            0          0                    0               0
+9              0            0          1                    0               0
+10             0            0          0                    0               0
+11             0            0          1                    0               0
+12             0            0          0                    0               0
+13             0            0          0                    0               0
+14             0            0          1                    0               0
+15             0            0          0                    0               0
+16             0            0          0                    0               0
+17             0            0          0                    0               0
+18             0            0          0                    0               0
+19             0            0          0                    0               0
+20             0            0          0                    0               0
+21             0            0          0                    0               0
+22             0            1          1                    0               0
+23             0            0          0                    0               0
+24             0            0          0                    0               0
+25             0            0          0                    0               0
+26             0            0          1                    0               0
+27             0            0          1                    0               0
+28             0            0          0                    0               0
+29             0            0          1                    0               1
+30             0            0          1                    0               0
+31             0            0          0                    0               0
+32             0            0          0                    0               0
+33             0            0          1                    0               0
+34             0            0          0                    0               0
+35             0            0          1                    0               0
+36             0            0          1                    0               0
+37             0            0          0                    0               0
+38             0            0          0                    0               0
+39             0            0          0                    1               0
+40             0            0          0                    0               0
+41             0            0          0                    0               0
+42             0            0          0                    0               0
+43             0            0          1                    0               0
+44             0            0          0                    0               0
+45             0            0          0                    0               0
+46             0            0          0                    0               0
+47             0            0          0                    0               0
+48             0            0          0                    0               0
+49             0            0          0                    0               0
+50             0            0          0                    0               0
+51             0            0          0                    0               0
+52             0            0          0                    0               0
+53             0            0          0                    0               0
+54             0            0          0                    0               0
+55             0            0          0                    0               0
+56             0            0          0                    0               0
+57             0            0          0                    0               0
+58             0            0          0                    0               0
+59             0            0          0                    0               0
+60             0            0          0                    0               0
+61             0            0          1                    0               0
+62             0            0          0                    0               0
+63             0            0          1                    0               0
+64             0            0          1                    0               0
+65             0            0          1                    0               0
+66             1            0          1                    0               0
+67             0            0          0                    0               0
+68             0            0          0                    0               0
+69             0            0          1                    0               0
+70             0            0          0                    0               0
+71             0            0          0                    0               0
+72             0            0          0                    0               0
+73             0            0          0                    0               0
+74             0            0          0                    0               0
+75             0            0          0                    0               0
+76             0            0          0                    0               0
+77             0            0          0                    0               0
+78             0            0          0                    0               0
+79             0            0          0                    0               0
+80             0            0          0                    0               0
+81             0            0          1                    0               0
+82             0            0          1                    0               0
+83             0            0          1                    0               0
+84             0            0          1                    0               0
+85             0            0          1                    0               0
+86             0            0          1                    0               0
+87             0            0          1                    0               0
+   Etcheverrius_chilensis Eurygostomyia_philippii Faunula_leucoglene
+1                       0                       0                  0
+2                       0                       0                  0
+3                       0                       0                  0
+4                       0                       0                  0
+5                       0                       0                  0
+6                       0                       0                  0
+7                       0                       0                  0
+8                       0                       0                  0
+9                       0                       0                  0
+10                      0                       0                  0
+11                      0                       0                  0
+12                      0                       0                  0
+13                      0                       0                  0
+14                      0                       0                  0
+15                      0                       0                  0
+16                      0                       1                  1
+17                      1                       0                  1
+18                      0                       0                  0
+19                      1                       0                  0
+20                      0                       0                  0
+21                      0                       0                  0
+22                      0                       0                  0
+23                      1                       0                  0
+24                      1                       0                  0
+25                      1                       0                  0
+26                      0                       0                  0
+27                      0                       0                  0
+28                      1                       0                  0
+29                      1                       0                  1
+30                      1                       0                  0
+31                      0                       0                  0
+32                      0                       0                  0
+33                      0                       0                  0
+34                      0                       0                  0
+35                      0                       0                  0
+36                      0                       0                  0
+37                      0                       0                  0
+38                      0                       0                  0
+39                      0                       0                  0
+40                      0                       0                  0
+41                      0                       0                  0
+42                      0                       1                  0
+43                      0                       0                  0
+44                      0                       0                  0
+45                      0                       0                  0
+46                      0                       0                  0
+47                      0                       0                  0
+48                      0                       0                  0
+49                      1                       0                  0
+50                      0                       0                  0
+51                      0                       0                  0
+52                      0                       0                  0
+53                      0                       0                  0
+54                      0                       0                  0
+55                      0                       0                  0
+56                      0                       0                  0
+57                      0                       0                  0
+58                      0                       0                  0
+59                      0                       0                  0
+60                      0                       0                  0
+61                      0                       0                  0
+62                      0                       0                  0
+63                      0                       0                  0
+64                      0                       0                  0
+65                      0                       0                  0
+66                      0                       0                  0
+67                      0                       0                  0
+68                      0                       0                  0
+69                      0                       0                  0
+70                      0                       0                  0
+71                      0                       0                  0
+72                      0                       0                  0
+73                      0                       0                  0
+74                      0                       0                  0
+75                      0                       0                  0
+76                      0                       0                  0
+77                      0                       0                  0
+78                      0                       0                  0
+79                      0                       0                  0
+80                      0                       0                  0
+81                      0                       0                  0
+82                      0                       0                  0
+83                      0                       0                  0
+84                      0                       0                  0
+85                      0                       0                  0
+86                      0                       0                  0
+87                      0                       0                  0
+   Habromyia_lipoflava Hemicolletes_ruizi Hymenoptera_ni Hypodynerus_chiliotus
+1                    0                  0              0                     0
+2                    0                  0              0                     0
+3                    0                  0              0                     0
+4                    0                  0              0                     0
+5                    0                  0              0                     0
+6                    0                  0              0                     0
+7                    0                  0              0                     0
+8                    0                  0              0                     0
+9                    0                  0              0                     0
+10                   0                  0              0                     1
+11                   0                  0              1                     0
+12                   0                  0              0                     0
+13                   0                  0              0                     0
+14                   1                  0              0                     0
+15                   0                  0              0                     0
+16                   0                  0              0                     0
+17                   0                  0              0                     0
+18                   0                  0              1                     0
+19                   0                  0              0                     0
+20                   0                  0              0                     0
+21                   0                  0              0                     0
+22                   0                  1              0                     0
+23                   0                  0              0                     0
+24                   0                  0              0                     0
+25                   0                  0              0                     0
+26                   0                  0              0                     0
+27                   0                  0              0                     0
+28                   0                  0              1                     0
+29                   0                  0              1                     1
+30                   0                  0              0                     1
+31                   0                  0              0                     0
+32                   0                  0              0                     0
+33                   0                  0              0                     0
+34                   0                  0              0                     0
+35                   0                  0              0                     0
+36                   0                  0              0                     0
+37                   0                  0              1                     0
+38                   0                  0              1                     0
+39                   0                  0              0                     0
+40                   0                  0              0                     0
+41                   0                  0              1                     0
+42                   0                  0              0                     0
+43                   0                  0              0                     0
+44                   0                  0              0                     0
+45                   0                  0              0                     0
+46                   0                  0              0                     0
+47                   0                  0              0                     0
+48                   0                  0              0                     0
+49                   0                  0              0                     0
+50                   0                  0              0                     0
+51                   0                  0              1                     0
+52                   0                  0              0                     0
+53                   0                  0              1                     0
+54                   0                  0              0                     0
+55                   0                  0              1                     0
+56                   0                  0              0                     0
+57                   0                  0              0                     0
+58                   0                  0              1                     0
+59                   0                  0              0                     0
+60                   0                  0              1                     0
+61                   0                  0              1                     0
+62                   0                  0              0                     0
+63                   1                  0              1                     0
+64                   0                  0              0                     0
+65                   0                  0              1                     0
+66                   0                  0              0                     0
+67                   0                  0              0                     0
+68                   0                  0              0                     0
+69                   0                  0              0                     0
+70                   0                  0              0                     0
+71                   0                  0              0                     0
+72                   0                  0              1                     0
+73                   0                  0              1                     0
+74                   0                  0              0                     0
+75                   0                  0              0                     0
+76                   0                  0              1                     0
+77                   0                  0              1                     0
+78                   0                  0              0                     0
+79                   0                  0              1                     0
+80                   0                  0              1                     0
+81                   0                  0              0                     0
+82                   0                  0              0                     0
+83                   0                  0              0                     0
+84                   0                  0              0                     0
+85                   0                  0              0                     0
+86                   0                  0              1                     0
+87                   0                  0              0                     0
+   Hypsochila_wagenknecti Isepeolus_niveiventris Lepidoptera_ni
+1                       0                      0              0
+2                       0                      0              0
+3                       0                      0              1
+4                       0                      0              1
+5                       0                      0              0
+6                       0                      0              0
+7                       0                      0              0
+8                       0                      0              1
+9                       0                      0              0
+10                      0                      0              0
+11                      0                      0              0
+12                      0                      0              0
+13                      0                      0              0
+14                      0                      0              0
+15                      0                      0              0
+16                      0                      0              0
+17                      0                      0              0
+18                      0                      0              1
+19                      0                      0              0
+20                      0                      0              0
+21                      0                      0              0
+22                      0                      0              0
+23                      0                      0              1
+24                      0                      1              0
+25                      0                      0              0
+26                      0                      0              0
+27                      0                      0              0
+28                      0                      0              0
+29                      0                      0              0
+30                      0                      0              0
+31                      1                      0              0
+32                      0                      0              0
+33                      0                      0              0
+34                      0                      0              0
+35                      0                      0              0
+36                      0                      0              0
+37                      0                      0              0
+38                      0                      0              0
+39                      0                      0              0
+40                      0                      0              0
+41                      0                      0              0
+42                      0                      0              0
+43                      0                      0              0
+44                      0                      0              0
+45                      0                      0              0
+46                      0                      0              0
+47                      0                      0              0
+48                      0                      0              0
+49                      0                      0              0
+50                      0                      0              0
+51                      0                      0              0
+52                      0                      0              0
+53                      0                      0              0
+54                      0                      0              0
+55                      0                      0              0
+56                      0                      0              0
+57                      0                      0              0
+58                      0                      0              0
+59                      0                      0              1
+60                      0                      0              0
+61                      0                      0              0
+62                      0                      0              0
+63                      0                      0              0
+64                      0                      0              0
+65                      0                      0              0
+66                      0                      0              0
+67                      0                      0              0
+68                      0                      0              0
+69                      0                      0              0
+70                      0                      0              0
+71                      0                      0              0
+72                      0                      0              0
+73                      0                      0              0
+74                      0                      0              0
+75                      0                      0              0
+76                      0                      0              0
+77                      0                      0              0
+78                      0                      0              0
+79                      0                      0              0
+80                      0                      0              0
+81                      0                      0              0
+82                      0                      0              0
+83                      0                      0              0
+84                      0                      0              0
+85                      0                      0              0
+86                      0                      0              0
+87                      0                      0              0
+   Liphanthus_sabulosus Lithurgomma_wagenknechti Lycophlaeba_lugubris
+1                     0                        0                    0
+2                     0                        0                    0
+3                     0                        0                    0
+4                     0                        0                    0
+5                     0                        0                    0
+6                     0                        0                    0
+7                     0                        0                    0
+8                     0                        0                    0
+9                     0                        0                    0
+10                    0                        0                    0
+11                    0                        0                    0
+12                    0                        0                    0
+13                    1                        0                    0
+14                    0                        0                    0
+15                    0                        0                    1
+16                    0                        0                    0
+17                    0                        0                    0
+18                    0                        0                    0
+19                    0                        0                    0
+20                    0                        0                    0
+21                    0                        0                    0
+22                    0                        0                    0
+23                    0                        0                    0
+24                    0                        0                    0
+25                    0                        0                    0
+26                    0                        0                    0
+27                    0                        0                    0
+28                    0                        0                    0
+29                    0                        0                    0
+30                    0                        0                    0
+31                    0                        0                    0
+32                    0                        0                    0
+33                    0                        0                    0
+34                    0                        0                    0
+35                    0                        0                    0
+36                    0                        0                    0
+37                    0                        1                    0
+38                    0                        0                    0
+39                    0                        0                    0
+40                    0                        0                    0
+41                    0                        0                    0
+42                    0                        0                    0
+43                    0                        0                    0
+44                    0                        0                    0
+45                    0                        1                    0
+46                    0                        0                    0
+47                    1                        0                    0
+48                    0                        0                    0
+49                    0                        0                    0
+50                    0                        0                    0
+51                    0                        0                    0
+52                    0                        0                    0
+53                    0                        0                    0
+54                    0                        0                    0
+55                    0                        0                    0
+56                    0                        0                    0
+57                    0                        0                    0
+58                    0                        0                    0
+59                    0                        0                    0
+60                    0                        0                    0
+61                    0                        0                    0
+62                    0                        0                    0
+63                    0                        0                    0
+64                    1                        0                    0
+65                    0                        0                    0
+66                    0                        0                    0
+67                    0                        0                    0
+68                    0                        0                    0
+69                    0                        0                    1
+70                    0                        0                    0
+71                    0                        0                    0
+72                    0                        0                    0
+73                    0                        0                    0
+74                    0                        0                    0
+75                    0                        0                    0
+76                    0                        0                    0
+77                    0                        0                    0
+78                    0                        0                    0
+79                    0                        0                    0
+80                    0                        0                    0
+81                    0                        0                    0
+82                    0                        0                    0
+83                    0                        0                    0
+84                    0                        0                    0
+85                    0                        0                    0
+86                    0                        0                    1
+87                    0                        0                    0
+   Megachile_semirufa Mesonychium_gayi Panurgineae_sp Phulia_nymphula
+1                   1                0              1               0
+2                   0                0              0               0
+3                   0                0              0               0
+4                   0                0              0               0
+5                   0                0              0               0
+6                   0                0              0               0
+7                   0                0              0               0
+8                   0                0              0               0
+9                   0                0              0               0
+10                  0                0              0               0
+11                  0                0              0               0
+12                  0                0              0               0
+13                  0                0              0               0
+14                  0                0              0               0
+15                  0                0              0               0
+16                  0                0              0               0
+17                  0                0              0               0
+18                  0                0              0               0
+19                  1                0              1               0
+20                  0                0              0               0
+21                  0                0              0               0
+22                  0                0              0               0
+23                  0                0              0               0
+24                  1                0              0               0
+25                  0                0              0               0
+26                  0                0              0               0
+27                  0                0              0               0
+28                  0                0              0               0
+29                  1                0              1               0
+30                  1                0              1               0
+31                  1                0              1               0
+32                  0                0              0               0
+33                  0                0              0               0
+34                  0                0              0               0
+35                  0                0              0               0
+36                  0                0              0               0
+37                  1                0              0               0
+38                  0                0              0               0
+39                  0                0              0               0
+40                  0                0              0               0
+41                  0                0              0               0
+42                  1                0              0               0
+43                  0                0              0               0
+44                  1                0              0               0
+45                  0                1              0               0
+46                  0                0              0               0
+47                  0                0              0               0
+48                  1                0              0               0
+49                  0                0              0               0
+50                  1                1              0               0
+51                  0                0              0               0
+52                  0                0              0               0
+53                  0                0              0               0
+54                  1                0              0               0
+55                  0                0              0               0
+56                  1                0              0               0
+57                  0                0              0               0
+58                  0                0              0               0
+59                  0                0              0               0
+60                  0                0              0               0
+61                  0                0              0               0
+62                  0                0              0               0
+63                  0                0              0               1
+64                  1                0              0               0
+65                  0                0              0               0
+66                  0                0              0               0
+67                  0                0              0               0
+68                  0                0              0               0
+69                  0                0              0               0
+70                  0                0              0               0
+71                  0                0              0               0
+72                  0                0              0               0
+73                  0                0              0               0
+74                  0                0              0               0
+75                  1                0              0               0
+76                  0                0              0               0
+77                  0                0              0               0
+78                  1                0              0               0
+79                  0                0              0               0
+80                  0                0              0               0
+81                  0                0              0               0
+82                  0                0              0               0
+83                  0                0              1               0
+84                  0                0              0               0
+85                  0                0              0               0
+86                  0                0              0               0
+87                  0                0              0               0
+   Prosopochaeta_caliginosa Pseudolucia_chilensis Ruizantheda_mutabilis
+1                         0                     0                     0
+2                         0                     0                     0
+3                         0                     0                     0
+4                         0                     0                     0
+5                         0                     0                     0
+6                         0                     0                     0
+7                         0                     0                     0
+8                         0                     0                     0
+9                         0                     0                     0
+10                        0                     0                     0
+11                        0                     0                     0
+12                        0                     0                     0
+13                        0                     0                     0
+14                        0                     0                     0
+15                        0                     0                     0
+16                        0                     0                     0
+17                        0                     0                     0
+18                        0                     0                     0
+19                        0                     0                     0
+20                        0                     0                     1
+21                        0                     0                     0
+22                        0                     0                     0
+23                        0                     0                     0
+24                        0                     0                     0
+25                        0                     0                     0
+26                        0                     0                     0
+27                        0                     0                     0
+28                        0                     0                     0
+29                        0                     0                     0
+30                        0                     0                     0
+31                        0                     0                     0
+32                        0                     0                     0
+33                        0                     0                     0
+34                        0                     0                     0
+35                        0                     0                     0
+36                        0                     0                     0
+37                        0                     0                     1
+38                        0                     0                     0
+39                        0                     0                     0
+40                        0                     0                     0
+41                        0                     0                     0
+42                        0                     0                     0
+43                        0                     0                     0
+44                        0                     0                     0
+45                        0                     1                     0
+46                        0                     0                     0
+47                        0                     0                     0
+48                        0                     0                     0
+49                        0                     0                     0
+50                        0                     0                     0
+51                        0                     1                     0
+52                        0                     0                     0
+53                        0                     0                     0
+54                        0                     0                     0
+55                        0                     0                     0
+56                        0                     0                     0
+57                        0                     0                     0
+58                        0                     0                     0
+59                        0                     0                     0
+60                        0                     0                     0
+61                        0                     0                     0
+62                        0                     0                     0
+63                        1                     0                     0
+64                        0                     0                     0
+65                        0                     0                     0
+66                        0                     0                     0
+67                        0                     0                     0
+68                        0                     0                     0
+69                        0                     0                     0
+70                        0                     0                     0
+71                        0                     0                     0
+72                        0                     0                     0
+73                        0                     0                     0
+74                        0                     0                     0
+75                        0                     0                     0
+76                        0                     0                     0
+77                        0                     0                     0
+78                        0                     0                     0
+79                        0                     0                     0
+80                        0                     0                     0
+81                        0                     0                     0
+82                        0                     0                     0
+83                        0                     0                     0
+84                        1                     0                     0
+85                        0                     0                     0
+86                        0                     0                     0
+87                        0                     0                     0
+   Ruiziella_luctuosa Scaeva_melanostoma Scaptia_atra Svastrides_melanura
+1                   0                  0            0                   0
+2                   0                  0            0                   0
+3                   0                  0            0                   0
+4                   0                  0            0                   0
+5                   0                  1            0                   0
+6                   0                  0            0                   0
+7                   0                  0            0                   0
+8                   0                  0            0                   0
+9                   0                  0            0                   0
+10                  0                  1            0                   0
+11                  0                  0            0                   0
+12                  0                  0            0                   0
+13                  0                  0            0                   0
+14                  0                  1            0                   0
+15                  0                  1            0                   0
+16                  0                  1            0                   0
+17                  0                  1            0                   0
+18                  0                  1            0                   0
+19                  0                  1            0                   0
+20                  0                  1            0                   0
+21                  0                  1            0                   0
+22                  0                  0            0                   0
+23                  0                  0            0                   0
+24                  0                  1            0                   0
+25                  0                  0            0                   0
+26                  0                  0            0                   0
+27                  0                  0            0                   0
+28                  1                  0            0                   0
+29                  1                  1            0                   0
+30                  0                  0            0                   0
+31                  0                  0            0                   0
+32                  0                  1            0                   0
+33                  0                  0            0                   0
+34                  1                  0            0                   0
+35                  0                  1            0                   0
+36                  0                  1            0                   0
+37                  0                  1            1                   1
+38                  0                  0            0                   0
+39                  0                  0            0                   0
+40                  0                  1            0                   0
+41                  0                  0            0                   0
+42                  0                  1            0                   0
+43                  0                  1            0                   0
+44                  0                  1            0                   0
+45                  0                  1            0                   0
+46                  0                  0            0                   0
+47                  0                  0            0                   0
+48                  0                  1            0                   0
+49                  0                  0            0                   0
+50                  0                  0            0                   0
+51                  0                  0            0                   0
+52                  0                  0            0                   0
+53                  0                  0            0                   0
+54                  0                  0            0                   0
+55                  0                  0            0                   0
+56                  0                  0            0                   0
+57                  0                  0            0                   0
+58                  0                  0            0                   0
+59                  0                  0            0                   0
+60                  0                  0            0                   0
+61                  0                  0            0                   0
+62                  0                  0            0                   0
+63                  0                  1            0                   0
+64                  0                  1            0                   0
+65                  0                  0            0                   0
+66                  0                  1            0                   0
+67                  0                  1            0                   0
+68                  0                  1            0                   0
+69                  0                  1            0                   0
+70                  0                  0            0                   0
+71                  0                  0            0                   0
+72                  0                  0            0                   0
+73                  0                  0            0                   0
+74                  0                  0            0                   0
+75                  0                  0            0                   0
+76                  0                  0            0                   0
+77                  0                  0            0                   0
+78                  0                  0            0                   0
+79                  0                  0            0                   0
+80                  0                  0            0                   0
+81                  0                  0            0                   0
+82                  0                  1            0                   0
+83                  0                  1            0                   0
+84                  0                  1            0                   0
+85                  0                  1            0                   0
+86                  0                  0            0                   0
+87                  0                  0            0                   0
+   Tapinotaspis_herbsti Tapinotaspis_caerulea Tatochila_mercedis
+1                     0                     0                  0
+2                     0                     0                  0
+3                     0                     0                  0
+4                     0                     0                  0
+5                     0                     0                  0
+6                     0                     0                  0
+7                     0                     0                  0
+8                     0                     0                  0
+9                     0                     0                  0
+10                    0                     0                  0
+11                    0                     0                  0
+12                    0                     0                  0
+13                    0                     0                  0
+14                    0                     0                  0
+15                    0                     0                  0
+16                    0                     0                  0
+17                    0                     0                  1
+18                    0                     0                  0
+19                    0                     0                  0
+20                    0                     0                  1
+21                    0                     0                  0
+22                    0                     0                  0
+23                    0                     0                  0
+24                    0                     0                  0
+25                    0                     0                  0
+26                    0                     0                  0
+27                    0                     0                  0
+28                    0                     0                  0
+29                    0                     0                  1
+30                    0                     0                  1
+31                    0                     0                  0
+32                    0                     0                  0
+33                    0                     0                  0
+34                    0                     0                  0
+35                    0                     0                  0
+36                    0                     0                  0
+37                    0                     0                  0
+38                    1                     1                  0
+39                    0                     0                  0
+40                    0                     0                  0
+41                    0                     0                  0
+42                    0                     0                  0
+43                    0                     0                  0
+44                    0                     0                  0
+45                    0                     0                  0
+46                    0                     0                  0
+47                    0                     0                  0
+48                    0                     0                  0
+49                    0                     0                  0
+50                    0                     0                  0
+51                    0                     0                  0
+52                    0                     0                  0
+53                    0                     0                  0
+54                    0                     0                  0
+55                    0                     0                  0
+56                    0                     0                  0
+57                    0                     0                  0
+58                    0                     0                  0
+59                    0                     0                  0
+60                    0                     0                  0
+61                    0                     0                  0
+62                    0                     0                  0
+63                    0                     0                  0
+64                    0                     0                  0
+65                    0                     0                  0
+66                    0                     0                  0
+67                    0                     0                  0
+68                    0                     0                  0
+69                    0                     0                  0
+70                    0                     0                  0
+71                    0                     0                  0
+72                    0                     0                  0
+73                    0                     0                  0
+74                    0                     0                  0
+75                    0                     0                  0
+76                    0                     0                  0
+77                    0                     0                  0
+78                    0                     0                  0
+79                    0                     0                  0
+80                    0                     0                  0
+81                    0                     0                  0
+82                    0                     0                  0
+83                    0                     0                  0
+84                    0                     0                  0
+85                    0                     0                  0
+86                    0                     0                  0
+87                    0                     0                  0
+   Tatochila_blanchardii Troch_ni Truphoecus_bellus Villa._durvillei Villa_gayi
+1                      0        0                 0                0          0
+2                      0        1                 0                0          0
+3                      0        0                 0                0          0
+4                      0        0                 0                0          0
+5                      0        0                 0                0          0
+6                      0        0                 0                0          0
+7                      0        0                 0                0          0
+8                      0        0                 0                0          0
+9                      0        0                 0                0          0
+10                     0        0                 0                0          0
+11                     0        0                 0                0          0
+12                     0        0                 0                0          0
+13                     0        0                 0                0          0
+14                     0        0                 0                0          0
+15                     0        0                 0                0          1
+16                     0        0                 0                0          0
+17                     1        0                 0                0          0
+18                     0        0                 0                0          0
+19                     0        0                 0                0          0
+20                     0        0                 0                0          0
+21                     0        0                 0                0          0
+22                     0        0                 0                0          0
+23                     0        0                 0                0          0
+24                     0        0                 0                0          0
+25                     0        0                 0                0          0
+26                     0        0                 0                0          0
+27                     0        0                 0                0          0
+28                     0        0                 1                0          0
+29                     0        0                 0                0          0
+30                     0        0                 0                0          0
+31                     0        0                 0                0          0
+32                     0        0                 0                0          0
+33                     0        0                 0                0          0
+34                     0        0                 0                0          0
+35                     0        0                 0                0          0
+36                     0        0                 0                0          0
+37                     0        0                 1                0          0
+38                     0        0                 0                0          0
+39                     0        0                 0                0          0
+40                     0        0                 0                0          0
+41                     0        0                 0                0          0
+42                     0        0                 0                0          0
+43                     0        0                 0                0          0
+44                     0        0                 0                0          0
+45                     0        0                 0                0          0
+46                     0        0                 0                0          0
+47                     0        0                 0                0          0
+48                     0        0                 0                0          0
+49                     0        0                 0                0          0
+50                     0        0                 0                0          0
+51                     0        0                 0                0          0
+52                     0        0                 0                0          0
+53                     0        0                 0                0          0
+54                     0        0                 0                0          0
+55                     0        0                 0                0          0
+56                     0        0                 0                0          0
+57                     0        0                 0                0          0
+58                     0        0                 0                0          0
+59                     0        0                 0                0          0
+60                     0        0                 0                0          0
+61                     0        0                 0                0          0
+62                     0        0                 0                0          0
+63                     0        0                 0                0          0
+64                     0        0                 0                0          0
+65                     0        0                 0                0          0
+66                     0        0                 0                0          0
+67                     0        0                 0                0          0
+68                     0        0                 0                0          0
+69                     0        0                 0                0          0
+70                     0        0                 0                0          0
+71                     0        0                 0                0          0
+72                     0        0                 0                0          0
+73                     0        0                 0                0          0
+74                     0        0                 0                0          0
+75                     0        0                 0                0          0
+76                     0        0                 0                0          0
+77                     0        0                 0                0          0
+78                     0        0                 0                0          0
+79                     0        0                 0                0          0
+80                     0        0                 0                0          0
+81                     0        0                 0                0          0
+82                     0        0                 0                0          0
+83                     0        0                 0                0          0
+84                     0        0                 0                0          0
+85                     0        0                 0                0          0
+86                     0        0                 1                1          0
+87                     0        0                 0                0          0
+   Villa_guttapennis Villa_hypoxantha Villa_semifuscata Villa_sp
+1                  0                0                 0        0
+2                  0                0                 0        0
+3                  0                0                 0        0
+4                  0                0                 0        0
+5                  0                0                 0        0
+6                  0                0                 0        0
+7                  0                0                 0        0
+8                  0                0                 0        0
+9                  0                0                 0        0
+10                 0                0                 0        0
+11                 0                0                 0        0
+12                 0                0                 0        0
+13                 0                0                 0        0
+14                 0                0                 0        0
+15                 0                1                 1        1
+16                 0                0                 0        0
+17                 0                0                 1        0
+18                 0                0                 0        0
+19                 0                0                 0        0
+20                 0                0                 0        1
+21                 0                0                 0        0
+22                 0                0                 0        0
+23                 0                0                 0        0
+24                 0                0                 0        0
+25                 0                0                 0        0
+26                 0                0                 0        0
+27                 0                0                 0        1
+28                 0                0                 0        0
+29                 0                0                 0        1
+30                 0                0                 0        0
+31                 0                0                 0        0
+32                 0                0                 0        0
+33                 0                0                 0        0
+34                 0                0                 0        0
+35                 0                0                 0        0
+36                 0                0                 0        0
+37                 0                0                 0        0
+38                 0                0                 0        0
+39                 0                0                 0        0
+40                 0                0                 0        0
+41                 0                0                 0        0
+42                 0                0                 0        0
+43                 0                0                 1        1
+44                 0                0                 0        0
+45                 0                0                 0        0
+46                 0                0                 0        0
+47                 0                0                 0        0
+48                 0                0                 0        0
+49                 0                0                 0        0
+50                 0                0                 0        0
+51                 0                0                 0        0
+52                 0                0                 0        0
+53                 0                0                 0        0
+54                 0                0                 0        0
+55                 0                0                 0        0
+56                 0                0                 0        0
+57                 0                0                 0        0
+58                 0                0                 0        0
+59                 0                0                 0        0
+60                 0                0                 0        0
+61                 0                0                 0        0
+62                 0                0                 0        0
+63                 0                1                 0        0
+64                 0                0                 0        1
+65                 0                0                 0        0
+66                 0                0                 0        0
+67                 0                0                 0        0
+68                 0                0                 0        0
+69                 0                1                 0        0
+70                 0                0                 0        0
+71                 0                0                 0        0
+72                 0                0                 0        0
+73                 0                0                 0        0
+74                 0                0                 0        0
+75                 0                0                 0        0
+76                 0                0                 0        0
+77                 0                0                 0        0
+78                 0                0                 0        0
+79                 0                0                 0        0
+80                 0                0                 0        0
+81                 0                1                 0        0
+82                 0                0                 0        0
+83                 1                1                 0        1
+84                 0                0                 0        0
+85                 0                0                 0        0
+86                 0                0                 0        1
+87                 0                0                 0        0
+   Villa_arenarius Xanthocolletes_sicheli Xanthocolletes_incahuasi
+1                0                      0                        0
+2                0                      0                        0
+3                0                      0                        0
+4                0                      0                        0
+5                0                      0                        0
+6                0                      0                        0
+7                0                      0                        0
+8                0                      0                        0
+9                0                      0                        0
+10               0                      0                        0
+11               0                      0                        0
+12               0                      0                        0
+13               0                      0                        0
+14               0                      0                        0
+15               1                      0                        0
+16               0                      0                        0
+17               0                      0                        0
+18               0                      0                        0
+19               0                      0                        0
+20               0                      0                        0
+21               0                      0                        0
+22               0                      0                        0
+23               0                      0                        0
+24               0                      0                        0
+25               0                      0                        0
+26               0                      0                        0
+27               0                      0                        0
+28               0                      0                        0
+29               0                      0                        0
+30               0                      0                        0
+31               0                      0                        0
+32               0                      0                        0
+33               0                      0                        0
+34               0                      0                        0
+35               0                      0                        0
+36               0                      0                        0
+37               0                      0                        0
+38               0                      0                        0
+39               0                      0                        0
+40               0                      0                        0
+41               0                      0                        0
+42               0                      0                        0
+43               0                      1                        0
+44               0                      1                        0
+45               0                      0                        0
+46               0                      1                        1
+47               0                      0                        0
+48               0                      1                        1
+49               0                      0                        0
+50               0                      0                        0
+51               0                      0                        0
+52               0                      0                        0
+53               0                      0                        0
+54               0                      0                        0
+55               0                      0                        0
+56               0                      0                        0
+57               0                      0                        0
+58               0                      0                        0
+59               0                      0                        0
+60               0                      0                        0
+61               0                      0                        0
+62               0                      0                        0
+63               0                      0                        0
+64               0                      0                        0
+65               0                      0                        0
+66               0                      0                        0
+67               0                      0                        0
+68               0                      0                        0
+69               0                      0                        0
+70               0                      0                        0
+71               0                      0                        0
+72               0                      0                        0
+73               0                      0                        0
+74               0                      0                        0
+75               0                      0                        0
+76               0                      0                        0
+77               0                      0                        0
+78               0                      0                        0
+79               0                      0                        0
+80               0                      0                        0
+81               0                      0                        0
+82               0                      0                        0
+83               0                      0                        0
+84               0                      0                        0
+85               0                      0                        0
+86               0                      0                        0
+87               0                      0                        0
+   Yramea_lathonoides Megachile_sp1 Bibionidae_sp1 Bibionidae_sp2 Coleoptera_ni
+1                   0             0              0              0             0
+2                   0             0              0              0             0
+3                   0             0              0              0             0
+4                   0             0              0              0             0
+5                   0             0              0              0             0
+6                   0             1              0              0             0
+7                   0             0              0              0             0
+8                   0             0              0              0             0
+9                   0             0              0              0             0
+10                  0             0              0              0             0
+11                  0             0              0              0             0
+12                  0             1              0              0             0
+13                  0             0              0              0             0
+14                  0             0              1              1             1
+15                  0             0              0              0             0
+16                  0             0              0              0             0
+17                  0             1              0              0             0
+18                  0             0              0              0             0
+19                  1             0              0              0             0
+20                  0             0              0              0             1
+21                  0             1              0              0             0
+22                  0             0              0              0             0
+23                  0             0              0              0             0
+24                  0             1              0              0             0
+25                  0             0              0              0             0
+26                  0             0              0              0             0
+27                  0             0              0              0             0
+28                  0             0              0              0             0
+29                  0             1              0              0             0
+30                  0             1              0              0             0
+31                  0             0              0              0             0
+32                  0             0              0              0             0
+33                  0             0              0              0             0
+34                  0             0              0              0             0
+35                  0             0              0              0             0
+36                  0             0              0              0             0
+37                  0             1              0              0             0
+38                  0             0              0              0             0
+39                  0             0              0              0             1
+40                  0             0              0              0             1
+41                  0             0              0              0             0
+42                  0             1              0              0             0
+43                  0             0              0              0             0
+44                  0             0              0              0             0
+45                  0             0              0              0             0
+46                  0             0              0              0             0
+47                  0             0              0              0             0
+48                  0             0              0              0             0
+49                  1             0              0              0             0
+50                  0             1              0              0             0
+51                  0             0              0              0             0
+52                  0             0              0              0             0
+53                  0             0              0              0             0
+54                  0             1              0              0             0
+55                  0             0              0              0             0
+56                  0             1              0              0             0
+57                  0             0              0              0             0
+58                  0             0              0              0             0
+59                  0             0              0              0             0
+60                  0             0              0              0             1
+61                  0             0              0              0             1
+62                  1             0              0              0             0
+63                  0             0              0              0             0
+64                  0             0              0              0             0
+65                  0             0              0              0             0
+66                  0             0              0              0             0
+67                  0             0              0              0             0
+68                  0             0              0              0             0
+69                  0             0              0              0             0
+70                  0             0              0              0             0
+71                  0             0              0              0             0
+72                  0             0              0              0             0
+73                  0             0              0              0             0
+74                  0             0              0              0             0
+75                  0             0              0              0             0
+76                  0             0              0              0             0
+77                  0             0              0              0             0
+78                  0             0              0              0             0
+79                  0             1              0              0             0
+80                  0             0              0              0             0
+81                  0             0              0              0             0
+82                  0             0              0              0             0
+83                  0             0              0              0             0
+84                  0             0              0              0             0
+85                  0             0              0              0             0
+86                  0             0              0              0             0
+87                  0             0              0              0             0
+   Spathipalpus_philippii Vibrissomyia_sp Villa_verdensis Hypodynerus_sp3
+1                       0               0               0               0
+2                       0               0               0               0
+3                       0               0               0               0
+4                       0               0               0               0
+5                       0               0               0               0
+6                       0               0               0               0
+7                       0               0               0               0
+8                       0               0               0               0
+9                       0               0               0               0
+10                      0               0               0               0
+11                      0               0               0               0
+12                      0               0               0               0
+13                      0               0               0               0
+14                      0               0               0               0
+15                      1               0               0               0
+16                      0               0               0               0
+17                      0               0               0               0
+18                      0               0               0               0
+19                      0               0               0               0
+20                      0               0               0               0
+21                      0               0               0               0
+22                      0               0               0               0
+23                      0               0               0               0
+24                      0               0               0               0
+25                      0               0               0               0
+26                      0               0               0               0
+27                      0               1               1               0
+28                      0               0               0               0
+29                      1               0               1               0
+30                      0               0               0               1
+31                      0               0               0               0
+32                      0               0               0               0
+33                      0               0               0               0
+34                      0               0               0               0
+35                      0               0               0               0
+36                      0               0               0               0
+37                      0               0               1               1
+38                      0               0               0               0
+39                      0               0               0               0
+40                      0               0               0               0
+41                      0               0               0               0
+42                      0               0               0               0
+43                      0               0               0               0
+44                      0               0               0               0
+45                      0               0               0               0
+46                      0               0               0               0
+47                      0               0               0               0
+48                      0               0               0               0
+49                      0               0               0               0
+50                      0               0               0               0
+51                      0               0               0               0
+52                      0               0               0               0
+53                      0               0               0               0
+54                      0               0               0               0
+55                      0               0               0               0
+56                      0               0               0               0
+57                      0               0               0               0
+58                      0               0               0               0
+59                      0               0               0               0
+60                      0               0               0               0
+61                      0               0               0               0
+62                      0               0               0               0
+63                      0               0               0               0
+64                      0               0               0               0
+65                      0               0               0               0
+66                      0               0               0               0
+67                      0               0               0               0
+68                      0               0               0               0
+69                      0               0               0               0
+70                      0               0               0               0
+71                      0               0               0               0
+72                      0               0               0               0
+73                      0               0               0               0
+74                      0               0               0               0
+75                      0               0               1               0
+76                      0               0               0               0
+77                      0               0               0               0
+78                      0               0               0               0
+79                      0               0               0               0
+80                      0               0               0               0
+81                      0               0               0               0
+82                      0               0               0               0
+83                      0               0               1               0
+84                      0               0               0               0
+85                      0               0               0               0
+86                      0               0               0               0
+87                      0               0               0               0
+   Chilicola_sp Bombyllidae_ni Tachinidae_ni Vespidae_ni Tabanidae_ni
+1             0              0             0           0            0
+2             0              0             0           0            0
+3             0              0             0           0            0
+4             0              0             0           0            0
+5             0              0             0           0            0
+6             0              0             0           0            0
+7             0              0             0           0            0
+8             0              0             0           0            0
+9             0              0             0           0            0
+10            0              0             1           0            0
+11            0              0             0           0            0
+12            0              0             0           0            0
+13            0              0             0           0            0
+14            0              0             0           0            0
+15            0              0             0           0            0
+16            0              0             0           0            0
+17            0              0             0           0            0
+18            0              0             0           0            0
+19            0              0             0           0            0
+20            0              0             0           0            0
+21            0              0             0           0            0
+22            0              0             0           0            0
+23            0              0             0           0            0
+24            0              0             0           0            0
+25            0              0             0           0            0
+26            0              0             0           0            0
+27            0              0             0           0            0
+28            0              0             0           0            0
+29            0              0             0           0            0
+30            1              0             0           0            0
+31            0              1             1           0            0
+32            0              0             0           0            0
+33            0              0             0           0            0
+34            0              0             0           0            0
+35            0              0             1           1            1
+36            0              0             0           0            0
+37            0              0             0           0            0
+38            0              0             0           0            0
+39            0              0             1           0            0
+40            0              0             0           0            0
+41            0              0             0           0            0
+42            0              0             0           0            0
+43            0              0             0           0            0
+44            0              0             0           0            0
+45            1              0             0           0            0
+46            0              0             0           0            0
+47            0              0             0           0            0
+48            0              0             0           0            0
+49            0              0             0           0            0
+50            0              0             0           0            0
+51            0              0             0           0            0
+52            0              0             0           0            0
+53            0              0             0           0            0
+54            0              0             0           0            0
+55            0              0             0           0            0
+56            0              0             0           0            0
+57            0              0             0           0            0
+58            0              0             0           0            0
+59            0              0             0           0            0
+60            0              0             0           0            0
+61            0              0             0           0            0
+62            0              0             0           0            0
+63            0              0             0           0            0
+64            0              0             0           0            0
+65            0              0             0           0            0
+66            0              0             0           0            0
+67            0              0             0           0            0
+68            0              0             0           0            0
+69            0              0             0           0            0
+70            0              0             0           0            0
+71            0              0             0           0            0
+72            0              0             0           0            0
+73            0              0             0           0            0
+74            0              0             0           0            0
+75            0              0             0           0            0
+76            0              0             0           0            0
+77            0              0             0           0            0
+78            0              0             0           0            0
+79            0              0             0           0            0
+80            0              0             0           0            0
+81            0              0             0           0            0
+82            0              0             0           0            0
+83            0              0             0           0            0
+84            0              0             0           0            0
+85            0              0             0           0            0
+86            0              0             0           0            0
+87            0              0             0           0            0
+   Caenohalictus_sp2 Caenohalictus_sp3 Megachile_sp2 Sarcophagidae_ni
+1                  0                 0             0                0
+2                  0                 0             0                0
+3                  0                 0             0                0
+4                  0                 0             0                0
+5                  0                 0             0                0
+6                  0                 0             0                0
+7                  0                 0             0                0
+8                  0                 0             0                0
+9                  0                 0             0                0
+10                 0                 0             0                1
+11                 0                 0             0                0
+12                 0                 0             0                0
+13                 0                 0             0                0
+14                 0                 0             0                0
+15                 0                 0             0                0
+16                 0                 0             0                0
+17                 0                 0             0                0
+18                 0                 0             0                0
+19                 0                 0             0                0
+20                 0                 0             0                0
+21                 0                 0             0                0
+22                 0                 0             0                0
+23                 0                 0             0                0
+24                 0                 0             0                0
+25                 0                 0             0                0
+26                 0                 0             0                0
+27                 0                 0             0                0
+28                 0                 0             0                0
+29                 0                 0             0                1
+30                 0                 0             0                0
+31                 0                 0             0                0
+32                 0                 0             0                0
+33                 0                 0             0                0
+34                 0                 0             0                0
+35                 0                 0             0                0
+36                 0                 0             0                0
+37                 0                 0             0                0
+38                 1                 1             1                0
+39                 0                 0             0                1
+40                 0                 0             0                0
+41                 0                 0             0                0
+42                 0                 0             1                0
+43                 0                 0             0                0
+44                 0                 0             0                0
+45                 0                 0             1                0
+46                 0                 0             0                0
+47                 0                 0             0                0
+48                 0                 0             0                0
+49                 0                 0             0                0
+50                 0                 0             0                1
+51                 0                 0             1                0
+52                 0                 0             0                0
+53                 0                 0             0                0
+54                 0                 0             0                0
+55                 0                 0             0                0
+56                 0                 0             1                0
+57                 0                 0             0                0
+58                 0                 0             0                0
+59                 0                 0             0                0
+60                 0                 0             0                0
+61                 0                 0             0                0
+62                 0                 0             0                0
+63                 0                 0             0                1
+64                 0                 0             0                0
+65                 0                 0             0                0
+66                 0                 0             0                1
+67                 0                 0             0                0
+68                 0                 0             0                0
+69                 0                 0             0                0
+70                 0                 0             0                0
+71                 0                 0             0                0
+72                 0                 0             1                0
+73                 0                 0             0                0
+74                 0                 0             0                0
+75                 0                 0             0                0
+76                 0                 0             0                0
+77                 0                 0             0                0
+78                 0                 0             0                0
+79                 0                 0             0                0
+80                 0                 0             0                0
+81                 0                 0             0                0
+82                 0                 0             0                1
+83                 0                 0             0                0
+84                 0                 0             0                0
+85                 0                 0             0                0
+86                 0                 0             0                0
+87                 0                 0             0                0
+   Xanthocolletes_sp Hypodynerus_sp2 Muscidae_sp Agromyzidae_sp1
+1                  0               0           0               0
+2                  0               0           0               0
+3                  0               0           0               0
+4                  0               0           0               0
+5                  0               0           0               0
+6                  0               0           0               0
+7                  0               0           0               0
+8                  0               0           0               0
+9                  0               0           0               0
+10                 0               0           0               0
+11                 0               0           0               0
+12                 0               0           0               0
+13                 0               0           0               0
+14                 0               0           0               0
+15                 0               0           0               0
+16                 0               0           0               0
+17                 0               0           0               0
+18                 0               0           0               0
+19                 0               0           0               0
+20                 0               0           0               0
+21                 0               0           0               0
+22                 0               0           0               0
+23                 0               0           0               0
+24                 0               0           0               0
+25                 0               0           0               0
+26                 0               0           0               0
+27                 0               0           0               0
+28                 0               0           0               0
+29                 0               0           0               0
+30                 0               0           0               0
+31                 0               0           0               0
+32                 0               0           0               0
+33                 0               0           0               0
+34                 0               0           0               0
+35                 0               0           0               0
+36                 0               0           0               0
+37                 0               0           0               0
+38                 0               0           0               0
+39                 0               0           0               0
+40                 0               0           0               0
+41                 0               0           0               0
+42                 0               0           0               0
+43                 0               0           0               0
+44                 0               0           0               0
+45                 0               0           0               0
+46                 1               0           0               0
+47                 0               0           0               0
+48                 0               0           0               0
+49                 0               1           0               0
+50                 0               0           0               0
+51                 0               0           0               0
+52                 0               0           0               0
+53                 0               0           0               0
+54                 0               0           0               0
+55                 0               0           0               0
+56                 0               0           0               0
+57                 0               0           0               0
+58                 0               0           0               0
+59                 0               0           0               0
+60                 0               0           1               0
+61                 0               0           0               0
+62                 0               0           0               0
+63                 0               1           0               1
+64                 0               0           0               0
+65                 0               0           0               0
+66                 0               0           0               0
+67                 0               0           0               0
+68                 0               0           0               0
+69                 0               0           0               0
+70                 0               0           0               0
+71                 0               0           0               0
+72                 0               0           0               0
+73                 0               0           0               0
+74                 0               0           0               0
+75                 0               0           0               0
+76                 0               0           0               0
+77                 0               0           0               0
+78                 0               0           0               0
+79                 0               0           0               0
+80                 0               0           0               0
+81                 0               0           0               0
+82                 0               0           0               0
+83                 0               0           0               0
+84                 0               0           0               0
+85                 0               0           0               0
+86                 0               0           0               0
+87                 0               0           0               0
+   Agromyzidae_sp2 Anthomyiidae_sp2 Centris_sp Liphanthus_sp2 Anthomyiidae_sp4
+1                0                0          0              0                0
+2                0                0          0              0                0
+3                0                0          0              0                0
+4                0                0          0              0                0
+5                0                0          0              0                0
+6                0                0          0              0                0
+7                0                0          0              0                0
+8                0                0          0              0                0
+9                0                0          0              0                0
+10               0                0          0              0                0
+11               0                0          0              0                0
+12               0                0          0              0                0
+13               0                0          0              1                0
+14               0                0          0              0                0
+15               0                0          0              0                0
+16               0                0          0              0                0
+17               0                0          0              0                0
+18               0                0          0              0                0
+19               0                0          0              0                0
+20               0                0          0              0                0
+21               0                0          0              0                0
+22               0                0          0              0                0
+23               0                0          0              0                0
+24               0                0          0              0                0
+25               0                0          0              0                0
+26               0                0          0              0                0
+27               0                0          0              0                0
+28               0                0          0              0                0
+29               0                0          0              0                0
+30               0                0          0              0                0
+31               0                0          0              0                0
+32               0                0          0              0                0
+33               0                0          0              0                0
+34               0                0          0              0                0
+35               0                0          0              0                0
+36               0                0          0              0                0
+37               0                0          0              0                0
+38               0                0          0              0                0
+39               0                0          0              0                0
+40               0                0          0              0                0
+41               0                0          0              0                0
+42               0                0          0              0                0
+43               0                0          0              0                0
+44               0                0          0              0                0
+45               0                0          0              0                0
+46               0                0          0              0                0
+47               0                0          0              0                0
+48               0                0          0              0                0
+49               0                0          0              0                0
+50               0                0          0              0                0
+51               0                0          0              0                0
+52               0                0          0              0                0
+53               0                0          0              0                0
+54               0                0          0              0                0
+55               0                0          0              0                0
+56               0                0          0              0                0
+57               0                0          0              0                0
+58               0                0          0              0                0
+59               0                0          0              0                0
+60               0                0          0              0                0
+61               0                0          0              0                0
+62               0                0          0              0                0
+63               1                1          0              0                0
+64               0                0          0              0                0
+65               0                0          0              0                0
+66               0                0          0              0                0
+67               0                0          0              0                0
+68               0                0          0              0                0
+69               0                0          0              0                0
+70               0                0          0              0                0
+71               0                0          1              0                0
+72               0                0          0              0                0
+73               0                0          0              0                0
+74               0                0          0              0                0
+75               0                0          0              0                0
+76               0                0          0              0                0
+77               0                0          0              0                0
+78               0                0          0              0                0
+79               0                0          0              0                0
+80               0                0          0              0                0
+81               0                0          0              0                0
+82               0                0          0              0                0
+83               0                0          0              0                0
+84               0                1          0              0                0
+85               0                0          0              0                1
+86               0                0          0              0                0
+87               0                0          0              0                0
+   Chaetodemoticus_chilensis
+1                          0
+2                          0
+3                          0
+4                          0
+5                          0
+6                          0
+7                          0
+8                          0
+9                          0
+10                         0
+11                         0
+12                         0
+13                         0
+14                         0
+15                         0
+16                         0
+17                         0
+18                         0
+19                         0
+20                         0
+21                         0
+22                         0
+23                         0
+24                         0
+25                         0
+26                         0
+27                         0
+28                         0
+29                         0
+30                         0
+31                         0
+32                         0
+33                         0
+34                         0
+35                         0
+36                         0
+37                         0
+38                         0
+39                         0
+40                         0
+41                         0
+42                         0
+43                         0
+44                         0
+45                         0
+46                         0
+47                         0
+48                         0
+49                         0
+50                         0
+51                         0
+52                         0
+53                         0
+54                         0
+55                         0
+56                         0
+57                         0
+58                         0
+59                         0
+60                         0
+61                         0
+62                         0
+63                         0
+64                         0
+65                         0
+66                         0
+67                         0
+68                         0
+69                         0
+70                         0
+71                         0
+72                         0
+73                         0
+74                         0
+75                         0
+76                         0
+77                         0
+78                         0
+79                         0
+80                         0
+81                         0
+82                         0
+83                         0
+84                         0
+85                         0
+86                         1
+87                         1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(baseDatos, <span class="at">file =</span> <span class="st">"baseDatos.RDS"</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"writexl"</span>)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>writexl<span class="sc">::</span><span class="fu">write_xlsx</span>(baseDatos, <span class="at">path =</span> <span class="st">"baseDatos.xlsx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 
