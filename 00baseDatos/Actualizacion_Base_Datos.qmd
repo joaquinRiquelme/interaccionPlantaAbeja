@@ -28,9 +28,23 @@ base_datos <- readRDS("base_datos.RDS")
 matriz.general <-  readxl::read_excel("Matriz_general.xlsx", sheet = 1, skip = 1)[,-1]
 fuentes <- unique(matriz.general$ID)
 fuentes <- substr(x = fuentes, start = regexpr(pattern = "_", text = fuentes)+1,  stop = nchar(fuentes))
+fuentes[fuentes=="Kahe"] <- "074"
+fuentes[fuentes=="kbcontrol2009"] <- "075"
+fuentes[fuentes=="2010"] <- "076"
+fuentes[fuentes=="Var2012"] <- "077"
 
-fuentes <- fuentes[2:63]
+fuentes <- fuentes[fuentes!="chaco0611"]
+fuentes <- fuentes[fuentes!="kbrest2009"]
+fuentes <- fuentes[fuentes!="res_1521"]
 
+fuentes.carpetas <- list.files(path = "datosOriginales/")
+fuentes.carpetas.id <- substr(fuentes.carpetas, 1, regexpr(pattern = "_", text = fuentes.carpetas)-1)
+
+# fuentes que estan en la martriz pero no en las carpetas
+setdiff(fuentes, fuentes.carpetas.id)
+
+# fuentes que estan en las carpetas pero no en la martriz 
+setdiff(fuentes.carpetas.id, fuentes)
 
 for(fuentes.i in fuentes){
   file.fuente <- list.files("datosOriginales/")[
@@ -128,49 +142,130 @@ head(matriz_comp_larga)
 unique(matriz_comp_larga$especie)
 matriz_comp_larga$genero <- substr(matriz_comp_larga$especie, start = 1, stop = regexpr(pattern = ".", text = matriz_comp_larga$especie, fixed = TRUE)-1)
 
+matriz_comp_larga$genero.plantas <- substr(matriz_comp_larga$plantas, start = 1, stop = regexpr(pattern = ".", text = matriz_comp_larga$plantas, fixed = TRUE)-1)
+
 especies <- unique(matriz_comp_larga[c("genero","especie")])
-# especies$especie = substr(especies$Abeja,start = 1, stop = nchar(as.character(especies$Abeja))-5)
+plantas <- unique(matriz_comp_larga[c("genero.plantas","plantas")])
+
 head(especies)
+head(plantas)
+# especies$especie = substr(especies$Abeja,start = 1, stop = nchar(as.character(especies$Abeja))-5)
 sort(unique(especies$especie))
-
-
+sort(unique(plantas$plantas))
 
 # data.frame(aaa$`Apis mellifera`) |> pivot_wider()
 
 vector.generos <- sort(unique(especies$genero))
-lista.genero <- taxize::classification(vector.generos, db = "gbif", rows = 1)
+vector.generos <- vector.generos[vector.generos!=""]
+
+# vector.generos1 <- vector.generos[1:20]
+# vector.generos500 <- vector.generos[1:500]
+# vector.generos1000 <- vector.generos[501:1000]
+# vector.generos1500 <- vector.generos[1001:1500]
+# vector.generos2000 <- vector.generos[1501:2000]
+# vector.generos2347 <- vector.generos[2001:2347]
 
 
-lalapply <- lapply(lista.genero,
-       FUN = function(x){
-         if(is.data.frame(x)){
-           data.l <- data.frame(x[x[,"rank"] %in% c("order", "family", "genus"),c("name","rank")])
-           
-           
-           if(nrow(data.l)>2){
-             
-           # if(is.na(data.l)){stop}
-           data.f <- data.frame(orden=data.l[data.l$rank=="order","name"],
-                                familia=data.l[data.l$rank=="family","name"],
-                                genero=data.l[data.l$rank=="genus","name"])
-           data.f
-           
+ids.gbif <- get_gbifid_(vector.generos); beepr::beep(sound=8)
+# ids.gbif500 <- get_gbifid_(vector.generos500); beepr::beep(sound=8)
+# ids.gbif1000 <- get_gbifid_(vector.generos1000); beepr::beep(sound=8)
+# ids.gbif1500 <- get_gbifid_(vector.generos1500); beepr::beep(sound=8)
+# ids.gbif2000 <- get_gbifid_(vector.generos2000); beepr::beep(sound=8)
+# ids.gbif2347 <- get_gbifid_(vector.generos2347); beepr::beep(sound=8)
+
+# ids.gbif.todas <- list(ids.gbif500, ids.gbif1000, ids.gbif1500, ids.gbif2000, ids.gbif2347)
+
+
+# registro sin familia, se elimina por ahora
+ids.gbif <- ids.gbif[-1574]
+ids.gbif
+list.generos <- lapply(ids.gbif, function(x){
+  x <- data.frame(x)
+  if(nrow(x)>1){
+  x2 <- x[ x$kingdom=="Animalia" &
+             x$phylum=="Arthropoda" &
+             # x$status =="ACCEPTED" &
+             !is.na(x$genus) & !is.na(x$family) & 
+             !is.na(x$order)& x$rank != "kingdom",]
+  x2 <- x2[1,]
+  
+  if(is.element("order", names(x2)) &
+     is.element("family", names(x2)) & 
+     is.element("genus", names(x2))){
+    
+  x3 <- unique(x2[,c("order","family","genus")])
+  x3
+  }
+  
            }
-           
-           # data.l2 <- data.frame(orden = as.character(data.l[data.l[,"rank"] %in% c("order"), "name"]))#,
-           # data.l3 <- data.frame(familia = as.character(data.l[data.l[,"rank"] %in% c("family"), "name"]))#,
-           # data.l4 <- data.frame(genero = as.character(data.l[data.l[,"rank"] %in% c("genus"), "name"]))#,
-             # familia = as.character(data.l[data.l[,"rank"] %in% c("family"), "name"]),
-             # genero = as.character(data.l[data.l[,"rank"] %in% c("genus"), "name"])
-           # )
-           
-           # cbind(data.l2,data.l3,data.l4)
-             }
-         }
-       )
-tabla.generos <- do.call(rbind, lalapply)
+  
+  #names(x)[1])
+  
 
-table(tabla.generos$familia)
+  })
+
+
+tabla.generos <- do.call(rbind, list.generos)
+
+table(tabla.generos$order)
+table(tabla.generos$family)
+table(tabla.generos$genus)
+tabla.generos <- unique(tabla.generos)
+
+esp2 <- merge(especies, tabla.generos, by.x="genero", by.y="genus", all.x=TRUE)
+table(esp2$order)
+# table(esp2$family)
+subset(esp2, is.na(family))
+
+esp3 <- unique(esp2)
+sum(is.na(esp3$family))
+names(base_datos$especies)
+names(esp3) <- c("genero","especie","orden","familia")
+
+base_datos$especies <- rbind(base_datos$especies, esp3)
+str(base_datos$especies)
+head(base_datos$especies)
+
+write.csv(base_datos$especies, "tablas/especies.csv", row.names = FALSE)
+
+```
+
+
+```{r especies2}
+
+# gbif_name_usage("Apis", data = "gbif", )
+# lista.genero <- taxize::classification(vector.generos1, db = "gbif", rows = NA)
+# lista.genero <- taxize::classification(vector.generos1[2], db = "gbif")
+# lalapply <- lapply(lista.genero,
+#        FUN = function(x){
+#          if(is.data.frame(x)){
+#            data.l <- data.frame(x[x[,"rank"] %in% c("order", "family", "genus"),c("name","rank")])
+#            
+#            
+#            if(nrow(data.l)>2){
+#              
+#            # if(is.na(data.l)){stop}
+#            data.f <- data.frame(orden=data.l[data.l$rank=="order","name"],
+#                                 familia=data.l[data.l$rank=="family","name"],
+#                                 genero=data.l[data.l$rank=="genus","name"])
+#            data.f
+#            
+#            }
+#            
+#            # data.l2 <- data.frame(orden = as.character(data.l[data.l[,"rank"] %in% c("order"), "name"]))#,
+#            # data.l3 <- data.frame(familia = as.character(data.l[data.l[,"rank"] %in% c("family"), "name"]))#,
+#            # data.l4 <- data.frame(genero = as.character(data.l[data.l[,"rank"] %in% c("genus"), "name"]))#,
+#              # familia = as.character(data.l[data.l[,"rank"] %in% c("family"), "name"]),
+#              # genero = as.character(data.l[data.l[,"rank"] %in% c("genus"), "name"])
+#            # )
+#            
+#            # cbind(data.l2,data.l3,data.l4)
+#              }
+#          }
+#        )
+# tabla.generos <- do.call(rbind, lalapply)
+# 
+# table(tabla.generos$familia)
 
 unique(especies$Familia)
 head(sort(unique(especies$Abeja)))

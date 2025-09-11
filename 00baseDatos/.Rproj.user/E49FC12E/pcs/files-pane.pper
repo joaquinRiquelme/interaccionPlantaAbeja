@@ -1,9 +1,13 @@
 {
     "sortOrder": [
         {
+            "columnIndex": 4,
+            "ascending": false
+        },
+        {
             "columnIndex": 2,
             "ascending": true
         }
     ],
-    "path": "F:/Github/interaccionPlantaAbeja/00baseDatos"
+    "path": "F:/Github/interaccionPlantaAbeja/00baseDatos/datosOriginales/078_Vazquez_et al_2002"
 }
