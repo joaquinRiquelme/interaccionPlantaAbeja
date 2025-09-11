@@ -1,32 +1,31 @@
-;Abundance;Agapostemon virescens;Andrena banksi;Andrena confederata;Andrena hilaris;Andrena imitatrix;Andrena perplexa;Andrena spiraeana;Andrena vicina;Anthophora abrupta;Apis mellifera;Augochlora pura;Augochlorella aurata;Augochloropsis metallica;Bombus auricomus;Bombus bimaculatus;Bombus griseocollis;Bombus impatiens;Bombus perplexus;Ceratina calcarata;Ceratina sp1 M_PL_073;Ceratina strenua;Coelioxys sayi;Colletes thoracicus;Halictus confusus;Hylaeus sp1 M_PL_073;Lasioglossum birkmani;Lasioglossum cressonii;Lasioglossum ephialtum;Lasioglossum fuscipenne;Lasioglossum hitchensi;Lasioglossum imitatum;Lasioglossum macoupinens;Lasioglossum oblongum;Lasioglossum obscurum;Lasioglossum quebecense;Lasioglossum sp1 M_PL_073;Lasioglossum subviridatum;Lasioglossum tegulare;Lasioglossum weemsi;Megachile mendica;Melissodes bimaculata;Ptilothrix bombiformus
-"Abundance""";#;1;1;2;1;1;3;1;2;1;8;205;57;11;1;16;65;110;8;113;9;4;5;5;2;12;8;4;1;3;1;9;4;1;13;1;5;1;3;2;13;1;26
-Apocynum cannabinum;10;0;0;0;0;0;0;0;0;0;0;1;0;3;0;0;2;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
-Asclepias syriaca;58;0;0;0;0;0;0;0;0;1;0;0;0;0;0;1;52;0;0;1;0;0;0;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;1;0;0
-Calystegia sepium;4;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1
-Campsis radicans;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-Cephalanthus occidentalis;79;0;0;0;0;0;0;1;0;0;4;5;0;0;1;11;7;13;7;13;0;0;0;0;1;3;0;0;0;0;0;7;0;0;1;0;0;0;0;1;1;0;3
-Commelina erecta;4;0;0;0;0;0;0;0;0;0;0;2;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-Conium maculatum;30;0;1;2;1;1;3;0;2;0;0;1;0;0;0;1;0;0;0;0;0;0;0;5;0;9;1;0;0;0;0;0;0;0;2;0;1;0;0;0;0;0;0
-Erysimum cheiranthoides;7;0;0;0;0;0;0;0;0;0;0;2;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;0;0
-Eupatorium coelestinum;12;0;0;0;0;0;0;0;0;0;0;6;0;0;0;0;0;1;0;4;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
-Eupatorium purpureum;21;0;0;0;0;0;0;0;0;0;0;5;0;0;0;0;0;9;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;4;0;1;0;0;0;1;0;0
-Helianthus decapetalus;9;0;0;0;0;0;0;0;0;0;0;5;0;0;0;0;0;1;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
-Hibiscus laevis;43;0;0;0;0;0;0;0;0;0;0;10;1;1;0;0;2;3;0;1;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;1;22
-Hypericum prolificum;45;0;0;0;0;0;0;0;0;0;0;0;6;0;0;0;0;34;0;3;0;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0
-Lapsana communis;17;0;0;0;0;0;0;0;0;0;0;1;5;0;0;0;0;0;0;0;0;0;0;0;0;0;5;3;0;1;0;0;0;1;0;0;0;1;0;0;0;0;0
-Lindernia dubia;16;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;10;1;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;1;0;2;0;0;0;0
-Lycopus rubellus;8;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;5;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0
-Lysimachia nummularia;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-Oxalis stricta;7;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;2;0;1;0;0;0;0;0;0;0;0;0;0;2;0;1;0;0;0;0;0;0;0;0
-Polygonum amphibium;10;0;0;0;0;0;0;0;0;0;0;0;9;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-Polymnia uvedalia;60;1;0;0;0;0;0;0;0;0;0;37;0;0;0;0;0;10;0;12;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-Rudbeckia hirta;4;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-Rudbeckia laciniata;40;0;0;0;0;0;0;0;0;0;0;32;0;2;0;0;0;3;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;0;0
-Satchys tenuifolia;18;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;1;11;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0
-Scrophularia marilandica;34;0;0;0;0;0;0;0;0;0;0;27;1;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;2;0;3;0;0;0;0;0;0;0;0
-Solanum carolinense;28;0;0;0;0;0;0;0;0;0;0;0;0;4;0;0;1;23;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-Solidago sp1 M_PL_073;21;0;0;0;0;0;0;0;0;0;0;19;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-Symphiotrichum lanceolatum;23;0;0;0;0;0;0;0;0;0;0;1;0;0;0;1;0;0;0;17;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;0;0
-Verbena hastata;59;0;0;0;0;0;0;0;0;0;0;6;24;0;0;0;0;0;0;22;5;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
-Verbena urticifolia;56;0;0;0;0;0;0;0;0;0;4;31;5;1;0;0;0;0;1;8;1;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0
-Verbesina alternifolia;15;0;0;0;0;0;0;0;0;0;0;10;1;0;0;0;0;2;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+,Agapostemon_virescens,Andrena_banksi,Andrena_confederata,Andrena_hilaris,Andrena_imitatrix,Andrena_perplexa,Andrena_spiraeana,Andrena_vicina,Anthophora_abrupta,Apis_mellifera,Augochlora_pura,Augochlorella_aurata,Augochloropsis_metallica,Bombus_auricomus,Bombus_bimaculatus,Bombus_griseocollis,Bombus_impatiens,Bombus_perplexus,Ceratina_calcarata,Ceratina_sp1M_PL_073,Ceratina_strenua,Coelioxys_sayi,Colletes_thoracicus,Halictus_confusus,Hylaeus_sp1M_PL_073,Lasioglossum_birkmani,Lasioglossum_cressonii,Lasioglossum_ephialtum,Lasioglossum_fuscipenne,Lasioglossum_hitchensi,Lasioglossum_imitatum,Lasioglossum_macoupinens,Lasioglossum_oblongum,Lasioglossum_obscurum,Lasioglossum_ quebecense,Lasioglossum_sp1M_PL_073,Lasioglossum_subviridatum,Lasioglossum_tegulare,Lasioglossum_weemsi,Megachile_mendica,Melissodes_bimaculata,Ptilothrix_bombiformus
+Apocynum_cannabinum,0,0,0,0,0,0,0,0,0,0,1,0,3,0,0,2,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Asclepias_syriaca,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,52,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+Calystegia_sepium,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Campsis_radicans,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cephalanthus_occidentalis,0,0,0,0,0,0,1,0,0,4,5,0,0,1,11,7,13,7,13,0,0,0,0,1,3,0,0,0,0,0,7,0,0,1,0,0,0,0,1,1,0,3
+Commelina_erecta,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Conium_maculatum,0,1,2,1,1,3,0,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,5,0,9,1,0,0,0,0,0,0,0,2,0,1,0,0,0,0,0,0
+Erysimum_cheiranthoides,0,0,0,0,0,0,0,0,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+Eupatorium_coelestinum,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,1,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Eupatorium_purpureum,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,9,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,1,0,0,0,1,0,0
+Helianthus_decapetalus,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Hibiscus_laevis,0,0,0,0,0,0,0,0,0,0,10,1,1,0,0,2,3,0,1,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,1,22
+Hypericum_prolificum,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,34,0,3,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Lapsana_communis,0,0,0,0,0,0,0,0,0,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,5,3,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0
+Lindernia_dubia,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,0,2,0,0,0,0
+Lycopus_rubellus,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Lysimachia_nummularia,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Oxalis_stricta,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0
+Polygonum_amphibium,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Polymnia_uvedalia,1,0,0,0,0,0,0,0,0,0,37,0,0,0,0,0,10,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rudbeckia_hirta,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rudbeckia_laciniata,0,0,0,0,0,0,0,0,0,0,32,0,2,0,0,0,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0
+Satchys_tenuifolia,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,11,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0
+Scrophularia_marilandica,0,0,0,0,0,0,0,0,0,0,27,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,2,0,3,0,0,0,0,0,0,0,0
+Solanum_carolinense,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,1,23,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Solidago_sp1M_PL_073,0,0,0,0,0,0,0,0,0,0,19,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Symphiotrichum_lanceolatum,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,17,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+Verbena_ hastata,0,0,0,0,0,0,0,0,0,0,6,24,0,0,0,0,0,0,22,5,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Verbena_urticifolia,0,0,0,0,0,0,0,0,0,4,31,5,1,0,0,0,0,1,8,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0
+Verbesina_alternifolia,0,0,0,0,0,0,0,0,0,0,10,1,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

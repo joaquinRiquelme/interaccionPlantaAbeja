@@ -1,0 +1,205 @@
+---
+title: "Actualización de base de datos interacción planta-abeja"
+author: "Katherine Collao, Joaquin Riquelme, Maureen Murúa"
+format: html
+editor: visual
+---
+
+## Contexto
+
+Se actualiza la base de datos de proyecto de investigacion de interaccion entre plantas y abejas.
+
+Se utiliza como base la estructura de base de datos provista en .....
+
+```{r base}
+library("tidyverse")
+library("writexl")
+library("taxize")
+
+# base_datos <- list()
+base_datos <- readRDS("base_datos.RDS")
+
+```
+
+## Matrices bipartitas en formato ancho y largo
+
+```{r mbipartitas}
+
+matriz.general <-  readxl::read_excel("Matriz_general.xlsx", sheet = 1, skip = 1)[,-1]
+fuentes <- unique(matriz.general$ID)
+fuentes <- substr(x = fuentes, start = regexpr(pattern = "_", text = fuentes)+1,  stop = nchar(fuentes))
+
+fuentes <- fuentes[2:63]
+
+
+for(fuentes.i in fuentes){
+  file.fuente <- list.files("datosOriginales/")[
+    grep(pattern = fuentes.i, 
+         substr(x = list.files("datosOriginales/"), 1,5))]
+  print(file.fuente)
+  
+  archivos <- list.files(paste("datosOriginales/",file.fuente,sep=""))
+  
+  archivos.csv <- archivos[grep(pattern = ".csv", x = archivos)]
+  if(length(grep(pattern = "specie", x = archivos.csv)) > 0 ){
+    archivos.csv <- archivos.csv[-grep(pattern = "specie", x = archivos.csv)]}
+  archivo.csv.i <- archivos.csv[grep(pattern = fuentes.i, x = archivos.csv)]
+  
+  matriz.i <- read.csv(file.path("datosOriginales/",file.fuente,archivo.csv.i))
+  matriz.i2 <- read.csv2(file.path("datosOriginales/",file.fuente,archivo.csv.i))
+  
+  if(ncol(matriz.i)>1){matriz.ancha.i <- matriz.i}
+  if(ncol(matriz.i)==1){matriz.ancha.i <- matriz.i2}
+  
+  names(matriz.ancha.i)[1] <- "plantas"
+  matriz.ancha.i$plantas <- gsub(pattern = " ", replacement = ".", x = matriz.ancha.i$plantas) 
+  matriz.ancha.i$plantas <- gsub(pattern = "_", replacement = ".", x = matriz.ancha.i$plantas) 
+  
+  nombres.nuevos <- names(matriz.ancha.i)
+  nombres.nuevos <- gsub(pattern = " ", replacement = ".", x = nombres.nuevos)
+  nombres.nuevos <- gsub(pattern = "_", replacement = ".", x = nombres.nuevos)
+  
+  for(nombre.i in nombres.nuevos){
+    if(substr(nombre.i, nchar(nombre.i), nchar(nombre.i))=="."){
+      nombres.nuevos[nombres.nuevos==nombre.i] <- substr(nombre.i, 1, nchar(nombre.i)-1)
+    }
+    }
+  
+  names(matriz.ancha.i) <- nombres.nuevos
+  
+  base_datos[[paste("matriz_ancha",fuentes.i,sep=".")]] <- matriz.ancha.i
+  write.csv(matriz.ancha.i, file = paste("tablas/matriz_ancha",fuentes.i,"csv",sep="."), row.names = FALSE)
+  
+  matriz.ancha.i <- cbind(ID = paste("M", fuentes.i, sep="_"), matriz.ancha.i)
+  
+  matriz.larga.i <- data.frame(
+    matriz.ancha.i |> 
+      group_by(ID, plantas) |> 
+      pivot_longer(cols = names(matriz.ancha.i)[3:ncol(matriz.ancha.i)],
+                   values_to = "interaccion",
+                   names_to = "especie"))
+  
+  base_datos[[paste("matriz_larga", fuentes.i,sep=".")]] <- matriz.larga.i
+  write.csv(matriz.larga.i, file = paste("tablas/matriz_larga",fuentes.i,"csv",sep="."), row.names = FALSE)
+  
+  # if(isTRUE(file.fuente)){
+    # files.csv <- grep(pattern = ".csv",
+                     # x = list.files(paste("datosOriginales/",file.fuente,sep="")))
+  # }
+  
+}
+
+head(base_datos$matriz_ancha.001)
+head(base_datos$matriz_larga.001)
+
+
+# creacion de una sola matriz en formato largo con todas las fuentes de datos
+matrices.largas <- list.files(path = "tablas/", pattern = "matriz_larga")
+
+matriz_comp_larga <- c()
+for(m.i in matrices.largas){
+  print(m.i)
+  matriz_comp_larga <- rbind(matriz_comp_larga, read.csv(file = file.path("tablas",m.i)))
+}
+
+head(matriz_comp_larga)
+unique(matriz_comp_larga$ID)
+table(matriz_comp_larga$ID)
+length(unique(matriz_comp_larga$plantas))
+length(unique(matriz_comp_larga$especie))
+hist(log(log(matriz_comp_larga$interaccion)))
+
+
+base_datos$matriz_comp_larga <- matriz_comp_larga
+write.csv(matriz_comp_larga, file = paste("tablas/matriz_comp_larga","csv",sep="."), row.names = FALSE)
+
+```
+
+
+
+## Especies
+
+La tabla especie se poblará a partir de los valores únicos de la matriz larga que contiene todas las fuentes de datos.
+
+```{r especies}
+matriz_comp_larga <- base_datos$matriz_comp_larga
+head(matriz_comp_larga)
+
+unique(matriz_comp_larga$especie)
+matriz_comp_larga$genero <- substr(matriz_comp_larga$especie, start = 1, stop = regexpr(pattern = ".", text = matriz_comp_larga$especie, fixed = TRUE)-1)
+
+especies <- unique(matriz_comp_larga[c("genero","especie")])
+# especies$especie = substr(especies$Abeja,start = 1, stop = nchar(as.character(especies$Abeja))-5)
+head(especies)
+sort(unique(especies$especie))
+
+
+
+# data.frame(aaa$`Apis mellifera`) |> pivot_wider()
+
+vector.generos <- sort(unique(especies$genero))
+lista.genero <- taxize::classification(vector.generos, db = "gbif", rows = 1)
+
+
+lalapply <- lapply(lista.genero,
+       FUN = function(x){
+         if(is.data.frame(x)){
+           data.l <- data.frame(x[x[,"rank"] %in% c("order", "family", "genus"),c("name","rank")])
+           
+           
+           if(nrow(data.l)>2){
+             
+           # if(is.na(data.l)){stop}
+           data.f <- data.frame(orden=data.l[data.l$rank=="order","name"],
+                                familia=data.l[data.l$rank=="family","name"],
+                                genero=data.l[data.l$rank=="genus","name"])
+           data.f
+           
+           }
+           
+           # data.l2 <- data.frame(orden = as.character(data.l[data.l[,"rank"] %in% c("order"), "name"]))#,
+           # data.l3 <- data.frame(familia = as.character(data.l[data.l[,"rank"] %in% c("family"), "name"]))#,
+           # data.l4 <- data.frame(genero = as.character(data.l[data.l[,"rank"] %in% c("genus"), "name"]))#,
+             # familia = as.character(data.l[data.l[,"rank"] %in% c("family"), "name"]),
+             # genero = as.character(data.l[data.l[,"rank"] %in% c("genus"), "name"])
+           # )
+           
+           # cbind(data.l2,data.l3,data.l4)
+             }
+         }
+       )
+tabla.generos <- do.call(rbind, lalapply)
+
+table(tabla.generos$familia)
+
+unique(especies$Familia)
+head(sort(unique(especies$Abeja)))
+sort(unique(especies$especie))
+
+especies.tabla <- unique(especies[,c("Familia","genero","especie")])
+head(especies.tabla)
+names(especies.tabla) <- c("familia","genero","especie")
+especies.tabla$orden <- ""
+
+base_datos$especies <- rbind(base_datos$especies, especies.tabla)
+str(base_datos$especies)
+str(especies.tabla)
+
+head(base_datos$especies)
+
+write.csv(base_datos$especies, "tablas/especies.csv", row.names = FALSE)
+
+```
+
+## Guardar
+
+```{r guardar}
+
+saveRDS(base_datos, file = "base_datos.RDS")
+
+base_datos$matriz_comp_larga <- NULL
+
+writexl::write_xlsx(base_datos, path = "base_datos.xlsx")
+
+```
+

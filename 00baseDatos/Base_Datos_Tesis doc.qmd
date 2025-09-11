@@ -1,5 +1,6 @@
 ---
-title: "Base de datos"
+title: "Estructura de Base de datos para el estudio de interacciones abeja planta"
+author: "Katherine Collao, Joaquin Riquelme, Maureen Murúa"
 format: docx
 editor: visual
 ---
@@ -16,7 +17,7 @@ base_datos<- list()
 
 La tabla especies contiene:
 
--   especies: corresponde al nombre cientifico de todas las especies presentes en cada matriz de intracción. Los espacios entre el "género y especie" está separados por un punto. Los nombres cientificos de las abejas, tienen un ID asociado a cada matriz.
+-   especie: corresponde al nombre cientifico de todas las especies presentes en cada matriz de intracción. Los espacios entre el "género y especie" está separados por un punto. Los nombres cientificos de las abejas, tienen un ID asociado a cada matriz.
 
 -   genero: se escribre en minuscula
 
@@ -25,28 +26,31 @@ La tabla especies contiene:
 -   Orden: se escribe sólo la 1° letra en mayuscula
 
 ```{r especies}
-base_datos$especies<-data.frame(especies=c("Megachile polinosa"),
-                                genero=c("Megachile"),
-                                familia=c("Megachilidae"),
-                                orden=c("Hymenoptera"))
+base_datos$especies<-data.frame(especie=c("Genero especie"),
+                                genero=c("Genero"),
+                                familia=c("Familia"),
+                                orden=c("Orden"))
 
 ```
 
-DIT
+### DIT
 
--   especies: corresponde al nombre cientifico. Los espacios entre "género y especie" están separados por un punto.
+-   especie: corresponde al nombre cientifico. Los espacios entre "género y especie" están separados por un punto.
 
 -   DIT: se escribe siempre con mayuscula, corresponde la distancia intertegular de las abejas. Es una medida en mm.
 
 -   fuente: corresponde a la referencia del paper desde donde obtuve el tamaño corporal.
 
 ```{r dit}
-base_datos$DIT<-data.frame(especies=c("Megachile polinosa"),
+base_datos$DIT<-data.frame(especie=c("Genero especie"),
                                 DIT=c(3.5),
-                                fuente=c("Roulston_2001"))
+                                fuente=c("Fuente_000"))
 ```
 
--   especies_A: corresponde al nombre cientifico de las especies presentes en la matriz de interacción. Para las abejas, el nombre tiene un ID asociado a la matriz de origen.
+
+### G
+
+-   especie_A: corresponde al nombre cientifico de las especie presentes en la matriz de interacción. Para las abejas, el nombre tiene un ID asociado a la matriz de origen.
 
 -   G: corresponde al grado o número de links entre abejas y plantas
 
@@ -55,51 +59,50 @@ base_datos$DIT<-data.frame(especies=c("Megachile polinosa"),
 -   G_z: corresponde a la normalización por z_score del grado (G)
 
 ```{r G}
-base_datos$G<-data.frame(especies_A=c("Megachile polinosa"),
+base_datos$G<-data.frame(especie_A=c("Genero especie"),
                                 G=c(3.5),
                                 G_re=c(5),
                                 G_z=c(0.4),
-                               ID=c("M_001"))
+                               ID=c("M_000"))
 
 ```
 
-matrices (formato largo)
+### matrices (formato largo)
 
 -   ID : corresponde a la identificación de la matriz, se escribe M_001. Es un código único.
 
--   plantas: corresponde al nombre cientifico de las plantas presente en cada matriz de interacción.
+-   plantas: corresponde al nombre científico de las plantas presente en cada matriz de interacción.
 
--   especies: corresponde al nombre cientifico de todas las especies presentes en cada matriz de intracción. Los espacios entre el "género y especie" está separados por un punto. Los nombres cientificos de las abejas, tienen un ID asociado a cada matriz.
+-   especie: corresponde al nombre científico de todas las especie de polinizadoras presentes en cada matriz de interacción. Los espacios entre el "género y especie" está separados por un punto. Los nombres científicos de las abejas, tienen un ID asociado a cada matriz.
 
--   interaccion: el valor de la interacción corresponde a una tasa de visita o a la presencia/ausencia de la interacción en una red cualitativa.
+-   interacción: el valor de la interacción corresponde a una tasa de visita o a la presencia/ausencia de la interacción en una red cualitativa.
 
 ```{r matrices}
-base_datos$matrices<-data.frame(ID=c("M_001"),
-                                plantas=c("Quillaja saponaria"),
-                                especies=c("Megachile polinosa"),
+base_datos$matrices<-data.frame(ID=c("M_000"),
+                                plantas=c("Generop especiep"),
+                                especie=c("Genero especie"),
                                 interaccion=c(1))
                         
 
 ```
 
-matrices_bipartitas (en formato ancho)
+### matrices_bipartitas (en formato ancho)
 
 -   plantas: corresponde al nombre cientifico de las plantas presente en cada matriz de interacción.
 
--   especies_A: corresponde al nombre cientifico de la 1° especie de abeja que ineractúa con una planta.
+-   especie_A: corresponde al nombre cientifico de la 1° especie de abeja que ineractúa con una planta.
 
 -   espeices_B: corresponde al nombre cientifico de a 2° especie de abeja que interactúa con una planta
 
 ```{r matrices_bipartitas}
-base_datos$matrices_bipartitas<-data.frame(ID=c("M_001"),
-                                plantas=c("Quillaja saponaria"),
-                                especies_A=c("Megachile polinosa"),
-                                especies_B=c(1))
+base_datos$matrices_bipartitas<-data.frame(ID=c("M_000"),
+                                plantas=c("Genero especie"),
+                                especie_A=c(1),
+                                especie_B=c(1))
 
 ```
 
-```         
-```
+### Ubicacion geografica
 
 ID: corresponde a la identificación de la matriz, se escribe M_001. Es un código único.
 
@@ -112,20 +115,21 @@ País: nombre del país en inglés
 Localidad: identificación de la zona de muestreo (dato colectado desde paper)
 
 ```{r ubicacion_geografica}
-base_datos$ubicacion_geografica<-data.frame(ID=c("M_001"),
-                               Latitud=c("Quillaja saponaria"),
-                                Longitud=c("Megachile polinosa"),
-                               Pais=c(1),
-                               Localidad =c(1))
+base_datos$ubicacion_geografica<-data.frame(ID=c("M_000"),
+                               Latitud=c(-33),
+                                Longitud=c(-71),
+                               Pais=c("Chile"),
+                               Localidad =c("Localidad 1"))
 
 ```
 
-```{r G}
+
+## Guardar estructura de base de datos
+```{r guardar}
 base_datos
 writexl::write_xlsx(x = base_datos, path = "base_datos.xlsx")
 saveRDS(object = base_datos, file = "base_datos.RDS") 
 rm(base_datos)
 
-library(foreign)
 
 ```
