@@ -228,10 +228,7 @@ head(base_datos$especies)
 
 write.csv(base_datos$especies, "tablas/especies.csv", row.names = FALSE)
 
-```
-
-
-```{r especies2}
+# ```{r especies2}
 
 # gbif_name_usage("Apis", data = "gbif", )
 # lista.genero <- taxize::classification(vector.generos1, db = "gbif", rows = NA)
@@ -267,22 +264,72 @@ write.csv(base_datos$especies, "tablas/especies.csv", row.names = FALSE)
 # 
 # table(tabla.generos$familia)
 
-unique(especies$Familia)
-head(sort(unique(especies$Abeja)))
-sort(unique(especies$especie))
+# 
+# matriz.general$genero <- substr(matriz.general$Abeja, 
+#                                 start = 1, 
+#                                 stop = regexpr(pattern = ".", text = matriz.general$Abeja, fixed = TRUE)-1)
+# head(matriz.general)
+# aaa <- unique(matriz.general[,c("Familia","genero","Abeja")])
+# esp3.na <- subset(esp3, is.na(familia))
+# especies.fallo <- unique(esp3.na$especie)
+# 
+# matriz.general$especies <- gsub(pattern = " ", replacement = ".", x = matriz.general$Abeja)
+# matriz.general$especies <- substr(x = matriz.general$especies, 
+#                                   start = 1, 
+#                                   stop = regexpr(pattern = "_", text = matriz.general$especies, fixed = TRUE)-1)
+# matriz.general$especies <- gsub(pattern = "_", replacement = ".", x = matriz.general$especies)
+# 
+# intersect(especies.fallo, matriz.general$especies)
 
-especies.tabla <- unique(especies[,c("Familia","genero","especie")])
-head(especies.tabla)
-names(especies.tabla) <- c("familia","genero","especie")
-especies.tabla$orden <- ""
 
-base_datos$especies <- rbind(base_datos$especies, especies.tabla)
-str(base_datos$especies)
-str(especies.tabla)
+```
 
-head(base_datos$especies)
 
-write.csv(base_datos$especies, "tablas/especies.csv", row.names = FALSE)
+## Rasgos 
+```{r rasgos}
+matriz.general$genero <- substr(matriz.general$Abeja, 
+                                start = 1,
+                                stop = regexpr(pattern = ".", text = matriz.general$Abeja, fixed = TRUE)-1)
+matriz.general$especies <- gsub(pattern = " ", replacement = ".", x = matriz.general$Abeja)
+matriz.general$especies <- substr(x = matriz.general$especies,
+                                  start = 1,
+                                  stop = regexpr(pattern = "_", text = matriz.general$especies, fixed = TRUE)-1)
+matriz.general$especies <- gsub(pattern = "_", replacement = ".", x = matriz.general$especies)
+
+head(matriz.general)
+
+rasgos.abejas <- unique(matriz.general[,c("ID","Abeja","especies","genero","Familia","DIT","Grado","Grado relativo", "z_Grado")])
+
+base_datos$rasgos <- rasgos.abejas
+write.csv(rasgos.abejas, file = file.path("tablas","rasgos.abejas.csv"),row.names = FALSE)
+```
+
+
+### DIT
+```{r DIT}
+DIT <- rasgos.abejas[!is.na(rasgos.abejas$DIT),c("ID","Abeja","especies","genero","Familia","DIT")]
+base_datos$DIT <- DIT
+write.csv(DIT, file = file.path("tablas","DIT.csv"),row.names = FALSE)
+
+```
+
+
+### G
+```{r G}
+G <- rasgos.abejas[!is.na(rasgos.abejas$Grado),c("ID","Abeja","especies","genero","Familia","Grado","Grado relativo", "z_Grado")]
+base_datos$G <- G
+write.csv(G, file = file.path("tablas","G.csv"),row.names = FALSE)
+
+```
+
+
+## Ubicacion geografica
+```{r ubicacion}
+ubicacion.geografica <- unique(matriz.general[,c("ID","Localidad","Latitud","Longitud")])
+plot(ubicacion$Longitud,ubicacion$Latitud)
+
+base_datos$ubicacion.geografica <- ubicacion
+write.csv(ubicacion.geografica, file = file.path("tablas","ubicacion.geografica.csv"),row.names = FALSE)
 
 ```
 
