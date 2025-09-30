@@ -129,8 +129,6 @@ write.csv(matriz_comp_larga, file = paste("tablas/matriz_comp_larga","csv",sep="
 
 ```
 
-
-
 ## Especies
 
 La tabla especie se poblará a partir de los valores únicos de la matriz larga que contiene todas las fuentes de datos.
@@ -284,8 +282,8 @@ write.csv(base_datos$especies, "tablas/especies.csv", row.names = FALSE)
 
 ```
 
+## Rasgos
 
-## Rasgos 
 ```{r rasgos}
 matriz.general$genero <- substr(matriz.general$Abeja, 
                                 start = 1,
@@ -304,8 +302,8 @@ base_datos$rasgos <- rasgos.abejas
 write.csv(rasgos.abejas, file = file.path("tablas","rasgos.abejas.csv"),row.names = FALSE)
 ```
 
-
 ### DIT
+
 ```{r DIT}
 DIT <- rasgos.abejas[!is.na(rasgos.abejas$DIT),c("ID","Abeja","especies","genero","Familia","DIT")]
 base_datos$DIT <- DIT
@@ -313,8 +311,8 @@ write.csv(DIT, file = file.path("tablas","DIT.csv"),row.names = FALSE)
 
 ```
 
-
 ### G
+
 ```{r G}
 G <- rasgos.abejas[!is.na(rasgos.abejas$Grado),c("ID","Abeja","especies","genero","Familia","Grado","Grado relativo", "z_Grado")]
 base_datos$G <- G
@@ -322,8 +320,8 @@ write.csv(G, file = file.path("tablas","G.csv"),row.names = FALSE)
 
 ```
 
-
 ## Ubicacion geografica
+
 ```{r ubicacion}
 ubicacion.geografica <- unique(matriz.general[,c("ID","Localidad","Latitud","Longitud")])
 plot(ubicacion$Longitud,ubicacion$Latitud)
@@ -344,4 +342,3 @@ base_datos$matriz_comp_larga <- NULL
 writexl::write_xlsx(base_datos, path = "base_datos.xlsx")
 
 ```
-

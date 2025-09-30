@@ -47,7 +47,6 @@ base_datos$DIT<-data.frame(especie=c("Genero especie"),
                                 fuente=c("Fuente_000"))
 ```
 
-
 ### G
 
 -   especie_A: corresponde al nombre cientifico de las especie presentes en la matriz de interacción. Para las abejas, el nombre tiene un ID asociado a la matriz de origen.
@@ -123,8 +122,8 @@ base_datos$ubicacion_geografica<-data.frame(ID=c("M_000"),
 
 ```
 
-
 ## Guardar estructura de base de datos
+
 ```{r guardar}
 base_datos
 writexl::write_xlsx(x = base_datos, path = "base_datos.xlsx")
