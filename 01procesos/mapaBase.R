@@ -17,6 +17,7 @@ ubi_sf <- st_as_sf(ubi, coords = c("Longitud", "Latitud"), crs="4326")
 
 freq <- data.frame(table(ubi_sf$Localidad))
 ubi_sf <- merge(ubi_sf, freq, by.x="Localidad", by.y="Var1")
+names(ubi_sf)[names(ubi_sf)=="Freq"] <- "n.red"
 st_crs(ubi_sf) <- 4326
 
 aaa <- ubi_sf |> st_transform(crs = 3857)
@@ -26,18 +27,14 @@ plot(aaa)
 #baja datos paises
 world <- ne_countries(scale = "medium", returnclass = "sf")|>
   st_transform(crs = 3857)
-plot(world$geometry)
-st_as_sf(ubi, coords = c("Longitud", "Latitud"))
-ubi|>st_transform(crs = 3857)
 
-scalebar
 
-aaa$Freq
 mapa <- ggplot(data = world)+
   geom_sf(aes())+  #agrega geometría de objetos
-  geom_sf(data=aaa, 
+  geom_sf(data=aaa, aes(size=n.red),
           col='red', 
-          size=aaa$Freq+2)+
+          # size=aaa$Freq+2
+          )+
   # annotation_scale(
   #   data=world,
   #   pad_y = unit(2, "cm"),
@@ -56,7 +53,7 @@ mapa <- ggplot(data = world)+
     location = "bl",          # Misma ubicación que la escala
     which_north = "true",     # "true" para norte verdadero
     pad_x = unit(2.5, "cm"),  # Espacio para separarla de la escala
-    pad_y = unit(3, "cm"),  # Espacio para separarla de la escala
+    pad_y = unit(2.5, "cm"),  # Espacio para separarla de la escala
     style = north_arrow_fancy_orienteering # Estilo de la flecha
   ) +
   # scalebar(data = world, location = "bottomright", dist = 4,
@@ -66,7 +63,6 @@ mapa <- ggplot(data = world)+
   theme_bw()
 mapa
 # +
-  # scale_fill_viridis_c(option = "plasma", trans = "sqrt")+
   # geom_point(data = aaa, 
            # aes(x = Longitud, y = Latitud), 
            # color = "red",  # Color de los puntos
