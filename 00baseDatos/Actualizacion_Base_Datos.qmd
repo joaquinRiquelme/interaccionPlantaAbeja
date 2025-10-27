@@ -29,13 +29,14 @@ matriz.general <-  readxl::read_excel("Matriz_general.xlsx", sheet = 1, skip = 1
 fuentes <- unique(matriz.general$ID)
 fuentes <- substr(x = fuentes, start = regexpr(pattern = "_", text = fuentes)+1,  stop = nchar(fuentes))
 fuentes[fuentes=="Kahe"] <- "074"
-fuentes[fuentes=="kbcontrol2009"] <- "075"
-fuentes[fuentes=="2010"] <- "076"
-fuentes[fuentes=="Var2012"] <- "077"
+fuentes[fuentes=="kbrest2009"] <- "075"
+fuentes[fuentes=="kbcontrol2009"] <- "076"
+fuentes[fuentes=="2010"] <- "077"
+fuentes[fuentes=="Var2012"] <- "078"
+fuentes[fuentes=="chaco0611"] <- "079"
+fuentes[fuentes=="res_1521"] <- "080"
 
-fuentes <- fuentes[fuentes!="chaco0611"]
-fuentes <- fuentes[fuentes!="kbrest2009"]
-fuentes <- fuentes[fuentes!="res_1521"]
+fuentes <- fuentes[fuentes!=""]
 
 fuentes.carpetas <- list.files(path = "datosOriginales/")
 fuentes.carpetas.id <- substr(fuentes.carpetas, 1, regexpr(pattern = "_", text = fuentes.carpetas)-1)
