@@ -1,13 +1,70 @@
 library(tidyverse)
 
-base_datos <- readRDS("F:/Github/interaccionPlantaAbeja/00baseDatos/base_datos.RDS")
-
+base_datos <- readRDS("../00baseDatos/base_datos.RDS")
 
 ml <- base_datos$matriz_comp_larga
+ml <- subset(ml, interaccion > 0)
 especie <- base_datos$especies
-DIT <- base_datos$DIT
+
+# Grado 
+Grado <- ml |> group_by(ID, especie) |>
+  mutate(Grado=sum(interaccion>0)) |>
+  select(c(-plantas,-interaccion)) |> 
+  unique()
+
+# Calculo de grado relativo y zscore
+Grados <- Grado |> group_by(ID) |>
+  mutate(Grado_max=max(Grado)) |>
+  mutate(Grado_relativo=Grado/Grado_max) |>
+  mutate(Z_Grado=scale(Grado))
+
+write.csv(x = Grados, file = "../02salidas/Grados.csv", row.names = FALSE)
+
+# histograma de grado
+for(i in unique(Grados$ID)){
+  print(i)
+  Grado_i <- subset(Grados, ID==i)
+  
+  png(filename = paste0("../03figuras/Grado/histograma_grado_",i,".png"))
+  hist(Grado_i$Grado, main=paste("Histograma grado absoluto \n red",i),
+       ylab="Frecuencia",
+       xlab="Grado", las=1)
+  dev.off()
+  
+  png(filename = paste0("../03figuras/Grado/histograma_gradoRelativo_",i,".png"))
+  hist(Grado_i$Grado_relativo, main=paste("Histograma grado relativo \n red",i),
+       ylab="Frecuencia",
+       xlab="Grado relativo", las=1)
+  dev.off()
+  
+  png(filename = paste0("../03figuras/Grado/histograma_Z_score_",i,".png"))
+  hist(Grado_i$Z_Grado, main=paste("Histograma z score \n red",i),
+       ylab="Frecuencia",
+       xlab="Z score", las=1)
+  dev.off()
+}
 
 
+
+
+
+
+  interaccion_i = subset(interaccion, ID==i)
+  matrix_i = pivot_wider(interaccion_i, 
+                         id_cols = c(ID, plantas),
+                         names_from = especie,
+                         values_from = interaccion, values_fn = unique)
+
+d  BD=nx.Graph()
+  nodos_A=label_plant
+  BD.add_nodes_from(nodos_A,bipartite=0)
+  nodos_B=label_spe
+  BD.add_nodes_from(nodos_B,bipartite=1)
+  
+  for k in range(len(list_df)):
+    if label_edge[k] == 1: 
+    BD.add_edge(label_plant[k],label_spe[k])
+}
 head(ml)
 
 m2 <- merge(ml, especie)
