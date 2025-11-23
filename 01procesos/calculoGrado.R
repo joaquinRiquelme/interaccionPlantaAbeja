@@ -16,27 +16,56 @@ Grado <- ml |> group_by(ID, especie) |>
 Grados <- Grado |> group_by(ID) |>
   mutate(Grado_max=max(Grado)) |>
   mutate(Grado_relativo=Grado/Grado_max) |>
-  mutate(Z_Grado=scale(Grado))
+  mutate(Z_Grado=scale(Grado)[,1])
 
 write.csv(x = Grados, file = "../02salidas/Grados.csv", row.names = FALSE)
+
+
+# Calculo de grado de especies de familias de abeja
+ml_esp <- merge(ml, especie, all.x=TRUE)
+head(ml_esp)
+ml_abejas <- subset(ml_esp,  familia %in% c("Andrenidae",
+                                            "Apidae",
+                                            "Colletidae",
+                                            "Halictidae",
+                                            "Megachilidae",
+                                            "Melittidae",
+                                            "Strenitidae"))
+# Grado abejas
+GradoA <- ml_abejas |> group_by(ID, especie) |>
+  mutate(Grado=sum(interaccion>0)) |>
+  select(c(-plantas,-interaccion, -genero, -familia, -orden)) |> 
+  unique()
+
+# Calculo de grado relativo y zscore
+Grados_A <- GradoA |> group_by(ID) |>
+  mutate(Grado_max=max(Grado)) |>
+  mutate(Grado_relativo=Grado/Grado_max) |>
+  mutate(Z_Grado=scale(Grado)[,1])
+
+write.csv(x = Grados_A, file = "../02salidas/Grados_Abejas.csv", row.names = FALSE)
+
 
 # histograma de grado
 for(i in unique(Grados$ID)){
   print(i)
   Grado_i <- subset(Grados, ID==i)
   
+  # Grado
   png(filename = paste0("../03figuras/Grado/histograma_grado_",i,".png"))
   hist(Grado_i$Grado, main=paste("Histograma grado absoluto \n red",i),
        ylab="Frecuencia",
        xlab="Grado", las=1)
   dev.off()
   
+  # Grado relativo
   png(filename = paste0("../03figuras/Grado/histograma_gradoRelativo_",i,".png"))
   hist(Grado_i$Grado_relativo, main=paste("Histograma grado relativo \n red",i),
        ylab="Frecuencia",
        xlab="Grado relativo", las=1)
   dev.off()
   
+  # Zscore
   png(filename = paste0("../03figuras/Grado/histograma_Z_score_",i,".png"))
   hist(Grado_i$Z_Grado, main=paste("Histograma z score \n red",i),
        ylab="Frecuencia",
@@ -44,101 +73,43 @@ for(i in unique(Grados$ID)){
   dev.off()
 }
 
+Grados_A <- subset(Grados_A, !is.nan(Z_Grado))
 
-
-
-
-
-  interaccion_i = subset(interaccion, ID==i)
-  matrix_i = pivot_wider(interaccion_i, 
-                         id_cols = c(ID, plantas),
-                         names_from = especie,
-                         values_from = interaccion, values_fn = unique)
-
-d  BD=nx.Graph()
-  nodos_A=label_plant
-  BD.add_nodes_from(nodos_A,bipartite=0)
-  nodos_B=label_spe
-  BD.add_nodes_from(nodos_B,bipartite=1)
+# histograma de grados abejas
+for(i in unique(Grados_A$ID)){
+  print(i)
+  # if(i=="M_060"){next}
+  # if(i=="M_036"){next}
+  # if(i=="M_013"){next}
+  # if(i=="M_075"){next}
+  # if(i=="M_009"){next}
+  # if(i=="M_074"){next}
+  # if(i=="M_038"){next}
+  # if(i=="M_024"){next}
+  # if(i=="M_010"){next}
+  # if(i=="M_020"){next}
+  # if(i=="M_026"){next}
+  Grado_A_i <- subset(Grados_A, ID==i)
   
-  for k in range(len(list_df)):
-    if label_edge[k] == 1: 
-    BD.add_edge(label_plant[k],label_spe[k])
+  # Grado
+  png(filename = paste0("../03figuras/Grado/histograma_grado_Abejas_",i,".png"))
+  hist(Grado_A_i$Grado, main=paste("Histograma grado absoluto Abejas\n red",i),
+       ylab="Frecuencia",
+       xlab="Grado", las=1)
+  dev.off()
+  
+  # Grado relativo
+  png(filename = paste0("../03figuras/Grado/histograma_gradoRelativo_Abejas_",i,".png"))
+  hist(Grado_A_i$Grado_relativo, main=paste("Histograma grado relativo Abejas \n red",i),
+       ylab="Frecuencia",
+       xlab="Grado relativo", las=1)
+  dev.off()
+  
+  # Zscore
+  png(filename = paste0("../03figuras/Grado/histograma_Z_score_Abejas_",i,".png"))
+  hist(Grado_A_i$Z_Grado, main=paste("Histograma z score Abejas \n red",i),
+       ylab="Frecuencia",
+       xlab="Z score", las=1)
+  dev.off()
 }
-head(ml)
-
-m2 <- merge(ml, especie)
-
-Grado <- ml |> group_by(ID, especie) |>
-  mutate(Grado=sum(interaccion!=0))
-Grado
-
-Z_score <- Grado |> group_by(ID) |>
-  mutate(Z_Grado=scale(Grado))
-
-
-GradoA <- subset(m2, orden=="Hymenoptera")|> group_by(ID, especie) |>
-  mutate(Grado=sum(interaccion!=0))
-GradoA
-
-Z_scoreA <- GradoA |> group_by(ID) |>
-  mutate(Z_Grado=scale(Grado))
-
-
-DIT$Abeja <- gsub(pattern = "_",replacement = ".",x = DIT$Abeja)
-rasgos2 <- merge(Z_scoreA, DIT, by.x=c("ID","especie"), by.y=c("ID","especies"))
-head(rasgos2)
-
-m1 <- lm(Z_Grado~sqrt(DIT), rasgos2)
-plot(Z_Grado~sqrt(DIT), rasgos2)
-abline(m1, col="red")
-summary(m1)
-
-
-cuadratica <- function(x,b0,b1,b2){
-  y <- b0+b1*x+b2*x^2
-  y
-}
-
-
-plot(1:100,cuadratica(1:100,100,100,-1))
-
-data1 <- data.frame(x=1:100,
-                    y=cuadratica(1:100,100,100,-1)+rnorm(100,100,1000))
-
-plot(data1)
-
-m2 <- lm(y ~ x,
-          data=data1)
-
-m1 <- nls(y ~ cuadratica(x,b0,b1,b2),
-    data=data1,
-    start = c(b0=100,b1=100,b2=-1))
-m1
-lines(x=1:100, y=fitted(m1)-200, col="blue")
-lines(x=1:100, y=fitted(m1)+300, col="red")
-lines(x=1:100, y=fitted(m2))
-
-summary(m1)
-summary(m2)
-
-residuals(m1)
-residuals(m2)
-
-histogram(~sqrt(rasgos2$Z_Grado))
-shapiro.test(log(rasgos2$Z_Grado))
-
-library(tseries)
-a <- sqrt(rasgos2$Z_Grado+.00001)
-a <- a[!is.na(a)]
-jarque.bera.test(a)
-
-nlme(height ~ SSasymp(age, Asym, R0, lrc),
-     data = Loblolly,
-     fixed = Asym + R0 + lrc ~ 1,
-     random = Asym ~ 1,
-     start = c(Asym = 103, R0 = -8.5, lrc = -3.3))
-
-
-
 
