@@ -88,7 +88,7 @@ for(i in unique(GyTC_A$ID)){
 
 
 # Global
-png(filename = paste0("../03figuras/TCyGrado/dispersion_GradoRelativo_TC_global.png"))
+png(filename = paste0("../03figuras/TCyGrado_global/dispersion_Grado_TC_global.png"))
 plot(Grado~DIT, data = GyTC, main="DIT vs Grado todas las matrices", las=1,
      ylab="Grado", 
      xlab="DIT (mm)",
@@ -96,7 +96,7 @@ plot(Grado~DIT, data = GyTC, main="DIT vs Grado todas las matrices", las=1,
      ylim=c(0,max(GyTC$Grado, na.rm = TRUE)*1.1))
 dev.off()
 
-png(filename = paste0("../03figuras/TCyGrado/dispersion_GradoRelativo_TC_global.png"))
+png(filename = paste0("../03figuras/TCyGrado_global/dispersion_GradoRelativo_TC_global.png"))
 plot(Grado_relativo~DIT, data = GyTC, main="DIT vs Grado relativo global", las=1,
      ylab="Grado relativo", 
      xlab="DIT (mm)")
@@ -104,7 +104,7 @@ plot(Grado_relativo~DIT, data = GyTC, main="DIT vs Grado relativo global", las=1
      # ylim=c(0,max(GyTC_i$Grado_relativo, na.rm = TRUE)*1.1))
 dev.off()
 
-png(filename = paste0("../03figuras/TCyGrado/dispersion_Zscore_TC_global.png"))
+png(filename = paste0("../03figuras/TCyGrado_global/dispersion_Zscore_TC_global.png"))
 plot(Z_Grado~DIT, data = GyTC, main="DIT vs Z score global", las=1,
      ylab="Z score", 
      xlab="DIT (mm)")
@@ -114,7 +114,7 @@ dev.off()
 
 
 # Global abejas
-png(filename = paste0("../03figuras/TCyGrado/dispersion_GradoRelativo_TC_global_Abejas.png"))
+png(filename = paste0("../03figuras/TCyGrado_global/dispersion_Grado_TC_global_Abejas.png"))
 plot(Grado~DIT, data = GyTC_A, main="DIT vs Grado todas las matrices", las=1,
      ylab="Grado", 
      xlab="DIT (mm)",
@@ -122,7 +122,7 @@ plot(Grado~DIT, data = GyTC_A, main="DIT vs Grado todas las matrices", las=1,
      ylim=c(0,max(GyTC_A$Grado, na.rm = TRUE)*1.1))
 dev.off()
 
-png(filename = paste0("../03figuras/TCyGrado/dispersion_GradoRelativo_TC_global_Abejas.png"))
+png(filename = paste0("../03figuras/TCyGrado_global/dispersion_GradoRelativo_TC_global_Abejas.png"))
 plot(Grado_relativo~DIT, data = GyTC_A, main="DIT vs Grado relativo global", las=1,
      ylab="Grado relativo", 
      xlab="DIT (mm)")
@@ -130,7 +130,7 @@ plot(Grado_relativo~DIT, data = GyTC_A, main="DIT vs Grado relativo global", las
 # ylim=c(0,max(GyTC_i$Grado_relativo, na.rm = TRUE)*1.1))
 dev.off()
 
-png(filename = paste0("../03figuras/TCyGrado/dispersion_Zscore_TC_global_Abejas.png"))
+png(filename = paste0("../03figuras/TCyGrado_global/dispersion_Zscore_TC_global_Abejas.png"))
 plot(Z_Grado~DIT, data = GyTC_A, main="DIT vs Z score global", las=1,
      ylab="Z score", 
      xlab="DIT (mm)")
