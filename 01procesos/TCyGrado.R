@@ -1,7 +1,6 @@
 # Grado y TC de abejas
 
 base_datos <- readRDS("../00baseDatos/base_datos.RDS")
-
 especie <- base_datos$especies
 DIT <- base_datos$DIT 
 head(DIT)
