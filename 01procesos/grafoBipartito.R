@@ -6,6 +6,23 @@ ml <- base_datos$matriz_comp_larga
 ml <- subset(ml, interaccion > 0)
 especie <- base_datos$especies
 
+ml.esp <- merge(ml, especie, all.x=TRUE)
+table(ml.esp$familia)
+
+# filtro de especies de las familias listadas
+ml.esp.abe <- ml.esp |> 
+  filter(familia %in% c("Andrenidae",
+                        "Apidae",
+                        "Colletidae",
+                        "Halictidae",
+                        "Megachilidae",
+                        "Melittidae",
+                        "Strenitidae"))
+head(ml.esp.abe)
+unique(ml.esp.abe$especie)
+ml.esp.abe <- unique(ml.esp.abe)
+
+
 for(i in unique(ml$ID)){
   if(i == "M_076"){next}
   m.ancho.i <- ml[,c("especie","ID","plantas","interaccion")] |> 
@@ -37,3 +54,37 @@ for(i in unique(ml$ID)){
   plot(G2, vertex.color = colrs, layout = LO, axes = FALSE, main=i)
   dev.off()
 }
+
+# abejas
+for(i in unique(ml.esp.abe$ID)){
+  if(i == "M_076"){next}
+  m.ancho.i <- ml.esp.abe[,c("especie","ID","plantas","interaccion")] |> 
+    filter(ID == i) |> droplevels()
+  
+  m.ancha <- pivot_wider(m.ancho.i, 
+                         id_cols = c(ID, plantas),
+                         names_from = especie,
+                         values_from = interaccion, values_fn = unique)
+  str(m.ancha)
+  m.ancha[is.na(m.ancha)] <- 0
+  m.ancha[m.ancha==0] <- 0
+  m.ancha$ID <- NULL
+  plantas.i <- m.ancha$plantas
+  m.ancha$plantas <- NULL
+  G1 <- graph.incidence(as.data.frame(m.ancha), weighted = NULL)
+  is_bipartite(G1)
+  colrs <- c("blue", "red")[V(G1)$type + 1L]
+  LO = layout_as_bipartite(G1)
+  LO = LO[,c(2,1)]
+  G2 <- G1
+  V(G1)$name <- c(plantas.i,names(m.ancha))
+  # Visualizar el gráfico con etiquetas
+  png(filename = paste0("../03figuras/grafoBipartito/grafoBipartito_Abejas",i,".png"), height =800, width = 800)
+  plot(G1, vertex.color = colrs, layout = LO, axes = FALSE, main=paste(i, " abejas"))
+  dev.off()
+  
+  png(filename = paste0("../03figuras/grafoBipartito/grafoBipartito_numero_Abejas",i,".png"), height =800, width = 800)
+  plot(G2, vertex.color = colrs, layout = LO, axes = FALSE, main=paste(i," abejas"))
+  dev.off()
+}
+
