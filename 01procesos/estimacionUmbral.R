@@ -35,7 +35,7 @@ for(i in unique(mlDIT$ID)){
   mlDIT.i$size <- "Pequena"
   mlDIT.i$size[mlDIT.i$DIT<umbral.mediana.i] <- "Pequena"
   mlDIT.i$size[mlDIT.i$DIT>umbral.mediana.i] <- "Grande"
-  mlDIT.i$umbral.mediana <- umbral.mediana
+  mlDIT.i$umbral.mediana <- umbral.mediana.i
   mlDIT.nueva <- rbind(mlDIT.nueva, mlDIT.i)
   
 }
@@ -44,6 +44,8 @@ write.csv(mlDIT.nueva, file = "../02salidas/tabla_umbral_mediana.csv", row.names
 
 
 mlDIT.umbral <- c()
+mlDIT <- subset(mlDIT, !is.element(especie,c ("Apis.mellifera", "Apis.mellifera.Linnaeus")))
+
 for(i in unique(mlDIT$ID)){
   print(i)
   mlDIT.i <- subset(mlDIT, ID==i)
@@ -51,10 +53,9 @@ for(i in unique(mlDIT$ID)){
        xlim=c(0,9),
        ylab="",
        xlab="DIT (mm)")
-  for(j in 1:9){
+  for(j in seq(from=1.0,to=9, by=0.5)){
     print(j)
     umbral.j <- j
-    abline(v=umbral.j, col="blue", lty=2)
     mlDIT.j <- mlDIT.i
     mlDIT.j$umbral <- umbral.j
     mlDIT.j$size <- "Pequena"
@@ -75,17 +76,21 @@ for(i in unique(mlDIT$ID)){
       mlDIT.j$es.umbral <- FALSE
       mlDIT.umbral <- rbind(mlDIT.umbral, mlDIT.j); next}
     test.j <- t.test(DIT ~ size, data = unique(mlDIT.j))
-    if(test.j$p.value < 0.05){
+    if(test.j$p.value < 0.001){
       mlDIT.j$es.umbral <- TRUE
     }
-    
+    if(sum(mlDIT.j$es.umbral)>0){
+      abline(v=umbral.j, col="blue", lty=2)
+    }
     mlDIT.umbral <- rbind(mlDIT.umbral, mlDIT.j)
   
     
   }
   
 }
-
+png("../03figuras/umbral/barplotUmbralp0.001.png")
+barplot(table(mlDIT.umbral$es.umbral, mlDIT.umbral$umbral), beside = TRUE, col = c(1,2), main = "Es umbral?<\n Rojo = verdadero, Negro= falso")
+dev.off()
 head(mlDIT.umbral)
-table(mlDIT.umbral$es.umbral, mlDIT.umbral$umbral)
+plot(table(mlDIT.umbral$es.umbral, mlDIT.umbral$umbral))
 write.csv(mlDIT.umbral, file = "../02salidas/tabla_umbral.csv", row.names = FALSE)
