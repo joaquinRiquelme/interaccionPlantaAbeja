@@ -268,6 +268,7 @@ dens.umbral.sin <- density(umbrales_sin$umbral)
 
 
 # 2. Graficar
+png("../03figuras/umbral/umbralesTODOS.png")
 par(mfrow=c(2,1))
 plot(dens.mediana, main = "Gráfico de Densidades de umbrales a nivel global", col = "blue", lwd = 2, ylim=c(0,0.5))
 lines(dens.mediana.umbral, col = "red", lwd = 2)
@@ -307,6 +308,7 @@ text(y=0.425,x=mean(umbrales_sin$umbral),
 dev.off()
 
 # todos juntos
+png("../03figuras/umbral/umbralesTODOS_conysin.png")
 plot(dens.mediana, main = "Gráfico de Densidades de umbrales a nivel global", col = "blue", lwd = 2, ylim=c(0,0.5))
 lines(dens.mediana.umbral, col = "red", lwd = 2)
 lines(dens.umbral, col = "green", lwd = 2)
@@ -343,7 +345,7 @@ text(y=0.15,x=mean(datos.umbral.mediana.sin),
      labels=round(mean(datos.umbral.mediana.sin),2), col="red")
 text(y=0.125,x=mean(umbrales_sin$umbral),
      labels=round(mean(umbrales_sin$umbral),2), col="green")
-
+dev.off()
 # 
 
 # Gráfico con relleno y alfombra de datos (rug)
