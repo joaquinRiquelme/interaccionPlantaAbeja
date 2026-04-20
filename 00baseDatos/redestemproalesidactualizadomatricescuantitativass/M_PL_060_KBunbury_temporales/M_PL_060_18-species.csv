@@ -1,0 +1,49 @@
+Specie,Kingdom,Role,Degree,Sum(connections strength),Networks presence
+"Allograpta nasuta","Animals","Pollinator",2,3,17
+"Apis mellifera","Animals","Pollinator",10,99,123
+"Brachymyrmex sp1 M_PL_077","Animals","Pollinator",3,9,1
+"Cerambycidae sp1 M_PL_077","Animals","Pollinator",1,1,1
+"Chaetocnema sp1 M_PL_077","Animals","Pollinator",13,98,1
+"Chrysomya megacephala ","Animals","Pollinator",4,4,25
+"Cixiidae sp1 M_PL_077","Animals","Pollinator",1,1,1
+"Dysauxes florida","Animals","Pollinator",4,28,15
+"Eristalinus flaveolus","Animals","Pollinator",1,1,17
+"Eumolpinae sp1 M_PL_077","Animals","Pollinator",1,4,1
+"Fannia pusio ","Animals","Pollinator",1,1,15
+"Ischiodon aegyptius ","Animals","Pollinator",1,1,11
+"Lygaeidae sp1 M_PL_077","Animals","Pollinator",1,1,1
+"Lygistorrhina sp1 M_PL_077","Animals","Pollinator",1,6,1
+"Melanostoma bituberculatum ","Animals","Pollinator",1,1,10
+"Mordellidae sp1 M_PL_077","Animals","Pollinator",1,1,1
+"Musca domestica","Animals","Pollinator",2,2,26
+"Nacoleia sp1 M_PL_077","Animals","Pollinator",3,8,1
+"Nitidulidae sp1 M_PL_077","Animals","Pollinator",1,1,1
+"Ornidia obesa","Animals","Pollinator",2,2,47
+"Pachycerina crinicornis ","Animals","Pollinator",3,4,20
+"Panara naso","Animals","Pollinator",4,6,14
+"Polistes hebraeus","Animals","Pollinator",3,4,18
+"Sarcophaga arno ","Animals","Pollinator",1,1,12
+"Stomorhina lunata","Animals","Pollinator",6,9,24
+"Syritta nigrofemorata","Animals","Pollinator",1,3,9
+"Technomyrmex albipes ","Animals","Pollinator",2,7,25
+"Villa unifasciata","Animals","Pollinator",1,1,13
+"Aphloia theiformis","Plants","Plant",1,8,22
+"Badula platiphylla","Plants","Plant",5,32,4
+"Coffea macrocarpa","Plants","Plant",4,7,3
+"Coffea mauritiana","Plants","Plant",1,1,4
+"Faujasiopsis flexuosa","Plants","Plant",3,6,5
+"Gaertnera rotundifolia","Plants","Plant",1,1,4
+"Gaertnera sp1 M_PL_077","Plants","Plant",4,6,1
+"Grangeria borbonica","Plants","Plant",8,50,6
+"Harungana madagascariensis","Plants","Plant",3,17,2
+"Helichrysum proteoides","Plants","Plant",13,21,4
+"Homalanthus populifolius","Plants","Plant",2,7,7
+"Myonima violacea","Plants","Plant",2,19,3
+"Ochna mauritiana","Plants","Plant",4,12,6
+"Olea lancea","Plants","Plant",2,11,9
+"Psiadia terebinthina","Plants","Plant",8,10,17
+"Psidium cattleianum","Plants","Plant",3,8,12
+"Sideroxylon puberulum","Plants","Plant",7,74,6
+"Stillingia lineata","Plants","Plant",2,15,20
+"Warneckea trinervis","Plants","Plant",1,1,6
+"Wikstroemia indica","Plants","Plant",1,1,2

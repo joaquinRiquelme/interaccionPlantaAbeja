@@ -1,0 +1,59 @@
+Specie,Kingdom,Role,Degree,Sum(connections strength),Networks presence
+"Ahasverus advena ","Animals","Pollinator",1,2,8
+"Allograpta nasuta","Animals","Pollinator",2,4,17
+"Apis mellifera","Animals","Pollinator",9,29,123
+"Brachymyrmex sp1 M_PL_068","Animals","Pollinator",1,38,1
+"Cephonodes trochilus","Animals","Pollinator",1,1,4
+"Cerambycidae sp1 M_PL_068","Animals","Pollinator",1,1,1
+"Chaetocnema sp1 M_PL_068","Animals","Pollinator",2,6,1
+"Cheloninae sp1 M_PL_068","Animals","Pollinator",1,2,1
+"Chrysomya megacephala ","Animals","Pollinator",3,8,25
+"Drosophila sp1 M_PL_068","Animals","Pollinator",1,1,1
+"Episyrphus sp1 M_PL_068","Animals","Pollinator",2,6,1
+"Eristalinus flaveolus","Animals","Pollinator",2,2,17
+"Graphomya maculata","Animals","Pollinator",2,6,7
+"Henotesia narcissus","Animals","Pollinator",1,1,8
+"Hyadina sp1 M_PL_068","Animals","Pollinator",1,1,1
+"Hyperaspis hottentota","Animals","Pollinator",1,1,1
+"Ischiodon aegyptius ","Animals","Pollinator",1,2,11
+"Macroglossum milvus","Animals","Pollinator",1,1,7
+"Melanostoma annulipes","Animals","Pollinator",2,6,17
+"Musca domestica","Animals","Pollinator",1,4,26
+"Nacoleia sp1 M_PL_068","Animals","Pollinator",4,13,1
+"Nacoleia sp2 M_PL_068","Animals","Pollinator",1,1,1
+"Orthellia albigena ","Animals","Pollinator",2,2,12
+"Pachycerina crinicornis ","Animals","Pollinator",3,4,20
+"Panara naso","Animals","Pollinator",1,1,14
+"Papillio manlius","Animals","Pollinator",1,1,1
+"Paragus borbonicus","Animals","Pollinator",6,20,15
+"Pelecophora intemipta","Animals","Pollinator",1,1,9
+"Phelsuma cepediana","Animals","Pollinator",1,1,10
+"Phorinia sp1 M_PL_068","Animals","Pollinator",2,2,1
+"Polistes hebraeus","Animals","Pollinator",1,1,18
+"Sapromyza sp1 M_PL_068","Animals","Pollinator",1,1,1
+"Sarcophaga arno ","Animals","Pollinator",1,1,12
+"Scolia oryctophaga","Animals","Pollinator",1,1,1
+"Siphona sp1 M_PL_068","Animals","Pollinator",1,2,1
+"Stomorhina lunata","Animals","Pollinator",3,10,24
+"Technomyrmex albipes ","Animals","Pollinator",8,97,25
+"Unidentified sp1 M_PL_068","Animals","Pollinator",1,2,1
+"Villa unifasciata","Animals","Pollinator",2,5,13
+"Zosterops mauritianus","Animals","Pollinator",1,1,11
+"Antidesma madagascariense","Plants","Plant",3,3,6
+"Aphloia theiformis","Plants","Plant",11,48,22
+"Calophyllum eputamen","Plants","Plant",5,7,4
+"Casearia coriacea","Plants","Plant",1,11,3
+"Diospyros revaughanii","Plants","Plant",3,12,6
+"Embelia angustifolia","Plants","Plant",2,39,3
+"Euodia chapelieri","Plants","Plant",2,2,8
+"Gaertnera sp1 M_PL_068","Plants","Plant",7,12,1
+"Labourdonnaisia callophylloides","Plants","Plant",2,5,9
+"Memecylon ovatifolium","Plants","Plant",6,20,2
+"Olea lancea","Plants","Plant",3,6,9
+"Pittosporum senacia","Plants","Plant",9,68,6
+"Stillingia lineata","Plants","Plant",13,32,20
+"Syzygium coriaceum","Plants","Plant",6,15,8
+"Tabernaemontana persicarifolia","Plants","Plant",1,4,5
+"Turraea rigida","Plants","Plant",2,2,3
+"Warneckea trinervis","Plants","Plant",1,2,6
+"Xylopia lamarckii","Plants","Plant",1,1,1

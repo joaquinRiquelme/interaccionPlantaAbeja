@@ -1,0 +1,404 @@
+sitio,cuadrante,fecha,no.esp.p,codigo.p,genero.p,especie.p,no.indiv,no.flores,flores.prom.indiv,gpflor.ind,flores.tot,gp.tot
+V1,11,2006-10-09,p0035,lar.nit,Larrea,nitida,1,,129,266865,129,34425585
+V1,11,2006-10-09,p0075,lyc.sp1,Lycium ,sp.,1,,2,.,2,.
+V1,13,2006-10-09,p0075,lyc.sp1,Lycium ,sp.,1,,7,.,7,.
+V1,14,2006-10-09,p0035,lar.nit,Larrea,nitida,2,,129,266865,258,68851170
+V1,17,2006-10-09,p0035,lar.nit,Larrea,nitida,1,,129,266865,129,34425585
+V1,19,2006-10-09,p0035,lar.nit,Larrea,nitida,1,,129,266865,129,34425585
+V1,24,2006-10-09,p0035,lar.nit,Larrea,nitida,1,,129,266865,129,34425585
+V1,24,2006-10-09,p0075,lyc.sp1,Lycium ,sp.,1,,1,.,1,.
+V1,27,2006-10-09,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,4,4,1603704,4,6414816
+V1,31,2006-10-09,p0035,lar.nit,Larrea,nitida,0,,129,266865,0,0
+V1,33,2006-10-09,p0035,lar.nit,Larrea,nitida,1,,129,266865,129,34425585
+V1,37,2006-10-09,p0035,lar.nit,Larrea,nitida,1,,129,266865,129,34425585
+V2,1,2006-10-09,p0021,sch.fas,Schinus,aff. fasciculata ,1,,376,40025,376,15049400
+V2,4,2006-10-09,p0075,lyc.sp1,Lycium ,sp.,1,,3,.,3,.
+V2,15,2006-10-09,p0075,lyc.sp1,Lycium ,sp.,1,,19,.,19,.
+V2,18,2006-10-09,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,1,4,1603704,4,6414816
+V2,19,2006-10-09,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,1,4,1603704,4,6414816
+V3,8,2006-10-09,p0075,lyc.sp1,Lycium ,sp.,1,,19,.,19,.
+V3,10,2006-10-09,p0075,lyc.sp1,Lycium ,sp.,1,,30,.,30,.
+V3,19,2006-10-09,p0075,lyc.sp1,Lycium ,sp.,1,,2,.,2,.
+V1,3,2006-10-16,p0026,alo.gra,Aloyssia ,gratissima ,1,,2280,1984,2280,4523520
+V1,7,2006-10-16,p0035,lar.nit,Larrea,nitida,1,,74,266865,74,19748010
+V1,13,2006-10-16,p0035,lar.nit,Larrea,nitida,1,,74,266865,74,19748010
+V1,14,2006-10-16,p0026,alo.gra,Aloyssia ,gratissima ,1,,2280,1984,2280,4523520
+V1,14,2006-10-16,p0035,lar.nit,Larrea,nitida,1,,74,266865,74,19748010
+V1,15,2006-10-16,p0035,lar.nit,Larrea,nitida,1,,74,266865,74,19748010
+V1,17,2006-10-16,p0035,lar.nit,Larrea,nitida,1,,74,266865,74,19748010
+V1,19,2006-10-16,p0035,lar.nit,Larrea,nitida,1,,74,266865,74,19748010
+V1,24,2006-10-16,p0007,lyc.ten,Lycium ,tenuispinosum  ,1,,8,159954,8,1279632
+V1,27,2006-10-16,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,,4,1603704,4,6414816
+V1,28,2006-10-16,p0015,cer.arv,Cerastium ,arvense,10,,3,116667,30,3500010
+V1,38,2006-10-16,p0026,alo.gra,Aloyssia ,gratissima ,1,,2280,1984,2280,4523520
+V1,40,2006-10-16,p0026,alo.gra,Aloyssia ,gratissima ,4,,2280,1984,9120,18094080
+V2,1,2006-10-16,p0075,lyc.sp1,Lycium ,sp.,1,,6,.,6,.
+V2,12,2006-10-16,p0024,bac.cri,Baccharis  ,aff. crispa ,15,,100,1033333,1500,1549999500
+V2,17,2006-10-16,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,3,,4,1603704,12,19244448
+V2,20,2006-10-16,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,12,,4,1603704,48,76977792
+V2,37,2006-10-16,p0015,cer.arv,Cerastium ,arvense,3,,3,116667,9,1050003
+V2,38,2006-10-16,p0015,cer.arv,Cerastium ,arvense,2,,3,116667,6,700002
+V3,12,2006-10-16,p0033,geo.dec,Geoffroea,decorticans,1,4,102,.,102,.
+V3,14,2006-10-16,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,8,1.75,4,1603704,32,51318528
+V3,16,2006-10-16,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,4,1,4,1603704,16,25659264
+V3,17,2006-10-16,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,2,1.5,4,1603704,8,12829632
+V4,5,2006-10-16,p0075,lyc.sp1,Lycium ,sp.,1,,6,.,6,.
+V4,23,2006-10-16,p0026,alo.gra,Aloyssia ,gratissima ,1,260,3900,1984,3900,7737600
+V4,25,2006-10-16,p0018,bud.men,Buddleja  ,mendozensis ,1,50,50,260185,50,13009250
+V4,29,2006-10-16,p0003,zuc.pun,Zuccagnia ,punctata ,1,1,190,17037,190,3237030
+V4,30,2006-10-16,p0026,alo.gra,Aloyssia ,gratissima ,1,64,960,1984,960,1904640
+V4,36,2006-10-16,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,2,12,4,1603704,8,12829632
+V1,3,2006-10-24,p0026,alo.gra,Aloyssia ,gratissima ,1,,2280,1984,2280,4523520
+V1,7,2006-10-24,p0035,lar.nit,Larrea,nitida,1,,10,266865,10,2668650
+V1,11,2006-10-24,p0035,lar.nit,Larrea,nitida,1,,10,266865,10,2668650
+V1,12,2006-10-24,p0026,alo.gra,Aloyssia ,gratissima ,2,,2280,1984,4560,9047040
+V1,14,2006-10-24,p0026,alo.gra,Aloyssia ,gratissima ,1,,2280,1984,2280,4523520
+V1,14,2006-10-24,p0035,lar.nit,Larrea,nitida,1,,10,266865,10,2668650
+V1,15,2006-10-24,p0026,alo.gra,Aloyssia ,gratissima ,1,,2280,1984,2280,4523520
+V1,17,2006-10-24,p0035,lar.nit,Larrea,nitida,2,,10,266865,20,5337300
+V1,19,2006-10-24,p0034,lar.div,Larrea,divaricata,1,,28,1027210,28,28761880
+V1,31,2006-10-24,p0006,men.dec,Menodora ,decemfida ,1,,17,18889,17,321113
+V1,33,2006-10-24,p0035,lar.nit,Larrea,nitida,1,,10,266865,10,2668650
+V1,38,2006-10-24,p0034,lar.div,Larrea,divaricata,1,,28,1027210,28,28761880
+V1,40,2006-10-24,p0026,alo.gra,Aloyssia ,gratissima ,3,,2280,1984,6840,13570560
+V2,1,2006-10-24,p0021,sch.fas,Schinus,aff. fasciculata ,1,,376,40025,376,15049400
+V2,4,2006-10-24,p0075,lyc.sp1,Lycium ,sp.,1,,6,.,6,.
+V2,12,2006-10-24,p0024,bac.cri,Baccharis  ,aff. crispa ,1,,100,1033333,100,103333300
+V2,16,2006-10-24,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,8,,5,20654,40,826160
+V2,20,2006-10-24,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,21,,5,20654,105,2168670
+V2,21,2006-10-24,p0021,sch.fas,Schinus,aff. fasciculata ,1,,376,40025,376,15049400
+V2,23,2006-10-24,p0021,sch.fas,Schinus,aff. fasciculata ,1,,376,40025,376,15049400
+V3,2,2006-10-24,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,,5,20654,5,103270
+V3,8,2006-10-24,p0011,lyc.chi,Lycium ,chilense ,1,,8,120247,8,961976
+V3,9,2006-10-24,p0034,lar.div,Larrea,divaricata,1,,28,1027210,28,28761880
+V3,9,2006-10-24,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,10,5,20654,5,103270
+V3,11,2006-10-24,p0034,lar.div,Larrea,divaricata,2,,28,1027210,56,57523760
+V3,12,2006-10-24,p0034,lar.div,Larrea,divaricata,1,,28,1027210,28,28761880
+V3,13,2006-10-24,p0034,lar.div,Larrea,divaricata,1,,28,1027210,28,28761880
+V3,14,2006-10-24,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,9,3,5,20654,45,929430
+V3,16,2006-10-24,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,2,1.3,7,1603704,14,22451856
+V3,17,2006-10-24,p0019,aca.ser,Acantholippia ,seriphioides ,1,1,155,5093,155,789415
+V3,17,2006-10-24,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,7,1.86,5,20654,35,722890
+V3,19,2006-10-24,p0034,lar.div,Larrea,divaricata,2,,28,1027210,56,57523760
+V3,23,2006-10-24,p0034,lar.div,Larrea,divaricata,2,,28,1027210,56,57523760
+V3,24,2006-10-24,p0034,lar.div,Larrea,divaricata,1,,28,1027210,28,28761880
+V3,24,2006-10-24,p0021,sch.fas,Schinus,aff. fasciculata ,1,,376,40025,376,15049400
+V3,28,2006-10-24,p0021,sch.fas,Schinus,aff. fasciculata ,2,,376,40025,752,30098800
+V3,36,2006-10-24,p0034,lar.div,Larrea,divaricata,1,,28,1027210,28,28761880
+V4,11,2006-10-24,p0034,lar.div,Larrea,divaricata,1,,28,1027210,28,28761880
+V4,11,2006-10-24,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,,7,1603704,7,11225928
+V4,12,2006-10-24,p0034,lar.div,Larrea,divaricata,1,,28,1027210,28,28761880
+V4,13,2006-10-24,p0034,lar.div,Larrea,divaricata,1,,28,1027210,28,28761880
+V4,23,2006-10-24,p0021,sch.fas,Schinus,aff. fasciculata ,1,,376,40025,376,15049400
+V4,25,2006-10-24,p0018,bud.men,Buddleja  ,mendozensis ,1,,237,260185,237,61663845
+V4,26,2006-10-24,p0036,lec.het,Lecanophora,heterophylla,1,,1,264524,1,264524
+V4,27,2006-10-24,p0006,men.dec,Menodora ,decemfida ,1,,17,18889,17,321113
+V4,37,2006-10-24,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,2,,7,1603704,14,22451856
+V1,1,2006-10-30,p0026,alo.gra,Aloyssia ,gratissima ,1,,915,1984,915,1815360
+V1,3,2006-10-30,p0026,alo.gra,Aloyssia ,gratissima ,2,,915,1984,1830,3630720
+V1,10,2006-10-30,p0034,lar.div,Larrea,divaricata,1,,67,1027210,67,68823070
+V1,11,2006-10-30,p0035,lar.nit,Larrea,nitida,1,,10,266865,10,2668650
+V1,12,2006-10-30,p0026,alo.gra,Aloyssia ,gratissima ,2,,915,1984,1830,3630720
+V1,14,2006-10-30,p0026,alo.gra,Aloyssia ,gratissima ,1,,915,1984,915,1815360
+V1,14,2006-10-30,p0035,lar.nit,Larrea,nitida,1,,10,266865,10,2668650
+V1,15,2006-10-30,p0026,alo.gra,Aloyssia ,gratissima ,1,,915,1984,915,1815360
+V1,17,2006-10-30,p0035,lar.nit,Larrea,nitida,1,,10,266865,10,2668650
+V1,18,2006-10-30,p0034,lar.div,Larrea,divaricata,1,,67,1027210,67,68823070
+V1,19,2006-10-30,p0034,lar.div,Larrea,divaricata,1,,67,1027210,67,68823070
+V1,21,2006-10-30,p0042,spa.jun,Spartium,junceum,1,,31,390278,31,12098618
+V1,22,2006-10-30,p0034,lar.div,Larrea,divaricata,1,,67,1027210,67,68823070
+V1,31,2006-10-30,p0006,men.dec,Menodora ,decemfida ,1,,17,18889,17,321113
+V1,38,2006-10-30,p0026,alo.gra,Aloyssia ,gratissima ,1,,915,1984,915,1815360
+V1,38,2006-10-30,p0034,lar.div,Larrea,divaricata,2,,67,1027210,134,137646140
+V1,40,2006-10-30,p0026,alo.gra,Aloyssia ,gratissima ,2,,915,1984,1830,3630720
+V2,4,2006-10-30,p0034,lar.div,Larrea,divaricata,1,,67,1027210,67,68823070
+V2,7,2006-10-30,p0038,pro.fle,Prosopis,flexuosa,1,,104,29864844,104,3105943776
+V2,8,2006-10-30,p0038,pro.fle,Prosopis,flexuosa,1,,104,29864844,104,3105943776
+V2,10,2006-10-30,p0034,lar.div,Larrea,divaricata,1,,67,1027210,67,68823070
+V2,16,2006-10-30,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,18,,5,20654,90,1858860
+V2,17,2006-10-30,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,27,,5,20654,135,2788290
+V2,20,2006-10-30,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,16,,5,20654,80,1652320
+V2,23,2006-10-30,p0021,sch.fas,Schinus,aff. fasciculata ,2,,780,40025,1560,62439000
+V3,6,2006-10-30,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,2,,7,1603704,14,22451856
+V3,8,2006-10-30,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,2,,7,1603704,14,22451856
+V3,9,2006-10-30,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,,7,1603704,7,11225928
+V3,14,2006-10-30,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,3,,7,1603704,21,33677784
+V3,16,2006-10-30,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,3,,7,1603704,21,33677784
+V3,17,2006-10-30,p0006,men.dec,Menodora ,decemfida ,2,,17,18889,34,642226
+V3,17,2006-10-30,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,9,,7,1603704,63,101033352
+V3,19,2006-10-30,p0034,lar.div,Larrea,divaricata,1,,67,1027210,67,68823070
+V3,20,2006-10-30,p0032,con.mic,Condalia,microphylla,1,,1001,138802,1001,138940802
+V3,24,2006-10-30,p0021,sch.fas,Schinus,aff. fasciculata ,1,,780,40025,780,31219500
+V3,28,2006-10-30,p0015,cer.arv,Cerastium ,arvense,1,,3,116667,3,350001
+V3,39,2006-10-30,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,,7,1603704,7,11225928
+V4,1,2006-10-30,p0034,lar.div,Larrea,divaricata,1,,67,1027210,67,68823070
+V4,7,2006-10-30,p0034,lar.div,Larrea,divaricata,1,,67,1027210,67,68823070
+V4,8,2006-10-30,p0034,lar.div,Larrea,divaricata,1,,67,1027210,67,68823070
+V4,11,2006-10-30,p0034,lar.div,Larrea,divaricata,1,,67,1027210,67,68823070
+V4,12,2006-10-30,p0034,lar.div,Larrea,divaricata,1,,67,1027210,67,68823070
+V4,13,2006-10-30,p0034,lar.div,Larrea,divaricata,1,,67,1027210,67,68823070
+V4,23,2006-10-30,p0021,sch.fas,Schinus,aff. fasciculata ,1,,780,40025,780,31219500
+V4,25,2006-10-30,p0018,bud.men,Buddleja  ,mendozensis ,1,,425,260185,425,110578625
+V4,25,2006-10-30,p0034,lar.div,Larrea,divaricata,1,,67,1027210,67,68823070
+V4,28,2006-10-30,p0013,all.inc,Allionia ,incarnata ,1,,12,19213,12,230556
+V4,29,2006-10-30,p0006,men.dec,Menodora ,decemfida ,1,,17,18889,17,321113
+V1,3,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V1,7,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V1,10,2006-11-06,p0034,lar.div,Larrea,divaricata,2,,198,1027210,396,406775160
+V1,18,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V1,19,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V1,20,2006-11-06,p0038,pro.fle,Prosopis,flexuosa,1,,104,29864844,104,3105943776
+V1,21,2006-11-06,p0042,spa.jun,Spartium,junceum,1,,38,390278,38,14830564
+V1,22,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V1,27,2006-11-06,p0042,spa.jun,Spartium,junceum,1,,38,390278,38,14830564
+V1,29,2006-11-06,p0042,spa.jun,Spartium,junceum,1,,38,390278,38,14830564
+V1,33,2006-11-06,p0042,spa.jun,Spartium,junceum,1,,38,390278,38,14830564
+V1,38,2006-11-06,p0042,spa.jun,Spartium,junceum,1,,38,390278,38,14830564
+V2,4,2006-11-06,p0034,lar.div,Larrea,divaricata,2,,198,1027210,396,406775160
+V2,4,2006-11-06,p0021,sch.fas,Schinus,aff. fasciculata ,1,,103,40025,103,4122575
+V2,4,2006-11-06,p0043,tri.can,Trichocereus,candicans,5,,2,119100002,10,1191000020
+V2,7,2006-11-06,p0032,con.mic,Condalia,microphylla,2,,1200,138802,2400,333124800
+V2,7,2006-11-06,p0038,pro.fle,Prosopis,flexuosa,1,,104,29864844,104,3105943776
+V2,8,2006-11-06,p0037,opu.sul,Opuntia,sulphurea,4,,45,23359091,180,4204636380
+V2,8,2006-11-06,p0038,pro.fle,Prosopis,flexuosa,2,,104,29864844,208,6211887552
+V2,13,2006-11-06,p0037,opu.sul,Opuntia,sulphurea,1,,45,23359091,45,1051159095
+V2,29,2006-11-06,p0016,hel.men,Heliotropium ,mendocinum ,1,,.,.,.,.
+V2,38,2006-11-06,p0016,hel.men,Heliotropium ,mendocinum ,1,,.,.,.,.
+V3,1,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V3,11,2006-11-06,p0034,lar.div,Larrea,divaricata,2,,198,1027210,396,406775160
+V3,12,2006-11-06,p0034,lar.div,Larrea,divaricata,2,,198,1027210,396,406775160
+V3,12,2006-11-06,p0037,opu.sul,Opuntia,sulphurea,1,,45,23359091,45,1051159095
+V3,13,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V3,15,2006-11-06,p0034,lar.div,Larrea,divaricata,2,,198,1027210,396,406775160
+V3,16,2006-11-06,p0006,men.dec,Menodora ,decemfida ,1,,31,18889,31,585559
+V3,17,2006-11-06,p0006,men.dec,Menodora ,decemfida ,1,,31,18889,31,585559
+V3,19,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V3,21,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V3,23,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V3,24,2006-11-06,p0021,sch.fas,Schinus,aff. fasciculata ,1,,103,40025,103,4122575
+V3,30,2006-11-06,p0006,men.dec,Menodora ,decemfida ,1,,31,18889,31,585559
+V3,36,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V4,1,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V4,2,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V4,5,2006-11-06,p0003,zuc.pun,Zuccagnia ,punctata ,1,,190,17037,190,3237030
+V4,6,2006-11-06,p0034,lar.div,Larrea,divaricata,3,,198,1027210,594,610162740
+V4,7,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V4,8,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V4,9,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V4,10,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V4,11,2006-11-06,p0034,lar.div,Larrea,divaricata,3,,198,1027210,594,610162740
+V4,12,2006-11-06,p0034,lar.div,Larrea,divaricata,2,,198,1027210,396,406775160
+V4,13,2006-11-06,p0034,lar.div,Larrea,divaricata,1,,198,1027210,198,203387580
+V4,14,2006-11-06,p0034,lar.div,Larrea,divaricata,2,,198,1027210,396,406775160
+V4,16,2006-11-06,p0006,men.dec,Menodora ,decemfida ,3,,31,18889,93,1756677
+V4,18,2006-11-06,p0034,lar.div,Larrea,divaricata,2,,198,1027210,396,406775160
+V4,19,2006-11-06,p0032,con.mic,Condalia,microphylla,1,,1200,138802,1200,166562400
+V4,23,2006-11-06,p0021,sch.fas,Schinus,aff. fasciculata ,1,,103,40025,103,4122575
+V4,25,2006-11-06,p0018,bud.men,Buddleja  ,mendozensis ,1,,400,260185,400,104074000
+V4,27,2006-11-06,p0006,men.dec,Menodora ,decemfida ,1,,31,18889,31,585559
+V4,28,2006-11-06,p0013,all.inc,Allionia ,incarnata ,1,,8,19213,8,153704
+V4,29,2006-11-06,p0006,men.dec,Menodora ,decemfida ,2,,31,18889,62,1171118
+V1,3,2006-11-13,p0034,lar.div,Larrea,divaricata,2,,268,1027210,536,550584560
+V1,7,2006-11-13,p0034,lar.div,Larrea,divaricata,2,,268,1027210,536,550584560
+V1,10,2006-11-13,p0034,lar.div,Larrea,divaricata,2,,268,1027210,536,550584560
+V1,10,2006-11-13,p0038,pro.fle,Prosopis,flexuosa,1,,104,29864844,104,3105943776
+V1,16,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V1,20,2006-11-13,p0038,pro.fle,Prosopis,flexuosa,1,,104,29864844,104,3105943776
+V1,21,2006-11-13,p0042,spa.jun,Spartium,junceum,1,,46,390278,46,17952788
+V1,22,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V1,31,2006-11-13,p0006,men.dec,Menodora ,decemfida ,1,,13,18889,13,245557
+V2,3,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V2,4,2006-11-13,p0034,lar.div,Larrea,divaricata,2,,268,1027210,536,550584560
+V2,4,2006-11-13,p0038,pro.fle,Prosopis,flexuosa,1,,104,29864844,104,3105943776
+V2,4,2006-11-13,p0009,sen.aph,Senna ,aphylla ,1,,120,103318,120,12398160
+V2,7,2006-11-13,p0038,pro.fle,Prosopis,flexuosa,1,,104,29864844,104,3105943776
+V2,8,2006-11-13,p0037,opu.sul,Opuntia,sulphurea,1,,1,23359091,1,23359091
+V2,8,2006-11-13,p0038,pro.fle,Prosopis,flexuosa,1,,104,29864844,104,3105943776
+V2,10,2006-11-13,p0032,con.mic,Condalia,microphylla,1,,2331,138802,2331,323547462
+V2,13,2006-11-13,p0037,opu.sul,Opuntia,sulphurea,1,,1,23359091,1,23359091
+V2,16,2006-11-13,p0032,con.mic,Condalia,microphylla,1,,2331,138802,2331,323547462
+V3,11,2006-11-13,p0034,lar.div,Larrea,divaricata,2,,268,1027210,536,550584560
+V3,12,2006-11-13,p0034,lar.div,Larrea,divaricata,2,,268,1027210,536,550584560
+V3,12,2006-11-13,p0037,opu.sul,Opuntia,sulphurea,1,,1,23359091,1,23359091
+V3,13,2006-11-13,p0034,lar.div,Larrea,divaricata,2,,268,1027210,536,550584560
+V3,14,2006-11-13,p0006,men.dec,Menodora ,decemfida ,1,,13,18889,13,245557
+V3,15,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V3,19,2006-11-13,p0034,lar.div,Larrea,divaricata,2,,268,1027210,536,550584560
+V3,21,2006-11-13,p0034,lar.div,Larrea,divaricata,4,,268,1027210,1072,1101169120
+V3,23,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V3,24,2006-11-13,p0021,sch.fas,Schinus,aff. fasciculata ,1,,103,40025,103,4122575
+V3,30,2006-11-13,p0006,men.dec,Menodora ,decemfida ,1,,13,18889,13,245557
+V3,39,2006-11-13,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,,7,1603704,7,11225928
+V4,1,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V4,2,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V4,2,2006-11-13,p0037,opu.sul,Opuntia,sulphurea,1,,1,23359091,1,23359091
+V4,4,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V4,5,2006-11-13,p0003,zuc.pun,Zuccagnia ,punctata ,1,,364,17037,364,6201468
+V4,6,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V4,7,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V4,8,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V4,8,2006-11-13,p0037,opu.sul,Opuntia,sulphurea,1,,1,23359091,1,23359091
+V4,9,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V4,9,2006-11-13,p0037,opu.sul,Opuntia,sulphurea,1,,1,23359091,1,23359091
+V4,10,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V4,11,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V4,12,2006-11-13,p0034,lar.div,Larrea,divaricata,2,,268,1027210,536,550584560
+V4,12,2006-11-13,p0043,tri.can,Trichocereus,candicans,1,,1,119100002,1,119100002
+V4,13,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V4,14,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V4,16,2006-11-13,p0006,men.dec,Menodora ,decemfida ,2,,13,18889,26,491114
+V4,17,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V4,18,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V4,18,2006-11-13,p0037,opu.sul,Opuntia,sulphurea,1,,1,23359091,1,23359091
+V4,20,2006-11-13,p0032,con.mic,Condalia,microphylla,1,,2331,138802,2331,323547462
+V4,24,2006-11-13,p0037,opu.sul,Opuntia,sulphurea,1,,1,23359091,1,23359091
+V4,25,2006-11-13,p0018,bud.men,Buddleja  ,mendozensis ,1,,400,260185,400,104074000
+V4,27,2006-11-13,p0006,men.dec,Menodora ,decemfida ,1,,13,18889,13,245557
+V4,28,2006-11-13,p0034,lar.div,Larrea,divaricata,1,,268,1027210,268,275292280
+V4,28,2006-11-13,p0037,opu.sul,Opuntia,sulphurea,1,,1,23359091,1,23359091
+V4,29,2006-11-13,p0006,men.dec,Menodora ,decemfida ,1,,13,18889,13,245557
+V4,29,2006-11-13,p0037,opu.sul,Opuntia,sulphurea,1,,1,23359091,1,23359091
+V4,30,2006-11-13,p0037,opu.sul,Opuntia,sulphurea,1,,1,23359091,1,23359091
+V1,1,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V1,2,2006-11-20,p0003,zuc.pun,Zuccagnia ,punctata ,1,,198,17037,198,3373326
+V1,3,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V1,8,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V1,9,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V1,9,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V1,10,2006-11-20,p0038,pro.fle,Prosopis,flexuosa,1,,153,29864844,153,4569321132
+V1,11,2006-11-20,p0038,pro.fle,Prosopis,flexuosa,1,,153,29864844,153,4569321132
+V1,16,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V1,18,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V1,19,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V1,20,2006-11-20,p0038,pro.fle,Prosopis,flexuosa,1,,153,29864844,153,4569321132
+V1,22,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V1,31,2006-11-20,p0006,men.dec,Menodora ,decemfida ,1,,13,18889,13,245557
+V2,2,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V2,3,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V2,4,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V2,4,2006-11-20,p0038,pro.fle,Prosopis,flexuosa,1,,153,29864844,153,4569321132
+V2,4,2006-11-20,p0009,sen.aph,Senna ,aphylla ,1,,307,103318,307,31718626
+V2,10,2006-11-20,p0032,con.mic,Condalia,microphylla,1,,55,138802,55,7634110
+V2,10,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V2,10,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,5,,3,23359091,15,350386365
+V2,12,2006-11-20,p0032,con.mic,Condalia,microphylla,1,,55,138802,55,7634110
+V2,13,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,7,,3,23359091,21,490540911
+V2,27,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V3,1,2006-11-20,p0038,pro.fle,Prosopis,flexuosa,1,,153,29864844,153,4569321132
+V3,3,2006-11-20,p0038,pro.fle,Prosopis,flexuosa,1,,153,29864844,153,4569321132
+V3,6,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V3,9,2006-11-20,p0034,lar.div,Larrea,divaricata,2,,44,1027210,88,90394480
+V3,11,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V3,11,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V3,12,2006-11-20,p0034,lar.div,Larrea,divaricata,2,,44,1027210,88,90394480
+V3,12,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,2,,3,23359091,6,140154546
+V3,13,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V3,13,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V3,14,2006-11-20,p0006,men.dec,Menodora ,decemfida ,1,,13,18889,13,245557
+V3,15,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V3,16,2006-11-20,p0006,men.dec,Menodora ,decemfida ,1,,13,18889,13,245557
+V3,19,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V3,19,2006-11-20,p0003,zuc.pun,Zuccagnia ,punctata ,1,,198,17037,198,3373326
+V3,21,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V3,23,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V3,24,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V3,30,2006-11-20,p0006,men.dec,Menodora ,decemfida ,1,,13,18889,13,245557
+V4,1,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V4,2,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,3,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V4,4,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V4,4,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,6,2006-11-20,p0034,lar.div,Larrea,divaricata,2,,44,1027210,88,90394480
+V4,7,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,8,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V4,8,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,9,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,11,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,2,,3,23359091,6,140154546
+V4,12,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V4,13,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V4,13,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,14,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V4,15,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V4,15,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,17,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V4,18,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V4,18,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,19,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,24,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,28,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,2,,3,23359091,6,140154546
+V4,29,2006-11-20,p0006,men.dec,Menodora ,decemfida ,2,,13,18889,26,491114
+V4,29,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,30,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,31,2006-11-20,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,39,2006-11-20,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V1,2,2006-11-29,p0003,zuc.pun,Zuccagnia ,punctata ,1,,198,17037,198,3373326
+V1,8,2006-11-29,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V1,10,2006-11-29,p0038,pro.fle,Prosopis,flexuosa,1,,153,29864844,153,4569321132
+V1,18,2006-11-29,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V2,3,2006-11-29,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V2,3,2006-11-29,p0038,pro.fle,Prosopis,flexuosa,1,,153,29864844,153,4569321132
+V2,13,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,12,,3,23359091,36,840927276
+V2,37,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V3,3,2006-11-29,p0038,pro.fle,Prosopis,flexuosa,1,,153,29864844,153,4569321132
+V3,9,2006-11-29,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V3,11,2006-11-29,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V3,11,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,2,,3,23359091,6,140154546
+V3,12,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,4,,3,23359091,12,280309092
+V3,15,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V3,17,2006-11-29,p0006,men.dec,Menodora ,decemfida ,3,,13,18889,39,736671
+V3,19,2006-11-29,p0034,lar.div,Larrea,divaricata,1,,44,1027210,44,45197240
+V3,31,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,1,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,2,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,4,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,4,,3,23359091,12,280309092
+V4,5,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,6,,3,23359091,18,420463638
+V4,6,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,4,,3,23359091,12,280309092
+V4,7,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,3,,3,23359091,9,210231819
+V4,8,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,2,,3,23359091,6,140154546
+V4,9,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,2,,3,23359091,6,140154546
+V4,10,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,8,,3,23359091,24,560618184
+V4,11,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,12,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,13,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,6,,3,23359091,18,420463638
+V4,15,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,2,,3,23359091,6,140154546
+V4,16,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,2,,3,23359091,6,140154546
+V4,19,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,20,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,4,,3,23359091,12,280309092
+V4,24,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,29,2006-11-29,p0006,men.dec,Menodora ,decemfida ,1,,13,18889,13,245557
+V4,29,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,10,,3,23359091,30,700772730
+V4,30,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,32,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+V4,38,2006-11-29,p0037,opu.sul,Opuntia,sulphurea,1,,3,23359091,3,70077273
+.,8,2007-01-19,p0011,lyc.chi,Lycium ,chilense ,1,,8,120247,8,961976
+V1,1,2007-01-19,p0026,alo.gra,Aloyssia ,gratissima ,1,,915,1984,915,1815360
+V1,3,2007-01-19,p0009,sen.aph,Senna ,aphylla ,1,,134,103318,134,13844612
+V1,4,2007-01-19,p0026,alo.gra,Aloyssia ,gratissima ,2,,915,1984,1830,3630720
+V1,7,2007-01-19,p0026,alo.gra,Aloyssia ,gratissima ,2,,915,1984,1830,3630720
+V1,11,2007-01-19,p0026,alo.gra,Aloyssia ,gratissima ,2,,915,1984,1830,3630720
+V1,11,2007-01-19,p0039,pro.cun,Proustia,cuneifolia,2,,4750,149931,9500,1424344500
+V1,12,2007-01-19,p0026,alo.gra,Aloyssia ,gratissima ,2,,915,1984,1830,3630720
+V1,12,2007-01-19,p0011,lyc.chi,Lycium ,chilense ,1,,8,120247,8,961976
+V1,13,2007-01-19,p0026,alo.gra,Aloyssia ,gratissima ,1,,915,1984,915,1815360
+V1,13,2007-01-19,p0011,lyc.chi,Lycium ,chilense ,1,,8,120247,8,961976
+V1,14,2007-01-19,p0026,alo.gra,Aloyssia ,gratissima ,2,,915,1984,1830,3630720
+V1,15,2007-01-19,p0026,alo.gra,Aloyssia ,gratissima ,1,,915,1984,915,1815360
+V1,16,2007-01-19,p0011,lyc.chi,Lycium ,chilense ,2,,8,120247,16,1923952
+V1,17,2007-01-19,p0011,lyc.chi,Lycium ,chilense ,1,,8,120247,8,961976
+V1,19,2007-01-19,p0011,lyc.chi,Lycium ,chilense ,1,,8,120247,8,961976
+V1,19,2007-01-19,p0039,pro.cun,Proustia,cuneifolia,1,,4750,149931,4750,712172250
+V1,22,2007-01-19,p0075,lyc.sp1,Lycium ,sp.,1,,6,.,6,.
+V1,24,2007-01-19,p0075,lyc.sp1,Lycium ,sp.,1,,6,.,6,.
+V1,25,2007-01-19,p0039,pro.cun,Proustia,cuneifolia,1,,4750,149931,4750,712172250
+V1,27,2007-01-19,p0039,pro.cun,Proustia,cuneifolia,1,,4750,149931,4750,712172250
+V1,28,2007-01-19,p0075,lyc.sp1,Lycium ,sp.,1,,6,.,6,.
+V1,30,2007-01-19,p0026,alo.gra,Aloyssia ,gratissima ,1,,915,1984,915,1815360
+V1,31,2007-01-19,p0006,men.dec,Menodora ,decemfida ,1,,13,18889,13,245557
+V1,36,2007-01-19,p0027,bou.spi,Bougainvillea  ,spinosa ,1,,320,.,320,.
+V1,37,2007-01-19,p0039,pro.cun,Proustia,cuneifolia,1,,4750,149931,4750,712172250
+V1,38,2007-01-19,p0026,alo.gra,Aloyssia ,gratissima ,1,,915,1984,915,1815360
+V1,40,2007-01-19,p0026,alo.gra,Aloyssia ,gratissima ,1,,915,1984,915,1815360
+V2,7,2007-01-19,p0026,alo.gra,Aloyssia ,gratissima ,1,,915,1984,915,1815360
+V2,32,2007-01-19,p0039,pro.cun,Proustia,cuneifolia,1,,4750,149931,4750,712172250
+V3,22,2007-01-19,p0039,pro.cun,Proustia,cuneifolia,1,,4750,149931,4750,712172250
+V3,31,2007-01-19,p0039,pro.cun,Proustia,cuneifolia,1,,100,149931,100,14993100

@@ -1,0 +1,40 @@
+Specie,Kingdom,Role,Degree,Sum(connections strength),Networks presence
+"Allograpta sp1 M_PL_069","Animals","Pollinator",1,1,1
+"Apis mellifera","Animals","Pollinator",4,47,123
+"Brachymyrmex sp1 M_PL_069","Animals","Pollinator",1,6,1
+"Chrysomya megacephala ","Animals","Pollinator",4,13,25
+"Conocephalus sp1 M_PL_069","Animals","Pollinator",1,1,1
+"Dolichopodidae sp1 M_PL_069","Animals","Pollinator",1,2,1
+"Graphomya maculata","Animals","Pollinator",2,2,7
+"Hydrillodes sp1 M_PL_069","Animals","Pollinator",1,7,1
+"Macroglossum milvus","Animals","Pollinator",1,1,7
+"Melanostoma annulipes","Animals","Pollinator",1,1,17
+"Musca domestica","Animals","Pollinator",4,11,26
+"Nacoleia sp1 M_PL_069","Animals","Pollinator",5,6,1
+"Panara naso","Animals","Pollinator",2,2,14
+"Paragus borbonicus","Animals","Pollinator",2,4,15
+"Phelsuma cepediana","Animals","Pollinator",2,2,10
+"Phorinia sp1 M_PL_069","Animals","Pollinator",3,6,1
+"Pteromalidae sp1 M_PL_069","Animals","Pollinator",1,1,1
+"Scopariinae sp1 M_PL_069","Animals","Pollinator",1,1,1
+"Stomorhina lunata","Animals","Pollinator",3,3,24
+"Stomoxys calcitrans","Animals","Pollinator",1,1,15
+"Strictopterinae sp1 M_PL_069","Animals","Pollinator",1,1,1
+"Syritta sp1 M_PL_069","Animals","Pollinator",1,1,1
+"Technomyrmex albipes ","Animals","Pollinator",5,33,25
+"Trirhithrum sp1 M_PL_069","Animals","Pollinator",1,2,1
+"Villa unifasciata","Animals","Pollinator",2,2,13
+"Diospyros revaughanii","Plants","Plant",4,7,6
+"Embelia angustifolia","Plants","Plant",2,2,3
+"Euodia obtusifolia","Plants","Plant",3,3,6
+"Gaertnera sp1 M_PL_069","Plants","Plant",7,15,1
+"Labourdonnaisia callophylloides","Plants","Plant",3,28,9
+"Memecylon ovatifolium","Plants","Plant",2,2,2
+"Pyrostria fasciculata","Plants","Plant",5,29,2
+"Stillingia lineata","Plants","Plant",10,25,20
+"Syzygium commersonii","Plants","Plant",2,2,2
+"Syzygium coriaceum","Plants","Plant",9,25,8
+"Syzygium petrinese","Plants","Plant",1,15,5
+"Tabernaemontana persicarifolia","Plants","Plant",1,1,5
+"Tristhema mauritiana","Plants","Plant",1,2,3
+"Xyris sp1 M_PL_069","Plants","Plant",1,1,1

@@ -1,0 +1,68 @@
+Specie,Kingdom,Role,Degree,Sum(connections strength),Networks presence
+"Allograpta nasuta","Animals","Pollinator",5,9,17
+"Apis mellifera","Animals","Pollinator",7,41,123
+"Brachymyrmex sp1 M_PL_063","Animals","Pollinator",7,46,1
+"Cephonodes trochilus","Animals","Pollinator",2,3,4
+"Chaetocnema sp1 M_PL_063","Animals","Pollinator",2,18,1
+"Chrysomya megacephala ","Animals","Pollinator",1,7,25
+"Cryptinae sp1 M_PL_063","Animals","Pollinator",1,1,1
+"Dioxyna sororcula ","Animals","Pollinator",3,7,8
+"Dysauxes florida","Animals","Pollinator",1,1,15
+"Episyrphus sp1 M_PL_063","Animals","Pollinator",1,1,1
+"Eristalinus flaveolus","Animals","Pollinator",4,7,17
+"Fannia pusio ","Animals","Pollinator",3,19,15
+"Graphomya maculata","Animals","Pollinator",1,2,7
+"Homoneura sp1 M_PL_063","Animals","Pollinator",1,1,1
+"Hydrillodes sp1 M_PL_063","Animals","Pollinator",1,1,1
+"Ischiodon aegyptius ","Animals","Pollinator",4,8,11
+"Lecithoceridae sp1 M_PL_063","Animals","Pollinator",2,2,1
+"Leptotes pirithous","Animals","Pollinator",1,1,11
+"Lygistorrhina sp1 M_PL_063","Animals","Pollinator",2,9,1
+"Macroglossum milvus","Animals","Pollinator",1,1,7
+"Mauritiborium undulatus ","Animals","Pollinator",1,1,9
+"Melanostoma bituberculatum ","Animals","Pollinator",1,6,10
+"Musca domestica","Animals","Pollinator",9,26,26
+"Nacoleia sp1 M_PL_063","Animals","Pollinator",2,8,1
+"Nacoleia sp2 M_PL_063","Animals","Pollinator",2,2,1
+"Ophyra capensis ","Animals","Pollinator",2,14,7
+"Ornidia obesa","Animals","Pollinator",3,3,47
+"Orthellia albigena ","Animals","Pollinator",1,1,12
+"Pachycerina crinicornis ","Animals","Pollinator",12,38,20
+"Panara naso","Animals","Pollinator",4,10,14
+"Phelsuma cepediana","Animals","Pollinator",3,4,10
+"Phorinia sp1 M_PL_063","Animals","Pollinator",2,4,1
+"Polistes hebraeus","Animals","Pollinator",3,10,18
+"Psilopa iceryae ","Animals","Pollinator",2,2,6
+"Remigia frugalis ","Animals","Pollinator",1,1,1
+"Sarcophaga arno ","Animals","Pollinator",2,4,12
+"Scatopsidae sp1 M_PL_063","Animals","Pollinator",1,1,1
+"Stomorhina lunata","Animals","Pollinator",12,101,24
+"Stomoxys calcitrans","Animals","Pollinator",5,9,15
+"Stomoxys niger","Animals","Pollinator",1,1,9
+"Syritta nigrofemorata","Animals","Pollinator",2,2,9
+"Syritta sp1 M_PL_063","Animals","Pollinator",2,2,1
+"Tarundia servillei","Animals","Pollinator",1,1,4
+"Technomyrmex albipes ","Animals","Pollinator",8,47,25
+"Trichoplusia indicator ","Animals","Pollinator",1,1,3
+"Zosterops mauritianus","Animals","Pollinator",1,1,11
+"Agauria salicifolia","Plants","Plant",2,2,4
+"Antidesma madagascariense","Plants","Plant",6,11,6
+"Antirhea borbonica","Plants","Plant",6,10,10
+"Aphloia theiformis","Plants","Plant",14,67,22
+"Bertiera zaluzania ","Plants","Plant",5,15,7
+"Chassalia coriacea","Plants","Plant",6,12,6
+"Claoxylon linostachys","Plants","Plant",5,12,7
+"Coffea mauritiana","Plants","Plant",4,13,4
+"Croton fothergillifolius","Plants","Plant",12,45,11
+"Dracaena reflexa","Plants","Plant",12,21,4
+"Erythroxylum macrocarpum","Plants","Plant",3,4,11
+"Flagellaria indica","Plants","Plant",2,2,6
+"Molinaea alternifolia","Plants","Plant",16,70,8
+"Pandanus wiehii","Plants","Plant",2,3,3
+"Polyscias mauritiana","Plants","Plant",1,1,3
+"Psiadia terebinthina","Plants","Plant",7,12,17
+"Roussea simplex ","Plants","Plant",4,28,5
+"Sideroxylon cinereum","Plants","Plant",12,91,6
+"Stillingia lineata","Plants","Plant",6,25,20
+"Syzygium venosum","Plants","Plant",5,33,1
+"Toddalia asiatica","Plants","Plant",4,8,7

@@ -1,0 +1,677 @@
+sitio,cuadrante,fecha,no.esp.p,codigo.p,genero.p,especie.p,no.indiv,flores.prom.indiv,gpflor.ind,flores.tot,gp.tot
+V4,F3,2007-11-13,p0002,jun.asp,Junellia ,aspera ,1,20,22222,20,444440
+V1,F1,2007-10-29,p0003,zuc.pun,Zuccagnia ,punctata ,1,126,17037,126,2146662
+V4,F4,2007-10-29,p0003,zuc.pun,Zuccagnia ,punctata ,2,126,17037,252,4293324
+V1,F1,2007-11-06,p0003,zuc.pun,Zuccagnia ,punctata ,2,126,17037,252,4293324
+V4,F4,2007-11-06,p0003,zuc.pun,Zuccagnia ,punctata ,1,126,17037,126,2146662
+V4,F5,2007-11-06,p0003,zuc.pun,Zuccagnia ,punctata ,1,126,17037,126,2146662
+V1,F1,2007-11-13,p0003,zuc.pun,Zuccagnia ,punctata ,1,132,17037,132,2248884
+V1,F3,2007-11-13,p0003,zuc.pun,Zuccagnia ,punctata ,5,132,17037,660,11244420
+V1,F3,2007-11-13,p0003,zuc.pun,Zuccagnia ,punctata ,1,132,17037,132,2248884
+V2,F1,2007-11-13,p0003,zuc.pun,Zuccagnia ,punctata ,3,132,17037,396,6746652
+V4,F4,2007-11-13,p0003,zuc.pun,Zuccagnia ,punctata ,8,132,17037,1056,17991072
+V4,F5,2007-11-13,p0003,zuc.pun,Zuccagnia ,punctata ,4,132,17037,528,8995536
+V1,F1,2007-11-20,p0003,zuc.pun,Zuccagnia ,punctata ,3,359,17037,1077,18348849
+V1,F2,2007-11-20,p0003,zuc.pun,Zuccagnia ,punctata ,1,359,17037,359,6116283
+V1,F3,2007-11-20,p0003,zuc.pun,Zuccagnia ,punctata ,4,359,17037,1436,24465132
+V2,F1,2007-11-20,p0003,zuc.pun,Zuccagnia ,punctata ,3,359,17037,1077,18348849
+V4,F4,2007-11-20,p0003,zuc.pun,Zuccagnia ,punctata ,6,359,17037,2154,36697698
+V4,F5,2007-11-20,p0003,zuc.pun,Zuccagnia ,punctata ,14,359,17037,5026,85627962
+V1,F1,2007-11-27,p0003,zuc.pun,Zuccagnia ,punctata ,5,278,17037,1390,23681430
+V1,F2,2007-11-27,p0003,zuc.pun,Zuccagnia ,punctata ,1,278,17037,278,4736286
+V1,F3,2007-11-27,p0003,zuc.pun,Zuccagnia ,punctata ,2,278,17037,556,9472572
+V2,F1,2007-11-27,p0003,zuc.pun,Zuccagnia ,punctata ,1,278,17037,278,4736286
+V4,F5,2007-11-27,p0003,zuc.pun,Zuccagnia ,punctata ,1,278,17037,278,4736286
+V1,F1,2007-12-04,p0003,zuc.pun,Zuccagnia ,punctata ,1,0,17037,0,0
+V1,F2,2007-12-04,p0003,zuc.pun,Zuccagnia ,punctata ,1,0,17037,0,0
+V1,F4,2007-11-13,p0004,hel.don,Helenium ,donianum,2,1,1603704,2,3207408
+V1,F1,2007-11-20,p0004,hel.don,Helenium ,donianum ,49,1,1603704,49,78581496
+V1,F2,2007-11-20,p0004,hel.don,Helenium ,donianum,9,1,1603704,9,14433336
+V1,F3,2007-11-20,p0004,hel.don,Helenium ,donianum ,11,1,1603704,11,17640744
+V1,F5,2007-11-20,p0004,hel.don,Helenium ,donianum,47,1,1603704,47,75374088
+V4,F2,2007-11-20,p0004,hel.don,Helenium ,donianum ,10,1,1603704,10,16037040
+V4,F3,2007-11-20,p0004,hel.don,Helenium ,donianum,167,1,1603704,167,267818568
+V4,F4,2007-11-20,p0004,hel.don,Helenium ,donianum ,44,1,1603704,44,70562976
+V4,F5,2007-11-20,p0004,hel.don,Helenium ,donianum,4,1,1603704,4,6414816
+V4,F5,2007-11-20,p0004,hel.don,Helenium ,donianum ,3,1,1603704,3,4811112
+V1,F1,2007-11-27,p0004,hel.don,Helenium ,donianum,52,1,1603704,52,83392608
+V1,F3,2007-11-27,p0004,hel.don,Helenium ,donianum ,38,1,1603704,38,60940752
+V2,F1,2007-11-27,p0004,hel.don,Helenium ,donianum,7,1,1603704,7,11225928
+V2,F4,2007-11-27,p0004,hel.don,Helenium ,donianum ,2,1,1603704,2,3207408
+V2,F5,2007-11-27,p0004,hel.don,Helenium ,donianum,11,1,1603704,11,17640744
+V4,F1,2007-11-27,p0004,hel.don,Helenium ,donianum ,1,1,1603704,1,1603704
+V4,F3,2007-11-27,p0004,hel.don,Helenium ,donianum,6,1,1603704,6,9622224
+V4,F4,2007-11-27,p0004,hel.don,Helenium ,donianum ,9,1,1603704,9,14433336
+V4,F5,2007-11-27,p0004,hel.don,Helenium ,donianum,1,1,1603704,1,1603704
+V1,F1,2007-12-04,p0004,hel.don,Helenium ,donianum ,22,1,1603704,22,35281488
+V1,F2,2007-12-04,p0004,hel.don,Helenium ,donianum,3,1,1603704,3,4811112
+V1,F2,2007-12-04,p0004,hel.don,Helenium ,donianum ,4,1,1603704,4,6414816
+V1,F3,2007-12-04,p0004,hel.don,Helenium ,donianum,10,1,1603704,10,16037040
+V1,F4,2007-12-04,p0004,hel.don,Helenium ,donianum ,1,1,1603704,1,1603704
+V1,F5,2007-12-04,p0004,hel.don,Helenium ,donianum,58,1,1603704,58,93014832
+V2,F1,2007-12-04,p0004,hel.don,Helenium ,donianum ,13,1,1603704,13,20848152
+V2,F3,2007-12-04,p0004,hel.don,Helenium ,donianum,2,1,1603704,2,3207408
+V2,F4,2007-12-04,p0004,hel.don,Helenium ,donianum ,7,1,1603704,7,11225928
+V2,F5,2007-12-04,p0004,hel.don,Helenium ,donianum,31,1,1603704,31,49714824
+V4,F3,2007-12-04,p0004,hel.don,Helenium ,donianum ,7,1,1603704,7,11225928
+V4,F4,2007-12-04,p0004,hel.don,Helenium ,donianum,16,1,1603704,16,25659264
+V4,F5,2007-12-04,p0004,hel.don,Helenium ,donianum ,3,1,1603704,3,4811112
+V1,F5,2007-12-11,p0004,hel.don,Helenium ,donianum,7,1,1603704,7,11225928
+V2,F1,2007-12-11,p0004,hel.don,Helenium ,donianum ,1,1,1603704,1,1603704
+V2,F3,2007-12-11,p0004,hel.don,Helenium ,donianum,3,1,1603704,3,4811112
+V2,F5,2007-12-11,p0004,hel.don,Helenium ,donianum ,10,1,1603704,10,16037040
+V1,F4,2007-11-27,p0005,hel.don,Helenium ,donianum,1,1,1603704,1,1603704
+V1,F1,2007-10-23,p0006,men.dec,Menodora ,decemfida ,2,18,18889,36,680004
+V1,F2,2007-10-23,p0006,men.dec,Menodora ,decemfida ,3,18,18889,54,1020006
+V1,F3,2007-10-23,p0006,men.dec,Menodora ,decemfida ,1,18,18889,18,340002
+V1,F4,2007-10-23,p0006,men.dec,Menodora ,decemfida ,1,18,18889,18,340002
+V1,F5,2007-10-23,p0006,men.dec,Menodora ,decemfida ,1,18,18889,18,340002
+V4,F2,2007-10-23,p0006,men.dec,Menodora ,decemfida ,1,18,18889,18,340002
+V1,F1,2007-10-29,p0006,men.dec,Menodora ,decemfida ,13,18,18889,234,4420026
+V1,F2,2007-10-29,p0006,men.dec,Menodora ,decemfida ,20,18,18889,360,6800040
+V1,F3,2007-10-29,p0006,men.dec,Menodora ,decemfida ,4,18,18889,72,1360008
+V1,F4,2007-10-29,p0006,men.dec,Menodora ,decemfida ,3,18,18889,54,1020006
+V1,F5,2007-10-29,p0006,men.dec,Menodora ,decemfida ,1,18,18889,18,340002
+V1,F1,2007-11-06,p0006,men.dec,Menodora ,decemfida ,10,18,18889,180,3400020
+V1,F2,2007-11-06,p0006,men.dec,Menodora ,decemfida ,8,18,18889,144,2720016
+V1,F3,2007-11-06,p0006,men.dec,Menodora ,decemfida ,5,18,18889,90,1700010
+V1,F4,2007-11-06,p0006,men.dec,Menodora ,decemfida ,19,18,18889,342,6460038
+V1,F5,2007-11-06,p0006,men.dec,Menodora ,decemfida ,13,18,18889,234,4420026
+V2,F1,2007-11-06,p0006,men.dec,Menodora ,decemfida ,2,18,18889,36,680004
+V4,F1,2007-11-06,p0006,men.dec,Menodora ,decemfida ,2,18,18889,36,680004
+V4,F2,2007-11-06,p0006,men.dec,Menodora ,decemfida ,5,18,18889,90,1700010
+V4,F3,2007-11-06,p0006,men.dec,Menodora ,decemfida ,3,18,18889,54,1020006
+V4,F4,2007-11-06,p0006,men.dec,Menodora ,decemfida ,1,18,18889,18,340002
+V4,F5,2007-11-06,p0006,men.dec,Menodora ,decemfida ,5,18,18889,90,1700010
+V1,F1,2007-11-13,p0006,men.dec,Menodora ,decemfida ,19,18,18889,342,6460038
+V1,F2,2007-11-13,p0006,men.dec,Menodora ,decemfida ,37,18,18889,666,12580074
+V1,F3,2007-11-13,p0006,men.dec,Menodora ,decemfida ,14,18,18889,252,4760028
+V1,F4,2007-11-13,p0006,men.dec,Menodora ,decemfida ,20,18,18889,360,6800040
+V1,F5,2007-11-13,p0006,men.dec,Menodora ,decemfida ,5,18,18889,90,1700010
+V2,F1,2007-11-13,p0006,men.dec,Menodora ,decemfida ,17,18,18889,306,5780034
+V4,F1,2007-11-13,p0006,men.dec,Menodora ,decemfida ,1,18,18889,18,340002
+V4,F2,2007-11-13,p0006,men.dec,Menodora ,decemfida ,13,18,18889,234,4420026
+V4,F3,2007-11-13,p0006,men.dec,Menodora ,decemfida ,4,18,18889,72,1360008
+V4,F4,2007-11-13,p0006,men.dec,Menodora ,decemfida ,2,18,18889,36,680004
+V4,F5,2007-11-13,p0006,men.dec,Menodora ,decemfida ,9,18,18889,162,3060018
+V1,F1,2007-11-20,p0006,men.dec,Menodora ,decemfida ,17,18,18889,306,5780034
+V1,F2,2007-11-20,p0006,men.dec,Menodora ,decemfida ,10,18,18889,180,3400020
+V1,F3,2007-11-20,p0006,men.dec,Menodora ,decemfida ,8,18,18889,144,2720016
+V1,F4,2007-11-20,p0006,men.dec,Menodora ,decemfida ,15,18,18889,270,5100030
+V1,F5,2007-11-20,p0006,men.dec,Menodora ,decemfida ,3,18,18889,54,1020006
+V2,F1,2007-11-20,p0006,men.dec,Menodora ,decemfida ,6,18,18889,108,2040012
+V4,F2,2007-11-20,p0006,men.dec,Menodora ,decemfida ,4,18,18889,72,1360008
+V4,F3,2007-11-20,p0006,men.dec,Menodora ,decemfida ,2,18,18889,36,680004
+V4,F5,2007-11-20,p0006,men.dec,Menodora ,decemfida ,2,18,18889,36,680004
+V1,F1,2007-11-27,p0006,men.dec,Menodora ,decemfida ,11,18,18889,198,3740022
+V1,F2,2007-11-27,p0006,men.dec,Menodora ,decemfida ,18,18,18889,324,6120036
+V1,F3,2007-11-27,p0006,men.dec,Menodora ,decemfida ,8,18,18889,144,2720016
+V1,F4,2007-11-27,p0006,men.dec,Menodora ,decemfida ,15,18,18889,270,5100030
+V1,F5,2007-11-27,p0006,men.dec,Menodora ,decemfida ,15,18,18889,270,5100030
+V2,F1,2007-11-27,p0006,men.dec,Menodora ,decemfida ,8,18,18889,144,2720016
+V4,F2,2007-11-27,p0006,men.dec,Menodora ,decemfida ,10,18,18889,180,3400020
+V4,F3,2007-11-27,p0006,men.dec,Menodora ,decemfida ,10,18,18889,180,3400020
+V4,F5,2007-11-27,p0006,men.dec,Menodora ,decemfida ,10,18,18889,180,3400020
+V1,F1,2007-12-04,p0006,men.dec,Menodora ,decemfida ,5,18,18889,90,1700010
+V1,F2,2007-12-04,p0006,men.dec,Menodora ,decemfida ,11,18,18889,198,3740022
+V1,F3,2007-12-04,p0006,men.dec,Menodora ,decemfida ,11,18,18889,198,3740022
+V1,F4,2007-12-04,p0006,men.dec,Menodora ,decemfida ,15,18,18889,270,5100030
+V1,F5,2007-12-04,p0006,men.dec,Menodora ,decemfida ,14,18,18889,252,4760028
+V2,F1,2007-12-04,p0006,men.dec,Menodora ,decemfida ,10,18,18889,180,3400020
+V2,F3,2007-12-04,p0006,men.dec,Menodora ,decemfida ,1,18,18889,18,340002
+V4,F2,2007-12-04,p0006,men.dec,Menodora ,decemfida ,2,18,18889,36,680004
+V4,F3,2007-12-04,p0006,men.dec,Menodora ,decemfida ,2,18,18889,36,680004
+V4,F5,2007-12-04,p0006,men.dec,Menodora ,decemfida ,11,18,18889,198,3740022
+V1,F4,2007-12-11,p0006,men.dec,Menodora ,decemfida ,3,18,18889,54,1020006
+V2,F4,2007-12-11,p0006,men.dec,Menodora ,decemfida ,1,18,18889,18,340002
+V1,3,2007-10-02,p0007,lyc.ten,Lycium ,tenuispinosum  ,1,4,159954,4,639816
+V1,26,2007-10-02,p0007,lyc.ten,Lycium ,tenuispinosum  ,1,4,159954,4,639816
+V1,37,2007-10-02,p0007,lyc.ten,Lycium ,tenuispinosum  ,1,4,159954,4,639816
+V1,F5,2007-10-19,p0007,lyc.ten,Lycium ,tenuispinosum  ,2,2,159954,4,639816
+V1,F1,2007-10-29,p0009,sen.aph,Senna ,aphylla ,7,36,103318,252,26036136
+V1,F2,2007-10-29,p0009,sen.aph,Senna ,aphylla ,1,36,103318,36,3719448
+V1,F3,2007-10-29,p0009,sen.aph,Senna ,aphylla ,2,36,103318,72,7438896
+V1,F4,2007-10-29,p0009,sen.aph,Senna ,aphylla ,2,36,103318,72,7438896
+V1,F5,2007-10-29,p0009,sen.aph,Senna ,aphylla ,5,36,103318,180,18597240
+V2,F1,2007-10-29,p0009,sen.aph,Senna ,aphylla ,1,36,103318,36,3719448
+V1,F1,2007-11-06,p0009,sen.aph,Senna ,aphylla ,4,120,103318,480,49592640
+V1,F2,2007-11-06,p0009,sen.aph,Senna ,aphylla ,3,120,103318,360,37194480
+V1,F3,2007-11-06,p0009,sen.aph,Senna ,aphylla ,3,120,103318,360,37194480
+V1,F5,2007-11-06,p0009,sen.aph,Senna ,aphylla ,7,120,103318,840,86787120
+V2,F1,2007-11-06,p0009,sen.aph,Senna ,aphylla ,1,120,103318,120,12398160
+V2,F2,2007-11-06,p0009,sen.aph,Senna ,aphylla ,1,120,103318,120,12398160
+V1,F1,2007-11-13,p0009,sen.aph,Senna ,aphylla ,2,307,103318,614,63437252
+V1,F2,2007-11-13,p0009,sen.aph,Senna ,aphylla ,4,307,103318,1228,126874504
+V1,F3,2007-11-13,p0009,sen.aph,Senna ,aphylla ,10,307,103318,3070,317186260
+V2,F1,2007-11-13,p0009,sen.aph,Senna ,aphylla ,2,307,103318,614,63437252
+V1,F1,2007-11-20,p0009,sen.aph,Senna ,aphylla ,5,134,103318,670,69223060
+V1,F2,2007-11-20,p0009,sen.aph,Senna ,aphylla ,2,134,103318,268,27689224
+V1,F3,2007-11-20,p0009,sen.aph,Senna ,aphylla ,1,134,103318,134,13844612
+V1,F5,2007-11-20,p0009,sen.aph,Senna ,aphylla ,7,134,103318,938,96912284
+V2,F1,2007-11-20,p0009,sen.aph,Senna ,aphylla ,1,134,103318,134,13844612
+V1,F1,2007-11-27,p0009,sen.aph,Senna ,aphylla ,1,53,103318,53,5475854
+V1,F2,2007-11-27,p0009,sen.aph,Senna ,aphylla ,1,53,103318,53,5475854
+V1,F3,2007-11-27,p0009,sen.aph,Senna ,aphylla ,2,53,103318,106,10951708
+V1,F5,2007-11-27,p0009,sen.aph,Senna ,aphylla ,7,53,103318,371,38330978
+V2,F1,2007-11-27,p0009,sen.aph,Senna ,aphylla ,1,53,103318,53,5475854
+V1,F2,2007-12-04,p0009,sen.aph,Senna ,aphylla ,1,9,103318,9,929862
+V1,F3,2007-12-04,p0009,sen.aph,Senna ,aphylla ,2,9,103318,18,1859724
+V1,F5,2007-12-04,p0009,sen.aph,Senna ,aphylla ,2,9,103318,18,1859724
+V2,F3,2007-11-20,p0010,ste.gil,Stevia ,gilliesii,1,.,.,.,.
+V1,37,2007-10-02,p0011,lyc.chi,Lycium ,chilense ,4,19,120247,76,9138772
+V4,2,2007-10-02,p0011,lyc.chi,Lycium ,chilense ,1,19,120247,19,2284693
+V4,28,2007-10-02,p0011,lyc.chi,Lycium ,chilense ,1,19,120247,19,2284693
+V4,F2,2007-10-19,p0011,lyc.chi,Lycium ,chilense ,4,6,120247,24,2885928
+V1,F5,2007-10-19,p0012,ver.bon,Verbena,bonariensis ,1,362,13472,362,4876864
+V4,F1,2007-10-19,p0012,ver.bon,Verbena,bonariensis ,3,362,13472,1086,14630592
+V4,F2,2007-10-19,p0012,ver.bon,Verbena,bonariensis ,12,362,13472,4344,58522368
+V4,F3,2007-10-19,p0012,ver.bon,Verbena,bonariensis ,3,362,13472,1086,14630592
+V4,F4,2007-10-19,p0012,ver.bon,Verbena,bonariensis ,51,362,13472,18462,248720064
+V4,F4,2007-10-19,p0016,hel.men,Heliotropium ,mendocinum ,3,.,.,.,.
+V4,F4,2007-10-23,p0016,hel.men,Heliotropium ,mendocinum ,2,.,.,.,.
+V4,F4,2007-10-29,p0016,hel.men,Heliotropium ,mendocinum ,5,.,.,.,.
+V4,F4,2007-11-13,p0016,hel.men,Heliotropium ,mendocinum ,5,.,.,.,.
+V4,F2,2007-10-29,p0017,sal.gil,Salvia ,gilliesii,2,76,38333,152,5826616
+V4,F1,2007-11-06,p0017,sal.gil,Salvia ,gilliesii,2,76,38333,152,5826616
+V2,F1,2007-11-13,p0017,sal.gil,Salvia ,gilliesii,1,76,38333,76,2913308
+V4,F1,2007-11-13,p0017,sal.gil,Salvia ,gilliesii,2,76,38333,152,5826616
+V2,F1,2007-11-20,p0017,sal.gil,Salvia ,gilliesii,1,76,38333,76,2913308
+V2,F1,2007-11-27,p0017,sal.gil,Salvia ,gilliesii,1,76,38333,76,2913308
+V4,F1,2007-11-27,p0017,sal.gil,Salvia ,gilliesii,2,76,38333,152,5826616
+V4,F1,2007-12-04,p0017,sal.gil,Salvia ,gilliesii,2,76,38333,152,5826616
+V1,F3,2007-10-19,p0019,aca.ser,Acantholippia ,seriphioides ,9,46,5093,414,2108502
+V1,F5,2007-10-19,p0019,aca.ser,Acantholippia ,seriphioides ,4,46,5093,184,937112
+V4,F2,2007-10-19,p0019,aca.ser,Acantholippia ,seriphioides ,6,46,5093,276,1405668
+V4,F3,2007-10-19,p0019,aca.ser,Acantholippia ,seriphioides ,10,46,5093,460,2342780
+V4,F4,2007-10-19,p0019,aca.ser,Acantholippia ,seriphioides ,3,46,5093,138,702834
+V1,F1,2007-10-23,p0019,aca.ser,Acantholippia ,seriphioides ,12,130,5093,1560,7945080
+V1,F2,2007-10-23,p0019,aca.ser,Acantholippia ,seriphioides ,15,130,5093,1950,9931350
+V1,F3,2007-10-23,p0019,aca.ser,Acantholippia ,seriphioides ,5,130,5093,650,3310450
+V1,F4,2007-10-23,p0019,aca.ser,Acantholippia ,seriphioides ,2,130,5093,260,1324180
+V1,F5,2007-10-23,p0019,aca.ser,Acantholippia ,seriphioides ,1,130,5093,130,662090
+V4,F2,2007-10-23,p0019,aca.ser,Acantholippia ,seriphioides ,1,130,5093,130,662090
+V4,F5,2007-10-23,p0019,aca.ser,Acantholippia ,seriphioides ,12,130,5093,1560,7945080
+V1,F1,2007-10-29,p0019,aca.ser,Acantholippia ,seriphioides ,20,155,5093,3100,15788300
+V1,F2,2007-10-29,p0019,aca.ser,Acantholippia ,seriphioides ,11,155,5093,1705,8683565
+V1,F3,2007-10-29,p0019,aca.ser,Acantholippia ,seriphioides ,9,155,5093,1395,7104735
+V1,F4,2007-10-29,p0019,aca.ser,Acantholippia ,seriphioides ,2,155,5093,310,1578830
+V2,F1,2007-10-29,p0019,aca.ser,Acantholippia ,seriphioides ,12,155,5093,1860,9472980
+V2,F2,2007-10-29,p0019,aca.ser,Acantholippia ,seriphioides ,16,155,5093,2480,12630640
+V2,F4,2007-10-29,p0019,aca.ser,Acantholippia ,seriphioides ,5,155,5093,775,3947075
+V2,F5,2007-10-29,p0019,aca.ser,Acantholippia ,seriphioides ,1,155,5093,155,789415
+V4,F3,2007-10-29,p0019,aca.ser,Acantholippia ,seriphioides ,1,155,5093,155,789415
+V4,F4,2007-10-29,p0019,aca.ser,Acantholippia ,seriphioides ,8,155,5093,1240,6315320
+V4,F5,2007-10-29,p0019,aca.ser,Acantholippia ,seriphioides ,15,155,5093,2325,11841225
+V1,F1,2007-11-06,p0019,aca.ser,Acantholippia ,seriphioides ,1,124,5093,124,631532
+V1,F2,2007-11-06,p0019,aca.ser,Acantholippia ,seriphioides ,5,124,5093,620,3157660
+V1,F3,2007-11-06,p0019,aca.ser,Acantholippia ,seriphioides ,3,124,5093,372,1894596
+V1,F4,2007-11-06,p0019,aca.ser,Acantholippia ,seriphioides ,1,124,5093,124,631532
+V1,F5,2007-11-06,p0019,aca.ser,Acantholippia ,seriphioides ,1,124,5093,124,631532
+V2,F1,2007-11-06,p0019,aca.ser,Acantholippia ,seriphioides ,2,124,5093,248,1263064
+V2,F2,2007-11-06,p0019,aca.ser,Acantholippia ,seriphioides ,5,124,5093,620,3157660
+V2,F4,2007-11-06,p0019,aca.ser,Acantholippia ,seriphioides ,1,124,5093,124,631532
+V2,F5,2007-11-06,p0019,aca.ser,Acantholippia ,seriphioides ,1,124,5093,124,631532
+V4,F2,2007-11-06,p0019,aca.ser,Acantholippia ,seriphioides ,1,124,5093,124,631532
+V4,F3,2007-11-06,p0019,aca.ser,Acantholippia ,seriphioides ,1,124,5093,124,631532
+V4,F4,2007-11-06,p0019,aca.ser,Acantholippia ,seriphioides ,1,124,5093,124,631532
+V4,F5,2007-11-06,p0019,aca.ser,Acantholippia ,seriphioides ,5,124,5093,620,3157660
+V1,F2,2007-11-13,p0019,aca.ser,Acantholippia ,seriphioides ,2,124,5093,248,1263064
+V1,F3,2007-11-13,p0019,aca.ser,Acantholippia ,seriphioides ,1,124,5093,124,631532
+V2,F1,2007-11-13,p0019,aca.ser,Acantholippia ,seriphioides ,4,124,5093,496,2526128
+V2,F2,2007-11-13,p0019,aca.ser,Acantholippia ,seriphioides ,1,124,5093,124,631532
+V2,F1,2007-11-20,p0019,aca.ser,Acantholippia ,seriphioides ,6,124,5093,744,3789192
+V2,F2,2007-11-20,p0019,aca.ser,Acantholippia ,seriphioides ,2,124,5093,248,1263064
+V4,F4,2007-11-20,p0019,aca.ser,Acantholippia ,seriphioides ,5,124,5093,620,3157660
+V4,F5,2007-11-20,p0019,aca.ser,Acantholippia ,seriphioides ,1,124,5093,124,631532
+V4,7,2007-10-02,p0020,hof.ere,Hoffmannseggia  ,eremophila ,1,15,393611,15,5904165
+V1,F1,2007-10-23,p0020,hof.ere,Hoffmannseggia  ,eremophila ,1,15,393611,15,5904165
+V1,F5,2007-10-23,p0020,hof.ere,Hoffmannseggia  ,eremophila ,3,15,393611,45,17712495
+V4,F5,2007-10-23,p0020,hof.ere,Hoffmannseggia  ,eremophila ,1,15,393611,15,5904165
+V1,F1,2007-10-29,p0020,hof.ere,Hoffmannseggia  ,eremophila ,17,15,393611,255,100370805
+V1,F2,2007-10-29,p0020,hof.ere,Hoffmannseggia  ,eremophila ,8,15,393611,120,47233320
+V1,F3,2007-10-29,p0020,hof.ere,Hoffmannseggia  ,eremophila ,8,15,393611,120,47233320
+V1,F4,2007-10-29,p0020,hof.ere,Hoffmannseggia  ,eremophila ,4,15,393611,60,23616660
+V1,F5,2007-10-29,p0020,hof.ere,Hoffmannseggia  ,eremophila ,15,15,393611,225,88562475
+V2,F3,2007-10-29,p0020,hof.ere,Hoffmannseggia  ,eremophila ,1,15,393611,15,5904165
+V1,F1,2007-11-06,p0020,hof.ere,Hoffmannseggia  ,eremophila ,4,15,393611,60,23616660
+V1,F2,2007-11-06,p0020,hof.ere,Hoffmannseggia  ,eremophila ,5,15,393611,75,29520825
+V1,F4,2007-11-06,p0020,hof.ere,Hoffmannseggia  ,eremophila ,1,15,393611,15,5904165
+V2,F3,2007-11-06,p0020,hof.ere,Hoffmannseggia  ,eremophila ,1,15,393611,15,5904165
+V1,F1,2007-11-13,p0020,hof.ere,Hoffmannseggia  ,eremophila ,4,15,393611,60,23616660
+V1,F2,2007-11-13,p0020,hof.ere,Hoffmannseggia  ,eremophila ,1,15,393611,15,5904165
+V2,F3,2007-11-20,p0020,hof.ere,Hoffmannseggia  ,eremophila ,1,15,393611,15,5904165
+V4,F3,2007-10-23,p0021,sch.fas,Schinus,aff. fasciculata ,1,377,40025,377,15089425
+V2,F1,2007-10-29,p0021,sch.fas,Schinus,aff. fasciculata ,1,377,40025,377,15089425
+V2,F3,2007-10-29,p0021,sch.fas,Schinus,aff. fasciculata ,1,377,40025,377,15089425
+V4,F3,2007-10-29,p0021,sch.fas,Schinus,aff. fasciculata ,1,377,40025,377,15089425
+V1,F2,2007-11-06,p0021,sch.fas,Schinus,aff. fasciculata ,1,33,40025,33,1320825
+V2,F3,2007-11-06,p0021,sch.fas,Schinus,aff. fasciculata ,1,33,40025,33,1320825
+V4,F3,2007-11-20,p0023,cle.mon,Clematis ,montevidensis ,1,111,307083,111,34086213
+V1,F5,2007-10-19,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,10,6,20654,60,1239240
+V4,F1,2007-10-19,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,2,6,20654,12,247848
+V4,F2,2007-10-19,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,2,6,20654,12,247848
+V4,F5,2007-10-19,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,22,6,20654,132,2726328
+V1,F1,2007-10-23,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,30,4,20654,120,2478480
+V1,F2,2007-10-23,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,13,4,20654,52,1074008
+V1,F3,2007-10-23,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,10,4,20654,40,826160
+V1,F4,2007-10-23,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,33,4,20654,132,2726328
+V1,F5,2007-10-23,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,50,4,20654,200,4130800
+V4,F1,2007-10-23,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,2,4,20654,8,165232
+V4,F2,2007-10-23,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,4,20654,4,82616
+V4,F5,2007-10-23,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,27,4,20654,108,2230632
+V1,F1,2007-10-29,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,40,5,20654,200,4130800
+V1,F2,2007-10-29,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,25,5,20654,125,2581750
+V1,F3,2007-10-29,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,10,5,20654,50,1032700
+V1,F4,2007-10-29,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,248,5,20654,1240,25610960
+V1,F5,2007-10-29,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,120,5,20654,600,12392400
+V2,F1,2007-10-29,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,25,5,20654,125,2581750
+V2,F2,2007-10-29,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,46,5,20654,230,4750420
+V2,F3,2007-10-29,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,45,5,20654,225,4647150
+V2,F4,2007-10-29,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,205,5,20654,1025,21170350
+V2,F5,2007-10-29,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,21,5,20654,105,2168670
+V4,F1,2007-10-29,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,2,5,20654,10,206540
+V4,F4,2007-10-29,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,5,20654,5,103270
+V4,F5,2007-10-29,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,33,5,20654,165,3407910
+V1,F1,2007-11-06,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,31,5,20654,155,3201370
+V1,F2,2007-11-06,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,9,5,20654,45,929430
+V1,F4,2007-11-06,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,125,5,20654,625,12908750
+V1,F5,2007-11-06,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,136,5,20654,680,14044720
+V2,F1,2007-11-06,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,8,5,20654,40,826160
+V2,F2,2007-11-06,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,35,5,20654,175,3614450
+V2,F3,2007-11-06,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,160,5,20654,800,16523200
+V2,F4,2007-11-06,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,530,5,20654,2650,54733100
+V2,F5,2007-11-06,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,51,5,20654,255,5266770
+V4,F2,2007-11-06,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,5,20654,5,103270
+V4,F4,2007-11-06,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,5,20654,5,103270
+V4,F5,2007-11-06,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,50,5,20654,250,5163500
+V1,F1,2007-11-13,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,10,5,20654,50,1032700
+V1,F2,2007-11-13,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,5,5,20654,25,516350
+V1,F5,2007-11-13,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,10,5,20654,50,1032700
+V2,F1,2007-11-13,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,25,5,20654,125,2581750
+V2,F2,2007-11-13,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,14,5,20654,70,1445780
+V2,F3,2007-11-13,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,45,5,20654,225,4647150
+V2,F4,2007-11-13,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,35,5,20654,175,3614450
+V2,F5,2007-11-13,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,15,5,20654,75,1549050
+V4,F1,2007-11-13,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,6,5,20654,30,619620
+V4,F4,2007-11-13,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,2,5,20654,10,206540
+V4,F5,2007-11-13,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,18,5,20654,90,1858860
+V1,F2,2007-11-20,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,7,5,20654,35,722890
+V1,F4,2007-11-20,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,10,5,20654,50,1032700
+V2,F1,2007-11-20,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,22,5,20654,110,2271940
+V2,F3,2007-11-20,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,24,5,20654,120,2478480
+V2,F4,2007-11-20,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,55,5,20654,275,5679850
+V2,F5,2007-11-20,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,5,5,20654,25,516350
+V4,F1,2007-11-20,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,16,5,20654,80,1652320
+V4,F4,2007-11-20,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,6,5,20654,30,619620
+V4,F5,2007-11-20,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,10,5,20654,50,1032700
+V1,F2,2007-11-27,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,10,5,20654,50,1032700
+V1,F4,2007-11-27,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,2,5,20654,10,206540
+V2,F1,2007-11-27,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,11,5,20654,55,1135970
+V2,F2,2007-11-27,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,5,20654,5,103270
+V2,F3,2007-11-27,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,2,5,20654,10,206540
+V2,F5,2007-11-27,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,5,5,20654,25,516350
+V4,F4,2007-11-27,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,5,20654,5,103270
+V1,F2,2007-12-04,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,2,5,20654,10,206540
+V1,F3,2007-12-04,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,5,20654,5,103270
+V1,F4,2007-12-04,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,5,20654,5,103270
+V2,F3,2007-12-04,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,10,5,20654,50,1032700
+V2,F4,2007-12-04,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,2,5,20654,10,206540
+V2,F1,2007-12-11,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,5,20654,5,103270
+V2,F3,2007-12-11,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,5,5,20654,25,516350
+V1,F3,2007-10-19,p0026,alo.gra,Aloyssia ,gratissima ,1,2505,1984,2505,4969920
+V4,F3,2007-10-19,p0026,alo.gra,Aloyssia ,gratissima ,1,2505,1984,2505,4969920
+V1,F1,2007-10-23,p0026,alo.gra,Aloyssia ,gratissima ,2,915,1984,1830,3630720
+V1,F2,2007-10-23,p0026,alo.gra,Aloyssia ,gratissima ,1,915,1984,915,1815360
+V1,F4,2007-10-29,p0032,con.mic,Condalia,microphylla,1,2003,138802,2003,278020406
+V1,F5,2007-10-29,p0032,con.mic,Condalia,microphylla,1,2003,138802,2003,278020406
+V2,F1,2007-10-29,p0032,con.mic,Condalia,microphylla,4,2003,138802,8012,1112081624
+V2,F2,2007-10-29,p0032,con.mic,Condalia,microphylla,1,2003,138802,2003,278020406
+V2,F3,2007-10-29,p0032,con.mic,Condalia,microphylla,1,2003,138802,2003,278020406
+V2,F4,2007-10-29,p0032,con.mic,Condalia,microphylla,3,2003,138802,6009,834061218
+V4,F2,2007-10-29,p0032,con.mic,Condalia,microphylla,3,2003,138802,6009,834061218
+V4,F3,2007-10-29,p0032,con.mic,Condalia,microphylla,1,2003,138802,2003,278020406
+V4,F5,2007-10-29,p0032,con.mic,Condalia,microphylla,2,2003,138802,4006,556040812
+V1,F3,2007-11-06,p0032,con.mic,Condalia,microphylla,1,1294,138802,1294,179609788
+V1,F4,2007-11-06,p0032,con.mic,Condalia,microphylla,4,1294,138802,5176,718439152
+V1,F5,2007-11-06,p0032,con.mic,Condalia,microphylla,1,1294,138802,1294,179609788
+V2,F1,2007-11-06,p0032,con.mic,Condalia,microphylla,3,1294,138802,3882,538829364
+V2,F2,2007-11-06,p0032,con.mic,Condalia,microphylla,1,1294,138802,1294,179609788
+V2,F3,2007-11-06,p0032,con.mic,Condalia,microphylla,3,1294,138802,3882,538829364
+V2,F4,2007-11-06,p0032,con.mic,Condalia,microphylla,3,1294,138802,3882,538829364
+V1,F4,2007-11-13,p0032,con.mic,Condalia,microphylla,1,50,138802,50,6940100
+V1,F5,2007-11-13,p0032,con.mic,Condalia,microphylla,1,50,138802,50,6940100
+V2,F1,2007-11-13,p0032,con.mic,Condalia,microphylla,3,50,138802,150,20820300
+V2,F2,2007-11-13,p0032,con.mic,Condalia,microphylla,7,50,138802,350,48580700
+V2,F4,2007-11-13,p0032,con.mic,Condalia,microphylla,3,50,138802,150,20820300
+V2,F1,2007-11-20,p0032,con.mic,Condalia,microphylla,1,50,138802,50,6940100
+V1,F1,2007-10-23,p0034,lar.div,Larrea,divaricata,1,4,1027210,4,4108840
+V1,F2,2007-10-23,p0034,lar.div,Larrea,divaricata,2,4,1027210,8,8217680
+V1,F3,2007-10-23,p0034,lar.div,Larrea,divaricata,1,4,1027210,4,4108840
+V1,F1,2007-10-29,p0034,lar.div,Larrea,divaricata,5,83,1027210,415,426292150
+V1,F2,2007-10-29,p0034,lar.div,Larrea,divaricata,5,83,1027210,415,426292150
+V1,F3,2007-10-29,p0034,lar.div,Larrea,divaricata,4,83,1027210,332,341033720
+V1,F5,2007-10-29,p0034,lar.div,Larrea,divaricata,3,83,1027210,249,255775290
+V2,F1,2007-10-29,p0034,lar.div,Larrea,divaricata,11,83,1027210,913,937842730
+V2,F2,2007-10-29,p0034,lar.div,Larrea,divaricata,3,83,1027210,249,255775290
+V4,F1,2007-10-29,p0034,lar.div,Larrea,divaricata,4,83,1027210,332,341033720
+V4,F2,2007-10-29,p0034,lar.div,Larrea,divaricata,6,83,1027210,498,511550580
+V4,F3,2007-10-29,p0034,lar.div,Larrea,divaricata,1,83,1027210,83,85258430
+V4,F4,2007-10-29,p0034,lar.div,Larrea,divaricata,8,83,1027210,664,682067440
+V4,F5,2007-10-29,p0034,lar.div,Larrea,divaricata,2,83,1027210,166,170516860
+V1,F1,2007-11-06,p0034,lar.div,Larrea,divaricata,10,89,1027210,890,914216900
+V1,F2,2007-11-06,p0034,lar.div,Larrea,divaricata,16,89,1027210,1424,1462747040
+V1,F3,2007-11-06,p0034,lar.div,Larrea,divaricata,7,89,1027210,623,639951830
+V1,F5,2007-11-06,p0034,lar.div,Larrea,divaricata,3,89,1027210,267,274265070
+V2,F1,2007-11-06,p0034,lar.div,Larrea,divaricata,5,89,1027210,445,457108450
+V2,F2,2007-11-06,p0034,lar.div,Larrea,divaricata,3,89,1027210,267,274265070
+V2,F3,2007-11-06,p0034,lar.div,Larrea,divaricata,1,89,1027210,89,91421690
+V2,F5,2007-11-06,p0034,lar.div,Larrea,divaricata,2,89,1027210,178,182843380
+V2,F5,2007-11-06,p0034,lar.div,Larrea,divaricata,1,89,1027210,89,91421690
+V4,F1,2007-11-06,p0034,lar.div,Larrea,divaricata,10,89,1027210,890,914216900
+V4,F2,2007-11-06,p0034,lar.div,Larrea,divaricata,11,89,1027210,979,1005638590
+V4,F3,2007-11-06,p0034,lar.div,Larrea,divaricata,11,89,1027210,979,1005638590
+V4,F4,2007-11-06,p0034,lar.div,Larrea,divaricata,9,89,1027210,801,822795210
+V4,F5,2007-11-06,p0034,lar.div,Larrea,divaricata,9,89,1027210,801,822795210
+V1,F1,2007-11-13,p0034,lar.div,Larrea,divaricata,7,243,1027210,1701,1747284210
+V1,F2,2007-11-13,p0034,lar.div,Larrea,divaricata,22,243,1027210,5346,5491464660
+V1,F3,2007-11-13,p0034,lar.div,Larrea,divaricata,9,243,1027210,2187,2246508270
+V1,F5,2007-11-13,p0034,lar.div,Larrea,divaricata,2,243,1027210,486,499224060
+V2,F1,2007-11-13,p0034,lar.div,Larrea,divaricata,11,243,1027210,2673,2745732330
+V2,F2,2007-11-13,p0034,lar.div,Larrea,divaricata,9,243,1027210,2187,2246508270
+V2,F3,2007-11-13,p0034,lar.div,Larrea,divaricata,3,243,1027210,729,748836090
+V2,F4,2007-11-13,p0034,lar.div,Larrea,divaricata,2,243,1027210,486,499224060
+V2,F5,2007-11-13,p0034,lar.div,Larrea,divaricata,4,243,1027210,972,998448120
+V4,F1,2007-11-13,p0034,lar.div,Larrea,divaricata,11,243,1027210,2673,2745732330
+V4,F2,2007-11-13,p0034,lar.div,Larrea,divaricata,13,243,1027210,3159,3244956390
+V4,F3,2007-11-13,p0034,lar.div,Larrea,divaricata,8,243,1027210,1944,1996896240
+V4,F4,2007-11-13,p0034,lar.div,Larrea,divaricata,9,243,1027210,2187,2246508270
+V4,F5,2007-11-13,p0034,lar.div,Larrea,divaricata,6,243,1027210,1458,1497672180
+V1,F1,2007-11-20,p0034,lar.div,Larrea,divaricata,6,98,1027210,588,603999480
+V1,F2,2007-11-20,p0034,lar.div,Larrea,divaricata,12,98,1027210,1176,1207998960
+V1,F3,2007-11-20,p0034,lar.div,Larrea,divaricata,4,98,1027210,392,402666320
+V1,F5,2007-11-20,p0034,lar.div,Larrea,divaricata,4,98,1027210,392,402666320
+V2,F1,2007-11-20,p0034,lar.div,Larrea,divaricata,15,98,1027210,1470,1509998700
+V2,F2,2007-11-20,p0034,lar.div,Larrea,divaricata,5,98,1027210,490,503332900
+V2,F3,2007-11-20,p0034,lar.div,Larrea,divaricata,1,98,1027210,98,100666580
+V2,F4,2007-11-20,p0034,lar.div,Larrea,divaricata,1,98,1027210,98,100666580
+V2,F5,2007-11-20,p0034,lar.div,Larrea,divaricata,3,98,1027210,294,301999740
+V4,F1,2007-11-20,p0034,lar.div,Larrea,divaricata,18,98,1027210,1764,1811998440
+V4,F2,2007-11-20,p0034,lar.div,Larrea,divaricata,12,98,1027210,1176,1207998960
+V4,F3,2007-11-20,p0034,lar.div,Larrea,divaricata,13,98,1027210,1274,1308665540
+V4,F4,2007-11-20,p0034,lar.div,Larrea,divaricata,5,98,1027210,490,503332900
+V4,F5,2007-11-20,p0034,lar.div,Larrea,divaricata,11,98,1027210,1078,1107332380
+V1,F1,2007-11-27,p0034,lar.div,Larrea,divaricata,1,7,1027210,7,7190470
+V1,F2,2007-11-27,p0034,lar.div,Larrea,divaricata,5,7,1027210,35,35952350
+V1,F3,2007-11-27,p0034,lar.div,Larrea,divaricata,2,7,1027210,14,14380940
+V1,F5,2007-11-27,p0034,lar.div,Larrea,divaricata,3,7,1027210,21,21571410
+V2,F1,2007-11-27,p0034,lar.div,Larrea,divaricata,5,7,1027210,35,35952350
+V2,F2,2007-11-27,p0034,lar.div,Larrea,divaricata,1,7,1027210,7,7190470
+V2,F5,2007-11-27,p0034,lar.div,Larrea,divaricata,1,7,1027210,7,7190470
+V4,F1,2007-11-27,p0034,lar.div,Larrea,divaricata,1,7,1027210,7,7190470
+V1,F2,2007-12-04,p0034,lar.div,Larrea,divaricata,1,14,1027210,14,14380940
+V1,F3,2007-12-04,p0034,lar.div,Larrea,divaricata,1,14,1027210,14,14380940
+V1,26,2007-10-02,p0035,lar.nit,Larrea,nitida,1,14,266865,14,3736110
+V1,F3,2007-10-19,p0035,lar.nit,Larrea,nitida,3,200,266865,600,160119000
+V1,F5,2007-10-19,p0035,lar.nit,Larrea,nitida,6,200,266865,1200,320238000
+V4,F1,2007-10-19,p0035,lar.nit,Larrea,nitida,1,200,266865,200,53373000
+V1,F1,2007-10-23,p0035,lar.nit,Larrea,nitida,1,92,266865,92,24551580
+V1,F2,2007-10-23,p0035,lar.nit,Larrea,nitida,3,92,266865,276,73654740
+V1,F3,2007-10-23,p0035,lar.nit,Larrea,nitida,5,92,266865,460,122757900
+V1,F1,2007-10-29,p0035,lar.nit,Larrea,nitida,2,0,266865,0,0
+V1,F5,2007-10-19,p0036,lec.het,Lecanophora,heterophylla,1,1,264524,1,264524
+V4,F5,2007-10-19,p0036,lec.het,Lecanophora,heterophylla,2,1,264524,2,529048
+V4,F1,2007-10-23,p0036,lec.het,Lecanophora,heterophylla,2,1,264524,2,529048
+V1,F4,2007-10-29,p0036,lec.het,Lecanophora,heterophylla,3,1,264524,3,793572
+V1,F5,2007-10-29,p0036,lec.het,Lecanophora,heterophylla,1,1,264524,1,264524
+V2,F1,2007-10-29,p0036,lec.het,Lecanophora,heterophylla,2,1,264524,2,529048
+V2,F4,2007-10-29,p0036,lec.het,Lecanophora,heterophylla,1,1,264524,1,264524
+V4,F4,2007-10-29,p0036,lec.het,Lecanophora,heterophylla,1,1,264524,1,264524
+V4,F5,2007-11-20,p0036,lec.het,Lecanophora,heterophylla,1,1,264524,1,264524
+V1,F1,2007-11-20,p0037,opu.sul,Opuntia,sulphurea,1,0,23359091,0,0
+V2,F1,2007-11-20,p0037,opu.sul,Opuntia,sulphurea,5,0,23359091,0,0
+V2,F2,2007-11-20,p0037,opu.sul,Opuntia,sulphurea,6,0,23359091,0,0
+V2,F4,2007-11-20,p0037,opu.sul,Opuntia,sulphurea,1,0,23359091,0,0
+V4,F1,2007-11-20,p0037,opu.sul,Opuntia,sulphurea,1,0,23359091,0,0
+V1,F3,2007-11-27,p0037,opu.sul,Opuntia,sulphurea,1,1,23359091,1,23359091
+V2,F1,2007-11-27,p0037,opu.sul,Opuntia,sulphurea,8,1,23359091,8,186872728
+V2,F2,2007-11-27,p0037,opu.sul,Opuntia,sulphurea,19,1,23359091,19,443822729
+V2,F4,2007-11-27,p0037,opu.sul,Opuntia,sulphurea,4,1,23359091,4,93436364
+V2,F5,2007-11-27,p0037,opu.sul,Opuntia,sulphurea,2,1,23359091,2,46718182
+V4,F1,2007-11-27,p0037,opu.sul,Opuntia,sulphurea,2,1,23359091,2,46718182
+V4,F5,2007-11-27,p0037,opu.sul,Opuntia,sulphurea,1,1,23359091,1,23359091
+V2,F1,2007-12-04,p0037,opu.sul,Opuntia,sulphurea,12,1,23359091,12,280309092
+V2,F2,2007-12-04,p0037,opu.sul,Opuntia,sulphurea,7,1,23359091,7,163513637
+V2,F3,2007-12-04,p0037,opu.sul,Opuntia,sulphurea,1,1,23359091,1,23359091
+V2,F5,2007-12-04,p0037,opu.sul,Opuntia,sulphurea,3,1,23359091,3,70077273
+V4,F1,2007-12-04,p0037,opu.sul,Opuntia,sulphurea,1,1,23359091,1,23359091
+V2,F1,2007-12-11,p0037,opu.sul,Opuntia,sulphurea,1,1,23359091,1,23359091
+V2,F2,2007-12-11,p0037,opu.sul,Opuntia,sulphurea,4,1,23359091,4,93436364
+V2,F3,2007-12-11,p0037,opu.sul,Opuntia,sulphurea,1,1,23359091,1,23359091
+V2,F4,2007-12-11,p0037,opu.sul,Opuntia,sulphurea,1,1,23359091,1,23359091
+V2,F5,2007-12-11,p0037,opu.sul,Opuntia,sulphurea,1,1,23359091,1,23359091
+V1,F2,2007-11-06,p0038,pro.fle,Prosopis,flexuosa,2,1,29864844,2,59729688
+V1,F5,2007-11-06,p0038,pro.fle,Prosopis,flexuosa,1,1,29864844,1,29864844
+V2,F1,2007-11-06,p0038,pro.fle,Prosopis,flexuosa,1,1,29864844,1,29864844
+V1,F2,2007-11-13,p0038,pro.fle,Prosopis,flexuosa,2,6,29864844,12,358378128
+V1,F5,2007-11-13,p0038,pro.fle,Prosopis,flexuosa,5,6,29864844,30,895945320
+V2,F2,2007-11-13,p0038,pro.fle,Prosopis,flexuosa,3,6,29864844,18,537567192
+V2,F4,2007-11-13,p0038,pro.fle,Prosopis,flexuosa,1,6,29864844,6,179189064
+V1,F1,2007-11-20,p0038,pro.fle,Prosopis,flexuosa,1,52,29864844,52,1552971888
+V1,F2,2007-11-20,p0038,pro.fle,Prosopis,flexuosa,3,52,29864844,156,4658915664
+V1,F5,2007-11-20,p0038,pro.fle,Prosopis,flexuosa,3,52,29864844,156,4658915664
+V2,F2,2007-11-20,p0038,pro.fle,Prosopis,flexuosa,7,52,29864844,364,10870803216
+V2,F4,2007-11-20,p0038,pro.fle,Prosopis,flexuosa,2,52,29864844,104,3105943776
+V1,F2,2007-11-27,p0038,pro.fle,Prosopis,flexuosa,1,97,29864844,97,2896889868
+V1,F4,2007-11-27,p0038,pro.fle,Prosopis,flexuosa,1,97,29864844,97,2896889868
+V1,F5,2007-11-27,p0038,pro.fle,Prosopis,flexuosa,3,97,29864844,291,8690669604
+V2,F2,2007-11-27,p0038,pro.fle,Prosopis,flexuosa,7,97,29864844,679,20278229076
+V2,F4,2007-11-27,p0038,pro.fle,Prosopis,flexuosa,1,97,29864844,97,2896889868
+V4,F4,2007-11-27,p0038,pro.fle,Prosopis,flexuosa,1,97,29864844,97,2896889868
+V1,F2,2007-12-04,p0038,pro.fle,Prosopis,flexuosa,2,14,29864844,28,836215632
+V1,F5,2007-12-04,p0038,pro.fle,Prosopis,flexuosa,2,14,29864844,28,836215632
+V2,F1,2007-12-04,p0038,pro.fle,Prosopis,flexuosa,1,14,29864844,14,418107816
+V2,F2,2007-12-04,p0038,pro.fle,Prosopis,flexuosa,6,14,29864844,84,2508646896
+V1,F2,2007-11-27,p0042,spa.jun,Spartium,junceum,1,113,390278,113,44101414
+V4,F1,2007-12-04,p0043,tri.can,Trichocereus,candicans,1,1,119100002,1,119100002
+V4,F2,2007-12-04,p0043,tri.can,Trichocereus,candicans,1,1,119100002,1,119100002
+V4,F1,2007-11-27,p0044,cap.ata,Capparis,atamisquea,1,163,332639,163,54220157
+V4,F4,2007-10-19,p0045,lar.cun,Larrea,cuneifolia,3,135,343333,405,139049865
+V4,F4,2007-10-23,p0045,lar.cun,Larrea,cuneifolia,6,135,343333,810,278099730
+V4,F4,2007-11-06,p0045,lar.cun,Larrea,cuneifolia,3,135,343333,405,139049865
+V1,F3,2007-11-20,p0047,dyp.gla,Dipyrena ,glaberrima,1,309,55952,309,17289168
+V4,F3,2007-11-20,p0047,dyp.gla,Dipyrena ,glaberrima,2,309,55952,618,34578336
+V1,F3,2007-11-27,p0047,dyp.gla,Dipyrena ,glaberrima,1,309,55952,309,17289168
+V1,F3,2007-12-04,p0047,dyp.gla,Dipyrena ,glaberrima,2,309,55952,618,34578336
+V4,F3,2007-10-19,p0048,fab.pec,Fabiana ,peckii,1,309,.,.,.
+V1,2,2007-10-02,p0049,fum.cap,Fumaria ,capreolata,2,22,11667,44,513348
+V1,22,2007-10-02,p0049,fum.cap,Fumaria ,capreolata,2,22,11667,44,513348
+V1,28,2007-10-02,p0049,fum.cap,Fumaria ,capreolata,3,22,11667,66,770022
+V1,32,2007-10-02,p0049,fum.cap,Fumaria ,capreolata,2,22,11667,44,513348
+V1,34,2007-10-02,p0049,fum.cap,Fumaria ,capreolata,5,22,11667,110,1283370
+V1,F5,2007-10-19,p0049,fum.cap,Fumaria ,capreolata,7,22,11667,154,1796718
+V1,F1,2007-10-23,p0049,fum.cap,Fumaria ,capreolata,15,22,11667,330,3850110
+V1,F2,2007-10-23,p0049,fum.cap,Fumaria ,capreolata,1,22,11667,22,256674
+V1,F1,2007-10-23,p0050,hys.jas,Hysterionica,jassionoide,10,11,988235,110,108705850
+V1,F2,2007-10-23,p0050,hys.jas,Hysterionica,jassionoide,1,11,988235,11,10870585
+V1,F3,2007-10-23,p0050,hys.jas,Hysterionica,jassionoide,1,11,988235,11,10870585
+V1,F4,2007-10-23,p0050,hys.jas,Hysterionica,jassionoide,2,11,988235,22,21741170
+V1,F1,2007-10-29,p0050,hys.jas,Hysterionica,jassionoide,30,11,988235,330,326117550
+V1,F2,2007-10-29,p0050,hys.jas,Hysterionica,jassionoide,13,11,988235,143,141317605
+V1,F3,2007-10-29,p0050,hys.jas,Hysterionica,jassionoide,5,11,988235,55,54352925
+V1,F5,2007-10-29,p0050,hys.jas,Hysterionica,jassionoide,2,11,988235,22,21741170
+V2,F1,2007-10-29,p0050,hys.jas,Hysterionica,jassionoide,1,11,988235,11,10870585
+V2,F2,2007-10-29,p0050,hys.jas,Hysterionica,jassionoide,1,11,988235,11,10870585
+V1,F1,2007-11-06,p0050,hys.jas,Hysterionica,jassionoide,7,11,988235,77,76094095
+V1,F2,2007-11-06,p0050,hys.jas,Hysterionica,jassionoide,5,11,988235,55,54352925
+V1,F3,2007-11-06,p0050,hys.jas,Hysterionica,jassionoide,5,11,988235,55,54352925
+V1,F4,2007-11-06,p0050,hys.jas,Hysterionica,jassionoide,3,11,988235,33,32611755
+V1,F5,2007-11-06,p0050,hys.jas,Hysterionica,jassionoide,2,11,988235,22,21741170
+V2,F5,2007-11-06,p0050,hys.jas,Hysterionica,jassionoide,10,11,988235,110,108705850
+V4,F3,2007-11-06,p0050,hys.jas,Hysterionica,jassionoide,6,11,988235,66,65223510
+V1,F1,2007-11-13,p0050,hys.jas,Hysterionica,jassionoide,44,11,988235,484,478305740
+V1,F2,2007-11-13,p0050,hys.jas,Hysterionica,jassionoide,15,11,988235,165,163058775
+V1,F3,2007-11-13,p0050,hys.jas,Hysterionica,jassionoide,2,11,988235,22,21741170
+V1,F5,2007-11-13,p0050,hys.jas,Hysterionica,jassionoide,2,11,988235,22,21741170
+V2,F1,2007-11-13,p0050,hys.jas,Hysterionica,jassionoide,3,11,988235,33,32611755
+V2,F5,2007-11-13,p0050,hys.jas,Hysterionica,jassionoide,7,11,988235,77,76094095
+V4,F1,2007-11-13,p0050,hys.jas,Hysterionica,jassionoide,5,11,988235,55,54352925
+V4,F2,2007-11-13,p0050,hys.jas,Hysterionica,jassionoide,2,11,988235,22,21741170
+V4,F3,2007-11-13,p0050,hys.jas,Hysterionica,jassionoide,9,11,988235,99,97835265
+V4,F4,2007-11-13,p0050,hys.jas,Hysterionica,jassionoide,6,11,988235,66,65223510
+V4,F5,2007-11-13,p0050,hys.jas,Hysterionica,jassionoide,5,11,988235,55,54352925
+V1,F1,2007-11-20,p0050,hys.jas,Hysterionica,jassionoide,58,11,988235,638,630493930
+V1,F2,2007-11-20,p0050,hys.jas,Hysterionica,jassionoide,2,11,988235,22,21741170
+V1,F3,2007-11-20,p0050,hys.jas,Hysterionica,jassionoide,7,11,988235,77,76094095
+V1,F4,2007-11-20,p0050,hys.jas,Hysterionica,jassionoide,2,11,988235,22,21741170
+V2,F1,2007-11-20,p0050,hys.jas,Hysterionica,jassionoide,5,11,988235,55,54352925
+V2,F3,2007-11-20,p0050,hys.jas,Hysterionica,jassionoide,4,11,988235,44,43482340
+V2,F4,2007-11-20,p0050,hys.jas,Hysterionica,jassionoide,1,11,988235,11,10870585
+V2,F5,2007-11-20,p0050,hys.jas,Hysterionica,jassionoide,19,11,988235,209,206541115
+V1,F1,2007-11-27,p0050,hys.jas,Hysterionica,jassionoide,17,11,988235,187,184799945
+V1,F2,2007-11-27,p0050,hys.jas,Hysterionica,jassionoide,3,11,988235,33,32611755
+V1,F3,2007-11-27,p0050,hys.jas,Hysterionica,jassionoide,2,11,988235,22,21741170
+V1,F4,2007-11-27,p0050,hys.jas,Hysterionica,jassionoide,1,11,988235,11,10870585
+V1,F5,2007-11-27,p0050,hys.jas,Hysterionica,jassionoide,4,11,988235,44,43482340
+V4,F5,2007-11-27,p0050,hys.jas,Hysterionica,jassionoide,1,11,988235,11,10870585
+V1,F1,2007-10-29,p0051,mon.aph,Monttea ,aphylla ,1,93,71296,93,6630528
+V4,F4,2007-10-29,p0051,mon.aph,Monttea ,aphylla ,1,93,71296,93,6630528
+V1,F1,2007-11-06,p0051,mon.aph,Monttea ,aphylla ,1,93,71296,93,6630528
+V1,F1,2007-11-13,p0051,mon.aph,Monttea ,aphylla ,1,93,71296,93,6630528
+V4,F4,2007-11-20,p0051,mon.aph,Monttea ,aphylla ,1,93,71296,93,6630528
+V1,F5,2007-10-23,p0054,sph.min,Spharealcea,miniata,1,3,147222,3,441666
+V4,F4,2007-10-23,p0054,sph.min,Spharealcea,miniata,3,3,147222,9,1324998
+V1,F2,2007-10-29,p0054,sph.min,Spharealcea,miniata,3,3,147222,9,1324998
+V1,F2,2007-10-29,p0054,sph.min,Spharealcea,miniata,1,3,147222,3,441666
+V1,F4,2007-10-29,p0054,sph.min,Spharealcea,miniata,4,3,147222,12,1766664
+V1,F5,2007-10-29,p0054,sph.min,Spharealcea,miniata,1,3,147222,3,441666
+V2,F2,2007-10-29,p0054,sph.min,Spharealcea,miniata,1,3,147222,3,441666
+V2,F3,2007-10-29,p0054,sph.min,Spharealcea,miniata,2,3,147222,6,883332
+V2,F4,2007-10-29,p0054,sph.min,Spharealcea,miniata,3,3,147222,9,1324998
+V4,F4,2007-10-29,p0054,sph.min,Spharealcea,miniata,10,3,147222,30,4416660
+V4,F5,2007-10-29,p0054,sph.min,Spharealcea,miniata,6,3,147222,18,2649996
+V1,F2,2007-11-06,p0054,sph.min,Spharealcea,miniata,1,3,147222,3,441666
+V1,F3,2007-11-06,p0054,sph.min,Spharealcea,miniata,1,3,147222,3,441666
+V1,F4,2007-11-06,p0054,sph.min,Spharealcea,miniata,2,3,147222,6,883332
+V2,F5,2007-11-06,p0054,sph.min,Spharealcea,miniata,2,3,147222,6,883332
+V4,F1,2007-11-06,p0054,sph.min,Spharealcea,miniata,4,3,147222,12,1766664
+V4,F4,2007-11-06,p0054,sph.min,Spharealcea,miniata,7,3,147222,21,3091662
+V4,F5,2007-11-06,p0054,sph.min,Spharealcea,miniata,4,3,147222,12,1766664
+V4,F3,2007-11-20,p0054,sph.min,Spharealcea,miniata,3,3,147222,9,1324998
+V1,1,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,4,4,5625,16,90000
+V1,2,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,15,4,5625,60,337500
+V1,7,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,6,4,5625,24,135000
+V1,9,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,5,4,5625,20,112500
+V1,10,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,1,4,5625,4,22500
+V1,11,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,2,4,5625,8,45000
+V1,22,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,5,4,5625,20,112500
+V1,34,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,2,4,5625,8,45000
+V1,36,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,1,4,5625,4,22500
+V1,39,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,3,4,5625,12,67500
+V4,1,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,6,4,5625,24,135000
+V4,2,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,2,4,5625,8,45000
+V4,3,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,1,4,5625,4,22500
+V4,4,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,7,4,5625,28,157500
+V4,7,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,4,4,5625,16,90000
+V4,10,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,2,4,5625,8,45000
+V4,23,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,3,4,5625,12,67500
+V4,26,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,1,4,5625,4,22500
+V4,30,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,1,4,5625,4,22500
+V4,32,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,4,4,5625,16,90000
+V4,33,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,1,4,5625,4,22500
+V4,36,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,4,4,5625,16,90000
+V4,37,2007-10-02,p0057,ero.cic,Erodium ,cicatarium,6,4,5625,24,135000
+V1,F3,2007-10-19,p0057,ero.cic,Erodium ,cicatarium,1,6,5625,6,33750
+V4,F1,2007-10-19,p0057,ero.cic,Erodium ,cicatarium,32,6,5625,192,1080000
+V4,F2,2007-10-19,p0057,ero.cic,Erodium ,cicatarium,40,6,5625,240,1350000
+V4,F3,2007-10-19,p0057,ero.cic,Erodium ,cicatarium,11,6,5625,66,371250
+V4,F4,2007-10-19,p0057,ero.cic,Erodium ,cicatarium,16,6,5625,96,540000
+V4,F5,2007-10-19,p0057,ero.cic,Erodium ,cicatarium,4,6,5625,24,135000
+V1,F1,2007-10-23,p0057,ero.cic,Erodium ,cicatarium,22,2,5625,44,247500
+V1,F2,2007-10-23,p0057,ero.cic,Erodium ,cicatarium,80,2,5625,160,900000
+V1,F3,2007-10-23,p0057,ero.cic,Erodium ,cicatarium,15,2,5625,30,168750
+V1,F4,2007-10-23,p0057,ero.cic,Erodium ,cicatarium,165,2,5625,330,1856250
+V1,F5,2007-10-23,p0057,ero.cic,Erodium ,cicatarium,15,2,5625,30,168750
+V1,F1,2007-10-29,p0057,ero.cic,Erodium ,cicatarium,2,2,5625,4,22500
+V2,F2,2007-10-29,p0057,ero.cic,Erodium ,cicatarium,1,2,5625,2,11250
+V2,F3,2007-10-29,p0057,ero.cic,Erodium ,cicatarium,1,2,5625,2,11250
+V2,F4,2007-10-29,p0057,ero.cic,Erodium ,cicatarium,10,2,5625,20,112500
+V1,2,2007-10-02,p0059,des.sp1,Descurainia,sp.,10,10,153125,100,15312500
+V1,9,2007-10-02,p0059,des.sp1,Descurainia,sp.,20,10,153125,200,30625000
+V1,F3,2007-10-19,p0059,des.sp1,Descurainia,sp.,1,10,153125,10,1531250
+V1,F5,2007-10-19,p0059,des.sp1,Descurainia,sp.,4,10,153125,40,6125000
+V4,F1,2007-10-19,p0059,des.sp1,Descurainia,sp.,2,10,153125,20,3062500
+V4,F2,2007-10-19,p0059,des.sp1,Descurainia,sp.,10,10,153125,100,15312500
+V4,F3,2007-10-19,p0059,des.sp1,Descurainia,sp.,4,10,153125,40,6125000
+V4,F4,2007-10-19,p0059,des.sp1,Descurainia,sp.,12,10,153125,120,18375000
+V1,F1,2007-10-23,p0059,des.sp1,Descurainia,sp.,31,10,153125,310,47468750
+V1,F2,2007-10-23,p0059,des.sp1,Descurainia,sp.,1,10,153125,10,1531250
+V1,F3,2007-10-23,p0059,des.sp1,Descurainia,sp.,1,10,153125,10,1531250
+V1,F5,2007-10-23,p0059,des.sp1,Descurainia,sp.,1,10,153125,10,1531250
+V4,F4,2007-10-23,p0059,des.sp1,Descurainia,sp.,2,10,153125,20,3062500
+V2,F3,2007-10-29,p0059,des.sp1,Descurainia,sp.,2,10,153125,20,3062500
+V1,F2,2007-10-29,p0061,phi.gil,Philibertia,gilliesii,2,.,0,.,.
+V1,F2,2007-11-13,p0061,phi.gil,Philibertia,gilliesii,1,.,0,.,.
+V4,F3,2007-11-13,p0061,phi.gil,Philibertia,gilliesii,1,.,0,.,.
+V1,F2,2007-11-27,p0062,cen.sol,Centaurea ,solstialis,5,18,.,.,.
+V1,F4,2007-11-27,p0062,cen.sol,Centaurea ,solstialis,1,18,.,.,.
+V1,F5,2007-12-04,p0062,cen.sol,Centaurea ,solstialis,2,18,.,.,.
+V2,F3,2007-10-29,p0066,pha.art,Phacelia ,artemisiodes,6,30,118333,180,21299940
+V4,F3,2007-10-19,p0068,gla.sp1,Glandularia,sp.,18,10,125833,180,22649940
+V4,F5,2007-10-19,p0068,gla.sp1,Glandularia,sp.,100,10,125833,1000,125833000
+V1,F5,2007-10-29,p0068,gla.sp1,Glandularia,sp.,26,10,125833,260,32716580
+V2,F3,2007-10-29,p0068,gla.sp1,Glandularia,sp.,15,10,125833,150,18874950
+V2,F4,2007-10-29,p0068,gla.sp1,Glandularia,sp.,17,10,125833,170,21391610
+V2,F5,2007-10-29,p0068,gla.sp1,Glandularia,sp.,60,10,125833,600,75499800
+V2,F3,2007-11-06,p0068,gla.sp1,Glandularia,sp.,7,10,125833,70,8808310
+V2,F4,2007-11-06,p0068,gla.sp1,Glandularia,sp.,1,10,125833,10,1258330
+V2,F5,2007-11-06,p0068,gla.sp1,Glandularia,sp.,1,10,125833,10,1258330
+V4,F5,2007-11-20,p0068,gla.sp1,Glandularia,sp.,5,10,125833,50,6291650
+V1,F3,2007-10-29,p0069,sen.gil,Senecio ,gilliesianus ,1,.,.,.,.
+V1,F3,2007-11-13,p0069,sen.gil,Senecio ,gilliesianus ,1,.,.,.,.
+V4,F3,2007-10-23,p0070,gla.cri,Glandularia,crithmifolia,35,10,44444,350,15555400
+V4,F4,2007-10-23,p0070,gla.cri,Glandularia,crithmifolia,94,10,44444,940,41777360
+V4,F2,2007-10-29,p0070,gla.cri,Glandularia,crithmifolia,10,10,44444,100,4444400
+V4,F3,2007-10-29,p0070,gla.cri,Glandularia,crithmifolia,100,10,44444,1000,44444000
+V4,F4,2007-10-29,p0070,gla.cri,Glandularia,crithmifolia,133,10,44444,1330,59110520
+V4,F5,2007-10-29,p0070,gla.cri,Glandularia,crithmifolia,130,10,44444,1300,57777200
+V4,F3,2007-11-06,p0070,gla.cri,Glandularia,crithmifolia,180,10,44444,1800,79999200
+V4,F4,2007-11-06,p0070,gla.cri,Glandularia,crithmifolia,75,10,44444,750,33333000
+V4,F5,2007-11-06,p0070,gla.cri,Glandularia,crithmifolia,70,10,44444,700,31110800
+V2,F5,2007-11-13,p0070,gla.cri,Glandularia,crithmifolia,1,10,44444,10,444440
+V4,F3,2007-11-13,p0070,gla.cri,Glandularia,crithmifolia,6,10,44444,60,2666640
+V4,F4,2007-11-13,p0070,gla.cri,Glandularia,crithmifolia,5,10,44444,50,2222200
+V4,F5,2007-11-13,p0070,gla.cri,Glandularia,crithmifolia,5,10,44444,50,2222200
+V1,1,2007-10-02,p0071,gla.sp2,Glandularia,sp.,4,10,125833,40,5033320
+V1,7,2007-10-02,p0071,gla.sp2,Glandularia,sp.,1,10,125833,10,1258330
+V1,22,2007-10-02,p0071,gla.sp2,Glandularia,sp.,50,10,125833,500,62916500
+V1,30,2007-10-02,p0071,gla.sp2,Glandularia,sp.,10,10,125833,100,12583300
+V1,34,2007-10-02,p0071,gla.sp2,Glandularia,sp.,1,10,125833,10,1258330
+V1,F1,2007-10-23,p0072,pla.pat,Plantago ,patagonica,145,700,0,101500,0
+V1,F2,2007-10-23,p0072,pla.pat,Plantago ,patagonica,130,700,0,91000,0
+V1,F3,2007-10-23,p0072,pla.pat,Plantago ,patagonica,365,700,0,255500,0
+V1,F4,2007-10-23,p0072,pla.pat,Plantago ,patagonica,610,700,0,427000,0
+V1,F5,2007-10-23,p0072,pla.pat,Plantago ,patagonica,950,700,0,665000,0
+V4,F2,2007-10-23,p0072,pla.pat,Plantago ,patagonica,120,700,0,84000,0
+V4,F3,2007-10-23,p0072,pla.pat,Plantago ,patagonica,50,700,0,35000,0
+V4,F1,2007-10-29,p0072,pla.pat,Plantago ,patagonica,200,700,0,140000,0
+V4,F2,2007-10-29,p0072,pla.pat,Plantago ,patagonica,200,700,0,140000,0
+V4,F5,2007-10-29,p0072,pla.pat,Plantago ,patagonica,600,700,0,420000,0
+V4,F5,2007-10-19,p0073,oen.odo,Oenothera ,odorata,1,3,344444,3,1033332
+V1,14,2007-10-02,p0085,med.lup,Medicago ,lupulina,20,.,.,.,.
+V1,21,2007-10-02,p0085,med.lup,Medicago ,lupulina,3,.,.,.,.
+V1,23,2007-10-02,p0085,med.lup,Medicago ,lupulina,2,.,.,.,.
+V1,24,2007-10-02,p0085,med.lup,Medicago ,lupulina,2,.,.,.,.
+V1,27,2007-10-02,p0085,med.lup,Medicago ,lupulina,2,.,.,.,.
+V1,29,2007-10-02,p0085,med.lup,Medicago ,lupulina,10,.,.,.,.
+V1,31,2007-10-02,p0085,med.lup,Medicago ,lupulina,3,.,.,.,.
+V1,33,2007-10-02,p0085,med.lup,Medicago ,lupulina,5,.,.,.,.
+V1,35,2007-10-02,p0085,med.lup,Medicago ,lupulina,3,.,.,.,.
+V1,36,2007-10-02,p0085,med.lup,Medicago ,lupulina,2,.,.,.,.
+V1,37,2007-10-02,p0085,med.lup,Medicago ,lupulina,4,.,.,.,.
+V1,38,2007-10-02,p0085,med.lup,Medicago ,lupulina,2,.,.,.,.
+V1,39,2007-10-02,p0085,med.lup,Medicago ,lupulina,1,.,.,.,.
+V1,40,2007-10-02,p0085,med.lup,Medicago ,lupulina,5,.,.,.,.
+V4,F1,2007-10-23,p0085,med.lup,Medicago ,lupulina,55,.,.,.,.
+V4,F5,2007-10-29,p0085,med.lup,Medicago ,lupulina,5,.,.,.,.
+V1,F1,2007-10-23,p0092,sal.kal,Salsola,kali,2,.,.,.,.
+V1,F1,2007-10-29,p0092,sal.kal,Salsola,kali,2,.,.,.,.

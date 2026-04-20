@@ -1,0 +1,32 @@
+Specie,Kingdom,Role,Degree,Sum(connections strength),Networks presence
+"Apis mellifera","Animals","Pollinator",6,44,123
+"Cerambycidae sp1 M_PL_078","Animals","Pollinator",1,2,1
+"Chaetocnema sp1 M_PL_078","Animals","Pollinator",12,25,1
+"Chrysomya megacephala ","Animals","Pollinator",2,3,25
+"Dysauxes florida","Animals","Pollinator",1,1,15
+"Lygaeidae sp1 M_PL_078","Animals","Pollinator",1,1,1
+"Musca domestica","Animals","Pollinator",2,4,26
+"Pachycerina crinicornis ","Animals","Pollinator",4,9,20
+"Pelecophora intemipta","Animals","Pollinator",1,1,9
+"Scolia carniflex","Animals","Pollinator",1,1,2
+"Stomorhina lunata","Animals","Pollinator",2,2,24
+"Technomyrmex albipes ","Animals","Pollinator",2,3,25
+"Villa unifasciata","Animals","Pollinator",6,13,13
+"Antidesma madagascariense","Plants","Plant",4,6,6
+"Badula platiphylla","Plants","Plant",1,1,4
+"Eugenia orbiculata","Plants","Plant",1,1,2
+"Euodia chapelieri","Plants","Plant",1,1,8
+"Euodia obtusifolia","Plants","Plant",1,3,6
+"Gaertnera sp1 M_PL_078","Plants","Plant",1,1,1
+"Grangeria borbonica","Plants","Plant",4,7,6
+"Helichrysum proteoides","Plants","Plant",5,9,4
+"Homalanthus populifolius","Plants","Plant",1,2,7
+"Labourdonnaisia callophylloides","Plants","Plant",4,6,9
+"Olea lancea","Plants","Plant",2,4,9
+"Phyllanthus phillyreifolius","Plants","Plant",1,2,8
+"Psiadia terebinthina","Plants","Plant",7,17,17
+"Psidium cattleianum","Plants","Plant",2,10,12
+"Sideroxylon puberulum","Plants","Plant",2,25,6
+"Stillingia lineata","Plants","Plant",2,9,20
+"Warneckea trinervis","Plants","Plant",1,3,6
+"Wikstroemia indica","Plants","Plant",1,2,2

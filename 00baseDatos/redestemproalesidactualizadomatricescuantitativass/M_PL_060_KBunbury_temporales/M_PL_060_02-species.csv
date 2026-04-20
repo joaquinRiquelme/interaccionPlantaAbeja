@@ -1,0 +1,51 @@
+Specie,Kingdom,Role,Degree,Sum(connections strength),Networks presence
+"Acopsis viridicans","Animals","Pollinator",1,1,3
+"Allograpta nasuta","Animals","Pollinator",3,10,17
+"Allograpta sp1 M_PL_061","Animals","Pollinator",1,4,1
+"Apis mellifera","Animals","Pollinator",6,97,123
+"Atherigona sp1 M_PL_061","Animals","Pollinator",1,1,1
+"Brachymyrmex sp1 M_PL_061","Animals","Pollinator",2,12,1
+"Chaetocnema sp1 M_PL_061","Animals","Pollinator",4,11,1
+"Chrysomya megacephala ","Animals","Pollinator",6,31,25
+"Dasytinae sp1 M_PL_061","Animals","Pollinator",1,1,1
+"Dysauxes florida","Animals","Pollinator",1,1,15
+"Episyrphus sp1 M_PL_061","Animals","Pollinator",1,1,1
+"Eristalinus flaveolus","Animals","Pollinator",3,8,17
+"Fannia pusio ","Animals","Pollinator",7,14,15
+"Henotesia narcissus","Animals","Pollinator",5,18,8
+"Homoneura sp1 M_PL_061","Animals","Pollinator",1,1,1
+"Leptotes pirithous","Animals","Pollinator",3,5,11
+"Lygistorrhina sp1 M_PL_061","Animals","Pollinator",1,2,1
+"Melanagromyza sojae ","Animals","Pollinator",2,3,4
+"Melanostoma annulipes","Animals","Pollinator",7,36,17
+"Musca domestica","Animals","Pollinator",6,12,26
+"Nacoleia sp1 M_PL_061","Animals","Pollinator",2,3,1
+"Nacoleia sp2 M_PL_061","Animals","Pollinator",1,1,1
+"Orthellia albigena ","Animals","Pollinator",1,1,12
+"Pachycerina crinicornis ","Animals","Pollinator",7,55,20
+"Paragus borbonicus","Animals","Pollinator",1,1,15
+"Pelecophora intemipta","Animals","Pollinator",1,1,9
+"Phorinia sp1 M_PL_061","Animals","Pollinator",2,11,1
+"Polistes hebraeus","Animals","Pollinator",2,8,18
+"Psilopa iceryae ","Animals","Pollinator",1,8,6
+"Sapromyza sp1 M_PL_061","Animals","Pollinator",1,1,1
+"Sarcophaga arno ","Animals","Pollinator",2,2,12
+"Sepsis lateralis ","Animals","Pollinator",1,1,4
+"Stomorhina lunata","Animals","Pollinator",6,129,24
+"Stomoxys calcitrans","Animals","Pollinator",4,16,15
+"Stomoxys niger","Animals","Pollinator",5,19,9
+"Technomyrmex albipes ","Animals","Pollinator",4,9,25
+"Unidentified sp1 M_PL_061","Animals","Pollinator",1,1,1
+"Zosterops mauritianus","Animals","Pollinator",3,9,11
+"Antirhea borbonica","Plants","Plant",1,2,10
+"Aphloia theiformis","Plants","Plant",20,101,22
+"Claoxylon linostachys","Plants","Plant",6,9,7
+"Croton fothergillifolius","Plants","Plant",9,28,11
+"Dodonaea viscosa","Plants","Plant",2,2,6
+"Erythroxylum macrocarpum","Plants","Plant",6,20,11
+"Geniostoma borbonicum","Plants","Plant",15,86,2
+"Molinaea alternifolia","Plants","Plant",1,1,8
+"Psiadia terebinthina","Plants","Plant",11,36,17
+"Roussea simplex ","Plants","Plant",10,47,5
+"Sideroxylon cinereum","Plants","Plant",11,72,6
+"Toddalia asiatica","Plants","Plant",15,141,7

@@ -1,0 +1,35 @@
+Specie,Kingdom,Role,Degree,Sum(connections strength),Networks presence
+"Anthomyia faciata","Animals","Pollinator",1,1,1
+"Apis mellifera","Animals","Pollinator",5,29,123
+"Brachymyrmex sp1 M_PL_070","Animals","Pollinator",2,4,1
+"Chaetocnema sp1 M_PL_070","Animals","Pollinator",3,10,1
+"Chrysomya megacephala ","Animals","Pollinator",4,4,25
+"Episyrphus sp1 M_PL_070","Animals","Pollinator",2,2,1
+"Eristalinus flaveolus","Animals","Pollinator",2,5,17
+"Macroglossum milvus","Animals","Pollinator",1,1,7
+"Melanagromyza sojae ","Animals","Pollinator",1,1,4
+"Musca domestica","Animals","Pollinator",4,17,26
+"Nacoleia sp1 M_PL_070","Animals","Pollinator",1,1,1
+"Ornidia obesa","Animals","Pollinator",1,1,47
+"Panara naso","Animals","Pollinator",1,2,14
+"Paragus borbonicus","Animals","Pollinator",2,2,15
+"Phelsuma cepediana","Animals","Pollinator",4,7,10
+"Phorinia sp1 M_PL_070","Animals","Pollinator",1,1,1
+"Polistes hebraeus","Animals","Pollinator",1,1,18
+"Syritta sp1 M_PL_070","Animals","Pollinator",1,1,1
+"Technomyrmex albipes ","Animals","Pollinator",5,39,25
+"Thelairodrino sp1 M_PL_070","Animals","Pollinator",1,1,1
+"Calophyllum eputamen","Plants","Plant",4,10,4
+"Casearia coriacea","Plants","Plant",2,16,3
+"Cordemoya integrifolia","Plants","Plant",1,2,8
+"Diospyros revaughanii","Plants","Plant",3,18,6
+"Euodia obtusifolia","Plants","Plant",1,1,6
+"Gaertnera sp1 M_PL_070","Plants","Plant",6,10,1
+"Labourdonnaisia callophylloides","Plants","Plant",2,11,9
+"Ocotea laevigata","Plants","Plant",3,7,3
+"Stillingia lineata","Plants","Plant",3,5,20
+"Syzygium commersonii","Plants","Plant",1,1,2
+"Syzygium coriaceum","Plants","Plant",10,26,8
+"Syzygium mauritianum","Plants","Plant",2,3,1
+"Syzygium petrinese","Plants","Plant",4,18,5
+"Tristhema mauritiana","Plants","Plant",1,2,3

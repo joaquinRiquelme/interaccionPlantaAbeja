@@ -1,0 +1,927 @@
+sitio,fecha,tra.par,no.esp.p,codigo.p,genero.p,especie.p,no.ind,no.flores_ind,flores.herb,flores.tot,observador,comentarios
+V1,2009-09-14,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V1,2009-09-14,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V1,2009-09-14,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V1,2009-09-14,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V1,2009-09-14,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V1,2009-09-14,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V4,2009-09-14,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V4,2009-09-14,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V4,2009-09-14,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V4,2009-09-14,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V4,2009-09-14,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V4,2009-09-14,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V18,2009-09-16,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V18,2009-09-16,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V18,2009-09-16,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V18,2009-09-16,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V18,2009-09-16,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V18,2009-09-16,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-09-16,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-09-16,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-09-16,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-09-16,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-09-16,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-09-16,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V1,2009-09-21,P1,.,.,.,.,.,.,11,11,Belén Maldonado/Nydia Vitale,Falta ingresar al catÃ¡logo
+V1,2009-09-21,P2,.,Nada,.,.,.,.,.,.,Belén Maldonado/Nydia Vitale,.
+V1,2009-09-21,P5,.,Nada,.,.,.,.,.,.,Belén Maldonado/Nydia Vitale,.
+V1,2009-09-21,P6,.,Nada,.,.,.,.,.,.,Belén Maldonado/Nydia Vitale,.
+V1,2009-09-21,T1,.,Nada,.,.,.,.,.,.,Belén Maldonado/Nydia Vitale,.
+V1,2009-09-21,T2,.,Nada,.,.,.,.,.,.,Belén Maldonado/Nydia Vitale,.
+V19,2009-09-21,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-09-21,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-09-21,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-09-21,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-09-21,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-09-21,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-09-21,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-09-21,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-09-21,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-09-21,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-09-21,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-09-21,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V4,2009-09-21,P1,.,Nada,.,.,.,.,.,.,Belén Maldonado/Nydia Vitale,.
+V4,2009-09-21,P6,.,Nada,.,.,.,.,.,.,Belén Maldonado/Nydia Vitale,.
+V21,2009-09-24,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-09-24,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-09-24,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-09-24,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-09-24,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-09-24,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V1,2009-09-28,P2,.,Nada,.,.,.,.,.,.,Belén Maldonado/Nydia Vitale,.
+V1,2009-09-28,P5,.,Nada,.,.,.,.,.,.,Belén Maldonado/Nydia Vitale,.
+V1,2009-09-28,P6,.,Nada,.,.,.,.,.,.,Belén Maldonado/Nydia Vitale,.
+V1,2009-09-28,T1,.,Nada,.,.,.,.,.,.,Belén Maldonado/Nydia Vitale,.
+V1,2009-09-28,T2,.,Nada,.,.,.,.,.,.,Belén Maldonado/Nydia Vitale,.
+V19,2009-09-28,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V19,2009-09-28,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V19,2009-09-28,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V19,2009-09-28,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V19,2009-09-28,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V19,2009-09-28,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V20,2009-09-28,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V20,2009-09-28,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V20,2009-09-28,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V20,2009-09-28,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V20,2009-09-28,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V20,2009-09-28,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V21,2009-09-28,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V21,2009-09-28,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V21,2009-09-28,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V21,2009-09-28,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V21,2009-09-28,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V21,2009-09-28,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,nieve
+V18,2009-10-05,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-10-05,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-10-05,P4,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-10-05,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-10-05,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-10-05,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V4,2009-10-05,T1,.,.,.,.,.,.,32,32,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-05,T1,.,.,.,.,.,.,37,37,Rocío Castro Urgal/Belén Maldonado,Herb.08 Falta ingresar al catÃ¡logo
+V1,2009-10-07,P1,.,.,.,.,.,.,57,57,Rocío Castro Urgal/Belén Maldonado,Falta ingresar al catÃ¡logo
+V1,2009-10-07,P6,.,Nada,.,.,.,.,.,.,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-07,T1,.,Nada,.,.,.,.,.,.,Rocío Castro Urgal/Belén Maldonado,.
+V20,2009-10-07,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,"Carqueja (Baccharis), polinizada por viento"
+V20,2009-10-07,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-10-07,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-10-07,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-10-07,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-10-07,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-07,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-07,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-07,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-07,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-07,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-07,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-10-12,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-10-12,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-10-12,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-10-12,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-10-12,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-10-12,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-10-12,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-10-12,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-10-12,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-10-12,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-12,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-12,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-12,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-12,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-12,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-12,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V4,2009-10-12,P2,.,.,.,.,.,.,2,2,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-12,T1,.,.,.,.,2,4.5,.,9,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-12,T1,.,.,.,.,.,.,9,9,Rocío Castro Urgal/Belén Maldonado,.
+V19,2009-10-19,.,.,.,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-10-19,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-10-19,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-10-19,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-10-19,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-10-19,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,Con.mic con pimpollos
+V21,2009-10-19,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,Berberis grevilleana con pimpollos
+V21,2009-10-19,P5,.,Nada,.,.,.,.,.,.,Diego Vázquez,Berberis grevilleana con pimpollos
+V21,2009-10-19,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-19,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V4,2009-10-19,T1,.,.,.,.,.,.,13,13,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-19,T1,.,.,.,.,3,12,.,36,Belén Maldonado/Rocío Castro Urgal,.
+V20,2009-10-26,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,Schinus fasciculatus con pimpollos
+V20,2009-10-26,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-10-26,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-26,.,.,.,.,.,.,.,.,.,Diego Vázquez,Fuera de parcelas
+V21,2009-10-26,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,Berberis con pimpollos
+V21,2009-10-26,P5,.,.,.,.,1,1,.,1,Diego Vázquez,.
+V21,2009-10-26,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-26,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-10-26,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V18,2009-11-02,P1,.,.,.,.,1,1,.,1,Diego Vázquez,.
+V20,2009-11-03,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-11-03,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-11-03,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V1,2009-11-09,P2,.,.,.,.,1,1,.,1,Belén Maldonado/Rocío Castro Urgal,.
+V20,2009-11-09,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,Hay Baccharis arbustivo pero no lo considero porque supongo que es anemofilo
+V21,2009-11-09,.,.,.,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-11-09,P2,.,.,.,.,1,1,.,1,Diego Vázquez,.
+V21,2009-11-09,T2,.,.,.,.,1,2,.,2,Diego Vázquez,.
+V19,2009-11-19,T1,.,.,.,.,1,1,.,1,Diego Vázquez,.
+V20,2009-11-19,P5,.,.,.,.,1,10,.,10,Diego Vázquez,.
+V20,2009-11-19,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-11-19,P1,.,.,.,.,.,.,.,.,Diego Vázquez,No lo visitÃ© el 19/11/09
+V21,2009-11-19,P2,.,.,.,.,.,.,.,.,Diego Vázquez,No lo visitÃ© el 19/11/09
+V21,2009-11-19,P5,.,.,.,.,.,.,.,.,Diego Vázquez,No lo visitÃ© el 19/11/09
+V21,2009-11-19,P6,.,.,.,.,.,.,.,.,Diego Vázquez,No lo visitÃ© el 19/11/09
+V21,2009-11-19,T1,.,.,.,.,.,.,.,.,Diego Vázquez,No lo visitÃ© el 19/11/09
+V21,2009-11-19,T2,.,.,.,.,.,.,.,.,Diego Vázquez,No lo visitÃ© el 19/11/09
+V19,2009-11-23,.,.,.,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-11-23,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,"Baccharis en flor, no lo cuento"
+V20,2009-11-23,P6,.,Nada,.,.,.,.,.,.,Diego Vázquez,"Baccharis en flor, no lo cuento"
+V21,2009-11-23,T2,.,.,.,.,1,1,.,1,Diego Vázquez,.
+V19,2009-12-01,P2,.,.,.,.,5,3,.,15,Diego Vázquez,.
+V19,2009-12-01,P5,.,.,.,.,1,1,.,1,Diego Vázquez,.
+V19,2009-12-01,P6,.,.,.,.,3,1.33,.,4,Diego Vázquez,.
+V20,2009-12-01,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-12-01,P1,.,.,.,.,.,.,.,.,Diego Vázquez,No lo visitÃ© el 1/12/09
+V21,2009-12-01,P2,.,.,.,.,.,.,.,.,Diego Vázquez,No lo visitÃ© el 1/12/09
+V21,2009-12-01,P5,.,.,.,.,.,.,.,.,Diego Vázquez,No lo visitÃ© el 1/12/09
+V21,2009-12-01,P6,.,.,.,.,.,.,.,.,Diego Vázquez,No lo visitÃ© el 1/12/09
+V21,2009-12-01,T1,.,.,.,.,.,.,.,.,Diego Vázquez,No lo visitÃ© el 1/12/09
+V21,2009-12-01,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,No lo visitÃ© el 1/12/09
+V1,2009-12-11,T2,.,Nada,.,.,.,.,.,.,Nydia Vitale,.
+V1,2009-12-16,P1,.,Nada,.,.,.,.,.,.,Belén Maldonado/Natacha Chacoff,.
+V19,2009-12-16,P1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-12-16,P6,.,.,.,.,.,.,.,.,Diego Vázquez,.
+V19,2009-12-16,T1,.,.,.,.,1,4,.,4,Diego Vázquez,.
+V20,2009-12-16,.,.,.,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-12-16,P2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V20,2009-12-16,P5,.,.,.,.,6,19.6,.,117.6,Diego Vázquez,.
+V20,2009-12-16,T2,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V21,2009-12-18,P6,.,.,.,.,2,1,.,2,Diego Vázquez,.
+V21,2009-12-18,T1,.,Nada,.,.,.,.,.,.,Diego Vázquez,.
+V4,2009-10-12,P6,p0011,lyc.chi,Lycium ,chilense ,3,3.67,.,11,Rocío Castro Urgal/Belén Maldonado,.
+V18,2009-11-02,P1,p0003,zuc.pun,Zuccagnia ,punctata ,2,25.5,.,51,Diego Vázquez,.
+V18,2009-11-02,P6,p0003,zuc.pun,Zuccagnia ,punctata ,1,12.5,.,12.5,Diego Vázquez,.
+V18,2009-11-02,T1,p0003,zuc.pun,Zuccagnia ,punctata ,2,2.25,.,4.5,Diego Vázquez,.
+V18,2009-11-02,T2,p0003,zuc.pun,Zuccagnia ,punctata ,3,28.67,.,86,Diego Vázquez,.
+V4,2009-11-02,P1,p0003,zuc.pun,Zuccagnia ,punctata ,1,25,.,25,Diego Vázquez,.
+V1,2009-11-03,P6,p0003,zuc.pun,Zuccagnia ,punctata ,1,32.5,.,32.5,Diego Vázquez,.
+V1,2009-11-09,P2,p0003,zuc.pun,Zuccagnia ,punctata ,1,7,.,7,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-09,P6,p0003,zuc.pun,Zuccagnia ,punctata ,4,Ver planilla,.,.,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-09,T2,p0003,zuc.pun,Zuccagnia ,punctata ,1,600,.,600,Natacha Chacoff,.
+V18,2009-11-09,P1,p0003,zuc.pun,Zuccagnia ,punctata ,6,166.67,.,1000,Diego Vázquez,.
+V18,2009-11-09,P2,p0003,zuc.pun,Zuccagnia ,punctata ,4,21.67,.,86.67,Diego Vázquez,.
+V18,2009-11-09,T1,p0003,zuc.pun,Zuccagnia ,punctata ,2,230,.,460,Diego Vázquez,.
+V18,2009-11-09,T2,p0003,zuc.pun,Zuccagnia ,punctata ,10,65.23,.,652.27,Diego Vázquez,.
+V4,2009-11-09,P1,p0003,zuc.pun,Zuccagnia ,punctata ,2,590,.,1180,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,P5,p0003,zuc.pun,Zuccagnia ,punctata ,1,45,.,45,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,P6,p0003,zuc.pun,Zuccagnia ,punctata ,2,Ver planilla,.,.,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-18,P2,p0003,zuc.pun,Zuccagnia ,punctata ,5,2583.57,.,12917.86,Rocío Castro Urgal/Nydia Vitale,.
+V1,2009-11-18,P6,p0003,zuc.pun,Zuccagnia ,punctata ,6,871.67,.,5230,Natacha Chacoff,.
+V1,2009-11-18,T1,p0003,zuc.pun,Zuccagnia ,punctata ,4,272,.,1088,Rocío Castro Urgal/Nydia Vitale,.
+V1,2009-11-18,T2,p0003,zuc.pun,Zuccagnia ,punctata ,2,9011,.,18022,Natacha Chacoff,.
+V4,2009-11-18,P1,p0003,zuc.pun,Zuccagnia ,punctata ,4,10198.75,.,40795,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-18,P5,p0003,zuc.pun,Zuccagnia ,punctata ,6,386.67,.,2320,Natacha Chacoff,.
+V4,2009-11-18,P6,p0003,zuc.pun,Zuccagnia ,punctata ,12,634,.,7608,Natacha Chacoff,.
+V18,2009-11-19,P2,p0003,zuc.pun,Zuccagnia ,punctata ,9,518.75,.,4668.75,Diego Vázquez,.
+V18,2009-11-19,P5,p0003,zuc.pun,Zuccagnia ,punctata ,3,325,.,975,Diego Vázquez,.
+V18,2009-11-19,P6,p0003,zuc.pun,Zuccagnia ,punctata ,2,80,.,160,Diego Vázquez,.
+V18,2009-11-19,T1,p0003,zuc.pun,Zuccagnia ,punctata ,6,371.67,.,2230,Diego Vázquez,.
+V18,2009-11-19,T2,p0003,zuc.pun,Zuccagnia ,punctata ,14,66.5,.,931,Diego Vázquez,.
+V1,2009-11-23,P2,p0003,zuc.pun,Zuccagnia ,punctata ,5,120.6,.,603,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-23,T1,p0003,zuc.pun,Zuccagnia ,punctata ,3,154.67,.,464,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-23,T2,p0003,zuc.pun,Zuccagnia ,punctata ,2,117.5,.,235,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-11-23,P1,p0003,zuc.pun,Zuccagnia ,punctata ,5,190,.,950,Diego Vázquez,.
+V18,2009-11-23,P2,p0003,zuc.pun,Zuccagnia ,punctata ,11,241.39,.,2655.28,Diego Vázquez,.
+V18,2009-11-23,P5,p0003,zuc.pun,Zuccagnia ,punctata ,5,306,.,1530,Diego Vázquez,.
+V18,2009-11-23,P6,p0003,zuc.pun,Zuccagnia ,punctata ,3,55.83,.,167.5,Diego Vázquez,.
+V18,2009-11-23,T1,p0003,zuc.pun,Zuccagnia ,punctata ,7,441.67,.,3091.67,Diego Vázquez,.
+V18,2009-11-23,T2,p0003,zuc.pun,Zuccagnia ,punctata ,14,58.33,.,816.67,Diego Vázquez,.
+V4,2009-11-23,P1,p0003,zuc.pun,Zuccagnia ,punctata ,1,972,.,972,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,P5,p0003,zuc.pun,Zuccagnia ,punctata ,3,360,.,1080,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,P6,p0003,zuc.pun,Zuccagnia ,punctata ,9,270,.,2430,Belén Maldonado/Nydia Vitale,.
+V4,2009-11-23,P6,p0003,zuc.pun,Zuccagnia ,punctata ,6,53.5,.,321,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-30,P2,p0003,zuc.pun,Zuccagnia ,punctata ,3,30.33,.,91,Rocío Castro Urgal/Nydia Vitale,.
+V1,2009-11-30,P6,p0003,zuc.pun,Zuccagnia ,punctata ,6,19.5,.,117,Natacha Chacoff,.
+V1,2009-11-30,T1,p0003,zuc.pun,Zuccagnia ,punctata ,2,11,.,22,Natacha Chacoff,.
+V1,2009-11-30,T2,p0003,zuc.pun,Zuccagnia ,punctata ,2,22,.,44,Natacha Chacoff,.
+V4,2009-11-30,P1,p0003,zuc.pun,Zuccagnia ,punctata ,2,25,.,50,Belén Maldonado,.
+V4,2009-11-30,P5,p0003,zuc.pun,Zuccagnia ,punctata ,4,96.75,.,387,Natacha Chacoff,.
+V4,2009-11-30,P6,p0003,zuc.pun,Zuccagnia ,punctata ,9,196.11,.,1765,Natacha Chacoff,.
+V18,2009-12-01,P1,p0003,zuc.pun,Zuccagnia ,punctata ,1,300,.,300,Diego Vázquez,.
+V18,2009-12-01,P2,p0003,zuc.pun,Zuccagnia ,punctata ,1,40,.,40,Diego Vázquez,.
+V18,2009-12-01,P6,p0003,zuc.pun,Zuccagnia ,punctata ,3,58.33,.,175,Diego Vázquez,.
+V18,2009-12-01,T1,p0003,zuc.pun,Zuccagnia ,punctata ,5,27.19,.,135.94,Diego Vázquez,.
+V18,2009-12-01,T2,p0003,zuc.pun,Zuccagnia ,punctata ,4,20,.,80,Diego Vázquez,.
+V4,2009-12-11,P6,p0003,zuc.pun,Zuccagnia ,punctata ,2,12.5,.,25,Nydia Vitale,.
+V4,2009-12-11,T2,p0003,zuc.pun,Zuccagnia ,punctata ,1,3,.,3,Nydia Vitale,.
+V1,2009-12-16,P6,p0003,zuc.pun,Zuccagnia ,punctata ,1,7,.,7,Belén Maldonado/Natacha Chacoff,.
+V4,2009-11-18,P6,p0004,hel.don,Helenium ,donianum,1,2,.,2,Natacha Chacoff,.
+V21,2009-12-18,P2,p0004,hel.don,Helenium ,donianum ,1,1,.,1,Diego Vázquez,.
+V1,2009-10-19,T2,p0006,men.dec,Menodora ,decemfida ,1,1,.,1,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-10-19,P5,p0006,men.dec,Menodora ,decemfida ,1,1,.,1,Diego Vázquez,.
+V1,2009-10-26,P2,p0006,men.dec,Menodora ,decemfida ,1,1,.,1,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-26,P6,p0006,men.dec,Menodora ,decemfida ,1,1,.,1,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-10-26,P5,p0006,men.dec,Menodora ,decemfida ,1,3,.,3,Diego Vázquez,.
+V18,2009-10-26,T2,p0006,men.dec,Menodora ,decemfida ,1,1,.,1,Diego Vázquez,.
+V19,2009-10-26,P5,p0006,men.dec,Menodora ,decemfida ,2,1,.,2,Diego Vázquez,.
+V4,2009-10-26,P5,p0006,men.dec,Menodora ,decemfida ,1,1,.,1,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-11-02,T1,p0006,men.dec,Menodora ,decemfida ,3,3.33,.,10,Diego Vázquez,.
+V4,2009-11-02,P5,p0006,men.dec,Menodora ,decemfida ,4,2,.,8,Diego Vázquez,.
+V4,2009-11-02,P6,p0006,men.dec,Menodora ,decemfida ,10,2.7,.,27,Diego Vázquez,.
+V4,2009-11-02,T2,p0006,men.dec,Menodora ,decemfida ,4,1,.,4,Diego Vázquez,.
+V1,2009-11-03,P2,p0006,men.dec,Menodora ,decemfida ,7,1.86,.,13,Diego Vázquez,.
+V1,2009-11-03,P6,p0006,men.dec,Menodora ,decemfida ,1,3,.,3,Diego Vázquez,.
+V1,2009-11-03,T2,p0006,men.dec,Menodora ,decemfida ,1,4,.,4,Diego Vázquez,.
+V19,2009-11-03,P2,p0006,men.dec,Menodora ,decemfida ,1,1,.,1,Diego Vázquez,.
+V19,2009-11-03,P5,p0006,men.dec,Menodora ,decemfida ,5,1,.,5,Diego Vázquez,.
+V19,2009-11-03,P6,p0006,men.dec,Menodora ,decemfida ,1,2,.,2,Diego Vázquez,.
+V19,2009-11-03,T1,p0006,men.dec,Menodora ,decemfida ,1,1,.,1,Diego Vázquez,.
+V1,2009-11-09,P2,p0006,men.dec,Menodora ,decemfida ,12,2.57,.,30.86,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-09,P6,p0006,men.dec,Menodora ,decemfida ,6,1.5,.,9,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-09,T1,p0006,men.dec,Menodora ,decemfida ,7,2,.,14,Natacha Chacoff,.
+V1,2009-11-09,T2,p0006,men.dec,Menodora ,decemfida ,2,1,.,2,Natacha Chacoff,.
+V18,2009-11-09,T1,p0006,men.dec,Menodora ,decemfida ,2,2,.,4,Diego Vázquez,.
+V19,2009-11-09,P2,p0006,men.dec,Menodora ,decemfida ,8,2.75,.,22,Diego Vázquez,.
+V19,2009-11-09,P5,p0006,men.dec,Menodora ,decemfida ,21,1.78,.,37.33,Diego Vázquez,.
+V19,2009-11-09,P6,p0006,men.dec,Menodora ,decemfida ,7,4.86,.,34,Diego Vázquez,.
+V19,2009-11-09,T1,p0006,men.dec,Menodora ,decemfida ,2,1,.,2,Diego Vázquez,.
+V4,2009-11-09,P2,p0006,men.dec,Menodora ,decemfida ,1,2,.,2,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,P5,p0006,men.dec,Menodora ,decemfida ,5,2.4,.,12,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,P6,p0006,men.dec,Menodora ,decemfida ,24,3.73,.,89.45,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,T1,p0006,men.dec,Menodora ,decemfida ,9,2,.,18,Natacha Chacoff,.
+V4,2009-11-09,T2,p0006,men.dec,Menodora ,decemfida ,13,1.33,.,17.33,Natacha Chacoff,.
+V1,2009-11-18,P2,p0006,men.dec,Menodora ,decemfida ,4,1.5,.,6,Rocío Castro Urgal/Nydia Vitale,.
+V1,2009-11-18,P6,p0006,men.dec,Menodora ,decemfida ,21,3,.,63,Natacha Chacoff,.
+V1,2009-11-18,T1,p0006,men.dec,Menodora ,decemfida ,13,2.46,.,32,Rocío Castro Urgal/Nydia Vitale,.
+V1,2009-11-18,T2,p0006,men.dec,Menodora ,decemfida ,6,1.33,.,8,Natacha Chacoff,.
+V4,2009-11-18,P2,p0006,men.dec,Menodora ,decemfida ,9,9.56,.,86,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-18,P5,p0006,men.dec,Menodora ,decemfida ,16,5.3,.,84.8,Natacha Chacoff,.
+V4,2009-11-18,P6,p0006,men.dec,Menodora ,decemfida ,2,16,.,32,Natacha Chacoff,.
+V4,2009-11-18,T1,p0006,men.dec,Menodora ,decemfida ,3,20.33,.,61,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-18,T2,p0006,men.dec,Menodora ,decemfida ,3,9,.,27,Natacha Chacoff,.
+V18,2009-11-19,T1,p0006,men.dec,Menodora ,decemfida ,1,1,.,1,Diego Vázquez,.
+V19,2009-11-19,P2,p0006,men.dec,Menodora ,decemfida ,42,3,.,126,Diego Vázquez,.
+V19,2009-11-19,P5,p0006,men.dec,Menodora ,decemfida ,50,2.9,.,145,Diego Vázquez,.
+V19,2009-11-19,P6,p0006,men.dec,Menodora ,decemfida ,22,12.1,.,266.2,Diego Vázquez,.
+V19,2009-11-19,T1,p0006,men.dec,Menodora ,decemfida ,18,2.6,.,46.8,Diego Vázquez,.
+V19,2009-11-19,T2,p0006,men.dec,Menodora ,decemfida ,25,7.1,.,177.5,Diego Vázquez,.
+V1,2009-11-23,P2,p0006,men.dec,Menodora ,decemfida ,9,11,.,99,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-23,T1,p0006,men.dec,Menodora ,decemfida ,10,1.8,.,18,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-23,T2,p0006,men.dec,Menodora ,decemfida ,4,1,.,4,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-11-23,T1,p0006,men.dec,Menodora ,decemfida ,2,5.5,.,11,Diego Vázquez,.
+V19,2009-11-23,P2,p0006,men.dec,Menodora ,decemfida ,37,12.43,.,459.91,Diego Vázquez,"No contÃ© flores, uso estim. de T2"
+V19,2009-11-23,P5,p0006,men.dec,Menodora ,decemfida ,50,12.43,.,621.5,Diego Vázquez,"No contÃ© flores, uso estim. de T2"
+V19,2009-11-23,P6,p0006,men.dec,Menodora ,decemfida ,60,13.36,.,801.82,Diego Vázquez,.
+V19,2009-11-23,T1,p0006,men.dec,Menodora ,decemfida ,18,12.43,.,223.74,Diego Vázquez,.
+V19,2009-11-23,T2,p0006,men.dec,Menodora ,decemfida ,24,12.43,.,298.29,Diego Vázquez,.
+V21,2009-11-23,P5,p0006,men.dec,Menodora ,decemfida ,1,4,.,4,Diego Vázquez,.
+V21,2009-11-23,P6,p0006,men.dec,Menodora ,decemfida ,2,5,.,10,Diego Vázquez,.
+V21,2009-11-23,P6,p0006,men.dec,Menodora ,decemfida ,4,2.75,.,11,Diego Vázquez,.
+V21,2009-11-23,T1,p0006,men.dec,Menodora ,decemfida ,1,3,.,3,Diego Vázquez,.
+V21,2009-11-23,T2,p0006,men.dec,Menodora ,decemfida ,1,1,.,1,Diego Vázquez,.
+V4,2009-11-23,P2,p0006,men.dec,Menodora ,decemfida ,8,7.11,.,56.89,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,P5,p0006,men.dec,Menodora ,decemfida ,1,4,.,4,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,P6,p0006,men.dec,Menodora ,decemfida ,37,4.14,.,153,Belén Maldonado/Nydia Vitale,.
+V4,2009-11-23,P6,p0006,men.dec,Menodora ,decemfida ,26,2.25,.,58.5,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,T1,p0006,men.dec,Menodora ,decemfida ,4,6.75,.,27,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,T2,p0006,men.dec,Menodora ,decemfida ,26,2.38,.,62,Belén Maldonado/Nydia Vitale,.
+V1,2009-11-30,P6,p0006,men.dec,Menodora ,decemfida ,2,1.5,.,3,Natacha Chacoff,.
+V1,2009-11-30,T1,p0006,men.dec,Menodora ,decemfida ,1,3,.,3,Natacha Chacoff,.
+V1,2009-11-30,T2,p0006,men.dec,Menodora ,decemfida ,1,1,.,1,Natacha Chacoff,.
+V4,2009-11-30,P2,p0006,men.dec,Menodora ,decemfida ,6,2.5,.,15,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-30,P5,p0006,men.dec,Menodora ,decemfida ,12,12.9,.,154.8,Natacha Chacoff,.
+V4,2009-11-30,P6,p0006,men.dec,Menodora ,decemfida ,12,1,.,12,Natacha Chacoff,Nachu no anotÃ³ no.flores_ind
+V4,2009-11-30,T1,p0006,men.dec,Menodora ,decemfida ,1,1,.,1,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-30,T2,p0006,men.dec,Menodora ,decemfida ,8,3.29,.,26.29,Rocío Castro Urgal/Nydia Vitale,.
+V19,2009-12-01,P2,p0006,men.dec,Menodora ,decemfida ,50,3.44,.,172.22,Diego Vázquez,.
+V19,2009-12-01,P5,p0006,men.dec,Menodora ,decemfida ,61,16.9,.,1030.9,Diego Vázquez,.
+V19,2009-12-01,P6,p0006,men.dec,Menodora ,decemfida ,22,4.1,.,90.2,Diego Vázquez,.
+V19,2009-12-01,T1,p0006,men.dec,Menodora ,decemfida ,11,4.1,.,45.1,Diego Vázquez,.
+V19,2009-12-01,T2,p0006,men.dec,Menodora ,decemfida ,8,3.38,.,27,Diego Vázquez,.
+V20,2009-12-01,P1,p0006,men.dec,Menodora ,decemfida ,1,2,.,2,Diego Vázquez,.
+V20,2009-12-01,P6,p0006,men.dec,Menodora ,decemfida ,1,3,.,3,Diego Vázquez,.
+V19,2009-12-16,P2,p0006,men.dec,Menodora ,decemfida ,1,1,.,1,Diego Vázquez,.
+V19,2009-12-16,P5,p0006,men.dec,Menodora ,decemfida ,12,9.8,.,117.6,Diego Vázquez,.
+V19,2009-12-16,T1,p0006,men.dec,Menodora ,decemfida ,2,1,.,2,Diego Vázquez,.
+V20,2009-12-16,P1,p0006,men.dec,Menodora ,decemfida ,1,3,.,3,Diego Vázquez,.
+V20,2009-12-16,P6,p0006,men.dec,Menodora ,decemfida ,5,41.5,.,207.5,Diego Vázquez,.
+V21,2009-12-18,P1,p0006,men.dec,Menodora ,decemfida ,1,19,.,19,Diego Vázquez,.
+V21,2009-12-18,P2,p0006,men.dec,Menodora ,decemfida ,6,11,.,66,Diego Vázquez,.
+V21,2009-12-18,P5,p0006,men.dec,Menodora ,decemfida ,14,14.22,.,199.11,Diego Vázquez,.
+V21,2009-12-18,P6,p0006,men.dec,Menodora ,decemfida ,15,14.2,.,213,Diego Vázquez,.
+V21,2009-12-18,T2,p0006,men.dec,Menodora ,decemfida ,2,24.5,.,49,Diego Vázquez,.
+V18,2009-10-05,P1,p0007,lyc.ten,Lycium ,tenuispinosum  ,6,11.67,.,70,Diego Vázquez,A. seriphioides con pimpollos
+V18,2009-10-05,P2,p0007,lyc.ten,Lycium ,tenuispinosum  ,2,11.5,.,23,Diego Vázquez,.
+V18,2009-10-05,P5,p0007,lyc.ten,Lycium ,tenuispinosum  ,4,6.25,.,25,Diego Vázquez,.
+V18,2009-10-05,P6,p0007,lyc.ten,Lycium ,tenuispinosum  ,1,14,.,14,Diego Vázquez,.
+V18,2009-10-05,T1,p0007,lyc.ten,Lycium ,tenuispinosum  ,2,8,.,16,Diego Vázquez,.
+V18,2009-10-12,P1,p0007,lyc.ten,Lycium ,tenuispinosum  ,6,6.5,.,39,Diego Vázquez,.
+V18,2009-10-12,P2,p0007,lyc.ten,Lycium ,tenuispinosum  ,6,8,.,48,Diego Vázquez,.
+V18,2009-10-12,P6,p0007,lyc.ten,Lycium ,tenuispinosum  ,4,6,.,24,Diego Vázquez,.
+V18,2009-10-12,T1,p0007,lyc.ten,Lycium ,tenuispinosum  ,2,6,.,12,Diego Vázquez,.
+V18,2009-10-19,P1,p0007,lyc.ten,Lycium ,tenuispinosum  ,5,4.6,.,23,Diego Vázquez,.
+V18,2009-10-19,P2,p0007,lyc.ten,Lycium ,tenuispinosum  ,5,3.4,.,17,Diego Vázquez,.
+V18,2009-10-19,P6,p0007,lyc.ten,Lycium ,tenuispinosum  ,4,14,.,56,Diego Vázquez,.
+V1,2009-10-26,P5,p0007,lyc.ten,Lycium ,tenuispinosum  ,1,2,.,2,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-26,P1,p0007,lyc.ten,Lycium ,tenuispinosum  ,2,2,.,4,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-26,T1,p0009,sen.aph,Senna ,aphylla ,1,4,.,4,Belén Maldonado/Rocío Castro Urgal,.
+V19,2009-10-26,T2,p0009,sen.aph,Senna ,aphylla ,1,10,.,10,Diego Vázquez,.
+V1,2009-11-03,P2,p0009,sen.aph,Senna ,aphylla ,1,5,.,5,Diego Vázquez,.
+V1,2009-11-03,P6,p0009,sen.aph,Senna ,aphylla ,2,75,.,150,Diego Vázquez,.
+V1,2009-11-03,T1,p0009,sen.aph,Senna ,aphylla ,6,16.54,.,99.25,Diego Vázquez,.
+V19,2009-11-03,T2,p0009,sen.aph,Senna ,aphylla ,2,32.5,.,65,Diego Vázquez,.
+V1,2009-11-09,P2,p0009,sen.aph,Senna ,aphylla ,5,12.4,.,62,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-09,P6,p0009,sen.aph,Senna ,aphylla ,5,23,.,115,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-09,T1,p0009,sen.aph,Senna ,aphylla ,6,61.67,.,370,Natacha Chacoff,.
+V1,2009-11-09,T2,p0009,sen.aph,Senna ,aphylla ,2,40,.,80,Natacha Chacoff,.
+V19,2009-11-09,T2,p0009,sen.aph,Senna ,aphylla ,3,30.33,.,91,Diego Vázquez,.
+V1,2009-11-18,P2,p0009,sen.aph,Senna ,aphylla ,10,123.71,.,1237.1,Rocío Castro Urgal/Nydia Vitale,.
+V1,2009-11-18,P6,p0009,sen.aph,Senna ,aphylla ,6,110.5,.,663,Natacha Chacoff,.
+V1,2009-11-18,T1,p0009,sen.aph,Senna ,aphylla ,7,87.43,.,612,Rocío Castro Urgal/Nydia Vitale,.
+V1,2009-11-18,T2,p0009,sen.aph,Senna ,aphylla ,1,24,.,24,Natacha Chacoff,.
+V19,2009-11-19,T2,p0009,sen.aph,Senna ,aphylla ,5,53.4,.,267,Diego Vázquez,.
+V1,2009-11-23,P2,p0009,sen.aph,Senna ,aphylla ,8,66,.,528,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-23,T1,p0009,sen.aph,Senna ,aphylla ,6,60.17,.,361,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-23,T2,p0009,sen.aph,Senna ,aphylla ,1,120,.,120,Belén Maldonado/Rocío Castro Urgal,.
+V19,2009-11-23,P1,p0009,sen.aph,Senna ,aphylla ,1,5,.,5,Diego Vázquez,.
+V19,2009-11-23,T2,p0009,sen.aph,Senna ,aphylla ,4,22.42,.,89.67,Diego Vázquez,.
+V4,2009-11-23,P6,p0009,sen.aph,Senna ,aphylla ,4,38,.,152,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-30,P2,p0009,sen.aph,Senna ,aphylla ,9,39.67,.,357,Rocío Castro Urgal/Nydia Vitale,.
+V1,2009-11-30,P6,p0009,sen.aph,Senna ,aphylla ,5,6.2,.,31,Natacha Chacoff,.
+V1,2009-11-30,T1,p0009,sen.aph,Senna ,aphylla ,6,6.5,.,39,Natacha Chacoff,.
+V1,2009-11-30,T2,p0009,sen.aph,Senna ,aphylla ,2,54.5,.,109,Natacha Chacoff,.
+V19,2009-12-01,P1,p0009,sen.aph,Senna ,aphylla ,1,3,.,3,Diego Vázquez,.
+V19,2009-12-01,T2,p0009,sen.aph,Senna ,aphylla ,1,6,.,6,Diego Vázquez,.
+V1,2009-12-11,T2,p0009,sen.aph,Senna ,aphylla ,1,3,.,3,Nydia Vitale,.
+V4,2009-12-11,T2,p0009,sen.aph,Senna ,aphylla ,3,4.67,.,14,Nydia Vitale,.
+V1,2009-12-16,P2,p0009,sen.aph,Senna ,aphylla ,3,1.33,.,4,Belén Maldonado/Natacha Chacoff,.
+V1,2009-12-16,T2,p0009,sen.aph,Senna ,aphylla ,1,2,.,2,Belén Maldonado/Natacha Chacoff,.
+V19,2009-12-16,T2,p0009,sen.aph,Senna ,aphylla ,1,1,.,1,Diego Vázquez,.
+V4,2009-10-05,P1,p0011,lyc.chi,Lycium ,chilense ,4,17.75,.,71,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-07,T2,p0011,lyc.chi,Lycium ,chilense ,1,1,.,1,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-12,P2,p0011,lyc.chi,Lycium ,chilense ,1,20,.,20,Rocío Castro Urgal/Belén Maldonado,.
+V19,2009-10-12,P5,p0011,lyc.chi,Lycium ,chilense ,1,3,.,3,Diego Vázquez,.
+V4,2009-10-12,P1,p0011,lyc.chi,Lycium ,chilense ,7,23.43,.,164,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-12,P2,p0011,lyc.chi,Lycium ,chilense ,6,5.83,.,35,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-12,P5,p0011,lyc.chi,Lycium ,chilense ,3,5,.,15,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-12,T1,p0011,lyc.chi,Lycium ,chilense ,6,7.83,.,47,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-19,P5,p0011,lyc.chi,Lycium ,chilense ,2,45,.,90,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-19,P6,p0011,lyc.chi,Lycium ,chilense ,1,2,.,2,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-19,P1,p0011,lyc.chi,Lycium ,chilense ,6,3.17,.,19,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-19,P2,p0011,lyc.chi,Lycium ,chilense ,3,8.67,.,26,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-19,P6,p0011,lyc.chi,Lycium ,chilense ,1,6,.,6,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-19,T1,p0011,lyc.chi,Lycium ,chilense ,2,15,.,30,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-19,T2,p0011,lyc.chi,Lycium ,chilense ,1,20,.,20,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-26,P5,p0011,lyc.chi,Lycium ,chilense ,1,3,.,3,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-26,P1,p0011,lyc.chi,Lycium ,chilense ,1,1,.,1,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-26,P2,p0011,lyc.chi,Lycium ,chilense ,1,2,.,2,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-26,T1,p0011,lyc.chi,Lycium ,chilense ,2,1,.,2,Belén Maldonado/Rocío Castro Urgal,.
+V19,2009-10-05,T1,p0015,cer.arv,Cerastium ,arvense,.,.,.,.,Diego Vázquez,Confirmar identificaciÃ³n
+V19,2009-10-12,T1,p0015,cer.arv,Cerastium ,arvense,.,.,2,2,Diego Vázquez,.
+V19,2009-10-19,P2,p0015,cer.arv,Cerastium ,arvense,.,.,5,5,Diego Vázquez,.
+V19,2009-10-19,T1,p0015,cer.arv,Cerastium ,arvense,.,.,37,37,Diego Vázquez,.
+V20,2009-10-19,P5,p0015,cer.arv,Cerastium ,arvense,.,.,8,8,Diego Vázquez,.
+V21,2009-10-19,P6,p0015,cer.arv,Cerastium ,arvense,.,.,2,2,Diego Vázquez,.
+V19,2009-10-26,T1,p0015,cer.arv,Cerastium ,arvense,.,.,68,68,Diego Vázquez,.
+V20,2009-10-26,P5,p0015,cer.arv,Cerastium ,arvense,.,.,10,10,Diego Vázquez,.
+V19,2009-11-03,T1,p0015,cer.arv,Cerastium ,arvense,.,.,27,27,Diego Vázquez,.
+V20,2009-11-03,P5,p0015,cer.arv,Cerastium ,arvense,.,.,7,7,Diego Vázquez,.
+V19,2009-11-09,T1,p0015,cer.arv,Cerastium ,arvense,.,.,2,2,Diego Vázquez,.
+V20,2009-11-09,P5,p0015,cer.arv,Cerastium ,arvense,.,.,1,1,Diego Vázquez,.
+V19,2009-10-26,P1,p0018,bud.men,Buddleja  ,mendozensis ,1,10,.,10,Diego Vázquez,.
+V19,2009-10-26,T2,p0018,bud.men,Buddleja  ,mendozensis ,3,4.33,.,13,Diego Vázquez,.
+V19,2009-11-03,P1,p0018,bud.men,Buddleja  ,mendozensis ,3,140,.,420,Diego Vázquez,.
+V19,2009-11-03,T2,p0018,bud.men,Buddleja  ,mendozensis ,1,40,.,40,Diego Vázquez,.
+V19,2009-11-09,T2,p0018,bud.men,Buddleja  ,mendozensis ,1,150,.,150,Diego Vázquez,.
+V19,2009-11-19,P1,p0018,bud.men,Buddleja  ,mendozensis ,2,300,.,600,Diego Vázquez,.
+V21,2009-11-23,.,p0018,bud.men,Buddleja  ,mendozensis ,.,.,.,.,Diego Vázquez,.
+V21,2009-12-18,P2,p0018,bud.men,Buddleja  ,mendozensis ,1,1000,.,1000,Diego Vázquez,.
+V1,2009-10-12,T2,p0019,aca.ser,Acantholippia ,seriphioides ,1,6,.,6,Diego Vázquez,.
+V18,2009-10-12,P1,p0019,aca.ser,Acantholippia ,seriphioides ,12,5.9,.,70.8,Diego Vázquez,.
+V18,2009-10-12,T1,p0019,aca.ser,Acantholippia ,seriphioides ,4,11,.,44,Diego Vázquez,.
+V18,2009-10-12,T2,p0019,aca.ser,Acantholippia ,seriphioides ,3,3.33,.,10,Diego Vázquez,.
+V4,2009-10-12,P2,p0019,aca.ser,Acantholippia ,seriphioides ,1,3,.,3,Rocío Castro Urgal/Belén Maldonado,.
+V18,2009-10-19,P1,p0019,aca.ser,Acantholippia ,seriphioides ,10,8.3,.,83,Diego Vázquez,.
+V18,2009-10-19,P2,p0019,aca.ser,Acantholippia ,seriphioides ,2,46.5,.,93,Diego Vázquez,.
+V18,2009-10-19,P6,p0019,aca.ser,Acantholippia ,seriphioides ,1,15,.,15,Diego Vázquez,.
+V18,2009-10-19,T1,p0019,aca.ser,Acantholippia ,seriphioides ,7,20,.,140,Diego Vázquez,.
+V18,2009-10-19,T2,p0019,aca.ser,Acantholippia ,seriphioides ,25,10.6,.,265,Diego Vázquez,.
+V4,2009-10-19,P1,p0019,aca.ser,Acantholippia ,seriphioides ,6,6.67,.,40,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-19,P5,p0019,aca.ser,Acantholippia ,seriphioides ,4,9.67,.,38.67,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-19,T1,p0019,aca.ser,Acantholippia ,seriphioides ,7,21.83,.,152.83,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-10-26,P1,p0019,aca.ser,Acantholippia ,seriphioides ,2,13,.,26,Diego Vázquez,.
+V18,2009-10-26,T1,p0019,aca.ser,Acantholippia ,seriphioides ,3,30,.,90,Diego Vázquez,.
+V18,2009-10-26,T2,p0019,aca.ser,Acantholippia ,seriphioides ,7,17.71,.,124,Diego Vázquez,.
+V19,2009-10-26,P1,p0019,aca.ser,Acantholippia ,seriphioides ,16,7.9,.,126.4,Diego Vázquez,.
+V21,2009-10-26,P1,p0019,aca.ser,Acantholippia ,seriphioides ,4,7,.,28,Diego Vázquez,.
+V4,2009-10-26,P1,p0019,aca.ser,Acantholippia ,seriphioides ,7,6.57,.,46,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-26,P5,p0019,aca.ser,Acantholippia ,seriphioides ,5,15.4,.,77,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-26,P6,p0019,aca.ser,Acantholippia ,seriphioides ,3,6,.,18,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-26,T1,p0019,aca.ser,Acantholippia ,seriphioides ,12,20.4,.,244.8,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-26,T2,p0019,aca.ser,Acantholippia ,seriphioides ,2,9,.,18,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-11-02,T1,p0019,aca.ser,Acantholippia ,seriphioides ,4,7,.,28,Diego Vázquez,.
+V4,2009-11-02,P5,p0019,aca.ser,Acantholippia ,seriphioides ,4,18.75,.,75,Diego Vázquez,.
+V4,2009-11-02,T1,p0019,aca.ser,Acantholippia ,seriphioides ,3,7.67,.,23,Diego Vázquez,.
+V19,2009-11-03,P1,p0019,aca.ser,Acantholippia ,seriphioides ,1,10,.,10,Diego Vázquez,.
+V21,2009-11-03,P1,p0019,aca.ser,Acantholippia ,seriphioides ,7,36,.,252,Diego Vázquez,.
+V21,2009-11-09,P1,p0019,aca.ser,Acantholippia ,seriphioides ,4,23.75,.,95,Diego Vázquez,.
+V4,2009-11-09,P5,p0019,aca.ser,Acantholippia ,seriphioides ,1,4,.,4,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,T1,p0019,aca.ser,Acantholippia ,seriphioides ,2,26.5,.,53,Natacha Chacoff,.
+V4,2009-10-26,P2,p0021,sch.fas,Schinus,aff. fasciculata ,1,1,.,1,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,P2,p0021,sch.fas,Schinus,aff. fasciculata ,2,380,.,760,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-18,P2,p0021,sch.fas,Schinus,aff. fasciculata ,1,150,.,150,Rocío Castro Urgal/Nydia Vitale,.
+V20,2009-11-19,T2,p0021,sch.fas,Schinus,aff. fasciculata ,2,487.5,.,975,Diego Vázquez,.
+V4,2009-11-23,P2,p0021,sch.fas,Schinus,aff. fasciculata ,1,50,.,50,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-30,P2,p0021,sch.fas,Schinus,aff. fasciculata ,1,100,.,100,Rocío Castro Urgal/Nydia Vitale,.
+V20,2009-12-01,T2,p0021,sch.fas,Schinus,aff. fasciculata ,2,1250,.,2500,Diego Vázquez,.
+V20,2009-12-16,P5,p0023,cle.mon,Clematis ,montevidensis ,1,14,.,14,Diego Vázquez,.
+V20,2009-12-16,T1,p0023,cle.mon,Clematis ,montevidensis ,1,5,.,5,Diego Vázquez,.
+V4,2009-10-05,P6,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,1,1,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-07,P2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,1,1,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-12,P2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,9,9,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-12,P6,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,5,5,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-12,T1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,11,.,11,Diego Vázquez,.
+V4,2009-10-12,P5,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,4,4,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-12,P6,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,42,42,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-12,T1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,3,3,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-19,P2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,56,56,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-19,P6,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,47,47,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-19,T1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,52,52,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-19,T2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,87,87,Belén Maldonado/Rocío Castro Urgal,.
+V19,2009-10-19,P1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,3,3,Diego Vázquez,.
+V4,2009-10-19,P1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,12,12,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-19,P5,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,23,23,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-19,P6,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,202,202,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-19,T1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,33,33,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-19,T2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,6,6,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-26,P2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,181,181,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-26,P5,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,10,10,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-26,P6,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,39,39,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-26,T1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,75,75,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-26,T2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,75,75,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-10-26,P1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,3,3,Diego Vázquez,.
+V18,2009-10-26,P6,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,7,.,7,Diego Vázquez,.
+V18,2009-10-26,T2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,3,3,Diego Vázquez,.
+V19,2009-10-26,P1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,95,95,Diego Vázquez,.
+V19,2009-10-26,P5,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,7,7,Diego Vázquez,.
+V19,2009-10-26,P6,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,2,2,Diego Vázquez,.
+V19,2009-10-26,T2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,2,2,Diego Vázquez,.
+V21,2009-10-26,P5,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,3,3,Diego Vázquez,.
+V4,2009-10-26,P1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,58,58,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-26,P2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,6,6,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-26,P5,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,112,112,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-26,P6,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,999.04,999.04,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-26,T1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,44,44,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-26,T1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,102,102,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-26,T2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,.,11,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-11-02,T2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,7,7,Diego Vázquez,.
+V4,2009-11-02,P1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,44,44,Diego Vázquez,.
+V4,2009-11-02,P2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,34.67,34.67,Diego Vázquez,.
+V4,2009-11-02,P5,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,8,8,Diego Vázquez,.
+V4,2009-11-02,P6,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,235,235,Diego Vázquez,.
+V4,2009-11-02,T1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,157,157,Diego Vázquez,.
+V4,2009-11-02,T2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,40,40,Diego Vázquez,.
+V1,2009-11-03,P2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,80,80,Diego Vázquez,.
+V1,2009-11-03,P6,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,6,6,Diego Vázquez,.
+V1,2009-11-03,T1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,97,97,Diego Vázquez,.
+V1,2009-11-03,T2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,15,15,Diego Vázquez,.
+V19,2009-11-03,P1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,200,200,Diego Vázquez,.
+V19,2009-11-03,P2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,6,6,Diego Vázquez,.
+V19,2009-11-03,P5,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,12,12,Diego Vázquez,.
+V19,2009-11-03,P6,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,2,2,Diego Vázquez,.
+V19,2009-11-03,T1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,27,27,Diego Vázquez,.
+V21,2009-11-03,P1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,24,24,Diego Vázquez,.
+V21,2009-11-03,P2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,7,7,Diego Vázquez,.
+V21,2009-11-03,P5,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,43,43,Diego Vázquez,.
+V21,2009-11-03,T2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,11,11,Diego Vázquez,.
+V1,2009-11-09,P2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,12,15.5,.,186,Belén Maldonado/Rocío Castro Urgal,.
+V19,2009-11-09,P1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,60,60,Diego Vázquez,.
+V19,2009-11-09,T1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,10,10,Diego Vázquez,.
+V20,2009-11-09,P1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,1,1,Diego Vázquez,.
+V21,2009-11-09,P1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,30,30,Diego Vázquez,.
+V21,2009-11-09,P5,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,10,10,Diego Vázquez,.
+V4,2009-11-09,P1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,47,47,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,P2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,56,56,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,P5,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,14,14,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,P6,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,273,273,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,T1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,5,5,Natacha Chacoff,.
+V4,2009-11-09,T2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,13,13,Natacha Chacoff,.
+V1,2009-11-18,P2,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,2,.,2,Rocío Castro Urgal/Nydia Vitale,.
+V19,2009-11-19,T1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,.,.,2,2,Diego Vázquez,.
+V20,2009-12-16,P1,p0025,thy.pen,Thymophylla,pentachaeta var. belenidium,1,1,.,1,Diego Vázquez,.
+V1,2009-10-19,P1,p0026,alo.gra,Aloyssia ,gratissima ,1,140,.,140,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-10-19,.,p0026,alo.gra,Aloyssia ,gratissima ,.,.,.,.,Diego Vázquez,Fuera de parcelas
+V19,2009-10-19,P2,p0026,alo.gra,Aloyssia ,gratissima ,2,253,.,506,Diego Vázquez,.
+V19,2009-10-19,P6,p0026,alo.gra,Aloyssia ,gratissima ,5,119.6,.,598,Diego Vázquez,.
+V19,2009-10-19,T2,p0026,alo.gra,Aloyssia ,gratissima ,2,13.5,.,27,Diego Vázquez,.
+V4,2009-10-19,T1,p0026,alo.gra,Aloyssia ,gratissima ,1,75,.,75,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-26,P1,p0026,alo.gra,Aloyssia ,gratissima ,3,158.33,.,475,Belén Maldonado/Rocío Castro Urgal,.
+V19,2009-10-26,P5,p0026,alo.gra,Aloyssia ,gratissima ,2,102.5,.,205,Diego Vázquez,.
+V19,2009-10-26,T1,p0026,alo.gra,Aloyssia ,gratissima ,1,69,.,69,Diego Vázquez,.
+V19,2009-10-26,T2,p0026,alo.gra,Aloyssia ,gratissima ,5,44.2,.,221,Diego Vázquez,.
+V19,2009-11-03,P5,p0026,alo.gra,Aloyssia ,gratissima ,1,45,.,45,Diego Vázquez,.
+V19,2009-11-03,T2,p0026,alo.gra,Aloyssia ,gratissima ,1,10,.,10,Diego Vázquez,.
+V20,2009-11-03,P2,p0026,alo.gra,Aloyssia ,gratissima ,1,15,.,15,Diego Vázquez,.
+V21,2009-11-03,T2,p0026,alo.gra,Aloyssia ,gratissima ,2,21.5,.,43,Diego Vázquez,.
+V18,2009-11-02,P1,p0032,con.mic,Condalia,microphylla,1,350,.,350,Diego Vázquez,.
+V4,2009-11-02,P1,p0032,con.mic,Condalia,microphylla,3,1453.33,.,4360,Diego Vázquez,.
+V4,2009-11-02,P6,p0032,con.mic,Condalia,microphylla,1,50,.,50,Diego Vázquez,.
+V1,2009-11-03,P6,p0032,con.mic,Condalia,microphylla,1,200,.,200,Diego Vázquez,.
+V1,2009-11-03,T2,p0032,con.mic,Condalia,microphylla,2,800,.,1600,Diego Vázquez,.
+V19,2009-11-03,P1,p0032,con.mic,Condalia,microphylla,3,333.33,.,1000,Diego Vázquez,.
+V19,2009-11-03,P2,p0032,con.mic,Condalia,microphylla,2,225,.,450,Diego Vázquez,.
+V19,2009-11-03,P5,p0032,con.mic,Condalia,microphylla,1,200,.,200,Diego Vázquez,.
+V1,2009-11-09,P2,p0032,con.mic,Condalia,microphylla,1,300,.,300,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-09,T2,p0032,con.mic,Condalia,microphylla,2,2850,.,5700,Natacha Chacoff,.
+V18,2009-11-09,P1,p0032,con.mic,Condalia,microphylla,1,300,.,300,Diego Vázquez,.
+V18,2009-11-09,T1,p0032,con.mic,Condalia,microphylla,1,3000,.,3000,Diego Vázquez,.
+V19,2009-11-09,P1,p0032,con.mic,Condalia,microphylla,4,312.5,.,1250,Diego Vázquez,.
+V19,2009-11-09,P2,p0032,con.mic,Condalia,microphylla,2,550,.,1100,Diego Vázquez,.
+V19,2009-11-09,T1,p0032,con.mic,Condalia,microphylla,1,100,.,100,Diego Vázquez,.
+V20,2009-11-09,T2,p0032,con.mic,Condalia,microphylla,1,100,.,100,Diego Vázquez,Mucho pimpollos
+V4,2009-11-09,P1,p0032,con.mic,Condalia,microphylla,2,2750,.,5500,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,P2,p0032,con.mic,Condalia,microphylla,3,4266.67,.,12800,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,P6,p0032,con.mic,Condalia,microphylla,1,6000,.,6000,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,T1,p0032,con.mic,Condalia,microphylla,1,2000,.,2000,Natacha Chacoff,.
+V1,2009-11-18,P2,p0032,con.mic,Condalia,microphylla,1,500,.,500,Rocío Castro Urgal/Nydia Vitale,.
+V1,2009-11-18,P6,p0032,con.mic,Condalia,microphylla,1,300,.,300,Natacha Chacoff,.
+V1,2009-11-18,T2,p0032,con.mic,Condalia,microphylla,2,2095,.,4190,Natacha Chacoff,.
+V4,2009-11-18,P1,p0032,con.mic,Condalia,microphylla,2,60000,.,120000,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-18,P2,p0032,con.mic,Condalia,microphylla,2,8500,.,17000,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-18,P6,p0032,con.mic,Condalia,microphylla,1,10000,.,10000,Natacha Chacoff,.
+V18,2009-11-19,P2,p0032,con.mic,Condalia,microphylla,1,700,.,700,Diego Vázquez,.
+V18,2009-11-19,T1,p0032,con.mic,Condalia,microphylla,1,3000,.,3000,Diego Vázquez,.
+V19,2009-11-19,P1,p0032,con.mic,Condalia,microphylla,4,250,.,1000,Diego Vázquez,.
+V19,2009-11-19,P5,p0032,con.mic,Condalia,microphylla,1,333.33,.,333.33,Diego Vázquez,.
+V19,2009-11-19,T1,p0032,con.mic,Condalia,microphylla,1,200,.,200,Diego Vázquez,.
+V20,2009-11-19,T1,p0032,con.mic,Condalia,microphylla,1,5,.,5,Diego Vázquez,muchos pimpollos
+V20,2009-11-19,T2,p0032,con.mic,Condalia,microphylla,1,600,.,600,Diego Vázquez,.
+V1,2009-11-23,T2,p0032,con.mic,Condalia,microphylla,2,1400,.,2800,Belén Maldonado/Rocío Castro Urgal,.
+V19,2009-11-23,P1,p0032,con.mic,Condalia,microphylla,1,1000,.,1000,Diego Vázquez,.
+V20,2009-11-23,T2,p0032,con.mic,Condalia,microphylla,1,400,.,400,Diego Vázquez,"Baccharis en flor, no lo cuento"
+V20,2009-11-23,T2,p0032,con.mic,Condalia,microphylla,1,300,.,300,Diego Vázquez,.
+V4,2009-11-23,P1,p0032,con.mic,Condalia,microphylla,2,400,.,800,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,P2,p0032,con.mic,Condalia,microphylla,2,1500,.,3000,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,P6,p0032,con.mic,Condalia,microphylla,1,1500,.,1500,Belén Maldonado/Nydia Vitale,.
+V4,2009-11-23,P6,p0032,con.mic,Condalia,microphylla,2,850,.,1700,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-30,P6,p0032,con.mic,Condalia,microphylla,1,15,.,15,Natacha Chacoff,.
+V4,2009-11-30,P1,p0032,con.mic,Condalia,microphylla,2,315,.,630,Belén Maldonado,.
+V4,2009-11-30,P6,p0032,con.mic,Condalia,microphylla,1,60,.,60,Natacha Chacoff,.
+V19,2009-12-01,P1,p0032,con.mic,Condalia,microphylla,2,620,.,1240,Diego Vázquez,.
+V20,2009-12-01,P1,p0032,con.mic,Condalia,microphylla,1,1200,.,1200,Diego Vázquez,"baccharis en flor, no lo cuento"
+V20,2009-12-01,P6,p0032,con.mic,Condalia,microphylla,1,6000,.,6000,Diego Vázquez,.
+V20,2009-12-01,T1,p0032,con.mic,Condalia,microphylla,1,4000,.,4000,Diego Vázquez,.
+V20,2009-12-01,T2,p0032,con.mic,Condalia,microphylla,1,300,.,300,Diego Vázquez,.
+V20,2009-12-16,T1,p0032,con.mic,Condalia,microphylla,1,2500,.,2500,Diego Vázquez,.
+V1,2009-10-26,P1,p0034,lar.div,Larrea,divaricata,1,7,.,7,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-11-02,P2,p0034,lar.div,Larrea,divaricata,1,300,.,300,Diego Vázquez,Muchos pimpollos
+V18,2009-11-02,P5,p0034,lar.div,Larrea,divaricata,1,2,.,2,Diego Vázquez,.
+V18,2009-11-02,P6,p0034,lar.div,Larrea,divaricata,1,17.5,.,17.5,Diego Vázquez,.
+V4,2009-11-02,P2,p0034,lar.div,Larrea,divaricata,2,128.48,.,256.95,Diego Vázquez,.
+V4,2009-11-02,P5,p0034,lar.div,Larrea,divaricata,1,75,.,75,Diego Vázquez,.
+V4,2009-11-02,T1,p0034,lar.div,Larrea,divaricata,2,2.88,.,5.75,Diego Vázquez,.
+V1,2009-11-03,P1,p0034,lar.div,Larrea,divaricata,6,262.83,.,1577,Diego Vázquez,.
+V1,2009-11-03,P5,p0034,lar.div,Larrea,divaricata,2,65,.,130,Diego Vázquez,.
+V1,2009-11-09,P1,p0034,lar.div,Larrea,divaricata,5,36.8,.,184,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-09,P5,p0034,lar.div,Larrea,divaricata,2,15,.,30,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-09,T2,p0034,lar.div,Larrea,divaricata,2,151.5,.,303,Natacha Chacoff,.
+V18,2009-11-09,P2,p0034,lar.div,Larrea,divaricata,1,540,.,540,Diego Vázquez,.
+V18,2009-11-09,P5,p0034,lar.div,Larrea,divaricata,1,3,.,3,Diego Vázquez,.
+V18,2009-11-09,P6,p0034,lar.div,Larrea,divaricata,3,26.67,.,80,Diego Vázquez,.
+V4,2009-11-09,P1,p0034,lar.div,Larrea,divaricata,1,3,.,3,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,P2,p0034,lar.div,Larrea,divaricata,2,630,.,1260,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,P5,p0034,lar.div,Larrea,divaricata,4,20.75,.,83,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-09,T1,p0034,lar.div,Larrea,divaricata,8,189.13,.,1513,Natacha Chacoff,.
+V4,2009-11-09,T2,p0034,lar.div,Larrea,divaricata,3,4.67,.,14,Natacha Chacoff,.
+V1,2009-11-18,P1,p0034,lar.div,Larrea,divaricata,6,110.33,.,662,Rocío Castro Urgal/Nydia Vitale,.
+V1,2009-11-18,P2,p0034,lar.div,Larrea,divaricata,1,1,.,1,Rocío Castro Urgal/Nydia Vitale,.
+V1,2009-11-18,P5,p0034,lar.div,Larrea,divaricata,10,92.67,.,926.67,Natacha Chacoff,.
+V1,2009-11-18,T2,p0034,lar.div,Larrea,divaricata,4,78.25,.,313,Natacha Chacoff,.
+V4,2009-11-18,P1,p0034,lar.div,Larrea,divaricata,10,23.5,.,235,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-18,P2,p0034,lar.div,Larrea,divaricata,6,354.67,.,2128,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-18,P5,p0034,lar.div,Larrea,divaricata,11,98.89,.,1087.78,Natacha Chacoff,.
+V4,2009-11-18,T1,p0034,lar.div,Larrea,divaricata,11,110.12,.,1211.34,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-18,T2,p0034,lar.div,Larrea,divaricata,4,45.25,.,181,Natacha Chacoff,.
+V18,2009-11-19,P2,p0034,lar.div,Larrea,divaricata,5,60.4,.,302,Diego Vázquez,.
+V18,2009-11-19,P5,p0034,lar.div,Larrea,divaricata,6,56.67,.,340,Diego Vázquez,.
+V18,2009-11-19,P6,p0034,lar.div,Larrea,divaricata,7,287.43,.,2012,Diego Vázquez,.
+V1,2009-11-23,P2,p0034,lar.div,Larrea,divaricata,1,15,.,15,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-23,T2,p0034,lar.div,Larrea,divaricata,4,27,.,108,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-11-23,P1,p0034,lar.div,Larrea,divaricata,2,14.17,.,28.33,Diego Vázquez,.
+V18,2009-11-23,P2,p0034,lar.div,Larrea,divaricata,1,1,.,1,Diego Vázquez,.
+V18,2009-11-23,P5,p0034,lar.div,Larrea,divaricata,4,107.5,.,430,Diego Vázquez,.
+V18,2009-11-23,P6,p0034,lar.div,Larrea,divaricata,5,88,.,440,Diego Vázquez,.
+V4,2009-11-23,P1,p0034,lar.div,Larrea,divaricata,7,34.48,.,241.33,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,P1,p0034,lar.div,Larrea,divaricata,3,1653,.,4959,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,P2,p0034,lar.div,Larrea,divaricata,7,51.55,.,360.83,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,P5,p0034,lar.div,Larrea,divaricata,4,24,.,96,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,P5,p0034,lar.div,Larrea,divaricata,8,80,.,640,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,T1,p0034,lar.div,Larrea,divaricata,10,23.5,.,235,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,T2,p0034,lar.div,Larrea,divaricata,3,28.33,.,85,Belén Maldonado/Nydia Vitale,.
+V4,2009-11-23,T2,p0034,lar.div,Larrea,divaricata,1,8,.,8,Belén Maldonado/Nydia Vitale,.
+V1,2009-11-30,P5,p0034,lar.div,Larrea,divaricata,7,50.33,.,352.33,Natacha Chacoff,.
+V1,2009-11-30,T2,p0034,lar.div,Larrea,divaricata,3,4.33,.,13,Natacha Chacoff,.
+V4,2009-11-30,P1,p0034,lar.div,Larrea,divaricata,5,14.6,.,73,Belén Maldonado,.
+V4,2009-11-30,P1,p0034,lar.div,Larrea,divaricata,1,10,.,10,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-30,P2,p0034,lar.div,Larrea,divaricata,3,8.33,.,25,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-30,T1,p0034,lar.div,Larrea,divaricata,6,6.67,.,40,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-30,T2,p0034,lar.div,Larrea,divaricata,2,1.5,.,3,Rocío Castro Urgal/Nydia Vitale,.
+V18,2009-12-01,P6,p0034,lar.div,Larrea,divaricata,1,16,.,16,Diego Vázquez,.
+V1,2009-09-28,P1,p0035,lar.nit,Larrea,nitida,.,.,18,18,Belén Maldonado/Nydia Vitale,.
+V1,2009-10-07,P1,p0035,lar.nit,Larrea,nitida,4,118.25,.,473,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-12,P1,p0035,lar.nit,Larrea,nitida,5,105,.,525,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-19,P1,p0035,lar.nit,Larrea,nitida,8,146.79,.,1174.29,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-19,P5,p0035,lar.nit,Larrea,nitida,1,61,.,61,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-26,P1,p0035,lar.nit,Larrea,nitida,6,47.57,.,285.43,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-26,P5,p0035,lar.nit,Larrea,nitida,1,125,.,125,Belén Maldonado/Rocío Castro Urgal,.
+V20,2009-10-26,.,p0035,lar.nit,Larrea,nitida,.,.,.,.,Diego Vázquez,Fuera de parcelas
+V20,2009-11-03,P6,p0035,lar.nit,Larrea,nitida,4,60,.,240,Diego Vázquez,.
+V20,2009-11-09,P6,p0035,lar.nit,Larrea,nitida,5,22.8,.,114,Diego Vázquez,.
+V19,2009-10-26,.,p0036,lec.het,Lecanophora,heterophylla,.,.,.,.,Diego Vázquez,Fuera de parcelas
+V4,2009-11-02,P2,p0036,lec.het,Lecanophora,heterophylla,1,1,.,1,Diego Vázquez,.
+V18,2009-11-02,.,p0037,opu.sul,Opuntia,sulphurea,1,2,.,2,Diego Vázquez,Fuera de parcelas
+V18,2009-11-09,P5,p0037,opu.sul,Opuntia,sulphurea,1,4,.,4,Diego Vázquez,.
+V19,2009-11-09,.,p0037,opu.sul,Opuntia,sulphurea,.,.,.,.,Diego Vázquez,.
+V19,2009-11-09,T2,p0037,opu.sul,Opuntia,sulphurea,1,5,.,5,Diego Vázquez,.
+V1,2009-11-18,P5,p0037,opu.sul,Opuntia,sulphurea,3,5.33,.,16,Natacha Chacoff,.
+V4,2009-11-18,P1,p0037,opu.sul,Opuntia,sulphurea,3,3,.,9,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-18,P2,p0037,opu.sul,Opuntia,sulphurea,1,4,.,4,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-18,P5,p0037,opu.sul,Opuntia,sulphurea,3,10.33,.,31,Natacha Chacoff,.
+V4,2009-11-18,P6,p0037,opu.sul,Opuntia,sulphurea,1,1,.,1,Natacha Chacoff,.
+V4,2009-11-18,T1,p0037,opu.sul,Opuntia,sulphurea,2,1.5,.,3,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-18,T2,p0037,opu.sul,Opuntia,sulphurea,1,14,.,14,Natacha Chacoff,.
+V18,2009-11-19,P2,p0037,opu.sul,Opuntia,sulphurea,1,2,.,2,Diego Vázquez,.
+V19,2009-11-19,P5,p0037,opu.sul,Opuntia,sulphurea,1,2,.,2,Diego Vázquez,.
+V19,2009-11-19,T2,p0037,opu.sul,Opuntia,sulphurea,1,10,.,10,Diego Vázquez,.
+V1,2009-11-23,P2,p0037,opu.sul,Opuntia,sulphurea,1,1,.,1,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-11-23,P2,p0037,opu.sul,Opuntia,sulphurea,1,2,.,2,Diego Vázquez,.
+V18,2009-11-23,P5,p0037,opu.sul,Opuntia,sulphurea,2,1.5,.,3,Diego Vázquez,.
+V18,2009-11-23,T2,p0037,opu.sul,Opuntia,sulphurea,1,4,.,4,Diego Vázquez,.
+V19,2009-11-23,P5,p0037,opu.sul,Opuntia,sulphurea,2,5.5,.,11,Diego Vázquez,.
+V19,2009-11-23,P6,p0037,opu.sul,Opuntia,sulphurea,1,6,.,6,Diego Vázquez,.
+V19,2009-11-23,T2,p0037,opu.sul,Opuntia,sulphurea,2,7,.,14,Diego Vázquez,.
+V4,2009-11-23,P1,p0037,opu.sul,Opuntia,sulphurea,7,2.14,.,15,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,P1,p0037,opu.sul,Opuntia,sulphurea,5,4.2,.,21,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,P2,p0037,opu.sul,Opuntia,sulphurea,2,6,.,12,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,P5,p0037,opu.sul,Opuntia,sulphurea,10,6.4,.,64,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,P5,p0037,opu.sul,Opuntia,sulphurea,9,10.25,.,92.25,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,P6,p0037,opu.sul,Opuntia,sulphurea,1,4,.,4,Belén Maldonado/Nydia Vitale,.
+V4,2009-11-23,T1,p0037,opu.sul,Opuntia,sulphurea,4,2.5,.,10,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-23,T2,p0037,opu.sul,Opuntia,sulphurea,5,2,.,10,Belén Maldonado/Nydia Vitale,.
+V1,2009-11-30,P2,p0037,opu.sul,Opuntia,sulphurea,1,3,.,3,Rocío Castro Urgal/Nydia Vitale,.
+V1,2009-11-30,P5,p0037,opu.sul,Opuntia,sulphurea,4,10.75,.,43,Natacha Chacoff,.
+V4,2009-11-30,P1,p0037,opu.sul,Opuntia,sulphurea,18,1.92,.,34.5,Belén Maldonado,.
+V4,2009-11-30,P1,p0037,opu.sul,Opuntia,sulphurea,3,3,.,9,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-30,P2,p0037,opu.sul,Opuntia,sulphurea,4,3.5,.,14,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-30,P5,p0037,opu.sul,Opuntia,sulphurea,7,8.57,.,60,Natacha Chacoff,.
+V4,2009-11-30,P6,p0037,opu.sul,Opuntia,sulphurea,2,2.5,.,5,Natacha Chacoff,.
+V4,2009-11-30,T1,p0037,opu.sul,Opuntia,sulphurea,9,2,.,18,Rocío Castro Urgal/Nydia Vitale,.
+V4,2009-11-30,T2,p0037,opu.sul,Opuntia,sulphurea,2,5,.,10,Rocío Castro Urgal/Nydia Vitale,.
+V18,2009-12-01,P2,p0037,opu.sul,Opuntia,sulphurea,1,1,.,1,Diego Vázquez,.
+V18,2009-12-01,P5,p0037,opu.sul,Opuntia,sulphurea,4,3,.,12,Diego Vázquez,.
+V18,2009-12-01,T2,p0037,opu.sul,Opuntia,sulphurea,1,1,.,1,Diego Vázquez,.
+V19,2009-12-01,P1,p0037,opu.sul,Opuntia,sulphurea,1,1,.,1,Diego Vázquez,.
+V19,2009-12-01,P2,p0037,opu.sul,Opuntia,sulphurea,1,1,.,1,Diego Vázquez,.
+V19,2009-12-01,P5,p0037,opu.sul,Opuntia,sulphurea,5,3.2,.,16,Diego Vázquez,.
+V1,2009-12-11,P1,p0037,opu.sul,Opuntia,sulphurea,1,2,.,2,Nydia Vitale,.
+V1,2009-12-11,P5,p0037,opu.sul,Opuntia,sulphurea,4,2.75,.,11,Nydia Vitale,.
+V1,2009-12-11,T1,p0037,opu.sul,Opuntia,sulphurea,1,1,.,1,Nydia Vitale,.
+V4,2009-12-11,P1,p0037,opu.sul,Opuntia,sulphurea,15,3.8,.,57,Nydia Vitale,.
+V4,2009-12-11,P2,p0037,opu.sul,Opuntia,sulphurea,7,4.43,.,31,Nydia Vitale,.
+V4,2009-12-11,P5,p0037,opu.sul,Opuntia,sulphurea,13,4.15,.,54,Nydia Vitale,.
+V4,2009-12-11,P6,p0037,opu.sul,Opuntia,sulphurea,4,1.25,.,5,Nydia Vitale,.
+V4,2009-12-11,T1,p0037,opu.sul,Opuntia,sulphurea,12,1.58,.,19,Nydia Vitale,.
+V4,2009-12-11,T2,p0037,opu.sul,Opuntia,sulphurea,11,2.73,.,30,Nydia Vitale,.
+V4,2009-12-15,P1,p0037,opu.sul,Opuntia,sulphurea,10,3,.,30,Diego Vázquez,.
+V4,2009-12-15,P2,p0037,opu.sul,Opuntia,sulphurea,8,4.25,.,34,Diego Vázquez,.
+V4,2009-12-15,P5,p0037,opu.sul,Opuntia,sulphurea,10,4.4,.,44,Diego Vázquez,.
+V4,2009-12-15,P6,p0037,opu.sul,Opuntia,sulphurea,3,1.33,.,4,Diego Vázquez,.
+V4,2009-12-15,T1,p0037,opu.sul,Opuntia,sulphurea,12,3.5,.,42,Diego Vázquez,.
+V4,2009-12-15,T2,p0037,opu.sul,Opuntia,sulphurea,9,2.56,.,23,Diego Vázquez,.
+V1,2009-12-16,P2,p0037,opu.sul,Opuntia,sulphurea,2,2,.,4,Belén Maldonado/Natacha Chacoff,.
+V1,2009-12-16,P5,p0037,opu.sul,Opuntia,sulphurea,1,1,.,1,Belén Maldonado/Natacha Chacoff,.
+V1,2009-12-16,T2,p0037,opu.sul,Opuntia,sulphurea,1,1,.,1,Belén Maldonado/Natacha Chacoff,.
+V19,2009-12-16,P5,p0037,opu.sul,Opuntia,sulphurea,2,1,.,2,Diego Vázquez,.
+V21,2009-12-18,T2,p0037,opu.sul,Opuntia,sulphurea,1,1,.,1,Diego Vázquez,.
+V1,2009-11-09,P2,p0038,pro.fle,Prosopis,flexuosa,1,500,.,500,Belén Maldonado/Rocío Castro Urgal,inflorescencias
+V1,2009-11-09,P6,p0038,pro.fle,Prosopis,flexuosa,1,6,.,6,Belén Maldonado/Rocío Castro Urgal,inflorescencias
+V1,2009-11-09,T2,p0038,pro.fle,Prosopis,flexuosa,2,12,.,24,Natacha Chacoff,inflorescencias
+V18,2009-11-09,P6,p0038,pro.fle,Prosopis,flexuosa,1,20,.,20,Diego Vázquez,"20 inf, 70 fl por inf"
+V1,2009-11-18,P2,p0038,pro.fle,Prosopis,flexuosa,2,851.85,.,1703.7,Rocío Castro Urgal/Nydia Vitale,"Inflorescencias, 110 fl/inf"
+V1,2009-11-18,P6,p0038,pro.fle,Prosopis,flexuosa,3,313.33,.,940,Natacha Chacoff,"Inflorescencias, 100 fl/inf"
+V1,2009-11-18,T2,p0038,pro.fle,Prosopis,flexuosa,2,82,.,164,Natacha Chacoff,.
+V18,2009-11-19,P6,p0038,pro.fle,Prosopis,flexuosa,1,25,.,25,Diego Vázquez,"inflorescencias, 100 fl/inf"
+V18,2009-11-19,T1,p0038,pro.fle,Prosopis,flexuosa,1,112.5,.,112.5,Diego Vázquez,.
+V19,2009-11-19,T2,p0038,pro.fle,Prosopis,flexuosa,1,50,.,50,Diego Vázquez,"inflorescencias, 100 fl/inf"
+V1,2009-11-23,P2,p0038,pro.fle,Prosopis,flexuosa,4,758.5,.,3034,Belén Maldonado/Rocío Castro Urgal,"inflorescencias, 200 fl/inf"
+V1,2009-11-23,P2,p0038,pro.fle,Prosopis,flexuosa,2,2.5,.,5,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-23,T2,p0038,pro.fle,Prosopis,flexuosa,1,200,.,200,Belén Maldonado/Rocío Castro Urgal,"inflorescencias, 110 fl/inf"
+V18,2009-11-23,P6,p0038,pro.fle,Prosopis,flexuosa,1,700,.,700,Diego Vázquez,.
+V18,2009-11-23,T1,p0038,pro.fle,Prosopis,flexuosa,1,600,.,600,Diego Vázquez,"inflorescencias, 110 fl/inf"
+V19,2009-11-23,T2,p0038,pro.fle,Prosopis,flexuosa,1,50,.,50,Diego Vázquez,"inflorescencias, 110 fl/inf"
+V4,2009-11-23,P2,p0038,pro.fle,Prosopis,flexuosa,1,26,.,26,Belén Maldonado/Rocío Castro Urgal,"Inflorescencias, 110 fl/inf"
+V4,2009-11-23,P6,p0038,pro.fle,Prosopis,flexuosa,1,400,.,400,Belén Maldonado/Rocío Castro Urgal,"inflorescencias, 200 fl/inf"
+V4,2009-11-23,P6,p0038,pro.fle,Prosopis,flexuosa,1,100,.,100,Belén Maldonado/Rocío Castro Urgal,"inflorescencias, 200 fl/inf"
+V1,2009-11-30,P2,p0038,pro.fle,Prosopis,flexuosa,4,5675,.,22700,Rocío Castro Urgal/Nydia Vitale,.
+V1,2009-11-30,P6,p0038,pro.fle,Prosopis,flexuosa,4,169100,.,676400,Natacha Chacoff,.
+V1,2009-11-30,T2,p0038,pro.fle,Prosopis,flexuosa,2,2565,.,5130,Natacha Chacoff,.
+V18,2009-12-01,P6,p0038,pro.fle,Prosopis,flexuosa,1,400,.,400,Diego Vázquez,.
+V18,2009-12-01,T1,p0038,pro.fle,Prosopis,flexuosa,1,400,.,400,Diego Vázquez,"inflorescencias, 110 fl/inf"
+V19,2009-12-01,T2,p0038,pro.fle,Prosopis,flexuosa,1,100,.,100,Diego Vázquez,"inflorescencias, 110 fl/inf"
+V1,2009-12-11,P6,p0038,pro.fle,Prosopis,flexuosa,1,6500,.,6500,Nydia Vitale,.
+V4,2009-12-11,P2,p0038,pro.fle,Prosopis,flexuosa,1,900,.,900,Nydia Vitale,.
+V1,2009-12-16,P6,p0038,pro.fle,Prosopis,flexuosa,1,40,.,40,Belén Maldonado/Natacha Chacoff,.
+V1,2009-12-16,T1,p0038,pro.fle,Prosopis,flexuosa,2,110,.,220,Belén Maldonado/Natacha Chacoff,.
+V20,2009-11-19,P1,p0040,ros.sp1,Rosa,sp.,1,1,.,1,Diego Vázquez,.
+V20,2009-11-19,T1,p0040,ros.sp1,Rosa,sp.,1,1,.,1,Diego Vázquez,.
+V20,2009-11-23,P1,p0040,ros.sp1,Rosa,sp.,1,9,.,9,Diego Vázquez,"Baccharis en flor, no lo cuento"
+V20,2009-11-23,P1,p0040,ros.sp1,Rosa,sp.,2,2,.,4,Diego Vázquez,"Baccharis en flor, no lo cuento"
+V20,2009-11-23,T2,p0040,ros.sp1,Rosa,sp.,2,5.5,.,11,Diego Vázquez,.
+V21,2009-11-23,P1,p0040,ros.sp1,Rosa,sp.,1,3,.,3,Diego Vázquez,.
+V21,2009-11-23,P6,p0040,ros.sp1,Rosa,sp.,1,12,.,12,Diego Vázquez,.
+V20,2009-12-01,P1,p0040,ros.sp1,Rosa,sp.,1,60,.,60,Diego Vázquez,.
+V20,2009-12-01,P5,p0040,ros.sp1,Rosa,sp.,3,34.17,.,102.5,Diego Vázquez,.
+V20,2009-12-01,T1,p0040,ros.sp1,Rosa,sp.,1,10,.,10,Diego Vázquez,.
+V20,2009-12-16,P1,p0040,ros.sp1,Rosa,sp.,1,4,.,4,Diego Vázquez,.
+V20,2009-12-16,P5,p0040,ros.sp1,Rosa,sp.,4,31,.,124,Diego Vázquez,.
+V20,2009-12-16,T1,p0040,ros.sp1,Rosa,sp.,1,14,.,14,Diego Vázquez,.
+V18,2009-10-26,.,p0043,tri.can,Trichocereus,candicans,.,.,.,.,Diego Vázquez,.
+V19,2009-11-09,.,p0043,tri.can,Trichocereus,candicans,.,.,.,.,Diego Vázquez,.
+V21,2009-11-09,T2,p0043,tri.can,Trichocereus,candicans,1,1,.,1,Diego Vázquez,.
+V21,2009-11-23,T2,p0043,tri.can,Trichocereus,candicans,2,1,.,2,Diego Vázquez,.
+V18,2009-10-26,P1,p0045,lar.cun,Larrea,cuneifolia,1,160,.,160,Diego Vázquez,.
+V18,2009-10-26,P2,p0045,lar.cun,Larrea,cuneifolia,2,108.33,.,216.67,Diego Vázquez,.
+V18,2009-10-26,P6,p0045,lar.cun,Larrea,cuneifolia,2,53.5,.,107,Diego Vázquez,.
+V18,2009-10-26,T2,p0045,lar.cun,Larrea,cuneifolia,1,1,.,1,Diego Vázquez,.
+V1,2009-10-12,P2,p0046,arj.lon,Arjona,longifolia,.,.,13,13,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-19,P2,p0046,arj.lon,Arjona,longifolia,2,8,.,16,Belén Maldonado/Rocío Castro Urgal,.
+V19,2009-10-19,T1,p0046,arj.lon,Arjona,longifolia,2,6.5,.,13,Diego Vázquez,.
+V1,2009-10-26,P2,p0046,arj.lon,Arjona,longifolia,5,3,.,15,Belén Maldonado/Rocío Castro Urgal,.
+V19,2009-10-26,P2,p0046,arj.lon,Arjona,longifolia,1,10,.,10,Diego Vázquez,.
+V19,2009-10-26,T1,p0046,arj.lon,Arjona,longifolia,17,7.27,.,123.64,Diego Vázquez,.
+V19,2009-11-03,P2,p0046,arj.lon,Arjona,longifolia,15,3.8,.,57,Diego Vázquez,.
+V19,2009-11-03,T1,p0046,arj.lon,Arjona,longifolia,18,3.8,.,68.4,Diego Vázquez,.
+V19,2009-11-09,T1,p0046,arj.lon,Arjona,longifolia,1,5,.,5,Diego Vázquez,.
+V19,2009-11-03,P1,p0047,dyp.gla,Dipyrena ,glaberrima,1,10,.,10,Diego Vázquez,Confirmar identificaciÃ³n
+V4,2009-11-18,T2,p0047,dyp.gla,Dipyrena ,glaberrima,1,Falta no. flores,.,.,Natacha Chacoff,.
+V20,2009-11-19,P2,p0047,dyp.gla,Dipyrena ,glaberrima,1,20,.,20,Diego Vázquez,"Baccharis en flor, no lo cuento"
+V20,2009-11-23,.,p0047,dyp.gla,Dipyrena ,glaberrima,.,.,.,.,Diego Vázquez,.
+V21,2009-11-23,P1,p0047,dyp.gla,Dipyrena ,glaberrima,5,33,.,165,Diego Vázquez,.
+V21,2009-11-23,P5,p0047,dyp.gla,Dipyrena ,glaberrima,1,40,.,40,Diego Vázquez,.
+V21,2009-11-23,T1,p0047,dyp.gla,Dipyrena ,glaberrima,2,6,.,12,Diego Vázquez,.
+V20,2009-12-01,P5,p0047,dyp.gla,Dipyrena ,glaberrima,1,25,.,25,Diego Vázquez,.
+V20,2009-12-16,P5,p0047,dyp.gla,Dipyrena ,glaberrima,1,45,.,45,Diego Vázquez,.
+V1,2009-10-19,P2,p0050,hys.jas,Hysterionica,jassionoide,1,1,.,1,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-26,P2,p0050,hys.jas,Hysterionica,jassionoide,1,1,.,1,Belén Maldonado/Rocío Castro Urgal,.
+V21,2009-10-26,P5,p0050,hys.jas,Hysterionica,jassionoide,1,1,.,1,Diego Vázquez,.
+V4,2009-10-26,P6,p0050,hys.jas,Hysterionica,jassionoide,1,1,.,1,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-02,P6,p0050,hys.jas,Hysterionica,jassionoide,1,2,.,2,Diego Vázquez,.
+V21,2009-11-03,P1,p0050,hys.jas,Hysterionica,jassionoide,1,1,.,1,Diego Vázquez,.
+V21,2009-11-03,P2,p0050,hys.jas,Hysterionica,jassionoide,1,1,.,1,Diego Vázquez,.
+V21,2009-11-03,P5,p0050,hys.jas,Hysterionica,jassionoide,5,1,.,5,Diego Vázquez,.
+V21,2009-11-03,P6,p0050,hys.jas,Hysterionica,jassionoide,1,1,.,1,Diego Vázquez,.
+V21,2009-11-09,P2,p0050,hys.jas,Hysterionica,jassionoide,2,1,.,2,Diego Vázquez,.
+V21,2009-11-09,P5,p0050,hys.jas,Hysterionica,jassionoide,6,1,.,6,Diego Vázquez,.
+V21,2009-11-09,P6,p0050,hys.jas,Hysterionica,jassionoide,3,1,.,3,Diego Vázquez,.
+V4,2009-11-09,P6,p0050,hys.jas,Hysterionica,jassionoide,1,2,.,2,Belén Maldonado/Rocío Castro Urgal,.
+V21,2009-11-23,P1,p0050,hys.jas,Hysterionica,jassionoide,2,2,.,4,Diego Vázquez,.
+V21,2009-11-23,P5,p0050,hys.jas,Hysterionica,jassionoide,3,1,.,3,Diego Vázquez,.
+V21,2009-11-23,P6,p0050,hys.jas,Hysterionica,jassionoide,1,2,.,2,Diego Vázquez,.
+V21,2009-11-23,P6,p0050,hys.jas,Hysterionica,jassionoide,1,4,.,4,Diego Vázquez,.
+V20,2009-12-01,T2,p0050,hys.jas,Hysterionica,jassionoide,1,1,.,1,Diego Vázquez,.
+V21,2009-12-18,P2,p0050,hys.jas,Hysterionica,jassionoide,1,1,.,1,Diego Vázquez,.
+V21,2009-12-18,P5,p0050,hys.jas,Hysterionica,jassionoide,2,2,.,4,Diego Vázquez,.
+V1,2009-10-26,P6,p0051,mon.aph,Monttea ,aphylla ,1,50,.,50,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-26,T1,p0051,mon.aph,Monttea ,aphylla ,1,5,.,5,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-11-02,.,p0051,mon.aph,Monttea ,aphylla ,.,.,.,.,Diego Vázquez,Fuera de parcelas
+V1,2009-11-03,P6,p0051,mon.aph,Monttea ,aphylla ,1,350,.,350,Diego Vázquez,.
+V1,2009-11-03,T1,p0051,mon.aph,Monttea ,aphylla ,1,45,.,45,Diego Vázquez,.
+V1,2009-11-09,P6,p0051,mon.aph,Monttea ,aphylla ,1,120,.,120,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-11-09,T1,p0051,mon.aph,Monttea ,aphylla ,1,30,.,30,Natacha Chacoff,.
+V1,2009-11-18,T1,p0051,mon.aph,Monttea ,aphylla ,1,7,.,7,Rocío Castro Urgal/Nydia Vitale,.
+V1,2009-11-23,T1,p0051,mon.aph,Monttea ,aphylla ,1,4,.,4,Belén Maldonado/Rocío Castro Urgal,.
+V19,2009-10-26,.,p0054,sph.min,Sphaeralcea,miniata,.,.,.,.,Diego Vázquez,Fuera de parcelas
+V4,2009-10-26,P5,p0054,sph.min,Sphaeralcea,miniata,1,1,.,1,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-11-02,P2,p0054,sph.min,Sphaeralcea,miniata,1,3,.,3,Diego Vázquez,.
+V1,2009-09-21,P1,p0057,ero.cic,Erodium ,cicatarium,.,.,36,36,Belén Maldonado/Nydia Vitale,.
+V4,2009-09-21,P2,p0057,ero.cic,Erodium ,cicatarium,.,.,4,4,Belén Maldonado/Nydia Vitale,.
+V4,2009-09-21,P5,p0057,ero.cic,Erodium ,cicatarium,.,.,118,118,Belén Maldonado/Nydia Vitale,.
+V4,2009-09-21,T1,p0057,ero.cic,Erodium ,cicatarium,.,.,24,24,Belén Maldonado/Nydia Vitale,.
+V4,2009-09-21,T2,p0057,ero.cic,Erodium ,cicatarium,.,.,7,7,Belén Maldonado/Nydia Vitale,.
+V1,2009-09-28,P1,p0057,ero.cic,Erodium ,cicatarium,.,.,102,102,Belén Maldonado/Nydia Vitale,.
+V18,2009-10-05,P2,p0057,ero.cic,Erodium ,cicatarium,.,.,30,30,Diego Vázquez,.
+V18,2009-10-05,P5,p0057,ero.cic,Erodium ,cicatarium,.,.,60,60,Diego Vázquez,.
+V4,2009-10-05,P2,p0057,ero.cic,Erodium ,cicatarium,.,.,33,33,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-05,P5,p0057,ero.cic,Erodium ,cicatarium,.,.,16,16,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-05,T1,p0057,ero.cic,Erodium ,cicatarium,.,.,90,90,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-05,T2,p0057,ero.cic,Erodium ,cicatarium,.,.,41,41,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-07,P1,p0057,ero.cic,Erodium ,cicatarium,.,.,119,119,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-07,P5,p0057,ero.cic,Erodium ,cicatarium,.,.,1,1,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-12,P1,p0057,ero.cic,Erodium ,cicatarium,.,.,3,3,Rocío Castro Urgal/Belén Maldonado,.
+V18,2009-10-12,P2,p0057,ero.cic,Erodium ,cicatarium,.,.,17,17,Diego Vázquez,.
+V18,2009-10-12,P5,p0057,ero.cic,Erodium ,cicatarium,.,.,2,2,Diego Vázquez,.
+V18,2009-10-12,P6,p0057,ero.cic,Erodium ,cicatarium,.,.,3,3,Diego Vázquez,.
+V4,2009-10-12,P2,p0057,ero.cic,Erodium ,cicatarium,.,.,6,6,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-12,P5,p0057,ero.cic,Erodium ,cicatarium,.,.,24,24,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-12,P6,p0057,ero.cic,Erodium ,cicatarium,.,.,2,2,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-12,T1,p0057,ero.cic,Erodium ,cicatarium,.,.,62,62,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-12,T2,p0057,ero.cic,Erodium ,cicatarium,.,.,5,5,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-19,P1,p0057,ero.cic,Erodium ,cicatarium,.,.,1,1,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-10-26,P1,p0057,ero.cic,Erodium ,cicatarium,1,2,.,2,Diego Vázquez,.
+V18,2009-10-26,P2,p0057,ero.cic,Erodium ,cicatarium,.,.,1,1,Diego Vázquez,.
+V4,2009-10-05,P1,p0059,des.sp1,Descurainia,sp.,1,2,.,2,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-05,P2,p0059,des.sp1,Descurainia,sp.,4,1.75,.,7,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-05,T1,p0059,des.sp1,Descurainia,sp.,.,.,5,5,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-05,T2,p0059,des.sp1,Descurainia,sp.,.,.,2,2,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-12,P1,p0059,des.sp1,Descurainia,sp.,.,.,2,2,Rocío Castro Urgal/Belén Maldonado,Colectada
+V4,2009-10-12,P2,p0059,des.sp1,Descurainia,sp.,.,.,6,6,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-12,T1,p0059,des.sp1,Descurainia,sp.,.,.,2,2,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-12,T2,p0059,des.sp1,Descurainia,sp.,.,.,2,2,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-19,T2,p0059,des.sp1,Descurainia,sp.,1,3,.,3,Belén Maldonado/Rocío Castro Urgal,.
+V18,2009-10-12,P5,p0060,lyc.gil,Lycium ,gillesianum,2,40,.,80,Diego Vázquez,.
+V18,2009-10-12,P6,p0060,lyc.gil,Lycium ,gillesianum,1,50,.,50,Diego Vázquez,.
+V4,2009-10-12,P1,p0060,lyc.gil,Lycium ,gillesianum,1,42,.,42,Rocío Castro Urgal/Belén Maldonado,.
+V4,2009-10-19,P1,p0060,lyc.gil,Lycium ,gillesianum,1,200,.,200,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-02,P1,p0061,phi.gil,Philibertia,gilliesi,1,20,.,20,Diego Vázquez,.
+V4,2009-11-02,T2,p0061,phi.gil,Philibertia,gilliesi,1,1,.,1,Diego Vázquez,.
+V4,2009-11-09,P1,p0061,phi.gil,Philibertia,gilliesi,1,44,.,44,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-11-18,P1,p0061,phi.gil,Philibertia,gilliesi,1,6,.,6,Rocío Castro Urgal/Nydia Vitale,.
+V18,2009-10-26,P1,p0069,sen.gil,Senecio,gillesianus,1,3,.,3,Diego Vázquez,.
+V18,2009-11-02,P2,p0069,sen.gil,Senecio,gillesianus,1,2,.,2,Diego Vázquez,.
+V19,2009-11-09,.,p0069,sen.gil,Senecio,gillesianus,.,.,.,.,Diego Vázquez,.
+V19,2009-12-16,.,p0069,sen.gil,Senecio,gillesianus,.,.,.,.,Diego Vázquez,.
+V21,2009-12-18,P1,p0069,sen.gil,Senecio,gillesianus,1,1,.,1,Diego Vázquez,.
+V21,2009-12-18,P5,p0069,sen.gil,Senecio,gillesianus,3,5.67,.,17,Diego Vázquez,.
+V21,2009-12-18,P6,p0069,sen.gil,Senecio,gillesianus,2,11.5,.,23,Diego Vázquez,.
+V18,2009-10-05,.,p0071,gla.sp2,Glandularia,sp.,.,.,.,.,Diego Vázquez,planta fuera de parcelas
+V18,2009-10-12,P2,p0071,gla.sp2,Glandularia,sp.,1,6,.,6,Diego Vázquez,.
+V18,2009-10-26,.,p0071,gla.sp2,Glandularia,sp.,.,.,.,.,Diego Vázquez,.
+V1,2009-10-07,P1,p0072,pla.pat,Plantago,patagonica,.,.,6,6,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-07,P5,p0072,pla.pat,Plantago,patagonica,.,.,8,8,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-12,P3,p0072,pla.pat,Plantago,patagonica,.,.,82,82,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-19,P5,p0072,pla.pat,Plantago,patagonica,11,8.64,.,95,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-19,T1,p0072,pla.pat,Plantago,patagonica,.,.,154,154,Belén Maldonado/Rocío Castro Urgal,.
+V1,2009-10-26,P5,p0072,pla.pat,Plantago,patagonica,.,.,45,45,Belén Maldonado/Rocío Castro Urgal,.
+V4,2009-10-26,T1,p0072,pla.pat,Plantago,patagonica,.,.,780,780,Belén Maldonado/Rocío Castro Urgal,.
+V19,2009-09-28,.,p0093,den.rho,Denmoza,rhodocantha,.,.,.,.,Diego Vázquez,"nieve, planta fuera de parcelas"
+V21,2009-10-07,.,p0093,den.rho,Denmoza,rhodocantha,.,.,.,.,Diego Vázquez,Un individuo fuera de parcelas
+V19,2009-10-12,P5,p0093,den.rho,Denmoza,rhodocantha,1,1,.,1,Diego Vázquez,.
+V19,2009-10-26,P5,p0093,den.rho,Denmoza,rhodocantha,2,1,.,2,Diego Vázquez,.
+V21,2009-10-26,.,p0093,den.rho,Denmoza,rhodocantha,.,.,.,.,Diego Vázquez,Fuera de parcelas
+V19,2009-11-03,P5,p0093,den.rho,Denmoza,rhodocantha,1,2,.,2,Diego Vázquez,.
+V21,2009-11-03,.,p0093,den.rho,Denmoza,rhodocantha,.,.,.,.,Diego Vázquez,.
+V21,2009-11-03,P5,p0093,den.rho,Denmoza,rhodocantha,1,2,.,2,Diego Vázquez,.
+V21,2009-11-09,P2,p0093,den.rho,Denmoza,rhodocantha,2,1,.,2,Diego Vázquez,.
+V21,2009-11-23,P5,p0093,den.rho,Denmoza,rhodocantha,1,1,.,1,Diego Vázquez,.
+V21,2009-10-07,.,p0094,lob.for,Lobivia,formosa,.,.,.,.,Diego Vázquez,Tres individuos fuera de parcelas
+V21,2009-10-12,.,p0094,lob.for,Lobivia,formosa,.,.,.,.,Diego Vázquez,Fuera de parcelas
+V21,2009-10-19,P1,p0094,lob.for,Lobivia,formosa,1,1,.,1,Diego Vázquez,.
+V21,2009-10-26,P1,p0094,lob.for,Lobivia,formosa,1,1,.,1,Diego Vázquez,Pico de floracion de Lobivia
+V21,2009-11-03,.,p0094,lob.for,Lobivia,formosa,.,.,.,.,Diego Vázquez,.
+V19,2009-09-28,.,p0095,eup.col,Euphorbia,collina,.,.,.,.,Diego Vázquez,"nieve, planta fuera de parcelas"
+V20,2009-10-26,P2,p0096,ber.gre,Berberis,grevilleana,1,12,.,12,Diego Vázquez,.
+V21,2009-11-03,.,p0096,ber.gre,Berberis,grevilleana,.,.,.,.,Diego Vázquez,.
+V21,2009-11-09,T1,p0096,ber.gre,Berberis,grevilleana,2,27.5,.,55,Diego Vázquez,.
+V19,2009-11-03,T1,p0097,mon.dyc,Monnina,dyctiocarpa,1,14,.,14,Diego Vázquez,.
+V21,2009-11-03,T1,p0097,mon.dyc,Monnina,dyctiocarpa,1,30,.,30,Diego Vázquez,.
+V21,2009-11-23,P1,p0097,mon.dyc,Monnina,dyctiocarpa,1,20,.,20,Diego Vázquez,.
+V21,2009-11-23,P6,p0097,mon.dyc,Monnina,dyctiocarpa,1,6,.,6,Diego Vázquez,.
+V21,2009-11-09,P1,p0098,ant.maj,Antirrhinum,majus,1,2,.,2,Diego Vázquez,.
+V21,2009-11-09,P2,p0098,ant.maj,Antirrhinum,majus,2,1.5,.,3,Diego Vázquez,.
+V21,2009-11-23,P6,p0098,ant.maj,Antirrhinum,majus,5,6.6,.,33,Diego Vázquez,.
+V21,2009-12-18,P2,p0098,ant.maj,Antirrhinum,majus,2,2,.,4,Diego Vázquez,.
+V20,2009-10-19,P6,p0099,col.int,Coliguaya,integerrima,5,564,.,2820,Diego Vázquez,Solo conte plantas masculinas
+V20,2009-10-26,P6,p0099,col.int,Coliguaya,integerrima,5,564,.,2820,Diego Vázquez,Solo conte plantas masculinas
+V20,2009-11-03,P6,p0099,col.int,Coliguaya,integerrima,5,10,.,50,Diego Vázquez,"Pasada, casi sin flores"
+V20,2009-11-09,T1,p0099,col.int,Coliguaya,integerrima,1,13,.,13,Diego Vázquez,.
+V18,2009-11-19,P1,p0100,ech.leu,Echinopsis,leucantha,1,1,.,1,Diego Vázquez,.
+V19,2009-10-26,P6,p0101,hof.er2,Hoffmannseggia  ,erecta,6,1.67,.,10,Diego Vázquez,.
+V19,2009-11-03,T1,p0101,hof.er2,Hoffmannseggia  ,erecta,1,2,.,2,Diego Vázquez,.
+V21,2009-11-09,P1,p0101,hof.er2,Hoffmannseggia  ,erecta,1,1,.,1,Diego Vázquez,Colectada
+V21,2009-11-09,P2,p0101,hof.er2,Hoffmannseggia  ,erecta,3,1,.,3,Diego Vázquez,.
+V4,2009-10-05,P1,p0102,lap.red,Lappula,redowski,2,2,.,4,Rocío Castro Urgal/Belén Maldonado,Falta ingresar al catÃ¡logo
+V4,2009-10-05,P2,p0102,lap.red,Lappula,redowski,1,1,.,1,Rocío Castro Urgal/Belén Maldonado,.
+V1,2009-10-12,P1,p0102,lap.red,Lappula,redowski,.,.,5,5,Rocío Castro Urgal/Belén Maldonado,No Veronica
+V4,2009-10-12,P2,p0102,lap.red,Lappula,redowski,1,1,.,1,Rocío Castro Urgal/Belén Maldonado,No Veronica
+V4,2009-10-12,P5,p0102,lap.red,Lappula,redowski,1,5,.,5,Rocío Castro Urgal/Belén Maldonado,No Veronica
+V4,2009-10-12,T2,p0102,lap.red,Lappula,redowski,.,.,2,2,Rocío Castro Urgal/Belén Maldonado,No Veronica

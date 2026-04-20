@@ -1,0 +1,45 @@
+Specie,Kingdom,Role,Degree,Sum(connections strength),Networks presence
+"Ahasverus advena ","Animals","Pollinator",2,3,8
+"Allograpta nasuta","Animals","Pollinator",4,4,17
+"Apis mellifera","Animals","Pollinator",4,44,123
+"Brachymyrmex sp1 M_PL_081","Animals","Pollinator",1,9,1
+"Chaetocnema sp1 M_PL_081","Animals","Pollinator",9,81,1
+"Cheloninae sp1 M_PL_081","Animals","Pollinator",1,1,1
+"Chrysomya megacephala ","Animals","Pollinator",4,18,25
+"Dysauxes florida","Animals","Pollinator",3,5,15
+"Episyrphus sp1 M_PL_081","Animals","Pollinator",1,2,1
+"Fannia pusio ","Animals","Pollinator",1,1,15
+"Lecithoceridae sp1 M_PL_081","Animals","Pollinator",1,1,1
+"Mauritiborium undulatus ","Animals","Pollinator",1,1,9
+"Melanostoma annulipes","Animals","Pollinator",1,1,17
+"Melanostoma bituberculatum ","Animals","Pollinator",1,1,10
+"Mordellidae sp1 M_PL_081","Animals","Pollinator",1,1,1
+"Musca domestica","Animals","Pollinator",5,27,26
+"Nacoleia sp1 M_PL_081","Animals","Pollinator",3,15,1
+"Nacoleia sp2 M_PL_081","Animals","Pollinator",1,1,1
+"Pachycerina crinicornis ","Animals","Pollinator",2,2,20
+"Paragus borbonicus","Animals","Pollinator",1,1,15
+"Pelecophora intemipta","Animals","Pollinator",1,1,9
+"Phorinia sp1 M_PL_081","Animals","Pollinator",1,5,1
+"Polistes hebraeus","Animals","Pollinator",1,1,18
+"Sarcophaga arno ","Animals","Pollinator",1,1,12
+"Stomorhina lunata","Animals","Pollinator",3,9,24
+"Stomoxys calcitrans","Animals","Pollinator",1,1,15
+"Syritta nigrofemorata","Animals","Pollinator",1,2,9
+"Syritta sp1 M_PL_081","Animals","Pollinator",1,1,1
+"Technomyrmex albipes ","Animals","Pollinator",3,12,25
+"Thysanoplusia orichalcea","Animals","Pollinator",1,1,1
+"Villa unifasciata","Animals","Pollinator",3,4,13
+"Aphloia theiformis","Plants","Plant",8,26,22
+"Cordemoya integrifolia","Plants","Plant",1,2,8
+"Croton fothergillifolius","Plants","Plant",1,4,11
+"Croton grangeroides","Plants","Plant",3,21,3
+"Euodia chapelieri","Plants","Plant",1,4,8
+"Gaertnera sp1 M_PL_081","Plants","Plant",9,26,1
+"Grangeria borbonica","Plants","Plant",6,16,6
+"Labourdonnaisia callophylloides","Plants","Plant",1,29,9
+"Ochna mauritiana","Plants","Plant",8,23,6
+"Phyllanthus phillyreifolius","Plants","Plant",3,9,8
+"Smilax anceps","Plants","Plant",1,1,3
+"Stillingia lineata","Plants","Plant",17,78,20
+"Syzygium coriaceum","Plants","Plant",5,18,8

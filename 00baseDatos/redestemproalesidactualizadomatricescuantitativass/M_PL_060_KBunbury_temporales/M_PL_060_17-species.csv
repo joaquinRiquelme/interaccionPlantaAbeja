@@ -1,0 +1,53 @@
+Specie,Kingdom,Role,Degree,Sum(connections strength),Networks presence
+"Allograpta nasuta","Animals","Pollinator",4,5,17
+"Apis mellifera","Animals","Pollinator",6,131,123
+"Atherigona orientalis","Animals","Pollinator",1,1,1
+"Brachymyrmex sp1 M_PL_076","Animals","Pollinator",2,10,1
+"Calopsilia florella","Animals","Pollinator",1,1,1
+"Campopleginae sp1 M_PL_076","Animals","Pollinator",1,2,1
+"Chaetocnema sp1 M_PL_076","Animals","Pollinator",10,60,1
+"Chrysomya megacephala ","Animals","Pollinator",2,5,25
+"Cratopus psittacus","Animals","Pollinator",1,1,1
+"Cryptocephalinae sp1 M_PL_076","Animals","Pollinator",1,1,1
+"Dioxyna sororcula ","Animals","Pollinator",1,1,8
+"Dysauxes florida","Animals","Pollinator",6,40,15
+"Episyrphus sp1 M_PL_076","Animals","Pollinator",1,1,1
+"Eristalinus flaveolus","Animals","Pollinator",1,1,17
+"Fannia pusio ","Animals","Pollinator",3,6,15
+"Gelechioidea sp1 M_PL_076","Animals","Pollinator",1,4,1
+"Gelechioidea sp2 M_PL_076","Animals","Pollinator",1,1,1
+"Ischiodon aegyptius ","Animals","Pollinator",3,7,11
+"Lecithoceridae sp1 M_PL_076","Animals","Pollinator",1,1,1
+"Lygistorrhina sp1 M_PL_076","Animals","Pollinator",7,26,1
+"Mauritiborium undulatus ","Animals","Pollinator",1,1,9
+"Melanostoma bituberculatum ","Animals","Pollinator",1,2,10
+"Musca domestica","Animals","Pollinator",4,9,26
+"Nacoleia sp1 M_PL_076","Animals","Pollinator",5,8,1
+"Nyctemera insulare","Animals","Pollinator",1,1,2
+"Ornidia obesa","Animals","Pollinator",1,1,47
+"Pachycerina crinicornis ","Animals","Pollinator",8,23,20
+"Panara naso","Animals","Pollinator",4,9,14
+"Polistes hebraeus","Animals","Pollinator",5,11,18
+"Sarcophaga arno ","Animals","Pollinator",1,1,12
+"Siphona sp1 M_PL_076","Animals","Pollinator",1,1,1
+"Stomorhina lunata","Animals","Pollinator",7,27,24
+"Stomoxys calcitrans","Animals","Pollinator",1,7,15
+"Syritta nigrofemorata","Animals","Pollinator",2,2,9
+"Technomyrmex albipes ","Animals","Pollinator",4,36,25
+"Antirhea borbonica","Plants","Plant",1,2,10
+"Aphloia theiformis","Plants","Plant",8,23,22
+"Bertiera zaluzania ","Plants","Plant",5,27,7
+"Chassalia coriacea","Plants","Plant",2,6,6
+"Cordemoya integrifolia","Plants","Plant",1,1,8
+"Croton fothergillifolius","Plants","Plant",6,22,11
+"Erythroxylum macrocarpum","Plants","Plant",4,9,11
+"Faujasiopsis flexuosa","Plants","Plant",8,33,5
+"Homalanthus populifolius","Plants","Plant",5,9,7
+"Molinaea alternifolia","Plants","Plant",8,15,8
+"Myonima violacea","Plants","Plant",8,48,3
+"Ochna mauritiana","Plants","Plant",12,76,6
+"Olea lancea","Plants","Plant",1,1,9
+"Psiadia terebinthina","Plants","Plant",7,10,17
+"Psidium cattleianum","Plants","Plant",4,9,12
+"Sideroxylon puberulum","Plants","Plant",10,118,6
+"Stillingia lineata","Plants","Plant",10,35,20

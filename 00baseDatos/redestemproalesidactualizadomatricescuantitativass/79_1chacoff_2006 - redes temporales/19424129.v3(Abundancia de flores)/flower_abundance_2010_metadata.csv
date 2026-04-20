@@ -1,0 +1,11 @@
+sitio,Code for site in which data were collected.
+fecha,Date of sampling.
+tra.par,Plot within site.
+no.esp.p,Alphanumeric code for plant species.
+codigo.p,Abbreviation of scientific name of plant species.
+no.ind,Number of individuals recorded.
+no.flores.ind.1-14,Number of flowers recorded in each of up to 14 individuals.
+flores.herb,Number of flowers recorded for herbaceous species for which individuals are not easily distinguished.
+flores.tot,Total number of flowers in plot.
+observador,Name of observer.
+comentarios,Comments.
