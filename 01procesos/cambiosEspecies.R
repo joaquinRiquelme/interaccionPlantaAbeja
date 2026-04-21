@@ -91,4 +91,22 @@ especie$especie[especie$especie=="halictus confusus"] <- "Seladonia confusa"
 especie$especie[especie$especie=="anthophora alluardii"] <- "Anthophora alluaudi"
 especie$especie[especie$especie=="lasioglossum evylaeus"] <- ""
 
+
+# Venezuela
+# matriz 31
+# especie$especie[especie$especie=="bombus atratus"] <- "bombus pauloensis"
+especie$especie[especie$especie=="melipona compresipes"] <- "melipona interrupta"
+
+# Argentina
+# 
+
+# estados unidos
+# M_005
+especie$especie[especie$especie=="andrena placida"] <- "andrena barbilabris"
+especie$especie[especie$especie=="anthophora smithi"] <- "anthophora quadricolor"
+
+
 especie$especie[especie$especie==""] <- ""
+
+
+
