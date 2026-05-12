@@ -301,11 +301,12 @@ library(ggplot2)
 pred_latitud <- ggpredict(modelo_mixto2, terms = c("tamano_mm [all]", "clase_latitud"))
 
 # 2. Graficar
+png("../03figuras/ProbabilidadPorLatitud.png")
 ggplot(pred_latitud, aes(x = x, y = predicted, color = group, fill = group)) +
   geom_ribbon(aes(ymin = conf.low, ymax = conf.high), alpha = 0.2, color = NA) +
   geom_line(size = 1.2) +
   labs(
-    title = "Probabilidad de Especialización por Latitud",
+    title = "Probabilidad de ser Generalista por Latitud",
     x = "Tamaño (mm)",
     y = "Probabilidad Predicha",
     color = "Clase de Latitud",
@@ -315,6 +316,7 @@ ggplot(pred_latitud, aes(x = x, y = predicted, color = group, fill = group)) +
   scale_color_manual(values = c("steelblue", "firebrick")) +
   scale_fill_manual(values = c("steelblue", "firebrick")) +
   theme_minimal()
+dev.off()
 
 png("Probabilidad_GeneralistaPorClaseLatitud.png")
 ggplot() +
