@@ -1,0 +1,133 @@
+Origen,Nombre en matriz,Country,Aceptado,Europoll-ITD,KC-ITD,Brasil -ITD,Bases de datos
+M_008,Andrena wolestoni,Spain,Andrena wollastoni,,,,https://www.catalogueoflife.org/
+M_008,Hylaeus canariensis,Spain,Hyleaus canariensis,,,,https://www.catalogueoflife.org/
+M_008,Lasioglossum actifrons,Spain,Lasioglossum arctifrons,,,,https://www.catalogueoflife.org/
+M_008,Osmia canariensis,Spain,,,,,
+M_012,Bombus canariensis,Spain,Bombus terrestris subsp. canariensis,4.69,4.78,,GBIF
+M_016,Andrena squalida,Spain,Andrena villipes,2.71,,,GBIF
+M_016,Colletes succintus,Spain,Colletes succinctus,2.99,,,GBIF
+M_016,Halictus gemmeus,Spain,Seladonia gemmea,1.28,,,https://www.catalogueoflife.org/
+M_016,Halictus smaragdulus,Spain,Seladonia smaragdula,1.09,,,https://www.catalogueoflife.org/
+M_016,Heriades crenulatus,Spain,Heriades crenulata,1.51,,,GBIF - www.catalogueoflife.org
+M_016,Lasioglossum aegyptieleum,corregir en matriz,Lasioglossum aegyptiellum,2.12,,,
+M_016,Megachile pilidens,Spain,Megachile argentata,2.82,,,https://www.catalogueoflife.org/
+M_039,Andrena vucana,Spain,Andrena vulcana,2.83,,,GBIF - www.catalogueoflife.org
+M_039,Anthophora alluardii,Spain,Anthophora alluaudi,4.16,,,GBIF - www.catalogueoflife.org
+M_050,,Spain,Eucera gracilipes,3.84,,,GBIF
+M_050,,Spain,Anthophora orotavae,3.12,,,GBIF
+M_050,,Spain,Amegilla canifrons,5.38,,,GBIF
+M_050,,Spain,Sphecodes marginatus,1.01,,,https://www.catalogueoflife.org/
+M_050,,Spain,Amegilla quadrifasciata,4.02,,,https://www.catalogueoflife.org/
+M_050,,Spain,Apis mellifera,3.01,2.9,,
+M_058,Megilla femorata,Spain,Anthophora femorata,,,,GBIF - www.catalogueoflife.org
+M_058,Anthidium sticticum,Spain,Rhodanthidium sticticum,3.6,,,GBIF
+M_058,Halictus pyrenaicus,Spain,,,,,
+M_058,Halictus gemmeus,Spain,Seladonia gemmea,1.28,,,GBIF
+M_043,Psithyrus campestris,Denmark,Bombus campestris,,,,GBIF - www.catalogueoflife.org
+M_043,Psithyrus rupestris,Denmark,Bombus rupestris,,3.53,,GBIF
+M_046,Bombus lapidarius,Denmark,Bombus lapidarius,4.28,3.98,,GBIF
+M_046,Bombus terrestris,Denmark,Bombus terrestris,4.69,4.78,,GBIF
+M_047,Halictus confusus,Denmark,Seladonia confusa,1.54,,,GBIF - www.catalogueoflife.org
+M_049,Bombus terestris,Denmark,Bombus terrestris,4.69,4.78,,GBIF
+M_049,Halictus calceatus,Denmark,Lasioglossum calceatum,,1.78,,GBIF
+M_049,Halictus leucopus,Denmark,Lasioglossum leucopus,,1,,GBIF
+M_049,Halictus quadrinotatus,Denmark,Lasioglossum quadrinotatum,,1.72,,GBIF
+M_049,Bombus agrorum,Denmark,Bombus pascuorum,,3.72,,GBIF - www.catalogueoflife.org
+M_018,Psithyrus boemicus,Denmark,Bombus bophemicus,,4.1,,GBIF - www.catalogueoflife.org
+M_018,Psithyrus campestris,Denmark,Bombus campestris,,,,GBIF
+M_018,Psithyrus rupestris,Denmark,Bombus rupestris,,3.53,,GBIF
+M_037,Psithyrus boemicus,Denmark,Bombus bophemicus,,4.1,,GBIF - www.catalogueoflife.org
+M_038,Bombus pascuorum,Denmark,Bombus pascuorum,3.91,3.72,,GBIF
+M_009,,Sweeden,Bombus hyperboreus,7.6,,,GBIF
+M_009,,Sweeden,Bombus alpinus,3.89,5.28,,GBIF
+M_015,Andrena clypeata,Greece,Andrena hattorfiana,2.71,,,GBIF
+M_015,Andrena orientata,Greece,Andrena taraxaci,2.17,,,GBIF
+M_015,Andrena balcanica,Greece,Andrena canohirta,1.5,,,GBIF
+M_015,Andrena carbonaria,Greece,Andrena pilipes,3.21,,,GBIF
+M_015,Andrena abbreviata subsp. Osychniukae ,Greece,Andrena osychniukae,2.1,,,GBIF
+M_015,Andrena thomposini,Greece,Andrena thomposinii,1.85,,,GBIF
+M_015,,Greece,Andrena truncatilabris,2.27,,,GBIF
+M_015,Anthidium strigatum,Greece,Anthidiellum strigatum,2.32,,,GBIF - www.catalogueoflife.org
+M_015,Osmia andrenoides,Greece,Anthocopa andrenoides,1.85,,,GBIF
+M_015,Anthocopa bidentata,Greece,Osmia bidentata,2.24,,,GBIF - www.catalogueoflife.org
+M_015,Anthocopa bisulca,Greece,Hoplitis bisulca,2.81,,,GBIF
+M_015,Anthocopa papaveris,Greece,Hoplitis papaveris,2.31,,,GBIF
+M_015,Anthocopa perezi,Greece,Hoplitis perezi,2.43,,,GBIF
+M_015,Anthocopa scutellaris,Greece,Osmia scutellaris,1.43,,,GBIF - www.catalogueoflife.org
+M_015,Anthocopa spinigera,Greece,Osmia spinigera,2.58,,,GBIF - www.catalogueoflife.org
+M_015,Anthocopa yermasoiae,Greece,Hoplitis yermasoyiae,2.28,,,GBIF
+M_015,Anthophora dufourii,Greece,Anthophora dufourii,4.49,,,GBIF
+M_015,Anthophora garrula,Greece,Amegilla garrula,4.45,,,GBIF
+M_015,Anthophora magnilabris,Greece,Amegilla savignyi,3.86,,,GBIF
+M_015,Anthophora nigrocincta,Greece,Anthophora flavocincta,,,,GBIF
+M_015,Anthophora ochroleuca,Greece,Amegilla ochroleuca,3.82,,,GBIF
+M_015,Anthophora pilipes,Greece,Anthophora plumipes,4.26,,,GBIF
+M_015,Chalicodoma albocristata,Greece,Megachile albocristata,3.88,,,GBIF
+M_015,Chalicodoma ericetorum,Greece,Megachile ericetorum,3.44,,,GBIF
+M_015,Chalicodoma hungarica,Greece,Megachile hungarica,3.44,,,GBIF
+M_015,Chalicodoma lefebvrei,Greece,Megachile lefebvrei,3.99,,,GBIF
+M_015,Chalicodoma manicata,Greece,Megachile manicata,3.82,,,GBIF
+M_015,Chalicodoma pyrenaica,Greece,Megachile pyrenaica,3.56,,,GBIF
+M_015,Chalicodoma parietina nestorea,Greece,Megachile parietina,4.69,,,GBIF
+M_015,Chalicodoma montenegrensis,Greece,Megachile montenegrensis,3.39,,,GBIF
+M_015,Chelostoma appendiculatum,,Chelostoma emarginatum,1.31,,,GBIF
+M_015,Coelioxys afra,,Coelioxys mandibularis,2.45,,,GBIF
+M_015,Coelioxys aurolimbata,,Coelioxys aurolimbatus,3.09,,,GBIF
+M_015,Colletes spectabilis,,Colletes albomaculatus,2.96,,,GBIF
+M_015,Creightonella albisecta,,Megachile albisecta,3.34,,,GBIF
+M_015,Eoanthidium elongatum,,Anthidium elongatum,2.39,,,www.catalogueoflife.org
+M_015,Eucera nigrescens,,Eucera nigrescens,3.5,,,GBIF
+M_015,Eucera nigrilabris rufitarsis,,Eucera nigrilabris,3.9,,,GBIF
+M_015,Halictus cephalictus,,Seladonia cephalica,1.28,,,GBIF
+M_015,Halictus gemmeus,,Seladonia gemmea,1.28,,,GBIF
+M_015,Halictus smaragdulus,,Seladonia smaragdula,1.09,,,GBIF
+M_015,Halictus subauratus,,Halictus subaurata,1.53,,,GBIF
+M_015,Heriades dalmaticus ,,Heriades punctulifera,1,,,www.catalogueoflife.org
+M_015,Heriades trucorum,,Heriades truncorum,1.53,,,www.catalogueoflife.org
+M_015,Hoplitis crenulata,,Hoplitis annulata subsp. crenulata,1.9,,,GBIF
+M_015,Lasioglossum cristula sub. donatum,,Lasioglossum cristula,1.51,,,GBIF
+M_015,Lasioglossum laticeps hellenicum,,Lasioglossum laticeps,,1.47,,GBIF
+M_015,Lasioglossum leucozonium clusium,,Lasioglossum leucozonium,,1.91,,GBIF
+M_015,Lasioglossum nitidulum fudakowskii,,Lasioglossum nitidulum,1.17,,,GBIF
+M_015,Lasioglossum obscuratum acerbum,,Lasioglossum obscuratum,2.11,,,GBIF
+M_015,Lasioglossum pygmaeum sub patulum,,Lasioglossum pygmaeum,1.27,,,GBIF
+M_015,Lasioglossum subaenescens sub asiaticum,,Lasioglossum subaenescen,1.33,,,GBIF
+M_015,Megachile giraudi bicoloriventris,,Megachile giraudi,2.97,,,GBIF
+M_015,Megachile pilidens,Sinon. M. argentata,Megachile argentata,2.82,,,GBIF
+M_015,Melecta albifrons sub albovaria,,Melecta albifrons,3.59,,,GBIF
+M_015,Mesanthidium carduele,,Afranthidium (mesanthidium) carduele,2.06,,,GBIF
+M_015,Metallinella brevicornis,,Osmia (Metallinella) brevicornis,2.3,,,GBIF
+M_015,Nomada calimorpha,,Nomada calimorpha,1.65,,,GBIF
+M_015,Nomada nobilia,,Nomada nobilis,1.97,,,GBIF - www.catalogueoflife.org
+M_015,Nomada rubricolis,,Nomada rubricollis,1.83,,,GBIF
+M_015,Osmia latrellei,,Osmia latreillei,2.89,,,GBIF
+M_015,Osmia longiceps,,Osmia cephalotes,1.74,,,GBIF
+M_015,Osmia nicosiana,,Osmia viridana,1.69,,,GBIF
+M_015,Proxylocopa olivieri,,Xylocopa (Proxylocopa) olivieri,,,,GBIF
+M_015,Pseudapis diverispes,Sinon de Pseudapis diversipes,Nomia diversipes,1.84,,,GBIF
+M_015,Pseudapis monstrosa,sinonimo ,Nomia rumelica,,,,GBIF
+M_015,Pseudapis unidentata,sinonimo ,Nomia unidentata,,,,
+M_015,Pseudoanthidium lituratum,,Pseudoanthidium nanum,1.96,,,GBIF
+M_015,Pseudoheriades hofferi,,Stenoheriades coelostoma,,,,
+M_015,Rophites algirus graecus,,Rophites algirus,2.19,,,GBIF
+M_006,Andrena pubescens,,Andrena nitida,2.9,,,GBIF
+M_006,Bombus terrestris/lucorum,,Bombus terrestris,,4.78,,GBIF
+M_006,Psithyrus vest,,Psithyrus vestalis,,,(sinonimo Bombus vestalis),
+M_007,Andrena pubescens,,Andrena nitida,2.9,,,GBIF
+M_007,Bombus terrestris/lucorum,,Bombus terrestris,,4.78,,GBIF
+M_007,Psithyrus vest,,Psithyrus vestalis,,,(sinonimo Bombus vestalis),GBIF
+M_017,Apis mellifera,,Apis mellifera,3.01,2.9,,GBIF
+M_036,Apis mellifera,,Apis mellifera,3.01,2.9,,GBIF
+M_059,Centris aena,,Centris aena,,4.7,4.7,GBIF - www.catalogueoflife.org
+M_059,Centris flavifrons,,Centris flavifrons,,5.6,5.6,GBIF - www.catalogueoflife.org
+M_059,Centris fuscata,,Centris fuscata,,4.8,4.8,GBIF - www.catalogueoflife.org
+M_059,Centris tarsata,,Centris tarsata,,6.7,3,GBIF
+M_030,Eulema nigrita,,Eulema nigrita,,,5.1,GBIF
+M_030,Xylocopa fibriata,,Xylocopa fimbriata,,,,GBIF
+M_031,Bombus atratus,,Bombus atratus,,,5.6,OJO B. pauloensis en sinonino su IDT 3.9
+M_031,Melipona compresipes,,Melipona interrupta subsp. oblitescens,,,,
+m_072,Bombus atratus,,,,,5.66,GBIF
+M_005,Agapostemon coloradensis,Sinon de Agapostemos coloradensis,Agapostemon coloradinus,,,,www.catalogueoflife.org
+M_005,Andrena placida,,Andrena barbilabris,2.32,,,GBIF
+M_005,Anthophora smithii,,Anthophora quadricolor,4.12,,,GBIF
+M_005,Bombus rufocinctus,,Bombus hyperboreus subsp. albertensis,7.6,,,El DIT corresponde sólo a la especie

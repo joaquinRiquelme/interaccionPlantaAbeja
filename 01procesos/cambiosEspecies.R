@@ -1,3 +1,10 @@
+# Codigo de correccion de especies
+
+# 
+baseDatos <- readRDS(file = "../00baseDatos/base_datos.RDS")
+especies <- baseDatos$especies
+especies$especie
+
 especie$especie[especie$especie=="chalicodoma albocristata"] <- "Megachile albocristata"
 especie$especie[especie$especie=="chalicodoma ericetorum"] <- "Megachile ericetorum"
 especie$especie[especie$especie=="chalicodoma hungarica"] <- "Megachile hungarica"
