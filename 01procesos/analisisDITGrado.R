@@ -23,6 +23,13 @@ head(datos_insectos)
 
 # Clasificamos el tamaño
 datos_insectos$tamano_mm <- datos_insectos$DIT.final
+
+install.packages("moments")
+library(moments)
+skewness(datos_insectos$Z_Grado) 
+skewness(datos_insectos$Grado_relativo) 
+skewness(datos_insectos$Grado) 
+
 datos_insectos$tamano_clase[datos_insectos$tamano_mm <= 2.2] <- "1.Pequeño"
 datos_insectos$tamano_clase[datos_insectos$tamano_mm > 2.2 & datos_insectos$tamano_mm <= 3.9] <- "2.Mediano"
 datos_insectos$tamano_clase[datos_insectos$tamano_mm > 3.9] <- "3.Grande"
@@ -33,7 +40,7 @@ abline(h=c(2.2,3.9))
 
 # Respuestas (Y)
 datos_insectos$grado_num <- datos_insectos$Z_Grado
-datos_insectos$grado_num <- datos_insectos$Grado
+# datos_insectos$grado_num <- datos_insectos$Grado
 datos_insectos <- subset(datos_insectos, !is.na(Z_Grado))
 par(mfrow=c(2,1))
 hist(datos_insectos$grado_num)
@@ -44,7 +51,18 @@ abline(v=(summary(datos_insectos$grado_num)[c(2,3,5)]))
 # Simulamos la dieta (Categórica Binaria: Especialista/Generalista)
 # Insectos más grandes tienen mayor probabilidad de ser generalistas
 datos_insectos$clase_especializacion <- NA
+boxplot(datos_insectos$grado_num, horizontal = TRUE, main="Distribución de Z score de grado, mediana marcada en rojo")
 summary(datos_insectos$grado_num)
+abline(v=summary(datos_insectos$grado_num)[3], col=c(1,1,2,1,1,1,1)[3], lwd=c(1,1,2,1,1,1,1)[3])
+text(x = summary(datos_insectos$grado_num)[3]+0.2, y = 0.5, labels = round(summary(datos_insectos$grado_num)[3],2))
+
+
+png("boxplot_ZScore_matriz.png")
+boxplot(grado_num~ID, subset(datos_insectos),ylim=c(-1.5,6))
+# abline(h=summary(subset(datos_insectos)$grado_num)[3], col="blue")
+abline(h=-0.27, col="red", lwd=2)
+dev.off()
+
 datos_insectos$clase_especializacion[datos_insectos$grado_num <  summary(datos_insectos$grado_num)[3]] <- "1.Especialista"
 datos_insectos$clase_especializacion[datos_insectos$grado_num >=  summary(datos_insectos$grado_num)[3]] <- "2.Generalista"
 # datos_insectos$clase_especializacion[datos_insectos$grado_num >  summary(datos_insectos$grado_num)[3] &
@@ -90,6 +108,7 @@ library(ggplot2)
 library(ggpubr) # Para agregar p-values fácilmente
 
 # 4. Visualizar con ggplot2 y ggpubr
+png("Anova.png")
 ggplot(datos_insectos, aes(x = tamano_clase, y = grado_num, fill = tamano_clase)) +
   geom_boxplot(alpha = 0.7) +
   theme_minimal() +
@@ -104,7 +123,7 @@ ggplot(datos_insectos, aes(x = tamano_clase, y = grado_num, fill = tamano_clase)
     subtitle = "Comparación de distribuciones (Categórica vs Continua)") +
   theme(legend.position = "none") # Ocultamos la leyenda porque el eje X ya lo explica
 
-
+dev.off()
 # Prueba post-hoc si hay diferencias significativas
 TukeyHSD(modelo_anova)
 
@@ -123,6 +142,7 @@ plot(modelo_lm)
 print("--- 2B. Modelos Aditivos Generalizados (GAM) ---")
 # Ideal si sospechamos que la generalización hace una asíntota al llegar a cierto tamaño
 modelo_gam <- gam(grado_num ~ s(tamano_mm), data = datos_insectos, method = "REML")
+summary(modelo_gam)
 plot(grado_num~tamano_mm, datos_insectos)
 abline(modelo_lm, col="red")
 # plot(modelo_gam, pages = 1) # Para ver la curva de respuesta
@@ -134,6 +154,7 @@ abline(modelo_lm, col="red")
 # Se usa geom_smooth() para añadir la curva. Usamos "lm" para regresión lineal 
 # o "gam" para relaciones no lineales.
 
+png("RegresionGAM.png")
 plot_regresion <- ggplot(datos_insectos, aes(x = tamano_mm, y = grado_num)) +
   geom_point(alpha = 0.5, color = "#2c3e50") + # Puntos de datos
   geom_smooth(method = "gam", color = "#e74c3c", fill = "#e74c3c", alpha = 0.2) + # Curva ajustada
@@ -146,7 +167,7 @@ plot_regresion <- ggplot(datos_insectos, aes(x = tamano_mm, y = grado_num)) +
   )
 
 print(plot_regresion)
-
+dev.off()
 
 # ==============================================================================
 # ANÁLISIS 3: X Continua -> Y Categórica

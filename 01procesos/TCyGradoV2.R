@@ -18,13 +18,14 @@ Grados_Abejas <- read.csv("../02salidas/Grados_Abejas_sinAM.csv")
 
 Grados_Abejas <- subset(Grados_Abejas, !is.nan(Z_Grado))
 
-GyTC <- merge(Grados_Abejas, DIT, by="sp.armonizado")
+GyTC <- merge(Grados_Abejas, DIT, by="sp.armonizado", all.x = TRUE)
 # GyTC_todas <- merge(Grados, DIT, by.x="especie", by.y="especies", all.x = TRUE)
 # GyTC_todas_abejas <- subset(GyTC_todas, !is.na(Familia))
 
 # table(is.na(GyTC_todas_abejas$DIT))
 
 head(GyTC)
+summary(GyTC$Z_Grado)
 # head(GyTC_todas)
 # table(GyTC_todas$Familia)
 head(Grados)
