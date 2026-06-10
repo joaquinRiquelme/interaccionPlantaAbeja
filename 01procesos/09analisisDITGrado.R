@@ -19,6 +19,7 @@ n_obs <- 200
 
 
 datos_insectos <- read.csv("GyTCV2.csv")
+datos_insectos <- subset(datos_insectos, !is.na(tamano_mm))
 head(datos_insectos)
 
 # Clasificamos el tamaño
@@ -37,9 +38,9 @@ datos_insectos$tamano_clase[datos_insectos$tamano_mm > 3.9] <- "3.Grande"
 boxplot(tamano_mm~tamano_clase,datos_insectos)
 abline(h=c(2.2,3.9))
 
-
 # Respuestas (Y)
-datos_insectos$grado_num <- datos_insectos$Z_Grado
+# datos_insectos$grado_num <- datos_insectos$Z_Grado
+datos_insectos$grado_num <- datos_insectos$GFE
 # datos_insectos$grado_num <- datos_insectos$Grado
 datos_insectos <- subset(datos_insectos, !is.na(Z_Grado))
 par(mfrow=c(2,1))
@@ -60,7 +61,7 @@ text(x = summary(datos_insectos$grado_num)[3]+0.2, y = 0.5, labels = round(summa
 png("boxplot_ZScore_matriz.png")
 boxplot(grado_num~ID, subset(datos_insectos),ylim=c(-1.5,6))
 # abline(h=summary(subset(datos_insectos)$grado_num)[3], col="blue")
-abline(h=-0.27, col="red", lwd=2)
+abline(h=median(datos_insectos$grado_num), col="red", lwd=2)
 dev.off()
 
 datos_insectos$clase_especializacion[datos_insectos$grado_num <  summary(datos_insectos$grado_num)[3]] <- "1.Especialista"

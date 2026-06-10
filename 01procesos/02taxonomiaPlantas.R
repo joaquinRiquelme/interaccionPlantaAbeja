@@ -75,6 +75,37 @@ names(plantasFinal) <- c("Genero.original","Genero.especie",
 
 head(plantasFinal)
 write.csv(plantasFinal, file = "Plantas.armonizado.GBIF.csv",row.names = FALSE)
+plantasFinal <- read.csv(file = "Plantas.armonizado.GBIF.csv")
+
+plantas <- subset(plantasFinal, genero.es.igual==TRUE)
+head(plantas)
+
+plantas2 <- plantas |> group_by(Genero.especie) |> mutate(
+  n.fam = length(unique(Familia.GBIF))
+)
+plantas2$Familia.GBIF[plantas2$n.fam!=1]<- NA
+
+barplot(table(plantas2$n.fam))
+head(plantas2)
+
+ml.arm.2 <- merge(plantas2, ml.arm, by.x = "Genero.especie", by.y = "plantas", all.x=FALSE, all.y=TRUE)
+head(ml.arm.2)
+ml.arm.2$planta <- ml.arm.2$Genero.especie 
+ml.arm.2$Genero.especie <- NULL
+ml.arm.2$genero.es.igual <- NULL
+ml.arm.2$Bases.de.datos <- NULL
+head(ml.arm.2)
+
+ml.arm.2 <- unique(ml.arm.2[,c("ID","Orden.GBIF","Familia.GBIF","Genero.GBIF","Genero.original","planta",
+                        "interaccion","especie","esp","Aceptado","sp.armonizado")])
+
+head(ml.arm.2)
+
+write.csv(ml.arm.2, "ml.armonizado.plantas.abejas.csv", row.names = FALSE)
+ml.arm.2 <- read.csv("ml.armonizado.plantas.abejas.csv")
+
+head(ml.arm.2)
 
 
-# print(df_final)
+aaaa
+

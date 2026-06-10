@@ -1,35 +1,74 @@
 library(tidyverse)
+library(vegan)
+library(lattice)
 
 # base_datos <- readRDS("../00baseDatos/base_datos.RDS")
 
-ml.arm <- read.csv("../01procesos/ml.arm.csv")
+# ml.arm <- read.csv("../01procesos/ml.arm.csv")
+ml.arm <- read.csv("../01procesos/ml.abejas.csv")
 
 
-ml.arm2 <- ml.arm |> group_by(ID, sp.armonizado, plantas) |> 
-  summarise(interaccion=as.numeric(sum(interaccion, na.rm = TRUE)>0))
+ml.arm2 <- ml.arm |> group_by(ID, sp.armonizado, planta) |> 
+  mutate(interaccion=as.numeric(sum(interaccion, na.rm = TRUE)>0))
 
 # ml <- base_datos$matriz_comp_larga
-head(ml.arm)
-ml <- subset(ml.arm2, interaccion > 0)
+head(ml.arm2)
+ml.arm2$Bases.de.datos <- NULL
+ml.arm2$X <- NULL
+ml <- unique(subset(ml.arm2, interaccion > 0))
 # especie <- base_datos$especies
+# vegan::diversity(x = table(), index = "shannon")
+# Grado familias y especies de plantas
+# table(ml$Familia.GBIF, ml$planta)
 
-# Grado 
-Grado <- ml |> group_by(ID, sp.armonizado) |>
-  mutate(Grado=sum(interaccion==1)) |>
-  select(c(-plantas,-interaccion)) |> 
+# diversity(x = , groups = ml$ID)
+
+GFE <- ml |> group_by(ID, familia, sp.armonizado) |>
+  summarise(Grado=sum(interaccion==1),
+         n.familia=length(unique(Familia.GBIF)),
+         GFE=diversity(x=table(Familia.GBIF), index = "shannon")
+         ) |>
   unique()
-head(Grado)
-Grado <- subset(Grado, Grado>0)
+  # select(c(-planta,-interaccion)) |> 
+head(GFE)
 
-# Calculo de grado relativo y zscore
-Grados <- Grado |> group_by(ID) |>
-  mutate(Grado_max=max(Grado)) |>
-  # mutat(Grado_potencial=)
-  mutate(Grado_relativo=Grado/Grado_max) |>
-  mutate(Z_Grado=scale(Grado)[,1])
-head(Grados)
-write.csv(x = Grados, file = "../02salidas/GradosV2.csv", row.names = FALSE)
 
+n.plantas.ID <- ml |> group_by(ID)|> summarise(
+  n.plantas.ID=length(unique(planta))
+)
+
+GFE <- merge(GFE, n.plantas.ID, by = "ID")
+GFE$Grado.relativo <- GFE$Grado/GFE$n.plantas.ID
+
+hist(GFE$Grado)
+boxplot(Grado~familia, GFE); summary(GFE$Grado)
+histogram(~Grado|familia, GFE)
+
+boxplot(n.familia~familia, GFE); summary(GFE$n.familia)
+hist(GFE$n.familia)
+histogram(~n.familia|familia, GFE)
+
+boxplot(Grado.relativo~familia, GFE); summary(GFE$Grado.relativo)
+hist(GFE$Grado.relativo)
+histogram(~Grado.relativo|familia, GFE)
+
+GFE <- subset(GFE, GFE>0)
+hist(GFE$GFE)
+boxplot(GFE~familia, GFE)
+histogram(~GFE|familia, GFE)
+
+
+GFE <- GFE |> group_by(ID)|> mutate(Z_Grado=scale(Grado)[,1])
+hist(GFE$Z_Grado)
+boxplot(Z_Grado~familia, GFE)
+histogram(~Z_Grado|familia, GFE)
+
+# write.csv(x = Grados, file = "../02salidas/GradosV2.csv", row.names = FALSE)
+write.csv(x = GFE, file = "../02salidas/GFE.csv", row.names = FALSE)
+
+
+
+#### HASTA ACA
 
 # Calculo de grado de especies de familias de abeja
 

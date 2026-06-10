@@ -1,6 +1,6 @@
 ---
 title: "Actualización de base de datos interacción planta-abeja"
-author: "Katherine Collao, Joaquin Riquelme, Maureen Murúa"
+author: "Katherine Collao, Joaquin Riquelme, Maureen Murúa, Rodrigo Ramos"
 format: html
 editor: visual
 ---
@@ -135,7 +135,8 @@ write.csv(matriz_comp_larga, file = paste("tablas/matriz_comp_larga","csv",sep="
 La tabla especie se poblará a partir de los valores únicos de la matriz larga que contiene todas las fuentes de datos.
 
 ```{r especies}
-matriz_comp_larga <- base_datos$matriz_comp_larga
+#matriz_comp_larga <- base_datos$matriz_comp_larga
+matriz_comp_larga <- read.csv("../01procesos/ml.armonizado.plantas.abejas.csv")
 head(matriz_comp_larga)
 
 unique(matriz_comp_larga$especie)

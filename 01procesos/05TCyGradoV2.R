@@ -13,8 +13,8 @@ head(DIT)
 
 # Grados <- read.csv("../02salidas/Grados.csv")
 # head(Grados)
-Grados_Abejas <- read.csv("../02salidas/Grados_Abejas.csv")
-Grados_Abejas <- read.csv("../02salidas/Grados_Abejas_sinAM.csv")
+# Grados_Abejas <- read.csv("../02salidas/Grados_Abejas.csv")
+Grados_Abejas <- read.csv("../02salidas/GFE.csv")
 
 Grados_Abejas <- subset(Grados_Abejas, !is.nan(Z_Grado))
 
@@ -28,7 +28,7 @@ head(GyTC)
 summary(GyTC$Z_Grado)
 # head(GyTC_todas)
 # table(GyTC_todas$Familia)
-head(Grados)
+# head(Grados)
 
 
 for(i in unique(GyTC$ID)){

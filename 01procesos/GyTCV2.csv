@@ -1,630 +1,789 @@
-"sp.armonizado","ID","Grado","Grado_max","Grado_relativo","Z_Grado","Family","Genus","DIT.final"
-"Agapostemon splendens","M_005",4,37,0.108108108108108,-0.213872736232715,"Halictidae","Agapostemon",2.38
-"Agapostemon splendens","M_062",1,121,0.00826446280991736,-0.70653148633059,"Halictidae","Agapostemon",2.38
-"Agapostemon texanus","M_062",121,121,1,4.80121606008558,"Halictidae","Agapostemon",2.04
-"Agapostemon virescens","M_073",1,21,0.0476190476190476,-0.593819839019529,"Halictidae","Agapostemon",2.308
-"Alloscirtetica gayi","M_001",2,16,0.125,-0.438753804794369,"Apidae","Alloscirtetica",3.102
-"Alloscirtetica rufitarsis","M_002",1,8,0.125,-0.755704334827634,"Apidae","Alloscirtetica",3.36
-"Alloscirtetica rufitarsis","M_001",3,16,0.1875,-0.19712127461776,"Apidae","Alloscirtetica",3.36
-"Amegilla albigena","M_015",14,38,0.368421052631579,1.50701468617878,"Apidae","Amegilla",3.12
-"Amegilla canifrons","M_050",2,8,0.25,-0.834057656228299,"Apidae","Amegilla",5.38
-"Amegilla canifrons","M_039",5,13,0.384615384615385,-0.15735745936194,"Apidae","Amegilla",5.38
-"Amegilla fasciata","M_016",4,9,0.444444444444444,0.633392237243986,"Apidae","Amegilla",3.95
-"Amegilla garrula","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Amegilla",4.45
-"Amegilla ochroleuca","M_015",2,38,0.0526315789473684,-0.491190639739269,"Apidae","Amegilla",3.82
-"Amegilla quadrifasciata","M_016",2,9,0.222222222222222,-0.273899345835237,"Apidae","Amegilla",4.02
-"Amegilla quadrifasciata","M_039",3,13,0.230769230769231,-0.606950200396053,"Apidae","Amegilla",4.02
-"Amegilla quadrifasciata","M_015",7,38,0.184210526315789,0.341394912726585,"Apidae","Amegilla",4.02
-"Amegilla quadrifasciata","M_050",3,8,0.375,-0.41702882811415,"Apidae","Amegilla",4.02
-"Amegilla savignyi","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Amegilla",3.86
-"Ammobates oraniensis","M_015",2,38,0.0526315789473684,-0.491190639739269,"Apidae","Ammobates",2.1
-"Andrena alfkenella","M_015",2,38,0.0526315789473684,-0.491190639739269,"Andrenidae","Andrena",1.47
-"Andrena alleghaniensis","M_033",3,11,0.272727272727273,-1.29068932937447,"Andrenidae","Andrena",1.44
-"Andrena arabis","M_025",1,7,0.142857142857143,-1.05362781094266,"Andrenidae","Andrena",2.1
-"Andrena arabis","M_062",4,121,0.0330578512396694,-0.568837797670186,"Andrenidae","Andrena",2.1
-"Andrena assimilis","M_016",1,9,0.111111111111111,-0.727545137374849,"Andrenidae","Andrena",3.29
-"Andrena athenensis","M_015",1,38,0.0263157894736842,-0.65770775023244,"Andrenidae","Andrena",2.3
-"Andrena barbilabris","M_005",1,37,0.027027027027027,-0.650347708136215,"Andrenidae","Andrena",2.32
-"Andrena barbilabris","M_047",1,8,0.125,-0.742520131897348,"Andrenidae","Andrena",2.32
-"Andrena bicolor","M_016",1,9,0.111111111111111,-0.727545137374849,"Andrenidae","Andrena",2.01
-"Andrena bicolor","M_015",3,38,0.0789473684210526,-0.324673529246099,"Andrenidae","Andrena",2.01
-"Andrena bicolorata","M_015",1,38,0.0263157894736842,-0.65770775023244,"Andrenidae","Andrena",2.83
-"Andrena bimaculata","M_016",1,9,0.111111111111111,-0.727545137374849,"Andrenidae","Andrena",2.71
-"Andrena canohirta","M_015",4,38,0.105263157894737,-0.158156418752928,"Andrenidae","Andrena",1.5
-"Andrena carlini","M_032",4,4,1,1.93358892421225,"Andrenidae","Andrena",2.9
-"Andrena carlini","M_033",5,11,0.454545454545455,-0.409242958094345,"Andrenidae","Andrena",2.9
-"Andrena carlini","M_062",59,121,0.487603305785124,1.95554649443722,"Andrenidae","Andrena",2.9
-"Andrena carlini","M_025",7,7,1,1.79561922709946,"Andrenidae","Andrena",2.9
-"Andrena carolina","M_033",4,11,0.363636363636364,-0.849966143734408,"Andrenidae","Andrena",2.09
-"Andrena chrysosceles","M_007",1,10,0.1,-0.604538515437949,"Andrenidae","Andrena",1.87
-"Andrena cinereophila","M_015",1,38,0.0263157894736842,-0.65770775023244,"Andrenidae","Andrena",1.99
-"Andrena clarkella","M_047",2,8,0.25,-0.26518576139191,"Andrenidae","Andrena",2.97
-"Andrena combaella","M_015",1,38,0.0263157894736842,-0.65770775023244,"Andrenidae","Andrena",2.12
-"Andrena concinna","M_015",3,38,0.0789473684210526,-0.324673529246099,"Andrenidae","Andrena",2.67
-"Andrena crassana","M_015",4,38,0.105263157894737,-0.158156418752928,"Andrenidae","Andrena",1.45
-"Andrena crataegi","M_005",9,37,0.243243243243243,0.513585550273118,"Andrenidae","Andrena",1.81
-"Andrena cressoni","M_032",2,4,0.5,0.197304992266556,"Andrenidae","Andrena",2.06
-"Andrena distinguenda","M_015",4,38,0.105263157894737,-0.158156418752928,"Andrenidae","Andrena",1.56
-"Andrena dunningi","M_025",1,7,0.142857142857143,-1.05362781094266,"Andrenidae","Andrena",2.64
-"Andrena erigeniae","M_025",4,7,0.571428571428571,0.370995708078401,"Andrenidae","Andrena",2.1
-"Andrena flavipes","M_015",16,38,0.421052631578947,1.84004890716512,"Andrenidae","Andrena",2.36
-"Andrena forbesii","M_032",3,4,0.75,1.0654469582394,"Andrenidae","Andrena",2.2
-"Andrena fulva","M_047",3,8,0.375,0.212148609113528,"Andrenidae","Andrena",2.72
-"Andrena fulvitarsis","M_015",1,38,0.0263157894736842,-0.65770775023244,"Andrenidae","Andrena",2
-"Andrena fuscipes","M_047",1,8,0.125,-0.742520131897348,"Andrenidae","Andrena",2.21
-"Andrena grossella","M_015",3,38,0.0789473684210526,-0.324673529246099,"Andrenidae","Andrena",2.28
-"Andrena haemorrhoa","M_006",3,10,0.3,-0.174504949503245,"Andrenidae","Andrena",2.49
-"Andrena haemorrhoa","M_047",5,8,0.625,1.1668173501244,"Andrenidae","Andrena",2.49
-"Andrena haemorrhoa japonibia","M_021",1,25,0.04,-0.570567593827875,"Andrenidae","Andrena",2.54
-"Andrena hattorfiana","M_015",7,38,0.184210526315789,0.341394912726585,"Andrenidae","Andrena",2.71
-"Andrena hesperia","M_015",7,38,0.184210526315789,0.341394912726585,"Andrenidae","Andrena",1.92
-"Andrena hispania","M_016",4,9,0.444444444444444,0.633392237243986,"Andrenidae","Andrena",2.95
-"Andrena humilis","M_015",19,38,0.5,2.33960023864463,"Andrenidae","Andrena",2.25
-"Andrena hyemala","M_015",1,38,0.0263157894736842,-0.65770775023244,"Andrenidae","Andrena",1.27
-"Andrena imitatrix","M_073",1,21,0.0476190476190476,-0.593819839019529,"Andrenidae","Andrena",4.49
-"Andrena imitatrix","M_005",1,37,0.027027027027027,-0.650347708136215,"Andrenidae","Andrena",4.49
-"Andrena impunctata","M_015",1,38,0.0263157894736842,-0.65770775023244,"Andrenidae","Andrena",1.24
-"Andrena japonica","M_054",2,24,0.0833333333333333,-0.36460910259625,"Andrenidae","Andrena",1.22
-"Andrena japonicum","M_055",1,12,0.0833333333333333,-0.725052335305738,"Andrenidae","Andrena",1.22
-"Andrena kriechbaumeri","M_015",3,38,0.0789473684210526,-0.324673529246099,"Andrenidae","Andrena",2.1
-"Andrena lamiana","M_015",6,38,0.157894736842105,0.174877802233414,"Andrenidae","Andrena",1.31
-"Andrena lapponica","M_047",2,8,0.25,-0.26518576139191,"Andrenidae","Andrena",2.54
-"Andrena lapponica","M_056",3,22,0.136363636363636,-0.360919119913044,"Andrenidae","Andrena",2.54
-"Andrena longitibialis","M_053",4,15,0.266666666666667,0.210474001292354,"Andrenidae","Andrena",1.59
-"Andrena longitibialis","M_056",1,22,0.0454545454545455,-0.667453166962479,"Andrenidae","Andrena",1.59
-"Andrena longitibialis","M_021",1,25,0.04,-0.570567593827875,"Andrenidae","Andrena",1.59
-"Andrena mandibularis","M_062",9,121,0.0743801652892562,-0.339348316569512,"Andrenidae","Andrena",1.87
-"Andrena mandibularis","M_033",6,11,0.545454545454545,0.0314802275457187,"Andrenidae","Andrena",1.87
-"Andrena melanochroa","M_004",1,8,0.125,-0.574800907851677,"Andrenidae","Andrena",1.7
-"Andrena minutula","M_021",4,25,0.16,-0.0387764384154867,"Andrenidae","Andrena",1.42
-"Andrena minutula","M_057",11,37,0.297297297297297,0.786358076076142,"Andrenidae","Andrena",1.42
-"Andrena minutula","M_053",2,15,0.133333333333333,-0.371424708162977,"Andrenidae","Andrena",1.42
-"Andrena miranda","M_004",2,8,0.25,-0.0359250567407299,"Andrenidae","Andrena",1.9
-"Andrena miserabilis","M_032",2,4,0.5,0.197304992266556,"Andrenidae","Andrena",1.7
-"Andrena mocsaryi","M_015",12,38,0.315789473684211,1.17398046519244,"Andrenidae","Andrena",2.19
-"Andrena mucronata","M_015",6,38,0.157894736842105,0.174877802233414,"Andrenidae","Andrena",2.84
-"Andrena nana","M_015",1,38,0.0263157894736842,-0.65770775023244,"Andrenidae","Andrena",1.64
-"Andrena nasonii","M_025",3,7,0.428571428571429,-0.103878798261952,"Andrenidae","Andrena",1.59
-"Andrena nigroaenea","M_016",2,9,0.222222222222222,-0.273899345835237,"Andrenidae","Andrena",2.84
-"Andrena nigroaenea","M_015",6,38,0.157894736842105,0.174877802233414,"Andrenidae","Andrena",2.84
-"Andrena nigroaenea","M_047",3,8,0.375,0.212148609113528,"Andrenidae","Andrena",2.84
-"Andrena nitida","M_006",2,10,0.2,-0.473656291508807,"Andrenidae","Andrena",2.9
-"Andrena nitida","M_007",1,10,0.1,-0.604538515437949,"Andrenidae","Andrena",2.9
-"Andrena nivalis","M_004",2,8,0.25,-0.0359250567407299,"Andrenidae","Andrena",2.69
-"Andrena nobilis","M_015",2,38,0.0526315789473684,-0.491190639739269,"Andrenidae","Andrena",2.66
-"Andrena nubecula","M_062",1,121,0.00826446280991736,-0.70653148633059,"Andrenidae","Andrena",1.17
-"Andrena optata","M_015",2,38,0.0526315789473684,-0.491190639739269,"Andrenidae","Andrena",2.37
-"Andrena oralis","M_015",2,38,0.0526315789473684,-0.491190639739269,"Andrenidae","Andrena",1.96
-"Andrena panurgimorpha","M_015",1,38,0.0263157894736842,-0.65770775023244,"Andrenidae","Andrena",1.98
-"Andrena panurgina","M_015",1,38,0.0263157894736842,-0.65770775023244,"Andrenidae","Andrena",1.69
-"Andrena personata","M_025",1,7,0.142857142857143,-1.05362781094266,"Andrenidae","Andrena",1.2
-"Andrena personata","M_062",3,121,0.0247933884297521,-0.614735693890321,"Andrenidae","Andrena",1.2
-"Andrena personata","M_032",1,4,0.25,-0.67083697370629,"Andrenidae","Andrena",1.2
-"Andrena pilipes","M_015",8,38,0.210526315789474,0.507912023219755,"Andrenidae","Andrena",3.21
-"Andrena pruni","M_062",83,121,0.685950413223141,3.05709600372046,"Andrenidae","Andrena",2.5
-"Andrena rugosa","M_032",3,4,0.75,1.0654469582394,"Andrenidae","Andrena",2.07
-"Andrena rugothorace","M_015",17,38,0.447368421052632,2.00656601765829,"Andrenidae","Andrena",1.45
-"Andrena schmiedeknechti","M_015",6,38,0.157894736842105,0.174877802233414,"Andrenidae","Andrena",2.56
-"Andrena schulzi","M_015",13,38,0.342105263157895,1.34049757568561,"Andrenidae","Andrena",1.32
-"Andrena scita","M_015",1,38,0.0263157894736842,-0.65770775023244,"Andrenidae","Andrena",2.9
-"Andrena simontornyella","M_015",2,38,0.0526315789473684,-0.491190639739269,"Andrenidae","Andrena",1.38
-"Andrena spiraeana","M_062",71,121,0.586776859504132,2.50632124907884,"Andrenidae","Andrena",1.94
-"Andrena spiraeana","M_073",1,21,0.0476190476190476,-0.593819839019529,"Andrenidae","Andrena",1.94
-"Andrena subopaca","M_057",1,37,0.027027027027027,-0.526844277609662,"Andrenidae","Andrena",1.39
-"Andrena taraxaci","M_053",2,15,0.133333333333333,-0.371424708162977,"Andrenidae","Andrena",2.17
-"Andrena taraxaci","M_015",2,38,0.0526315789473684,-0.491190639739269,"Andrenidae","Andrena",2.17
-"Andrena tarsata","M_047",1,8,0.125,-0.742520131897348,"Andrenidae","Andrena",1.71
-"Andrena tomora","M_015",2,38,0.0526315789473684,-0.491190639739269,"Andrenidae","Andrena",1.38
-"Andrena truncatilabris","M_015",4,38,0.105263157894737,-0.158156418752928,"Andrenidae","Andrena",2.27
-"Andrena ventricosa","M_015",4,38,0.105263157894737,-0.158156418752928,"Andrenidae","Andrena",1.72
-"Andrena vicina","M_005",10,37,0.27027027027027,0.659077207574285,"Andrenidae","Andrena",2.54
-"Andrena vicina","M_033",8,11,0.727272727272727,0.912926598825845,"Andrenidae","Andrena",2.54
-"Andrena vicina","M_073",1,21,0.0476190476190476,-0.593819839019529,"Andrenidae","Andrena",2.54
-"Andrena villipes","M_016",2,9,0.222222222222222,-0.273899345835237,"Andrenidae","Andrena",2.71
-"Andrena violae","M_025",1,7,0.142857142857143,-1.05362781094266,"Andrenidae","Andrena",2.3
-"Andrena vulcana","M_039",1,13,0.0769230769230769,-1.05654294143017,"Andrenidae","Andrena",2.83
-"Andrena w scripta","M_004",2,8,0.25,-0.0359250567407299,"Andrenidae","Andrena",1.74
-"Andrena westensis","M_015",8,38,0.210526315789474,0.507912023219755,"Andrenidae","Andrena",2.3
-"Andrena wilkella","M_004",1,8,0.125,-0.574800907851677,"Andrenidae","Andrena",2.36
-"Andrena wilkella","M_047",1,8,0.125,-0.742520131897348,"Andrenidae","Andrena",2.36
-"Andrena wilkella","M_006",5,10,0.5,0.42379773450788,"Andrenidae","Andrena",2.36
-"Andrena wollastoni","M_008",2,6,0.333333333333333,-0.738112322163063,"Andrenidae","Andrena",1.5
-"Anthidium chilensis","M_001",8,16,0.5,1.01104137626528,"Megachilidae","Anthidium",1.2
-"Anthidium chubuti","M_022",3,7,0.428571428571429,0,"Megachilidae","Anthidium",3.69
-"Anthidium dalmaticum","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Anthidium",3.02
-"Anthidium decaspilum","M_001",4,16,0.25,0.044511255558849,"Megachilidae","Anthidium",3.2
-"Anthidium florentinum","M_015",7,38,0.184210526315789,0.341394912726585,"Megachilidae","Anthidium",3.92
-"Anthidium funereum","M_001",7,16,0.4375,0.769408846088676,"Megachilidae","Anthidium",3.2
-"Anthidium funereum","M_002",3,8,0.375,0.130293850832351,"Megachilidae","Anthidium",3.2
-"Anthidium manicatum","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Anthidium",3.51
-"Anthidium manicatum","M_008",1,6,0.166666666666667,-1.36266890245489,"Megachilidae","Anthidium",3.51
-"Anthidium septemspinosum","M_054",3,24,0.125,-0.163562961912336,"Megachilidae","Anthidium",3.5
-"Anthidium taeniatum","M_015",2,38,0.0526315789473684,-0.491190639739269,"Megachilidae","Anthidium",2.56
-"Anthidium undulatum","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Anthidium",2.57
-"Anthophora abrupta","M_073",2,21,0.0952380952380952,-0.382110157282132,"Andrenidae","Anthophora",3.9
-"Anthophora alluaudi","M_008",6,6,1,1.76011399900423,"Apidae","Anthophora",4.16
-"Anthophora alluaudi","M_039",6,13,0.461538461538462,0.0674389111551169,"Apidae","Anthophora",4.16
-"Anthophora alluaudi","M_050",1,8,0.125,-1.25108648434245,"Apidae","Anthophora",4.16
-"Anthophora alluaudi","M_012",8,8,1,2.26825924444275,"Apidae","Anthophora",4.16
-"Anthophora atroalba","M_015",8,38,0.210526315789474,0.507912023219755,"Apidae","Anthophora",3.88
-"Anthophora canescens","M_015",2,38,0.0526315789473684,-0.491190639739269,"Apidae","Anthophora",4.78
-"Anthophora dispar","M_016",2,9,0.222222222222222,-0.273899345835237,"Apidae","Anthophora",4.36
-"Anthophora dufourii","M_015",4,38,0.105263157894737,-0.158156418752928,"Apidae","Anthophora",4.49
-"Anthophora incerta","M_001",3,16,0.1875,-0.19712127461776,"Apidae","Anthophora",4.13
-"Anthophora orotavae","M_039",5,13,0.384615384615385,-0.15735745936194,"Apidae","Anthophora",3.12
-"Anthophora orotavae","M_050",3,8,0.375,-0.41702882811415,"Apidae","Anthophora",3.12
-"Anthophora plumipes","M_015",5,38,0.131578947368421,0.00836069174024294,"Apidae","Anthophora",4.26
-"Anthophora plumipes","M_007",1,10,0.1,-0.604538515437949,"Apidae","Anthophora",4.26
-"Anthophora quadricolor","M_005",3,37,0.0810810810810811,-0.359364393533881,"Apidae","Anthophora",4.12
-"Anthophora retusa","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Anthophora",3.73
-"Apis cerana","M_055",6,12,0.5,0.970634577909295,"Apidae","Apis",2.38
-"Apis cerana","M_044",3,21,0.142857142857143,-0.288240634054852,"Apidae","Apis",2.38
-"Apis cerana","M_053",2,15,0.133333333333333,-0.371424708162977,"Apidae","Apis",2.38
-"Apis cerana","M_021",11,25,0.44,1.20206959088009,"Apidae","Apis",2.38
-"Apis cerana japonica","M_057",17,37,0.459459459459459,1.57427948828762,"Apidae","Apis",2.38
-"Apis cerana japonica","M_054",23,24,0.958333333333333,3.85735985176593,"Apidae","Apis",2.38
-"Ashmeadiella bucconis","M_062",42,121,0.347107438016529,1.17528225869493,"Megachilidae","Ashmeadiella",1.78
-"Augochlora pura","M_032",1,4,0.25,-0.67083697370629,"Halictidae","Augochlora",1.64
-"Augochlora pura","M_025",4,7,0.571428571428571,0.370995708078401,"Halictidae","Augochlora",1.64
-"Augochlora pura","M_073",21,21,1,3.64037379572842,"Halictidae","Augochlora",1.64
-"Augochlorella aurata","M_073",10,21,0.476190476190476,1.31156729661705,"Halictidae","Augochlorella",1.405
-"Bombus alpinus","M_009",1,1,1,NA,"Apidae","Bombus",3.89
-"Bombus ardens","M_053",9,15,0.6,1.66522077493068,"Apidae","Bombus",4.98
-"Bombus ardens","M_054",8,24,0.333333333333333,0.841667741507231,"Apidae","Bombus",4.98
-"Bombus ardens","M_056",12,22,0.545454545454545,1.01848409180941,"Apidae","Bombus",4.98
-"Bombus ardens","M_021",8,25,0.32,0.670278435467698,"Apidae","Bombus",4.98
-"Bombus ardens","M_057",14,37,0.378378378378378,1.18031878218188,"Apidae","Bombus",4.98
-"Bombus argillaceus","M_015",11,38,0.289473684210526,1.00746335469927,"Apidae","Bombus",4.71
-"Bombus atratus","M_072",1,66,0.0151515151515152,-0.607086250524498,"Apidae","Bombus",5.66
-"Bombus atratus","M_031",6,13,0.461538461538462,0.321661414259494,"Apidae","Bombus",5.66
-"Bombus bifarius","M_005",21,37,0.567567567567568,2.25948543788712,"Apidae","Bombus",2.89
-"Bombus bimaculatus","M_025",7,7,1,1.79561922709946,"Apidae","Bombus",4.07
-"Bombus bimaculatus","M_073",5,21,0.238095238095238,0.25301888793006,"Apidae","Bombus",4.07
-"Bombus bohemicus","M_047",4,8,0.5,0.689482979618966,"Apidae","Bombus",4.86
-"Bombus bohemicus","M_018",1,15,0.0666666666666667,-0.766553381172933,"Apidae","Bombus",4.86
-"Bombus bohemicus","M_037",1,4,0.25,-0.923132662754102,"Apidae","Bombus",4.86
-"Bombus brasiliensis","M_074",1,1,1,NA,"Apidae","Bombus",4.4
-"Bombus brevivillus","M_076",1,12,0.0833333333333333,-0.765707427099428,"Apidae","Bombus",4.5
-"Bombus campestris","M_018",2,15,0.133333333333333,-0.538659132716115,"Apidae","Bombus",4.66
-"Bombus campestris","M_043",2,10,0.2,-0.474341649025257,"Apidae","Bombus",4.66
-"Bombus centralis","M_005",5,37,0.135135135135135,-0.0683810789315483,"Apidae","Bombus",3.06
-"Bombus consobrinus","M_056",13,22,0.590909090909091,1.17175111533413,"Apidae","Bombus",3.68
-"Bombus cryptarum","M_047",1,8,0.125,-0.742520131897348,"Apidae","Bombus",4.25
-"Bombus dahlbomii","M_001",7,16,0.4375,0.769408846088676,"Apidae","Bombus",6.055
-"Bombus dahlbomii","M_034",21,21,1,2.46072123807387,"Apidae","Bombus",6.055
-"Bombus dahlbomii","M_051",10,10,1,3.42533112995411,"Apidae","Bombus",6.055
-"Bombus dahlbomii","M_003",3,7,0.428571428571429,-0.198679853559757,"Apidae","Bombus",6.055
-"Bombus dahlbomii","M_002",8,8,1,2.34528931498231,"Apidae","Bombus",6.055
-"Bombus diversus","M_053",13,15,0.866666666666667,2.82901819384134,"Apidae","Bombus",5.445
-"Bombus diversus","M_055",5,12,0.416666666666667,0.631497195266288,"Apidae","Bombus",5.445
-"Bombus diversus","M_056",14,22,0.636363636363636,1.32501813885885,"Apidae","Bombus",5.445
-"Bombus diversus diversus","M_057",37,37,1,4.20068419565923,"Apidae","Bombus",5.14
-"Bombus diversus diversus","M_021",25,25,1,3.68376164947123,"Apidae","Bombus",5.14
-"Bombus diversus diversus","M_054",2,24,0.0833333333333333,-0.36460910259625,"Apidae","Bombus",5.14
-"Bombus fervidus","M_005",6,37,0.162162162162162,0.0771105783696183,"Apidae","Bombus",3.48
-"Bombus flavifrons","M_005",16,37,0.432432432432432,1.53202715138128,"Apidae","Bombus",2.89
-"Bombus griseocollis","M_073",6,21,0.285714285714286,0.464728569667458,"Apidae","Bombus",4.87
-"Bombus griseocollis","M_032",4,4,1,1.93358892421225,"Apidae","Bombus",4.87
-"Bombus honshuensis","M_056",20,22,0.909090909090909,2.24462028000715,"Apidae","Bombus",6.1
-"Bombus honshuensis","M_057",8,37,0.216216216216216,0.392397369970401,"Apidae","Bombus",6.1
-"Bombus honshuensis","M_021",25,25,1,3.68376164947123,"Apidae","Bombus",6.1
-"Bombus hortorum","M_007",1,10,0.1,-0.604538515437949,"Apidae","Bombus",4.54
-"Bombus hortorum","M_018",8,15,0.533333333333333,0.828706358024792,"Apidae","Bombus",4.54
-"Bombus hortorum","M_043",7,10,0.7,1.21973566892209,"Apidae","Bombus",4.54
-"Bombus hortorum","M_006",5,10,0.5,0.42379773450788,"Apidae","Bombus",4.54
-"Bombus hortorum","M_038",2,2,1,NA,"Apidae","Bombus",4.54
-"Bombus hortorum","M_049",2,11,0.181818181818182,-0.669756167934072,"Apidae","Bombus",4.54
-"Bombus hortotum","M_028",3,10,0.3,-0.104721582772288,"Apidae","Bombus",4.74
-"Bombus hunti","M_005",30,37,0.810810810810811,3.56891035359762,"Apidae","Bombus",5.13
-"Bombus hyperboreus","M_009",1,1,1,NA,"Apidae","Bombus",7.6
-"Bombus hyperboreus","M_014",1,10,0.1,-0.707106781186548,"Apidae","Bombus",7.6
-"Bombus hypnorum","M_049",2,11,0.181818181818182,-0.669756167934072,"Apidae","Bombus",4.07
-"Bombus hypocrita","M_055",1,12,0.0833333333333333,-0.725052335305738,"Apidae","Bombus",5.4
-"Bombus hypocrita","M_056",18,22,0.818181818181818,1.93808623295772,"Apidae","Bombus",5.4
-"Bombus hypocrita hypocrita","M_057",18,37,0.486486486486487,1.7055997236562,"Apidae","Bombus",5.4
-"Bombus hypocrita hypocrita","M_021",14,25,0.56,1.73386074629248,"Apidae","Bombus",5.4
-"Bombus hypocrita hypocrita","M_054",7,24,0.291666666666667,0.640621600823318,"Apidae","Bombus",5.4
-"Bombus ignitus","M_021",1,25,0.04,-0.570567593827875,"Apidae","Bombus",6.3
-"Bombus ignitus","M_054",9,24,0.375,1.04271388219115,"Apidae","Bombus",6.3
-"Bombus ignitus","M_053",10,15,0.666666666666667,1.95617012965835,"Apidae","Bombus",6.3
-"Bombus ignitus","M_057",1,37,0.027027027027027,-0.526844277609662,"Apidae","Bombus",6.3
-"Bombus impatiens","M_073",11,21,0.523809523809524,1.52327697835444,"Apidae","Bombus",3.9
-"Bombus impatiens","M_062",12,121,0.0991735537190083,-0.201654627909108,"Apidae","Bombus",3.9
-"Bombus jonellus","M_047",6,8,0.75,1.64415172062984,"Apidae","Bombus",5.08
-"Bombus lapidarius","M_047",4,8,0.5,0.689482979618966,"Apidae","Bombus",4.28
-"Bombus lapidarius","M_037",4,4,1,1.05500875743326,"Apidae","Bombus",4.28
-"Bombus lapidarius","M_018",8,15,0.533333333333333,0.828706358024792,"Apidae","Bombus",4.28
-"Bombus lapidarius","M_007",10,10,1,2.25906497874181,"Apidae","Bombus",4.28
-"Bombus lapidarius","M_017",4,5,0.8,0.5,"Apidae","Bombus",4.28
-"Bombus lapidarius","M_043",4,10,0.4,0.203289278153682,"Apidae","Bombus",4.28
-"Bombus lapidarius","M_006",1,10,0.1,-0.772807633514369,"Apidae","Bombus",4.28
-"Bombus lapidarius","M_046",6,9,0.666666666666667,-1.15470053837925,"Apidae","Bombus",4.28
-"Bombus lucorum","M_047",8,8,1,2.59882046164072,"Apidae","Bombus",4.28
-"Bombus lucorum","M_016",2,9,0.222222222222222,-0.273899345835237,"Apidae","Bombus",4.28
-"Bombus lucorum","M_037",1,4,0.25,-0.923132662754102,"Apidae","Bombus",4.28
-"Bombus lucorum","M_043",1,10,0.1,-0.813157112614726,"Apidae","Bombus",4.28
-"Bombus lucorum","M_049",9,11,0.818181818181818,1.3137524832553,"Apidae","Bombus",4.28
-"Bombus lucorum","M_018",2,15,0.133333333333333,-0.538659132716115,"Apidae","Bombus",4.28
-"Bombus morio","M_076",1,12,0.0833333333333333,-0.765707427099428,"Apidae","Bombus",5
-"Bombus morio","M_077",3,7,0.428571428571429,-0.08032193289025,"Apidae","Bombus",5
-"Bombus muscorum","M_017",2,5,0.4,-0.833333333333333,"Apidae","Bombus",4.21
-"Bombus muscorum","M_047",1,8,0.125,-0.742520131897348,"Apidae","Bombus",4.21
-"Bombus nevadensis","M_005",5,37,0.135135135135135,-0.0683810789315483,"Apidae","Bombus",5.06
-"Bombus occidentalis","M_005",32,37,0.864864864864865,3.85989366819995,"Apidae","Bombus",3.89
-"Bombus pascuorum","M_017",5,5,1,1.16666666666667,"Apidae","Bombus",3.91
-"Bombus pascuorum","M_043",10,10,1,2.2361820596905,"Apidae","Bombus",3.91
-"Bombus pascuorum","M_006",10,10,1,1.91955444453569,"Apidae","Bombus",3.91
-"Bombus pascuorum","M_018",15,15,1,2.42396609722252,"Apidae","Bombus",3.91
-"Bombus pascuorum","M_049",11,11,1,1.88046924073797,"Apidae","Bombus",3.91
-"Bombus pascuorum","M_007",7,10,0.7,1.30453048068189,"Apidae","Bombus",3.91
-"Bombus pascuorum","M_047",8,8,1,2.59882046164072,"Apidae","Bombus",3.91
-"Bombus pascuorum","M_038",2,2,1,NA,"Apidae","Bombus",3.91
-"Bombus pascuorum","M_046",9,9,1,0.577350269189626,"Apidae","Bombus",3.91
-"Bombus pascuorum","M_037",4,4,1,1.05500875743326,"Apidae","Bombus",3.91
-"Bombus pennsylvanicus","M_062",6,121,0.0495867768595041,-0.477042005229917,"Apidae","Bombus",6
-"Bombus pennsylvanicus","M_025",2,7,0.285714285714286,-0.578753304602305,"Apidae","Bombus",6
-"Bombus pennsylvanicus","M_005",1,37,0.027027027027027,-0.650347708136215,"Apidae","Bombus",6
-"Bombus pratorum","M_049",7,11,0.636363636363636,0.747035725772619,"Apidae","Bombus",4.03
-"Bombus pratorum","M_018",3,15,0.2,-0.310764884259297,"Apidae","Bombus",4.03
-"Bombus pratorum","M_007",3,10,0.3,0.0318178166019973,"Apidae","Bombus",4.03
-"Bombus pratorum","M_006",3,10,0.3,-0.174504949503245,"Apidae","Bombus",4.03
-"Bombus pratorum","M_043",3,10,0.3,-0.135526185435788,"Apidae","Bombus",4.03
-"Bombus pratorum","M_047",3,8,0.375,0.212148609113528,"Apidae","Bombus",4.03
-"Bombus ridingsii","M_062",3,121,0.0247933884297521,-0.614735693890321,"Apidae","Bombus",5.44
-"Bombus ruderatus","M_051",3,10,0.3,0.278308154308772,"Apidae","Bombus",5.04
-"Bombus ruderatus","M_028",1,10,0.1,-0.858716978732758,"Apidae","Bombus",5.04
-"Bombus ruderatus","M_11.1",3,6,0.5,-0.707106781186548,"Apidae","Bombus",5.04
-"Bombus ruderatus","M_043",1,10,0.1,-0.813157112614726,"Apidae","Bombus",5.04
-"Bombus ruderatus","M_018",1,15,0.0666666666666667,-0.766553381172933,"Apidae","Bombus",5.04
-"Bombus rupestris","M_047",2,8,0.25,-0.26518576139191,"Apidae","Bombus",5.62
-"Bombus rupestris","M_043",1,10,0.1,-0.813157112614726,"Apidae","Bombus",5.62
-"Bombus rupestris","M_018",1,15,0.0666666666666667,-0.766553381172933,"Apidae","Bombus",5.62
-"Bombus soroeensis","M_043",2,10,0.2,-0.474341649025257,"Apidae","Bombus",3.98
-"Bombus soroeensis","M_018",2,15,0.133333333333333,-0.538659132716115,"Apidae","Bombus",3.98
-"Bombus terrestris","M_049",7,11,0.636363636363636,0.747035725772619,"Apidae","Bombus",4.69
-"Bombus terrestris","M_043",3,10,0.3,-0.135526185435788,"Apidae","Bombus",4.69
-"Bombus terrestris","M_037",2,4,0.5,-0.263752189358315,"Apidae","Bombus",4.69
-"Bombus terrestris","M_046",9,9,1,0.577350269189626,"Apidae","Bombus",4.69
-"Bombus terrestris","M_015",13,38,0.342105263157895,1.34049757568561,"Apidae","Bombus",4.69
-"Bombus terrestris","M_047",1,8,0.125,-0.742520131897348,"Apidae","Bombus",4.69
-"Bombus terrestris","M_007",3,10,0.3,0.0318178166019973,"Apidae","Bombus",4.69
-"Bombus terrestris","M_006",10,10,1,1.91955444453569,"Apidae","Bombus",4.69
-"Bombus terrestris","M_058",8,22,0.363636363636364,0.467472300182267,"Apidae","Bombus",4.69
-"Bombus terrestris","M_028",4,10,0.4,0.272276115207948,"Apidae","Bombus",4.69
-"Bombus terrestris","M_029",1,11,0.0909090909090909,-0.700668649142545,"Apidae","Bombus",4.69
-"Bombus terrestris","M_017",2,5,0.4,-0.833333333333333,"Apidae","Bombus",4.69
-"Bombus terrestris","M_018",5,15,0.333333333333333,0.145023612654339,"Apidae","Bombus",4.69
-"Bombus vagans","M_004",8,8,1,3.19733004992495,"Apidae","Bombus",3.56
-"Cadeguala occidentalis","M_001",4,16,0.25,0.044511255558849,"Colletidae","Cadeguala",3.3
-"Calliopsis andreniformis","M_062",13,121,0.107438016528926,-0.155756731688973,"Andrenidae","Calliopsis",1.36
-"Calliopsis coloradensis","M_062",10,121,0.0826446280991736,-0.293450420349378,"Andrenidae","Calliopsis",1.65
-"Centris aenea","M_059",13,13,1,1.54673665788727,"Apidae","Centris",4.7
-"Centris caxiensis","M_059",10,13,0.769230769230769,0.921090369303655,"Apidae","Centris",4.2
-"Centris cineraria","M_002",3,8,0.375,0.130293850832351,"Apidae","Centris",5.108
-"Centris cineraria","M_001",15,16,0.9375,2.70246908750155,"Apidae","Centris",5.108
-"Centris flavifrons","M_059",7,13,0.538461538461538,0.29544408072004,"Apidae","Centris",5.5
-"Centris fuscata","M_059",13,13,1,1.54673665788727,"Apidae","Centris",4.8
-"Centris nigerrima","M_002",2,8,0.25,-0.312705241997642,"Apidae","Centris",4.836
-"Centris nigerrima","M_001",4,16,0.25,0.044511255558849,"Apidae","Centris",4.836
-"Centris obsoleta","M_059",1,13,0.0769230769230769,-0.955848496447189,"Apidae","Centris",6.5
-"Centris tarsata","M_059",10,13,0.769230769230769,0.921090369303655,"Apidae","Centris",3
-"Centris trigonoides","M_059",4,13,0.307692307692308,-0.330202207863574,"Apidae","Centris",3
-"Ceratina acuta","M_015",12,38,0.315789473684211,1.17398046519244,"Apidae","Ceratina",1.55
-"Ceratina bispinosa","M_015",8,38,0.210526315789474,0.507912023219755,"Apidae","Ceratina",1
-"Ceratina calcarata","M_025",3,7,0.428571428571429,-0.103878798261952,"Apidae","Ceratina",1.41
-"Ceratina calcarata","M_073",21,21,1,3.64037379572842,"Apidae","Ceratina",1.41
-"Ceratina cucurbitina","M_016",7,9,0.777777777777778,1.99432961186282,"Apidae","Ceratina",1.43
-"Ceratina cucurbitina","M_058",2,22,0.0909090909090909,-0.701208450273401,"Apidae","Ceratina",1.43
-"Ceratina cucurbitina","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Ceratina",1.43
-"Ceratina cyanea","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Ceratina",1.35
-"Ceratina cyanea","M_016",4,9,0.444444444444444,0.633392237243986,"Apidae","Ceratina",1.35
-"Ceratina dallatorreana","M_015",2,38,0.0526315789473684,-0.491190639739269,"Apidae","Ceratina",1.16
-"Ceratina dentiventris","M_015",8,38,0.210526315789474,0.507912023219755,"Apidae","Ceratina",1.13
-"Ceratina dupla","M_062",85,121,0.702479338842975,3.14889179616073,"Apidae","Ceratina",1.42
-"Ceratina flavipes","M_057",2,37,0.0540540540540541,-0.395524042241081,"Apidae","Ceratina",1.71
-"Ceratina flavipes","M_053",7,15,0.466666666666667,1.08332206547535,"Apidae","Ceratina",1.71
-"Ceratina flavipes","M_021",1,25,0.04,-0.570567593827875,"Apidae","Ceratina",1.71
-"Ceratina flavipes","M_055",2,12,0.166666666666667,-0.385914952662731,"Apidae","Ceratina",1.71
-"Ceratina flavipes","M_054",11,24,0.458333333333333,1.44480616355897,"Apidae","Ceratina",1.71
-"Ceratina japonica","M_021",8,25,0.32,0.670278435467698,"Apidae","Ceratina",1.22
-"Ceratina japonica","M_054",2,24,0.0833333333333333,-0.36460910259625,"Apidae","Ceratina",1.22
-"Ceratina japonica","M_057",34,37,0.918918918918919,3.80672348955349,"Apidae","Ceratina",1.22
-"Ceratina japonica","M_055",4,12,0.333333333333333,0.292359812623282,"Apidae","Ceratina",1.22
-"Ceratina japonica","M_053",15,15,1,3.41091690329667,"Apidae","Ceratina",1.22
-"Ceratina loewi","M_015",13,38,0.342105263157895,1.34049757568561,"Apidae","Ceratina",1.76
-"Ceratina mocsaryi","M_016",3,9,0.333333333333333,0.179746445704375,"Apidae","Ceratina",1.82
-"Ceratina nigrolabiata","M_015",9,38,0.236842105263158,0.674429133712926,"Apidae","Ceratina",1.33
-"Ceratina okinawana","M_044",1,21,0.0476190476190476,-0.66217442958547,"Apidae","Ceratina",1.41
-"Ceratina parvula","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Ceratina",0.77
-"Chelostoma campanularum","M_015",2,38,0.0526315789473684,-0.491190639739269,"Megachilidae","Chelostoma",1
-"Chelostoma emarginatum","M_015",5,38,0.131578947368421,0.00836069174024294,"Megachilidae","Chelostoma",1.13
-"Chelostoma hellenicum","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Chelostoma",0.96
-"Coelioxys aurolimbatus","M_015",3,38,0.0789473684210526,-0.324673529246099,"Megachilidae","Coelioxys",3.09
-"Coelioxys mandibularis","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Coelioxys",2.45
-"Colletes acutus","M_016",3,9,0.333333333333333,0.179746445704375,"Colletidae","Colletes",2.78
-"Colletes albomaculatus","M_015",2,38,0.0526315789473684,-0.491190639739269,"Colletidae","Colletes",2.96
-"Colletes araucariae","M_001",1,16,0.0625,-0.680386334970978,"Colletidae","Colletes",2.417
-"Colletes caspicus","M_016",4,9,0.444444444444444,0.633392237243986,"Colletidae","Colletes",3.24
-"Colletes compactus","M_062",13,121,0.107438016528926,-0.155756731688973,"Colletidae","Colletes",3.143
-"Colletes cunicularius","M_047",1,8,0.125,-0.742520131897348,"Colletidae","Colletes",3.33
-"Colletes dimidiatus","M_008",2,6,0.333333333333333,-0.738112322163063,"Colletidae","Colletes",3.84
-"Colletes eous","M_015",1,38,0.0263157894736842,-0.65770775023244,"Colletidae","Colletes",2.63
-"Colletes fodiens","M_016",1,9,0.111111111111111,-0.727545137374849,"Colletidae","Colletes",2.46
-"Colletes foveolaris","M_015",1,38,0.0263157894736842,-0.65770775023244,"Colletidae","Colletes",2.59
-"Colletes kincaidi","M_005",4,37,0.108108108108108,-0.213872736232715,"Colletidae","Colletes",1.97
-"Colletes similis","M_062",1,121,0.00826446280991736,-0.70653148633059,"Colletidae","Colletes",2.41
-"Colletes succinctus","M_047",1,8,0.125,-0.742520131897348,"Colletidae","Colletes",2.99
-"Colletes succinctus","M_016",3,9,0.333333333333333,0.179746445704375,"Colletidae","Colletes",2.99
-"Dasypoda cingulata","M_016",4,9,0.444444444444444,0.633392237243986,"Melittidae","Dasypoda",3.44
-"Dasypoda iberica","M_016",1,9,0.111111111111111,-0.727545137374849,"Melittidae","Dasypoda",2.9
-"Diphaglossa gayi","M_034",4,21,0.19047619047619,-0.30962717565168,"Colletidae","Diphaglossa",2.11
-"Eoanthidium insulare","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Eoanthidium",2.4
-"Epeolus fallax","M_016",1,9,0.111111111111111,-0.727545137374849,"Apidae","Epeolus",2.51
-"Eucera albofasciata","M_015",10,38,0.263157894736842,0.840946244206097,"Apidae","Eucera",2.91
-"Eucera bidentata","M_015",32,38,0.842105263157895,4.50432267505585,"Apidae","Eucera",2.19
-"Eucera clypeata","M_015",33,38,0.868421052631579,4.67083978554902,"Apidae","Eucera",3.05
-"Eucera furfurea","M_015",13,38,0.342105263157895,1.34049757568561,"Apidae","Eucera",3.28
-"Eucera gracilipes","M_050",7,8,0.875,1.25108648434245,"Apidae","Eucera",3.84
-"Eucera gracilipes","M_008",4,6,0.666666666666667,0.511000838420582,"Apidae","Eucera",3.84
-"Eucera gracilipes","M_039",13,13,1,1.64101350477451,"Apidae","Eucera",3.84
-"Eucera nigrescens","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Eucera",3.56
-"Eucera nigrilabris","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Eucera",3.9
-"Eucera parnassia","M_015",11,38,0.289473684210526,1.00746335469927,"Apidae","Eucera",2.88
-"Eucera punctulata","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Eucera",3.28
-"Eucera seminuda","M_015",21,38,0.552631578947368,2.67263445963098,"Apidae","Eucera",2.91
-"Euglossa chalybeata","M_077",1,7,0.142857142857143,-0.883541261792749,"Apidae","Euglossa",3.6
-"Euglossa cordata","M_035",4,4,1,1.0434983894999,"Apidae","Euglossa",3.4
-"Euglossa cordata","M_030",2,3,0.666666666666667,0.584897651865602,"Apidae","Euglossa",3.4
-"Eulaema meriana","M_031",2,13,0.153846153846154,-0.761829665351434,"Apidae","Eulaema",6.8
-"Eulaema nigrita","M_030",1,3,0.333333333333333,-0.584897651865602,"Apidae","Eulaema",5.1
-"Frieseomelitta silvestrii","M_076",6,12,0.5,0.686496313951211,"Apidae","Frieseomelitta",1
-"Habropoda tarsata","M_015",8,38,0.210526315789474,0.507912023219755,"Apidae","Habropoda",4.49
-"Halictus asperulus","M_015",3,38,0.0789473684210526,-0.324673529246099,"Halictidae","Halictus",1.56
-"Halictus brunnescens","M_015",10,38,0.263157894736842,0.840946244206097,"Halictidae","Halictus",3.07
-"Halictus fulvipes","M_016",1,9,0.111111111111111,-0.727545137374849,"Halictidae","Halictus",2.06
-"Halictus graecus","M_015",3,38,0.0789473684210526,-0.324673529246099,"Halictidae","Halictus",2.58
-"Halictus quadricinctus","M_016",6,9,0.666666666666667,1.54068382032321,"Halictidae","Halictus",2.85
-"Halictus resurgens","M_015",11,38,0.289473684210526,1.00746335469927,"Halictidae","Halictus",1.98
-"Halictus rubicundus","M_004",2,8,0.25,-0.0359250567407299,"Halictidae","Halictus",2.1
-"Halictus scabiosae","M_016",1,9,0.111111111111111,-0.727545137374849,"Halictidae","Halictus",2.52
-"Halictus scabiosae","M_015",15,38,0.394736842105263,1.67353179667195,"Halictidae","Halictus",2.52
-"Halictus tetrazonius","M_015",16,38,0.421052631578947,1.84004890716512,"Halictidae","Halictus",1.94
-"Heriades crenulata","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Heriades",1.51
-"Heriades punctulifera","M_015",8,38,0.210526315789474,0.507912023219755,"Megachilidae","Heriades",1
-"Heriades truncorum","M_015",3,38,0.0789473684210526,-0.324673529246099,"Megachilidae","Heriades",1.53
-"Hoplitis bisulca","M_015",3,38,0.0789473684210526,-0.324673529246099,"Megachilidae","Hoplitis",2.81
-"Hoplitis curvipes","M_015",2,38,0.0526315789473684,-0.491190639739269,"Megachilidae","Hoplitis",3.11
-"Hoplitis fabrei","M_015",4,38,0.105263157894737,-0.158156418752928,"Megachilidae","Hoplitis",2.29
-"Hoplitis manicata","M_015",5,38,0.131578947368421,0.00836069174024294,"Megachilidae","Hoplitis",3.02
-"Hoplitis pallicornis","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Hoplitis",2.44
-"Hoplitis papaveris","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Hoplitis",2.31
-"Hoplitis perezi","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Hoplitis",2.43
-"Hoplitis pici","M_015",3,38,0.0789473684210526,-0.324673529246099,"Megachilidae","Hoplitis",2.34
-"Hoplitis producta","M_004",1,8,0.125,-0.574800907851677,"Megachilidae","Hoplitis",1.56
-"Hoplitis yermasoyiae","M_015",2,38,0.0526315789473684,-0.491190639739269,"Megachilidae","Hoplitis",2.28
-"Hylaeus annularis","M_047",1,8,0.125,-0.742520131897348,"Colletidae","Hylaeus",1.26
-"Hylaeus basalis","M_004",1,8,0.125,-0.574800907851677,"Colletidae","Hylaeus",1.85
-"Hylaeus bifasciatus","M_015",2,38,0.0526315789473684,-0.491190639739269,"Colletidae","Hylaeus",1.75
-"Hylaeus brevicornis","M_047",1,8,0.125,-0.742520131897348,"Colletidae","Hylaeus",0.98
-"Hylaeus canariensis","M_008",4,6,0.666666666666667,0.511000838420582,"Colletidae","Hylaeus",1.09
-"Hylaeus imparilis","M_015",3,38,0.0789473684210526,-0.324673529246099,"Colletidae","Hylaeus",1
-"Hylaeus lineolatus","M_015",8,38,0.210526315789474,0.507912023219755,"Colletidae","Hylaeus",1.1
-"Hylaeus meridionalis","M_015",8,38,0.210526315789474,0.507912023219755,"Colletidae","Hylaeus",1.51
-"Hylaeus nigritus","M_058",3,22,0.136363636363636,-0.506428325197456,"Colletidae","Hylaeus",1.57
-"Hylaeus pictus","M_015",1,38,0.0263157894736842,-0.65770775023244,"Colletidae","Hylaeus",1.25
-"Hylaeus punctatus","M_015",8,38,0.210526315789474,0.507912023219755,"Colletidae","Hylaeus",1.23
-"Hylaeus signatus","M_015",1,38,0.0263157894736842,-0.65770775023244,"Colletidae","Hylaeus",1.63
-"Hylaeus variegatus","M_058",1,22,0.0454545454545455,-0.895988575349345,"Colletidae","Hylaeus",1.32
-"Hylaeus variegatus","M_015",3,38,0.0789473684210526,-0.324673529246099,"Colletidae","Hylaeus",1.32
-"Icteranthidium grohmanni","M_015",11,38,0.289473684210526,1.00746335469927,"Megachilidae","Icteranthidium",3.07
-"Lasioglossum aegyptiellum","M_016",1,9,0.111111111111111,-0.727545137374849,"Halictidae","Lasioglossum",2.12
-"Lasioglossum aeratum","M_015",2,38,0.0526315789473684,-0.491190639739269,"Halictidae","Lasioglossum",1.08
-"Lasioglossum albipes","M_056",3,22,0.136363636363636,-0.360919119913044,"Halictidae","Lasioglossum",1.59
-"Lasioglossum albocinctum","M_016",4,9,0.444444444444444,0.633392237243986,"Halictidae","Lasioglossum",2.6
-"Lasioglossum anellum","M_015",17,38,0.447368421052632,2.00656601765829,"Halictidae","Lasioglossum",1.19
-"Lasioglossum arctifrons","M_008",3,6,0.5,-0.11355574187124,"Halictidae","Lasioglossum",1.1
-"Lasioglossum brevicome","M_015",1,38,0.0263157894736842,-0.65770775023244,"Halictidae","Lasioglossum",1.38
-"Lasioglossum calceatum","M_049",1,11,0.0909090909090909,-0.953114546675411,"Halictidae","Lasioglossum",1.77
-"Lasioglossum calceatum","M_007",1,10,0.1,-0.604538515437949,"Halictidae","Lasioglossum",1.77
-"Lasioglossum calceatum","M_006",1,10,0.1,-0.772807633514369,"Halictidae","Lasioglossum",1.77
-"Lasioglossum callizonium","M_016",1,9,0.111111111111111,-0.727545137374849,"Halictidae","Lasioglossum",2.24
-"Lasioglossum chalcodes","M_012",3,8,0.375,0.108012344973464,"Halictidae","Lasioglossum",2.27
-"Lasioglossum chalcodes","M_008",1,6,0.166666666666667,-1.36266890245489,"Halictidae","Lasioglossum",2.27
-"Lasioglossum convexiusculum","M_015",1,38,0.0263157894736842,-0.65770775023244,"Halictidae","Lasioglossum",1.59
-"Lasioglossum crassepunctatum","M_015",1,38,0.0263157894736842,-0.65770775023244,"Halictidae","Lasioglossum",1.46
-"Lasioglossum cressonii","M_073",2,21,0.0952380952380952,-0.382110157282132,"Halictidae","Lasioglossum",1.29
-"Lasioglossum ephialtum","M_073",1,21,0.0476190476190476,-0.593819839019529,"Halictidae","Lasioglossum",1.2
-"Lasioglossum fratellum","M_047",5,8,0.625,1.1668173501244,"Halictidae","Lasioglossum",1.45
-"Lasioglossum fuscipenne","M_073",3,21,0.142857142857143,-0.170400475544734,"Halictidae","Lasioglossum",2.1
-"Lasioglossum gorkiense","M_055",1,12,0.0833333333333333,-0.725052335305738,"Halictidae","Lasioglossum",1.88
-"Lasioglossum hitchensi","M_073",1,21,0.0476190476190476,-0.593819839019529,"Halictidae","Lasioglossum",1.16
-"Lasioglossum imitatum","M_073",2,21,0.0952380952380952,-0.382110157282132,"Halictidae","Lasioglossum",0.98
-"Lasioglossum immunitum","M_016",8,9,0.888888888888889,2.44797540340243,"Halictidae","Lasioglossum",1.96
-"Lasioglossum laticeps","M_015",3,38,0.0789473684210526,-0.324673529246099,"Halictidae","Lasioglossum",1.45
-"Lasioglossum leucopus","M_049",2,11,0.181818181818182,-0.669756167934072,"Halictidae","Lasioglossum",1.11
-"Lasioglossum leucopus","M_047",1,8,0.125,-0.742520131897348,"Halictidae","Lasioglossum",1.11
-"Lasioglossum leucozonium","M_015",1,38,0.0263157894736842,-0.65770775023244,"Halictidae","Lasioglossum",1.84
-"Lasioglossum leucozonium","M_047",3,8,0.375,0.212148609113528,"Halictidae","Lasioglossum",1.84
-"Lasioglossum leucozonium","M_006",1,10,0.1,-0.772807633514369,"Halictidae","Lasioglossum",1.84
-"Lasioglossum limbelloides","M_015",10,38,0.263157894736842,0.840946244206097,"Halictidae","Lasioglossum",1.31
-"Lasioglossum limbellum","M_015",1,38,0.0263157894736842,-0.65770775023244,"Halictidae","Lasioglossum",1.31
-"Lasioglossum lineare","M_015",16,38,0.421052631578947,1.84004890716512,"Halictidae","Lasioglossum",1.39
-"Lasioglossum littorale","M_016",7,9,0.777777777777778,1.99432961186282,"Halictidae","Lasioglossum",1.35
-"Lasioglossum loetum","M_012",3,8,0.375,0.108012344973464,"Halictidae","Lasioglossum",1.37
-"Lasioglossum lucidulum","M_015",2,38,0.0526315789473684,-0.491190639739269,"Halictidae","Lasioglossum",0.78
-"Lasioglossum macoupinens","M_073",2,21,0.0952380952380952,-0.382110157282132,"Halictidae","Lasioglossum",1.19
-"Lasioglossum malachurum","M_015",38,38,1,5.50342533801488,"Halictidae","Lasioglossum",1.57
-"Lasioglossum marginatum","M_015",24,38,0.631578947368421,3.17218579111049,"Halictidae","Lasioglossum",1.56
-"Lasioglossum mediterraneum","M_015",6,38,0.157894736842105,0.174877802233414,"Halictidae","Lasioglossum",1.61
-"Lasioglossum mesosclerum","M_015",1,38,0.0263157894736842,-0.65770775023244,"Halictidae","Lasioglossum",1.1
-"Lasioglossum nigripes","M_015",1,38,0.0263157894736842,-0.65770775023244,"Halictidae","Lasioglossum",2.15
-"Lasioglossum nitidulum","M_015",2,38,0.0526315789473684,-0.491190639739269,"Halictidae","Lasioglossum",1.17
-"Lasioglossum oblongum","M_073",1,21,0.0476190476190476,-0.593819839019529,"Halictidae","Lasioglossum",1.23
-"Lasioglossum obscuratum","M_015",6,38,0.157894736842105,0.174877802233414,"Halictidae","Lasioglossum",2.11
-"Lasioglossum obscurum","M_073",6,21,0.285714285714286,0.464728569667458,"Halictidae","Lasioglossum",1.17
-"Lasioglossum occidens","M_054",19,24,0.791666666666667,3.05317528903028,"Halictidae","Lasioglossum",2.26
-"Lasioglossum occidens","M_057",18,37,0.486486486486487,1.7055997236562,"Halictidae","Lasioglossum",2.26
-"Lasioglossum occidens","M_053",1,15,0.0666666666666667,-0.662374062890642,"Halictidae","Lasioglossum",2.26
-"Lasioglossum occidens","M_021",8,25,0.32,0.670278435467698,"Halictidae","Lasioglossum",2.26
-"Lasioglossum pallens","M_016",1,9,0.111111111111111,-0.727545137374849,"Halictidae","Lasioglossum",1.56
-"Lasioglossum pauxillum","M_015",9,38,0.236842105263158,0.674429133712926,"Halictidae","Lasioglossum",1.18
-"Lasioglossum politum","M_015",6,38,0.157894736842105,0.174877802233414,"Halictidae","Lasioglossum",0.85
-"Lasioglossum prasinum","M_016",9,9,1,2.90162119494205,"Halictidae","Lasioglossum",1.76
-"Lasioglossum proximatum","M_021",3,25,0.12,-0.216040156886283,"Halictidae","Lasioglossum",2.43
-"Lasioglossum proximatum","M_056",1,22,0.0454545454545455,-0.667453166962479,"Halictidae","Lasioglossum",2.43
-"Lasioglossum proximatum","M_054",1,24,0.0416666666666667,-0.565655243280164,"Halictidae","Lasioglossum",2.43
-"Lasioglossum punctatissimum","M_047",6,8,0.75,1.64415172062984,"Halictidae","Lasioglossum",1.29
-"Lasioglossum punctatissimum","M_016",7,9,0.777777777777778,1.99432961186282,"Halictidae","Lasioglossum",1.29
-"Lasioglossum quadrinotatum","M_015",3,38,0.0789473684210526,-0.324673529246099,"Halictidae","Lasioglossum",1.59
-"Lasioglossum quadrinotatum","M_049",4,11,0.363636363636364,-0.103039410451396,"Halictidae","Lasioglossum",1.59
-"Lasioglossum scitulum","M_055",1,12,0.0833333333333333,-0.725052335305738,"Halictidae","Lasioglossum",2.31
-"Lasioglossum scitulum","M_054",2,24,0.0833333333333333,-0.36460910259625,"Halictidae","Lasioglossum",2.31
-"Lasioglossum sexmaculatum","M_047",1,8,0.125,-0.742520131897348,"Halictidae","Lasioglossum",1.84
-"Lasioglossum sexstrigatum","M_057",1,37,0.027027027027027,-0.526844277609662,"Halictidae","Lasioglossum",1.27
-"Lasioglossum sexstrigatum","M_021",2,25,0.08,-0.393303875357079,"Halictidae","Lasioglossum",1.27
-"Lasioglossum sordidum","M_028",10,10,1,2.53426230308936,"Halictidae","Lasioglossum",1.29
-"Lasioglossum sordidum","M_029",3,11,0.272727272727273,-0.140133729828509,"Halictidae","Lasioglossum",1.29
-"Lasioglossum subopacum","M_044",9,21,0.428571428571429,0.833560752537003,"Halictidae","Lasioglossum",2.89
-"Lasioglossum subviridatum","M_073",1,21,0.0476190476190476,-0.593819839019529,"Halictidae","Lasioglossum",1.2
-"Lasioglossum tegulare","M_073",2,21,0.0952380952380952,-0.382110157282132,"Halictidae","Lasioglossum",0.94
-"Lasioglossum transitorium","M_015",1,38,0.0263157894736842,-0.65770775023244,"Halictidae","Lasioglossum",1.24
-"Lasioglossum villosulum","M_016",1,9,0.111111111111111,-0.727545137374849,"Halictidae","Lasioglossum",1.38
-"Lasioglossum villosulum","M_015",6,38,0.157894736842105,0.174877802233414,"Halictidae","Lasioglossum",1.38
-"Lasioglossum villosulum","M_047",4,8,0.5,0.689482979618966,"Halictidae","Lasioglossum",1.38
-"Lasioglossum villosulum","M_007",1,10,0.1,-0.604538515437949,"Halictidae","Lasioglossum",1.38
-"Lasioglossum villosulum","M_006",1,10,0.1,-0.772807633514369,"Halictidae","Lasioglossum",1.38
-"Lasioglossum viride","M_008",4,6,0.666666666666667,0.511000838420582,"Halictidae","Lasioglossum",1.76
-"Lasioglossum zonulum","M_015",2,38,0.0526315789473684,-0.491190639739269,"Halictidae","Lasioglossum",1.98
-"Lassioglossum fuscipenne","M_025",1,7,0.142857142857143,-1.05362781094266,"Halictidae","Lasioglossum",2.1
-"Liphanthus sabulosus","M_001",3,16,0.1875,-0.19712127461776,"Andrenidae","Liphanthus",1.237
-"Manuelia gayi","M_051",3,10,0.3,0.278308154308772,"Apidae","Manuelia",1.8
-"Manuelia postica","M_051",4,10,0.4,0.727882865115249,"Apidae","Manuelia",1.7
-"Megachile albisecta","M_015",6,38,0.157894736842105,0.174877802233414,"Megachilidae","Megachile",3.34
-"Megachile albocristata","M_015",4,38,0.105263157894737,-0.158156418752928,"Megachilidae","Megachile",3.88
-"Megachile argentata","M_015",15,38,0.394736842105263,1.67353179667195,"Megachilidae","Megachile",2.82
-"Megachile argentata","M_016",3,9,0.333333333333333,0.179746445704375,"Megachilidae","Megachile",2.82
-"Megachile canariensis","M_008",5,6,0.833333333333333,1.1355574187124,"Megachilidae","Megachile",3.07
-"Megachile ericetorum","M_015",8,38,0.210526315789474,0.507912023219755,"Megachilidae","Megachile",3.44
-"Megachile gemula albula","M_005",1,37,0.027027027027027,-0.650347708136215,"Megachilidae","Megachile",3.62
-"Megachile giraudi","M_015",2,38,0.0526315789473684,-0.491190639739269,"Megachilidae","Megachile",2.97
-"Megachile hungarica","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Megachile",3.44
-"Megachile leachella","M_016",1,9,0.111111111111111,-0.727545137374849,"Megachilidae","Megachile",2.7
-"Megachile lefebvrei","M_015",3,38,0.0789473684210526,-0.324673529246099,"Megachilidae","Megachile",3.99
-"Megachile manicata","M_015",4,38,0.105263157894737,-0.158156418752928,"Megachilidae","Megachile",3.82
-"Megachile maritima","M_016",3,9,0.333333333333333,0.179746445704375,"Megachilidae","Megachile",3.78
-"Megachile mendica","M_062",15,121,0.12396694214876,-0.0639609392487039,"Megachilidae","Megachile",3.3
-"Megachile mendica","M_073",10,21,0.476190476190476,1.31156729661705,"Megachilidae","Megachile",3.3
-"Megachile montenegrensis","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Megachile",3.39
-"Megachile parietina","M_015",11,38,0.289473684210526,1.00746335469927,"Megachilidae","Megachile",4.69
-"Megachile pugnata","M_005",5,37,0.135135135135135,-0.0683810789315483,"Megachilidae","Megachile",3.1
-"Megachile pyrenaica","M_015",2,38,0.0526315789473684,-0.491190639739269,"Megachilidae","Megachile",3.56
-"Megachile relativa","M_005",4,37,0.108108108108108,-0.213872736232715,"Megachilidae","Megachile",2.68
-"Megachile semirufa","M_003",1,7,0.142857142857143,-0.993399267798783,"Megachilidae","Megachile",4.19
-"Megachile semirufa","M_001",16,16,1,2.94410161767816,"Megachilidae","Megachile",4.19
-"Megachile semirufa","M_002",4,8,0.5,0.573292943662343,"Megachilidae","Megachile",4.19
-"Megachile texana","M_005",2,37,0.0540540540540541,-0.504856050835048,"Megachilidae","Megachile",3.65
-"Megachile versicolor","M_047",1,8,0.125,-0.742520131897348,"Megachilidae","Megachile",3.3
-"Megachile willughbiella","M_006",1,10,0.1,-0.772807633514369,"Megachilidae","Megachile",3.41
-"Melecta albifrons","M_015",2,38,0.0526315789473684,-0.491190639739269,"Apidae","Melecta",3.59
-"Melecta curvispina","M_008",3,6,0.5,-0.11355574187124,"Apidae","Melecta",3
-"Melecta tuberculata","M_015",4,38,0.105263157894737,-0.158156418752928,"Apidae","Melecta",3.5
-"Melipona quadrifasciata","M_076",1,12,0.0833333333333333,-0.765707427099428,"Apidae","Melipona",3
-"Melissodes agilis","M_062",50,121,0.413223140495868,1.54246542845601,"Apidae","Melissodes",3.24
-"Melissodes coreopsis","M_062",3,121,0.0247933884297521,-0.614735693890321,"Apidae","Melissodes",2.6
-"Nomada babiyi","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Nomada",0.87
-"Nomada basalis","M_015",8,38,0.210526315789474,0.507912023219755,"Apidae","Nomada",1.77
-"Nomada calimorpha","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Nomada",1.65
-"Nomada corcyraea","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Nomada",1.29
-"Nomada distinguenda","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Nomada",1.07
-"Nomada eos","M_015",3,38,0.0789473684210526,-0.324673529246099,"Apidae","Nomada",1.75
-"Nomada erythrocephala","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Nomada",1.58
-"Nomada femoralis","M_015",9,38,0.236842105263158,0.674429133712926,"Apidae","Nomada",1.63
-"Nomada flava","M_047",1,8,0.125,-0.742520131897348,"Apidae","Nomada",1.86
-"Nomada fucata","M_015",4,38,0.105263157894737,-0.158156418752928,"Apidae","Nomada",1.88
-"Nomada imperialis","M_015",2,38,0.0526315789473684,-0.491190639739269,"Apidae","Nomada",2.55
-"Nomada lucidula","M_015",7,38,0.184210526315789,0.341394912726585,"Apidae","Nomada",2.43
-"Nomada mavromoustakisi","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Nomada",0.84
-"Nomada mutabilis","M_016",1,9,0.111111111111111,-0.727545137374849,"Apidae","Nomada",1.72
-"Nomada nobilis","M_015",5,38,0.131578947368421,0.00836069174024294,"Apidae","Nomada",1.97
-"Nomada panzeri","M_047",2,8,0.25,-0.26518576139191,"Apidae","Nomada",1.63
-"Nomada propinqua","M_015",8,38,0.210526315789474,0.507912023219755,"Apidae","Nomada",1.74
-"Nomada rubricollis","M_015",3,38,0.0789473684210526,-0.324673529246099,"Apidae","Nomada",1.83
-"Nomada ruficornis","M_047",1,8,0.125,-0.742520131897348,"Apidae","Nomada",1.79
-"Nomada rufipes","M_047",1,8,0.125,-0.742520131897348,"Apidae","Nomada",1.45
-"Nomada trispinosa","M_015",2,38,0.0526315789473684,-0.491190639739269,"Apidae","Nomada",1.64
-"Nomioides facilis","M_015",3,38,0.0789473684210526,-0.324673529246099,"Halictidae","Nomioides",0.8
-"Osmia andrenoides","M_015",5,38,0.131578947368421,0.00836069174024294,"Megachilidae","Osmia",1.85
-"Osmia apicata","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Osmia",3.24
-"Osmia atriventris","M_025",2,7,0.285714285714286,-0.578753304602305,"Megachilidae","Osmia",2.08
-"Osmia atriventris","M_062",13,121,0.107438016528926,-0.155756731688973,"Megachilidae","Osmia",2.08
-"Osmia aurulenta","M_015",24,38,0.631578947368421,3.17218579111049,"Megachilidae","Osmia",2.92
-"Osmia bidentata","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Osmia",2.24
-"Osmia bruneri","M_005",7,37,0.189189189189189,0.222602235670785,"Megachilidae","Osmia",2.1
-"Osmia caerulescens","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Osmia",2.37
-"Osmia cephalotes","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Osmia",1.74
-"Osmia collinsiae","M_062",3,121,0.0247933884297521,-0.614735693890321,"Megachilidae","Osmia",2.7
-"Osmia latreillei","M_015",2,38,0.0526315789473684,-0.491190639739269,"Megachilidae","Osmia",2.89
-"Osmia lignaria","M_025",3,7,0.428571428571429,-0.103878798261952,"Megachilidae","Osmia",2.9
-"Osmia lignaria","M_004",1,8,0.125,-0.574800907851677,"Megachilidae","Osmia",2.9
-"Osmia melanogaster","M_015",6,38,0.157894736842105,0.174877802233414,"Megachilidae","Osmia",2.66
-"Osmia moreensis","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Osmia",2.18
-"Osmia mustelina","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Osmia",3.92
-"Osmia nana","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Osmia",1.35
-"Osmia nigrifrons","M_005",2,37,0.0540540540540541,-0.504856050835048,"Megachilidae","Osmia",2.43
-"Osmia pentstemonis","M_005",5,37,0.135135135135135,-0.0683810789315483,"Megachilidae","Osmia",1.75
-"Osmia proxima","M_004",2,8,0.25,-0.0359250567407299,"Megachilidae","Osmia",2.16
-"Osmia pumila","M_004",1,8,0.125,-0.574800907851677,"Megachilidae","Osmia",1.9
-"Osmia pusilla","M_005",1,37,0.027027027027027,-0.650347708136215,"Megachilidae","Osmia",1.58
-"Osmia scutellaris","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Osmia",1.43
-"Osmia signata","M_015",3,38,0.0789473684210526,-0.324673529246099,"Megachilidae","Osmia",2.71
-"Osmia simillima","M_025",1,7,0.142857142857143,-1.05362781094266,"Megachilidae","Osmia",2.53
-"Osmia spinigera","M_015",2,38,0.0526315789473684,-0.491190639739269,"Megachilidae","Osmia",2.58
-"Osmia subcornuta","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Osmia",2.41
-"Osmia versicolor","M_015",6,38,0.157894736842105,0.174877802233414,"Megachilidae","Osmia",1.78
-"Osmia viridana","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Osmia",1.69
-"Peponapis pruinosa","M_062",8,121,0.0661157024793388,-0.385246212789647,"Apidae","Peponapis",3.16
-"Pseudoanthidium alpinum","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Pseudoanthidium",2.14
-"Pseudoanthidium nanum","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Pseudoanthidium",1.96
-"Pyrobombus impatiens","M_033",7,11,0.636363636363636,0.472203413185782,"Apidae","Pyrobombus",4.42
-"Pyrobombus ternarius","M_033",11,11,1,2.23509615574604,"Apidae","Pyrobombus",3.17
-"Rhodanthidium caturigense","M_015",2,38,0.0526315789473684,-0.491190639739269,"Megachilidae","Rhodanthidium",2.82
-"Rhodanthidium septemdentatum","M_015",33,38,0.868421052631579,4.67083978554902,"Megachilidae","Rhodanthidium",3.38
-"Rhodanthidium sticticum","M_058",10,22,0.454545454545455,0.857032550334157,"Megachilidae","Rhodanthidium",3.6
-"Rophites algirus","M_015",3,38,0.0789473684210526,-0.324673529246099,"Halictidae","Rophites",2.19
-"Rophites quinquespinosus","M_015",2,38,0.0526315789473684,-0.491190639739269,"Halictidae","Rophites",2.28
-"Ruizantheda mutabilis","M_001",2,16,0.125,-0.438753804794369,"Halictidae","Ruizantheda",1.68
-"Ruizantheda mutabilis","M_051",6,10,0.6,1.6270322867282,"Halictidae","Ruizantheda",1.68
-"Seladonia cephalica","M_015",6,38,0.157894736842105,0.174877802233414,"Halictidae","Seladonia",1.28
-"Seladonia confusa","M_047",1,8,0.125,-0.742520131897348,"Halictidae","Seladonia",1.54
-"Seladonia confusa","M_032",1,4,0.25,-0.67083697370629,"Halictidae","Seladonia",1.54
-"Seladonia confusa","M_073",2,21,0.0952380952380952,-0.382110157282132,"Halictidae","Seladonia",1.54
-"Seladonia confusa","M_004",1,8,0.125,-0.574800907851677,"Halictidae","Seladonia",1.54
-"Seladonia gemmea","M_015",10,38,0.263157894736842,0.840946244206097,"Halictidae","Seladonia",1.28
-"Seladonia gemmea","M_058",7,22,0.318181818181818,0.272692175106323,"Halictidae","Seladonia",1.28
-"Seladonia gemmea","M_016",1,9,0.111111111111111,-0.727545137374849,"Halictidae","Seladonia",1.28
-"Seladonia smaragdula","M_016",1,9,0.111111111111111,-0.727545137374849,"Halictidae","Seladonia",1.09
-"Seladonia smaragdula","M_015",18,38,0.473684210526316,2.17308312815146,"Halictidae","Seladonia",1.09
-"Sphecodes ephippius","M_047",1,8,0.125,-0.742520131897348,"Halictidae","Sphecodes",1.53
-"Sphecodes ephippius","M_015",3,38,0.0789473684210526,-0.324673529246099,"Halictidae","Sphecodes",1.53
-"Sphecodes geoffrellus","M_047",1,8,0.125,-0.742520131897348,"Halictidae","Sphecodes",1.07
-"Sphecodes hirtellus","M_016",1,9,0.111111111111111,-0.727545137374849,"Halictidae","Sphecodes",1.02
-"Sphecodes marginatus","M_050",6,8,0.75,0.834057656228299,"Halictidae","Sphecodes",1.01
-"Sphecodes marginatus","M_039",1,13,0.0769230769230769,-1.05654294143017,"Halictidae","Sphecodes",1.01
-"Sphecodes marginatus","M_012",1,8,0.125,-0.75608641481425,"Halictidae","Sphecodes",1.01
-"Sphecodes pellucidus","M_016",1,9,0.111111111111111,-0.727545137374849,"Halictidae","Sphecodes",1.74
-"Sphecodes pellucidus","M_047",1,8,0.125,-0.742520131897348,"Halictidae","Sphecodes",1.74
-"Sphecodes ruficrus","M_012",1,8,0.125,-0.75608641481425,"Halictidae","Sphecodes",1.56
-"Stelis punctulatissima","M_015",1,38,0.0263157894736842,-0.65770775023244,"Megachilidae","Stelis",2.58
-"Stelis signata","M_016",2,9,0.222222222222222,-0.273899345835237,"Megachilidae","Stelis",1.99
-"Systropha planidens","M_015",1,38,0.0263157894736842,-0.65770775023244,"Halictidae","Systropha",2.12
-"Thyreus histrionicus","M_012",3,8,0.375,0.108012344973464,"Apidae","Thyreus",3.05
-"Thyreus ramosus","M_015",6,38,0.157894736842105,0.174877802233414,"Apidae","Thyreus",2.37
-"Thyreus truncatus","M_015",1,38,0.0263157894736842,-0.65770775023244,"Apidae","Thyreus",2.5
-"Trigona fulviventris","M_077",7,7,1,1.52611672491475,"Apidae","Trigona",1.4
-"Trigona spinipes","M_076",12,12,1,2.42914080321198,"Apidae","Trigona",1.8
-"Xylocopa cantabrita","M_016",7,9,0.777777777777778,1.99432961186282,"Apidae","Xylocopa",5.62
-"Xylocopa grisescens","M_059",1,13,0.0769230769230769,-0.955848496447189,"Apidae","Xylocopa",7.7
-"Xylocopa iris","M_015",8,38,0.210526315789474,0.507912023219755,"Apidae","Xylocopa",4.34
-"Xylocopa violacea","M_016",1,9,0.111111111111111,-0.727545137374849,"Apidae","Xylocopa",6.67
-"Xylocopa violacea","M_015",5,38,0.131578947368421,0.00836069174024294,"Apidae","Xylocopa",6.67
-"Xylocopa virginica virginica","M_025",6,7,0.857142857142857,1.32074472075911,"Apidae","Xylocopa",5.64
+"sp.armonizado","ID","familia","Grado","n.familia","GFE","n.plantas.ID","Grado.relativo","Z_Grado","Family","Genus","DIT.final"
+"Agapostemon sp1 M PL 005","M_005","Halictidae",2,2,0.693147180559945,84,0.0238095238095238,-0.908161348315467,NA,NA,NA
+"Agapostemon splendens","M_005","Halictidae",4,3,0.693147180559945,84,0.0476190476190476,-0.657953629902022,"Halictidae","Agapostemon",2.38
+"Agapostemon texanus","M_062","Halictidae",121,33,2.79326567212103,455,0.265934065934066,4.44975831383947,"Halictidae","Agapostemon",2.04
+"Alloscirtetica rufitarsis","M_001","Apidae",3,3,1.09861228866811,44,0.0681818181818182,-0.796584851075818,"Apidae","Alloscirtetica",3.36
+"Alloscirtetica sp","M_001","Apidae",9,5,1.15374194270109,44,0.204545454545455,0.558798328366619,NA,NA,NA
+"Amegilla albigena","M_015","Apidae",14,9,2.06920246582036,127,0.110236220472441,0.346466614552743,"Apidae","Amegilla",3.12
+"Amegilla canifrons","M_039","Apidae",5,4,1.33217904021012,16,0.3125,-0.64381591616076,"Apidae","Amegilla",5.38
+"Amegilla dulcifera subflavescens","M_044","Apidae",8,6,1.47507631105469,64,0.125,0.353429441541721,NA,NA,NA
+"Amegilla fasciata","M_016","Apidae",4,4,1.09861228866811,24,0.166666666666667,-0.374895412074385,"Apidae","Amegilla",3.95
+"Amegilla quadrifasciata","M_016","Apidae",2,2,0.693147180559945,24,0.0833333333333333,-1.06220366754409,"Apidae","Amegilla",4.02
+"Amegilla quadrifasciata","M_039","Apidae",3,3,1.09861228866811,16,0.1875,-1.14456162873024,"Apidae","Amegilla",4.02
+"Amegilla quadrifasciata","M_050","Apidae",3,2,0.636514168294813,12,0.25,-0.774059314567555,"Apidae","Amegilla",4.02
+"Amegilla quadrifasciata","M_015","Apidae",7,5,1.47507631105469,127,0.0551181102362205,-0.237721618744218,"Apidae","Amegilla",4.02
+"Amegilla sp1 M PL 050","M_050","Apidae",3,3,0.693147180559945,12,0.25,-0.774059314567555,NA,NA,NA
+"Amegilla sp1 M PL 058","M_039","Apidae",8,5,1.55958115625988,16,0.5,0.10730265269346,NA,NA,NA
+"Amegilla walshii","M_062","Apidae",23,12,2.23327037493805,455,0.0505494505494506,0.143585234448595,NA,NA,NA
+"Ammobates oraniensis","M_015","Apidae",2,2,0.693147180559945,127,0.015748031496063,-0.654998928242047,"Apidae","Ammobates",2.1
+"Andrena alfkenella","M_015","Andrenidae",2,2,0.693147180559945,127,0.015748031496063,-0.654998928242047,"Andrenidae","Andrena",1.47
+"Andrena alleghaniensis","M_033","Andrenidae",3,3,0.693147180559945,11,0.272727272727273,-1.30328677981716,"Andrenidae","Andrena",1.44
+"Andrena amamiensis","M_044","Andrenidae",2,2,0.693147180559945,64,0.03125,-0.676564930951294,NA,NA,NA
+"Andrena apacheorum","M_005","Andrenidae",2,2,0.693147180559945,84,0.0238095238095238,-0.908161348315467,NA,NA,NA
+"Andrena arabis","M_062","Andrenidae",4,4,1.38629436111989,455,0.00879120879120879,-0.691285056453718,"Andrenidae","Andrena",2.1
+"Andrena bicolor","M_015","Andrenidae",3,2,0.636514168294813,127,0.0236220472440945,-0.571543466342481,"Andrenidae","Andrena",2.01
+"Andrena bradleyi","M_033","Andrenidae",5,2,0.500402423538188,11,0.454545454545455,-0.394016933433096,NA,NA,NA
+"Andrena brevihirtiscopa","M_021","Andrenidae",3,3,1.09861228866811,77,0.038961038961039,-0.66358163428345,NA,NA,NA
+"Andrena caneae","M_015","Andrenidae",6,4,1.242453324894,127,0.047244094488189,-0.321177080643784,NA,NA,NA
+"Andrena carlini","M_025","Andrenidae",7,4,1.09861228866811,13,0.538461538461538,1.33138425468136,"Andrenidae","Andrena",2.9
+"Andrena carlini","M_062","Andrenidae",59,31,3.22043396694906,455,0.12967032967033,1.72544473300035,"Andrenidae","Andrena",2.9
+"Andrena carlini","M_032","Andrenidae",4,3,0.693147180559945,7,0.571428571428571,0,"Andrenidae","Andrena",2.9
+"Andrena carlini","M_033","Andrenidae",5,4,1.03972077083992,11,0.454545454545455,-0.394016933433096,"Andrenidae","Andrena",2.9
+"Andrena carolina","M_033","Andrenidae",4,3,1.03972077083992,11,0.363636363636364,-0.84865185662513,"Andrenidae","Andrena",2.09
+"Andrena crassana","M_015","Andrenidae",4,2,0.562335144618808,127,0.031496062992126,-0.488088004442915,"Andrenidae","Andrena",1.45
+"Andrena crataegi","M_005","Andrenidae",9,4,1.00271826451752,84,0.107142857142857,-0.0324343338684096,"Andrenidae","Andrena",1.81
+"Andrena dentata","M_021","Andrenidae",2,2,0.693147180559945,77,0.025974025974026,-0.811574660634435,NA,NA,NA
+"Andrena dentata","M_053","Andrenidae",3,3,1.09861228866811,64,0.046875,-0.73262432880246,NA,NA,NA
+"Andrena dentata","M_057","Andrenidae",3,3,0.693147180559945,87,0.0344827586206897,-0.678533768643398,NA,NA,NA
+"Andrena distinguenda","M_015","Andrenidae",4,4,1.38629436111989,127,0.031496062992126,-0.488088004442915,"Andrenidae","Andrena",1.56
+"Andrena edashigei","M_044","Andrenidae",3,3,1.09861228866811,64,0.046875,-0.504899202202459,NA,NA,NA
+"Andrena edwiniae","M_005","Andrenidae",2,2,0.693147180559945,84,0.0238095238095238,-0.908161348315467,NA,NA,NA
+"Andrena erigeniae","M_025","Andrenidae",4,3,0.693147180559945,13,0.307692307692308,-0.798830552808817,"Andrenidae","Andrena",2.1
+"Andrena erythrogastra","M_062","Andrenidae",19,10,2.07944154167984,455,0.0417582417582418,-0.032176932057155,NA,NA,NA
+"Andrena flavipes","M_015","Andrenidae",16,10,2.04888282790134,127,0.125984251968504,0.513377538351875,"Andrenidae","Andrena",2.36
+"Andrena forbesii","M_032","Andrenidae",3,3,0.693147180559945,7,0.428571428571429,-0.816496580927726,"Andrenidae","Andrena",2.2
+"Andrena fulva","M_047","Andrenidae",3,2,0.636514168294813,18,0.166666666666667,-0.772921534407182,"Andrenidae","Andrena",2.72
+"Andrena geranii","M_062","Andrenidae",5,4,1.09861228866811,455,0.010989010989011,-0.64734451482728,NA,NA,NA
+"Andrena grossella","M_015","Andrenidae",3,2,0.636514168294813,127,0.0236220472440945,-0.571543466342481,"Andrenidae","Andrena",2.28
+"Andrena haemorrhoa","M_006","Andrenidae",3,2,0.636514168294813,11,0.272727272727273,-0.768273325346536,"Andrenidae","Andrena",2.49
+"Andrena haemorrhoa","M_047","Andrenidae",5,3,0.693147180559945,18,0.277777777777778,-0.0198185008822353,"Andrenidae","Andrena",2.49
+"Andrena halictoides","M_057","Andrenidae",4,4,1.09861228866811,87,0.0459770114942529,-0.571255702454718,NA,NA,NA
+"Andrena hebes","M_057","Andrenidae",2,2,0.693147180559945,87,0.0229885057471264,-0.785811834832077,NA,NA,NA
+"Andrena hesperia","M_015","Andrenidae",7,3,1.07899220787758,127,0.0551181102362205,-0.237721618744218,"Andrenidae","Andrena",1.92
+"Andrena hikosana","M_021","Andrenidae",6,5,1.56071040904141,77,0.0779220779220779,-0.219602555230494,NA,NA,NA
+"Andrena hispania","M_016","Andrenidae",4,4,1.09861228866811,24,0.166666666666667,-0.374895412074385,"Andrenidae","Andrena",2.95
+"Andrena humilis","M_015","Andrenidae",19,6,1.45948187386908,127,0.149606299212598,0.763743924050573,"Andrenidae","Andrena",2.25
+"Andrena illinoensis","M_062","Andrenidae",6,6,1.79175946922805,455,0.0131868131868132,-0.603403973200843,NA,NA,NA
+"Andrena irgeniae","M_032","Andrenidae",4,3,0.693147180559945,7,0.571428571428571,0,NA,NA,NA
+"Andrena japonica","M_054","Andrenidae",2,2,0.693147180559945,82,0.024390243902439,-0.766045592782871,"Andrenidae","Andrena",1.22
+"Andrena kaguya","M_057","Andrenidae",6,5,1.33217904021012,87,0.0689655172413793,-0.356699570077359,NA,NA,NA
+"Andrena kaguya","M_053","Andrenidae",2,2,0.693147180559945,64,0.03125,-0.995056924194386,NA,NA,NA
+"Andrena Knuthi","M_053","Andrenidae",3,3,1.09861228866811,64,0.046875,-0.73262432880246,NA,NA,NA
+"Andrena Knuthi","M_055","Andrenidae",3,3,0.693147180559945,41,0.0731707317073171,-0.584095235058018,NA,NA,NA
+"Andrena Knuthi","M_044","Andrenidae",2,2,0.693147180559945,64,0.03125,-0.676564930951294,NA,NA,NA
+"Andrena komachi","M_021","Andrenidae",3,3,1.09861228866811,77,0.038961038961039,-0.66358163428345,NA,NA,NA
+"Andrena komachi","M_053","Andrenidae",3,3,1.09861228866811,64,0.046875,-0.73262432880246,NA,NA,NA
+"Andrena lamiana","M_015","Andrenidae",6,3,0.636514168294813,127,0.047244094488189,-0.321177080643784,"Andrenidae","Andrena",1.31
+"Andrena lapponica","M_056","Andrenidae",3,2,0.636514168294813,60,0.05,-1.13214309243487,"Andrenidae","Andrena",2.54
+"Andrena longitibialis","M_053","Andrenidae",4,3,1.03972077083992,64,0.0625,-0.470191733410534,"Andrenidae","Andrena",1.59
+"Andrena macoupinensis","M_062","Andrenidae",4,4,1.38629436111989,455,0.00879120879120879,-0.691285056453718,NA,NA,NA
+"Andrena madronitens","M_005","Andrenidae",14,8,1.6313454208086,84,0.166666666666667,0.593084962165203,NA,NA,NA
+"Andrena mandibularis","M_062","Andrenidae",9,9,2.19722457733622,455,0.0197802197802198,-0.47158234832153,"Andrenidae","Andrena",1.87
+"Andrena mandibularis","M_033","Andrenidae",6,3,0.500402423538188,11,0.545454545454545,0.0606179897589381,"Andrenidae","Andrena",1.87
+"Andrena mansonii","M_032","Andrenidae",3,3,0.693147180559945,7,0.428571428571429,-0.816496580927726,NA,NA,NA
+"Andrena mikado","M_053","Andrenidae",4,2,0.562335144618808,64,0.0625,-0.470191733410534,NA,NA,NA
+"Andrena minutula","M_053","Andrenidae",2,2,0.693147180559945,64,0.03125,-0.995056924194386,"Andrenidae","Andrena",1.42
+"Andrena minutula","M_057","Andrenidae",11,7,1.58109375017182,87,0.126436781609195,0.179690760866038,"Andrenidae","Andrena",1.42
+"Andrena minutula","M_021","Andrenidae",4,4,1.38629436111989,77,0.051948051948052,-0.515588607932464,"Andrenidae","Andrena",1.42
+"Andrena miranda","M_004","Andrenidae",2,2,0.693147180559945,10,0.2,-0.658946527660469,"Andrenidae","Andrena",1.9
+"Andrena mocsaryi","M_015","Andrenidae",12,8,1.83437197028162,127,0.094488188976378,0.179555690753611,"Andrenidae","Andrena",2.19
+"Andrena mucronata","M_015","Andrenidae",6,4,1.242453324894,127,0.047244094488189,-0.321177080643784,"Andrenidae","Andrena",2.84
+"Andrena nigrae","M_062","Andrenidae",5,5,1.38629436111989,455,0.010989010989011,-0.64734451482728,NA,NA,NA
+"Andrena nigrihirta","M_025","Andrenidae",6,4,1.09861228866811,13,0.461538461538462,0.621312652184635,NA,NA,NA
+"Andrena nigroaenea","M_047","Andrenidae",3,2,0.636514168294813,18,0.166666666666667,-0.772921534407182,"Andrenidae","Andrena",2.84
+"Andrena nigroaenea","M_015","Andrenidae",6,6,1.6094379124341,127,0.047244094488189,-0.321177080643784,"Andrenidae","Andrena",2.84
+"Andrena nivalis","M_004","Andrenidae",2,2,0.693147180559945,10,0.2,-0.658946527660469,"Andrenidae","Andrena",2.69
+"Andrena nothoscordi","M_062","Andrenidae",10,8,1.94591014905531,455,0.021978021978022,-0.427641806695093,NA,NA,NA
+"Andrena opacifovea","M_044","Andrenidae",2,2,0.693147180559945,64,0.03125,-0.676564930951294,NA,NA,NA
+"Andrena opacifovea opacifovea","M_054","Andrenidae",4,4,1.38629436111989,82,0.0487804878048781,-0.436220407001357,NA,NA,NA
+"Andrena optata","M_015","Andrenidae",2,2,0.693147180559945,127,0.015748031496063,-0.654998928242047,"Andrenidae","Andrena",2.37
+"Andrena oralis","M_015","Andrenidae",2,2,0.693147180559945,127,0.015748031496063,-0.654998928242047,"Andrenidae","Andrena",1.96
+"Andrena personata","M_062","Andrenidae",3,2,0.636514168294813,455,0.00659340659340659,-0.735225598080155,"Andrenidae","Andrena",1.2
+"Andrena protomias","M_054","Andrenidae",4,3,1.03972077083992,82,0.0487804878048781,-0.436220407001357,NA,NA,NA
+"Andrena pruni","M_062","Andrenidae",83,34,3.18488788980097,455,0.182417582417582,2.78001773203485,"Andrenidae","Andrena",2.5
+"Andrena regularis","M_033","Andrenidae",7,4,0.867563228481461,11,0.636363636363636,0.515252912950972,NA,NA,NA
+"Andrena rugothorace","M_015","Andrenidae",17,7,1.67262544615032,127,0.133858267716535,0.596833000251441,"Andrenidae","Andrena",1.45
+"Andrena salicacea","M_062","Andrenidae",27,18,2.69887992911446,455,0.0593406593406593,0.319347400954345,NA,NA,NA
+"Andrena salicis","M_062","Andrenidae",9,7,1.88915916375402,455,0.0197802197802198,-0.47158234832153,NA,NA,NA
+"Andrena sayi","M_062","Andrenidae",2,2,0.693147180559945,455,0.0043956043956044,-0.779166139706593,NA,NA,NA
+"Andrena schmiedeknechti","M_015","Andrenidae",6,5,1.33217904021012,127,0.047244094488189,-0.321177080643784,"Andrenidae","Andrena",2.56
+"Andrena schulzi","M_015","Andrenidae",13,5,1.21488965394912,127,0.102362204724409,0.263011152653177,"Andrenidae","Andrena",1.32
+"Andrena sp1 M PL 015","M_015","Andrenidae",4,4,1.09861228866811,127,0.031496062992126,-0.488088004442915,NA,NA,NA
+"Andrena sp1 M PL 047","M_047","Andrenidae",3,3,1.09861228866811,18,0.166666666666667,-0.772921534407182,NA,NA,NA
+"Andrena sp1 M PL 058","M_058","Andrenidae",22,13,2.4410152780267,28,0.785714285714286,2.58799699498485,NA,NA,NA
+"Andrena spiraeana","M_062","Andrenidae",71,30,3.01769919105011,455,0.156043956043956,2.2527312325176,"Andrenidae","Andrena",1.94
+"Andrena tridens","M_025","Andrenidae",5,4,1.09861228866811,13,0.384615384615385,-0.0887589503120908,NA,NA,NA
+"Andrena tridens","M_062","Andrenidae",4,2,0.562335144618808,455,0.00879120879120879,-0.691285056453718,NA,NA,NA
+"Andrena ventricosa","M_015","Andrenidae",4,4,1.09861228866811,127,0.031496062992126,-0.488088004442915,"Andrenidae","Andrena",1.72
+"Andrena vicina","M_033","Andrenidae",8,5,1.15374194270109,11,0.727272727272727,0.969887836143006,"Andrenidae","Andrena",2.54
+"Andrena vicina","M_005","Andrenidae",10,5,1.00271826451752,84,0.119047619047619,0.0926695253383129,"Andrenidae","Andrena",2.54
+"Andrena w scripta","M_004","Andrenidae",2,2,0.693147180559945,10,0.2,-0.658946527660469,"Andrenidae","Andrena",1.74
+"Andrena watasei","M_053","Andrenidae",4,3,0.636514168294813,64,0.0625,-0.470191733410534,NA,NA,NA
+"Andrena watasei","M_057","Andrenidae",3,2,0.636514168294813,87,0.0344827586206897,-0.678533768643398,NA,NA,NA
+"Andrena westensis","M_015","Andrenidae",8,5,1.242453324894,127,0.062992125984252,-0.154266156844652,"Andrenidae","Andrena",2.3
+"Andrena wilkella","M_006","Andrenidae",5,2,0.500402423538188,11,0.454545454545455,-0.0698430295769579,"Andrenidae","Andrena",2.36
+"Andrena yamamoto","M_021","Andrenidae",6,5,1.56071040904141,77,0.0779220779220779,-0.219602555230494,NA,NA,NA
+"Anthidium chilensis","M_001","Megachilidae",8,7,1.79175946922805,44,0.181818181818182,0.332901131792879,"Megachilidae","Anthidium",1.2
+"Anthidium chubuti","M_022","Megachilidae",3,3,1.09861228866811,8,0.375,-0.462910049886276,"Megachilidae","Anthidium",3.69
+"Anthidium cognatum","M_062","Megachilidae",15,13,2.4410152780267,455,0.032967032967033,-0.207939098562905,NA,NA,NA
+"Anthidium decaspilum","M_001","Megachilidae",4,2,0.562335144618808,44,0.0909090909090909,-0.570687654502078,"Megachilidae","Anthidium",3.2
+"Anthidium florentinum","M_015","Megachilidae",7,4,1.15374194270109,127,0.0551181102362205,-0.237721618744218,"Megachilidae","Anthidium",3.92
+"Anthidium funereum","M_001","Megachilidae",7,3,0.500402423538188,44,0.159090909090909,0.10700393521914,"Megachilidae","Anthidium",3.2
+"Anthidium gayi","M_001","Megachilidae",5,3,0.950270539233235,44,0.113636363636364,-0.344790457928339,NA,NA,NA
+"Anthidium septemspinosum","M_054","Megachilidae",3,3,1.09861228866811,82,0.0365853658536585,-0.601132999892114,"Megachilidae","Anthidium",3.5
+"Anthidium sp","M_002","Megachilidae",2,2,0.693147180559945,21,0.0952380952380952,-1.10566913229883,NA,NA,NA
+"Anthidium sp","M_003","Megachilidae",7,5,1.5498260458782,8,0.875,1.15470053837925,NA,NA,NA
+"Anthidium sp1 M PL 058","M_058","Megachilidae",6,6,1.79175946922805,28,0.214285714285714,-0.306107171449821,NA,NA,NA
+"Anthidium taeniatum","M_015","Megachilidae",2,2,0.693147180559945,127,0.015748031496063,-0.654998928242047,"Megachilidae","Anthidium",2.56
+"Anthocopa obtusa","M_015","Megachilidae",4,3,1.03972077083992,127,0.031496062992126,-0.488088004442915,NA,NA,NA
+"Anthophora agama","M_015","Apidae",5,4,1.03972077083992,127,0.0393700787401575,-0.40463254254335,NA,NA,NA
+"Anthophora alluaudi","M_012","Apidae",8,7,1.90615474653985,14,0.571428571428571,1.65471908132324,"Apidae","Anthophora",4.16
+"Anthophora alluaudi","M_008","Apidae",6,5,1.33217904021012,10,0.6,1.10096376512636,"Apidae","Anthophora",4.16
+"Anthophora atroalba","M_015","Apidae",8,6,1.47507631105469,127,0.062992125984252,-0.154266156844652,"Apidae","Anthophora",3.88
+"Anthophora incerta","M_001","Apidae",3,3,1.09861228866811,44,0.0681818181818182,-0.796584851075818,"Apidae","Anthophora",4.13
+"Anthophora orotavae","M_050","Apidae",3,3,0.693147180559945,12,0.25,-0.774059314567555,"Apidae","Anthophora",3.12
+"Anthophora orotavae","M_039","Apidae",5,4,1.33217904021012,16,0.3125,-0.64381591616076,"Apidae","Anthophora",3.12
+"Anthophora pilipes villosula","M_054","Apidae",3,3,1.09861228866811,82,0.0365853658536585,-0.601132999892114,NA,NA,NA
+"Anthophora rubricrus","M_015","Apidae",16,10,2.02622962299529,127,0.125984251968504,0.513377538351875,NA,NA,NA
+"Anthophora simillima","M_005","Apidae",11,6,1.49417513828931,84,0.130952380952381,0.217773384545035,NA,NA,NA
+"Anthophora sp","M_001","Apidae",2,2,0.693147180559945,44,0.0454545454545455,-1.02248204764956,NA,NA,NA
+"Apis cerana","M_053","Apidae",2,2,0.693147180559945,64,0.03125,-0.995056924194386,"Apidae","Apis",2.38
+"Apis cerana","M_055","Apidae",6,4,1.03972077083992,41,0.146341463414634,0.382683085038012,"Apidae","Apis",2.38
+"Apis cerana","M_021","Apidae",11,9,2.04319187054512,77,0.142857142857143,0.520362576524432,"Apidae","Apis",2.38
+"Apis cerana","M_044","Apidae",3,3,1.09861228866811,64,0.046875,-0.504899202202459,"Apidae","Apis",2.38
+"Apis cerana japonica","M_057","Apidae",17,11,2.16608493924983,87,0.195402298850575,0.823359157998115,"Apidae","Apis",2.38
+"Apis cerana japonica","M_054","Apidae",23,19,2.8389889331547,82,0.280487804878049,2.69711885792302,"Apidae","Apis",2.38
+"Apis mellifera","M_035","Apidae",19,12,2.35167330190463,27,0.703703703703704,1.77163690354645,"Apidae","Apis",3.01
+"Apis mellifera","M_039","Apidae",6,5,1.56071040904141,16,0.375,-0.39344305987602,"Apidae","Apis",3.01
+"Apis mellifera","M_047","Apidae",13,6,1.2945451658449,18,0.722222222222222,2.99259363321755,"Apidae","Apis",3.01
+"Apis mellifera","M_016","Apidae",14,8,1.76776147228933,24,0.583333333333333,3.06164586527414,"Apidae","Apis",3.01
+"Apis mellifera","M_014","Apidae",3,3,0.693147180559945,10,0.3,-0.707106781186548,"Apidae","Apis",3.01
+"Apis mellifera","M_028","Apidae",4,4,1.38629436111989,31,0.129032258064516,-0.416025147168922,"Apidae","Apis",3.01
+"Apis mellifera","M_030","Apidae",8,6,1.6094379124341,17,0.470588235294118,0.707106781186547,"Apidae","Apis",3.01
+"Apis mellifera","M_031","Apidae",17,14,2.52321095295289,40,0.425,2.20889551796428,"Apidae","Apis",3.01
+"Apis mellifera","M_012","Apidae",6,5,1.56071040904141,14,0.428571428571429,0.791387386719812,"Apidae","Apis",3.01
+"Apis mellifera","M_023","Apidae",2,2,0.693147180559945,16,0.125,-1.22474487139159,"Apidae","Apis",3.01
+"Apis mellifera","M_073","Apidae",2,2,0.693147180559945,30,0.0666666666666667,-0.715600223983708,"Apidae","Apis",3.01
+"Apis mellifera","M_058","Apidae",13,9,2.04319187054512,28,0.464285714285714,0.960063401365346,"Apidae","Apis",3.01
+"Apis mellifera","M_061","Apidae",31,21,2.83709938120381,33,0.939393939393939,1.14613976618751,"Apidae","Apis",3.01
+"Apis mellifera","M_053","Apidae",11,7,1.73286795139986,64,0.171875,1.36683643433295,"Apidae","Apis",3.01
+"Apis mellifera","M_060","Apidae",59,25,2.67978707465694,59,1,NA,"Apidae","Apis",3.01
+"Apis mellifera","M_11.1","Apidae",3,3,0.693147180559945,8,0.375,-0.577350269189626,"Apidae","Apis",3.01
+"Apis mellifera","M_033","Apidae",5,3,0.562335144618808,11,0.454545454545455,-0.394016933433096,"Apidae","Apis",3.01
+"Apis mellifera","M_055","Apidae",3,3,1.09861228866811,41,0.0731707317073171,-0.584095235058018,"Apidae","Apis",3.01
+"Apis mellifera","M_054","Apidae",15,13,2.4410152780267,82,0.182926829268293,1.37781811479697,"Apidae","Apis",3.01
+"Apis mellifera","M_032","Apidae",6,4,1.09861228866811,7,0.857142857142857,1.63299316185545,"Apidae","Apis",3.01
+"Apis mellifera","M_11.2","Apidae",12,8,1.90615474653985,13,0.923076923076923,1.15470053837925,"Apidae","Apis",3.01
+"Apis mellifera","M_041","Apidae",11,5,1.27703425946614,14,0.785714285714286,0.707106781186547,"Apidae","Apis",3.01
+"Apis mellifera","M_034","Apidae",18,8,1.73512645696292,23,0.782608695652174,1.27555037990311,"Apidae","Apis",3.01
+"Apis mellifera","M_072","Apidae",38,12,1.56196378560401,86,0.441860465116279,1.59878913763941,"Apidae","Apis",3.01
+"Apis mellifera","M_021","Apidae",5,4,1.09861228866811,77,0.0649350649350649,-0.367595581581479,"Apidae","Apis",3.01
+"Apis mellifera","M_040","Apidae",6,3,0.636514168294813,12,0.5,0.577350269189626,"Apidae","Apis",3.01
+"Apis mellifera","M_049","Apidae",5,3,0.950270539233235,16,0.3125,-0.251165507483676,"Apidae","Apis",3.01
+"Apis mellifera","M_044","Apidae",2,2,0.693147180559945,64,0.03125,-0.676564930951294,"Apidae","Apis",3.01
+"Apis mellifera","M_008","Apidae",6,5,1.38629436111989,10,0.6,1.10096376512636,"Apidae","Apis",3.01
+"Apis mellifera","M_005","Apidae",22,12,2.19675579791443,84,0.261904761904762,1.59391583581898,"Apidae","Apis",3.01
+"Apis mellifera","M_025","Apidae",6,4,1.09861228866811,13,0.461538461538462,0.621312652184635,"Apidae","Apis",3.01
+"Apis mellifera","M_015","Apidae",104,33,3.13532800980018,127,0.818897637795276,7.85745818551367,"Apidae","Apis",3.01
+"Apis mellifera","M_046","Apidae",5,5,1.38629436111989,12,0.416666666666667,-1.0914103126635,"Apidae","Apis",3.01
+"Apis mellifera Linnaeus","M_075","Apidae",28,18,2.67795000336388,28,1,NA,NA,NA,NA
+"Ashmeadiella bucconis","M_062","Megachilidae",42,21,2.3085165672558,455,0.0923076923076923,0.978455525350908,"Megachilidae","Ashmeadiella",1.78
+"Augochlora pura","M_025","Halictidae",4,3,0.693147180559945,13,0.307692307692308,-0.798830552808817,"Halictidae","Augochlora",1.64
+"Augochlora pura","M_073","Halictidae",21,13,2.09464093882606,30,0.7,2.75903641913719,"Halictidae","Augochlora",1.64
+"Augochlora semiramis","M_072","Halictidae",66,21,2.08694161471328,86,0.767441860465116,3.46775138998926,NA,NA,NA
+"Augochlora sp1 M PL 031","M_031","Halictidae",3,3,1.09861228866811,40,0.075,-0.990194542535713,NA,NA,NA
+"Augochlorella aurata","M_073","Halictidae",10,8,2.02532622077007,30,0.333333333333333,0.747404678382984,"Halictidae","Augochlorella",1.405
+"Augochlorella ephyra","M_072","Halictidae",32,12,1.60147709130224,86,0.372093023255814,1.19829722642159,NA,NA,NA
+"Augochloropsis erato","M_072","Halictidae",17,7,1.33066009336289,86,0.197674418604651,0.197067448377025,NA,NA,NA
+"Augochloropsis metallica","M_073","Halictidae",5,5,1.6094379124341,30,0.166666666666667,-0.166973385596199,NA,NA,NA
+"Augochloropsis sp1 M PL 031","M_031","Halictidae",5,4,1.33217904021012,40,0.125,-0.533181676749999,NA,NA,NA
+"Augochloropsis sp2 M PL 072","M_072","Halictidae",9,2,0.529706199057654,86,0.104651162790698,-0.336921766580075,NA,NA,NA
+"Augochloropsis sp3 M PL 072","M_072","Halictidae",6,2,0.636514168294813,86,0.0697674418604651,-0.537167722188987,NA,NA,NA
+"Bombias scutellaris","M_062","Megachilidae",5,4,1.09861228866811,455,0.010989010989011,-0.64734451482728,NA,NA,NA
+"Bombus americanorum","M_005","Apidae",3,3,1.09861228866811,84,0.0357142857142857,-0.783057489108744,NA,NA,NA
+"Bombus appositus","M_005","Apidae",15,7,1.73286795139986,84,0.178571428571429,0.718188821371925,NA,NA,NA
+"Bombus ardens","M_054","Apidae",8,6,1.73286795139986,82,0.0975609756097561,0.223429964561671,"Apidae","Bombus",4.98
+"Bombus ardens","M_021","Apidae",8,6,1.56071040904141,77,0.103896103896104,0.0763834974714763,"Apidae","Bombus",4.98
+"Bombus ardens","M_053","Apidae",9,5,1.32966134885476,64,0.140625,0.841971243549095,"Apidae","Bombus",4.98
+"Bombus ardens","M_057","Apidae",14,10,2.14584175259475,87,0.160919540229885,0.501524959432077,"Apidae","Bombus",4.98
+"Bombus ardens","M_056","Apidae",12,8,1.83437197028162,60,0.2,0.213611904232994,"Apidae","Bombus",4.98
+"Bombus argillaceus","M_015","Apidae",11,9,1.97300140639361,127,0.0866141732283465,0.0961002288540456,"Apidae","Bombus",4.71
+"Bombus atratus","M_031","Apidae",6,5,1.33217904021012,40,0.15,-0.304675243857142,"Apidae","Bombus",5.66
+"Bombus beaticola","M_056","Apidae",22,13,2.2744747270983,60,0.366666666666667,1.70889523386395,NA,NA,NA
+"Bombus bellicosus","M_072","Apidae",16,7,1.41417546405698,86,0.186046511627907,0.130318796507387,NA,NA,NA
+"Bombus bifarius","M_005","Apidae",21,12,2.30666872540453,84,0.25,1.46881197661226,"Apidae","Bombus",2.89
+"Bombus bimaculatus","M_073","Apidae",5,4,1.09861228866811,30,0.166666666666667,-0.166973385596199,"Apidae","Bombus",4.07
+"Bombus bimaculatus","M_025","Apidae",7,6,1.6094379124341,13,0.538461538461538,1.33138425468136,"Apidae","Bombus",4.07
+"Bombus bohemicus","M_047","Apidae",4,2,0.693147180559945,18,0.222222222222222,-0.396370017644709,"Apidae","Bombus",4.86
+"Bombus centralis","M_005","Apidae",5,3,0.693147180559945,84,0.0595238095238095,-0.532849770695299,"Apidae","Bombus",3.06
+"Bombus consobrinus","M_056","Apidae",13,8,1.79865220625213,60,0.216666666666667,0.363140237196089,"Apidae","Bombus",3.68
+"Bombus dahlbomii","M_002","Apidae",8,5,1.15374194270109,21,0.380952380952381,1.23574785374575,"Apidae","Bombus",6.055
+"Bombus dahlbomii","M_051","Apidae",10,9,2.04319187054512,13,0.769230769230769,2.06192938652881,"Apidae","Bombus",6.055
+"Bombus dahlbomii","M_003","Apidae",3,3,1.09861228866811,8,0.375,-0.577350269189626,"Apidae","Bombus",6.055
+"Bombus dahlbomii","M_034","Apidae",21,9,1.83879869293744,23,0.91304347826087,1.70672233930698,"Apidae","Bombus",6.055
+"Bombus dahlbomii","M_001","Apidae",7,5,1.242453324894,44,0.159090909090909,0.10700393521914,"Apidae","Bombus",6.055
+"Bombus diversus","M_053","Apidae",13,6,1.51710639706103,64,0.203125,1.8917016251168,"Apidae","Bombus",5.445
+"Bombus diversus","M_056","Apidae",14,7,1.6094379124341,60,0.233333333333333,0.512668570159185,"Apidae","Bombus",5.445
+"Bombus diversus","M_055","Apidae",5,5,1.38629436111989,41,0.121951219512195,0.0604236450060019,"Apidae","Bombus",5.445
+"Bombus diversus diversus","M_054","Apidae",2,2,0.693147180559945,82,0.024390243902439,-0.766045592782871,"Apidae","Bombus",5.14
+"Bombus diversus diversus","M_057","Apidae",37,16,2.53145305088471,87,0.425287356321839,2.9689204817717,"Apidae","Bombus",5.14
+"Bombus diversus diversus","M_021","Apidae",25,13,2.38888971472958,77,0.324675324675325,2.59226494543822,"Apidae","Bombus",5.14
+"Bombus edwardsi","M_005","Apidae",37,16,2.35165770239488,84,0.44047619047619,3.47047372391982,NA,NA,NA
+"Bombus fervidus","M_005","Apidae",6,5,1.38629436111989,84,0.0714285714285714,-0.407745911488577,"Apidae","Bombus",3.48
+"Bombus flavifrons","M_005","Apidae",16,9,1.92512119079082,84,0.19047619047619,0.843292680578648,"Apidae","Bombus",2.89
+"Bombus fulvida","M_005","Apidae",2,2,0.693147180559945,84,0.0238095238095238,-0.908161348315467,NA,NA,NA
+"Bombus griseocollis","M_073","Apidae",6,5,1.33217904021012,30,0.2,0.015902227199638,"Apidae","Bombus",4.87
+"Bombus honshuensis","M_057","Apidae",8,6,1.5498260458782,87,0.0919540229885057,-0.1421434377,"Apidae","Bombus",6.1
+"Bombus honshuensis","M_021","Apidae",25,15,2.51052924716203,77,0.324675324675325,2.59226494543822,"Apidae","Bombus",6.1
+"Bombus honshuensis","M_056","Apidae",20,13,2.33319671428625,60,0.333333333333333,1.40983856793776,"Apidae","Bombus",6.1
+"Bombus hortorum","M_018","Apidae",8,6,1.73286795139986,22,0.363636363636364,0.0828670790465042,"Apidae","Bombus",4.54
+"Bombus hortorum","M_043","Apidae",7,5,1.5498260458782,15,0.466666666666667,0.550276056464169,"Apidae","Bombus",4.54
+"Bombus hortorum","M_038","Apidae",2,2,0.693147180559945,3,0.666666666666667,NA,"Apidae","Bombus",4.54
+"Bombus hortorum","M_006","Apidae",5,2,0.500402423538188,11,0.454545454545455,-0.0698430295769579,"Apidae","Bombus",4.54
+"Bombus hortotum","M_028","Apidae",3,3,1.09861228866811,31,0.0967741935483871,-0.832050294337844,"Apidae","Bombus",4.74
+"Bombus hunti","M_005","Apidae",30,13,2.28067714658592,84,0.357142857142857,2.59474670947276,"Apidae","Bombus",5.13
+"Bombus hypocrita","M_056","Apidae",18,12,2.19675579791443,60,0.3,1.11078190201157,"Apidae","Bombus",5.4
+"Bombus hypocrita hypocrita","M_057","Apidae",18,13,2.36060911398924,87,0.206896551724138,0.930637224186795,"Apidae","Bombus",5.4
+"Bombus hypocrita hypocrita","M_021","Apidae",14,11,2.20478541691352,77,0.181818181818182,0.964341655577387,"Apidae","Bombus",5.4
+"Bombus hypocrita hypocrita","M_054","Apidae",7,6,1.74786809746676,82,0.0853658536585366,0.0585173716709137,"Apidae","Bombus",5.4
+"Bombus ignitus","M_054","Apidae",9,9,2.07944154167984,82,0.109756097560976,0.388342557452427,"Apidae","Bombus",6.3
+"Bombus ignitus","M_053","Apidae",10,5,1.2130075659799,64,0.15625,1.10440383894102,"Apidae","Bombus",6.3
+"Bombus impatiens","M_062","Apidae",12,10,2.16395565688206,455,0.0263736263736264,-0.339760723442218,"Apidae","Bombus",3.9
+"Bombus impatiens","M_073","Apidae",11,6,1.22752941145721,30,0.366666666666667,0.930280291178821,"Apidae","Bombus",3.9
+"Bombus jonellus","M_047","Apidae",6,3,0.867563228481461,18,0.333333333333333,0.356733015880238,"Apidae","Bombus",5.08
+"Bombus juxtus","M_005","Apidae",27,14,2.36671036284359,84,0.321428571428571,2.21943513185259,NA,NA,NA
+"Bombus kirbyellus","M_005","Apidae",8,4,0.867563228481461,84,0.0952380952380952,-0.157538193075132,NA,NA,NA
+"Bombus lapidarius","M_043","Apidae",4,2,0.693147180559945,15,0.266666666666667,-0.366850704309446,"Apidae","Bombus",4.28
+"Bombus lapidarius","M_018","Apidae",8,3,0.900256051268537,22,0.363636363636364,0.0828670790465042,"Apidae","Bombus",4.28
+"Bombus lapidarius","M_007","Apidae",10,5,1.35923670066501,13,0.769230769230769,0.707106781186548,"Apidae","Bombus",4.28
+"Bombus lapidarius","M_047","Apidae",4,2,0.562335144618808,18,0.222222222222222,-0.396370017644709,"Apidae","Bombus",4.28
+"Bombus lapidarius","M_046","Apidae",6,4,1.32966134885476,12,0.5,-0.606339062590832,"Apidae","Bombus",4.28
+"Bombus lapidarius","M_017","Apidae",4,4,1.38629436111989,7,0.571428571428571,0.5,"Apidae","Bombus",4.28
+"Bombus lapidarius","M_037","Apidae",4,2,0.562335144618808,5,0.8,NA,"Apidae","Bombus",4.28
+"Bombus lucorum","M_016","Apidae",2,2,0.693147180559945,24,0.0833333333333333,-1.06220366754409,"Apidae","Bombus",4.28
+"Bombus lucorum","M_047","Apidae",8,3,0.900256051268537,18,0.444444444444444,1.10983604940519,"Apidae","Bombus",4.28
+"Bombus lucorum","M_049","Apidae",9,6,1.49417513828931,16,0.5625,1.0883838657626,"Apidae","Bombus",4.28
+"Bombus morrisoni","M_005","Apidae",12,6,1.49417513828931,84,0.142857142857143,0.342877243751758,NA,NA,NA
+"Bombus muscorum","M_017","Apidae",2,2,0.693147180559945,7,0.285714285714286,-0.833333333333333,"Apidae","Bombus",4.21
+"Bombus nevadensis","M_005","Apidae",5,5,1.38629436111989,84,0.0595238095238095,-0.532849770695299,"Apidae","Bombus",5.06
+"Bombus occidentalis","M_005","Apidae",32,15,2.3315483732983,84,0.380952380952381,2.84495442788621,"Apidae","Bombus",3.89
+"Bombus pascuorum","M_017","Apidae",5,3,0.950270539233235,7,0.714285714285714,1.16666666666667,"Apidae","Bombus",3.91
+"Bombus pascuorum","M_006","Apidae",10,4,0.848685557726417,11,0.909090909090909,1.67623270984699,"Apidae","Bombus",3.91
+"Bombus pascuorum","M_047","Apidae",8,5,1.15374194270109,18,0.444444444444444,1.10983604940519,"Apidae","Bombus",3.91
+"Bombus pascuorum","M_043","Apidae",10,7,1.67698777432242,15,0.666666666666667,1.46740281723778,"Apidae","Bombus",3.91
+"Bombus pascuorum","M_018","Apidae",15,8,1.77213938843753,22,0.681818181818182,1.53304096236033,"Apidae","Bombus",3.91
+"Bombus pascuorum","M_038","Apidae",2,2,0.693147180559945,3,0.666666666666667,NA,"Apidae","Bombus",3.91
+"Bombus pascuorum","M_007","Apidae",7,4,1.27703425946614,13,0.538461538461538,-0.707106781186548,"Apidae","Bombus",3.91
+"Bombus pascuorum","M_037","Apidae",4,3,1.03972077083992,5,0.8,NA,"Apidae","Bombus",3.91
+"Bombus pascuorum","M_046","Apidae",9,6,1.5498260458782,12,0.75,0.848874687627165,"Apidae","Bombus",3.91
+"Bombus pennsylvanicus","M_062","Apidae",6,6,1.6094379124341,455,0.0131868131868132,-0.603403973200843,"Apidae","Bombus",6
+"Bombus pennsylvanicus","M_025","Apidae",2,2,0.693147180559945,13,0.153846153846154,-2.21897375780227,"Apidae","Bombus",6
+"Bombus perplexus","M_004","Apidae",2,2,0.693147180559945,10,0.2,-0.658946527660469,NA,NA,NA
+"Bombus perplexus","M_073","Apidae",2,2,0.693147180559945,30,0.0666666666666667,-0.715600223983708,NA,NA,NA
+"Bombus polaris","M_014","Apidae",10,8,1.90615474653985,10,1,0.707106781186548,NA,NA,NA
+"Bombus polaris","M_024","Apidae",2,2,0.693147180559945,2,1,NA,NA,NA,NA
+"Bombus pratorum","M_006","Apidae",3,2,0.636514168294813,11,0.272727272727273,-0.768273325346536,"Apidae","Bombus",4.03
+"Bombus pratorum","M_049","Apidae",7,4,1.15374194270109,16,0.4375,0.418609179139461,"Apidae","Bombus",4.03
+"Bombus pratorum","M_047","Apidae",3,3,1.09861228866811,18,0.166666666666667,-0.772921534407182,"Apidae","Bombus",4.03
+"Bombus pullatus","M_031","Apidae",7,7,1.79175946922805,40,0.175,-0.0761688109642856,NA,NA,NA
+"Bombus ruderatus","M_11.1","Apidae",3,3,0.693147180559945,8,0.375,-0.577350269189626,"Apidae","Bombus",5.04
+"Bombus ruderatus","M_051","Apidae",3,3,0.693147180559945,13,0.230769230769231,-0.668733855090423,"Apidae","Bombus",5.04
+"Bombus rupestris","M_047","Apidae",2,2,0.693147180559945,18,0.111111111111111,-1.14947305116966,"Apidae","Bombus",5.62
+"Bombus soroeensis","M_018","Apidae",2,2,0.693147180559945,22,0.0909090909090909,-1.16013910665106,"Apidae","Bombus",3.98
+"Bombus soroeensis","M_043","Apidae",2,2,0.693147180559945,15,0.133333333333333,-0.978268544825189,"Apidae","Bombus",3.98
+"Bombus sp1 M PL 010","M_010","Apidae",4,3,1.03972077083992,4,1,NA,NA,NA,NA
+"Bombus sp1 M PL 020","M_020","Apidae",7,5,1.32966134885476,7,1,NA,NA,NA,NA
+"Bombus sp1 M PL 036","M_036","Apidae",3,3,0.693147180559945,4,0.75,NA,NA,NA,NA
+"Bombus sp1 M PL 047","M_047","Apidae",7,4,1.15374194270109,18,0.388888888888889,0.733284532642712,NA,NA,NA
+"Bombus sp2 M PL 047","M_047","Apidae",6,3,0.867563228481461,18,0.333333333333333,0.356733015880238,NA,NA,NA
+"Bombus terrestris","M_028","Apidae",4,4,1.38629436111989,31,0.129032258064516,-0.416025147168922,"Apidae","Bombus",4.69
+"Bombus terrestris","M_058","Apidae",8,7,1.74786809746676,28,0.285714285714286,0.0556558493545128,"Apidae","Bombus",4.69
+"Bombus terrestris","M_017","Apidae",2,2,0.693147180559945,7,0.285714285714286,-0.833333333333333,"Apidae","Bombus",4.69
+"Bombus terrestris","M_018","Apidae",5,3,0.950270539233235,22,0.227272727272727,-0.538636013802277,"Apidae","Bombus",4.69
+"Bombus terrestris","M_015","Apidae",13,9,2.0228085294147,127,0.102362204724409,0.263011152653177,"Apidae","Bombus",4.69
+"Bombus terrestris","M_046","Apidae",9,7,1.73286795139986,12,0.75,0.848874687627165,"Apidae","Bombus",4.69
+"Bombus terrestris","M_043","Apidae",3,3,1.09861228866811,15,0.2,-0.672559624567317,"Apidae","Bombus",4.69
+"Bombus terricola","M_004","Apidae",4,4,1.09861228866811,10,0.4,0.21964884255349,NA,NA,NA
+"Bombus terricola","M_033","Apidae",5,4,1.33217904021012,11,0.454545454545455,-0.394016933433096,NA,NA,NA
+"Bombus vagans","M_004","Apidae",8,7,1.74786809746676,10,0.8,1.97683958298141,"Apidae","Bombus",3.56
+"Bombus volucelloides","M_031","Apidae",9,8,1.90615474653985,40,0.225,0.380844054821428,NA,NA,NA
+"Cadeguala albopilosa","M_034","Colletidae",9,6,1.67698777432242,23,0.391304347826087,-0.0179654983084945,NA,NA,NA
+"Cadeguala occidentalis","M_001","Colletidae",4,3,1.03972077083992,44,0.0909090909090909,-0.570687654502078,"Colletidae","Cadeguala",3.3
+"Cadeguala occipitalis","M_034","Colletidae",3,2,0.636514168294813,23,0.130434782608696,-0.880309417116231,NA,NA,NA
+"Caenohalictus movilicornis","M_034","Halictidae",5,4,1.33217904021012,23,0.217391304347826,-0.592861444180319,NA,NA,NA
+"Caenohalictus sp","M_001","Halictidae",11,7,1.67698777432242,44,0.25,1.0105927215141,NA,NA,NA
+"Caenohalictus sp","M_002","Halictidae",8,7,1.74786809746676,21,0.380952380952381,1.23574785374575,NA,NA,NA
+"Calliopsis andreniformis","M_062","Andrenidae",13,9,2.09814738913507,455,0.0285714285714286,-0.29582018181578,"Andrenidae","Calliopsis",1.36
+"Calliopsis coloradensis","M_062","Andrenidae",10,9,2.04319187054512,455,0.021978021978022,-0.427641806695093,"Andrenidae","Calliopsis",1.65
+"Cemolobus ipomoeae","M_062","Apidae",4,4,1.09861228866811,455,0.00879120879120879,-0.691285056453718,NA,NA,NA
+"Cemolobus oligolege","M_062","Apidae",11,7,1.74786809746676,455,0.0241758241758242,-0.383701265068655,NA,NA,NA
+"Centris cineraria","M_001","Apidae",15,7,1.67920433160271,44,0.340909090909091,1.91418150780905,"Apidae","Centris",5.108
+"Centris dirrhoda","M_035","Apidae",2,2,0.693147180559945,27,0.0740740740740741,-0.58131835897618,NA,NA,NA
+"Centris nigerrima","M_001","Apidae",4,3,1.03972077083992,44,0.0909090909090909,-0.570687654502078,"Apidae","Centris",4.836
+"Centris sp1 M PL 023","M_023","Apidae",2,2,0.693147180559945,16,0.125,-1.22474487139159,NA,NA,NA
+"Centris sp1 M PL 035","M_035","Apidae",2,2,0.693147180559945,27,0.0740740740740741,-0.58131835897618,NA,NA,NA
+"Centris sp1 M PL 040","M_040","Apidae",3,3,1.09861228866811,12,0.25,-1.15470053837925,NA,NA,NA
+"Ceratina acuta","M_015","Apidae",12,8,1.93560050545395,127,0.094488188976378,0.179555690753611,"Apidae","Ceratina",1.55
+"Ceratina bispinosa","M_015","Apidae",8,6,1.66746193342929,127,0.062992125984252,-0.154266156844652,"Apidae","Ceratina",1
+"Ceratina calcarata","M_073","Apidae",21,13,2.15456185261344,30,0.7,2.75903641913719,"Apidae","Ceratina",1.41
+"Ceratina cucurbitina","M_016","Apidae",7,6,1.56071040904141,24,0.291666666666667,0.656066971130173,"Apidae","Ceratina",1.43
+"Ceratina cyanea","M_016","Apidae",4,4,1.09861228866811,24,0.166666666666667,-0.374895412074385,"Apidae","Ceratina",1.35
+"Ceratina dallatorreana","M_015","Apidae",2,2,0.693147180559945,127,0.015748031496063,-0.654998928242047,"Apidae","Ceratina",1.16
+"Ceratina dentiventris","M_015","Apidae",8,6,1.56071040904141,127,0.062992125984252,-0.154266156844652,"Apidae","Ceratina",1.13
+"Ceratina dupla","M_062","Apidae",85,33,3.18103002383686,455,0.186813186813187,2.86789881528772,"Apidae","Ceratina",1.42
+"Ceratina esakii","M_057","Apidae",9,7,1.79175946922805,87,0.103448275862069,-0.0348653715113208,NA,NA,NA
+"Ceratina flavipes","M_055","Apidae",2,2,0.693147180559945,41,0.0487804878048781,-0.906354675090028,"Apidae","Ceratina",1.71
+"Ceratina flavipes","M_053","Apidae",7,6,1.56071040904141,64,0.109375,0.317106052765244,"Apidae","Ceratina",1.71
+"Ceratina flavipes","M_054","Apidae",11,8,1.90615474653985,82,0.134146341463415,0.718167743233941,"Apidae","Ceratina",1.71
+"Ceratina iwatai","M_057","Apidae",2,2,0.693147180559945,87,0.0229885057471264,-0.785811834832077,NA,NA,NA
+"Ceratina japonica","M_055","Apidae",4,4,1.38629436111989,41,0.0975609756097561,-0.261835795026008,"Apidae","Ceratina",1.22
+"Ceratina japonica","M_054","Apidae",2,2,0.693147180559945,82,0.024390243902439,-0.766045592782871,"Apidae","Ceratina",1.22
+"Ceratina japonica","M_053","Apidae",15,11,2.20559835902639,64,0.234375,2.41656681590065,"Apidae","Ceratina",1.22
+"Ceratina japonica","M_021","Apidae",8,5,1.32966134885476,77,0.103896103896104,0.0763834974714763,"Apidae","Ceratina",1.22
+"Ceratina japonica","M_057","Apidae",34,18,2.65325138576498,87,0.390804597701149,2.64708628320567,"Apidae","Ceratina",1.22
+"Ceratina loewi","M_015","Apidae",13,7,1.67262544615032,127,0.102362204724409,0.263011152653177,"Apidae","Ceratina",1.76
+"Ceratina megastigmata","M_021","Apidae",23,10,2.04134526983995,77,0.298701298701299,2.29627889273625,NA,NA,NA
+"Ceratina megastigmata","M_057","Apidae",22,14,2.45039628295776,87,0.252873563218391,1.35974948894151,NA,NA,NA
+"Ceratina megastigmata","M_053","Apidae",7,4,0.867563228481461,64,0.109375,0.317106052765244,NA,NA,NA
+"Ceratina mocsaryi","M_016","Apidae",3,3,0.693147180559945,24,0.125,-0.718549539809237,"Apidae","Ceratina",1.82
+"Ceratina montana","M_072","Apidae",12,5,1.08889997534522,86,0.13953488372093,-0.136675810971162,NA,NA,NA
+"Ceratina nigrolabiata","M_015","Apidae",9,5,1.25548232517875,127,0.0708661417322835,-0.0708106949450861,"Apidae","Ceratina",1.33
+"Ceratina satoi","M_044","Apidae",2,2,0.693147180559945,64,0.03125,-0.676564930951294,NA,NA,NA
+"Ceratina sp1 M PL 005","M_005","Apidae",3,3,0.693147180559945,84,0.0357142857142857,-0.783057489108744,NA,NA,NA
+"Ceratina sp1 M PL 031","M_031","Apidae",4,3,0.693147180559945,40,0.1,-0.761688109642856,NA,NA,NA
+"Ceratina sp1M PL 073","M_073","Apidae",5,4,1.03972077083992,30,0.166666666666667,-0.166973385596199,NA,NA,NA
+"Ceratina strenua","M_073","Apidae",4,3,0.636514168294813,30,0.133333333333333,-0.349848998392035,NA,NA,NA
+"Ceratina tabescens","M_061","Apidae",5,4,1.33217904021012,33,0.151515151515152,-1.04500978681803,NA,NA,NA
+"Chalicodoma sp1 M PL 054","M_054","Megachilidae",2,2,0.693147180559945,82,0.024390243902439,-0.766045592782871,NA,NA,NA
+"Chelostoma emarginatum","M_015","Megachilidae",5,3,0.950270539233235,127,0.0393700787401575,-0.40463254254335,"Megachilidae","Chelostoma",1.13
+"Chelostoma transversum","M_015","Megachilidae",6,5,1.38629436111989,127,0.047244094488189,-0.321177080643784,NA,NA,NA
+"Chilicola sp","M_001","Colletidae",2,2,0.693147180559945,44,0.0454545454545455,-1.02248204764956,NA,NA,NA
+"Chilicola sp1 M PL 072","M_072","Colletidae",12,5,1.16222554492109,86,0.13953488372093,-0.136675810971162,NA,NA,NA
+"Chloralictus albipennis","M_062","Halictidae",63,28,2.99548092767257,455,0.138461538461538,1.9012068995061,NA,NA,NA
+"Chloralictus cressonii","M_062","Halictidae",8,5,1.15374194270109,455,0.0175824175824176,-0.515522889947968,NA,NA,NA
+"Chloralictus foveolatus","M_062","Halictidae",6,3,1.01140426470735,455,0.0131868131868132,-0.603403973200843,NA,NA,NA
+"Chloralictus illinoensis","M_062","Halictidae",28,17,2.62616478646724,455,0.0615384615384615,0.363287942580783,NA,NA,NA
+"Chloralictus obscurus","M_062","Halictidae",5,5,1.6094379124341,455,0.010989010989011,-0.64734451482728,NA,NA,NA
+"Chloralictus smilacinae","M_062","Halictidae",6,6,1.6094379124341,455,0.0131868131868132,-0.603403973200843,NA,NA,NA
+"Coelioxys 8 dentata","M_062","Megachilidae",23,12,2.10691307431241,455,0.0505494505494506,0.143585234448595,NA,NA,NA
+"Coelioxys alternata","M_062","Megachilidae",65,30,3.11004515981178,455,0.142857142857143,1.98908798275897,NA,NA,NA
+"Coelioxys germana","M_062","Megachilidae",12,8,1.88915916375402,455,0.0263736263736264,-0.339760723442218,NA,NA,NA
+"Coelioxys modesta","M_062","Megachilidae",13,10,2.24503527412618,455,0.0285714285714286,-0.29582018181578,NA,NA,NA
+"Coelioxys rufitarsis","M_062","Megachilidae",8,6,1.66746193342929,455,0.0175824175824176,-0.515522889947968,NA,NA,NA
+"Coelioxys rufocaudata","M_015","Megachilidae",3,2,0.636514168294813,127,0.0236220472440945,-0.571543466342481,NA,NA,NA
+"Coelioxys sayi","M_062","Megachilidae",20,13,2.31957499667359,455,0.043956043956044,0.0117636095692825,NA,NA,NA
+"Coelioxys sayi","M_073","Megachilidae",3,2,0.636514168294813,30,0.1,-0.532724611187872,NA,NA,NA
+"Colletes acutus","M_016","Colletidae",3,3,0.693147180559945,24,0.125,-0.718549539809237,"Colletidae","Colletes",2.78
+"Colletes americanus","M_005","Colletidae",2,2,0.693147180559945,84,0.0238095238095238,-0.908161348315467,NA,NA,NA
+"Colletes armatus","M_062","Colletidae",10,3,0.943348392329039,455,0.021978021978022,-0.427641806695093,NA,NA,NA
+"Colletes babai","M_057","Colletidae",2,2,0.693147180559945,87,0.0229885057471264,-0.785811834832077,NA,NA,NA
+"Colletes caspicus","M_016","Colletidae",4,4,1.09861228866811,24,0.166666666666667,-0.374895412074385,"Colletidae","Colletes",3.24
+"Colletes compactus","M_062","Colletidae",13,10,2.0228085294147,455,0.0285714285714286,-0.29582018181578,"Colletidae","Colletes",3.143
+"Colletes cyaneus","M_072","Colletidae",3,3,1.09861228866811,86,0.0348837209302326,-0.737413677797899,NA,NA,NA
+"Colletes inaequalis","M_033","Colletidae",5,4,1.33217904021012,11,0.454545454545455,-0.394016933433096,NA,NA,NA
+"Colletes inaequalis","M_062","Colletidae",5,5,1.38629436111989,455,0.010989010989011,-0.64734451482728,NA,NA,NA
+"Colletes kincaidi","M_005","Colletidae",4,3,0.693147180559945,84,0.0476190476190476,-0.657953629902022,"Colletidae","Colletes",1.97
+"Colletes nudus","M_062","Colletidae",48,26,2.79392485394999,455,0.105494505494505,1.24209877510953,NA,NA,NA
+"Colletes oligolege","M_062","Colletidae",3,3,0.693147180559945,455,0.00659340659340659,-0.735225598080155,NA,NA,NA
+"Colletes oromontis","M_005","Colletidae",10,6,1.6094379124341,84,0.119047619047619,0.0926695253383129,NA,NA,NA
+"Colletes productus","M_062","Colletidae",14,12,2.35167330190463,455,0.0307692307692308,-0.251879640189343,NA,NA,NA
+"Colletes seminitidus","M_051","Colletidae",4,3,0.636514168294813,13,0.307692307692308,-0.278639106287676,NA,NA,NA
+"Colletes sp1 M PL 016","M_016","Colletidae",2,2,0.693147180559945,24,0.0833333333333333,-1.06220366754409,NA,NA,NA
+"Colletes sp1 M PL 058","M_058","Colletidae",6,5,1.38629436111989,28,0.214285714285714,-0.306107171449821,NA,NA,NA
+"Colletes sp2 M PL 072","M_072","Colletidae",6,2,0.636514168294813,86,0.0697674418604651,-0.537167722188987,NA,NA,NA
+"Colletes speciosus","M_062","Colletidae",3,3,1.09861228866811,455,0.00659340659340659,-0.735225598080155,NA,NA,NA
+"Colletes willistonii","M_062","Colletidae",22,12,2.1774844871095,455,0.0483516483516484,0.0996446928221575,NA,NA,NA
+"Corynura patagonica","M_034","Halictidae",10,5,1.22752941145721,23,0.434782608695652,0.125758488159462,NA,NA,NA
+"Corynura prothysteres","M_051","Halictidae",3,3,0.693147180559945,13,0.230769230769231,-0.668733855090423,NA,NA,NA
+"Corynura rubella","M_034","Halictidae",3,2,0.636514168294813,23,0.130434782608696,-0.880309417116231,NA,NA,NA
+"Dasypoda cingulata","M_016","Melittidae",4,4,1.38629436111989,24,0.166666666666667,-0.374895412074385,"Melittidae","Dasypoda",3.44
+"Dialictus abanci","M_025","Halictidae",6,4,1.09861228866811,13,0.461538461538462,0.621312652184635,NA,NA,NA
+"Dialictus cressoni","M_004","Halictidae",4,4,1.09861228866811,10,0.4,0.21964884255349,NA,NA,NA
+"Dialictus pilosus","M_033","Halictidae",3,3,0.693147180559945,11,0.272727272727273,-1.30328677981716,NA,NA,NA
+"Dialictus sp1 M PL 004","M_004","Halictidae",8,8,1.94591014905531,10,0.8,1.97683958298141,NA,NA,NA
+"Dialictus sp1 M PL 023","M_023","Halictidae",3,2,0.636514168294813,16,0.1875,0,NA,NA,NA
+"Dialictus sp1 M PL 030","M_030","Halictidae",3,3,1.09861228866811,17,0.176470588235294,-0.707106781186547,NA,NA,NA
+"Dialictus sp1 M PL 031","M_031","Halictidae",3,3,0.693147180559945,40,0.075,-0.990194542535713,NA,NA,NA
+"Dialictus sp1 M PL 072","M_072","Halictidae",11,6,1.47080847632211,86,0.127906976744186,-0.2034244628408,NA,NA,NA
+"Dialictus sp2 M PL 023","M_023","Halictidae",3,3,1.09861228866811,16,0.1875,0,NA,NA,NA
+"Diceratosmia conjuncta","M_062","Megachilidae",53,28,3.06573964350243,455,0.116483516483516,1.46180148324172,NA,NA,NA
+"Diphaglossa gayi","M_034","Colletidae",4,3,1.03972077083992,23,0.173913043478261,-0.736585430648275,"Colletidae","Diphaglossa",2.11
+"Epeolus bifasciatus","M_062","Apidae",6,5,1.56071040904141,455,0.0131868131868132,-0.603403973200843,NA,NA,NA
+"Epeolus correopsis","M_062","Apidae",8,5,1.242453324894,455,0.0175824175824176,-0.515522889947968,NA,NA,NA
+"Epeolus melectiformis","M_057","Apidae",3,3,1.09861228866811,87,0.0344827586206897,-0.678533768643398,NA,NA,NA
+"Epeolus pusillus","M_062","Apidae",13,9,2.02532622077007,455,0.0285714285714286,-0.29582018181578,NA,NA,NA
+"Eucera albofasciata","M_015","Apidae",10,5,1.25548232517875,127,0.078740157480315,0.0126447669544797,"Apidae","Eucera",2.91
+"Eucera bidentata","M_015","Apidae",32,14,2.11353962729094,127,0.251968503937008,1.84866492874493,"Apidae","Eucera",2.19
+"Eucera clypeata","M_015","Apidae",33,15,2.30691143399153,127,0.259842519685039,1.93212039064449,"Apidae","Eucera",3.05
+"Eucera furfurea","M_015","Apidae",13,9,1.97224697942344,127,0.102362204724409,0.263011152653177,"Apidae","Eucera",3.28
+"Eucera gracilipes","M_039","Apidae",13,8,1.99150936135661,16,0.8125,1.35916693411716,"Apidae","Eucera",3.84
+"Eucera gracilipes","M_008","Apidae",4,4,1.09861228866811,10,0.4,-0.550481882563181,"Apidae","Eucera",3.84
+"Eucera gracilipes","M_050","Apidae",7,7,1.79175946922805,12,0.583333333333333,1.03207908609007,"Apidae","Eucera",3.84
+"Eucera parnassia","M_015","Apidae",11,7,1.69574253416963,127,0.0866141732283465,0.0961002288540456,"Apidae","Eucera",2.88
+"Eucera seminuda","M_015","Apidae",21,9,2.03300019997991,127,0.165354330708661,0.930654847849704,"Apidae","Eucera",2.91
+"Euglossa cordata","M_035","Apidae",4,2,0.693147180559945,27,0.148148148148148,-0.304500092797047,"Apidae","Euglossa",3.4
+"Euglossa jamaicensis","M_040","Apidae",6,3,0.636514168294813,12,0.5,0.577350269189626,NA,NA,NA
+"Euglossa sp1 M PL 031","M_031","Apidae",8,4,1.01140426470735,40,0.2,0.152337621928571,NA,NA,NA
+"Euryglossa sp1 M PL 019","M_019","Colletidae",2,2,0.693147180559945,20,0.1,-0.716039010394531,NA,NA,NA
+"Euryglossa sp2 M PL 019","M_019","Colletidae",2,2,0.693147180559945,20,0.1,-0.716039010394531,NA,NA,NA
+"Evylaeus arcuatus","M_062","Halictidae",90,29,2.77340549507734,455,0.197802197802198,3.08760152341991,NA,NA,NA
+"Evylaeus divergens","M_004","Halictidae",2,2,0.693147180559945,10,0.2,-0.658946527660469,NA,NA,NA
+"Evylaeus macoupinensis","M_025","Halictidae",5,4,1.09861228866811,13,0.384615384615385,-0.0887589503120908,NA,NA,NA
+"Evylaeus nelumbonis","M_062","Halictidae",5,2,0.500402423538188,455,0.010989010989011,-0.64734451482728,NA,NA,NA
+"Evylaeus pectinatus","M_062","Halictidae",2,2,0.693147180559945,455,0.0043956043956044,-0.779166139706593,NA,NA,NA
+"Evylaeus pectoralis","M_062","Halictidae",2,2,0.693147180559945,455,0.0043956043956044,-0.779166139706593,NA,NA,NA
+"Evylaeus quebecensis","M_004","Halictidae",4,4,1.38629436111989,10,0.4,0.21964884255349,NA,NA,NA
+"Evylaeus truncatus","M_062","Halictidae",5,5,1.6094379124341,455,0.010989010989011,-0.64734451482728,NA,NA,NA
+"Exomalopsis sp1 M PL 031","M_031","Apidae",3,3,1.09861228866811,40,0.075,-0.990194542535713,NA,NA,NA
+"Exomalopsis sp1 M PL 035","M_035","Apidae",4,4,1.09861228866811,27,0.148148148148148,-0.304500092797047,NA,NA,NA
+"Florilegus condignus","M_062","Apidae",24,19,2.8389889331547,455,0.0527472527472527,0.187525776075032,NA,NA,NA
+"Gaesischia sp1 M PL 072","M_072","Apidae",4,3,1.03972077083992,86,0.0465116279069767,-0.670665025928262,NA,NA,NA
+"Gnathosmia georgica","M_062","Megachilidae",3,3,1.09861228866811,455,0.00659340659340659,-0.735225598080155,NA,NA,NA
+"Habropoda tarsata","M_015","Apidae",8,5,1.242453324894,127,0.062992125984252,-0.154266156844652,"Apidae","Habropoda",4.49
+"Halictillus sp1 M PL 072","M_072","Halictidae",11,5,1.15958881430863,86,0.127906976744186,-0.2034244628408,NA,NA,NA
+"Halictus aerarius","M_054","Halictidae",4,3,0.693147180559945,82,0.0487804878048781,-0.436220407001357,NA,NA,NA
+"Halictus asperulus","M_015","Halictidae",3,3,1.09861228866811,127,0.0236220472440945,-0.571543466342481,"Halictidae","Halictus",1.56
+"Halictus brunnescens","M_015","Halictidae",10,5,1.07354284640852,127,0.078740157480315,0.0126447669544797,"Halictidae","Halictus",3.07
+"Halictus chloralictus","M_005","Halictidae",10,7,1.74786809746676,84,0.119047619047619,0.0926695253383129,NA,NA,NA
+"Halictus graecus","M_015","Halictidae",3,2,0.636514168294813,127,0.0236220472440945,-0.571543466342481,"Halictidae","Halictus",2.58
+"Halictus lerouxii","M_062","Halictidae",70,30,2.95265218080428,455,0.153846153846154,2.20879069089116,NA,NA,NA
+"Halictus manitonellus","M_005","Halictidae",2,2,0.693147180559945,84,0.0238095238095238,-0.908161348315467,NA,NA,NA
+"Halictus medionitens","M_005","Halictidae",5,2,0.500402423538188,84,0.0595238095238095,-0.532849770695299,NA,NA,NA
+"Halictus pollinus","M_015","Halictidae",5,3,0.950270539233235,127,0.0393700787401575,-0.40463254254335,NA,NA,NA
+"Halictus pulzenus","M_005","Halictidae",17,8,1.73265872019921,84,0.202380952380952,0.96839653978537,NA,NA,NA
+"Halictus quadricinctus","M_016","Halictidae",6,5,1.33217904021012,24,0.25,0.312412843395321,"Halictidae","Halictus",2.85
+"Halictus resurgens","M_015","Halictidae",11,6,1.4205719259467,127,0.0866141732283465,0.0961002288540456,"Halictidae","Halictus",1.98
+"Halictus rubicundus","M_004","Halictidae",2,2,0.693147180559945,10,0.2,-0.658946527660469,"Halictidae","Halictus",2.1
+"Halictus scabiosae","M_015","Halictidae",15,6,1.12753478981913,127,0.118110236220472,0.429922076452309,"Halictidae","Halictus",2.52
+"Halictus sp","M_11.1","Halictidae",6,5,1.38629436111989,8,0.75,1.15470053837925,NA,NA,NA
+"Halictus sp1 M PL 005","M_005","Halictidae",10,6,1.47507631105469,84,0.119047619047619,0.0926695253383129,NA,NA,NA
+"Halictus sp1 M PL 012","M_012","Halictidae",2,2,0.693147180559945,14,0.142857142857143,-0.935276002487051,NA,NA,NA
+"Halictus sp1 M PL 058","M_058","Halictidae",7,7,1.79175946922805,28,0.25,-0.125225661047654,NA,NA,NA
+"Halictus sp2 M PL 005","M_005","Halictidae",8,5,1.242453324894,84,0.0952380952380952,-0.157538193075132,NA,NA,NA
+"Halictus sp3 M PL 005","M_005","Halictidae",11,6,1.22752941145721,84,0.130952380952381,0.217773384545035,NA,NA,NA
+"Halictus tectus","M_015","Halictidae",3,3,1.09861228866811,127,0.0236220472440945,-0.571543466342481,NA,NA,NA
+"Halictus tetrazonius","M_015","Halictidae",16,10,2.04493117484959,127,0.125984251968504,0.513377538351875,"Halictidae","Halictus",1.94
+"Heterosarus parvus","M_062","Andrenidae",30,16,2.54452173737915,455,0.0659340659340659,0.451169025833658,NA,NA,NA
+"Holcopasites heliopsis","M_062","Apidae",55,27,2.81722409732808,455,0.120879120879121,1.5496825664946,NA,NA,NA
+"Hoplitis cylindricus","M_062","Megachilidae",20,13,2.32218794280707,455,0.043956043956044,0.0117636095692825,NA,NA,NA
+"Hoplitis fabrei","M_015","Megachilidae",4,2,0.693147180559945,127,0.031496062992126,-0.488088004442915,"Megachilidae","Hoplitis",2.29
+"Hoplitis manicata","M_015","Megachilidae",5,4,1.33217904021012,127,0.0393700787401575,-0.40463254254335,"Megachilidae","Hoplitis",3.02
+"Hoplitis pici","M_015","Megachilidae",3,3,0.693147180559945,127,0.0236220472440945,-0.571543466342481,"Megachilidae","Hoplitis",2.34
+"Hoplitis sybarita","M_015","Megachilidae",6,5,1.38629436111989,127,0.047244094488189,-0.321177080643784,NA,NA,NA
+"Hylaeus floralis","M_021","Colletidae",2,2,0.693147180559945,77,0.025974025974026,-0.811574660634435,NA,NA,NA
+"Hylaeus floralis","M_055","Colletidae",8,7,1.74786809746676,41,0.195121951219512,1.02720196510203,NA,NA,NA
+"Hylaeus floralis","M_057","Colletidae",7,6,1.74786809746676,87,0.0804597701149425,-0.24942150388868,NA,NA,NA
+"Hylaeus globula","M_021","Colletidae",8,7,1.90615474653985,77,0.103896103896104,0.0763834974714763,NA,NA,NA
+"Hylaeus globula","M_057","Colletidae",7,5,1.32966134885476,87,0.0804597701149425,-0.24942150388868,NA,NA,NA
+"Hylaeus imparilis","M_015","Colletidae",3,2,0.636514168294813,127,0.0236220472440945,-0.571543466342481,"Colletidae","Hylaeus",1
+"Hylaeus insularum","M_044","Colletidae",18,12,2.30348849521927,64,0.28125,2.07008672903008,NA,NA,NA
+"Hylaeus lineolatus","M_015","Colletidae",8,4,1.05492016798614,127,0.062992125984252,-0.154266156844652,"Colletidae","Hylaeus",1.1
+"Hylaeus macilentus","M_055","Colletidae",10,9,2.07944154167984,41,0.24390243902439,1.67172084516605,NA,NA,NA
+"Hylaeus meridionalis","M_015","Colletidae",8,5,1.55958115625988,127,0.062992125984252,-0.154266156844652,"Colletidae","Hylaeus",1.51
+"Hylaeus nigritus","M_058","Colletidae",3,3,1.09861228866811,28,0.107142857142857,-0.848751702656321,"Colletidae","Hylaeus",1.57
+"Hylaeus nippon","M_057","Colletidae",3,3,1.09861228866811,87,0.0344827586206897,-0.678533768643398,NA,NA,NA
+"Hylaeus noomen","M_055","Colletidae",8,7,1.74786809746676,41,0.195121951219512,1.02720196510203,NA,NA,NA
+"Hylaeus punctatus","M_015","Colletidae",8,7,1.79175946922805,127,0.062992125984252,-0.154266156844652,"Colletidae","Hylaeus",1.23
+"Hylaeus sp1 M PL 028","M_028","Colletidae",2,2,0.693147180559945,31,0.0645161290322581,-1.24807544150677,NA,NA,NA
+"Hylaeus sp1 M PL 029","M_029","Colletidae",3,3,1.09861228866811,25,0.12,-0.832050294337844,NA,NA,NA
+"Hylaeus sp1 M PL 050","M_050","Colletidae",3,2,0.636514168294813,12,0.25,-0.774059314567555,NA,NA,NA
+"Hylaeus sp1M PL 073","M_073","Colletidae",2,2,0.693147180559945,30,0.0666666666666667,-0.715600223983708,NA,NA,NA
+"Hylaeus sp2 M PL 058","M_058","Colletidae",3,3,0.693147180559945,28,0.107142857142857,-0.848751702656321,NA,NA,NA
+"Hylaeus submonticola","M_057","Colletidae",3,2,0.636514168294813,87,0.0344827586206897,-0.678533768643398,NA,NA,NA
+"Hylaeus variegatus","M_015","Colletidae",3,3,1.09861228866811,127,0.0236220472440945,-0.571543466342481,"Colletidae","Hylaeus",1.32
+"Icteranthidium grohmanni","M_015","Megachilidae",11,7,1.79865220625213,127,0.0866141732283465,0.0961002288540456,"Megachilidae","Icteranthidium",3.07
+"Lasioglossum affine","M_055","Halictidae",2,2,0.693147180559945,41,0.0487804878048781,-0.906354675090028,NA,NA,NA
+"Lasioglossum albipes","M_056","Halictidae",3,3,0.693147180559945,60,0.05,-1.13214309243487,"Halictidae","Lasioglossum",1.59
+"Lasioglossum albocinctum","M_016","Halictidae",4,4,1.38629436111989,24,0.166666666666667,-0.374895412074385,"Halictidae","Lasioglossum",2.6
+"Lasioglossum allodalum","M_057","Halictidae",2,2,0.693147180559945,87,0.0229885057471264,-0.785811834832077,NA,NA,NA
+"Lasioglossum amamiensis","M_044","Halictidae",3,3,1.09861228866811,64,0.046875,-0.504899202202459,NA,NA,NA
+"Lasioglossum anellum","M_015","Halictidae",17,12,2.36938211969468,127,0.133858267716535,0.596833000251441,"Halictidae","Lasioglossum",1.19
+"Lasioglossum apristum","M_021","Halictidae",17,12,2.24595208072891,77,0.220779220779221,1.40832073463034,NA,NA,NA
+"Lasioglossum apristum","M_057","Halictidae",37,19,2.67015335346881,87,0.425287356321839,2.9689204817717,NA,NA,NA
+"Lasioglossum apristum","M_053","Halictidae",2,2,0.693147180559945,64,0.03125,-0.995056924194386,NA,NA,NA
+"Lasioglossum apristum","M_056","Halictidae",11,10,2.16395565688206,60,0.183333333333333,0.0640835712698981,NA,NA,NA
+"Lasioglossum atroglaucum","M_056","Halictidae",4,3,1.03972077083992,60,0.0666666666666667,-0.98261475947177,NA,NA,NA
+"Lasioglossum baleicum","M_057","Halictidae",7,5,1.38629436111989,87,0.0804597701149425,-0.24942150388868,NA,NA,NA
+"Lasioglossum birkmani","M_073","Halictidae",4,4,1.38629436111989,30,0.133333333333333,-0.349848998392035,NA,NA,NA
+"Lasioglossum chalcodes","M_012","Halictidae",3,2,0.636514168294813,14,0.214285714285714,-0.503610155185335,"Halictidae","Lasioglossum",2.27
+"Lasioglossum cressonii","M_073","Halictidae",2,2,0.693147180559945,30,0.0666666666666667,-0.715600223983708,"Halictidae","Lasioglossum",1.29
+"Lasioglossum duplex","M_021","Halictidae",2,2,0.693147180559945,77,0.025974025974026,-0.811574660634435,NA,NA,NA
+"Lasioglossum duplex","M_054","Halictidae",3,3,1.09861228866811,82,0.0365853658536585,-0.601132999892114,NA,NA,NA
+"Lasioglossum evylaeus","M_050","Halictidae",8,7,1.74786809746676,12,0.666666666666667,1.48361368625448,NA,NA,NA
+"Lasioglossum evylaeus","M_039","Halictidae",13,9,1.97920451743432,16,0.8125,1.35916693411716,NA,NA,NA
+"Lasioglossum exiliceps","M_057","Halictidae",6,4,1.32966134885476,87,0.0689655172413793,-0.356699570077359,NA,NA,NA
+"Lasioglossum exiliceps","M_021","Halictidae",4,3,0.693147180559945,77,0.051948051948052,-0.515588607932464,NA,NA,NA
+"Lasioglossum fratellum","M_047","Halictidae",5,4,1.33217904021012,18,0.277777777777778,-0.0198185008822353,"Halictidae","Lasioglossum",1.45
+"Lasioglossum fuscipenne","M_073","Halictidae",3,3,1.09861228866811,30,0.1,-0.532724611187872,"Halictidae","Lasioglossum",2.1
+"Lasioglossum hirashimae","M_057","Halictidae",5,5,1.38629436111989,87,0.0574712643678161,-0.463977636266039,NA,NA,NA
+"Lasioglossum imitatum","M_073","Halictidae",2,2,0.693147180559945,30,0.0666666666666667,-0.715600223983708,"Halictidae","Lasioglossum",0.98
+"Lasioglossum immunitum","M_016","Halictidae",8,6,1.56071040904141,24,0.333333333333333,0.999721098865026,"Halictidae","Lasioglossum",1.96
+"Lasioglossum japonicum","M_021","Halictidae",2,2,0.693147180559945,77,0.025974025974026,-0.811574660634435,NA,NA,NA
+"Lasioglossum japonicum","M_057","Halictidae",7,5,1.5498260458782,87,0.0804597701149425,-0.24942150388868,NA,NA,NA
+"Lasioglossum japonicum","M_054","Halictidae",8,5,1.242453324894,82,0.0975609756097561,0.223429964561671,NA,NA,NA
+"Lasioglossum japonicum","M_055","Halictidae",3,3,0.693147180559945,41,0.0731707317073171,-0.584095235058018,NA,NA,NA
+"Lasioglossum kansuense","M_021","Halictidae",3,3,1.09861228866811,77,0.038961038961039,-0.66358163428345,NA,NA,NA
+"Lasioglossum laeviventre","M_056","Halictidae",14,6,1.47913280742964,60,0.233333333333333,0.512668570159185,NA,NA,NA
+"Lasioglossum limbelloides","M_015","Halictidae",10,7,1.74786809746676,127,0.078740157480315,0.0126447669544797,"Halictidae","Lasioglossum",1.31
+"Lasioglossum lineare","M_015","Halictidae",16,10,2.10657733323212,127,0.125984251968504,0.513377538351875,"Halictidae","Lasioglossum",1.39
+"Lasioglossum littorale","M_016","Halictidae",7,5,1.38629436111989,24,0.291666666666667,0.656066971130173,"Halictidae","Lasioglossum",1.35
+"Lasioglossum loetum","M_012","Halictidae",3,3,1.09861228866811,14,0.214285714285714,-0.503610155185335,"Halictidae","Lasioglossum",1.37
+"Lasioglossum macoupinens","M_073","Halictidae",2,2,0.693147180559945,30,0.0666666666666667,-0.715600223983708,"Halictidae","Lasioglossum",1.19
+"Lasioglossum mahense","M_061","Halictidae",29,21,2.83154442690767,33,0.878787878787879,0.977589800571701,NA,NA,NA
+"Lasioglossum malachurum","M_015","Halictidae",38,20,2.66377165695867,127,0.299212598425197,2.34939770014232,"Halictidae","Lasioglossum",1.57
+"Lasioglossum marginatum","M_015","Halictidae",24,13,2.33937173438982,127,0.188976377952756,1.1810212335484,"Halictidae","Lasioglossum",1.56
+"Lasioglossum mediterraneum","M_015","Halictidae",6,6,1.6094379124341,127,0.047244094488189,-0.321177080643784,"Halictidae","Lasioglossum",1.61
+"Lasioglossum mutilum","M_054","Halictidae",2,2,0.693147180559945,82,0.024390243902439,-0.766045592782871,NA,NA,NA
+"Lasioglossum nipponense","M_057","Halictidae",2,2,0.693147180559945,87,0.0229885057471264,-0.785811834832077,NA,NA,NA
+"Lasioglossum nipponense","M_056","Halictidae",5,4,1.09861228866811,60,0.0833333333333333,-0.833086426508675,NA,NA,NA
+"Lasioglossum nutilum","M_044","Halictidae",6,6,1.79175946922805,64,0.09375,0.0100979840440491,NA,NA,NA
+"Lasioglossum obscurum","M_073","Halictidae",6,6,1.79175946922805,30,0.2,0.015902227199638,"Halictidae","Lasioglossum",1.17
+"Lasioglossum occidens","M_021","Halictidae",8,5,1.38629436111989,77,0.103896103896104,0.0763834974714763,"Halictidae","Lasioglossum",2.26
+"Lasioglossum occidens","M_057","Halictidae",18,12,2.23160695160893,87,0.206896551724138,0.930637224186795,"Halictidae","Lasioglossum",2.26
+"Lasioglossum occidens","M_054","Halictidae",19,13,2.36060911398924,82,0.231707317073171,2.03746848636,"Halictidae","Lasioglossum",2.26
+"Lasioglossum pauxillum","M_015","Halictidae",9,6,1.49417513828931,127,0.0708661417322835,-0.0708106949450861,"Halictidae","Lasioglossum",1.18
+"Lasioglossum percrassicepes","M_055","Halictidae",3,3,1.09861228866811,41,0.0731707317073171,-0.584095235058018,NA,NA,NA
+"Lasioglossum politum","M_015","Halictidae",6,6,1.79175946922805,127,0.047244094488189,-0.321177080643784,"Halictidae","Lasioglossum",0.85
+"Lasioglossum prasinum","M_016","Halictidae",9,8,1.90615474653985,24,0.375,1.34337522659988,"Halictidae","Lasioglossum",1.76
+"Lasioglossum problematicum","M_021","Halictidae",5,5,1.6094379124341,77,0.0649350649350649,-0.367595581581479,NA,NA,NA
+"Lasioglossum problematicum","M_056","Halictidae",7,7,1.79175946922805,60,0.116666666666667,-0.534029760582484,NA,NA,NA
+"Lasioglossum punctatissimum","M_016","Halictidae",7,5,1.33217904021012,24,0.291666666666667,0.656066971130173,"Halictidae","Lasioglossum",1.29
+"Lasioglossum punctatissimum","M_047","Halictidae",6,6,1.6094379124341,18,0.333333333333333,0.356733015880238,"Halictidae","Lasioglossum",1.29
+"Lasioglossum scitulum","M_054","Halictidae",2,2,0.693147180559945,82,0.024390243902439,-0.766045592782871,"Halictidae","Lasioglossum",2.31
+"Lasioglossum sexstrigatum","M_021","Halictidae",2,2,0.693147180559945,77,0.025974025974026,-0.811574660634435,"Halictidae","Lasioglossum",1.27
+"Lasioglossum sibiriacum","M_053","Halictidae",2,2,0.693147180559945,64,0.03125,-0.995056924194386,NA,NA,NA
+"Lasioglossum sibiriacum","M_055","Halictidae",12,11,2.30258509299405,41,0.292682926829268,2.31623972523007,NA,NA,NA
+"Lasioglossum sibiriacum","M_057","Halictidae",10,8,1.88915916375402,87,0.114942528735632,0.0724126946773587,NA,NA,NA
+"Lasioglossum sordidum","M_028","Halictidae",10,7,1.73286795139986,31,0.32258064516129,2.08012573584461,"Halictidae","Lasioglossum",1.29
+"Lasioglossum sordidum","M_029","Halictidae",3,3,0.693147180559945,25,0.12,-0.832050294337844,"Halictidae","Lasioglossum",1.29
+"Lasioglossum sp K1","M_056","Halictidae",2,2,0.693147180559945,60,0.0333333333333333,-1.28167142539796,NA,NA,NA
+"Lasioglossum sp1 M PL 016","M_016","Halictidae",6,4,1.03972077083992,24,0.25,0.312412843395321,NA,NA,NA
+"Lasioglossum sp1 M PL 019","M_019","Halictidae",7,4,0.867563228481461,20,0.35,0.585850099413707,NA,NA,NA
+"Lasioglossum sp1 M PL 021","M_021","Halictidae",9,5,1.33217904021012,77,0.116883116883117,0.224376523822461,NA,NA,NA
+"Lasioglossum sp1 M PL 028","M_028","Halictidae",8,5,1.33217904021012,31,0.258064516129032,1.24807544150677,NA,NA,NA
+"Lasioglossum sp1 M PL 029","M_029","Halictidae",9,4,0.796311640173813,25,0.36,0.832050294337844,NA,NA,NA
+"Lasioglossum sp1 M PL 044","M_044","Halictidae",3,3,1.09861228866811,64,0.046875,-0.504899202202459,NA,NA,NA
+"Lasioglossum sp1 M PL 047","M_047","Halictidae",4,3,1.03972077083992,18,0.222222222222222,-0.396370017644709,NA,NA,NA
+"Lasioglossum sp1 M PL 053","M_053","Halictidae",10,4,0.848685557726417,64,0.15625,1.10440383894102,NA,NA,NA
+"Lasioglossum sp1 M PL 054","M_054","Halictidae",7,5,1.32966134885476,82,0.0853658536585366,0.0585173716709137,NA,NA,NA
+"Lasioglossum sp1 M PL 057","M_057","Halictidae",14,11,2.20478541691352,87,0.160919540229885,0.501524959432077,NA,NA,NA
+"Lasioglossum sp1 M PL 058","M_058","Halictidae",14,9,2.04319187054512,28,0.5,1.14094491176751,NA,NA,NA
+"Lasioglossum sp1M PL 073","M_073","Halictidae",5,4,1.33217904021012,30,0.166666666666667,-0.166973385596199,NA,NA,NA
+"Lasioglossum sp2 M PL 021","M_021","Halictidae",6,5,1.33217904021012,77,0.0779220779220779,-0.219602555230494,NA,NA,NA
+"Lasioglossum sp2 M PL 053","M_053","Halictidae",8,8,2.07944154167984,64,0.125,0.579538648157169,NA,NA,NA
+"Lasioglossum sp2 M PL 057","M_057","Halictidae",4,4,1.09861228866811,87,0.0459770114942529,-0.571255702454718,NA,NA,NA
+"Lasioglossum sp3 M PL 019","M_019","Halictidae",2,2,0.693147180559945,20,0.1,-0.716039010394531,NA,NA,NA
+"Lasioglossum sp3 M PL 053","M_053","Halictidae",5,4,1.03972077083992,64,0.078125,-0.207759138018608,NA,NA,NA
+"Lasioglossum sp4 M PL 019","M_019","Halictidae",2,2,0.693147180559945,20,0.1,-0.716039010394531,NA,NA,NA
+"Lasioglossum sp4 M PL 021","M_021","Halictidae",2,2,0.693147180559945,77,0.025974025974026,-0.811574660634435,NA,NA,NA
+"Lasioglossum sp4 M PL 053","M_053","Halictidae",4,4,1.38629436111989,64,0.0625,-0.470191733410534,NA,NA,NA
+"Lasioglossum sp5 M PL 019","M_019","Halictidae",3,3,0.693147180559945,20,0.15,-0.455661188432884,NA,NA,NA
+"Lasioglossum sp5 M PL 053","M_053","Halictidae",3,3,1.09861228866811,64,0.046875,-0.73262432880246,NA,NA,NA
+"Lasioglossum sp5 M PL 057","M_057","Halictidae",3,3,0.693147180559945,87,0.0344827586206897,-0.678533768643398,NA,NA,NA
+"Lasioglossum sp6 M PL 019","M_019","Halictidae",13,8,1.6987829895138,20,0.65,2.14811703118359,NA,NA,NA
+"Lasioglossum sp8 M PL 019","M_019","Halictidae",6,3,0.867563228481461,20,0.3,0.32547227745206,NA,NA,NA
+"Lasioglossum sp9 M PL 019","M_019","Halictidae",2,2,0.693147180559945,20,0.1,-0.716039010394531,NA,NA,NA
+"Lasioglossum subopacum","M_044","Halictidae",9,8,1.90615474653985,64,0.140625,0.525095170290557,"Halictidae","Lasioglossum",2.89
+"Lasioglossum taniolellum","M_054","Halictidae",5,5,1.6094379124341,82,0.0609756097560976,-0.2713078141106,NA,NA,NA
+"Lasioglossum transpositum","M_021","Halictidae",11,8,1.83102048111352,77,0.142857142857143,0.520362576524432,NA,NA,NA
+"Lasioglossum transpositum","M_057","Halictidae",14,8,1.77823330579971,87,0.160919540229885,0.501524959432077,NA,NA,NA
+"Lasioglossum villosulum","M_047","Halictidae",4,3,0.636514168294813,18,0.222222222222222,-0.396370017644709,"Halictidae","Lasioglossum",1.38
+"Lasioglossum villosulum","M_015","Halictidae",6,3,0.500402423538188,127,0.047244094488189,-0.321177080643784,"Halictidae","Lasioglossum",1.38
+"Lasioglossum viride","M_008","Halictidae",4,4,1.09861228866811,10,0.4,-0.550481882563181,"Halictidae","Lasioglossum",1.76
+"Lasioglossum weemsi","M_073","Halictidae",2,2,0.693147180559945,30,0.0666666666666667,-0.715600223983708,NA,NA,NA
+"Lasioglossum zonulum","M_015","Halictidae",2,2,0.693147180559945,127,0.015748031496063,-0.654998928242047,"Halictidae","Lasioglossum",1.98
+"Leioproctus fulvescens","M_029","Colletidae",9,3,0.410116318288409,25,0.36,0.832050294337844,NA,NA,NA
+"Leioproctus fulvescens","M_027","Colletidae",6,3,0.500402423538188,8,0.75,0.707106781186547,NA,NA,NA
+"Leioproctus indigoticus","M_072","Colletidae",4,3,0.636514168294813,86,0.0465116279069767,-0.670665025928262,NA,NA,NA
+"Leioproctus monticola","M_028","Colletidae",4,3,0.693147180559945,31,0.129032258064516,-0.416025147168922,NA,NA,NA
+"Leioproctus sp1 M PL 019","M_019","Colletidae",11,7,1.58109375017182,20,0.55,1.6273613872603,NA,NA,NA
+"Leioproctus sp1 M PL 027","M_027","Colletidae",4,3,0.636514168294813,8,0.5,-0.707106781186547,NA,NA,NA
+"Leioproctus sp1 M PL 028","M_028","Colletidae",6,4,1.03972077083992,31,0.193548387096774,0.416025147168922,NA,NA,NA
+"Leioproctus sp1 M PL 029","M_029","Colletidae",11,4,0.867563228481461,25,0.44,1.38675049056307,NA,NA,NA
+"Leioproctus sp2 M PL 019","M_019","Colletidae",5,3,0.562335144618808,20,0.25,0.0650944554904119,NA,NA,NA
+"Leioproctus sp2 M PL 028","M_028","Colletidae",5,3,0.562335144618808,31,0.161290322580645,0,NA,NA,NA
+"Leioproctus sp2 M PL 029","M_029","Colletidae",5,3,0.562335144618808,25,0.2,-0.277350098112615,NA,NA,NA
+"Leioproctus sp3 M PL 028","M_028","Colletidae",4,3,0.693147180559945,31,0.129032258064516,-0.416025147168922,NA,NA,NA
+"Leioproctus sp3 M PL 029","M_029","Colletidae",2,2,0.693147180559945,25,0.08,-1.10940039245046,NA,NA,NA
+"Leioproctus sp4 M PL 019","M_019","Colletidae",2,2,0.693147180559945,20,0.1,-0.716039010394531,NA,NA,NA
+"Leucosmia albiventria","M_062","Megachilidae",22,16,2.65258753472015,455,0.0483516483516484,0.0996446928221575,NA,NA,NA
+"Liphanthus sabulosus","M_001","Andrenidae",3,3,1.09861228866811,44,0.0681818181818182,-0.796584851075818,"Andrenidae","Liphanthus",1.237
+"Macropis labiata","M_049","Melittidae",2,2,0.693147180559945,16,0.125,-1.25582753741838,NA,NA,NA
+"Macropis steironematis","M_062","Melittidae",24,18,2.75554979066418,455,0.0527472527472527,0.187525776075032,NA,NA,NA
+"Manuelia gayi","M_051","Apidae",3,3,0.693147180559945,13,0.230769230769231,-0.668733855090423,"Apidae","Manuelia",1.8
+"Manuelia postica","M_051","Apidae",4,4,1.09861228866811,13,0.307692307692308,-0.278639106287676,"Apidae","Manuelia",1.7
+"Megachile 6 dentata","M_062","Megachilidae",5,4,1.03972077083992,455,0.010989010989011,-0.64734451482728,NA,NA,NA
+"Megachile addenda","M_062","Megachilidae",6,5,1.33217904021012,455,0.0131868131868132,-0.603403973200843,NA,NA,NA
+"Megachile canariensis","M_008","Megachilidae",5,5,1.38629436111989,10,0.5,0.27524094128159,"Megachilidae","Megachile",3.07
+"Megachile generosa","M_062","Megachilidae",23,13,2.23138919780748,455,0.0505494505494506,0.143585234448595,NA,NA,NA
+"Megachile kobensis","M_054","Megachilidae",3,2,0.636514168294813,82,0.0365853658536585,-0.601132999892114,NA,NA,NA
+"Megachile maritima","M_016","Megachilidae",3,3,1.09861228866811,24,0.125,-0.718549539809237,"Megachilidae","Megachile",3.78
+"Megachile mendica","M_073","Megachilidae",10,6,1.49417513828931,30,0.333333333333333,0.747404678382984,"Megachilidae","Megachile",3.3
+"Megachile mendica","M_062","Megachilidae",15,11,2.13839724634772,455,0.032967032967033,-0.207939098562905,"Megachilidae","Megachile",3.3
+"Megachile nipponica","M_055","Megachilidae",3,3,0.693147180559945,41,0.0731707317073171,-0.584095235058018,NA,NA,NA
+"Megachile nipponica","M_054","Megachilidae",4,4,1.09861228866811,82,0.0487804878048781,-0.436220407001357,NA,NA,NA
+"Megachile okinawana","M_044","Megachilidae",4,3,0.636514168294813,64,0.0625,-0.333233473453623,NA,NA,NA
+"Megachile oligolege","M_062","Megachilidae",6,4,1.03972077083992,455,0.0131868131868132,-0.603403973200843,NA,NA,NA
+"Megachile pugnata","M_005","Megachilidae",5,3,0.636514168294813,84,0.0595238095238095,-0.532849770695299,"Megachilidae","Megachile",3.1
+"Megachile relativa","M_005","Megachilidae",4,3,0.636514168294813,84,0.0476190476190476,-0.657953629902022,"Megachilidae","Megachile",2.68
+"Megachile remota sakagamii","M_054","Megachilidae",2,2,0.693147180559945,82,0.024390243902439,-0.766045592782871,NA,NA,NA
+"Megachile semirufa","M_002","Megachilidae",4,3,1.03972077083992,21,0.19047619047619,-0.325196803617302,"Megachilidae","Megachile",4.19
+"Megachile semirufa","M_001","Megachilidae",16,9,1.88487133357816,44,0.363636363636364,2.14007870438279,"Megachilidae","Megachile",4.19
+"Megachile seychellensis","M_061","Megachilidae",13,10,2.20478541691352,33,0.393939393939394,-0.370809924354783,NA,NA,NA
+"Megachile sp","M_11.2","Megachilidae",3,3,0.693147180559945,13,0.230769230769231,-0.577350269189626,NA,NA,NA
+"Megachile sp1","M_001","Megachilidae",13,9,1.97300140639361,44,0.295454545454545,1.46238711466158,NA,NA,NA
+"Megachile sp1","M_002","Megachilidae",4,3,1.03972077083992,21,0.19047619047619,-0.325196803617302,NA,NA,NA
+"Megachile sp1 M PL 015","M_015","Megachilidae",17,12,2.27396571641925,127,0.133858267716535,0.596833000251441,NA,NA,NA
+"Megachile sp1 M PL 022","M_022","Megachilidae",7,5,1.47507631105469,8,0.875,1.38873014965883,NA,NA,NA
+"Megachile sp1 M PL 023","M_023","Megachilidae",3,3,1.09861228866811,16,0.1875,0,NA,NA,NA
+"Megachile sp2","M_001","Megachilidae",6,5,1.33217904021012,44,0.136363636363636,-0.1188932613546,NA,NA,NA
+"Megachile sp2 M PL 022","M_022","Megachilidae",4,3,1.03972077083992,8,0.5,0,NA,NA,NA
+"Megachile sp2 M PL 023","M_023","Megachilidae",4,3,1.03972077083992,16,0.25,1.22474487139159,NA,NA,NA
+"Megachile sp2 M PL 058","M_058","Megachilidae",5,5,1.38629436111989,28,0.178571428571429,-0.486988681851987,NA,NA,NA
+"Megachile sp3 M PL 015","M_015","Megachilidae",2,2,0.693147180559945,127,0.015748031496063,-0.654998928242047,NA,NA,NA
+"Megachile sp3 M PL 072","M_072","Megachilidae",3,2,0.636514168294813,86,0.0348837209302326,-0.737413677797899,NA,NA,NA
+"Megachile sp5","M_002","Megachilidae",3,3,1.09861228866811,21,0.142857142857143,-0.715432967958065,NA,NA,NA
+"Megachile sp5","M_003","Megachilidae",3,3,1.09861228866811,8,0.375,-0.577350269189626,NA,NA,NA
+"Megachile strophostylis","M_062","Megachilidae",3,3,1.09861228866811,455,0.00659340659340659,-0.735225598080155,NA,NA,NA
+"Megachile subalbuta","M_054","Megachilidae",5,4,1.33217904021012,82,0.0609756097560976,-0.2713078141106,NA,NA,NA
+"Megachile tsurugensis","M_021","Megachilidae",3,3,1.09861228866811,77,0.038961038961039,-0.66358163428345,NA,NA,NA
+"Megachile tsurugensis","M_055","Megachilidae",3,3,0.693147180559945,41,0.0731707317073171,-0.584095235058018,NA,NA,NA
+"Megachile tsurugensis","M_057","Megachilidae",6,5,1.33217904021012,87,0.0689655172413793,-0.356699570077359,NA,NA,NA
+"Megachile tsurugensis","M_054","Megachilidae",6,6,1.79175946922805,82,0.0731707317073171,-0.106395221219843,NA,NA,NA
+"Megachile wootoni","M_005","Megachilidae",12,6,1.42706104338072,84,0.142857142857143,0.342877243751758,NA,NA,NA
+"Megilla maculata","M_062","Apidae",11,8,1.88915916375402,455,0.0241758241758242,-0.383701265068655,NA,NA,NA
+"Melecta curvispina","M_008","Apidae",3,3,1.09861228866811,10,0.3,-1.37620470640795,"Apidae","Melecta",3
+"Melecta tuberculata","M_015","Apidae",4,4,1.38629436111989,127,0.031496062992126,-0.488088004442915,"Apidae","Melecta",3.5
+"Melipona scutellaris","M_031","Apidae",13,10,2.14584175259475,40,0.325,1.29486978639286,NA,NA,NA
+"Melissodes agilis","M_062","Apidae",50,20,2.74577788648259,455,0.10989010989011,1.32997985836241,"Apidae","Melissodes",3.24
+"Melissodes autumnalis","M_062","Apidae",30,16,2.5149813641252,455,0.0659340659340659,0.451169025833658,NA,NA,NA
+"Melissodes cnici","M_062","Apidae",18,11,2.21025357762097,455,0.0395604395604396,-0.0761174736835925,NA,NA,NA
+"Melissodes comptoides","M_062","Apidae",3,2,0.636514168294813,455,0.00659340659340659,-0.735225598080155,NA,NA,NA
+"Melissodes coreopsis","M_062","Apidae",3,3,0.693147180559945,455,0.00659340659340659,-0.735225598080155,"Apidae","Melissodes",2.6
+"Melissodes oligolege","M_062","Apidae",5,5,1.6094379124341,455,0.010989010989011,-0.64734451482728,NA,NA,NA
+"Melissodes pallida","M_062","Apidae",10,7,1.88669678465808,455,0.021978021978022,-0.427641806695093,NA,NA,NA
+"Melissodes simillima","M_062","Apidae",12,7,1.82007597536062,455,0.0263736263736264,-0.339760723442218,NA,NA,NA
+"Melissodes vernoniana","M_062","Apidae",13,5,1.17865499634165,455,0.0285714285714286,-0.29582018181578,NA,NA,NA
+"Melissoptila tandilensis","M_072","Apidae",6,3,0.500402423538188,86,0.0697674418604651,-0.537167722188987,NA,NA,NA
+"Microstelis lateralis","M_062","Megachilidae",17,11,2.20559835902639,455,0.0373626373626374,-0.12005801531003,NA,NA,NA
+"Nomada aswensis","M_057","Apidae",2,2,0.693147180559945,87,0.0229885057471264,-0.785811834832077,NA,NA,NA
+"Nomada basalis","M_015","Apidae",8,5,1.38629436111989,127,0.062992125984252,-0.154266156844652,"Apidae","Nomada",1.77
+"Nomada cressonii","M_062","Apidae",29,15,2.32330681852655,455,0.0637362637362637,0.40722848420722,NA,NA,NA
+"Nomada denticulata","M_062","Apidae",19,13,2.36392110328395,455,0.0417582417582418,-0.032176932057155,NA,NA,NA
+"Nomada eos","M_015","Apidae",3,2,0.636514168294813,127,0.0236220472440945,-0.571543466342481,"Apidae","Nomada",1.75
+"Nomada esakii","M_057","Apidae",2,2,0.693147180559945,87,0.0229885057471264,-0.785811834832077,NA,NA,NA
+"Nomada femoralis","M_015","Apidae",9,5,1.33217904021012,127,0.0708661417322835,-0.0708106949450861,"Apidae","Nomada",1.63
+"Nomada fucata","M_015","Apidae",4,2,0.562335144618808,127,0.031496062992126,-0.488088004442915,"Apidae","Nomada",1.88
+"Nomada galloisi","M_021","Apidae",2,2,0.693147180559945,77,0.025974025974026,-0.811574660634435,NA,NA,NA
+"Nomada ginran","M_021","Apidae",3,3,1.09861228866811,77,0.038961038961039,-0.66358163428345,NA,NA,NA
+"Nomada ginran","M_057","Apidae",5,5,1.6094379124341,87,0.0574712643678161,-0.463977636266039,NA,NA,NA
+"Nomada ginran","M_054","Apidae",3,3,1.09861228866811,82,0.0365853658536585,-0.601132999892114,NA,NA,NA
+"Nomada harimensis","M_057","Apidae",3,3,0.693147180559945,87,0.0344827586206897,-0.678533768643398,NA,NA,NA
+"Nomada illinoensis","M_062","Apidae",10,8,1.88915916375402,455,0.021978021978022,-0.427641806695093,NA,NA,NA
+"Nomada lucidula","M_015","Apidae",7,5,1.33217904021012,127,0.0551181102362205,-0.237721618744218,"Apidae","Nomada",2.43
+"Nomada parva","M_062","Apidae",7,7,1.79175946922805,455,0.0153846153846154,-0.559463431574405,NA,NA,NA
+"Nomada perplexa","M_025","Apidae",4,3,0.693147180559945,13,0.307692307692308,-0.798830552808817,NA,NA,NA
+"Nomada propinqua","M_015","Apidae",8,6,1.56071040904141,127,0.062992125984252,-0.154266156844652,"Apidae","Nomada",1.74
+"Nomada salicis","M_062","Apidae",8,7,1.90615474653985,455,0.0175824175824176,-0.515522889947968,NA,NA,NA
+"Nomada shepparadana okubira","M_057","Apidae",11,6,1.5498260458782,87,0.126436781609195,0.179690760866038,NA,NA,NA
+"Nomada sp1 M PL 025","M_025","Apidae",6,4,1.09861228866811,13,0.461538461538462,0.621312652184635,NA,NA,NA
+"Nomada sp1 M PL 047","M_047","Apidae",2,2,0.693147180559945,18,0.111111111111111,-1.14947305116966,NA,NA,NA
+"Nomada sp1 M PL 058","M_058","Apidae",5,4,1.09861228866811,28,0.178571428571429,-0.486988681851987,NA,NA,NA
+"Nomada trispinosa","M_015","Apidae",2,2,0.693147180559945,127,0.015748031496063,-0.654998928242047,"Apidae","Nomada",1.64
+"Nomia pavonula","M_044","Halictidae",2,2,0.693147180559945,64,0.03125,-0.676564930951294,NA,NA,NA
+"Nomioides facilis","M_015","Halictidae",3,3,1.09861228866811,127,0.0236220472440945,-0.571543466342481,"Halictidae","Nomioides",0.8
+"Oligotropus campanulae","M_062","Megachilidae",5,5,1.6094379124341,455,0.010989010989011,-0.64734451482728,NA,NA,NA
+"Oligotropus oligolege","M_062","Megachilidae",3,2,0.636514168294813,455,0.00659340659340659,-0.735225598080155,NA,NA,NA
+"Osmia atriventris","M_062","Megachilidae",13,8,1.83437197028162,455,0.0285714285714286,-0.29582018181578,"Megachilidae","Osmia",2.08
+"Osmia aurulenta","M_015","Megachilidae",24,12,2.21540567503681,127,0.188976377952756,1.1810212335484,"Megachilidae","Osmia",2.92
+"Osmia bruneri","M_005","Megachilidae",7,4,1.03972077083992,84,0.0833333333333333,-0.282642052281854,"Megachilidae","Osmia",2.1
+"Osmia collinsiae","M_062","Megachilidae",3,2,0.636514168294813,455,0.00659340659340659,-0.735225598080155,"Megachilidae","Osmia",2.7
+"Osmia conjucta","M_025","Megachilidae",6,5,1.38629436111989,13,0.461538461538462,0.621312652184635,NA,NA,NA
+"Osmia densa","M_005","Megachilidae",9,6,1.5498260458782,84,0.107142857142857,-0.0324343338684096,NA,NA,NA
+"Osmia fulgida","M_005","Megachilidae",4,2,0.562335144618808,84,0.0476190476190476,-0.657953629902022,NA,NA,NA
+"Osmia fulviventris","M_015","Megachilidae",8,5,1.242453324894,127,0.062992125984252,-0.154266156844652,NA,NA,NA
+"Osmia hypoleuca","M_005","Megachilidae",3,3,0.693147180559945,84,0.0357142857142857,-0.783057489108744,NA,NA,NA
+"Osmia imaii","M_054","Megachilidae",3,3,1.09861228866811,82,0.0365853658536585,-0.601132999892114,NA,NA,NA
+"Osmia lignaria","M_025","Megachilidae",3,3,0.693147180559945,13,0.230769230769231,-1.50890215530554,"Megachilidae","Osmia",2.9
+"Osmia melanogaster","M_015","Megachilidae",6,3,0.500402423538188,127,0.047244094488189,-0.321177080643784,"Megachilidae","Osmia",2.66
+"Osmia melanotricha","M_005","Megachilidae",6,4,1.09861228866811,84,0.0714285714285714,-0.407745911488577,NA,NA,NA
+"Osmia pentstemonis","M_005","Megachilidae",5,3,0.636514168294813,84,0.0595238095238095,-0.532849770695299,"Megachilidae","Osmia",1.75
+"Osmia phaceliae","M_005","Megachilidae",5,4,1.09861228866811,84,0.0595238095238095,-0.532849770695299,NA,NA,NA
+"Osmia propinqua","M_005","Megachilidae",5,3,0.562335144618808,84,0.0595238095238095,-0.532849770695299,NA,NA,NA
+"Osmia proxima","M_004","Megachilidae",2,2,0.693147180559945,10,0.2,-0.658946527660469,"Megachilidae","Osmia",2.16
+"Osmia sp1 M PL 005","M_005","Megachilidae",3,3,1.09861228866811,84,0.0357142857142857,-0.783057489108744,NA,NA,NA
+"Osmia sp1 M PL 015","M_015","Megachilidae",2,2,0.693147180559945,127,0.015748031496063,-0.654998928242047,NA,NA,NA
+"Osmia sp1 M PL 025","M_025","Megachilidae",5,4,1.09861228866811,13,0.384615384615385,-0.0887589503120908,NA,NA,NA
+"Osmia sp1 M PL 058","M_058","Megachilidae",5,4,1.09861228866811,28,0.178571428571429,-0.486988681851987,NA,NA,NA
+"Osmia versicolor","M_015","Megachilidae",6,4,1.242453324894,127,0.047244094488189,-0.321177080643784,"Megachilidae","Osmia",1.78
+"Panurgillus sp1 M PL 072","M_072","Andrenidae",6,4,1.05492016798614,86,0.0697674418604651,-0.537167722188987,NA,NA,NA
+"Panurginus cressoniellus","M_005","Andrenidae",5,4,1.03972077083992,84,0.0595238095238095,-0.532849770695299,NA,NA,NA
+"Panurginus sp1 M PL 005","M_005","Andrenidae",5,5,1.38629436111989,84,0.0595238095238095,-0.532849770695299,NA,NA,NA
+"Paralictus cephalicus","M_062","Halictidae",3,3,0.693147180559945,455,0.00659340659340659,-0.735225598080155,NA,NA,NA
+"Paralictus platyparius","M_062","Halictidae",10,8,1.83102048111352,455,0.021978021978022,-0.427641806695093,NA,NA,NA
+"Paralictus simplex","M_062","Halictidae",4,3,0.693147180559945,455,0.00879120879120879,-0.691285056453718,NA,NA,NA
+"Paranomia nortonii","M_062","Halictidae",4,4,1.38629436111989,455,0.00879120879120879,-0.691285056453718,NA,NA,NA
+"Peponapis pruinosa","M_062","Apidae",8,5,1.32966134885476,455,0.0175824175824176,-0.515522889947968,"Apidae","Peponapis",3.16
+"Perdita 8 maculata","M_062","Andrenidae",27,15,2.38888971472958,455,0.0593406593406593,0.319347400954345,NA,NA,NA
+"Prosopis basalis","M_005","Colletidae",7,4,1.05492016798614,84,0.0833333333333333,-0.282642052281854,NA,NA,NA
+"Prosopis crataegi","M_062","Colletidae",10,10,2.19722457733622,455,0.021978021978022,-0.427641806695093,NA,NA,NA
+"Prosopis elliptica","M_005","Colletidae",13,7,1.73286795139986,84,0.154761904761905,0.46798110295848,NA,NA,NA
+"Prosopis episcopalis","M_005","Colletidae",3,3,0.693147180559945,84,0.0357142857142857,-0.783057489108744,NA,NA,NA
+"Prosopis eulophi","M_062","Colletidae",9,8,1.94591014905531,455,0.0197802197802198,-0.47158234832153,NA,NA,NA
+"Prosopis nelumbonis","M_062","Colletidae",22,14,2.47912243650939,455,0.0483516483516484,0.0996446928221575,NA,NA,NA
+"Prosopis pygmaea","M_062","Colletidae",4,2,0.562335144618808,455,0.00879120879120879,-0.691285056453718,NA,NA,NA
+"Prosopis thaspii","M_062","Colletidae",49,27,3.01969043375406,455,0.107692307692308,1.28603931673597,NA,NA,NA
+"Prosopis varifrons","M_005","Colletidae",11,5,1.14905969697062,84,0.130952380952381,0.217773384545035,NA,NA,NA
+"Prosopis wootoni","M_005","Colletidae",4,3,0.636514168294813,84,0.0476190476190476,-0.657953629902022,NA,NA,NA
+"Prosopis ziziae","M_062","Colletidae",3,3,1.09861228866811,455,0.00659340659340659,-0.735225598080155,NA,NA,NA
+"Psaenythia rufipes","M_023","Andrenidae",4,2,0.693147180559945,16,0.25,1.22474487139159,NA,NA,NA
+"Pseudopanurgus albitarsis","M_062","Andrenidae",4,4,1.38629436111989,455,0.00879120879120879,-0.691285056453718,NA,NA,NA
+"Pseudopanurgus asteris","M_062","Andrenidae",2,2,0.693147180559945,455,0.0043956043956044,-0.779166139706593,NA,NA,NA
+"Pseudopanurgus compositarum","M_062","Andrenidae",6,6,1.79175946922805,455,0.0131868131868132,-0.603403973200843,NA,NA,NA
+"Pseudopanurgus labrosiformis","M_062","Andrenidae",48,25,2.921011144734,455,0.105494505494505,1.24209877510953,NA,NA,NA
+"Pseudopanurgus labrosus","M_062","Andrenidae",57,22,2.68838526708047,455,0.125274725274725,1.63756364974747,NA,NA,NA
+"Pseudopanurgus rudbeckiae","M_062","Andrenidae",2,2,0.693147180559945,455,0.0043956043956044,-0.779166139706593,NA,NA,NA
+"Ptilothrix bombiformus","M_073","Apidae",3,3,1.09861228866811,30,0.1,-0.532724611187872,NA,NA,NA
+"Pyrobombus impatiens","M_033","Apidae",7,3,0.796311640173813,11,0.636363636363636,0.515252912950972,"Apidae","Pyrobombus",4.42
+"Pyrobombus perplexus","M_033","Apidae",5,3,1.05492016798614,11,0.454545454545455,-0.394016933433096,NA,NA,NA
+"Pyrobombus sandersoni","M_033","Apidae",9,4,1.14905969697062,11,0.818181818181818,1.42452275933504,NA,NA,NA
+"Pyrobombus ternarius","M_033","Apidae",11,5,1.08889997534522,11,1,2.33379260571911,"Apidae","Pyrobombus",3.17
+"Rhodanthidium septemdentatum","M_015","Megachilidae",33,13,2.10732264461692,127,0.259842519685039,1.93212039064449,"Megachilidae","Rhodanthidium",3.38
+"Ruizantheda divaricata","M_072","Halictidae",7,4,0.867563228481461,86,0.0813953488372093,-0.47041907031935,NA,NA,NA
+"Ruizantheda mutabilis","M_001","Halictidae",2,2,0.693147180559945,44,0.0454545454545455,-1.02248204764956,"Halictidae","Ruizantheda",1.68
+"Ruizantheda mutabilis","M_051","Halictidae",6,6,1.6094379124341,13,0.461538461538462,0.501550391317817,"Halictidae","Ruizantheda",1.68
+"Sphecodes arvensis","M_062","Halictidae",12,9,2.09472904752765,455,0.0263736263736264,-0.339760723442218,NA,NA,NA
+"Sphecodes ephippius","M_015","Halictidae",3,3,0.693147180559945,127,0.0236220472440945,-0.571543466342481,"Halictidae","Sphecodes",1.53
+"Sphecodes heraclei","M_062","Halictidae",18,9,1.83929674797766,455,0.0395604395604396,-0.0761174736835925,NA,NA,NA
+"Sphecodes marginatus","M_050","Halictidae",6,5,1.38629436111989,12,0.5,0.580544485925666,"Halictidae","Sphecodes",1.01
+"Sphecodes minor","M_062","Halictidae",13,8,1.66633258532833,455,0.0285714285714286,-0.29582018181578,NA,NA,NA
+"Sphecodes sophiae","M_005","Halictidae",7,4,0.867563228481461,84,0.0833333333333333,-0.282642052281854,NA,NA,NA
+"Sphecodes sp1 M PL 058","M_058","Halictidae",3,3,0.693147180559945,28,0.107142857142857,-0.848751702656321,NA,NA,NA
+"Spinoliella sp1 M PL 022","M_022","Andrenidae",2,2,0.693147180559945,8,0.25,-0.925820099772551,NA,NA,NA
+"Stelis signata","M_016","Megachilidae",2,2,0.693147180559945,24,0.0833333333333333,-1.06220366754409,"Megachilidae","Stelis",1.99
+"Tetralonia alternans","M_015","Apidae",11,7,1.6094379124341,127,0.0866141732283465,0.0961002288540456,NA,NA,NA
+"Tetralonia belfragei","M_062","Apidae",31,18,2.70478147052289,455,0.0681318681318681,0.495109567460095,NA,NA,NA
+"Tetralonia dilecta","M_062","Apidae",17,6,1.35797785498732,455,0.0373626373626374,-0.12005801531003,NA,NA,NA
+"Tetralonia nipponens","M_054","Apidae",11,8,1.83102048111352,82,0.134146341463415,0.718167743233941,NA,NA,NA
+"Tetralonia nipponensis","M_053","Apidae",6,5,1.33217904021012,64,0.09375,0.0546734573733178,NA,NA,NA
+"Tetralonia okinawae okinawae","M_044","Apidae",11,7,1.73286795139986,64,0.171875,0.868426627788229,NA,NA,NA
+"Tetralonia robertsonii","M_062","Apidae",3,3,1.09861228866811,455,0.00659340659340659,-0.735225598080155,NA,NA,NA
+"Thyreus histrionicus","M_012","Apidae",3,2,0.636514168294813,14,0.214285714285714,-0.503610155185335,"Apidae","Thyreus",3.05
+"Thyreus ramosus","M_015","Apidae",6,4,1.242453324894,127,0.047244094488189,-0.321177080643784,"Apidae","Thyreus",2.37
+"Triepeolus concavus","M_062","Apidae",2,2,0.693147180559945,455,0.0043956043956044,-0.779166139706593,NA,NA,NA
+"Triepeolus cressonii","M_062","Apidae",67,36,3.18277451913584,455,0.147252747252747,2.07696906601184,NA,NA,NA
+"Triepeolus donatus","M_062","Apidae",95,34,3.06313288936744,455,0.208791208791209,3.3073042315521,NA,NA,NA
+"Triepeolus helianthi","M_062","Apidae",33,16,2.44211793133126,455,0.0725274725274725,0.58299065071297,NA,NA,NA
+"Triepeolus micropygius","M_062","Apidae",6,5,1.33217904021012,455,0.0131868131868132,-0.603403973200843,NA,NA,NA
+"Triepeolus nevadensis","M_062","Apidae",4,4,1.38629436111989,455,0.00879120879120879,-0.691285056453718,NA,NA,NA
+"Triepeolus pennipes","M_062","Apidae",37,19,2.57230083113552,455,0.0813186813186813,0.75875281721872,NA,NA,NA
+"Triepeolus remigatus","M_062","Apidae",25,13,2.23216767890892,455,0.0549450549450549,0.23146631770147,NA,NA,NA
+"Triepeolus simplex","M_062","Apidae",18,9,1.5990147122063,455,0.0395604395604396,-0.0761174736835925,NA,NA,NA
+"Xanthosarus latimanus","M_062","Megachilidae",4,2,0.562335144618808,455,0.00879120879120879,-0.691285056453718,NA,NA,NA
+"Xenoglossa strenua","M_062","Apidae",34,17,2.45865128403193,455,0.0747252747252747,0.626931192339408,NA,NA,NA
+"Xenoglossodes albata","M_062","Apidae",14,10,2.16395565688206,455,0.0307692307692308,-0.251879640189343,NA,NA,NA
+"Xylocopa amamensis","M_044","Apidae",21,12,2.30348849521927,64,0.328125,2.58508391527659,NA,NA,NA
+"Xylocopa appendiculata circumvolan","M_054","Apidae",24,17,2.64532878292337,82,0.292682926829268,2.86203145081378,NA,NA,NA
+"Xylocopa appendicutata","M_055","Apidae",2,2,0.693147180559945,41,0.0487804878048781,-0.906354675090028,NA,NA,NA
+"Xylocopa augusti","M_072","Apidae",7,6,1.6094379124341,86,0.0813953488372093,-0.47041907031935,NA,NA,NA
+"Xylocopa caffra","M_061","Apidae",9,7,1.73286795139986,33,0.272727272727273,-0.707909855586404,NA,NA,NA
+"Xylocopa cantabrita","M_016","Apidae",7,5,1.33217904021012,24,0.291666666666667,0.656066971130173,"Apidae","Xylocopa",5.62
+"Xylocopa ciliata","M_072","Apidae",19,7,1.20008732276787,86,0.22093023255814,0.3305647521163,NA,NA,NA
+"Xylocopa darwini","M_042","Apidae",11,6,1.56071040904141,11,1,NA,NA,NA,NA
+"Xylocopa darwini","M_026","Apidae",80,29,2.90441270462641,80,1,NA,NA,NA,NA
+"Xylocopa fenestrata","M_11.2","Apidae",3,3,1.09861228866811,13,0.230769230769231,-0.577350269189626,NA,NA,NA
+"Xylocopa iris","M_015","Apidae",8,6,1.5498260458782,127,0.062992125984252,-0.154266156844652,"Apidae","Xylocopa",4.34
+"Xylocopa sp1 M PL 031","M_031","Apidae",10,9,2.04319187054512,40,0.25,0.609350487714285,NA,NA,NA
+"Xylocopa sp1 M PL 041","M_041","Apidae",6,5,1.33217904021012,14,0.428571428571429,-0.707106781186547,NA,NA,NA
+"Xylocopa violacea","M_015","Apidae",5,5,1.38629436111989,127,0.0393700787401575,-0.40463254254335,"Apidae","Xylocopa",6.67
+"Xylocopa virginica virginica","M_025","Apidae",6,5,1.38629436111989,13,0.461538461538462,0.621312652184635,"Apidae","Xylocopa",5.64
