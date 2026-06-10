@@ -16,6 +16,7 @@ head(ml.arm2)
 ml.arm2$Bases.de.datos <- NULL
 ml.arm2$X <- NULL
 ml <- unique(subset(ml.arm2, interaccion > 0))
+ml <- subset(ml, !is.na(Familia.GBIF))
 # especie <- base_datos$especies
 # vegan::diversity(x = table(), index = "shannon")
 # Grado familias y especies de plantas
@@ -26,7 +27,7 @@ ml <- unique(subset(ml.arm2, interaccion > 0))
 GFE <- ml |> group_by(ID, familia, sp.armonizado) |>
   summarise(Grado=sum(interaccion==1),
          n.familia=length(unique(Familia.GBIF)),
-         GFE=diversity(x=table(Familia.GBIF), index = "shannon")
+         GFE=diversity(x=table(Familia.GBIF), index = "simpson")
          ) |>
   unique()
   # select(c(-planta,-interaccion)) |> 
@@ -37,31 +38,50 @@ n.plantas.ID <- ml |> group_by(ID)|> summarise(
   n.plantas.ID=length(unique(planta))
 )
 
+n.familias.ID <- ml |> group_by(ID)|> summarise(
+  n.familias.ID=length(unique(Familia.GBIF))
+)
+
+
 GFE <- merge(GFE, n.plantas.ID, by = "ID")
+GFE <- merge(GFE, n.familias.ID, by = "ID")
 GFE$Grado.relativo <- GFE$Grado/GFE$n.plantas.ID
+GFE$Grado.relativo.familias <- GFE$n.familia/GFE$n.familias.ID
 
-hist(GFE$Grado)
-boxplot(Grado~familia, GFE); summary(GFE$Grado)
-histogram(~Grado|familia, GFE)
+hist(GFE$Grado, main="Histograma de Grado, todas las matrices")
+histogram(~Grado|familia, main="Histograma de Grado por familia, todas las matrices", GFE)
+boxplot(Grado~familia, main="Boxplot de Grado por familia, todas las matrices",GFE); summary(GFE$Grado)
 
-boxplot(n.familia~familia, GFE); summary(GFE$n.familia)
-hist(GFE$n.familia)
-histogram(~n.familia|familia, GFE)
+boxplot(n.familia~familia, main="Boxplot de numeros de familias de plantas, todas las matrices", GFE); summary(GFE$n.familia)
+hist(GFE$n.familia, main="Histograma de numeros de familias de plantas, todas las matrices")
+histogram(~n.familia|familia, main="Histograma de numeros de familias de plantas por familias de abejas,\n  todas las matrices", GFE)
 
-boxplot(Grado.relativo~familia, GFE); summary(GFE$Grado.relativo)
-hist(GFE$Grado.relativo)
-histogram(~Grado.relativo|familia, GFE)
+boxplot(Grado.relativo~familia, main="Boxplot de Grado relativo recurso, todas las matrices", GFE); summary(GFE$Grado.relativo)
+hist(GFE$Grado.relativo, main="Histograma de Indice de de utilizacion, todas las matrices")
+histogram(~Grado.relativo|familia, main="Histograma de Indice de de utilizacion \n por familia, todas las matrices", GFE)
 
-GFE <- subset(GFE, GFE>0)
+boxplot(Grado.relativo.familias~familia, main="Boxplot de Grado relativo de familias visitadas, \ntodas las matrices", GFE); summary(GFE$Grado.relativo)*100
+hist(GFE$Grado.relativo.familias, main="Histograma de Indice de de utilizacion, todas las matrices")
+histogram(~Grado.relativo.familias|familia, main="Histograma de Grado relativo de familias visitadas \n por familia, todas las matrices", GFE)
+
+# GFE <- subset(GFE, GFE>0)
 hist(GFE$GFE)
 boxplot(GFE~familia, GFE)
 histogram(~GFE|familia, GFE)
 
+library(psych)
+pairs.panels(GFE[,c("Grado", "n.familia",
+                    "Grado.relativo","Grado.relativo.familias",
+                    "GFE")])
 
 GFE <- GFE |> group_by(ID)|> mutate(Z_Grado=scale(Grado)[,1])
 hist(GFE$Z_Grado)
 boxplot(Z_Grado~familia, GFE)
 histogram(~Z_Grado|familia, GFE)
+
+
+
+GFE$color.x <- as.numeric(as.factor(GFE$familia))
 
 # write.csv(x = Grados, file = "../02salidas/GradosV2.csv", row.names = FALSE)
 write.csv(x = GFE, file = "../02salidas/GFE.csv", row.names = FALSE)

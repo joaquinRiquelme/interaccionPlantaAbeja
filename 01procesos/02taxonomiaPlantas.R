@@ -5,6 +5,7 @@ library(dplyr)
 ml.arm <- read.csv("ml.arm.csv")
 summary(ml.arm$interaccion)
 ml.arm <- subset(ml.arm, interaccion!=0)
+head(ml.arm)
 
 plantas <- as.data.frame(x = unique(ml.arm$plantas))
 names(plantas) <- "Especie.genero"
@@ -18,7 +19,7 @@ sort(unique(plantas$Genero))
 
 str(plantas)
 
-prueba1 <- plantas[1:500,]
+# prueba1 <- plantas[1:500,]
 
 
 unique(plantas$Genero)
@@ -66,7 +67,7 @@ head(plantas)
 plantasFinal <- merge(plantas, genero.aceptado, by.x="Genero", by.y="genus", all.x = TRUE)
 plantasFinal$genero.es.igual <- TRUE
 plantasFinal$genero.es.igual[plantasFinal$Genero!=plantasFinal$verbatim_name] <- FALSE
-
+head(plantasFinal)
 # cantidad de generos que coinciden entre original y GBIF
 table(unique(plantasFinal[,c("Genero","genero.es.igual")])$genero.es.igual)
 
@@ -83,6 +84,9 @@ head(plantas)
 plantas2 <- plantas |> group_by(Genero.especie) |> mutate(
   n.fam = length(unique(Familia.GBIF))
 )
+head(plantas2)
+
+write.csv(plantas2, "plantas2.csv",row.names = FALSE)
 plantas2$Familia.GBIF[plantas2$n.fam!=1]<- NA
 
 barplot(table(plantas2$n.fam))

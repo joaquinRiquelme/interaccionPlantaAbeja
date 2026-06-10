@@ -16,7 +16,7 @@ head(DIT)
 # Grados_Abejas <- read.csv("../02salidas/Grados_Abejas.csv")
 Grados_Abejas <- read.csv("../02salidas/GFE.csv")
 
-Grados_Abejas <- subset(Grados_Abejas, !is.nan(Z_Grado))
+# Grados_Abejas <- subset(Grados_Abejas, !is.nan(Z_Grado))
 
 GyTC <- merge(Grados_Abejas, DIT, by="sp.armonizado", all.x = TRUE)
 # GyTC_todas <- merge(Grados, DIT, by.x="especie", by.y="especies", all.x = TRUE)
