@@ -60,7 +60,8 @@ boxplot(Grado.relativo~familia, main="Boxplot de Grado relativo recurso, todas l
 hist(GFE$Grado.relativo, main="Histograma de Indice de de utilizacion, todas las matrices")
 histogram(~Grado.relativo|familia, main="Histograma de Indice de de utilizacion \n por familia, todas las matrices", GFE)
 
-boxplot(Grado.relativo.familias~familia, main="Boxplot de Grado relativo de familias visitadas, \ntodas las matrices", GFE); summary(GFE$Grado.relativo)*100
+boxplot(Grado.relativo.familias~familia, main="Boxplot de Grado relativo de familias visitadas, \ntodas las matrices", GFE); summary(GFE$Grado.relativo.familias)*100
+abline(h=summary(GFE$Grado.relativo.familias)[3], col="red", lwd=2)
 hist(GFE$Grado.relativo.familias, main="Histograma de Indice de de utilizacion, todas las matrices")
 histogram(~Grado.relativo.familias|familia, main="Histograma de Grado relativo de familias visitadas \n por familia, todas las matrices", GFE)
 

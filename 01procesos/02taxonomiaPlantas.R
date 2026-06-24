@@ -87,6 +87,34 @@ plantas2 <- plantas |> group_by(Genero.especie) |> mutate(
 head(plantas2)
 
 write.csv(plantas2, "plantas2.csv",row.names = FALSE)
+plantas2 <- read.csv("plantas2.csv")
+head(plantas2)
+
+familias.cor <- readxl::read_xlsx("../00baseDatos/Plantas_Kathy_202060615.xlsx", sheet = 5)
+plantas.cor <- readxl::read_xlsx("../00baseDatos/Plantas_Kathy_202060615.xlsx", sheet = 6)
+plantas.cor <- plantas.cor[,c("Genero.especie","Género actual","Especie actual")]
+
+head(plantas2)
+head(plantas.cor)
+
+plantas2$Genero.especie <- gsub(plantas2$Genero.especie, pattern = "\\.$", replacement = "")
+plantas2$Especie <- gsub(plantas2$Genero.especie, pattern = "[.]", replacement = " ")
+
+plantas.cor$Genero.especie <- gsub(plantas.cor$Genero.especie, pattern = "\\.$", replacement = "")
+
+# aaa <- merge(plantas2, plantas.cor, by="Especie", all.x=TRUE, all.y=TRUE)
+# aab <- merge(plantas2, plantas.cor, by="Especie", all.x=TRUE)
+ccc <- unique(merge(plantas2, plantas.cor, by="Genero.especie", all.x=TRUE))
+
+ccc2 <- subset(ccc, !is.na(`Especie actual`))
+
+unique()
+
+
+
+sum(table(aaa$Orden.GBIF))
+sum(table(aaa$ORDEN))
+
 plantas2$Familia.GBIF[plantas2$n.fam!=1]<- NA
 
 barplot(table(plantas2$n.fam))
