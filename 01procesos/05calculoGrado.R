@@ -5,8 +5,11 @@ library(lattice)
 # base_datos <- readRDS("../00baseDatos/base_datos.RDS")
 
 # ml.arm <- read.csv("../01procesos/ml.arm.csv")
-ml.arm <- read.csv("../01procesos/ml.abejas.csv")
+ml.arm <- read.csv("../02salidas/ml.abejas.csv")
+head(ml.arm)
 
+ml.arm$planta <- ml.arm$Especie.planta.nuevo
+ml.arm$interaccion <- ml.arm$interaccionn
 
 ml.arm2 <- ml.arm |> group_by(ID, sp.armonizado, planta) |> 
   mutate(interaccion=as.numeric(sum(interaccion, na.rm = TRUE)>0))
@@ -16,7 +19,7 @@ head(ml.arm2)
 ml.arm2$Bases.de.datos <- NULL
 ml.arm2$X <- NULL
 ml <- unique(subset(ml.arm2, interaccion > 0))
-ml <- subset(ml, !is.na(Familia.GBIF))
+# ml <- subset(ml, !is.na(Familia.planta))
 # especie <- base_datos$especies
 # vegan::diversity(x = table(), index = "shannon")
 # Grado familias y especies de plantas
@@ -26,8 +29,8 @@ ml <- subset(ml, !is.na(Familia.GBIF))
 
 GFE <- ml |> group_by(ID, familia, sp.armonizado) |>
   summarise(Grado=sum(interaccion==1),
-         n.familia=length(unique(Familia.GBIF)),
-         GFE=diversity(x=table(Familia.GBIF), index = "simpson")
+         n.familia=length(unique(Familia.planta)),
+         GFE=diversity(x=table(Familia.planta), index = "simpson")
          ) |>
   unique()
   # select(c(-planta,-interaccion)) |> 
@@ -39,7 +42,7 @@ n.plantas.ID <- ml |> group_by(ID)|> summarise(
 )
 
 n.familias.ID <- ml |> group_by(ID)|> summarise(
-  n.familias.ID=length(unique(Familia.GBIF))
+  n.familias.ID=length(unique(Familia.planta))
 )
 
 
@@ -80,9 +83,7 @@ hist(GFE$Z_Grado)
 boxplot(Z_Grado~familia, GFE)
 histogram(~Z_Grado|familia, GFE)
 
-
-
-GFE$color.x <- as.numeric(as.factor(GFE$familia))
+# GFE$color.x <- as.numeric(as.factor(GFE$familia))
 
 # write.csv(x = Grados, file = "../02salidas/GradosV2.csv", row.names = FALSE)
 write.csv(x = GFE, file = "../02salidas/GFE.csv", row.names = FALSE)

@@ -10,6 +10,9 @@
 library(ranger) # Para Random Forest
 library(mgcv)   # Para Modelos Aditivos Generalizados (GAM)
 library(dplyr)  # Para manipulación de datos
+library(ggplot2)
+library(ggpubr) # Para agregar p-values fácilmente
+library(moments)
 
 # 1. Simulación de Datos de Ejemplo
 set.seed(42) # Para reproducibilidad
@@ -18,80 +21,25 @@ set.seed(42) # Para reproducibilidad
 n_obs <- 200
 
 
-datos_insectos <- read.csv("GyTCV2.csv")
-datos_insectos <- subset(datos_insectos, !is.na(tamano_mm))
+datos_insectos <- read.csv("../02salidas/datos.analisis.categorizado.csv")
+datos_insectos <- subset(datos_insectos, !is.na(DIT.final))
 head(datos_insectos)
 
 # Clasificamos el tamaño
 datos_insectos$tamano_mm <- datos_insectos$DIT.final
 
 install.packages("moments")
-library(moments)
 skewness(datos_insectos$Z_Grado) 
-skewness(datos_insectos$Grado_relativo) 
+skewness(datos_insectos$Grado.relativo) 
 skewness(datos_insectos$Grado) 
 
-datos_insectos$tamano_clase[datos_insectos$tamano_mm <= 2.2] <- "1.Pequeño"
-datos_insectos$tamano_clase[datos_insectos$tamano_mm > 2.2 & datos_insectos$tamano_mm <= 3.9] <- "2.Mediano"
-datos_insectos$tamano_clase[datos_insectos$tamano_mm > 3.9] <- "3.Grande"
-
-boxplot(tamano_mm~tamano_clase,datos_insectos)
-abline(h=c(2.2,3.9))
 
 # Respuestas (Y)
 # datos_insectos$grado_num <- datos_insectos$Z_Grado
-datos_insectos$grado_num <- datos_insectos$GFE
+# datos_insectos$grado_num <- datos_insectos$GFE
+datos_insectos$grado_num <- datos_insectos$Grado
 # datos_insectos$grado_num <- datos_insectos$Grado
-datos_insectos <- subset(datos_insectos, !is.na(Z_Grado))
-par(mfrow=c(2,1))
-hist(datos_insectos$grado_num)
-abline(v=(summary(datos_insectos$grado_num)[c(2,3,5)]))
-boxplot(datos_insectos$grado_num, horizontal = TRUE)
-abline(v=(summary(datos_insectos$grado_num)[c(2,3,5)]))
-
-# Simulamos la dieta (Categórica Binaria: Especialista/Generalista)
-# Insectos más grandes tienen mayor probabilidad de ser generalistas
-datos_insectos$clase_especializacion <- NA
-boxplot(datos_insectos$grado_num, horizontal = TRUE, main="Distribución de Z score de grado, mediana marcada en rojo")
-summary(datos_insectos$grado_num)
-abline(v=summary(datos_insectos$grado_num)[3], col=c(1,1,2,1,1,1,1)[3], lwd=c(1,1,2,1,1,1,1)[3])
-text(x = summary(datos_insectos$grado_num)[3]+0.2, y = 0.5, labels = round(summary(datos_insectos$grado_num)[3],2))
-
-
-png("boxplot_ZScore_matriz.png")
-boxplot(grado_num~ID, subset(datos_insectos),ylim=c(-1.5,6))
-# abline(h=summary(subset(datos_insectos)$grado_num)[3], col="blue")
-abline(h=median(datos_insectos$grado_num), col="red", lwd=2)
-dev.off()
-
-datos_insectos$clase_especializacion[datos_insectos$grado_num <  summary(datos_insectos$grado_num)[3]] <- "1.Especialista"
-datos_insectos$clase_especializacion[datos_insectos$grado_num >=  summary(datos_insectos$grado_num)[3]] <- "2.Generalista"
-# datos_insectos$clase_especializacion[datos_insectos$grado_num >  summary(datos_insectos$grado_num)[3] &
-                                       # datos_insectos$grado_num <=  summary(datos_insectos$grado_num)[5]] <- "2.2.Generalista"
-# datos_insectos$clase_especializacion[datos_insectos$grado_num >  summary(datos_insectos$grado_num)[5]] <- "3.Hipergeneralista"
-
-head(datos_insectos)
-
-table(datos_insectos$clase_especializacion)
-summary(as.factor(datos_insectos$clase_especializacion))
-
-
-
-geograficas <- base_datos$ubicacion.geografica
-geograficas$ID[geograficas$ID=="Santos_2010"] <- "M_076"
-geograficas$ID[geograficas$ID=="M_Var2012"] <- "M_077"
-datos_geo <- merge(datos_insectos, geograficas, by="ID")
-head(datos_geo)
-
-datos_geo$clase_latitud <- NA
-datos_geo$clase_latitud[abs(datos_geo$Latitud)<30] <- "1.Baja"
-datos_geo$clase_latitud[abs(datos_geo$Latitud)>=30 & abs(datos_geo$Latitud)<90] <- "2.Media"
-datos_geo$clase_latitud[abs(datos_geo$Latitud)>=100] <- "3.Alta"
-table(datos_geo$clase_latitud)
-
-
-
-
+datos_insectos <- subset(datos_insectos, !is.na(grado_num))
 
 
 # ==============================================================================
@@ -99,14 +47,16 @@ table(datos_geo$clase_latitud)
 # (Ej: Grado de generalización (índice) entre clases de tamaño)
 # ==============================================================================
 
+# Anova ----
+if(n.categorias.dit!=1 & n.categorias.grado ==1){
+
+  
 print("--- 1A. ANOVA Clásico ---")
 modelo_anova <- aov(grado_num ~ tamano_clase, data = datos_insectos)
 summary(modelo_anova)
 
 
 # 1. Cargar librerías necesarias
-library(ggplot2)
-library(ggpubr) # Para agregar p-values fácilmente
 
 # 4. Visualizar con ggplot2 y ggpubr
 png("Anova.png")
@@ -128,7 +78,12 @@ dev.off()
 # Prueba post-hoc si hay diferencias significativas
 TukeyHSD(modelo_anova)
 
+}
 
+# Regresion ----  
+if(n.categorias.dit==1 & n.categorias.grado ==1){
+
+  
 
 # ==============================================================================
 # ANÁLISIS 2: X Continua -> Y Continua
@@ -170,6 +125,9 @@ plot_regresion <- ggplot(datos_insectos, aes(x = tamano_mm, y = grado_num)) +
 print(plot_regresion)
 dev.off()
 
+
+# Regresion logistica ----
+if(n.categorias.dit==1 & n.categorias.grado !=1){
 # ==============================================================================
 # ANÁLISIS 3: X Continua -> Y Categórica
 # (Ej: Probabilidad de ser Generalista según el tamaño en mm)
@@ -429,6 +387,8 @@ ggplot(pred_long, aes(x = tamano_mm, y = Probabilidad, color = Nivel)) +
 dev.off()
 
 
+# Contingencia ----
+if(n.categorias.dit!=1 & n.categorias.grado !=1){
 # ==============================================================================
 # ANÁLISIS 4: X Categórica -> Y Categórica
 # (Ej: Asociación entre Clase de Tamaño y Tipo de Dieta)

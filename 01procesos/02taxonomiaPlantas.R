@@ -1,11 +1,45 @@
 library(rgbif)
 library(dplyr)
+library(readxl)
 
 # Codigo para taxonomia de plantas
-ml.arm <- read.csv("ml.arm.csv")
+ml.arm <- read.csv("../00baseDatos/tablas/matriz_comp_larga.csv")
 summary(ml.arm$interaccion)
 ml.arm <- subset(ml.arm, interaccion!=0)
 head(ml.arm)
+
+ml.arm$plantas[ml.arm$plantas=="Argyranthemum.frutescencs"] <- "Argyranthemum.frutescens" 
+ml.arm$plantas[ml.arm$plantas=="Ampetopsis.brevipedunculata"] <- "Ampelopsis.brevipedunculata" 
+ml.arm$plantas[ml.arm$plantas=="AB"] <- "Acacia.bahiensis" 
+
+
+ml.arm$Especie.planta <- gsub(pattern = "[.]",replacement = " ", x = ml.arm$plantas)
+
+plantas_kathy2 <- readxl::read_excel("../00baseDatos/armonizacinplantaskc/Plantas_Kathy_final2.xlsx", sheet = 4, skip = 1)[,c(2,19,20,21)]
+head(plantas_kathy2)
+names(plantas_kathy2) <- c("Especie.original","Familia.planta","Genero.planta","Especie.planta.nuevo")
+plantas_kathy2$Especie.original <- gsub(pattern = "[.]",replacement = " ", x = plantas_kathy2$Especie.original)
+
+
+ml.plantas.armonizado <- merge(ml.arm, plantas_kathy2, by.x="Especie.planta", by.y="Especie.original")
+ml.plantas.armonizado2 <- merge(ml.arm, plantas_kathy2, by.x="Especie.planta", by.y="Especie.original", all.x=TRUE)
+head(ml.plantas.armonizado)
+ml.plantas.armonizado$Especie.planta.nuevo[is.na(ml.plantas.armonizado$Especie.planta.nuevo)] <- ml.plantas.armonizado$Especie.planta[is.na(ml.plantas.armonizado$Especie.planta.nuevo)]
+# write.csv()
+
+ml.plantas.armonizado$interaccion <- 1
+
+ml.plantas.armonizado2 <- ml.plantas.armonizado |> 
+  group_by(ID, especie, Familia.planta, Genero.planta, Especie.planta.nuevo) |>
+  summarise(interaccionn=sum(interaccion, na.rm=TRUE))
+unique(ml.plantas.armonizado2$interaccionn)
+ml.plantas.armonizado2$interaccion <- 1
+ml.plantas.armonizado2 <- unique(ml.plantas.armonizado2)
+
+write.csv(ml.plantas.armonizado2, file.path(dir.salidas,"ml.plantas.armonizado2.csv"), row.names = FALSE)
+
+
+######
 
 plantas <- as.data.frame(x = unique(ml.arm$plantas))
 names(plantas) <- "Especie.genero"

@@ -2,16 +2,18 @@ library(rgbif)
 library(dplyr)
 library("taxize")
 
-base_datos <- readRDS("../00baseDatos/base_datos.RDS")
-ml <- base_datos$matriz_comp_larga
+# base_datos <- readRDS("../00baseDatos/base_datos.RDS")
+# ml <- base_datos$matriz_comp_larga
+ml <- read.csv("../02salidas/ml.plantas.armonizado2.csv")
 unique(ml$ID)
 unique(ml$especie)
 ml$esp <- gsub(ml$especie, replacement = " ", pattern="[.]")
 sp.ml <- unique(ml$esp)
 
-# ml$especie_formato <- 
 
 # DIT ----
+
+
 DIT <- base_datos$DIT
 DIT$esp <- gsub(DIT$especies, replacement = " ", pattern="[.]")
 
@@ -228,6 +230,7 @@ summary(DIT2$KC)
 summary(DIT2$Europa)
 summary(DIT2$Brasil)
 
+# Orden de asignacion del DIT
 DIT2$DIT.final <- DIT2$Europa
 DIT2$DIT.final[is.na(DIT2$DIT.final)] <- DIT2$Brasil[is.na(DIT2$DIT.final)]
 DIT2$DIT.final[is.na(DIT2$DIT.final)] <- DIT2$KC[is.na(DIT2$DIT.final)]

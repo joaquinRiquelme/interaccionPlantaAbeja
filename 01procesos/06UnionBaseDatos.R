@@ -8,7 +8,7 @@ base_datos <- readRDS("../00baseDatos/base_datos.RDS")
 # DIT$ID <- NULL
 # DIT <- unique(DIT)
 
-DIT <- read.csv("DIT.baseDatos.csv")
+DIT <- read.csv("../02salidas/DIT.baseDatos.csv")
 head(DIT)
 
 # Grados <- read.csv("../02salidas/Grados.csv")
@@ -26,6 +26,8 @@ GyTC <- merge(Grados_Abejas, DIT, by="sp.armonizado", all.x = TRUE)
 
 head(GyTC)
 summary(GyTC$Z_Grado)
+# GyTC <- subset(GyTC, !is.na(Z_Grado))
+
 # head(GyTC_todas)
 # table(GyTC_todas$Familia)
 # head(Grados)
@@ -43,20 +45,20 @@ for(i in unique(GyTC$ID)){
   dev.off()
   
   png(filename = paste0("../03figuras/TCyGrado/dispersion_GradoRelativo_TC_",i,".png"))
-  plot(Grado_relativo~DIT.final, data = GyTC_i, main=paste("DIT vs Grado relativo \n matriz",i), las=1,
+  plot(Grado.relativo~DIT.final, data = GyTC_i, main=paste("DIT vs Grado relativo \n matriz",i), las=1,
        ylab="Grado relativo", 
        xlab="DIT (mm)",
        xlim=c(0,9),
-       ylim=c(0,max(GyTC_i$Grado_relativo, na.rm = TRUE)*1.1))
+       ylim=c(0,max(GyTC_i$Grado.relativo, na.rm = TRUE)*1.1))
   dev.off()
   
-  png(filename = paste0("../03figuras/TCyGrado/dispersion_Zscore_TC_",i,".png"))
-  plot(Z_Grado~DIT.final, data = GyTC_i, main=paste("DIT vs Z score \n matriz",i), las=1,
-       ylab="Z score", 
-       xlab="DIT (mm)",
-       xlim=c(0,9),
-       ylim=c(-1.5,max(GyTC_i$Z_Grado, na.rm = TRUE)*1.1))
-  dev.off()
+  # png(filename = paste0("../03figuras/TCyGrado/dispersion_Zscore_TC_",i,".png"))
+  # plot(Z_Grado~DIT.final, data = GyTC_i, main=paste("DIT vs Z score \n matriz",i), las=1,
+       # ylab="Z score", 
+       # xlab="DIT (mm)",
+       # xlim=c(0,9),
+       # ylim=c(-1.5,max(GyTC_i$Z_Grado, na.rm = TRUE)*1.1))
+  # dev.off()
   
 }
 
@@ -74,11 +76,11 @@ plot(Grado~DIT.final, data = GyTC, main="DIT vs Grado todas las matrices", las=1
 # dev.off()
 
 # png(filename = paste0("../03figuras/TCyGrado_global/dispersion_GradoRelativo_TC_global.png"))
-plot(Grado_relativo~DIT.final, data = GyTC, main="DIT vs Grado relativo global", las=1,
+plot(Grado.relativo~DIT.final, data = GyTC, main="DIT vs Grado relativo global", las=1,
      ylab="Grado relativo", 
      xlab="DIT (mm)",
      xlim=c(0,9),
-     ylim=c(0,max(GyTC$Grado_relativo, na.rm = TRUE)*1.1))
+     ylim=c(0,max(GyTC$Grado.relativo, na.rm = TRUE)*1.1))
 # dev.off()
 
 # png(filename = paste0("../03figuras/TCyGrado_global/dispersion_Zscore_TC_global.png"))
@@ -90,7 +92,15 @@ plot(Z_Grado~DIT.final, data = GyTC, main="DIT vs Z score global", las=1,
 # dev.off()
 # 
 library(psych)
-pairs.panels(unique(GyTC[,c("Grado","Grado_relativo","Z_Grado","DIT.final")]))
+pairs.panels(unique(GyTC[,c("Grado","Grado.relativo","Z_Grado","DIT.final")]))
 
 
-write.csv(GyTC, file = "GyTCV2.csv", row.names = FALSE)
+
+write.csv(GyTC, file = "../02salidas/GyTCV2.csv", row.names = FALSE)
+
+
+geo <- read.csv("../02salidas/ubicacion.csv")
+
+datos.analisis <- merge(geo, GyTC, by="ID", all.y=TRUE)
+
+write.csv(datos.analisis, "../02salidas/datos.analisis.csv",row.names = FALSE)
