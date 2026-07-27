@@ -29,10 +29,18 @@ head(datos_insectos)
 datos_insectos$tamano_mm <- datos_insectos$DIT.final
 
 install.packages("moments")
+skewness(datos_insectos$Grado) 
 skewness(datos_insectos$Z_Grado) 
 skewness(datos_insectos$Grado.relativo) 
-skewness(datos_insectos$Grado) 
-
+skewness(datos_insectos$Z_Grado.relativo) 
+skewness(datos_insectos$Grado.relativo.familias) 
+skewness(datos_insectos$Z_Grado.relativo.familias) 
+skewness(datos_insectos$n.familia) 
+hist(datos_insectos$Z_Grado)
+hist(datos_insectos$Grado)
+boxplot(datos_insectos$Grado)
+abline(h=summary(datos_insectos$Grado)[3],col="red")
+summary(datos_insectos$Grado)[3]
 
 # Respuestas (Y)
 # datos_insectos$grado_num <- datos_insectos$Z_Grado
@@ -342,6 +350,8 @@ table(datos_insectos$clase_especializacion)
 library(MASS)
 
 # Ajustar modelo ordinal
+
+datos_insectos$clase_especializacion <- ntile(datos_insectos$Z_Grado, n=4)
 datos_insectos$clase_especializacion <- as.factor(datos_insectos$clase_especializacion)
 modelo_ord <- polr(clase_especializacion ~ tamano_mm, data = datos_insectos, Hess = TRUE)
 
@@ -363,14 +373,24 @@ predicciones <- cbind(nuevos_datos, predict(modelo_ord, nuevos_datos, type = "pr
 
 # Formatear para ggplot (formato largo)
 library(tidyr)
-pred_long <- pivot_longer(predicciones, cols = c("1.Especialista", "2.Generalista"), 
+pred_long <- pivot_longer(predicciones, cols = c("1", "2","3"),
+# pred_long <- pivot_longer(predicciones, cols = c("1", "2","3","4"), 
+# pred_long <- pivot_longer(predicciones, cols = c("1", "2","3","4","5"), 
+# pred_long <- pivot_longer(predicciones, cols = c("1", "2","3","4","5","6"),
+# pred_long <- pivot_longer(predicciones, cols = c("1", "2","3","4","5","6","7"),
+# pred_long <- pivot_longer(predicciones, cols = c("1", "2","3","4","5","6","7","8"),
                           names_to = "Nivel", values_to = "Probabilidad")
-pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1.Especialista", "2.Generalista"))
+pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1", "2","3"))
+# pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1", "2","3","4"))
+# pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1", "2","3","4","5"))
+# pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1", "2","3","4","5","6"))
+pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1", "2","3","4","5","6","7"))
+# pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1", "2","3","4","5","6","7","8"))
 
 # Graficar
 
-
-png("LogisticoOrdinal4clases.png")
+head(pred_long)
+png("LogisticoOrdinal3clases.png")
 ggplot(pred_long, aes(x = tamano_mm, y = Probabilidad, color = Nivel)) +
   geom_line(size = 1) +
   labs(title = "Probabilidades Predichas por Nivel de Satisfacción",
@@ -395,7 +415,7 @@ if(n.categorias.dit!=1 & n.categorias.grado !=1){
 # ==============================================================================
 
 print("--- 4. Prueba de Chi-cuadrado ---")
-tabla_contingencia <- table(datos_insectos$tamano_clase, datos_insectos$clase_especializacion)
+tabla_contingencia <- table(datos_insectos$, datos_insectos$clase_especializacion)
 print(tabla_contingencia)
 
 prueba_chi <- chisq.test(tabla_contingencia)

@@ -29,13 +29,13 @@ ml <- unique(subset(ml.arm2, interaccion > 0))
 
 GFE <- ml |> group_by(ID, familia, sp.armonizado) |>
   summarise(Grado=sum(interaccion==1),
-         n.familia=length(unique(Familia.planta)),
-         GFE=diversity(x=table(Familia.planta), index = "simpson")
+         Grado.familia=length(unique(Familia.planta)),
+         GFE=diversity(x=table(Familia.planta), index = "shannon")
          ) |>
   unique()
   # select(c(-planta,-interaccion)) |> 
 head(GFE)
-
+hist(GFE$GFE)
 
 n.plantas.ID <- ml |> group_by(ID)|> summarise(
   n.plantas.ID=length(unique(planta))
@@ -45,21 +45,35 @@ n.familias.ID <- ml |> group_by(ID)|> summarise(
   n.familias.ID=length(unique(Familia.planta))
 )
 
+grado.maximo.ID <- GFE |> group_by(ID)|> summarise(
+  grado.maximo.ID=max(unique(Grado))
+)
+
+
 
 GFE <- merge(GFE, n.plantas.ID, by = "ID")
 GFE <- merge(GFE, n.familias.ID, by = "ID")
-GFE$Grado.relativo <- GFE$Grado/GFE$n.plantas.ID
-GFE$Grado.relativo.familias <- GFE$n.familia/GFE$n.familias.ID
+GFE <- merge(GFE, grado.maximo.ID, by = "ID")
+
+GFE$Grado.relativo <- GFE$Grado/GFE$grado.maximo.ID
+GFE$Grado.relativo.recurso <- GFE$Grado/GFE$n.plantas.ID
+GFE$Grado.relativo.familias <- GFE$Grado.familia/GFE$n.familias.ID
 
 hist(GFE$Grado, main="Histograma de Grado, todas las matrices")
 histogram(~Grado|familia, main="Histograma de Grado por familia, todas las matrices", GFE)
 boxplot(Grado~familia, main="Boxplot de Grado por familia, todas las matrices",GFE); summary(GFE$Grado)
 
-boxplot(n.familia~familia, main="Boxplot de numeros de familias de plantas, todas las matrices", GFE); summary(GFE$n.familia)
-hist(GFE$n.familia, main="Histograma de numeros de familias de plantas, todas las matrices")
+boxplot(Grado.familia~familia, main="Boxplot de numeros de familias de plantas, todas las matrices", GFE); summary(GFE$n.familia)
+hist(GFE$Grado.familia, main="Histograma de numeros de familias de plantas, todas las matrices"); abline(h=summary(GFE$Grado.familia))
 histogram(~n.familia|familia, main="Histograma de numeros de familias de plantas por familias de abejas,\n  todas las matrices", GFE)
 
-boxplot(Grado.relativo~familia, main="Boxplot de Grado relativo recurso, todas las matrices", GFE); summary(GFE$Grado.relativo)
+boxplot(GFE$Grado.relativo, main="Boxplot de Grado relativo, todas las matrices"); summary(GFE$Grado.relativo)
+boxplot(Grado.relativo~familia, main="Boxplot de Grado relativo, todas las matrices", GFE); summary(GFE$Grado.relativo)
+hist(GFE$Grado.relativo, main="Histograma de Indice de de utilizacion, todas las matrices")
+histogram(~Grado.relativo|familia, main="Histograma de Indice de de utilizacion \n por familia, todas las matrices", GFE)
+
+boxplot(GFE$Grado.relativo.recurso, main="Boxplot de Grado relativo recurso, todas las matrices"); summary(GFE$Grado.relativo)
+boxplot(Grado.relativo~familia, main="Boxplot de Grado relativo, todas las matrices", GFE); summary(GFE$Grado.relativo)
 hist(GFE$Grado.relativo, main="Histograma de Indice de de utilizacion, todas las matrices")
 histogram(~Grado.relativo|familia, main="Histograma de Indice de de utilizacion \n por familia, todas las matrices", GFE)
 
@@ -74,8 +88,8 @@ boxplot(GFE~familia, GFE)
 histogram(~GFE|familia, GFE)
 
 library(psych)
-pairs.panels(GFE[,c("Grado", "n.familia",
-                    "Grado.relativo","Grado.relativo.familias",
+pairs.panels(GFE[,c("Grado", "Grado.familia",
+                    "Grado.relativo","Grado.relativo.recurso","Grado.relativo.familias",
                     "GFE")])
 
 GFE <- GFE |> group_by(ID)|> mutate(Z_Grado=scale(Grado)[,1])
