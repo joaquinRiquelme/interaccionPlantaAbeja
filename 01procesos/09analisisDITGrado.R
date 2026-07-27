@@ -351,7 +351,7 @@ library(MASS)
 
 # Ajustar modelo ordinal
 
-datos_insectos$clase_especializacion <- ntile(datos_insectos$Z_Grado, n=4)
+datos_insectos$clase_especializacion <- ntile(datos_insectos$Z_Grado, n=6)
 datos_insectos$clase_especializacion <- as.factor(datos_insectos$clase_especializacion)
 modelo_ord <- polr(clase_especializacion ~ tamano_mm, data = datos_insectos, Hess = TRUE)
 
@@ -373,24 +373,24 @@ predicciones <- cbind(nuevos_datos, predict(modelo_ord, nuevos_datos, type = "pr
 
 # Formatear para ggplot (formato largo)
 library(tidyr)
-pred_long <- pivot_longer(predicciones, cols = c("1", "2","3"),
-# pred_long <- pivot_longer(predicciones, cols = c("1", "2","3","4"), 
-# pred_long <- pivot_longer(predicciones, cols = c("1", "2","3","4","5"), 
-# pred_long <- pivot_longer(predicciones, cols = c("1", "2","3","4","5","6"),
+# pred_long <- pivot_longer(predicciones, cols = c("1", "2","3"),
+# pred_long <- pivot_longer(predicciones, cols = c("1", "2","3","4"),
+# pred_long <- pivot_longer(predicciones, cols = c("1", "2","3","4","5"),
+pred_long <- pivot_longer(predicciones, cols = c("1", "2","3","4","5","6"),
 # pred_long <- pivot_longer(predicciones, cols = c("1", "2","3","4","5","6","7"),
 # pred_long <- pivot_longer(predicciones, cols = c("1", "2","3","4","5","6","7","8"),
                           names_to = "Nivel", values_to = "Probabilidad")
-pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1", "2","3"))
+# pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1", "2","3"))
 # pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1", "2","3","4"))
 # pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1", "2","3","4","5"))
-# pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1", "2","3","4","5","6"))
-pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1", "2","3","4","5","6","7"))
+pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1", "2","3","4","5","6"))
+# pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1", "2","3","4","5","6","7"))
 # pred_long$Nivel <- factor(pred_long$Nivel, levels = c("1", "2","3","4","5","6","7","8"))
 
 # Graficar
 
 head(pred_long)
-png("LogisticoOrdinal3clases.png")
+png("LogisticoOrdinalclases.png")
 ggplot(pred_long, aes(x = tamano_mm, y = Probabilidad, color = Nivel)) +
   geom_line(size = 1) +
   labs(title = "Probabilidades Predichas por Nivel de Satisfacción",
@@ -431,7 +431,10 @@ library(ggplot2)
 # position="fill" estandariza las barras al 100%, lo que permite comparar 
 # proporciones de forma directa, independientemente del tamaño muestral de cada clase.
 
-plot_chi <- ggplot(datos_insectos, aes(x = tamano_clase, fill = clase_especializacion)) +
+datos_insectos$tamano_clase <- ntile(datos_insectos$tamano_mm, n=3)
+datos_insectos$clase_especializacion <- ntile(datos_insectos$Z_Grado, n=2)
+
+plot_chi <- ggplot(datos_insectos, aes(x = tamano_clase, fill = factor(clase_especializacion))) +
   geom_bar(position = "fill", alpha = 0.8) +
   theme_minimal() +
   scale_y_continuous(labels = scales::percent) + # Muestra el eje Y como porcentajes
@@ -447,6 +450,37 @@ png("ProprcionPorClase.png")
 print(plot_chi)
 dev.off()
 
+
+library(networkD3)
+
+# Datos para Sankey: flujo de familias entre sitios
+table(datos_insectos$tamano_clase, datos_insectos$clase_especializacion)
+
+nodes <- data.frame(name = c("Especialista", "Generalista", "Pequeña", "Mediana", "Grande"))
+links <- data.frame(
+  source = c(0,0,0,1,1,1),  # PNM=0, PNS=1
+  target = c(2,3,4,2,3,4),  # Familias
+  value = c(111,101,77,82,91,115) # Abundancia aproximada
+)
+
+
+table(datos_insectos$T3, datos_insectos$clase_especializacion)
+nodes <- data.frame(name = c("Especialista", "Generalista", "Pequeña", "Mediana", "Grande"))
+links <- data.frame(
+  source = c(0,0,0,1,1,1),  # PNM=0, PNS=1
+  target = c(2,3,4,2,3,4),  # Familias
+  value = c(129,103,57,94,109,85) # Abundancia aproximada
+)
+
+aaa <- sankeyNetwork(Links = links, Nodes = nodes, Source = "source", Target = "target",
+                     Value = "value", NodeID = "name", fontSize = 12, nodeWidth = 30)
+
+
+png("sankey.png", width=1080, height = 920)
+print(aaa)
+dev.off()
+
+datos_insectos
 
 
 
