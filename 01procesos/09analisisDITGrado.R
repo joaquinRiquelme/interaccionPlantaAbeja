@@ -351,6 +351,104 @@ library(MASS)
 
 # Ajustar modelo ordinal
 
+# 3 categorias
+datos_insectos$clase_especializacion <- ntile(datos_insectos$Z_Grado, n=3)
+datos_insectos$clase_especializacion <- as.factor(datos_insectos$clase_especializacion)
+modelo_ord <- polr(clase_especializacion ~ tamano_mm, data = datos_insectos, Hess = TRUE)
+
+# Ver resumen
+summary(modelo_ord)
+
+# Calcular p-values
+tabla_coef <- coef(summary(modelo_ord))
+p <- pnorm(abs(tabla_coef[, "t value"]), lower.tail = FALSE) * 2
+tabla_final <- cbind(tabla_coef, "p value" = p)
+print(tabla_final)
+
+sink("../02salidas/resultados_modelo_ordinal_3.txt")
+summary(modelo_ord)
+print(tabla_final)
+sink()
+
+# 4 categorias
+datos_insectos$clase_especializacion <- ntile(datos_insectos$Z_Grado, n=4)
+datos_insectos$clase_especializacion <- as.factor(datos_insectos$clase_especializacion)
+modelo_ord <- polr(clase_especializacion ~ tamano_mm, data = datos_insectos, Hess = TRUE)
+
+# Ver resumen
+summary(modelo_ord)
+
+# Calcular p-values
+tabla_coef <- coef(summary(modelo_ord))
+p <- pnorm(abs(tabla_coef[, "t value"]), lower.tail = FALSE) * 2
+tabla_final <- cbind(tabla_coef, "p value" = p)
+print(tabla_final)
+
+sink("../02salidas/resultados_modelo_ordinal_4.txt")
+summary(modelo_ord)
+print(tabla_final)
+sink()
+
+
+# 5 categorias
+datos_insectos$clase_especializacion <- ntile(datos_insectos$Z_Grado, n=5)
+datos_insectos$clase_especializacion <- as.factor(datos_insectos$clase_especializacion)
+modelo_ord <- polr(clase_especializacion ~ tamano_mm, data = datos_insectos, Hess = TRUE)
+
+# Ver resumen
+summary(modelo_ord)
+
+# Calcular p-values
+tabla_coef <- coef(summary(modelo_ord))
+p <- pnorm(abs(tabla_coef[, "t value"]), lower.tail = FALSE) * 2
+tabla_final <- cbind(tabla_coef, "p value" = p)
+print(tabla_final)
+
+sink("../02salidas/resultados_modelo_ordinal_5.txt")
+summary(modelo_ord)
+print(tabla_final)
+sink()
+
+# 6 categorias
+datos_insectos$clase_especializacion <- ntile(datos_insectos$Z_Grado, n=6)
+datos_insectos$clase_especializacion <- as.factor(datos_insectos$clase_especializacion)
+modelo_ord <- polr(clase_especializacion ~ tamano_mm, data = datos_insectos, Hess = TRUE)
+
+# Ver resumen
+summary(modelo_ord)
+
+# Calcular p-values
+tabla_coef <- coef(summary(modelo_ord))
+p <- pnorm(abs(tabla_coef[, "t value"]), lower.tail = FALSE) * 2
+tabla_final <- cbind(tabla_coef, "p value" = p)
+print(tabla_final)
+
+sink("../02salidas/resultados_modelo_ordinal_6.txt")
+summary(modelo_ord)
+print(tabla_final)
+sink()
+
+
+# 7 categorias
+datos_insectos$clase_especializacion <- ntile(datos_insectos$Z_Grado, n=7)
+datos_insectos$clase_especializacion <- as.factor(datos_insectos$clase_especializacion)
+modelo_ord <- polr(clase_especializacion ~ tamano_mm, data = datos_insectos, Hess = TRUE)
+
+# Ver resumen
+summary(modelo_ord)
+
+# Calcular p-values
+tabla_coef <- coef(summary(modelo_ord))
+p <- pnorm(abs(tabla_coef[, "t value"]), lower.tail = FALSE) * 2
+tabla_final <- cbind(tabla_coef, "p value" = p)
+print(tabla_final)
+
+sink("../02salidas/resultados_modelo_ordinal_7.txt")
+summary(modelo_ord)
+print(tabla_final)
+sink()
+
+# 8 categorias
 datos_insectos$clase_especializacion <- ntile(datos_insectos$Z_Grado, n=8)
 datos_insectos$clase_especializacion <- as.factor(datos_insectos$clase_especializacion)
 modelo_ord <- polr(clase_especializacion ~ tamano_mm, data = datos_insectos, Hess = TRUE)
@@ -368,6 +466,7 @@ sink("../02salidas/resultados_modelo_ordinal_8.txt")
 summary(modelo_ord)
 print(tabla_final)
 sink()
+
 # Crear datos para predecir
 nuevos_datos <- data.frame(
   tamano_mm = seq(min(datos_insectos$tamano_mm), max(datos_insectos$tamano_mm), length.out = 100))
