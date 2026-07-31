@@ -138,9 +138,12 @@ dev.off()
 
 # por percentil
 
-datosDIT <- unique(mlDIT[,c("DIT.final","ID","sp.armoniado")])
-datosDIT$cuantil <- ntile(datosDIT$DIT.final, n=2)
+datosDIT <- unique(mlDIT[,c("DIT.final","ID","sp.armonizado")])
+datosDIT2 <- unique(mlDIT[,c("DIT.final","sp.armonizado")])
+datosDIT$cuantil <- ntile(datosDIT$DIT.final, n=3)
+datosDIT2$cuantil <- ntile(datosDIT2$DIT.final, n=3)
 table(datosDIT$cuantil)
+table(datosDIT2$cuantil)
 histogram(~DIT.final|factor(cuantil), datosDIT, as.table=TRUE)
 table(datosDIT$cuantil)
 
@@ -194,7 +197,7 @@ densityplot(~ DIT.final | factor(cuantil) + factor(T3),
 # Categorias de grado
 datos.analisis$cuantil.grado <- ntile(datos.analisis$Grado, n=n.categorias.grado)
 histogram(~Grado|factor(cuantil.grado), datos.analisis, as.table=TRUE)
-
+boxplot(Grado~ID, datos.analisis)
 datos.analisis$categorias.grado <- factor(datos.analisis$cuantil.grado, levels =c(1,2) , labels = valores.grado)
 
 

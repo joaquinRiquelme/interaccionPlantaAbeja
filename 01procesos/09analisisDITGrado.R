@@ -351,7 +351,7 @@ library(MASS)
 
 # Ajustar modelo ordinal
 
-datos_insectos$clase_especializacion <- ntile(datos_insectos$Z_Grado, n=6)
+datos_insectos$clase_especializacion <- ntile(datos_insectos$Z_Grado, n=8)
 datos_insectos$clase_especializacion <- as.factor(datos_insectos$clase_especializacion)
 modelo_ord <- polr(clase_especializacion ~ tamano_mm, data = datos_insectos, Hess = TRUE)
 
@@ -364,6 +364,10 @@ p <- pnorm(abs(tabla_coef[, "t value"]), lower.tail = FALSE) * 2
 tabla_final <- cbind(tabla_coef, "p value" = p)
 print(tabla_final)
 
+sink("../02salidas/resultados_modelo_ordinal_8.txt")
+summary(modelo_ord)
+print(tabla_final)
+sink()
 # Crear datos para predecir
 nuevos_datos <- data.frame(
   tamano_mm = seq(min(datos_insectos$tamano_mm), max(datos_insectos$tamano_mm), length.out = 100))
