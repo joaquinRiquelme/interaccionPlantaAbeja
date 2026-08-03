@@ -3,17 +3,21 @@ polr(formula = clase_especializacion ~ tamano_mm, data = datos_insectos,
     Hess = TRUE)
 
 Coefficients:
-          Value Std. Error t value
-tamano_mm 0.232     0.0583   3.979
+           Value Std. Error t value
+tamano_mm 0.2206    0.05602   3.938
 
 Intercepts:
     Value   Std. Error t value
-1|2 -0.0542  0.1808    -0.2999
-2|3  1.3618  0.1903     7.1546
+1|2 -1.1976  0.1881    -6.3657
+2|3 -0.3168  0.1744    -1.8169
+3|4  0.3249  0.1737     1.8709
+4|5  0.9129  0.1782     5.1228
+5|6  1.5582  0.1873     8.3175
+6|7  2.4536  0.2075    11.8229
 
-Residual Deviance: 1251.542 
-AIC: 1257.542 
-                Value Std. Error    t value      p value
-tamano_mm  0.23199343 0.05830068  3.9792579 6.913071e-05
-1|2       -0.05420559 0.18077364 -0.2998534 7.642890e-01
-2|3        1.36180848 0.19034108  7.1545696 8.393584e-13
+Residual Deviance: 2229.83 
+AIC: 2243.83 
+               Value Std. Error   t value      p value
+tamano_mm  0.1699297 0.07525012  2.258198 2.393332e-02
+1|2       -0.2652636 0.21562625 -1.230201 2.186219e-01
+2|3        1.1404615 0.22369391  5.098313 3.426946e-07

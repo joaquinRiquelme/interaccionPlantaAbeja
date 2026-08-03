@@ -5,7 +5,16 @@ library(lattice)
 datos.analisis <- read.csv("../02salidas/datos.analisis.csv")
 # GyT <- read.csv("GyTCV2.csv")
 head(datos.analisis)
+originales.dit <- unique(datos.analisis[!is.na(datos.analisis$DIT.final),c("sp.armonizado","DIT.final")])
+datos_insectos <- unique(datos_insectos)
+
+
+setdiff(originales.dit$sp.armonizado, datos_insectos$sp.armonizado)
+
 ml <- read.csv("../02salidas/ml.abejas.csv")
+setdiff(originales.dit$sp.armonizado, ml$sp.armonizado)
+setdiff(ml$sp.armonizado, originales.dit$sp.armonizado)
+
 
 # base_datos <- readRDS("../00baseDatos/base_datos.RDS")
 # especie <- base_datos$especies
@@ -194,11 +203,19 @@ densityplot(~ DIT.final | factor(cuantil) + factor(T3),
 
 
 
+if(!exists("n.categorias.grado")){n.categorias.grado=3}
+n.categorias.grado <- 3
 # Categorias de grado
 datos.analisis$cuantil.grado <- ntile(datos.analisis$Grado, n=n.categorias.grado)
 histogram(~Grado|factor(cuantil.grado), datos.analisis, as.table=TRUE)
+
+
+table(datos.analisis$Grado, datos.analisis$cuantil.grado)
+datos.analisis$Grado
+
+
 boxplot(Grado~ID, datos.analisis)
-datos.analisis$categorias.grado <- factor(datos.analisis$cuantil.grado, levels =c(1,2) , labels = valores.grado)
+# datos.analisis$categorias.grado <- factor(datos.analisis$cuantil.grado, levels =c(1,2) , labels = valores.grado)
 
 
 # datos_insectos$clase_especializacion <- NA
@@ -216,10 +233,10 @@ datos.analisis$categorias.grado <- factor(datos.analisis$cuantil.grado, levels =
 
 
 
-
+n.categorias.latitud <- 2
 datos.analisis$cuantil.latitud <- ntile(abs(datos.analisis$Latitud), n=n.categorias.latitud)
-histogram(~abs(Latitud)|factor(cuantil.latitud), datos.analisis, as.table=TRUE)
-datos.analisis$categorias.latitud <- factor(datos.analisis$cuantil.latitud, levels =c(1,2) , labels = valores.latitud)
+histogram(~abs(Latitud)|factor(cuantil.latitud), datos.analisis)#, as.table=TRUE)
+# datos.analisis$categorias.latitud <- factor(datos.analisis$cuantil.latitud, levels =c(1,2) , labels = valores.latitud)
 
 # geograficas <- base_datos$ubicacion.geografica
 # geograficas$ID[geograficas$ID=="Santos_2010"] <- "M_076"
@@ -240,6 +257,8 @@ datos.analisis$categorias.latitud <- factor(datos.analisis$cuantil.latitud, leve
 
 names(datos.analisis2)
 datos.analisis2 <- merge(datos.analisis, datosDIT, by=c("ID","DIT.final"))
+
+datosDIT$
 write.csv(datos.analisis2,"../02salidas/datos.analisis.categorizado.csv",row.names = FALSE)
 
 # write.csv(mlDIT.nueva, file = "../02salidas/tabla_umbral_mediana.csv", row.names = FALSE)
