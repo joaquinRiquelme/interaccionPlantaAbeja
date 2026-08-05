@@ -36,7 +36,8 @@ datos_ajuste<- unique(data.frame(
 
 png("../03figuras/EstadisticaDescriptiva/Distribucion_DIT.png")
 par(mfrow=c(2,1))
-boxplot(datos_ajuste$DIT, horizontal = TRUE);hist(datos_ajuste$DIT)
+hist(datos_ajuste$DIT, xlim=c(0,9), xlab="", las=1, main="Distribución de DIT")
+boxplot(datos_ajuste$DIT, horizontal = TRUE, ylim=c(0,9),xlab="DIT (mm)")
 dev.off()
 
 sink("../02salidas/Est_DIT.txt")
@@ -45,7 +46,8 @@ sink()
 
 png("../03figuras/EstadisticaDescriptiva/Distribucion_Z_Grado.png")
 par(mfrow=c(2,1))
-boxplot(datos_ajuste$Z_Grado, horizontal = TRUE);hist(datos_ajuste$Z_Grado)
+hist(datos_ajuste$Z_Grado, xlim=c(-2,11), xlab="", las=1, main="Distribución de Z Grado")
+boxplot(datos_ajuste$Z_Grado, horizontal = TRUE, ylim=c(-2,11),xlab="Z Grado")
 dev.off()
 
 sink("../02salidas/Est_Z_Grado.txt")
