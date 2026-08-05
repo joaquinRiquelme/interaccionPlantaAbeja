@@ -68,7 +68,13 @@ modelo_abejas6 <- clmm(GGT6 ~ DIT + (1 | ID) +  (1 | Esp), data = datos_ajuste)
 modelo_abejas7 <- clmm(GGT7 ~ DIT + (1 | ID) +  (1 | Esp), data = datos_ajuste)
 modelo_abejas8 <- clmm(GGT8 ~ DIT + (1 | ID) +  (1 | Esp), data = datos_ajuste)
 
-AIC(modelo_abejas2)
+
+sink("../02salidas/resultadosOrdinalMixto2.txt")
+summary(modelo_abejas2)
+tabla_coef2 <- coef(summary(modelo_abejas2))
+print(tabla_coef2)
+sink()
+
 AIC(modelo_abejas3)
 AIC(modelo_abejas4)
 AIC(modelo_abejas5)
@@ -76,7 +82,6 @@ AIC(modelo_abejas6)
 AIC(modelo_abejas7)
 AIC(modelo_abejas8)
 
-tabla_coef2 <- coef(summary(modelo_abejas2))
 tabla_coef3 <- coef(summary(modelo_abejas3))
 tabla_coef4 <- coef(summary(modelo_abejas4))
 tabla_coef5 <- coef(summary(modelo_abejas5))

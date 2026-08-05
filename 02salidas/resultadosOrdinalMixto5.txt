@@ -1,0 +1,33 @@
+Cumulative Link Mixed Model fitted with the Laplace approximation
+
+formula: GGT5 ~ DIT + (1 | ID) + (1 | Esp)
+data:    datos_ajuste
+
+ link  threshold nobs logLik  AIC     niter     max.grad cond.H 
+ logit flexible  583  -921.03 1856.05 571(1716) 3.18e-05 2.2e+02
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ Esp    (Intercept) 0.46072  0.6788  
+ ID     (Intercept) 0.07175  0.2679  
+Number of groups:  Esp 383,  ID 53 
+
+Coefficients:
+    Estimate Std. Error z value Pr(>|z|)    
+DIT  0.22988    0.06843    3.36 0.000781 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Threshold coefficients:
+    Estimate Std. Error z value
+1|2  -0.6085     0.2378  -2.559
+2|3   0.3581     0.2383   1.503
+3|4   1.2491     0.2487   5.023
+4|5   2.2654     0.2697   8.400
+(8 observations deleted due to missingness)
+      Estimate Std. Error   z value     Pr(>|z|)
+1|2 -0.6085114 0.23780808 -2.558834 1.050239e-02
+2|3  0.3580806 0.23830374  1.502623 1.329364e-01
+3|4  1.2490889 0.24867650  5.022947 5.088454e-07
+4|5  2.2654173 0.26969575  8.399900 4.468584e-17
+DIT  0.2298764 0.06842562  3.359508 7.808130e-04
