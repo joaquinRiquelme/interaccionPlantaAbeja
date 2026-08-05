@@ -470,7 +470,7 @@ p <- pnorm(abs(tabla_coef[, "t value"]), lower.tail = FALSE) * 2
 tabla_final <- cbind(tabla_coef, "p value" = p)
 print(tabla_final)
 
-sink("../02salidas/resultados_modelo_ordinal_3.txt")
+sink("../02salidas/resultados_modelo_ordinal_3_mayor1.txt")
 summary(modelo_ord)
 print(tabla_final)
 sink()

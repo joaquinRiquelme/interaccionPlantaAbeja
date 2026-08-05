@@ -40,7 +40,7 @@ datos_insectos3 <- datos_insectos3[order(datos_insectos3$orden.sp),]
 head(datos_insectos3)
 
 datos_insectos2 <- datos_insectos3
-datos_insectos2$clase_especializacion <- ntile(datos_insectos2$Z_Grado, n=3)
+datos_insectos2$clase_especializacion <- ntile(datos_insectos2$Z_Grado, n=4)
 # datos_insectos2$clase_especializacion <- ntile(datos_insectos2$Grado, n=3)
 
 # datos_insectos2$clase_especializacion[datos_insectos2$Grado==2] <- 1
@@ -52,21 +52,21 @@ table(datos_insectos2$Z_Grado, datos_insectos2$clase_especializacion)
 datos_insectos2$clase_especializacion <- as.factor(datos_insectos2$clase_especializacion)
 datos_insectos2$tamano_mm <- datos_insectos2$DIT
 
-modelo_ord3 <- polr(clase_especializacion ~ tamano_mm, data = datos_insectos2, Hess = TRUE)
+modelo_ord4 <- polr(clase_especializacion ~ tamano_mm, data = datos_insectos2, Hess = TRUE)
 
 # Ver resumen
-summary(modelo_ord3)
+summary(modelo_ord4)
 
 # Calcular p-values
-tabla_coef <- coef(summary(modelo_ord3))
+tabla_coef <- coef(summary(modelo_ord4))
 p <- pnorm(abs(tabla_coef[, "t value"]), lower.tail = FALSE) * 2
 tabla_final <- cbind(tabla_coef, "p value" = p)
 print(tabla_final)
 
-# sink("../02salidas/resultados_modelo_ordinal_3.txt")
-summary(modelo_ord)
+sink("../02salidas/resultados_modelo_ordinal_4_165.txt")
+summary(modelo_ord4)
 print(tabla_final)
-# sink()
+sink()
 
 # Crear datos para predecir
 nuevos_datos <- data.frame(
