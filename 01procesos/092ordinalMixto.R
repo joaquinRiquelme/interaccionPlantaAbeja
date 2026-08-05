@@ -68,6 +68,8 @@ modelo_abejas6 <- clmm(GGT6 ~ DIT + (1 | ID) +  (1 | Esp), data = datos_ajuste)
 modelo_abejas7 <- clmm(GGT7 ~ DIT + (1 | ID) +  (1 | Esp), data = datos_ajuste)
 modelo_abejas8 <- clmm(GGT8 ~ DIT + (1 | ID) +  (1 | Esp), data = datos_ajuste)
 
+# 3. Ver los resultados del modelo
+print(summary(modelo_abejas2))
 
 sink("../02salidas/resultadosOrdinalMixto2.txt")
 summary(modelo_abejas2)
@@ -75,39 +77,84 @@ tabla_coef2 <- coef(summary(modelo_abejas2))
 print(tabla_coef2)
 sink()
 
-AIC(modelo_abejas3)
-AIC(modelo_abejas4)
-AIC(modelo_abejas5)
-AIC(modelo_abejas6)
-AIC(modelo_abejas7)
-AIC(modelo_abejas8)
-
+sink("../02salidas/resultadosOrdinalMixto3.txt")
+summary(modelo_abejas3)
 tabla_coef3 <- coef(summary(modelo_abejas3))
+print(tabla_coef3)
+sink()
+
+sink("../02salidas/resultadosOrdinalMixto4.txt")
+summary(modelo_abejas4)
 tabla_coef4 <- coef(summary(modelo_abejas4))
+print(tabla_coef4)
+sink()
+
+
+sink("../02salidas/resultadosOrdinalMixto5.txt")
+summary(modelo_abejas5)
 tabla_coef5 <- coef(summary(modelo_abejas5))
+print(tabla_coef5)
+sink()
+
+sink("../02salidas/resultadosOrdinalMixto6.txt")
+summary(modelo_abejas6)
 tabla_coef6 <- coef(summary(modelo_abejas6))
+print(tabla_coef6)
+sink()
+
+sink("../02salidas/resultadosOrdinalMixto7.txt")
+summary(modelo_abejas7)
 tabla_coef7 <- coef(summary(modelo_abejas7))
+print(tabla_coef7)
+sink()
+
+sink("../02salidas/resultadosOrdinalMixto8.txt")
+summary(modelo_abejas8)
 tabla_coef8 <- coef(summary(modelo_abejas8))
+print(tabla_coef8)
+sink()
 
 
-# 3. Ver los resultados del modelo
-print(summary(modelo_abejas))
-
-tabla_coef <- coef(summary(modelo_abejas))
-tabla_coef
 
 # Predicciones marginales en función de la cobertura y el tipo de manejo
-pred_prob <- ggpredict(
+pred_prob2 <- ggpredict(
   modelo_abejas2, 
-  
+  terms = c("DIT [all]")
+)
+
+pred_prob3 <- ggpredict(
+  modelo_abejas3, 
+  terms = c("DIT [all]")
+)
+
+pred_prob4 <- ggpredict(
+  modelo_abejas4, 
+  terms = c("DIT [all]")
+)
+
+pred_prob5 <- ggpredict(
+  modelo_abejas5, 
+  terms = c("DIT [all]")
+)
+
+pred_prob6 <- ggpredict(
+  modelo_abejas6, 
+  terms = c("DIT [all]")
+)
+
+pred_prob7 <- ggpredict(
+  modelo_abejas7, 
+  terms = c("DIT [all]")
+)
+
+pred_prob8 <- ggpredict(
+  modelo_abejas8, 
   terms = c("DIT [all]")
 )
 
 
-table(datos_ajuste$GGT2)
-
 # Gráfico de líneas por nivel de respuesta (Categoría Ordinal)
-ggplot(pred_prob,aes(x = x, y = predicted, color = response.level)) +
+p2 <- ggplot(pred_prob2,aes(x = x, y = predicted, color = response.level)) +
   geom_line(linewidth = 1.1) +
   geom_ribbon(
     aes(ymin = conf.low, ymax = conf.high, fill = response.level),
@@ -116,16 +163,199 @@ ggplot(pred_prob,aes(x = x, y = predicted, color = response.level)) +
   ) +
   facet_wrap(~ group) +
   scale_y_continuous(labels = scales::percent_format(), limits = c(0, 1)) +
-  scale_color_viridis_d(name = "Categoría de Generalización trófica", option = "D") +
-  scale_fill_viridis_d(name = "Categoría de Generalización trófica", option = "D") +
+  scale_color_viridis_d(name = "Categoría de generalización trófica", option = "D") +
+  scale_fill_viridis_d(name = "Categoría de generalización trófica", option = "D") +
   labs(
     title = "Comportamiento del Modelo Logístico Ordinal",
-    subtitle = "Probabilidad predicha de cada categoría de grado de Generalización trófica",
+    subtitle = "Probabilidad predicha de cada categoría de GGT",
     x = "DIT (mm)",
-    y = "Probabilidad Predicha"
+    y = "Probabilidad predicha"
   ) +
   theme_minimal(base_size = 13) +
   theme(legend.position = "bottom", strip.face = "bold")
+
+
+ggsave("../03figuras/AnalisisGradoDIT/OrdinalMixto2.eps",
+       plot = p2,
+       device = cairo_ps,
+       width = 16,
+       height = 12,
+       units = "cm")
+
+
+# Gráfico de líneas por nivel de respuesta (Categoría Ordinal)
+p3 <- ggplot(pred_prob3,aes(x = x, y = predicted, color = response.level)) +
+  geom_line(linewidth = 1.1) +
+  geom_ribbon(
+    aes(ymin = conf.low, ymax = conf.high, fill = response.level),
+    alpha = 0.15, 
+    color = NA
+  ) +
+  facet_wrap(~ group) +
+  scale_y_continuous(labels = scales::percent_format(), limits = c(0, 1)) +
+  scale_color_viridis_d(name = "Categoría de generalización trófica", option = "D") +
+  scale_fill_viridis_d(name = "Categoría de generalización trófica", option = "D") +
+  labs(
+    title = "Comportamiento del Modelo Logístico Ordinal",
+    subtitle = "Probabilidad predicha de cada categoría de GGT",
+    x = "DIT (mm)",
+    y = "Probabilidad predicha"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "bottom", strip.face = "bold")
+
+
+ggsave("../03figuras/AnalisisGradoDIT/OrdinalMixto3.eps",
+       plot = p3,
+       device = cairo_ps,
+       width = 16,
+       height = 12,
+       units = "cm")
+
+# Gráfico de líneas por nivel de respuesta (Categoría Ordinal)
+p4 <- ggplot(pred_prob4,aes(x = x, y = predicted, color = response.level)) +
+  geom_line(linewidth = 1.1) +
+  geom_ribbon(
+    aes(ymin = conf.low, ymax = conf.high, fill = response.level),
+    alpha = 0.15, 
+    color = NA
+  ) +
+  facet_wrap(~ group) +
+  scale_y_continuous(labels = scales::percent_format(), limits = c(0, 1)) +
+  scale_color_viridis_d(name = "Categoría de generalización trófica", option = "D") +
+  scale_fill_viridis_d(name = "Categoría de generalización trófica", option = "D") +
+  labs(
+    title = "Comportamiento del Modelo Logístico Ordinal",
+    subtitle = "Probabilidad predicha de cada categoría de GGT",
+    x = "DIT (mm)",
+    y = "Probabilidad predicha"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "bottom", strip.face = "bold")
+
+
+ggsave("../03figuras/AnalisisGradoDIT/OrdinalMixto4.eps",
+       plot = p4,
+       device = cairo_ps,
+       width = 16,
+       height = 12,
+       units = "cm")
+
+# Gráfico de líneas por nivel de respuesta (Categoría Ordinal)
+p5 <- ggplot(pred_prob5,aes(x = x, y = predicted, color = response.level)) +
+  geom_line(linewidth = 1.1) +
+  geom_ribbon(
+    aes(ymin = conf.low, ymax = conf.high, fill = response.level),
+    alpha = 0.15, 
+    color = NA
+  ) +
+  facet_wrap(~ group) +
+  scale_y_continuous(labels = scales::percent_format(), limits = c(0, 1)) +
+  scale_color_viridis_d(name = "Categoría de generalización trófica", option = "D") +
+  scale_fill_viridis_d(name = "Categoría de generalización trófica", option = "D") +
+  labs(
+    title = "Comportamiento del Modelo Logístico Ordinal",
+    subtitle = "Probabilidad predicha de cada categoría de GGT",
+    x = "DIT (mm)",
+    y = "Probabilidad predicha"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "bottom", strip.face = "bold")
+
+
+ggsave("../03figuras/AnalisisGradoDIT/OrdinalMixto5.eps",
+       plot = p5,
+       device = cairo_ps,
+       width = 16,
+       height = 12,
+       units = "cm")
+
+# Gráfico de líneas por nivel de respuesta (Categoría Ordinal)
+p6 <- ggplot(pred_prob6,aes(x = x, y = predicted, color = response.level)) +
+  geom_line(linewidth = 1.1) +
+  geom_ribbon(
+    aes(ymin = conf.low, ymax = conf.high, fill = response.level),
+    alpha = 0.15, 
+    color = NA
+  ) +
+  facet_wrap(~ group) +
+  scale_y_continuous(labels = scales::percent_format(), limits = c(0, 1)) +
+  scale_color_viridis_d(name = "Categoría de generalización trófica", option = "D") +
+  scale_fill_viridis_d(name = "Categoría de generalización trófica", option = "D") +
+  labs(
+    title = "Comportamiento del Modelo Logístico Ordinal",
+    subtitle = "Probabilidad predicha de cada categoría de GGT",
+    x = "DIT (mm)",
+    y = "Probabilidad predicha"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "bottom", strip.face = "bold")
+
+
+ggsave("../03figuras/AnalisisGradoDIT/OrdinalMixto6.eps",
+       plot = p6,
+       device = cairo_ps,
+       width = 16,
+       height = 12,
+       units = "cm")
+# Gráfico de líneas por nivel de respuesta (Categoría Ordinal)
+p7 <- ggplot(pred_prob7,aes(x = x, y = predicted, color = response.level)) +
+  geom_line(linewidth = 1.1) +
+  geom_ribbon(
+    aes(ymin = conf.low, ymax = conf.high, fill = response.level),
+    alpha = 0.15, 
+    color = NA
+  ) +
+  facet_wrap(~ group) +
+  scale_y_continuous(labels = scales::percent_format(), limits = c(0, 1)) +
+  scale_color_viridis_d(name = "Categoría de generalización trófica", option = "D") +
+  scale_fill_viridis_d(name = "Categoría de generalización trófica", option = "D") +
+  labs(
+    title = "Comportamiento del Modelo Logístico Ordinal",
+    subtitle = "Probabilidad predicha de cada categoría de GGT",
+    x = "DIT (mm)",
+    y = "Probabilidad predicha"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "bottom", strip.face = "bold")
+
+
+ggsave("../03figuras/AnalisisGradoDIT/OrdinalMixto7.eps",
+       plot = p7,
+       device = cairo_ps,
+       width = 16,
+       height = 12,
+       units = "cm")
+
+# Gráfico de líneas por nivel de respuesta (Categoría Ordinal)
+p8 <- ggplot(pred_prob8,aes(x = x, y = predicted, color = response.level)) +
+  geom_line(linewidth = 1.1) +
+  geom_ribbon(
+    aes(ymin = conf.low, ymax = conf.high, fill = response.level),
+    alpha = 0.15, 
+    color = NA
+  ) +
+  facet_wrap(~ group) +
+  scale_y_continuous(labels = scales::percent_format(), limits = c(0, 1)) +
+  scale_color_viridis_d(name = "Categoría de generalización trófica", option = "D") +
+  scale_fill_viridis_d(name = "Categoría de generalización trófica", option = "D") +
+  labs(
+    title = "Comportamiento del Modelo Logístico Ordinal",
+    subtitle = "Probabilidad predicha de cada categoría de GGT",
+    x = "DIT (mm)",
+    y = "Probabilidad predicha"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "bottom", strip.face = "bold")
+
+
+ggsave("../03figuras/AnalisisGradoDIT/OrdinalMixto8.eps",
+       plot = p8,
+       device = cairo_ps,
+       width = 16,
+       height = 12,
+       units = "cm")
+
 
 # 1. Instalar y cargar librerías necesarias
 # install.packages(c("DHARMa", "ggplot2", "patchwork"))
