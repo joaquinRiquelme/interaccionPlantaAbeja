@@ -10,6 +10,55 @@ library("ggmap")
 # base_datos <- readRDS("../00baseDatos/base_datos.RDS")
 dac <- read.csv("../02salidas/datos.analisis.categorizado.csv")
 
+dac.sinna <- subset(dac, !is.na(DIT.final) )
+dac.sinna <- unique(dac.sinna[,c("DIT.final","familia","sp.armonizado.x")])
+library(lattice)
+
+
+media.dit <- dac.sinna |> group_by(familia) |> summarise(mean=mean(DIT.final, na.rm=TRUE))
+media.dit <- media.dit[order(media.dit$mean),]
+
+textos_por_panel <- table(dac.sinna$familia)
+textos_por_panel <- paste("n =", textos_por_panel)
+
+
+media.dit$familia <- factor(media.dit$familia, levels = c("Halictidae","Andrenidae","Colletidae","Megachilidae","Melittidae","Apidae"))
+dac.sinna$familia <- factor(dac.sinna$familia, levels = c("Halictidae","Andrenidae","Colletidae","Megachilidae","Melittidae","Apidae"))
+levels(dac.sinna$familia)
+
+
+colores_paneles <- c("orange","skyblue","lightseagreen","yellow","blue","deeppink")
+dac.sinna <- dac.sinna[order(dac.sinna$familia),]
+
+png("../03figuras/EstadisticaDescriptiva/DistribucionDITxFamilia.png")
+histogram(~ DIT.final | familia, data = dac.sinna,
+          layout=c(1,6),
+          type="percent",
+          as.table=TRUE,
+          xlab="DIT (mm)",
+          breaks = seq(from=0,to=9,by=0.5),
+          ylim=c(0,60),
+          panel = function(x, ...) {
+            # 1. Obtiene el índice del panel actual
+            p.number <- packet.number()
+  
+            # 2. Dibuja el histograma original del panel
+            panel.histogram(x,
+                            xlim = c(0,8),
+                            col = colores_paneles[p.number], ...)
+            
+            
+            # 3. Agrega el texto en coordenadas específicas (x, y)
+            panel.text(x = 7, y = 40, 
+                       label = textos_por_panel[p.number], 
+                       col = "black", cex = 1)
+          }
+)
+dev.off()
+
+histogram(~DIT.final|familia, dac.sinna)
+
+
 tabla.e <- data.frame(table(dac$familia))
 names(tabla.e)[1] <- "Familia"
 tabla.f <- tabla.e[order(tabla.e$Freq, decreasing = TRUE),]

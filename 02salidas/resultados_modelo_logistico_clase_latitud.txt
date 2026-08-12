@@ -1,0 +1,32 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
+ Family: binomial  ( logit )
+Formula: clase_especializacion_binaria ~ tamano_mm + clase_latitud + (1 |      ID)
+   Data: datos_Latitud
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+    779.2     796.6    -385.6     771.2       564 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.8846 -0.9484  0.6419  0.9850  1.2812 
+
+Random effects:
+ Groups Name        Variance  Std.Dev. 
+ ID     (Intercept) 2.918e-15 5.402e-08
+Number of obs: 568, groups:  ID, 51
+
+Fixed effects:
+               Estimate Std. Error z value Pr(>|z|)    
+(Intercept)    -0.54026    0.23201  -2.329 0.019881 *  
+tamano_mm       0.23477    0.06357   3.693 0.000221 ***
+clase_latitud2 -0.15490    0.17414  -0.889 0.373735    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) tmn_mm
+tamano_mm   -0.819       
+clase_lttd2 -0.526  0.106
+optimizer (Nelder_Mead) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+

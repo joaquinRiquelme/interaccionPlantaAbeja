@@ -27,8 +27,9 @@ head(datos_insectos)
 
 # Clasificamos el tamaño
 datos_insectos$tamano_mm <- datos_insectos$DIT.final
-
-install.packages("moments")
+datos_insectos <- subset(datos_insectos, !is.na(DIT.final))
+datos_insectos
+# install.packages("moments")
 skewness(datos_insectos$Grado) 
 skewness(datos_insectos$Z_Grado) 
 skewness(datos_insectos$Grado.relativo) 
@@ -156,6 +157,9 @@ summary(modelo_logistico)
 
 datos_insectos$clase_especializacion_binaria <- ifelse(datos_insectos$clase_especializacion == "2.Generalista", 1, 0)
 
+datos_insectos$clase_especializacion <- ntile(datos_insectos$Z_Grado, n=2)
+datos_insectos$clase_especializacion_binaria <- ifelse(datos_insectos$clase_especializacion == "2", 1, 0)
+
 
 library(lme4)
 # Ajuste del modelo
@@ -167,14 +171,62 @@ modelo_mixto <- glmer(
 # Ver resultados
 summary(modelo_mixto)
 
+
+datos_insectos$tamano_mm <- datos_insectos$DIT.final
+datos_insectos$clase_latitud <- as.factor(datos_insectos$cuantil.latitud)
+
+
+datos_Latitud <- unique(datos_insectos[,c("ID","clase_latitud","sp.armonizado.x","clase_especializacion_binaria","tamano_mm")])
 modelo_mixto2 <- glmer(
   clase_especializacion_binaria ~ tamano_mm + clase_latitud + (1 | ID), 
-    data = datos_geo, 
+    data = datos_Latitud, 
   family = binomial(link = "logit")
 )
+
+sink("../02salidas/resultados_modelo_logistico_clase_latitud.txt")
 summary(modelo_mixto2)
+sink()
 
 anova(modelo_mixto, modelo_mixto2, test = "Chisq")
+
+
+datos_Latitud3 <- unique(datos_insectos[,c("ID","clase_latitud","sp.armonizado.x","clase_especializacion_binaria","Latitud","T3")])
+modelo_mixto3 <- glmer(
+  clase_especializacion_binaria ~ abs(Latitud) + T3 + (1 | ID), 
+  data = datos_Latitud3, 
+  family = binomial(link = "logit")
+)
+summary(modelo_mixto3)
+
+sink("../02salidas/resultados_modelo_logistico_latitud_clase_tamano.txt")
+summary(modelo_mixto3)
+sink()
+
+datos_Latitud4 <- unique(datos_insectos[,c("ID","clase_latitud","sp.armonizado.x","clase_especializacion_binaria","Latitud")])
+modelo_mixto4 <- glmer(
+  clase_especializacion_binaria ~ abs(Latitud) + (1 | ID), 
+  data = datos_Latitud4, 
+  family = binomial(link = "logit")
+)
+summary(modelo_mixto4)
+
+datos_Latitud5 <- unique(datos_insectos[,c("ID","clase_latitud","sp.armonizado.x","clase_especializacion_binaria","Latitud","Z_Grado")])
+barplot(table(datos_Latitud5$sp.armonizado.x))
+sort(table(datos_Latitud5$sp.armonizado.x))
+
+filtro.unicas <- as.data.frame(table(datos_Latitud5$sp.armonizado.x))
+filtro.repetidas <- subset(filtro.unicas, Freq!=1)
+filtro.unicas <- subset(filtro.unicas, Freq==1)
+datos_Latitud5 <- subset(datos_Latitud5, is.element(sp.armonizado.x, filtro.unicas$Var1))
+
+modelo_mixto5 <- glmer(
+  clase_especializacion_binaria ~ abs(Latitud) + (1 | ID), 
+  data = datos_Latitud5, 
+  family = binomial(link = "logit")
+)
+summary(modelo_mixto5)
+
+
 
 # 1. Cargar librerías
 library(effects)
@@ -305,6 +357,77 @@ ggplot(pred_latitud, aes(x = x, y = predicted, color = group, fill = group)) +
   scale_fill_manual(values = c("steelblue", "firebrick")) +
   theme_minimal()
 dev.off()
+
+
+
+
+pred_latitud3 <- ggpredict(modelo_mixto3, terms = c("Latitud [all]", "T3"))
+
+# 2. Graficar
+png("../03figuras/ProbabilidadLatitudT3.png")
+ggplot(pred_latitud3, aes(x = abs(x), y = predicted, color = group, fill = group)) +
+  geom_ribbon(aes(ymin = conf.low, ymax = conf.high), alpha = 0.2, color = NA) +
+  geom_line(size = 1.2) +
+  labs(
+    title = "Probabilidad de ser Generalista por Latitud",
+    x = "Latitud",
+    y = "Probabilidad Predicha",
+    color = "Clase de tamaño",
+    fill = "Clase de tamaño"
+  ) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 1)) +
+  scale_color_manual(values = c("#FFC685", "#ED7222","#9E3D22")) +
+  scale_fill_manual(values = c("#FFC685", "#ED7222","#9E3D22")) +
+  theme_minimal()
+dev.off()
+
+
+
+
+pred_latitud4 <- ggpredict(modelo_mixto4, terms = c("Latitud [all]"))
+
+# 2. Graficar
+# png("../03figuras/ProbabilidadLatitud.png")
+ggplot(pred_latitud4, aes(x = abs(x), y = predicted, color = group, fill = group)) +
+  geom_ribbon(aes(ymin = conf.low, ymax = conf.high), alpha = 0.2, color = NA) +
+  geom_line(size = 1.2) +
+  labs(
+    title = "Probabilidad de ser Generalista por Latitud",
+    x = "Latitud",
+    y = "Probabilidad Predicha",
+    color = "Clase de tamaño",
+    fill = "Clase de tamaño"
+  ) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 1)) +
+  scale_color_manual(values = c("#ED7222", "#ED7222","#ED7222")) +
+  scale_fill_manual(values = c("#ED7222", "#ED7222","#ED7222")) +
+  theme_minimal()
+dev.off()
+summary(modelo_mixto4)
+
+
+
+pred_latitud5 <- ggpredict(modelo_mixto5, terms = c("Latitud [all]"))
+
+# 2. Graficar
+# png("../03figuras/ProbabilidadLatitud.png")
+ggplot(pred_latitud5, aes(x = abs(x), y = predicted, color = group, fill = group)) +
+  geom_ribbon(aes(ymin = conf.low, ymax = conf.high), alpha = 0.2, color = NA) +
+  geom_line(size = 1.2) +
+  labs(
+    title = "Probabilidad de ser Generalista por Latitud",
+    x = "Latitud",
+    y = "Probabilidad Predicha",
+    color = "Clase de tamaño",
+    fill = "Clase de tamaño"
+  ) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 1)) +
+  scale_color_manual(values = c("#ED7222", "#ED7222","#ED7222")) +
+  scale_fill_manual(values = c("#ED7222", "#ED7222","#ED7222")) +
+  theme_minimal()
+dev.off()
+summary(modelo_mixto4)
+
 
 png("Probabilidad_GeneralistaPorClaseLatitud.png")
 ggplot() +

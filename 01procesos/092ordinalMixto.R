@@ -34,10 +34,15 @@ datos_ajuste<- unique(data.frame(
   GGT7 = factor(datos_insectos$clase_especializacion7),
   GGT8 = factor(datos_insectos$clase_especializacion8)))
 
+
+
+datos_ajuste2 <- unique(datos_ajuste[,c("DIT","Esp")])
 png("../03figuras/EstadisticaDescriptiva/Distribucion_DIT.png")
 par(mfrow=c(2,1))
-hist(datos_ajuste$DIT, xlim=c(0,9), xlab="", las=1, main="Distribución de DIT")
-boxplot(datos_ajuste$DIT, horizontal = TRUE, ylim=c(0,9),xlab="DIT (mm)")
+boxplot(datos_ajuste2$DIT,  main="Distribución de DIT", horizontal = TRUE, ylim=c(0,9),xlab="", frame=FALSE)
+hist(datos_ajuste2$DIT, xlim=c(0,9), xlab="DIT (mm)", las=1, main="", ylim=c(0,100))
+abline(v=median(datos_ajuste2$DIT), col="red",lty=2,lwd=2)
+text(x=median(datos_ajuste2$DIT)*1.5, y=95, labels = paste("Median =", round(median(datos_ajuste2$DIT),2)))
 dev.off()
 
 sink("../02salidas/Est_DIT.txt")
@@ -46,8 +51,10 @@ sink()
 
 png("../03figuras/EstadisticaDescriptiva/Distribucion_Z_Grado.png")
 par(mfrow=c(2,1))
-hist(datos_ajuste$Z_Grado, xlim=c(-2,11), xlab="", las=1, main="Distribución de Z Grado")
-boxplot(datos_ajuste$Z_Grado, horizontal = TRUE, ylim=c(-2,11),xlab="Z Grado")
+boxplot(datos_ajuste$Z_Grado, horizontal = TRUE, ylim=c(-2,11),xlab="",main="Distribución de Z Grado", frame=FALSE)
+hist(datos_ajuste$Z_Grado, xlim=c(-2,11),las=1, xlab="Z Grado",main="")
+abline(v=median(datos_ajuste$Z_Grado, na.rm=TRUE), col="red",lty=2,lwd=2)
+text(x=1.5, y=200, labels = paste("Median =", round(median(datos_ajuste$Z_Grado, na.rm = TRUE),2)))
 dev.off()
 
 sink("../02salidas/Est_Z_Grado.txt")
