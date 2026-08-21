@@ -46,7 +46,7 @@ text(x=median(datos_ajuste2$DIT)*1.5, y=95, labels = paste("Median =", round(med
 dev.off()
 
 sink("../02salidas/Est_DIT.txt")
-cat(paste("n =", nrow(datos_ajuste2)))
+cat(paste("n =", nrow(datos_ajuste2)),"\n")
 summary(datos_ajuste2$DIT)
 sink()
 
@@ -59,7 +59,7 @@ text(x=1.5, y=200, labels = paste("Median =", round(median(datos_ajuste$Z_Grado,
 dev.off()
 
 sink("../02salidas/Est_Z_Grado.txt")
-cat(paste("n =", sum(!is.na(datos_ajuste$Z_Grado))))
+cat(paste("n =", sum(!is.na(datos_ajuste$Z_Grado)),"\n"))
 summary(datos_ajuste$Z_Grado)
 sink()
 
