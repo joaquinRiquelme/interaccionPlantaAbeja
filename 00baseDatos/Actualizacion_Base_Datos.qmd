@@ -33,6 +33,7 @@ fuentes[fuentes=="kbrest2009"] <- "075"
 fuentes[fuentes=="kbcontrol2009"] <- "076"
 fuentes[fuentes=="2010"] <- "077"
 fuentes[fuentes=="Var2012"] <- "078"
+fuentes<-fuentes[fuentes!="078"]
 fuentes[fuentes=="chaco0611"] <- "079"
 fuentes[fuentes=="res_1521"] <- "080"
 

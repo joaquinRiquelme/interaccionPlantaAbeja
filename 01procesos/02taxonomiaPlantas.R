@@ -12,6 +12,18 @@ ml.arm$plantas[ml.arm$plantas=="Argyranthemum.frutescencs"] <- "Argyranthemum.fr
 ml.arm$plantas[ml.arm$plantas=="Ampetopsis.brevipedunculata"] <- "Ampelopsis.brevipedunculata" 
 ml.arm$plantas[ml.arm$plantas=="AB"] <- "Acacia.bahiensis" 
 
+# codigos de matriz 076
+ml.arm$plantas[ml.arm$plantas=="AO"] <- "Anacardium.occidentale" 
+ml.arm$plantas[ml.arm$plantas=="SA"] <- "Stigmaphyllon.auriculatum" 
+ml.arm$plantas[ml.arm$plantas=="AT"] <- "Alternanthera.brasiliana" 
+ml.arm$plantas[ml.arm$plantas=="BC"] <- "Boerhavia.coccinia" 
+ml.arm$plantas[ml.arm$plantas=="ZC"] <- "Ziziphus.cotinifolia" 
+
+# AO =  L, Anacardiaceae
+# SA = Stigmaphyllon auriculatum (Cav.) A. Juss., Malpighiaceae
+# AT= Alternanthera brasiliana (L.) Kuntze, Amaranthaceae
+# BC = Boerhavia coccinia Mill., Nyctaginaceae
+# ZC=  Ziziphus cotinifolia Reiss., Rhamnaceae
 
 ml.arm$Especie.planta <- gsub(pattern = "[.]",replacement = " ", x = ml.arm$plantas)
 
