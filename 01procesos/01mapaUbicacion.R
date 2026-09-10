@@ -10,11 +10,11 @@ library("ggmap")
 # base_datos <- readRDS("../00baseDatos/base_datos.RDS")
 # ubi <- base_datos$ubicacion.geografica
 ubi <- read.csv("../00baseDatos/tablas/ubicacion.geografica.csv")
-ubi[ubi$ID== "M_060", "Longitud"] <- 57.3
+# ubi[ubi$ID== "M_060", "Longitud"] <- 57.3
 
 head(ubi)
 
-write.csv(ubi, file.path(dir.salidas, "ubicacion.csv"), row.names = FALSE)
+# write.csv(ubi, file.path(dir.salidas, "ubicacion.csv"), row.names = FALSE)
 
 ubi_sf <- st_as_sf(ubi, coords = c("Longitud", "Latitud"), crs="4326")
 

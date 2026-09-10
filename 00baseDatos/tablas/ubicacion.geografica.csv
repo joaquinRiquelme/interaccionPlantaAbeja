@@ -1,5 +1,4 @@
 ID,Localidad,Latitud,Longitud
-chaco0611,Monte Desert ecoregion at Villavicencio Nature Reserve,-32.53,-68.95
 M_001,Cordon del Cepo,-33.28,-70.27
 M_002,Cordon del Cepo,-33.28,-70.27
 M_003,Cordon del Cepo,-33.28,-70.27
@@ -18,8 +17,7 @@ M_016,Doñana Nat. Park,37.02,-6.55
 M_017,Bristol,51.57,-2.59
 M_018,Hestehaven,56.23874,9.973652
 M_019,Snowy Mountains,-36.45,148.27
-M_020,Snowy Mountains,-36.45,148.27
-M_020,"Hazen Camp,  Ellesmere Island",81.82,-71.3
+M_020,"Hazen Camp,  Ellesmere Island",81.816667,-71.3
 M_021,"Ashu,  Kyoto",35.33,135.75
 M_022,"Laguna Diamante, Mendoza",-34.17,-69.7
 M_023,"Rio Blanco,  Mendoza",-33,-69.28
@@ -56,16 +54,17 @@ M_056,"Mt. Kushigata, Yamanashi Pref.",35.58,138.38
 M_057,"Kibune,  Kyoto",35.17,135.87
 M_058,Natural Park of Cap de Creus,42.3,3.24
 M_059,Parque Nacional do Catimbau,-8.51,-37.2
-M_060,"Black River Gorges National Park, Mauritius",-20.7,57.73
+M_060,"Black River Gorges National Park, Mauritius",-20.7,57.7333333
 M_061,"Morne Seychellois National Park, Mahé",-4.67,55.43
 M_062,"Carlinville, Illinois,",39.27896,-89.89688
 M_072,"Amarante, Pampas",-37.84201,-58.358571
 M_073,"Montgomery County, Maryland",38.96955,-77.17637
-M_11.1,Mauritius Island,-20.35,57.55
-M_11.2,Mauritius Island,-20.35,57.55
-M_Kahe,Municipio Morretes,-25.4,-48.9667
-M_kbcontrol2009,"Black River Gorges, National Park",-20.7,57.7333
-M_kbrest2009,"Black River Gorges, National Park",-20.7,57.7333
-M_res_1521,Colorado (University of Colorado’s Mountain Research Station),40.03,-105.5405
-M_Var2012,"(Estación Biológica) Santa Teresa, estado de Espiritu Santo",-19.936,-40.6
-Santos_2010,"municipality of Itatim , State of Bahia",-12.7,-39.7667
+M_074,Municipio Morretes,-25.4,-48.9667
+M_075.1,"Black River Gorges, National Park",-20.7,57.7333
+M_075.2,"Black River Gorges, National Park",-20.7,57.7333
+M_076,"municipality of Itatim , State of Bahia",-12.7,-39.7667
+M_077,"(Estación Biológica) Santa Teresa, estado de Espiritu Santo",-19.936,-40.6
+M_079,Monte Desert ecoregion at Villavicencio Nature Reserve,-32.53,-68.95
+M_080,Colorado (University of Colorado’s Mountain Research Station),40.03,-105.5405
+M_011.1,Mauritius Island,-20.35,57.55
+M_011.2,Mauritius Island,-20.35,57.55

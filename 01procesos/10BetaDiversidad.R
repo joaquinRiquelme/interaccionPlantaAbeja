@@ -156,7 +156,22 @@ insectos <- read.csv("../00baseDatos/redestemproalesidactualizadomatricescuantit
 library(rgbif)
 
 # Buscar la familia (por ejemplo, Orchidaceae)
-familia_info <- name_backbone(name = insectos$species_name, rank = "family", )
+
+# Aplicar la función a cada nombre de la lista
+familias_info <- lapply(nombres.insectos, function(nombre) {
+  name_backbone(name = nombre, rank = "family")
+})
+
+# Extraer los familyKey en un vector limpio, eliminando los que no se encontraron (NULL)
+familias_keys <- sapply(familias_info, function(x) x$familyName)
+familias_keys <- unlist(familias_keys)
+
+print(familias_keys)
+
+
+nombres.insectos <- insectos$species_name
+nombres.insectos <- nombres.insectos[nombres.insectos!=""]
+familia_info <- name_backbone(name = nombres.insectos, rank = "family" )
 
 # Ver el ID de la familia
 familia_key <- familia_info$familyKey

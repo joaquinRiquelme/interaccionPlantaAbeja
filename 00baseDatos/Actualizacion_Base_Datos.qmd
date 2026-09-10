@@ -27,16 +27,17 @@ base_datos <- readRDS("base_datos.RDS")
 
 matriz.general <-  readxl::read_excel("Matriz_general.xlsx", sheet = 1, skip = 1)[,-1]
 fuentes <- unique(matriz.general$ID)
+fuentes[fuentes=="Santos_2010"] <- "M_076"
 fuentes <- substr(x = fuentes, start = regexpr(pattern = "_", text = fuentes)+1,  stop = nchar(fuentes))
 fuentes[fuentes=="Kahe"] <- "074"
-fuentes[fuentes=="kbrest2009"] <- "075"
-fuentes[fuentes=="kbcontrol2009"] <- "076"
-fuentes[fuentes=="2010"] <- "077"
-fuentes[fuentes=="Var2012"] <- "078"
+fuentes[fuentes=="kbcontrol2009"] <- "075.1"
+fuentes[fuentes=="kbrest2009"] <- "075.2"
+fuentes[fuentes=="Var2012"] <- "077"
+fuentes[fuentes=="11.1"] <- "011.1"
+fuentes[fuentes=="11.2"] <- "011.2"
 fuentes<-fuentes[fuentes!="078"]
 fuentes[fuentes=="chaco0611"] <- "079"
 fuentes[fuentes=="res_1521"] <- "080"
-
 fuentes <- fuentes[fuentes!=""]
 
 fuentes.carpetas <- list.files(path = "datosOriginales/")
@@ -44,6 +45,7 @@ fuentes.carpetas.id <- substr(fuentes.carpetas, 1, regexpr(pattern = "_", text =
 
 # fuentes que estan en la martriz pero no en las carpetas
 setdiff(fuentes, fuentes.carpetas.id)
+setdiff(fuentes.carpetas.id,fuentes)
 
 # fuentes que estan en las carpetas pero no en la martriz 
 setdiff(fuentes.carpetas.id, fuentes)
