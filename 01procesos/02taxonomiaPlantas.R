@@ -178,6 +178,7 @@ print(table(unique(data.sin.arm[,c("ID","plantas")])$ID))
 
 
 write.csv(data.sin.arm, "datos.no.armonizados.plantas.csv", row.names = FALSE)
+write_xlsx(data.sin.arm, "datos.no.armonizados.plantas.xlsx")
 
 print(head(subset(data.sin.arm, !(ID %in% c("M_040","M_041","M_046", "M_075.2","M_076","M_079")))))
 stop(paste(length(unique(plantas.sin.arm))," especies faltantes"))
@@ -330,7 +331,3 @@ write.csv(ml.arm.2, "ml.armonizado.plantas.abejas.csv", row.names = FALSE)
 ml.arm.2 <- read.csv("ml.armonizado.plantas.abejas.csv")
 
 head(ml.arm.2)
-
-
-aaaa
-
