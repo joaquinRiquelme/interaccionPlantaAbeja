@@ -127,8 +127,12 @@ for(i in 1:nrow(combi)){
 
 library(tidyverse)
 library(gtools)
-library(rgra)
+# library(rgraph)
 
+
+
+# Proyecto 79 Chacoff ----
+print("Inicio Chachoff 079")
 RT.chachoff <- list.files(path="../00baseDatos/redestemproalesidactualizadomatricescuantitativass/79_1chacoff_2006 - redes temporales/",
            pattern = ".xlsx", full.names = TRUE)
 chacof.l <- c()
@@ -153,37 +157,37 @@ insectos <- read.csv("../00baseDatos/redestemproalesidactualizadomatricescuantit
 # abejas$species_name <- gsub(pattern = " ", replacement = "_", x = abejas$sp.armonizado)
 # abejas$species_name2 <- substr(abejas$species_name,  pattern = " ", replacement = "_", x = abejas$sp.armonizado)
 
-library(rgbif)
+# library(rgbif)
 
 # Buscar la familia (por ejemplo, Orchidaceae)
 
 # Aplicar la función a cada nombre de la lista
-familias_info <- lapply(nombres.insectos, function(nombre) {
-  name_backbone(name = nombre, rank = "family")
-})
+# familias_info <- lapply(nombres.insectos, function(nombre) {
+  # name_backbone(name = nombre, rank = "family")
+# })
 
 # Extraer los familyKey en un vector limpio, eliminando los que no se encontraron (NULL)
-familias_keys <- sapply(familias_info, function(x) x$familyName)
-familias_keys <- unlist(familias_keys)
+# familias_keys <- sapply(familias_info, function(x) x$familyName)
+# familias_keys <- unlist(familias_keys)
 
-print(familias_keys)
+# print(familias_keys)
 
 
-nombres.insectos <- insectos$species_name
-nombres.insectos <- nombres.insectos[nombres.insectos!=""]
-familia_info <- name_backbone(name = nombres.insectos, rank = "family" )
+# nombres.insectos <- insectos$species_name
+# nombres.insectos <- nombres.insectos[nombres.insectos!=""]
+# familia_info <- name_backbone(name = nombres.insectos, rank = "family" )
 
 # Ver el ID de la familia
-familia_key <- familia_info$familyKey
-print(familia_key)
+# familia_key <- familia_info$familyKey
+# print(familia_key)
 
 
-insectos <- subset(insectos, is.element(species_name, abejas$species_name))
-setdiff( unique(abejas$species_name),unique(insectos$species_name))
-
-head(chacof)
-head(plantas)
-head(insectos)
+# insectos <- subset(insectos, is.element(species_name, abejas$species_name))
+# setdiff( unique(abejas$species_name),unique(insectos$species_name))
+# 
+# head(chacof)
+# head(plantas)
+# head(insectos)
 
 chacof.p <- merge(chacof, plantas, by="plant_code")
 chacof.f <- merge(chacof.p, insectos, by="pol_code", suffixes = c("_plant","_pol"))
@@ -198,6 +202,8 @@ lista.beta <- list()
 lista.beta.abeja <- list()
 tabla.beta <- c()
 tabla.beta.abeja <- c()
+
+datos.rt <- chacof.f
 
 for(i in 1:nrow(combi)){
   combi.i <- combi[i,]
@@ -263,10 +269,10 @@ dev.off()
 
 
 
-par(mfrow=c(1,2))
+# par(mfrow=c(1,2))
 
 
-png("TrayectoriaBetadiversidadChacoff.png")
+png("TrayectoriaBetadiversidadChacoff079.png")
 plot(WN~periodo.n, tabla.beta, type=c("b"), ylim=c(0,1),
      ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
      xlab="Periodo", 
@@ -313,59 +319,703 @@ lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$ST, type=c("b"), ylim=c(0
 
 head(chacof.f)
 
-chacof06 <- readxl::read_excel("../00baseDatos/redestemproalesidactualizadomatricescuantitativass/79_1chacoff_2006 - redes temporales/79_1chacoff_2006.xlsx")
-head(chacof06)
-
-c06 <- pivot_longer(chacof06, cols = 2:136)
-c06 <- subset(c06, value!=0)
-
-chacof07 <- readxl::read_excel("../00baseDatos/redestemproalesidactualizadomatricescuantitativass/79_1chacoff_2006 - redes temporales/79_2Chacof_2007.xlsx")
-head(chacof07)
-c07 <- pivot_longer(chacof07, cols = 2:136)
-c07 <- subset(c07, value!=0)
 
 
+# Proyecto 60 Kaiser Bunbury ----
+print("Inicio Kaiser060")
+RT.Kaise60 <- list.files(path="../00baseDatos/redestemproalesidactualizadomatricescuantitativass/M_PL_060_KBunbury_temporales/",
+                          pattern = ".csv", full.names = TRUE)
+
+RT.Kaise60 <- RT.Kaise60[!(RT.Kaise60 %in% grepv(pattern = "species", x = RT.Kaise60))]
+kaiser60.l <- c()
+
+for(i in RT.Kaise60){
+  kaiser60.i <- read.csv(i)
+  print(dim(kaiser60.i))
+  kaiser60.i.l <- pivot_longer(kaiser60.i, cols = 2:ncol(kaiser60.i))
+  kaiser60.i.t <- substr(i, nchar(i)-5, nchar(i)-4)
+  kaiser60.i.l$t <- kaiser60.i.t
+  kaiser60.l <- rbind(kaiser60.l,kaiser60.i.l)
+  
+}
+
+head(kaiser60.l)
+kaiser60 <- subset(kaiser60.l, value!=0)
+names(kaiser60) <- c("plant_code","pol_code","value","t")
+kaiser60$pol_code <- gsub(pattern = "\\.$", replacement = "", x = kaiser60$pol_code)
+kaiser60$pol_code <- gsub(pattern = "[.]", replacement = "_", x = kaiser60$pol_code)
+
+abejas <- read.csv("ml.abejas.csv")
+abejas <- subset(abejas, ID=="M_060")
+abejas$species_name <- gsub(pattern = " ", replacement = "_", x = abejas$sp.armonizado)
+# abejas$species_name2 <- substr(abejas$species_name,  pattern = " ", replacement = "_", x = abejas$sp.armonizado)
 
 
-m1g <- graph_from_data_frame(c06[,c(1,2)])
-m2g <- graph_from_data_frame(c07[,c(1,2)])
+sort(union(setdiff(unique(kaiser60$pol_code), unique(abejas$species_name)),
+     setdiff(unique(abejas$species_name),unique(kaiser60$pol_code))))
 
-plot(m1g)
-plot(m2g)
+Kaiser60.f <- subset(kaiser60, pol_code %in% abejas$species_name)
+# Kaiser60.f <- subset(Kaiser60.f, ID=="M_060")
+
+combi <- combinations(v = as.numeric(unique(Kaiser60.f$t)), 
+                      r = 2, 
+                      n=length(unique(Kaiser60.f$t)))
+
+combi <- subset(combi, (combi[,2]-combi[,1])==1)
+
+lista.beta <- list()
+lista.beta.abeja <- list()
+tabla.beta <- c()
+tabla.beta.abeja <- c()
+
+datos.rt <- Kaiser60.f
+datos.rt$t <- as.numeric(datos.rt$t)
+
+for(i in 1:nrow(combi)){
+  combi.i <- combi[i,]
+  id.1 <- combi.i[1]
+  id.2 <- combi.i[2]
+  
+  print(id.1)
+  print(id.2)
+  
+  rt.i1 <- subset(datos.rt, t==id.1) 
+  rt.i2 <- subset(datos.rt, t==id.2) 
+  
+  m1g <- graph_from_data_frame(rt.i1[,c(1,2)])
+  m2g <- graph_from_data_frame(rt.i2[,c(1,2)])
+  
+  
+  m1g.abeja <- graph_from_data_frame(rt.i1[,c(2,1)])
+  m2g.abeja <- graph_from_data_frame(rt.i2[,c(2,1)])
+  
+  # lista.beta.i <- betalink(m1g, m2g, bf = Wi)
+  lista.beta.i <- betalink(m2g, m1g, bf = Wi)
+  tabla.beta.i <- as.data.frame(lista.beta.i)
+  lista.beta <- c(lista.beta,lista.beta.i)
+  
+  tabla.beta <- rbind(tabla.beta,tabla.beta.i)
+  
+  lista.beta.i.abeja <- betalink(m1g, m2g, bf = B01)
+  tabla.beta.i.abeja <- as.data.frame(lista.beta.i.abeja)
+  lista.beta.abeja <- c(lista.beta.abeja,lista.beta.i.abeja)
+  
+  tabla.beta.abeja <- rbind(tabla.beta.abeja,tabla.beta.i.abeja)
+  
+  
+  print(betalink(m1g, m2g, bf = Wi))
+  
+}
+
+library(lattice)
+library(psych)
+
+tabla.beta$periodo <- paste(combi[,1],combi[,2], sep="-")
+tabla.beta$periodo.n <- as.numeric(rownames(tabla.beta))
+
+tabla.beta.abeja$periodo <- paste(combi[,1],combi[,2], sep="-")
+tabla.beta.abeja$periodo.n <- as.numeric(rownames(tabla.beta.abeja))
 
 
-betalink(m1g, m2g, bf = B01)
+par(mfrow=(c(2,2)))
+plot(S~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Turnover S")
 
-library(gtools)
+plot(OS~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Rewiring OS")
 
+plot(WN~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Whole network WN")
 
-
-library(igraph)
-
-# 1. Crear un data frame de aristas (relaciones Persona -> Empresa)
-edges <- c07
-
-# 2. Crear una lista de nodos únicos y definir su tipo (TRUE/FALSE)
-# Identificamos qué nombres pertenecen a cada grupo
-nodos_desde <- unique(edges$...1)
-nodos_hasta <- unique(edges$name)
-
-vertices <- data.frame(
-  name = c(nodos_desde, nodos_hasta),
-  type = c(rep(FALSE, length(nodos_desde)), rep(TRUE, length(nodos_hasta)))
-)
-
-# 3. Crear el grafo bipartito
-g <- graph_from_data_frame(d = edges, directed = FALSE, vertices = vertices)
-
-# 4. Verificar que es bipartito
-is_bipartite(g) # Debe retornar TRUE
-
-# 5. Graficar con una distribución bipartita
-plot(g, 
-     layout = layout_as_bipartite(g), 
-     vertex.color = c("tomato", "gold")[V(g)$type + 1],
-     vertex.size = 20,
-     vertex.label.cex = 0.8)
+plot(ST~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Asociado a Turnover ST")
 
 
+dev.off()
+
+
+
+par(mfrow=c(1,2))
+
+
+png("TrayectoriaBetadiversidadKaiser060.png")
+plot(WN~periodo.n, tabla.beta, type=c("b"), ylim=c(0,1),
+     ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
+     xlab="Periodo", 
+     xlim=c(0.8,max(tabla.beta$periodo.n+0.2)),
+     main="Trayectoría de Betadiversidad Kaiser 60")
+
+
+axis(1, at = c(1:max(tabla.beta$periodo.n)), labels = unique(tabla.beta$periodo))
+
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$S, type=c("b"), ylim=c(0,1),
+      col=2, lty=2, pch=16)
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$OS, type=c("b"), ylim=c(0,1),
+      col=3, lty=3, pch=16)
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$ST, type=c("b"), ylim=c(0,1),
+      col=4, lty=4, pch=16)
+
+legend(col=c(1,2,3,4), legend=c("WN","S","OS","ST"), "topright", lty=c(1,2,3,4), pch=16, seg.len = 5)
+dev.off()
+
+tabla.beta
+
+plot(WN~periodo.n, tabla.beta.abeja, type=c("b"), ylim=c(0,1),
+     ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
+     xlab="Periodo", 
+     xlim=c(0.8,max(tabla.beta.abeja$periodo.n+0.2)
+            
+     ))
+
+axis(1, at = c(1:max(tabla.beta.abeja$periodo.n)), labels = unique(tabla.beta.abeja$periodo))
+
+
+lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$S, type=c("b"), ylim=c(0,1),
+      col=2, lty=2, pch=16)
+
+lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$OS, type=c("b"), ylim=c(0,1),
+      col=3, lty=3, pch=16)
+
+lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$ST, type=c("b"), ylim=c(0,1),
+      col=4, lty=4, pch=16)
+
+# Proyecto 61 Kaiser Bunbury ----
+print("Inicio Kaiser061")
+RT.Kaise61 <- list.files(path="../00baseDatos/redestemproalesidactualizadomatricescuantitativass/M_PL_061_KBunbury_2014_Temporales",
+                         pattern = ".csv", full.names = TRUE)
+
+kaiser61.l <- c()
+
+for(i in RT.Kaise61){
+  kaiser61.i <- read.csv(i)
+  print(dim(kaiser61.i))
+  kaiser61.i.l <- pivot_longer(kaiser61.i, cols = 2:ncol(kaiser61.i))
+  kaiser61.i.t <- substr(i, nchar(i)-5, nchar(i)-4)
+  kaiser61.i.l$t <- kaiser61.i.t
+  kaiser61.l <- rbind(kaiser61.l, kaiser61.i.l)
+  
+}
+
+head(kaiser61.l)
+kaiser61 <- subset(kaiser61.l, value!=0)
+names(kaiser61) <- c("plant_code","pol_code","value","t")
+kaiser61$pol_code <- gsub(pattern = "\\.$", replacement = "", x = kaiser61$pol_code)
+kaiser61$pol_code <- gsub(pattern = "[.]", replacement = "_", x = kaiser61$pol_code)
+
+abejas <- read.csv("ml.abejas.csv")
+abejas <- subset(abejas, ID=="M_061")
+abejas$species_name <- gsub(pattern = " ", replacement = "_", x = abejas$sp.armonizado)
+# abejas$species_name2 <- substr(abejas$species_name,  pattern = " ", replacement = "_", x = abejas$sp.armonizado)
+
+
+sort(union(setdiff(unique(kaiser61$pol_code), unique(abejas$species_name)),
+           setdiff(unique(abejas$species_name),unique(kaiser61$pol_code))))
+
+Kaiser61.f <- subset(kaiser61, pol_code %in% abejas$species_name)
+# Kaiser60.f <- subset(Kaiser60.f, ID=="M_060")
+
+combi <- combinations(v = as.numeric(unique(Kaiser61.f$t)), 
+                      r = 2, 
+                      n=length(unique(Kaiser61.f$t)))
+
+combi <- subset(combi, (combi[,2]-combi[,1])==1)
+
+lista.beta <- list()
+lista.beta.abeja <- list()
+tabla.beta <- c()
+tabla.beta.abeja <- c()
+
+datos.rt <- Kaiser61.f
+datos.rt$t <- as.numeric(datos.rt$t)
+
+for(i in 1:nrow(combi)){
+  combi.i <- combi[i,]
+  id.1 <- combi.i[1]
+  id.2 <- combi.i[2]
+  
+  print(id.1)
+  print(id.2)
+  
+  rt.i1 <- subset(datos.rt, t==id.1) 
+  rt.i2 <- subset(datos.rt, t==id.2) 
+  
+  m1g <- graph_from_data_frame(rt.i1[,c(1,2)])
+  m2g <- graph_from_data_frame(rt.i2[,c(1,2)])
+  
+  
+  m1g.abeja <- graph_from_data_frame(rt.i1[,c(2,1)])
+  m2g.abeja <- graph_from_data_frame(rt.i2[,c(2,1)])
+  
+  # lista.beta.i <- betalink(m1g, m2g, bf = Wi)
+  lista.beta.i <- betalink(m2g, m1g, bf = Wi)
+  tabla.beta.i <- as.data.frame(lista.beta.i)
+  lista.beta <- c(lista.beta,lista.beta.i)
+  
+  tabla.beta <- rbind(tabla.beta,tabla.beta.i)
+  
+  lista.beta.i.abeja <- betalink(m1g, m2g, bf = B01)
+  tabla.beta.i.abeja <- as.data.frame(lista.beta.i.abeja)
+  lista.beta.abeja <- c(lista.beta.abeja,lista.beta.i.abeja)
+  
+  tabla.beta.abeja <- rbind(tabla.beta.abeja,tabla.beta.i.abeja)
+  
+  
+  print(betalink(m1g, m2g, bf = Wi))
+  
+}
+
+library(lattice)
+library(psych)
+
+tabla.beta$periodo <- paste(combi[,1],combi[,2], sep="-")
+tabla.beta$periodo.n <- as.numeric(rownames(tabla.beta))
+
+tabla.beta.abeja$periodo <- paste(combi[,1],combi[,2], sep="-")
+tabla.beta.abeja$periodo.n <- as.numeric(rownames(tabla.beta.abeja))
+
+
+par(mfrow=(c(2,2)))
+plot(S~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Turnover S")
+
+plot(OS~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Rewiring OS")
+
+plot(WN~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Whole network WN")
+
+plot(ST~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Asociado a Turnover ST")
+
+
+dev.off()
+
+
+
+par(mfrow=c(1,2))
+png("TrayectoriaBetadiversidadKaiser061.png")
+plot(WN~periodo.n, tabla.beta, type=c("b"), ylim=c(0,1),
+     ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
+     xlab="Periodo", 
+     xlim=c(0.8,max(tabla.beta$periodo.n+0.2)),
+     main="Trayectoría de Betadiversidad Kaiser 61")
+
+
+axis(1, at = c(1:max(tabla.beta$periodo.n)), labels = unique(tabla.beta$periodo))
+
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$S, type=c("b"), ylim=c(0,1),
+      col=2, lty=2, pch=16)
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$OS, type=c("b"), ylim=c(0,1),
+      col=3, lty=3, pch=16)
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$ST, type=c("b"), ylim=c(0,1),
+      col=4, lty=4, pch=16)
+
+legend(col=c(1,2,3,4), legend=c("WN","S","OS","ST"), "topright", lty=c(1,2,3,4), pch=16, seg.len = 5)
+dev.off()
+
+tabla.beta
+
+plot(WN~periodo.n, tabla.beta.abeja, type=c("b"), ylim=c(0,1),
+     ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
+     xlab="Periodo", 
+     xlim=c(0.8,max(tabla.beta.abeja$periodo.n+0.2)
+            
+     ))
+
+axis(1, at = c(1:max(tabla.beta$periodo.n)), labels = unique(tabla.beta.abeja$periodo))
+
+
+lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$S, type=c("b"), ylim=c(0,1),
+      col=2, lty=2, pch=16)
+
+lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$OS, type=c("b"), ylim=c(0,1),
+      col=3, lty=3, pch=16)
+
+lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$ST, type=c("b"), ylim=c(0,1),
+      col=4, lty=4, pch=16)
+
+
+
+
+
+# Proyecto 72 Sabatino ----
+print("Inicio Kaiser072")
+RT.Sabatino72 <- list.files(path="../00baseDatos/redestemproalesidactualizadomatricescuantitativass/M_PL_072 - Sabatino-Redes temporales/",
+                         pattern = ".csv", full.names = TRUE)
+
+Sabatino72.l <- c()
+
+for(i in RT.Sabatino72){
+  Sabatino72.i <- read.csv(i)
+  print(dim(Sabatino72.i))
+  Sabatino72.i.l <- pivot_longer(Sabatino72.i, cols = 2:ncol(Sabatino72.i))
+  Sabatino72.i.t <- substr(i, nchar(i)-5, nchar(i)-4)
+  Sabatino72.i.l$t <- Sabatino72.i.t
+  Sabatino72.l <- rbind(Sabatino72.l,Sabatino72.i.l)
+  
+}
+
+head(Sabatino72.l)
+Sabatino72 <- subset(Sabatino72.l, value!=0)
+names(Sabatino72) <- c("plant_code","pol_code","value","t")
+Sabatino72$pol_code <- gsub(pattern = "\\.$", replacement = "", x = Sabatino72$pol_code)
+Sabatino72$pol_code <- gsub(pattern = "[.]", replacement = "_", x = Sabatino72$pol_code)
+
+abejas <- read.csv("ml.abejas.csv")
+abejas <- subset(abejas, ID=="M_072")
+abejas$species_name <- gsub(pattern = " ", replacement = "_", x = abejas$sp.armonizado)
+# abejas$species_name2 <- substr(abejas$species_name,  pattern = " ", replacement = "_", x = abejas$sp.armonizado)
+
+Sabatino72.f <- subset(Sabatino72, pol_code %in% abejas$species_name)
+# Kaiser60.f <- subset(Kaiser60.f, ID=="M_060")
+
+combi <- combinations(v = as.numeric(unique(Sabatino72.f$t)), 
+                      r = 2, 
+                      n=length(unique(Sabatino72.f$t)))
+
+combi <- subset(combi, (combi[,2]-combi[,1])==1)
+
+lista.beta <- list()
+lista.beta.abeja <- list()
+tabla.beta <- c()
+tabla.beta.abeja <- c()
+
+datos.rt <- Sabatino72.f
+datos.rt$t <- as.numeric(datos.rt$t)
+
+for(i in 1:nrow(combi)){
+  combi.i <- combi[i,]
+  id.1 <- combi.i[1]
+  id.2 <- combi.i[2]
+  
+  print(id.1)
+  print(id.2)
+  
+  rt.i1 <- subset(datos.rt, t==id.1) 
+  rt.i2 <- subset(datos.rt, t==id.2) 
+  
+  m1g <- graph_from_data_frame(rt.i1[,c(1,2)])
+  m2g <- graph_from_data_frame(rt.i2[,c(1,2)])
+  
+  
+  m1g.abeja <- graph_from_data_frame(rt.i1[,c(2,1)])
+  m2g.abeja <- graph_from_data_frame(rt.i2[,c(2,1)])
+  
+  # lista.beta.i <- betalink(m1g, m2g, bf = Wi)
+  lista.beta.i <- betalink(m2g, m1g, bf = Wi)
+  tabla.beta.i <- as.data.frame(lista.beta.i)
+  lista.beta <- c(lista.beta,lista.beta.i)
+  
+  tabla.beta <- rbind(tabla.beta,tabla.beta.i)
+  
+  lista.beta.i.abeja <- betalink(m1g, m2g, bf = B01)
+  tabla.beta.i.abeja <- as.data.frame(lista.beta.i.abeja)
+  lista.beta.abeja <- c(lista.beta.abeja,lista.beta.i.abeja)
+  
+  tabla.beta.abeja <- rbind(tabla.beta.abeja,tabla.beta.i.abeja)
+  
+  
+  print(betalink(m1g, m2g, bf = Wi))
+  
+}
+
+library(lattice)
+library(psych)
+
+tabla.beta$periodo <- paste(combi[,1],combi[,2], sep="-")
+tabla.beta$periodo.n <- as.numeric(rownames(tabla.beta))
+
+tabla.beta.abeja$periodo <- paste(combi[,1],combi[,2], sep="-")
+tabla.beta.abeja$periodo.n <- as.numeric(rownames(tabla.beta.abeja))
+
+
+par(mfrow=(c(2,2)))
+plot(S~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Turnover S")
+
+plot(OS~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Rewiring OS")
+
+plot(WN~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Whole network WN")
+
+plot(ST~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Asociado a Turnover ST")
+
+
+dev.off()
+
+
+
+par(mfrow=c(1,2))
+
+png("TrayectoriaBetadiversidadSabatino072.png")
+plot(WN~periodo.n, tabla.beta, type=c("b"), ylim=c(0,1),
+     ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
+     xlab="Periodo", 
+     xlim=c(0.8,max(tabla.beta$periodo.n+0.2)),
+     main="Trayectoría de Betadiversidad Sabatino 72")
+
+
+axis(1, at = c(1:max(tabla.beta$periodo.n)), labels = unique(tabla.beta$periodo))
+
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$S, type=c("b"), ylim=c(0,1),
+      col=2, lty=2, pch=16)
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$OS, type=c("b"), ylim=c(0,1),
+      col=3, lty=3, pch=16)
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$ST, type=c("b"), ylim=c(0,1),
+      col=4, lty=4, pch=16)
+
+legend(col=c(1,2,3,4), legend=c("WN","S","OS","ST"), "topright", lty=c(1,2,3,4), pch=16, seg.len = 5)
+dev.off()
+
+tabla.beta
+
+plot(WN~periodo.n, tabla.beta.abeja, type=c("b"), ylim=c(0,1),
+     ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
+     xlab="Periodo", 
+     xlim=c(0.8,max(tabla.beta.abeja$periodo.n+0.2)
+            
+     ))
+
+axis(1, at = c(1:max(tabla.beta$periodo.n)), labels = unique(tabla.beta.abeja$periodo))
+
+
+lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$S, type=c("b"), ylim=c(0,1),
+      col=2, lty=2, pch=16)
+
+lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$OS, type=c("b"), ylim=c(0,1),
+      col=3, lty=3, pch=16)
+
+lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$ST, type=c("b"), ylim=c(0,1),
+      col=4, lty=4, pch=16)
+
+
+# Proyecto 80 Resasco ----
+print("Inicio Kaiser080")
+RT.Resasco80 <- list.files(path="../00baseDatos/redestemproalesidactualizadomatricescuantitativass/M_080_ Resasco et al 2021 Ecology-Temporal",
+                            pattern = ".xlsx", full.names = TRUE)
+
+Resasco80.l <- c()
+
+for(i in RT.Resasco80){
+  Resasco80.i <- read_xlsx(path = i, sheet=1)
+  print(dim(Resasco80.i))
+  Resasco80.i.l <- pivot_longer(Resasco80.i, cols = 2:ncol(Resasco80.i))
+  Resasco80.i.t <- substr(i, nchar(i)-8, nchar(i)-5)
+  Resasco80.i.l$t <- Resasco80.i.t
+  Resasco80.l <- rbind(Resasco80.l,Resasco80.i.l)
+  
+}
+
+head(Resasco80.l)
+Resasco80 <- subset(Resasco80.l, value!=0)
+names(Resasco80) <- c("plant_code","pol_code","value","t")
+Resasco80$pol_code <- gsub(pattern = "\\.$", replacement = "", x = Resasco80$pol_code)
+Resasco80$pol_code <- gsub(pattern = "[.]", replacement = "_", x = Resasco80$pol_code)
+
+# abejas <- read.csv("ml.abejas.csv")
+# abejas <- subset(abejas, ID=="M_080")
+# abejas$species_name <- gsub(pattern = " ", replacement = "_", x = abejas$sp.armonizado)
+# abejas$species_name2 <- substr(abejas$species_name,  pattern = " ", replacement = "_", x = abejas$sp.armonizado)
+
+# Sabatino72.f <- subset(Sabatino72, pol_code %in% abejas$species_name)
+Resasco80.f <- Resasco80
+# Kaiser60.f <- subset(Kaiser60.f, ID=="M_060")
+
+combi <- combinations(v = as.numeric(unique(Resasco80.f$t)), 
+                      r = 2, 
+                      n=length(unique(Resasco80.f$t)))
+
+combi <- subset(combi, (combi[,2]-combi[,1])==1)
+
+lista.beta <- list()
+lista.beta.abeja <- list()
+tabla.beta <- c()
+tabla.beta.abeja <- c()
+
+datos.rt <- Resasco80.f
+datos.rt$t <- as.numeric(datos.rt$t)
+
+for(i in 1:nrow(combi)){
+  combi.i <- combi[i,]
+  id.1 <- combi.i[1]
+  id.2 <- combi.i[2]
+  
+  print(id.1)
+  print(id.2)
+  
+  rt.i1 <- subset(datos.rt, t==id.1) 
+  rt.i2 <- subset(datos.rt, t==id.2) 
+  
+  m1g <- graph_from_data_frame(rt.i1[,c(1,2)])
+  m2g <- graph_from_data_frame(rt.i2[,c(1,2)])
+  
+  
+  m1g.abeja <- graph_from_data_frame(rt.i1[,c(2,1)])
+  m2g.abeja <- graph_from_data_frame(rt.i2[,c(2,1)])
+  
+  # lista.beta.i <- betalink(m1g, m2g, bf = Wi)
+  lista.beta.i <- betalink(m2g, m1g, bf = Wi)
+  tabla.beta.i <- as.data.frame(lista.beta.i)
+  lista.beta <- c(lista.beta,lista.beta.i)
+  
+  tabla.beta <- rbind(tabla.beta,tabla.beta.i)
+  
+  lista.beta.i.abeja <- betalink(m1g, m2g, bf = B01)
+  tabla.beta.i.abeja <- as.data.frame(lista.beta.i.abeja)
+  lista.beta.abeja <- c(lista.beta.abeja,lista.beta.i.abeja)
+  
+  tabla.beta.abeja <- rbind(tabla.beta.abeja,tabla.beta.i.abeja)
+  
+  
+  print(betalink(m1g, m2g, bf = Wi))
+  
+}
+
+library(lattice)
+library(psych)
+
+tabla.beta$periodo <- paste(combi[,1],combi[,2], sep="-")
+tabla.beta$periodo.n <- as.numeric(rownames(tabla.beta))
+
+tabla.beta.abeja$periodo <- paste(combi[,1],combi[,2], sep="-")
+tabla.beta.abeja$periodo.n <- as.numeric(rownames(tabla.beta.abeja))
+
+
+par(mfrow=(c(2,2)))
+plot(S~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Turnover S")
+
+plot(OS~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Rewiring OS")
+
+plot(WN~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Whole network WN")
+
+plot(ST~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Asociado a Turnover ST")
+
+
+dev.off()
+
+
+
+par(mfrow=c(1,2))
+
+png("TrayectoriaBetadiversidadResasco080.png")
+plot(WN~periodo.n, tabla.beta, type=c("b"), ylim=c(0,1),
+     ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
+     xlab="Periodo", 
+     xlim=c(0.8,max(tabla.beta$periodo.n+0.2)),
+     main="Trayectoría de Betadiversidad Resasco80")
+
+
+axis(1, at = c(1:max(tabla.beta$periodo.n)), labels = unique(tabla.beta$periodo))
+
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$S, type=c("b"), ylim=c(0,1),
+      col=2, lty=2, pch=16)
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$OS, type=c("b"), ylim=c(0,1),
+      col=3, lty=3, pch=16)
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$ST, type=c("b"), ylim=c(0,1),
+      col=4, lty=4, pch=16)
+
+legend(col=c(1,2,3,4), legend=c("WN","S","OS","ST"), "topright", lty=c(1,2,3,4), pch=16, seg.len = 5)
+dev.off()
+
+tabla.beta
+
+plot(WN~periodo.n, tabla.beta.abeja, type=c("b"), ylim=c(0,1),
+     ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
+     xlab="Periodo", 
+     xlim=c(0.8,max(tabla.beta.abeja$periodo.n+0.2)
+            
+     ))
+
+axis(1, at = c(1:max(tabla.beta$periodo.n)), labels = unique(tabla.beta.abeja$periodo))
+
+
+lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$S, type=c("b"), ylim=c(0,1),
+      col=2, lty=2, pch=16)
+
+lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$OS, type=c("b"), ylim=c(0,1),
+      col=3, lty=3, pch=16)
+
+lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$ST, type=c("b"), ylim=c(0,1),
+      col=4, lty=4, pch=16)
+
+
+
+
+
+
+
+# 
+# chacof06 <- readxl::read_excel("../00baseDatos/redestemproalesidactualizadomatricescuantitativass/79_1chacoff_2006 - redes temporales/79_1chacoff_2006.xlsx")
+# head(chacof06)
+# 
+# c06 <- pivot_longer(chacof06, cols = 2:136)
+# c06 <- subset(c06, value!=0)
+# 
+# chacof07 <- readxl::read_excel("../00baseDatos/redestemproalesidactualizadomatricescuantitativass/79_1chacoff_2006 - redes temporales/79_2Chacof_2007.xlsx")
+# head(chacof07)
+# c07 <- pivot_longer(chacof07, cols = 2:136)
+# c07 <- subset(c07, value!=0)
+# 
+# 
+# 
+# 
+# m1g <- graph_from_data_frame(c06[,c(1,2)])
+# m2g <- graph_from_data_frame(c07[,c(1,2)])
+# 
+# plot(m1g)
+# plot(m2g)
+# 
+# 
+# betalink(m1g, m2g, bf = B01)
+# 
+# library(gtools)
+# 
+# 
+# 
+# library(igraph)
+# 
+# # 1. Crear un data frame de aristas (relaciones Persona -> Empresa)
+# edges <- c07
+# 
+# # 2. Crear una lista de nodos únicos y definir su tipo (TRUE/FALSE)
+# # Identificamos qué nombres pertenecen a cada grupo
+# nodos_desde <- unique(edges$...1)
+# nodos_hasta <- unique(edges$name)
+# 
+# vertices <- data.frame(
+#   name = c(nodos_desde, nodos_hasta),
+#   type = c(rep(FALSE, length(nodos_desde)), rep(TRUE, length(nodos_hasta)))
+# )
+# 
+# # 3. Crear el grafo bipartito
+# g <- graph_from_data_frame(d = edges, directed = FALSE, vertices = vertices)
+# 
+# # 4. Verificar que es bipartito
+# is_bipartite(g) # Debe retornar TRUE
+# 
+# # 5. Graficar con una distribución bipartita
+# plot(g, 
+#      layout = layout_as_bipartite(g), 
+#      vertex.color = c("tomato", "gold")[V(g)$type + 1],
+#      vertex.size = 20,
+#      vertex.label.cex = 0.8)
+# 
+# 
