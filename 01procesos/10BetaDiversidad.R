@@ -271,16 +271,16 @@ dev.off()
 
 # par(mfrow=c(1,2))
 
-
-png("TrayectoriaBetadiversidadChacoff079.png")
+## Figura ----
+png("TrayectoriaBetadiversidadChacoff079.png", width = 1280, height = 720)
 plot(WN~periodo.n, tabla.beta, type=c("b"), ylim=c(0,1),
      ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
      xlab="Periodo", 
      xlim=c(0.8,max(tabla.beta$periodo.n+0.2)),
-     main="Trayectoría de Betadiversidad Chacoff")
+     main="Trayectoría de Betadiversidad Chacoff 79")
      
 
-axis(1, at = c(1, 2, 3,4,5), labels = unique(tabla.beta$periodo))
+axis(1, at = c(1:max(tabla.beta$periodo.n)), labels = unique(tabla.beta$periodo))
 
 
 lines(x=tabla.beta$periodo.n, y=tabla.beta$S, type=c("b"), ylim=c(0,1),
@@ -295,7 +295,8 @@ lines(x=tabla.beta$periodo.n, y=tabla.beta$ST, type=c("b"), ylim=c(0,1),
 legend(col=c(1,2,3,4), legend=c("WN","S","OS","ST"), "topright", lty=c(1,2,3,4), pch=16, seg.len = 5)
 dev.off()
 
-tabla.beta
+## Tabla----
+write.csv(x = tabla.beta, file = "tabla.beta79.csv", row.names = FALSE)
 
 plot(WN~periodo.n, tabla.beta.abeja, type=c("b"), ylim=c(0,1),
      ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
@@ -437,8 +438,8 @@ dev.off()
 
 par(mfrow=c(1,2))
 
-
-png("TrayectoriaBetadiversidadKaiser060.png")
+## Figura ----
+png("TrayectoriaBetadiversidadKaiser060.png", width = 1280, height = 720)
 plot(WN~periodo.n, tabla.beta, type=c("b"), ylim=c(0,1),
      ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
      xlab="Periodo", 
@@ -461,7 +462,8 @@ lines(x=tabla.beta$periodo.n, y=tabla.beta$ST, type=c("b"), ylim=c(0,1),
 legend(col=c(1,2,3,4), legend=c("WN","S","OS","ST"), "topright", lty=c(1,2,3,4), pch=16, seg.len = 5)
 dev.off()
 
-tabla.beta
+## Tabla----
+write.csv(x = tabla.beta, file = "tabla.beta60.csv", row.names = FALSE)
 
 plot(WN~periodo.n, tabla.beta.abeja, type=c("b"), ylim=c(0,1),
      ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
@@ -594,9 +596,8 @@ plot(ST~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
 dev.off()
 
 
-
-par(mfrow=c(1,2))
-png("TrayectoriaBetadiversidadKaiser061.png")
+## Figura ----
+png("TrayectoriaBetadiversidadKaiser061.png", width = 1280, height = 720)
 plot(WN~periodo.n, tabla.beta, type=c("b"), ylim=c(0,1),
      ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
      xlab="Periodo", 
@@ -619,7 +620,8 @@ lines(x=tabla.beta$periodo.n, y=tabla.beta$ST, type=c("b"), ylim=c(0,1),
 legend(col=c(1,2,3,4), legend=c("WN","S","OS","ST"), "topright", lty=c(1,2,3,4), pch=16, seg.len = 5)
 dev.off()
 
-tabla.beta
+## Tabla----
+write.csv(x = tabla.beta, file = "tabla.beta61.csv", row.names = FALSE)
 
 plot(WN~periodo.n, tabla.beta.abeja, type=c("b"), ylim=c(0,1),
      ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
@@ -753,9 +755,8 @@ dev.off()
 
 
 
-par(mfrow=c(1,2))
-
-png("TrayectoriaBetadiversidadSabatino072.png")
+## Figura ----
+png("TrayectoriaBetadiversidadSabatino072.png", width = 1280, height = 720)
 plot(WN~periodo.n, tabla.beta, type=c("b"), ylim=c(0,1),
      ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
      xlab="Periodo", 
@@ -778,7 +779,8 @@ lines(x=tabla.beta$periodo.n, y=tabla.beta$ST, type=c("b"), ylim=c(0,1),
 legend(col=c(1,2,3,4), legend=c("WN","S","OS","ST"), "topright", lty=c(1,2,3,4), pch=16, seg.len = 5)
 dev.off()
 
-tabla.beta
+## Tabla----
+write.csv(x = tabla.beta, file = "tabla.beta72.csv", row.names = FALSE)
 
 plot(WN~periodo.n, tabla.beta.abeja, type=c("b"), ylim=c(0,1),
      ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
@@ -910,9 +912,8 @@ dev.off()
 
 
 
-par(mfrow=c(1,2))
-
-png("TrayectoriaBetadiversidadResasco080.png")
+## Figura ----
+png("TrayectoriaBetadiversidadResasco080.png", width = 1280, height = 720)
 plot(WN~periodo.n, tabla.beta, type=c("b"), ylim=c(0,1),
      ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
      xlab="Periodo", 
@@ -935,7 +936,9 @@ lines(x=tabla.beta$periodo.n, y=tabla.beta$ST, type=c("b"), ylim=c(0,1),
 legend(col=c(1,2,3,4), legend=c("WN","S","OS","ST"), "topright", lty=c(1,2,3,4), pch=16, seg.len = 5)
 dev.off()
 
-tabla.beta
+## Tabla----
+write.csv(x = tabla.beta, file = "tabla.beta80.csv", row.names = FALSE)
+
 
 plot(WN~periodo.n, tabla.beta.abeja, type=c("b"), ylim=c(0,1),
      ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
