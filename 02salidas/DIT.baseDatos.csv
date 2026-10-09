@@ -1,4 +1,5 @@
 "Family","Genus","sp.armonizado","DIT.final"
+"Halictidae","Agapostemon","Agapostemon angelicus texanus",2.04
 "Halictidae","Agapostemon","Agapostemon splendens",2.38
 "Halictidae","Agapostemon","Agapostemon texanus",2.04
 "Halictidae","Agapostemon","Agapostemon virescens",2.308
@@ -119,6 +120,7 @@
 "Apidae","Anthophora","Anthophora plumipes",4.26
 "Apidae","Anthophora","Anthophora quadricolor",4.12
 "Apidae","Anthophora","Anthophora retusa",3.73
+"Apidae","Anthophora","Anthophora urbana",3.31
 "Apidae","Apis","Apis cerana",2.38
 "Apidae","Apis","Apis cerana japonica",2.38
 "Apidae","Apis","Apis mellifera",3.01
@@ -133,7 +135,6 @@
 "Apidae","Bombus","Bombus bimaculatus",4.07
 "Apidae","Bombus","Bombus bohemicus",4.86
 "Apidae","Bombus","Bombus brasiliensis",4.4
-"Apidae","Bombus","Bombus brevivillus",4.5
 "Apidae","Bombus","Bombus campestris",4.66
 "Apidae","Bombus","Bombus centralis",3.06
 "Apidae","Bombus","Bombus consobrinus",3.68
@@ -157,6 +158,7 @@
 "Apidae","Bombus","Bombus jonellus",5.08
 "Apidae","Bombus","Bombus lapidarius",4.28
 "Apidae","Bombus","Bombus lucorum",4.28
+"Apidae","Bombus","Bombus mixtus",3.04
 "Apidae","Bombus","Bombus morio",5
 "Apidae","Bombus","Bombus muscorum",4.21
 "Apidae","Bombus","Bombus nevadensis",5.06
@@ -206,6 +208,7 @@
 "Colletidae","Colletes","Colletes albomaculatus",2.96
 "Colletidae","Colletes","Colletes araucariae",2.417
 "Colletidae","Colletes","Colletes caspicus",3.24
+"Colletidae","Colletes","Colletes cognatus",2.35
 "Colletidae","Colletes","Colletes compactus",3.143
 "Colletidae","Colletes","Colletes cunicularius",3.33
 "Colletidae","Colletes","Colletes dimidiatus",3.84
@@ -213,11 +216,14 @@
 "Colletidae","Colletes","Colletes fodiens",2.46
 "Colletidae","Colletes","Colletes foveolaris",2.59
 "Colletidae","Colletes","Colletes kincaidi",1.97
+"Colletidae","Colletes","Colletes nigrifrons",2.04
 "Colletidae","Colletes","Colletes similis",2.41
 "Colletidae","Colletes","Colletes succinctus",2.99
 "Melittidae","Dasypoda","Dasypoda cingulata",3.44
 "Melittidae","Dasypoda","Dasypoda iberica",2.9
 "Colletidae","Diphaglossa","Diphaglossa gayi",2.11
+"Halictidae","Dufourea","Dufourea fimbriata",1.18
+"Halictidae","Dufourea","Dufourea maura",1.73
 "Megachilidae","Eoanthidium","Eoanthidium insulare",2.4
 "Apidae","Epeolus","Epeolus fallax",2.51
 "Apidae","Eucera","Eucera albofasciata",2.91
@@ -234,7 +240,6 @@
 "Apidae","Euglossa","Euglossa cordata",3.4
 "Apidae","Eulaema","Eulaema meriana",6.8
 "Apidae","Eulaema","Eulaema nigrita",5.1
-"Apidae","Frieseomelitta","Frieseomelitta silvestrii",1
 "Apidae","Habropoda","Habropoda tarsata",4.49
 "Halictidae","Halictus","Halictus asperulus",1.56
 "Halictidae","Halictus","Halictus brunnescens",3.07
@@ -245,12 +250,15 @@
 "Halictidae","Halictus","Halictus rubicundus",2.1
 "Halictidae","Halictus","Halictus scabiosae",2.52
 "Halictidae","Halictus","Halictus tetrazonius",1.94
+"Halictidae","Halictus","Halictus tripartitus",1.112
 "Megachilidae","Heriades","Heriades crenulata",1.51
 "Megachilidae","Heriades","Heriades punctulifera",1
 "Megachilidae","Heriades","Heriades truncorum",1.53
+"Megachilidae","Hoplitis","Hoplitis albifrons",2.43
 "Megachilidae","Hoplitis","Hoplitis bisulca",2.81
 "Megachilidae","Hoplitis","Hoplitis curvipes",3.11
 "Megachilidae","Hoplitis","Hoplitis fabrei",2.29
+"Megachilidae","Hoplitis","Hoplitis fulgida",2.04
 "Megachilidae","Hoplitis","Hoplitis manicata",3.02
 "Megachilidae","Hoplitis","Hoplitis pallicornis",2.44
 "Megachilidae","Hoplitis","Hoplitis papaveris",2.31
@@ -259,6 +267,7 @@
 "Megachilidae","Hoplitis","Hoplitis producta",1.56
 "Megachilidae","Hoplitis","Hoplitis yermasoyiae",2.28
 "Colletidae","Hylaeus","Hylaeus annularis",1.26
+"Colletidae","Hylaeus","Hylaeus annulatus",1.47
 "Colletidae","Hylaeus","Hylaeus basalis",1.85
 "Colletidae","Hylaeus","Hylaeus bifasciatus",1.75
 "Colletidae","Hylaeus","Hylaeus brevicornis",0.98
@@ -266,7 +275,9 @@
 "Colletidae","Hylaeus","Hylaeus imparilis",1
 "Colletidae","Hylaeus","Hylaeus lineolatus",1.1
 "Colletidae","Hylaeus","Hylaeus meridionalis",1.51
+"Colletidae","Hylaeus","Hylaeus modestus",1.158
 "Colletidae","Hylaeus","Hylaeus nigritus",1.57
+"Colletidae","Hylaeus","Hylaeus personatellus",1.33
 "Colletidae","Hylaeus","Hylaeus pictus",1.25
 "Colletidae","Hylaeus","Hylaeus punctatus",1.23
 "Colletidae","Hylaeus","Hylaeus signatus",1.63
@@ -292,6 +303,7 @@
 "Halictidae","Lasioglossum","Lasioglossum hitchensi",1.16
 "Halictidae","Lasioglossum","Lasioglossum imitatum",0.98
 "Halictidae","Lasioglossum","Lasioglossum immunitum",1.96
+"Halictidae","Lasioglossum","Lasioglossum inconditum",1.25
 "Halictidae","Lasioglossum","Lasioglossum laticeps",1.45
 "Halictidae","Lasioglossum","Lasioglossum leucopus",1.11
 "Halictidae","Lasioglossum","Lasioglossum leucozonium",1.84
@@ -339,6 +351,7 @@
 "Megachilidae","Megachile","Megachile argentata",2.82
 "Megachilidae","Megachile","Megachile canariensis",3.07
 "Megachilidae","Megachile","Megachile ericetorum",3.44
+"Megachilidae","Megachile","Megachile frigida",3.64
 "Megachilidae","Megachile","Megachile gemula albula",3.62
 "Megachilidae","Megachile","Megachile giraudi",2.97
 "Megachilidae","Megachile","Megachile hungarica",3.44
@@ -346,6 +359,7 @@
 "Megachilidae","Megachile","Megachile lefebvrei",3.99
 "Megachilidae","Megachile","Megachile manicata",3.82
 "Megachilidae","Megachile","Megachile maritima",3.78
+"Megachilidae","Megachile","Megachile melanophaea",3.26
 "Megachilidae","Megachile","Megachile mendica",3.3
 "Megachilidae","Megachile","Megachile montenegrensis",3.39
 "Megachilidae","Megachile","Megachile parietina",4.69
@@ -359,8 +373,8 @@
 "Apidae","Melecta","Melecta albifrons",3.59
 "Apidae","Melecta","Melecta curvispina",3
 "Apidae","Melecta","Melecta tuberculata",3.5
-"Apidae","Melipona","Melipona quadrifasciata",3
 "Apidae","Melissodes","Melissodes agilis",3.24
+"Apidae","Melissodes","Melissodes confusus",2.781
 "Apidae","Melissodes","Melissodes coreopsis",2.6
 "Apidae","Nomada","Nomada babiyi",0.87
 "Apidae","Nomada","Nomada basalis",1.77
@@ -390,6 +404,7 @@
 "Megachilidae","Osmia","Osmia aurulenta",2.92
 "Megachilidae","Osmia","Osmia bidentata",2.24
 "Megachilidae","Osmia","Osmia bruneri",2.1
+"Megachilidae","Osmia","Osmia bucephala",3.76
 "Megachilidae","Osmia","Osmia caerulescens",2.37
 "Megachilidae","Osmia","Osmia cephalotes",1.74
 "Megachilidae","Osmia","Osmia collinsiae",2.7
@@ -400,6 +415,7 @@
 "Megachilidae","Osmia","Osmia mustelina",3.92
 "Megachilidae","Osmia","Osmia nana",1.35
 "Megachilidae","Osmia","Osmia nigrifrons",2.43
+"Megachilidae","Osmia","Osmia nigriventris",3.26
 "Megachilidae","Osmia","Osmia pentstemonis",1.75
 "Megachilidae","Osmia","Osmia proxima",2.16
 "Megachilidae","Osmia","Osmia pumila",1.9
@@ -408,6 +424,7 @@
 "Megachilidae","Osmia","Osmia signata",2.71
 "Megachilidae","Osmia","Osmia simillima",2.53
 "Megachilidae","Osmia","Osmia spinigera",2.58
+"Megachilidae","Osmia","Osmia subaustralis",2.59
 "Megachilidae","Osmia","Osmia subcornuta",2.41
 "Megachilidae","Osmia","Osmia versicolor",1.78
 "Megachilidae","Osmia","Osmia viridana",1.69

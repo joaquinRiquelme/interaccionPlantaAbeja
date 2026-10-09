@@ -99,6 +99,9 @@ histogram(~Z_Grado|familia, GFE)
 
 # GFE$color.x <- as.numeric(as.factor(GFE$familia))
 
+GFE <- subset(GFE, ID != "M_075.1")
+GFE <- subset(GFE, ID != "M_075.2")
+
 # write.csv(x = Grados, file = "../02salidas/GradosV2.csv", row.names = FALSE)
 write.csv(x = GFE, file = "../02salidas/GFE.csv", row.names = FALSE)
 

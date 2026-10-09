@@ -436,7 +436,6 @@ dev.off()
 
 
 
-par(mfrow=c(1,2))
 
 ## Figura ----
 png("TrayectoriaBetadiversidadKaiser060.png", width = 1280, height = 720)

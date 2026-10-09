@@ -3,7 +3,7 @@ library(dplyr)
 library("taxize")
 library(lattice)
 
-# base_datos <- readRDS("../00baseDatos/base_datos.RDS")
+base_datos <- readRDS("../00baseDatos/base_datos.RDS")
 # ml <- base_datos$matriz_comp_larga
 ml <- read.csv("../02salidas/ml.plantas.armonizado2.csv")
 unique(ml$ID)
@@ -81,7 +81,7 @@ armonizacion <- subset(armonizacion, Nombre.en.matriz!="")
 armonizacion <- subset(armonizacion, Nombre.en.matriz!=" ")
 armonizacion <- subset(armonizacion, !is.na(Nombre.en.matriz))
 armonizacion$Nombre.en.matriz <- gsub(pattern = "[/]", replacement = " ", x = armonizacion$Nombre.en.matriz)
-armonizacion <- subset(armonizacion, Origen!="m_072")#&Nombre.en.matriz!="Bombus atratus")
+# armonizacion <- subset(armonizacion, Origen!="m_072")#&Nombre.en.matriz!="Bombus atratus")
 
 head(armonizacion)
 sp.m <- unique(armonizacion$Nombre.en.matriz)
@@ -91,9 +91,10 @@ sort(intersect(sp.m, sp.ml))
 sort(setdiff(sp.m, sp.ml))
 
 sort(intersect(sp.m, sp.dit))
-sort(setdiff(sp.m, sp.dit))
-sort(setdiff(sp.dit, sp.m))
+dif1 <- sort(setdiff(sp.m, sp.dit))
+dif2 <- sort(setdiff(sp.dit, sp.m))
 
+unique(c(dif1,dif2))
 
 # columna de nombre armonizado para ml ----
 ml.arm <- merge(ml, armonizacion[,c("Nombre.en.matriz","Aceptado","Bases.de.datos")], 
@@ -261,3 +262,4 @@ hist(unique(DIT.baseDatos[,c("sp.armonizado","DIT.final")])$DIT.final,
 head(DIT.baseDatos)
 
 write.csv(DIT.baseDatos, file.path(dir.salidas, "DIT.baseDatos.csv"), row.names = FALSE)
+unique(DIT.baseDatos$DIT.final)
