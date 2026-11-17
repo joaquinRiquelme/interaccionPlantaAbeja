@@ -4,16 +4,163 @@ library(readxl)
 library(writexl)
 
 # Codigo para taxonomia de plantas
+# Datos de interaccion ----
 ml.arm <- read.csv("../00baseDatos/tablas/matriz_comp_larga.csv")
 summary(ml.arm$interaccion)
 ml.arm <- subset(ml.arm, interaccion!=0)
+ml.arm <- subset(ml.arm, !is.na(interaccion))
 head(ml.arm)
+
+
+
+## Matriz 60 se debe separar en 60A 1-12 y 60B 13-24 desde las redes temporales ----
+print("Inicio Kaiser060A")
+RT.Kaise60 <- list.files(path="../00baseDatos/redestemproalesidactualizadomatricescuantitativass/M_PL_060_KBunbury_temporales/",
+                         pattern = ".csv", full.names = TRUE)
+
+RT.Kaise60 <- RT.Kaise60[!(RT.Kaise60 %in% grepv(pattern = "species", x = RT.Kaise60))]
+kaiser60.l <- c()
+
+for(i in RT.Kaise60){
+  kaiser60.i <- read.csv(i)
+  print(dim(kaiser60.i))
+  kaiser60.i.l <- pivot_longer(kaiser60.i, cols = 2:ncol(kaiser60.i))
+  kaiser60.i.t <- substr(i, nchar(i)-5, nchar(i)-4)
+  kaiser60.i.l$t <- kaiser60.i.t
+  kaiser60.l <- rbind(kaiser60.l,kaiser60.i.l)
+  
+}
+
+head(kaiser60.l)
+kaiser60 <- subset(kaiser60.l, value!=0)
+kaiser60$plantas <- kaiser60$X
+kaiser60$especie <- kaiser60$name
+kaiser60$interaccion <- kaiser60$value
+head(kaiser60)
+head(ml.arm)
+
+kaiser60.1 <- subset(kaiser60, t <= 12)
+kaiser60.1$ID <- "M_060.1"
+  
+kaiser60.2 <- subset(kaiser60, t >= 13)
+kaiser60.2$ID <- "M_060.2"
+
+head(kaiser60.1)
+head(kaiser60.2)
+
+kaiser60.12 <- rbind(kaiser60.1, kaiser60.2)
+kaiser60.12 <- kaiser60.12[,c("ID","plantas","especie","interaccion")]
+ml.arm <- subset(ml.arm, ID!="M_060")
+ml.arm <- rbind(ml.arm, kaiser60.12)
+
+
+## Proyecto 61 Kaiser Bunbury ----
+print("Inicio Kaiser061")
+RT.Kaise61 <- list.files(path="../00baseDatos/redestemproalesidactualizadomatricescuantitativass/M_PL_061_KBunbury_2014_Temporales",
+                         pattern = ".csv", full.names = TRUE)
+
+kaiser61.l <- c()
+
+for(i in RT.Kaise61){
+  kaiser61.i <- read.csv(i)
+  print(dim(kaiser61.i))
+  kaiser61.i.l <- pivot_longer(kaiser61.i, cols = 2:ncol(kaiser61.i))
+  kaiser61.i.t <- substr(i, nchar(i)-5, nchar(i)-4)
+  kaiser61.i.l$t <- kaiser61.i.t
+  kaiser61.l <- rbind(kaiser61.l, kaiser61.i.l)
+  
+}
+
+head(kaiser61.l)
+kaiser61 <- subset(kaiser61.l, value!=0)
+names(kaiser61) <- c("plant_code","pol_code","value","t")
+kaiser61$especie <- gsub(pattern = "\\.$", replacement = "", x = kaiser61$pol_code)
+kaiser61$especie <- gsub(pattern = "[.]", replacement = "_", x = kaiser61$especie)
+kaiser61$plantas <- kaiser61$plant_code
+kaiser61$interaccion <- kaiser61$value
+
+kaiser61$t <- as.numeric(kaiser61$t)
+kaiser61.1 <- subset(kaiser61, t <= 8)
+kaiser61.1$ID <- "M_061.1"
+
+kaiser61.2 <- subset(kaiser61, t > 8 & t <= 16)
+kaiser61.2$ID <- "M_061.2"
+
+kaiser61.3 <- subset(kaiser61, t > 16  & t <= 24)
+kaiser61.3$ID <- "M_061.3"
+
+kaiser61.4 <- subset(kaiser61, t > 24  & t <= 32)
+kaiser61.4$ID <- "M_061.4"
+
+kaiser61.5 <- subset(kaiser61, t >  32 & t <= 40)
+kaiser61.5$ID <- "M_061.5"
+
+kaiser61.6 <- subset(kaiser61, t >  40 & t <= 48)
+kaiser61.6$ID <- "M_061.6"
+
+kaiser.61.all <- rbind(kaiser61.1, kaiser61.2, kaiser61.3, kaiser61.4, kaiser61.5, kaiser61.6)
+kaiser.61.all <- kaiser.61.all[,c("ID","plantas","especie","interaccion")]
+head(kaiser.61.all)
+
+ml.arm <- subset(ml.arm, ID!="M_061")
+ml.arm <- rbind(ml.arm, kaiser.61.all)
+
+
+## 79 Chacoff separar en 79.1 2006 y 79.2 2007-2011 ----
+print("Inicio Chachoff 079")
+RT.chachoff <- list.files(path="../00baseDatos/redestemproalesidactualizadomatricescuantitativass/79_1chacoff_2006 - redes temporales/",
+                          pattern = ".xlsx", full.names = TRUE)
+chacof.l <- c()
+
+for(i in RT.chachoff){
+  chacof.i <- readxl::read_excel(i)
+  print(dim(chacof.i))
+  chacof.i.l <- pivot_longer(chacof.i, cols = 2:136)
+  chacof.i.anho <- substr(i, nchar(i)-8, nchar(i)-5)
+  chacof.i.l$anho <- chacof.i.anho
+  chacof.l <- rbind(chacof.l,chacof.i.l)
+  
+}
+
+head(chacof.l)
+chacof <- subset(chacof.l, value!=0)
+chacof$anho <- as.numeric(chacof$anho)
+
+names(chacof) <- c("plant_code","pol_code","value","anho")
+plantas <- read.csv("../00baseDatos/redestemproalesidactualizadomatricescuantitativass/79_1chacoff_2006 - redes temporales/11794503.v4 (Interacciones planta-polinizador (visitas a flores)/plant_names.csv")
+insectos <- read.csv("../00baseDatos/redestemproalesidactualizadomatricescuantitativass/79_1chacoff_2006 - redes temporales/11794503.v4 (Interacciones planta-polinizador (visitas a flores)/insect_names.csv")
+
+chacof.p <- merge(chacof, plantas, by="plant_code")
+chacof.f <- merge(chacof.p, insectos, by="pol_code", suffixes = c("_plant","_pol"))
+
+
+
+chacof.f$especie <- chacof.f$species_name_pol
+chacof.f$plantas <- chacof.f$species_name_plant
+chacof.f$interaccion <- chacof.f$value
+
+
+chacof.1 <- subset(chacof.f, anho==2006)
+chacof.1$ID <- "M_079.1"
+
+# Importante exlucion de año 2006 por diferencias metodologicas
+chacof.2 <- subset(chacof.f, anho>2006)
+chacof.2$ID <- "M_079.2"
+
+chacof.all <- rbind(chacof.1, chacof.2)
+
+head(chacof.all)
+chacof.all <- chacof.all[,c("ID","plantas","especie","interaccion")]
+
+ml.arm <- subset(ml.arm, ID!="M_079")
+ml.arm <- rbind(ml.arm, chacof.all)
+
 
 ml.arm$plantas[ml.arm$plantas=="Argyranthemum.frutescencs"] <- "Argyranthemum.frutescens" 
 ml.arm$plantas[ml.arm$plantas=="Ampetopsis.brevipedunculata"] <- "Ampelopsis.brevipedunculata" 
 # ml.arm$plantas[ml.arm$plantas=="AB"] <- "Acacia.bahiensis" 
 
-# codigos de matriz 076
+## codigos de matriz 076 ----
 codigos076 <- read.csv("../00baseDatos/datosOriginales/076_Santos _2010/Anexo1_codigos_plantas.csv")
 
 codigos076$genero <- 
@@ -49,11 +196,6 @@ ml.arm <- rbind(ml.arm.sin76, m76)
 # ml.arm$plantas[ml.arm$plantas=="AT"] <- "Alternanthera.brasiliana" 
 # ml.arm$plantas[ml.arm$plantas=="BC"] <- "Boerhavia.coccinia" 
 # ml.arm$plantas[ml.arm$plantas=="ZC"] <- "Ziziphus.cotinifolia" 
-
-
-
-
-
 # AO =  L, Anacardiaceae
 # SA = Stigmaphyllon auriculatum (Cav.) A. Juss., Malpighiaceae
 # AT= Alternanthera brasiliana (L.) Kuntze, Amaranthaceae
@@ -104,13 +246,13 @@ ml.arm$plantas[ml.arm$plantas=="Pandanus.barklyi.var.barklyi"] <- "Pandanus.bark
 ml.arm$plantas[ml.arm$plantas=="Pleurostylia.leucocarpa"] <- "Pleurostylia.leucocarpa."
 
 ml.arm$Especie.planta <- gsub(pattern = "[.]",replacement = " ", x = ml.arm$plantas)
-
+head(ml.arm)
 
 sort(unique(ml.arm$Especie.planta))
 sort(unique(ml.arm$plantas))[1500:2000]
 
-
-
+# 
+head(ml.arm)
 
 plantas_kathy2 <- readxl::read_excel("../00baseDatos/armonizacinplantaskc/Plantas_Kathy_final2.xlsx", sheet = 4, skip = 1)[,c(2,19,20,21)]
 head(plantas_kathy2)
@@ -162,13 +304,96 @@ plantas_kathy2$Especie.original[plantas_kathy2$Especie.original=="Castilleia.min
 
 plantas_kathy2$Especie.original <- gsub(pattern = "[.]",replacement = " ", x = plantas_kathy2$Especie.original)
 
-write_xlsx(plantas_kathy2, "plantas_kathy3.xlsx")
+# write_xlsx(plantas_kathy2, "plantas_kathy22.xlsx")
 
-ml.plantas.armonizado <- merge(ml.arm, plantas_kathy2, by.x="Especie.planta", by.y="Especie.original")
-ml.plantas.armonizado2 <- merge(ml.arm, plantas_kathy2, by.x="Especie.planta", by.y="Especie.original", all.x=TRUE)
+head(ml.arm)
+
+# Formato de especies de plantas y polinizadores Nombre_epiteto_subesp ----
+## Plantas ----
+
+sort(unique(ml.arm$plantas))
+ml.arm$plant_name <- ml.arm$plantas
+ml.arm$plant_name <- gsub(pattern = "[.]", replacement = " ", x = ml.arm$plant_name)
+ml.arm$plant_name <- gsub(pattern = "[_]", replacement = " ", x = ml.arm$plant_name)
+ml.arm$plant_name <- gsub(pattern = "  ", replacement = " ", x = ml.arm$plant_name)
+ml.arm$plant_name <- gsub(pattern = " af8 ", replacement = " ", x = ml.arm$plant_name)
+ml.arm$plant_name <- sub(" *$", "", ml.arm$plant_name)
+
+ml.arm$plant_name <- str_to_sentence(ml.arm$plant_name)
+ml.arm$plant_name <- gsub(pattern = " ", replacement = "_", x = ml.arm$plant_name)
+
+unique(substr(ml.arm$plant_name, nchar(ml.arm$plant_name), nchar(ml.arm$plant_name)))
+sort(unique(ml.arm$plant_name))
+
+write.csv(unique(ml.arm[,c("ID","plant_name")]),file = "borrador.plantas.csv", row.names = FALSE)
+
+## Polinizadores ----
+
+sort(unique(ml.arm$plantas))
+ml.arm$pol_name <- ml.arm$especie
+ml.arm$pol_name <- gsub(pattern = "[.]", replacement = " ", x = ml.arm$pol_name)
+ml.arm$pol_name <- gsub(pattern = "[_]", replacement = " ", x = ml.arm$pol_name)
+ml.arm$pol_name <- gsub(pattern = "  ", replacement = " ", x = ml.arm$pol_name)
+ml.arm$pol_name <- gsub(pattern = " af8 ", replacement = " ", x = ml.arm$pol_name)
+ml.arm$pol_name <- sub(" *$", "", ml.arm$pol_name)
+
+ml.arm$pol_name <- str_to_sentence(ml.arm$pol_name)
+ml.arm$pol_name <- gsub(pattern = " ", replacement = "_", x = ml.arm$pol_name)
+
+unique(substr(ml.arm$pol_name, nchar(ml.arm$pol_name), nchar(ml.arm$pol_name)))
+sort(unique(ml.arm$pol_name))
+
+write.csv(unique(ml.arm[,c("ID","pol_name")]),file = "borrador.especies.csv", row.names = FALSE)
 
 
-setdiff(unique(ml.plantas.armonizado$Especie.planta), unique(ml.plantas.armonizado2$Especie.planta))
+
+
+# Armonizacion con tablas revisadas ----
+
+plantas_kathy2$plant_name <- plantas_kathy2$Especie.original
+plantas_kathy2$plant_name <- gsub(pattern = "[.]", replacement = " ", x = plantas_kathy2$plant_name)
+plantas_kathy2$plant_name <- gsub(pattern = "[_]", replacement = " ", x = plantas_kathy2$plant_name)
+plantas_kathy2$plant_name <- gsub(pattern = "  ", replacement = " ", x = plantas_kathy2$plant_name)
+plantas_kathy2$plant_name <- sub(" *$", "", plantas_kathy2$plant_name)
+
+plantas_kathy2$plant_name <- str_to_sentence(plantas_kathy2$plant_name)
+plantas_kathy2$plant_name <- gsub(pattern = " ", replacement = "_", x = plantas_kathy2$plant_name)
+
+plantas_kathy2$plant_name_nuevo <- plantas_kathy2$Especie.planta.nuevo
+plantas_kathy2$plant_name_nuevo <- gsub(pattern = "[.]", replacement = " ", x = plantas_kathy2$plant_name_nuevo)
+plantas_kathy2$plant_name_nuevo <- gsub(pattern = "[ ]", replacement = " ", x = plantas_kathy2$plant_name_nuevo)
+plantas_kathy2$plant_name_nuevo <- gsub(pattern = "_", replacement = " ", x = plantas_kathy2$plant_name_nuevo)
+plantas_kathy2$plant_name_nuevo <- gsub(pattern = "   ", replacement = " ", x = plantas_kathy2$plant_name_nuevo)
+plantas_kathy2$plant_name_nuevo <- gsub(pattern = "[  ]", replacement = " ", x = plantas_kathy2$plant_name_nuevo)
+plantas_kathy2$plant_name_nuevo <- sub(" *$", "", plantas_kathy2$plant_name_nuevo)
+
+plantas_kathy2$plant_name_nuevo <- str_to_sentence(plantas_kathy2$plant_name_nuevo)
+plantas_kathy2$plant_name_nuevo <- gsub(pattern = "\\s+", replacement = "_", x = plantas_kathy2$plant_name_nuevo)
+
+
+sort(unique(plantas_kathy2$plant_name))
+sort(unique(plantas_kathy2$plant_name_nuevo))
+
+
+ml.plantas.armonizado <- merge(ml.arm, plantas_kathy2, by="plant_name")
+ml.plantas.armonizado$plant_name_nuevo <- ml.plantas.armonizado$Especie.planta.nuevo
+ml.plantas.armonizado$plant_name_nuevo <- gsub(pattern = "[.]", replacement = " ", x = ml.plantas.armonizado$plant_name_nuevo)
+ml.plantas.armonizado$plant_name_nuevo <- gsub(pattern = "[_]", replacement = " ", x = ml.plantas.armonizado$plant_name_nuevo)
+ml.plantas.armonizado$plant_name_nuevo <- gsub(pattern = "  ", replacement = " ", x = ml.plantas.armonizado$plant_name_nuevo)
+ml.plantas.armonizado$plant_name_nuevo <- sub(" *$", "", ml.plantas.armonizado$plant_name_nuevo)
+ml.plantas.armonizado$plant_name_nuevo <- str_to_sentence(ml.plantas.armonizado$plant_name_nuevo)
+ml.plantas.armonizado$plant_name_nuevo <- gsub(pattern = " ", replacement = "_", x = ml.plantas.armonizado$plant_name_nuevo)
+sort(unique(ml.plantas.armonizado$plant_name_nuevo))
+
+head(ml.plantas.armonizado)
+ml.plantas.armonizado2 <- merge(ml.arm, plantas_kathy2, by="plant_name", all.x=TRUE)
+
+sort(
+  union(
+    setdiff(unique(ml.plantas.armonizado$plant_name_nuevo), unique(ml.plantas.armonizado2$plant_name)),
+    setdiff(unique(ml.plantas.armonizado2$plant_name), unique(ml.plantas.armonizado$plant_name_nuevo))
+  )
+)
 
 plantas.sin.arm <- setdiff(unique(ml.plantas.armonizado2$Especie.planta), unique(ml.plantas.armonizado$Especie.planta))
 
@@ -288,7 +513,11 @@ familias.cor <- readxl::read_xlsx("../00baseDatos/Plantas_Kathy_202060615.xlsx",
 plantas.cor <- readxl::read_xlsx("../00baseDatos/Plantas_Kathy_202060615.xlsx", sheet = 6)
 plantas.cor <- plantas.cor[,c("Genero.especie","Género actual","Especie actual")]
 
-head(plantas2)
+
+plantas3 <- readxl::read_xlsx("../00baseDatos/plantas_kathy3.xlsx", sheet = 1)
+plantas2 <- readxl::read_xlsx("../00baseDatos/plantas_kathy3.xlsx", sheet = 1)
+
+head(plantas3)
 head(plantas.cor)
 
 plantas2$Genero.especie <- gsub(plantas2$Genero.especie, pattern = "\\.$", replacement = "")

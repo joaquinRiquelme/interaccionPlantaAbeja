@@ -6,7 +6,7 @@ datos.analisis <- read.csv("../02salidas/datos.analisis.csv")
 # GyT <- read.csv("GyTCV2.csv")
 head(datos.analisis)
 originales.dit <- unique(datos.analisis[!is.na(datos.analisis$DIT.final),c("sp.armonizado","DIT.final")])
-datos_insectos <- unique(datos_insectos)
+datos_insectos <- unique(datos.analisis)
 
 
 setdiff(originales.dit$sp.armonizado, datos_insectos$sp.armonizado)
@@ -258,7 +258,7 @@ histogram(~abs(Latitud)|factor(cuantil.latitud), datos.analisis)#, as.table=TRUE
 names(datos.analisis2)
 datos.analisis2 <- merge(datos.analisis, datosDIT, by=c("ID","DIT.final"))
 
-datosDIT$
+# datosDIT$
 write.csv(datos.analisis2,"../02salidas/datos.analisis.categorizado.csv",row.names = FALSE)
 
 # write.csv(mlDIT.nueva, file = "../02salidas/tabla_umbral_mediana.csv", row.names = FALSE)
