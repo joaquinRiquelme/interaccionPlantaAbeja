@@ -7,6 +7,9 @@ library(igraph)
 library(stringr)
 library(plyr)
 library(gtools)
+library(lattice)
+library(psych)
+
 
 # tabla de interaccion planta abeja por matriz
 ipa <- read.csv("ml.abejas.csv")
@@ -259,8 +262,6 @@ for(i in 1:nrow(combi)){
   # baselga.full <- rbind(baselga.full, baselga.periodo)
 }
 
-library(lattice)
-library(psych)
 
 tabla.beta$periodo <- paste(combi[,1],combi[,2], sep="-")
 tabla.beta$periodo.n <- as.numeric(rownames(tabla.beta))
@@ -357,6 +358,9 @@ baselga.familia <- merge(baselga.periodo, ml.abejas[,c("polinizador","familia")]
       by.y="polinizador", 
       by.x="esp")
 baselga.familia <- baselga.familia[order(baselga.familia$periodo),]
+write.csv(file = paste0("../02salidas/baselga.",proyecto,"especie.csv"),
+          x = baselga.familia, row.names = FALSE)
+
 
 png(paste0("../03figuras/Betadiversidad/BSIM.Familias.",proyecto,".png"))
 xyplot(BSIM~factor(periodo)|familia, 
