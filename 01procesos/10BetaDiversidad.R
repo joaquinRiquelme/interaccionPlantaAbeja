@@ -269,7 +269,7 @@ tabla.beta$periodo.n <- as.numeric(rownames(tabla.beta))
 tabla.beta.abeja$periodo <- paste(combi[,1],combi[,2], sep="-")
 tabla.beta.abeja$periodo.n <- as.numeric(rownames(tabla.beta.abeja))
 
-
+### Figura 1 ----
 png(paste0("../03figuras/Betadiversidad/Betapart_",proyecto,".png"))
 par(mfrow=(c(2,2)))
 plot(S~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
@@ -290,6 +290,7 @@ dev.off()
 
 # par(mfrow=c(1,2))
 
+### Figura 2 ----
 png(paste0("../03figuras/Betadiversidad/TrayectoriaBetadiversidad",proyecto,".png"), width = 1280, height = 720)
 plot(WN~periodo.n, tabla.beta, type=c("b"), ylim=c(0,1),
      ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
@@ -313,6 +314,7 @@ lines(x=tabla.beta$periodo.n, y=tabla.beta$ST, type=c("b"), ylim=c(0,1),
 legend(col=c(1,2,3,4), legend=c("WN","S","OS","ST"), "topright", lty=c(1,2,3,4), pch=16, seg.len = 5)
 dev.off()
 
+### Tabla 1----
 write.csv(x = tabla.beta, file = "tabla.beta79.csv", row.names = FALSE)
 
 head(chacof.f)
@@ -324,8 +326,6 @@ xyplot(BSIM~factor(periodo)|esp,
        type=c("b"), data=baselga.periodo, 
        xlab="Periodo",
        as.table=TRUE)
-
-
 
 head(baselga.periodo)
 
@@ -358,6 +358,322 @@ baselga.familia <- merge(baselga.periodo, ml.abejas[,c("polinizador","familia")]
       by.y="polinizador", 
       by.x="esp")
 baselga.familia <- baselga.familia[order(baselga.familia$periodo),]
+baselga.familia <- unique(baselga.familia)
+
+### Tabla 2 ----
+write.csv(file = paste0("../02salidas/baselga.",proyecto,"especie.csv"),
+          x = baselga.familia, row.names = FALSE)
+
+### Figura 3 ----
+png(paste0("../03figuras/Betadiversidad/BSIM.Familias.",proyecto,".png"))
+xyplot(BSIM~factor(periodo)|familia, 
+       layout=c(1,5),
+       group=esp,
+       type=c("b","g"), data=baselga.familia, 
+       xlab="Periodo",
+       as.table=TRUE)
+dev.off()
+
+### Figura 4 ----
+pdf(paste0("../03figuras/Betadiversidad/BSIM.Abejas.",proyecto,".png"))
+xyplot(BSIM~factor(periodo)|interaction(esp,  familia, drop = TRUE), 
+       layout=c(1,5),
+       # group=esp,
+       type=c("b","g"), data=baselga.familia, 
+       xlab="Periodo",
+       as.table=TRUE)
+dev.off()
+
+### Figura 5 ----
+png(paste0("../03figuras/Betadiversidad/BSIM.Andrenidae.",proyecto,".png"))
+xyplot(BSIM~factor(periodo)|interaction(esp, drop = TRUE), 
+       layout=c(1,2),
+       main="Andrenidae",
+       # group=esp,
+       type=c("b","g"), data=subset(baselga.familia, familia=="Andrenidae"), 
+       xlab="Periodo",
+       as.table=TRUE)
+dev.off()
+
+png(paste0("../03figuras/Betadiversidad/BSIM.Apidae.",proyecto,".png"))
+xyplot(BSIM~factor(periodo)|interaction(esp, drop = TRUE), 
+       layout=c(6,2),
+       main="Apidae",
+       # group=esp,
+       type=c("b","g"), 
+       data=subset(baselga.familia, familia=="Apidae"), 
+       xlab="Periodo",
+       as.table=TRUE)
+dev.off()
+
+png(paste0("../03figuras/Betadiversidad/BSIM.Colletidae.",proyecto,".png"))
+xyplot(BSIM~factor(periodo)|interaction(esp, drop = TRUE), 
+       main="Colletidae",
+       layout=c(4,2),
+       # group=esp,
+       type=c("b","g"), 
+       data=subset(baselga.familia, familia=="Colletidae"), 
+       xlab="Periodo",
+       as.table=TRUE)
+dev.off()
+
+png(paste0("../03figuras/Betadiversidad/BSIM.Halictidae.",proyecto,".png"))
+xyplot(BSIM~factor(periodo)|interaction(esp, drop = TRUE), 
+       main="Halictidae",
+       layout=c(4,1),
+       # group=esp,
+       type=c("b","g"), 
+       data=subset(baselga.familia, familia=="Halictidae"), 
+       xlab="Periodo",
+       as.table=TRUE)
+dev.off()
+
+png(paste0("../03figuras/Betadiversidad/BSIM.Megachilidae.",proyecto,".png"))
+xyplot(BSIM~factor(periodo)|interaction(esp, drop = TRUE), 
+       layout=c(3,2),
+       main="Megachilidae",
+       # group=esp,
+       type=c("b","g"), 
+       data=subset(baselga.familia, familia=="Megachilidae"), 
+       xlab="Periodo",
+       as.table=TRUE)
+dev.off()
+
+
+## 2.2 Proyecto 60A Kaiser Bunbury ----
+print("Inicio Kaiser060A")
+proyecto <- "060.1_KaiserBunbury"
+RT.Kaise60 <- list.files(path="../00baseDatos/redestemproalesidactualizadomatricescuantitativass/M_PL_060_KBunbury_temporales/",
+                          pattern = ".csv", full.names = TRUE)
+
+RT.Kaise60 <- RT.Kaise60[!(RT.Kaise60 %in% grepv(pattern = "species", x = RT.Kaise60))]
+kaiser60.l <- c()
+
+for(i in RT.Kaise60){
+  kaiser60.i <- read.csv(i)
+  print(dim(kaiser60.i))
+  kaiser60.i.l <- pivot_longer(kaiser60.i, cols = 2:ncol(kaiser60.i))
+  kaiser60.i.t <- substr(i, nchar(i)-5, nchar(i)-4)
+  kaiser60.i.l$t <- kaiser60.i.t
+  kaiser60.l <- rbind(kaiser60.l,kaiser60.i.l)
+  
+}
+
+head(kaiser60.l)
+kaiser60 <- subset(kaiser60.l, value!=0)
+kaiser60A <- subset(kaiser60, t <= 12)
+
+kaiser60 <- kaiser60A
+
+names(kaiser60) <- c("plant_code","pol_code","value","t")
+kaiser60$pol_code <- gsub(pattern = "\\.$", replacement = "", x = kaiser60$pol_code)
+kaiser60$pol_code <- gsub(pattern = "[.]", replacement = "_", x = kaiser60$pol_code)
+
+abejas <- read.csv("ml.abejas.csv")
+abejas <- subset(abejas, ID=="M_060")
+abejas$species_name <- gsub(pattern = " ", replacement = "_", x = abejas$sp.armonizado)
+# abejas$species_name2 <- substr(abejas$species_name,  pattern = " ", replacement = "_", x = abejas$sp.armonizado)
+
+
+sort(union(setdiff(unique(kaiser60$pol_code), unique(abejas$species_name)),
+     setdiff(unique(abejas$species_name),unique(kaiser60$pol_code))))
+
+Kaiser60.f <- subset(kaiser60, pol_code %in% abejas$species_name)
+# Kaiser60.f <- subset(Kaiser60.f, ID=="M_060")
+
+combi <- combinations(v = as.numeric(unique(Kaiser60.f$t)), 
+                      r = 2, 
+                      n=length(unique(Kaiser60.f$t)))
+
+combi <- subset(combi, (combi[,2]-combi[,1])==1)
+
+lista.beta <- list()
+lista.beta.abeja <- list()
+tabla.beta <- c()
+tabla.beta.abeja <- c()
+
+datos.rt <- Kaiser60.f
+datos.rt$t <- as.numeric(datos.rt$t)
+
+datos.rt$pol_code <- sub(" *$", "", datos.rt$pol_code)
+
+datos.rt$plant_code <-sub(" *$", "", datos.rt$plant_code)
+datos.rt$plant_code <-sub(" *$", "", datos.rt$plant_code)
+datos.rt$plant_code <- gsub(pattern = " ", replacement = "_", x = datos.rt$plant_code)
+
+# datos.rt <- subset(datos.rt, species_name_pol!="")
+
+baselga.periodo <- c()
+baselga.full <- c()
+
+### Ciclo para calculo beta ----
+for(i in 1:nrow(combi)){
+  combi.i <- combi[i,]
+  id.1 <- combi.i[1]
+  id.2 <- combi.i[2]
+  
+  print(id.1)
+  print(id.2)
+  
+  rt.i1 <- subset(datos.rt, t==id.1) 
+  rt.i2 <- subset(datos.rt, t==id.2) 
+  
+  m1g <- graph_from_data_frame(rt.i1[,c(1,2)])
+  m2g <- graph_from_data_frame(rt.i2[,c(1,2)])
+  
+  
+  m1g.abeja <- graph_from_data_frame(rt.i1[,c(2,1)])
+  m2g.abeja <- graph_from_data_frame(rt.i2[,c(2,1)])
+  
+  # lista.beta.i <- betalink(m1g, m2g, bf = Wi)
+  lista.beta.i <- betalink(m2g, m1g, bf = Wi)
+  tabla.beta.i <- as.data.frame(lista.beta.i)
+  lista.beta <- c(lista.beta,lista.beta.i)
+  
+  tabla.beta <- rbind(tabla.beta,tabla.beta.i)
+  
+  lista.beta.i.abeja <- betalink(m1g, m2g, bf = B01)
+  tabla.beta.i.abeja <- as.data.frame(lista.beta.i.abeja)
+  lista.beta.abeja <- c(lista.beta.abeja,lista.beta.i.abeja)
+  
+  tabla.beta.abeja <- rbind(tabla.beta.abeja,tabla.beta.i.abeja)
+  
+  
+  print(betalink(m1g, m2g, bf = Wi))
+  
+  
+  
+  # Baselga por especie de polinizador para el periodo
+  pol_species1 <- unique(rt.i1[, "species_name_pol"])
+  V(m1g.abeja)$type <- ! (V(m1g.abeja)$name %in% pol_species1)
+  
+  pol_species2 <- unique(rt.i2[, "species_name_pol"])
+  V(m2g.abeja)$type <- ! (V(m2g.abeja)$name %in% pol_species2)
+  
+  pol1 <- V(m1g.abeja)[V(m1g.abeja)$type == TRUE]$name
+  pol2 <- V(m2g.abeja)[V(m2g.abeja)$type == TRUE]$name
+  
+  pol1y2 <- sort(intersect(pol1, pol2))
+  
+  for (pol.j in pol1y2) {
+    # pol.j <- "Alloscirtetica_sp1"
+    
+    # Especies de plantas en t1 y t2 para el polinizador j
+    plantas.1 <- names(neighbors(m1g.abeja, pol.j))
+    plantas.2 <- names(neighbors(m2g.abeja, pol.j))
+    
+    # Baselga para el periodo y polinizador j
+    baselga.j <- calcular_baselga_focal(plantas.1, plantas.2) 
+    baselga.j$t1 <- id.1
+    baselga.j$t2 <- id.2
+    baselga.j$esp <- pol.j
+    
+    baselga.periodo <- rbind(baselga.periodo, baselga.j)        
+  }
+  
+  
+  
+}
+
+library(lattice)
+library(psych)
+
+tabla.beta$periodo <- paste(combi[,1],combi[,2], sep="-")
+tabla.beta$periodo.n <- as.numeric(rownames(tabla.beta))
+
+tabla.beta.abeja$periodo <- paste(combi[,1],combi[,2], sep="-")
+tabla.beta.abeja$periodo.n <- as.numeric(rownames(tabla.beta.abeja))
+
+### Figura 1----
+png(paste0("../03figuras/Betadiversidad/Betapart_",proyecto,".png"))
+par(mfrow=(c(2,2)))
+plot(S~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Turnover S")
+
+plot(OS~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Rewiring OS")
+
+plot(WN~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Whole network WN")
+
+plot(ST~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Asociado a Turnover ST")
+
+
+dev.off()
+dev.off()
+
+### Figura 2 ----
+png(paste0("../03figuras/Betadiversidad/TrayectoriaBetadiversidad",proyecto,".png"), width = 1280, height = 720)
+plot(WN~periodo.n, tabla.beta, type=c("b"), ylim=c(0,1),
+     ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
+     xlab="Periodo", 
+     xlim=c(0.8,max(tabla.beta$periodo.n+0.2)),
+     main="Trayectoría de Betadiversidad Kaiser 60")
+
+
+axis(1, at = c(1:max(tabla.beta$periodo.n)), labels = unique(tabla.beta$periodo))
+
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$S, type=c("b"), ylim=c(0,1),
+      col=2, lty=2, pch=16)
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$OS, type=c("b"), ylim=c(0,1),
+      col=3, lty=3, pch=16)
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$ST, type=c("b"), ylim=c(0,1),
+      col=4, lty=4, pch=16)
+
+legend(col=c(1,2,3,4), legend=c("WN","S","OS","ST"), "topright", lty=c(1,2,3,4), pch=16, seg.len = 5)
+dev.off()
+
+
+### Tabla 1 ----
+write.csv(x = tabla.beta, file = "tabla.beta60.csv", row.names = FALSE)
+
+baselga.periodo <- baselga.periodo[order(baselga.periodo$esp),]
+baselga.periodo$periodo <- paste(baselga.periodo$t1, baselga.periodo$t2, sep="-")
+xyplot(BSIM~factor(periodo)|esp, 
+       layout=c(4,4), 
+       type=c("b"), data=baselga.periodo, 
+       xlab="Periodo",
+       as.table=TRUE)
+
+
+
+head(baselga.periodo)
+
+histogram(~BSIM|esp, 
+          type="count",
+          data=baselga.periodo, layout=c(1,1), as.table=TRUE)
+
+
+histogram(~BSIM|periodo, 
+          type="count",
+          data=baselga.periodo, layout=c(1,4), as.table=TRUE)
+
+
+baselga.periodo.filtrado <- subset(baselga.periodo, BSIM != 0 & BSIM!=1)
+histogram(~BSIM|periodo, 
+          type="count",
+          data=baselga.periodo.filtrado, layout=c(1,4), as.table=TRUE)
+
+
+head(baselga.periodo)
+
+ml.abejas <- read.csv("../02salidas/ml.abejas.csv")
+head(ml.abejas)
+
+ml.abejas$polinizador <- gsub(pattern = " ", replacement = "_", 
+                              x =ml.abejas$sp.armonizado)
+
+
+baselga.familia <- merge(baselga.periodo, ml.abejas[,c("polinizador","familia")], 
+                         by.y="polinizador", 
+                         by.x="esp")
+baselga.familia <- baselga.familia[order(baselga.familia$periodo),]
+baselga.familia <- unique(baselga.familia)
+### Tabla 2 ----
 write.csv(file = paste0("../02salidas/baselga.",proyecto,"especie.csv"),
           x = baselga.familia, row.names = FALSE)
 
@@ -433,216 +749,6 @@ xyplot(BSIM~factor(periodo)|interaction(esp, drop = TRUE),
        xlab="Periodo",
        as.table=TRUE)
 dev.off()
-
-
-## 2.2 Proyecto 60A Kaiser Bunbury ----
-print("Inicio Kaiser060A")
-proyecto <- "60.1KaiserBunbury"
-RT.Kaise60 <- list.files(path="../00baseDatos/redestemproalesidactualizadomatricescuantitativass/M_PL_060_KBunbury_temporales/",
-                          pattern = ".csv", full.names = TRUE)
-
-RT.Kaise60 <- RT.Kaise60[!(RT.Kaise60 %in% grepv(pattern = "species", x = RT.Kaise60))]
-kaiser60.l <- c()
-
-for(i in RT.Kaise60){
-  kaiser60.i <- read.csv(i)
-  print(dim(kaiser60.i))
-  kaiser60.i.l <- pivot_longer(kaiser60.i, cols = 2:ncol(kaiser60.i))
-  kaiser60.i.t <- substr(i, nchar(i)-5, nchar(i)-4)
-  kaiser60.i.l$t <- kaiser60.i.t
-  kaiser60.l <- rbind(kaiser60.l,kaiser60.i.l)
-  
-}
-
-head(kaiser60.l)
-kaiser60 <- subset(kaiser60.l, value!=0)
-kaiser60A <- subset(kaiser60, t <= 12)
-
-kaiser60 <- kaiser60A
-
-names(kaiser60) <- c("plant_code","pol_code","value","t")
-kaiser60$pol_code <- gsub(pattern = "\\.$", replacement = "", x = kaiser60$pol_code)
-kaiser60$pol_code <- gsub(pattern = "[.]", replacement = "_", x = kaiser60$pol_code)
-
-abejas <- read.csv("ml.abejas.csv")
-abejas <- subset(abejas, ID=="M_060")
-abejas$species_name <- gsub(pattern = " ", replacement = "_", x = abejas$sp.armonizado)
-# abejas$species_name2 <- substr(abejas$species_name,  pattern = " ", replacement = "_", x = abejas$sp.armonizado)
-
-
-sort(union(setdiff(unique(kaiser60$pol_code), unique(abejas$species_name)),
-     setdiff(unique(abejas$species_name),unique(kaiser60$pol_code))))
-
-Kaiser60.f <- subset(kaiser60, pol_code %in% abejas$species_name)
-# Kaiser60.f <- subset(Kaiser60.f, ID=="M_060")
-
-combi <- combinations(v = as.numeric(unique(Kaiser60.f$t)), 
-                      r = 2, 
-                      n=length(unique(Kaiser60.f$t)))
-
-combi <- subset(combi, (combi[,2]-combi[,1])==1)
-
-lista.beta <- list()
-lista.beta.abeja <- list()
-tabla.beta <- c()
-tabla.beta.abeja <- c()
-
-datos.rt <- Kaiser60.f
-datos.rt$t <- as.numeric(datos.rt$t)
-
-datos.rt$pol_code <- sub(" *$", "", datos.rt$pol_code)
-
-datos.rt$plant_code <-sub(" *$", "", datos.rt$plant_code)
-datos.rt$plant_code <-sub(" *$", "", datos.rt$plant_code)
-datos.rt$plant_code <- gsub(pattern = " ", replacement = "_", x = datos.rt$plant_code)
-
-datos.rt <- subset(datos.rt, species_name_pol!="")
-
-baselga.periodo <- c()
-baselga.full <- c()
-
-### Ciclo para calculo beta ----
-for(i in 1:nrow(combi)){
-  combi.i <- combi[i,]
-  id.1 <- combi.i[1]
-  id.2 <- combi.i[2]
-  
-  print(id.1)
-  print(id.2)
-  
-  rt.i1 <- subset(datos.rt, t==id.1) 
-  rt.i2 <- subset(datos.rt, t==id.2) 
-  
-  m1g <- graph_from_data_frame(rt.i1[,c(1,2)])
-  m2g <- graph_from_data_frame(rt.i2[,c(1,2)])
-  
-  
-  m1g.abeja <- graph_from_data_frame(rt.i1[,c(2,1)])
-  m2g.abeja <- graph_from_data_frame(rt.i2[,c(2,1)])
-  
-  # lista.beta.i <- betalink(m1g, m2g, bf = Wi)
-  lista.beta.i <- betalink(m2g, m1g, bf = Wi)
-  tabla.beta.i <- as.data.frame(lista.beta.i)
-  lista.beta <- c(lista.beta,lista.beta.i)
-  
-  tabla.beta <- rbind(tabla.beta,tabla.beta.i)
-  
-  lista.beta.i.abeja <- betalink(m1g, m2g, bf = B01)
-  tabla.beta.i.abeja <- as.data.frame(lista.beta.i.abeja)
-  lista.beta.abeja <- c(lista.beta.abeja,lista.beta.i.abeja)
-  
-  tabla.beta.abeja <- rbind(tabla.beta.abeja,tabla.beta.i.abeja)
-  
-  
-  print(betalink(m1g, m2g, bf = Wi))
-  
-  
-  
-  # Baselga por especie de polinizador para el periodo
-  pol_species1 <- unique(rt.i1[, 5])
-  V(m1g.abeja)$type <- ! (V(m1g.abeja)$name %in% pol_species1)
-  
-  pol_species2 <- unique(rt.i2[, 5])
-  V(m2g.abeja)$type <- ! (V(m2g.abeja)$name %in% pol_species2)
-  
-  pol1 <- V(m1g.abeja)[V(m1g.abeja)$type == TRUE]$name
-  pol2 <- V(m2g.abeja)[V(m2g.abeja)$type == TRUE]$name
-  
-  pol1y2 <- sort(intersect(pol1, pol2))
-  
-  for (pol.j in pol1y2) {
-    # pol.j <- "Alloscirtetica_sp1"
-    
-    # Especies de plantas en t1 y t2 para el polinizador j
-    plantas.1 <- names(neighbors(m1g.abeja, pol.j))
-    plantas.2 <- names(neighbors(m2g.abeja, pol.j))
-    
-    # Baselga para el periodo y polinizador j
-    baselga.j <- calcular_baselga_focal(plantas.1, plantas.2) 
-    baselga.j$t1 <- id.1
-    baselga.j$t2 <- id.2
-    baselga.j$esp <- pol.j
-    
-    baselga.periodo <- rbind(baselga.periodo, baselga.j)        
-  }
-  
-  
-  
-}
-
-library(lattice)
-library(psych)
-
-tabla.beta$periodo <- paste(combi[,1],combi[,2], sep="-")
-tabla.beta$periodo.n <- as.numeric(rownames(tabla.beta))
-
-tabla.beta.abeja$periodo <- paste(combi[,1],combi[,2], sep="-")
-tabla.beta.abeja$periodo.n <- as.numeric(rownames(tabla.beta.abeja))
-
-
-par(mfrow=(c(2,2)))
-plot(S~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
-     ylab="Turnover S")
-
-plot(OS~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
-     ylab="Rewiring OS")
-
-plot(WN~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
-     ylab="Whole network WN")
-
-plot(ST~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
-     ylab="Asociado a Turnover ST")
-
-
-dev.off()
-
-
-
-
-png("TrayectoriaBetadiversidadKaiser060.png", width = 1280, height = 720)
-plot(WN~periodo.n, tabla.beta, type=c("b"), ylim=c(0,1),
-     ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
-     xlab="Periodo", 
-     xlim=c(0.8,max(tabla.beta$periodo.n+0.2)),
-     main="Trayectoría de Betadiversidad Kaiser 60")
-
-
-axis(1, at = c(1:max(tabla.beta$periodo.n)), labels = unique(tabla.beta$periodo))
-
-
-lines(x=tabla.beta$periodo.n, y=tabla.beta$S, type=c("b"), ylim=c(0,1),
-      col=2, lty=2, pch=16)
-
-lines(x=tabla.beta$periodo.n, y=tabla.beta$OS, type=c("b"), ylim=c(0,1),
-      col=3, lty=3, pch=16)
-
-lines(x=tabla.beta$periodo.n, y=tabla.beta$ST, type=c("b"), ylim=c(0,1),
-      col=4, lty=4, pch=16)
-
-legend(col=c(1,2,3,4), legend=c("WN","S","OS","ST"), "topright", lty=c(1,2,3,4), pch=16, seg.len = 5)
-dev.off()
-
-write.csv(x = tabla.beta, file = "tabla.beta60.csv", row.names = FALSE)
-
-plot(WN~periodo.n, tabla.beta.abeja, type=c("b"), ylim=c(0,1),
-     ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
-     xlab="Periodo", 
-     xlim=c(0.8,max(tabla.beta.abeja$periodo.n+0.2)
-            
-     ))
-
-axis(1, at = c(1:max(tabla.beta.abeja$periodo.n)), labels = unique(tabla.beta.abeja$periodo))
-
-
-lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$S, type=c("b"), ylim=c(0,1),
-      col=2, lty=2, pch=16)
-
-lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$OS, type=c("b"), ylim=c(0,1),
-      col=3, lty=3, pch=16)
-
-lines(x=tabla.beta.abeja$periodo.n, y=tabla.beta.abeja$ST, type=c("b"), ylim=c(0,1),
-      col=4, lty=4, pch=16)
-
 ## 2.3 Proyecto 60B Kaiser Bunbury ----
 print("Inicio Kaiser060")
 RT.Kaise60 <- list.files(path="../00baseDatos/redestemproalesidactualizadomatricescuantitativass/M_PL_060_KBunbury_temporales/",
@@ -812,6 +918,8 @@ RT.Kaise61 <- list.files(path="../00baseDatos/redestemproalesidactualizadomatric
 
 kaiser61.l <- c()
 
+
+
 for(i in RT.Kaise61){
   kaiser61.i <- read.csv(i)
   print(dim(kaiser61.i))
@@ -821,12 +929,35 @@ for(i in RT.Kaise61){
   kaiser61.l <- rbind(kaiser61.l, kaiser61.i.l)
   
 }
-
+ 
 head(kaiser61.l)
 kaiser61 <- subset(kaiser61.l, value!=0)
+
 names(kaiser61) <- c("plant_code","pol_code","value","t")
 kaiser61$pol_code <- gsub(pattern = "\\.$", replacement = "", x = kaiser61$pol_code)
 kaiser61$pol_code <- gsub(pattern = "[.]", replacement = "_", x = kaiser61$pol_code)
+
+
+kaiser61$t <- as.numeric(kaiser61$t)
+kaiser61.1 <- subset(kaiser61, t <= 8)
+kaiser61.1$ID <- "M_061.1"
+
+kaiser61.2 <- subset(kaiser61, t > 8 & t <= 16)
+kaiser61.2$ID <- "M_061.2"
+
+kaiser61.3 <- subset(kaiser61, t > 16  & t <= 24)
+kaiser61.3$ID <- "M_061.3"
+
+kaiser61.4 <- subset(kaiser61, t > 24  & t <= 32)
+kaiser61.4$ID <- "M_061.4"
+
+kaiser61.5 <- subset(kaiser61, t >  32 & t <= 40)
+kaiser61.5$ID <- "M_061.5"
+
+kaiser61.6 <- subset(kaiser61, t >  40 & t <= 48)
+kaiser61.6$ID <- "M_061.6"
+
+
 
 abejas <- read.csv("ml.abejas.csv")
 abejas <- subset(abejas, ID=="M_061")
@@ -837,7 +968,11 @@ abejas$species_name <- gsub(pattern = " ", replacement = "_", x = abejas$sp.armo
 sort(union(setdiff(unique(kaiser61$pol_code), unique(abejas$species_name)),
            setdiff(unique(abejas$species_name),unique(kaiser61$pol_code))))
 
-Kaiser61.f <- subset(kaiser61, pol_code %in% abejas$species_name)
+
+
+### 61.1 ----
+proyecto <- "061.1_KaiserBunbury"
+Kaiser61.f <- subset(kaiser61.1, pol_code %in% abejas$species_name)
 # Kaiser60.f <- subset(Kaiser60.f, ID=="M_060")
 
 combi <- combinations(v = as.numeric(unique(Kaiser61.f$t)), 
@@ -852,11 +987,14 @@ tabla.beta <- c()
 tabla.beta.abeja <- c()
 
 datos.rt <- Kaiser61.f
-datos.rt$t <- as.numeric(datos.rt$t)
+datos.rt$species_name_pol <-str_to_sentence(datos.rt$pol_code)
+datos.rt$species_name_plant <-str_to_sentence(datos.rt$plant_code)
+
+datos.rt <- subset(datos.rt, species_name_pol!="")
 baselga.periodo <- c()
 baselga.full <- c()
 
-### Ciclo para calculo beta ----
+### Ciclo para calculo de beta ----
 for(i in 1:nrow(combi)){
   combi.i <- combi[i,]
   id.1 <- combi.i[1]
@@ -868,12 +1006,11 @@ for(i in 1:nrow(combi)){
   rt.i1 <- subset(datos.rt, t==id.1) 
   rt.i2 <- subset(datos.rt, t==id.2) 
   
-  m1g <- graph_from_data_frame(rt.i1[,c(1,2)])
-  m2g <- graph_from_data_frame(rt.i2[,c(1,2)])
+  m1g <- graph_from_data_frame(rt.i1[,c("species_name_plant","species_name_pol")])
+  m2g <- graph_from_data_frame(rt.i2[,c("species_name_plant","species_name_pol")])
   
-  
-  m1g.abeja <- graph_from_data_frame(rt.i1[,c(2,1)])
-  m2g.abeja <- graph_from_data_frame(rt.i2[,c(2,1)])
+  m1g.abeja <- graph_from_data_frame(rt.i1[,c("species_name_pol","species_name_plant")], directed = TRUE)
+  m2g.abeja <- graph_from_data_frame(rt.i2[,c("species_name_pol","species_name_plant")], directed = TRUE)
   
   # lista.beta.i <- betalink(m1g, m2g, bf = Wi)
   lista.beta.i <- betalink(m2g, m1g, bf = Wi)
@@ -888,11 +1025,138 @@ for(i in 1:nrow(combi)){
   
   tabla.beta.abeja <- rbind(tabla.beta.abeja,tabla.beta.i.abeja)
   
-  
+  # pollinators <- V(m1g.abeja)[V(m1g.abeja)$type == TRUE]$name
   print(betalink(m1g, m2g, bf = Wi))
   
+  # Baselga por especie de polinizador para el periodo
+  pol_species1 <- unique(rt.i1[, "species_name_pol"])
+  V(m1g.abeja)$type <- ! (V(m1g.abeja)$name %in% pol_species1)
+  
+  pol_species2 <- unique(rt.i2[, "species_name_pol"])
+  V(m2g.abeja)$type <- ! (V(m2g.abeja)$name %in% pol_species2)
+  
+  pol1 <- V(m1g.abeja)[V(m1g.abeja)$type == TRUE]$name
+  pol2 <- V(m2g.abeja)[V(m2g.abeja)$type == TRUE]$name
+  # 
+  # pol1y2 <- sort(intersect(pol1, pol2))
+  pol1y2 <- sort(intersect(unique(pol_species1$species_name_pol),
+                           unique(pol_species2$species_name_pol)))
+  
+  for (pol.j in pol1y2) {
+    # pol.j <- "Alloscirtetica_sp1"
+    
+    # Especies de plantas en t1 y t2 para el polinizador j
+    plantas.1 <- names(neighbors(m1g.abeja, pol.j))
+    plantas.2 <- names(neighbors(m2g.abeja, pol.j))
+    
+    # Baselga para el periodo y polinizador j
+    baselga.j <- calcular_baselga_focal(plantas.1, plantas.2) 
+    baselga.j$t1 <- id.1
+    baselga.j$t2 <- id.2
+    baselga.j$esp <- pol.j
+    
+    baselga.periodo <- rbind(baselga.periodo, baselga.j)        
+  }
+  
+  # baselga.full <- rbind(baselga.full, baselga.periodo)
 }
 
+
+tabla.beta$periodo <- paste(combi[,1],combi[,2], sep="-")
+tabla.beta$periodo.n <- as.numeric(rownames(tabla.beta))
+
+tabla.beta.abeja$periodo <- paste(combi[,1],combi[,2], sep="-")
+tabla.beta.abeja$periodo.n <- as.numeric(rownames(tabla.beta.abeja))
+
+### Figura 1 ----
+png(paste0("../03figuras/Betadiversidad/Betapart_",proyecto,".png"))
+par(mfrow=(c(2,2)))
+plot(S~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Turnover S")
+
+plot(OS~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Rewiring OS")
+
+plot(WN~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Whole network WN")
+
+plot(ST~periodo.n, tabla.beta, type=c("l"), ylim=c(0,1),
+     ylab="Asociado a Turnover ST")
+
+
+dev.off()
+
+
+# par(mfrow=c(1,2))
+
+### Figura 2 ----
+png(paste0("../03figuras/Betadiversidad/TrayectoriaBetadiversidad",proyecto,".png"), width = 1280, height = 720)
+plot(WN~periodo.n, tabla.beta, type=c("b"), ylim=c(0,1),
+     ylab="Beta diversidad", col=1, las=1, pch=16,xaxt = "n" , 
+     xlab="Periodo", 
+     xlim=c(0.8,max(tabla.beta$periodo.n+0.2)),
+     main="Trayectoría de Betadiversidad 061.1 KB")
+
+
+axis(1, at = c(1:max(tabla.beta$periodo.n)), labels = unique(tabla.beta$periodo))
+
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$S, type=c("b"), ylim=c(0,1),
+      col=2, lty=2, pch=16)
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$OS, type=c("b"), ylim=c(0,1),
+      col=3, lty=3, pch=16)
+
+lines(x=tabla.beta$periodo.n, y=tabla.beta$ST, type=c("b"), ylim=c(0,1),
+      col=4, lty=4, pch=16)
+
+legend(col=c(1,2,3,4), legend=c("WN","S","OS","ST"), "topright", lty=c(1,2,3,4), pch=16, seg.len = 5)
+dev.off()
+
+### Tabla 1----
+tabla.beta$ID <- unique(datos.rt$ID)
+write.csv(x = tabla.beta, file = paste0("tabla.beta",proyecto,".csv"), row.names = FALSE)
+
+head(datos.rt)
+
+baselga.periodo <- baselga.periodo[order(baselga.periodo$esp),]
+baselga.periodo$periodo <- paste(baselga.periodo$t1, baselga.periodo$t2, sep="-")
+xyplot(BSIM~factor(periodo)|esp, 
+       layout=c(1,4), 
+       type=c("b"), data=baselga.periodo, 
+       xlab="Periodo",
+       as.table=TRUE)
+
+head(baselga.periodo)
+
+histogram(~BSIM|esp, 
+          type="count",
+          data=baselga.periodo, layout=c(1,1), as.table=TRUE)
+
+
+histogram(~BSIM|periodo, 
+          type="count",
+          data=baselga.periodo, layout=c(1,4), as.table=TRUE)
+
+
+head(baselga.periodo)
+
+ml.abejas <- read.csv("../02salidas/ml.abejas.csv")
+head(ml.abejas)
+
+ml.abejas$polinizador <- gsub(pattern = " ", replacement = "_", 
+                              x =ml.abejas$sp.armonizado)
+
+
+baselga.familia <- merge(baselga.periodo, ml.abejas[,c("polinizador","familia")], 
+                         by.y="polinizador", 
+                         by.x="esp")
+baselga.familia <- baselga.familia[order(baselga.familia$periodo),]
+baselga.familia <- unique(baselga.familia)
+
+### Tabla 2 ----
+write.csv(file = paste0("../02salidas/baselga.",proyecto,"especie.csv"),
+          x = baselga.familia, row.names = FALSE)
 library(lattice)
 library(psych)
 

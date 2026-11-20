@@ -190,6 +190,9 @@ m76 <- merge(ml.arm.76, codigos076, by.x="plantas", by.y = "Plant.species.codes"
 m76$plantas <- m76$genero.especie
 m76 <- m76[,c("ID","plantas","especie","interaccion")]
 
+# separar matriz 72.
+
+
 ml.arm <- rbind(ml.arm.sin76, m76)
 # ml.arm$plantas[ml.arm$plantas=="AO"] <- "Anacardium.occidentale" 
 # ml.arm$plantas[ml.arm$plantas=="SA"] <- "Stigmaphyllon.auriculatum" 
