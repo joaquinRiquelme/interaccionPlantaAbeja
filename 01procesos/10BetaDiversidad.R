@@ -1123,7 +1123,7 @@ baselga.periodo <- baselga.periodo[order(baselga.periodo$esp),]
 baselga.periodo$periodo <- paste(baselga.periodo$t1, baselga.periodo$t2, sep="-")
 
 ### Figura 3 ----
-pdf(paste0("../03figuras/Betadiversidad/BSIM.Abejas.",proyecto,".png"))
+png(paste0("../03figuras/Betadiversidad/BSIM.Abejas.",proyecto,".png"))
 xyplot(BSIM~factor(periodo)|esp, 
        layout=c(1,4), 
        type=c("b"), data=baselga.periodo, 
@@ -1314,12 +1314,14 @@ head(datos.rt)
 
 baselga.periodo <- baselga.periodo[order(baselga.periodo$esp),]
 baselga.periodo$periodo <- paste(baselga.periodo$t1, baselga.periodo$t2, sep="-")
+### Figura 3 ----
+png(paste0("../03figuras/Betadiversidad/BSIM.Abejas.",proyecto,".png"))
 xyplot(BSIM~factor(periodo)|esp, 
-       layout=c(1,4), 
+       layout=c(1,3), 
        type=c("b"), data=baselga.periodo, 
        xlab="Periodo",
        as.table=TRUE)
-
+dev.off()
 head(baselga.periodo)
 
 histogram(~BSIM|esp, 
@@ -1505,7 +1507,8 @@ head(datos.rt)
 baselga.periodo <- baselga.periodo[order(baselga.periodo$esp),]
 baselga.periodo$periodo <- paste(baselga.periodo$t1, baselga.periodo$t2, sep="-")
 
-pdf(paste0("../03figuras/Betadiversidad/BSIM.Abejas.",proyecto,".png"))
+### Figura 3 ----
+png(paste0("../03figuras/Betadiversidad/BSIM.Abejas.",proyecto,".png"))
 xyplot(BSIM~factor(periodo)|esp, 
        layout=c(1,4), 
        type=c("b"), data=baselga.periodo, 
@@ -1696,7 +1699,8 @@ head(datos.rt)
 
 baselga.periodo <- baselga.periodo[order(baselga.periodo$esp),]
 baselga.periodo$periodo <- paste(baselga.periodo$t1, baselga.periodo$t2, sep="-")
-pdf(paste0("../03figuras/Betadiversidad/BSIM.Abejas.",proyecto,".png"))
+### Figura 3 ----
+png(paste0("../03figuras/Betadiversidad/BSIM.Abejas.",proyecto,".png"))
 xyplot(BSIM~factor(periodo)|esp, 
        layout=c(1,5), 
        type=c("b"), data=baselga.periodo, 
@@ -1887,7 +1891,8 @@ head(datos.rt)
 
 baselga.periodo <- baselga.periodo[order(baselga.periodo$esp),]
 baselga.periodo$periodo <- paste(baselga.periodo$t1, baselga.periodo$t2, sep="-")
-pdf(paste0("../03figuras/Betadiversidad/BSIM.Abejas.",proyecto,".png"))
+### Figura 3 ----
+png(paste0("../03figuras/Betadiversidad/BSIM.Abejas.",proyecto,".png"))
 xyplot(BSIM~factor(periodo)|esp, 
        layout=c(1,4), 
        type=c("b"), data=baselga.periodo, 
@@ -2080,7 +2085,7 @@ baselga.periodo <- baselga.periodo[order(baselga.periodo$esp),]
 baselga.periodo$periodo <- paste(baselga.periodo$t1, baselga.periodo$t2, sep="-")
 
 ### Figura 3 ----
-pdf(paste0("../03figuras/Betadiversidad/BSIM.Abejas.",proyecto,".png"))
+png(paste0("../03figuras/Betadiversidad/BSIM.Abejas.",proyecto,".png"))
 xyplot(BSIM~factor(periodo)|esp, 
        layout=c(1,3), 
        type=c("b"), data=baselga.periodo, 
